@@ -109,40 +109,90 @@ function axisStyle() {
 }
 
 /* =====================================================================
+   Helper: compute smart axis bounds for log scale.
+   Uses P2/P98 to trim outliers, falls back to full range with padding.
+   Returns {min, max, outliers: [{value, ticker, side}]}.
+   ===================================================================== */
+function smartLogBounds(values, tickers, pMin = 0.02, pMax = 0.98, padFactor = 1.2) {
+  if (!values.length) return { min: 1, max: 100, outliers: [] };
+  const sorted = [...values.map((v, i) => ({ v, t: tickers[i] }))].sort((a, b) => a.v - b.v);
+  const loIdx = Math.floor(sorted.length * pMin);
+  const hiIdx = Math.min(sorted.length - 1, Math.ceil(sorted.length * pMax));
+  const lo = sorted[loIdx].v;
+  const hi = sorted[hiIdx].v;
+  // Round to nice log boundaries
+  const niceMin = Math.pow(10, Math.floor(Math.log10(lo / padFactor)));
+  const niceMax = Math.pow(10, Math.ceil(Math.log10(hi * padFactor)));
+  const outliers = sorted
+    .filter((x) => x.v < niceMin || x.v > niceMax)
+    .map((x) => ({ value: x.v, ticker: x.t, side: x.v < niceMin ? 'low' : 'high' }));
+  return { min: niceMin, max: niceMax, outliers };
+}
+
+/* =====================================================================
    1. QUALITY-VALUE QUADRANT (headline scatter)
    ===================================================================== */
 function quadrantChartOption(companies) {
   const THRESH_Q = 7.5;
   const THRESH_EV = 20;
 
-  const data = companies
-    .filter((c) => c.rating_composite != null && c.ev_fcf != null && c.ev_fcf > 0)
-    .map((c) => ({
-      value: [c.ev_fcf, c.rating_composite],
+  const valid = companies.filter(
+    (c) => c.rating_composite != null && c.ev_fcf != null && c.ev_fcf > 0
+  );
+
+  // Smart bounds: trim extreme outliers so the cluster breathes
+  const { min: xMin, max: xMax, outliers } = smartLogBounds(
+    valid.map((c) => c.ev_fcf),
+    valid.map((c) => c.ticker),
+    0.02,
+    0.95, // clip at P95 to keep chart readable
+    1.15
+  );
+
+  // Clip outlier points to the edge, mark them visually so they aren't lost
+  const data = valid.map((c) => {
+    const clipped = Math.max(xMin * 1.02, Math.min(xMax * 0.98, c.ev_fcf));
+    const isOutlier = c.ev_fcf > xMax;
+    return {
+      value: [clipped, c.rating_composite],
       name: c.ticker,
       company: c,
       itemStyle: {
         color: QUADRANT_COLOR[c.quadrant] || THEME.text2,
-        borderColor: c.quadrant === 'hunting_ground' ? THEME.accent : 'transparent',
-        borderWidth: c.quadrant === 'hunting_ground' ? 2 : 0,
+        borderColor:
+          c.quadrant === 'hunting_ground'
+            ? THEME.accent
+            : isOutlier
+            ? THEME.negative
+            : 'transparent',
+        borderWidth:
+          c.quadrant === 'hunting_ground' || isOutlier ? 2 : 0,
         opacity: c.quadrant === 'hunting_ground' ? 1 : 0.75,
       },
+      symbol: isOutlier ? 'triangle' : 'circle',
       symbolSize: Math.max(
         8,
         Math.min(28, Math.sqrt(Math.max(c.market_cap_m || 1000, 100) / 500))
       ),
-    }));
+      _isOutlier: isOutlier,
+    };
+  });
+
+  // Y-axis bounds from rating data
+  const ratings = valid.map((c) => c.rating_composite);
+  const yMin = Math.max(0, Math.floor(Math.min(...ratings) - 0.5));
+  const yMax = Math.min(10, Math.ceil(Math.max(...ratings) + 0.5));
 
   return {
     ...baseOption(),
     grid: { left: 70, right: 30, top: 30, bottom: 55 },
     xAxis: {
       type: 'log',
-      name: 'EV / FCF (log)',
+      name: `EV / FCF (log) ${outliers.length ? `· ${outliers.length} outliers ▲` : ''}`,
       nameLocation: 'middle',
       nameGap: 32,
-      min: 5,
-      max: 500,
+      min: xMin,
+      max: xMax,
       ...axisStyle(),
     },
     yAxis: {
@@ -150,22 +200,24 @@ function quadrantChartOption(companies) {
       name: 'Composite Rating',
       nameLocation: 'middle',
       nameGap: 42,
-      min: 3,
-      max: 10,
+      min: yMin,
+      max: yMax,
       ...axisStyle(),
     },
     tooltip: {
       ...baseOption().tooltip,
       formatter: (p) => {
         const c = p.data.company;
+        const isOut = p.data._isOutlier;
         return `
           <div style="font-family:${THEME.font};margin-bottom:4px;">
             <span style="color:${THEME.accent};font-weight:500;">${c.ticker}</span>
             <span style="color:${THEME.text2};margin-left:6px;font-size:10px;">${c.category || ''}</span>
+            ${isOut ? `<span style="color:${THEME.negative};margin-left:6px;font-size:10px;">▲ outlier</span>` : ''}
           </div>
           <div style="border-top:1px solid ${THEME.border};padding-top:4px;">
             Rating&nbsp;&nbsp; <b>${fmt.rating(c.rating_composite)}</b><br/>
-            EV/FCF&nbsp;&nbsp; <b>${fmt.multiple(c.ev_fcf)}</b><br/>
+            EV/FCF&nbsp;&nbsp; <b>${fmt.multiple(c.ev_fcf)}</b>${isOut ? ' <span style="color:'+THEME.negative+'">(off-chart)</span>' : ''}<br/>
             ROIC&nbsp;&nbsp;&nbsp;&nbsp; <b>${fmt.pct(c.roic)}</b><br/>
             MCap&nbsp;&nbsp;&nbsp;&nbsp; <b>${fmt.mcap(c.market_cap_m)}</b><br/>
             Best IRR&nbsp; <b style="color:${c.irr_best > 0.15 ? THEME.positive : THEME.text1}">${fmt.pct(c.irr_best)}</b><br/>
@@ -341,22 +393,43 @@ function irrAsymmetryOption(companies, limit = 25) {
    3. ROIC vs EV/FCF BUBBLE
    ===================================================================== */
 function roicVsValuationOption(companies) {
+  const valid = companies.filter(
+    (c) => c.roic != null && c.ev_fcf != null && c.ev_fcf > 0
+  );
+
+  const { min: xMin, max: xMax } = smartLogBounds(
+    valid.map((c) => c.ev_fcf),
+    valid.map((c) => c.ticker),
+    0.02,
+    0.95,
+    1.15
+  );
+
+  // Y bounds from ROIC data (already in decimal, will ×100 for display)
+  const roicValues = valid.map((c) => c.roic * 100);
+  const yMin = Math.floor(Math.min(...roicValues, 0) / 10) * 10;
+  const yMax = Math.ceil(Math.max(...roicValues) / 10) * 10;
+
   // Series por categoría para leyenda interactiva
   const byCategory = {};
-  companies
-    .filter((c) => c.roic != null && c.ev_fcf != null && c.ev_fcf > 0 && c.ev_fcf < 400)
-    .forEach((c) => {
-      if (!byCategory[c.category]) byCategory[c.category] = [];
-      byCategory[c.category].push(c);
-    });
+  valid.forEach((c) => {
+    if (!byCategory[c.category]) byCategory[c.category] = [];
+    byCategory[c.category].push(c);
+  });
 
   const series = Object.entries(byCategory).map(([cat, items], idx) => ({
     type: 'scatter',
     name: cat,
-    data: items.map((c) => ({
-      value: [c.ev_fcf, c.roic * 100, c.rating_composite, c.ticker],
-      company: c,
-    })),
+    data: items.map((c) => {
+      const clipped = Math.max(xMin * 1.02, Math.min(xMax * 0.98, c.ev_fcf));
+      const isOut = c.ev_fcf > xMax;
+      return {
+        value: [clipped, c.roic * 100, c.rating_composite, c.ticker],
+        company: c,
+        _isOutlier: isOut,
+        symbol: isOut ? 'triangle' : 'circle',
+      };
+    }),
     symbolSize: (val) => Math.max(10, Math.min(38, val[2] * 3.5)),
     itemStyle: {
       color: CATEGORY_COLORS[idx % CATEGORY_COLORS.length],
@@ -385,8 +458,8 @@ function roicVsValuationOption(companies) {
       name: 'EV / FCF (log)',
       nameLocation: 'middle',
       nameGap: 32,
-      min: 5,
-      max: 400,
+      min: xMin,
+      max: xMax,
       ...axisStyle(),
     },
     yAxis: {
@@ -394,6 +467,8 @@ function roicVsValuationOption(companies) {
       name: 'ROIC %',
       nameLocation: 'middle',
       nameGap: 45,
+      min: yMin,
+      max: yMax,
       axisLabel: { ...axisStyle().axisLabel, formatter: '{value}%' },
       ...axisStyle(),
     },
@@ -401,12 +476,14 @@ function roicVsValuationOption(companies) {
       ...baseOption().tooltip,
       formatter: (p) => {
         const c = p.data.company;
+        const isOut = p.data._isOutlier;
         return `
           <div>
             <span style="color:${THEME.accent};">${c.ticker}</span>
-            <span style="color:${THEME.text2};margin-left:4px;">${c.category}</span><br/>
+            <span style="color:${THEME.text2};margin-left:4px;">${c.category}</span>
+            ${isOut ? `<span style="color:${THEME.negative};margin-left:4px;">▲</span>` : ''}<br/>
             ROIC&nbsp;&nbsp;&nbsp; <b>${fmt.pct(c.roic)}</b><br/>
-            EV/FCF&nbsp; <b>${fmt.multiple(c.ev_fcf)}</b><br/>
+            EV/FCF&nbsp; <b>${fmt.multiple(c.ev_fcf)}</b>${isOut ? ' <span style="color:'+THEME.negative+'">(off-chart)</span>' : ''}<br/>
             Rating&nbsp; <b>${fmt.rating(c.rating_composite)}</b><br/>
             MCap&nbsp;&nbsp;&nbsp; <b>${fmt.mcap(c.market_cap_m)}</b>
           </div>

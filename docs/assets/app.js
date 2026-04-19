@@ -584,9 +584,18 @@ async function boot() {
     STATE.raw = await loadData();
     renderSidebar();
     wireFilters();
-    refresh();
+    // CRITICAL: show shell BEFORE rendering charts. ECharts measures container
+    // dims at init time; if container is display:none, canvas gets sized to ~0
+    // and all data points collapse to a single pixel position.
     $('#loading').style.display = 'none';
     $('#app-shell').style.display = 'grid';
+    // Force layout flush before ECharts reads dims
+    void document.body.offsetHeight;
+    refresh();
+    // Extra safety: resize after one frame in case of any lingering size issues
+    requestAnimationFrame(() => {
+      Object.values(STATE.charts).forEach((ch) => ch.resize());
+    });
   } catch (e) {
     $('#loading').textContent = 'Error: ' + e.message;
     console.error(e);
