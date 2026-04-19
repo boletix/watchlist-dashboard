@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watchlist · Quality Compounders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Instrument+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div id="loading" class="loading">Loading watchlist…</div>
+
+  <div id="app-shell" class="app" style="display:none;">
+    <!-- ======================= SIDEBAR ======================= -->
+    <aside class="sidebar">
+      <div class="brand">Watch<em>list</em></div>
+      <div class="brand-sub">Quality · Moat · IRR asymmetry</div>
+
+      <div class="filter-group">
+        <label class="filter-group__label">Search</label>
+        <input
+          type="text"
+          id="filter-search"
+          placeholder="ticker, name, category…"
+          style="width:100%;background:var(--bg-1);border:1px solid var(--border-0);color:var(--text-0);padding:6px 8px;font-family:var(--font-mono);font-size:12px;"
+        />
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group__label">Category</label>
+        <div id="filter-category" class="chip-row"></div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group__label">Style</label>
+        <div id="filter-style" class="chip-row"></div>
+      </div>
+
+      <div class="filter-group">
+        <div class="range">
+          <div class="range__header">
+            <span>Min Composite</span>
+            <span class="range__value" id="filter-min-composite-value">0.0</span>
+          </div>
+          <input
+            type="range"
+            id="filter-min-composite"
+            min="0" max="10" step="0.1" value="0"
+          />
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="range">
+          <div class="range__header">
+            <span>Max EV / FCF</span>
+            <span class="range__value" id="filter-max-evfcf-value">∞</span>
+          </div>
+          <input
+            type="range"
+            id="filter-max-evfcf"
+            min="5" max="200" step="1" value="200"
+          />
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="range">
+          <div class="range__header">
+            <span>Min Best IRR</span>
+            <span class="range__value" id="filter-min-best-irr-value">-100%</span>
+          </div>
+          <input
+            type="range"
+            id="filter-min-best-irr"
+            min="-1" max="0.5" step="0.01" value="-1"
+          />
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-group__label">Shortcuts</label>
+        <label class="toggle">
+          <input type="checkbox" id="filter-top-tier" />
+          Top Tier only (≥ 7.5)
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="filter-hunting" />
+          Hunting Ground only
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="filter-positive-worst" />
+          Positive Worst IRR
+        </label>
+      </div>
+
+      <button id="filter-reset" class="reset-btn">Reset filters</button>
+    </aside>
+
+    <!-- ======================= MAIN ======================= -->
+    <main class="main">
+      <div class="topbar">
+        <div class="topbar__title">
+          watchlist <em>·</em> quality compounders
+        </div>
+        <div class="topbar__meta" id="topbar-meta"></div>
+      </div>
+
+      <!-- KPI strip -->
+      <div id="kpis" class="kpis"></div>
+
+      <!-- Hero: Quality-Value Quadrant -->
+      <div class="panels">
+        <div class="panel panel--hero">
+          <div class="panel__header">
+            <div class="panel__title">quality-value quadrant</div>
+            <div class="panel__hint">composite vs EV/FCF · size = market cap</div>
+          </div>
+          <div id="chart-quadrant" class="chart chart--tall"></div>
+        </div>
+      </div>
+
+      <!-- Row 2: IRR asymmetry + Bubble -->
+      <div class="panels">
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">IRR asymmetry — top 25</div>
+            <div class="panel__hint">worst vs best · sorted by ratio</div>
+          </div>
+          <div id="chart-asymmetry" class="chart chart--tall"></div>
+        </div>
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">ROIC × valuation</div>
+            <div class="panel__hint">size = rating · color = category</div>
+          </div>
+          <div id="chart-bubble" class="chart chart--tall"></div>
+        </div>
+      </div>
+
+      <!-- Row 3: Radar + Heatmap -->
+      <div class="panels">
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">rating decomposition</div>
+            <div class="panel__hint">click tickers to compare up to 4</div>
+          </div>
+          <div id="radar-selector" class="chip-row" style="margin-bottom:8px;max-height:80px;overflow-y:auto;"></div>
+          <div id="chart-radar" class="chart"></div>
+        </div>
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">category × dimension heatmap</div>
+            <div class="panel__hint">avg rating per category</div>
+          </div>
+          <div id="chart-heatmap" class="chart"></div>
+        </div>
+      </div>
+
+      <!-- Row 4: Sunburst + table header -->
+      <div class="panels">
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">universe composition</div>
+            <div class="panel__hint">category → style</div>
+          </div>
+          <div id="chart-sunburst" class="chart"></div>
+        </div>
+        <div class="panel">
+          <div class="panel__header">
+            <div class="panel__title">portfolio construction tips</div>
+            <div class="panel__hint">read-me</div>
+          </div>
+          <div style="padding:8px 4px;font-size:12px;color:var(--text-1);line-height:1.7;">
+            <p style="margin-bottom:10px;">
+              <span style="color:var(--accent);font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;">HUNTING GROUND</span> — Composite ≥ 7.5 <em>and</em> EV/FCF ≤ 20x.
+              Las empresas aquí son las únicas que combinan calidad institucional con
+              valuation razonable. Escasez esperada.
+            </p>
+            <p style="margin-bottom:10px;">
+              <span style="color:var(--q-wonderful);font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;">WONDERFUL · EXPENSIVE</span> — Compounders
+              de alta calidad pero caros. Watchlist pasiva; esperar corrección o
+              ganar conviction adicional.
+            </p>
+            <p style="margin-bottom:10px;">
+              <span style="color:var(--q-trap);font-family:var(--font-mono);font-size:10px;letter-spacing:0.08em;">VALUE TRAP RISK</span> — Baratas por algo.
+              No asumir que el mercado está equivocado sin entender por qué.
+            </p>
+            <p style="color:var(--text-2);font-size:11px;border-top:1px solid var(--border-0);padding-top:10px;margin-top:14px;">
+              El rating <em>no</em> incluye valuation. Una empresa puede tener
+              Composite 9/10 y estar demasiado cara para comprar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rankings table -->
+      <div class="panel" style="margin-top: var(--space-5);">
+        <div class="panel__header">
+          <div class="panel__title">full ranking — click row for detail</div>
+          <div class="panel__hint">click header to sort</div>
+        </div>
+        <div class="table-wrap" style="max-height: 600px;">
+          <table class="table">
+            <thead id="table-head"></thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <footer style="margin-top: var(--space-7); padding: var(--space-4) 0; border-top: 1px solid var(--border-0); font-family: var(--font-mono); font-size: 10px; color: var(--text-3); letter-spacing: 0.08em;">
+        data source · local xlsx → python etl → github pages · not investment advice
+      </footer>
+    </main>
+  </div>
+
+  <!-- Drawer -->
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+  <aside id="drawer" class="drawer"></aside>
+
+  <!-- ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <script src="assets/charts.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

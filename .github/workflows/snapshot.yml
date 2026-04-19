@@ -1,0 +1,36 @@
+name: Weekly Snapshot
+
+on:
+  schedule:
+    # Domingos 21:00 UTC
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create timestamped snapshot
+        run: |
+          if [ ! -f docs/data/watchlist.json ]; then
+            echo "No watchlist.json found — skipping"
+            exit 0
+          fi
+          mkdir -p data/snapshots
+          DATE=$(date -u +%Y-%m-%d)
+          cp docs/data/watchlist.json "data/snapshots/${DATE}_watchlist.json"
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots/
+          if ! git diff --cached --quiet; then
+            git commit -m "snapshot: weekly rating archive [skip ci]"
+            git push
+          fi

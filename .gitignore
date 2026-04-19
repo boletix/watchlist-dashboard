@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Excel temp files
+~$*.xlsx
+
+# Node
+node_modules/
+
+# Build artifacts del sistema (pero no docs/data/watchlist.json que SÍ se commitea)
