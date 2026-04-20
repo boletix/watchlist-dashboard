@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-04-20T07:23:42+00:00",
+    "generated_at": "2026-04-20T09:22:44+00:00",
     "n_companies": 61,
     "source_file": "watchlist_ratings.xlsx",
     "validation_issues": [
       "rating_3 con valor extremo (fuera de [-2,11]) en: ['OTLY']"
     ],
     "enrichment_stats": {
-      "yfinance": 31,
-      "stale": 30,
+      "yfinance": 32,
+      "stale": 29,
       "skipped": 0
     }
   },
@@ -16,7 +16,7 @@
     "n_companies": 61,
     "avg_composite": 5.8519672131147535,
     "median_composite": 6.23,
-    "weighted_avg_roic": 0.4080442653960346,
+    "weighted_avg_roic": 0.4080442653862196,
     "median_ev_fcf": 32.08684136730769,
     "pct_best_irr_gt_15pct": 31.147540983606557,
     "n_top_tier": 16,
@@ -1700,9 +1700,9 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
-      "price": 90.98,
+      "price": 90.9800033569336,
       "shares_out_m": 245.5651,
-      "market_cap_m": 22341.512798,
+      "market_cap_m": 22341.513622345734,
       "r1_mission": 2,
       "r1_moat": 6.0,
       "r1_optionality": 1,
@@ -1759,7 +1759,7 @@
       "fve_max": 151.81310373501773,
       "irr_worst": -0.07383376309510836,
       "irr_best": 0.13655598088443854,
-      "price_source": "stale",
+      "price_source": "yfinance",
       "irr_spread": 0.2103897439795469,
       "irr_asymmetry_ratio": 2.8495059056997416,
       "quadrant": "avoid",
