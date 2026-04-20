@@ -4,10 +4,13 @@
 
 const STATE = {
   raw: null,
+  backtest: null,
+  history: null,
+  alerts: null,
   filtered: [],
   charts: {},
   filters: {
-    categories: new Set(),       // empty = all
+    categories: new Set(),
     styles: new Set(),
     exchanges: new Set(),
     minComposite: 0,
@@ -20,7 +23,12 @@ const STATE = {
   },
   sortKey: 'rating_composite',
   sortDir: 'desc',
-  radarSelection: [], // up to 4 tickers
+  radarSelection: [],
+  // Backtest UI state
+  backtestActive: new Set(['All Watchlist', 'S&P 500', 'NASDAQ 100']),
+  // History UI state
+  historyTicker: null,
+  historyMetric: 'ev_fcf',
 };
 
 /* ---------- Utilities ---------- */
@@ -39,9 +47,23 @@ function debounce(fn, ms = 150) {
    DATA LOADING
    ===================================================================== */
 async function loadData() {
-  const res = await fetch('data/watchlist.json?v=' + Date.now());
-  if (!res.ok) throw new Error('No se pudo cargar watchlist.json');
-  return await res.json();
+  // watchlist.json es OBLIGATORIO. Los otros son opcionales.
+  const [watchlist, backtest, history, alerts] = await Promise.all([
+    fetch('data/watchlist.json?v=' + Date.now()).then((r) => {
+      if (!r.ok) throw new Error('No se pudo cargar watchlist.json');
+      return r.json();
+    }),
+    fetch('data/backtest.json?v=' + Date.now())
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null),
+    fetch('data/history.json?v=' + Date.now())
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null),
+    fetch('data/alerts.json?v=' + Date.now())
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null),
+  ]);
+  return { watchlist, backtest, history, alerts };
 }
 
 /* =====================================================================
@@ -489,6 +511,181 @@ function closeDrawer() {
 }
 
 /* =====================================================================
+   ALERTS BANNER
+   ===================================================================== */
+function renderAlertsBanner() {
+  const banner = $('#alerts-banner');
+  if (!STATE.alerts || !STATE.alerts.alerts || STATE.alerts.alerts.length === 0) {
+    banner.style.display = 'none';
+    return;
+  }
+  const high = STATE.alerts.alerts.filter((a) => a.severity === 'high');
+  const med = STATE.alerts.alerts.filter((a) => a.severity === 'medium');
+  if (high.length === 0 && med.length === 0) {
+    banner.style.display = 'none';
+    return;
+  }
+  // Top 6 alertas como chips clicables
+  const topAlerts = [...high, ...med].slice(0, 6);
+  banner.innerHTML = `
+    <div class="alerts-banner__icon">●</div>
+    <div class="alerts-banner__text">
+      <strong>${high.length} high</strong> · ${med.length} medium alerts
+      <div class="alerts-banner__list">
+        ${topAlerts
+          .map(
+            (a) =>
+              `<span class="alerts-banner__chip" data-ticker="${a.ticker}" title="${a.message.replace(/"/g, '&quot;')}">
+                <span class="ticker">${a.ticker}</span>${a.type.replace(/_/g, ' ')}
+              </span>`
+          )
+          .join('')}
+      </div>
+    </div>
+    <button class="alerts-banner__close">dismiss</button>
+  `;
+  banner.style.display = 'flex';
+  // Click en un chip → abre el drawer de esa empresa
+  banner.querySelectorAll('.alerts-banner__chip').forEach((chip) => {
+    chip.addEventListener('click', () => openDrawer(chip.dataset.ticker));
+  });
+  banner.querySelector('.alerts-banner__close').addEventListener('click', () => {
+    banner.style.display = 'none';
+  });
+}
+
+/* =====================================================================
+   BACKTEST PANEL
+   ===================================================================== */
+function renderBacktestSelector() {
+  const sel = $('#backtest-selector');
+  if (!sel || !STATE.backtest) return;
+  const series = Object.keys(STATE.backtest.series);
+  sel.innerHTML = series
+    .map(
+      (name) =>
+        `<button class="chip ${STATE.backtestActive.has(name) ? 'active' : ''}" data-series="${name.replace(/"/g, '&quot;')}">${name}</button>`
+    )
+    .join('');
+  sel.querySelectorAll('.chip').forEach((el) => {
+    el.addEventListener('click', () => {
+      const name = el.dataset.series;
+      STATE.backtestActive.has(name)
+        ? STATE.backtestActive.delete(name)
+        : STATE.backtestActive.add(name);
+      el.classList.toggle('active');
+      renderBacktestChart();
+      renderBacktestStatsTable();
+    });
+  });
+}
+
+function renderBacktestChart() {
+  if (!STATE.backtest) return;
+  const el = $('#chart-backtest');
+  if (!el) return;
+  if (!STATE.charts['chart-backtest']) {
+    STATE.charts['chart-backtest'] = echarts.init(el, null, { renderer: 'canvas' });
+  }
+  const opt = CHARTS.backtest(STATE.backtest.series, [...STATE.backtestActive]);
+  STATE.charts['chart-backtest'].setOption(opt, true);
+  // Header summary
+  const meta = STATE.backtest.meta;
+  $('#backtest-stats').textContent = `${meta.start_date} → ${meta.end_date} · ${meta.n_companies_total} empresas · ${meta.currencies_converted.length} FX`;
+}
+
+function renderBacktestStatsTable() {
+  if (!STATE.backtest) return;
+  const target = $('#backtest-stats-table');
+  if (!target) return;
+  const active = [...STATE.backtestActive];
+  if (active.length === 0) {
+    target.innerHTML = '';
+    return;
+  }
+  const rows = active
+    .map((name) => {
+      const s = STATE.backtest.series[name];
+      if (!s) return null;
+      const st = s.stats;
+      return { name, ...st, type: s.type };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.cagr - a.cagr);
+
+  let html = `
+    <div class="stats-mini-table">
+      <div class="header">Series</div>
+      <div class="header num">CAGR</div>
+      <div class="header num">Sharpe</div>
+      <div class="header num">Max DD</div>
+      <div class="header num">Total Return</div>
+  `;
+  rows.forEach((r) => {
+    const isWatchlist = r.name === 'All Watchlist';
+    const nameCls = isWatchlist ? 'name accent' : (r.type === 'benchmark' ? 'name' : 'name');
+    html += `
+      <div class="${nameCls}">${r.name}${r.type === 'benchmark' ? ' <span style="color:var(--text-2);font-size:9px;">[bench]</span>' : ''}</div>
+      <div class="num ${r.cagr >= 0 ? 'positive' : 'negative'}">${(r.cagr * 100).toFixed(1)}%</div>
+      <div class="num">${r.sharpe.toFixed(2)}</div>
+      <div class="num negative">${(r.max_dd * 100).toFixed(1)}%</div>
+      <div class="num ${r.total_return >= 0 ? 'positive' : 'negative'}">${(r.total_return * 100).toFixed(0)}%</div>
+    `;
+  });
+  html += '</div>';
+  target.innerHTML = html;
+}
+
+/* =====================================================================
+   HISTORY PANEL
+   ===================================================================== */
+function renderHistorySelector() {
+  if (!STATE.history) return;
+  const sel = $('#history-ticker');
+  if (!sel) return;
+  const tickers = Object.keys(STATE.history.companies).sort();
+  if (!STATE.historyTicker || !tickers.includes(STATE.historyTicker)) {
+    // Default: la primera empresa de tu top tier
+    const topTier = STATE.raw.companies
+      .filter((c) => c.rating_composite >= 7.5 && tickers.includes(c.ticker))
+      .sort((a, b) => b.rating_composite - a.rating_composite);
+    STATE.historyTicker = topTier[0]?.ticker || tickers[0];
+  }
+  sel.innerHTML = tickers
+    .map((t) => `<option value="${t}" ${t === STATE.historyTicker ? 'selected' : ''}>${t}</option>`)
+    .join('');
+  sel.addEventListener('change', () => {
+    STATE.historyTicker = sel.value;
+    renderHistoryChart();
+  });
+
+  // Metric chips
+  $$('.metric-chip').forEach((chip) => {
+    chip.addEventListener('click', () => {
+      $$('.metric-chip').forEach((c) => c.classList.remove('active'));
+      chip.classList.add('active');
+      STATE.historyMetric = chip.dataset.metric;
+      renderHistoryChart();
+    });
+  });
+}
+
+function renderHistoryChart() {
+  if (!STATE.history || !STATE.historyTicker) return;
+  const el = $('#chart-history');
+  if (!el) return;
+  if (!STATE.charts['chart-history']) {
+    STATE.charts['chart-history'] = echarts.init(el, null, { renderer: 'canvas' });
+  }
+  const opt = CHARTS.multipleHistory(STATE.history, STATE.historyTicker, STATE.historyMetric);
+  if (opt) {
+    STATE.charts['chart-history'].setOption(opt, true);
+  } else {
+    STATE.charts['chart-history'].clear();
+  }
+}
+
+/* =====================================================================
    REFRESH ORCHESTRATOR
    ===================================================================== */
 function refresh() {
@@ -581,7 +778,13 @@ function wireFilters() {
    ===================================================================== */
 async function boot() {
   try {
-    STATE.raw = await loadData();
+    const data = await loadData();
+    // STATE.raw mantiene la forma antigua para compatibilidad con el resto del código
+    STATE.raw = data.watchlist;
+    STATE.backtest = data.backtest;
+    STATE.history = data.history;
+    STATE.alerts = data.alerts;
+
     renderSidebar();
     wireFilters();
     // CRITICAL: show shell BEFORE rendering charts. ECharts measures container
@@ -592,6 +795,19 @@ async function boot() {
     // Force layout flush before ECharts reads dims
     void document.body.offsetHeight;
     refresh();
+
+    // Render new panels (only if data is available)
+    if (STATE.alerts) renderAlertsBanner();
+    if (STATE.backtest) {
+      renderBacktestSelector();
+      renderBacktestChart();
+      renderBacktestStatsTable();
+    }
+    if (STATE.history) {
+      renderHistorySelector();
+      renderHistoryChart();
+    }
+
     // Extra safety: resize after one frame in case of any lingering size issues
     requestAnimationFrame(() => {
       Object.values(STATE.charts).forEach((ch) => ch.resize());

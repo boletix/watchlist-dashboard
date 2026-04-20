@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "generated_at": "2026-04-19T13:56:51+00:00",
+    "n_alerts": 11,
+    "by_severity": {
+      "high": 9,
+      "medium": 0,
+      "low": 2
+    }
+  },
+  "alerts": [
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "ABNB",
+      "name": "ABNB",
+      "category": "Consumo",
+      "message": "ABNB now has favorable IRR asymmetry (best 25.2%, worst 1.9%)",
+      "metrics": {
+        "irr_best": 0.25206273310341576,
+        "irr_worst": 0.01920225905214923,
+        "irr_asymmetry_ratio": 4.657209481025331
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "ADYEN",
+      "name": "ADYEN",
+      "category": "Fintech",
+      "message": "ADYEN now has favorable IRR asymmetry (best 28.4%, worst 1.1%)",
+      "metrics": {
+        "irr_best": 0.28414482662692264,
+        "irr_worst": 0.011257135253934347,
+        "irr_asymmetry_ratio": 5.457753827459766
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "BN",
+      "name": "BN",
+      "category": "Real Assets",
+      "message": "BN now has favorable IRR asymmetry (best 23.7%, worst 0.9%)",
+      "metrics": {
+        "irr_best": 0.23664369872255397,
+        "irr_worst": 0.008688750626492325,
+        "irr_asymmetry_ratio": 4.559098961921233
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "CHKP",
+      "name": "CHKP",
+      "category": "Cyber",
+      "message": "CHKP now has favorable IRR asymmetry (best 24.7%, worst -4.0%)",
+      "metrics": {
+        "irr_best": 0.24721865267453946,
+        "irr_worst": -0.0397516109446866,
+        "irr_asymmetry_ratio": 5.739405272384521
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "DSGX",
+      "name": "DSGX",
+      "category": "Vertical Saas",
+      "message": "DSGX now has favorable IRR asymmetry (best 20.7%, worst -0.1%)",
+      "metrics": {
+        "irr_best": 0.20728453063396612,
+        "irr_worst": -0.0012083112963315878,
+        "irr_asymmetry_ratio": 4.169856838605954
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "EVD",
+      "name": "EVD",
+      "category": "Consumo",
+      "message": "EVD now has favorable IRR asymmetry (best 32.9%, worst 4.7%)",
+      "metrics": {
+        "irr_best": 0.32856138557530556,
+        "irr_worst": 0.0466211586275056,
+        "irr_asymmetry_ratio": 5.638804538955999
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "NKE",
+      "name": "NKE",
+      "category": "Consumo",
+      "message": "NKE now has favorable IRR asymmetry (best 23.8%, worst 0.1%)",
+      "metrics": {
+        "irr_best": 0.23787055001415847,
+        "irr_worst": 0.0009803111635457995,
+        "irr_asymmetry_ratio": 4.737804777012253
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "VEEV",
+      "name": "VEEV",
+      "category": "Vertical Saas",
+      "message": "VEEV now has favorable IRR asymmetry (best 33.5%, worst 4.5%)",
+      "metrics": {
+        "irr_best": 0.33530194251747125,
+        "irr_worst": 0.045021116899820024,
+        "irr_asymmetry_ratio": 5.805616512353025
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "ZS",
+      "name": "ZS",
+      "category": "Cyber",
+      "message": "ZS now has favorable IRR asymmetry (best 32.4%, worst 3.7%)",
+      "metrics": {
+        "irr_best": 0.3242730743350013,
+        "irr_worst": 0.0366071324658126,
+        "irr_asymmetry_ratio": 5.753318837383774
+      }
+    },
+    {
+      "type": "hunting_ground_current",
+      "severity": "low",
+      "ticker": "ABNB",
+      "name": "ABNB",
+      "category": "Consumo",
+      "message": "ABNB currently in Hunting Ground (rating 7.65, EV/FCF 18.4x)",
+      "metrics": {
+        "rating_composite": 7.65,
+        "ev_fcf": 18.372253976190482
+      }
+    },
+    {
+      "type": "hunting_ground_current",
+      "severity": "low",
+      "ticker": "EVD",
+      "name": "EVD",
+      "category": "Consumo",
+      "message": "EVD currently in Hunting Ground (rating 7.58, EV/FCF 11.3x)",
+      "metrics": {
+        "rating_composite": 7.58,
+        "ev_fcf": 11.297777777777778
+      }
+    }
+  ]
+}

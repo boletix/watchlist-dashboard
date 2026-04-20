@@ -101,6 +101,9 @@ def build(
     processed_dir: str | Path = "data/processed",
     snapshots_dir: str | Path = "data/snapshots",
     skip_enrichment: bool = False,
+    skip_backtest: bool = False,
+    skip_history: bool = False,
+    skip_alerts: bool = False,
 ) -> dict:
     """Pipeline completo. Devuelve el dict de meta."""
     xlsx_path = Path(xlsx_path)
@@ -149,7 +152,7 @@ def build(
         "enrichment_stats": enrich_stats,
     }
 
-    # 7. Construir payload
+    # 7. Construir payload del watchlist principal
     payload = {
         "meta": meta,
         "kpis": kpis,
@@ -158,19 +161,51 @@ def build(
         "companies": df_to_records(df),
     }
 
-    # 8. Escribir output (dos copias: docs/ para frontend, data/processed/ para versión)
+    # 8. Escribir watchlist.json
     target_frontend = output_dir / "watchlist.json"
     target_processed = processed_dir / "watchlist.json"
-
     with open(target_frontend, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
     shutil.copy(target_frontend, target_processed)
+    log.info("✅ watchlist.json → %s (%d empresas)", target_frontend, len(df))
+
+    # 9. Backtest (Q4): NAVs vs benchmarks desde 2020
+    if not skip_backtest:
+        try:
+            from src.backtest import build_backtest
+            backtest_meta = build_backtest(df, output_path=output_dir / "backtest.json")
+            meta["backtest"] = backtest_meta
+        except Exception as e:
+            log.error("❌ Backtest falló: %s", e)
+            meta["backtest_error"] = str(e)
+
+    # 10. History (Q3): multiples evolution
+    if not skip_history:
+        try:
+            from src.history import build_history
+            history_meta = build_history(df, output_path=output_dir / "history.json")
+            meta["history"] = history_meta
+        except Exception as e:
+            log.error("❌ History falló: %s", e)
+            meta["history_error"] = str(e)
+
+    # 11. Alerts: detectar eventos vs snapshot previo
+    if not skip_alerts:
+        try:
+            from src.alerts import detect_alerts, write_alerts_json, notify_email, notify_whatsapp
+            alerts = detect_alerts(df, prev_df)
+            write_alerts_json(alerts, output_path=output_dir / "alerts.json")
+            meta["n_alerts"] = len(alerts)
+            # Notificaciones (silentes si no hay credenciales)
+            notify_email(alerts)
+            notify_whatsapp(alerts)
+        except Exception as e:
+            log.error("❌ Alerts falló: %s", e)
+            meta["alerts_error"] = str(e)
 
     log.info(
-        "✅ Build OK → %s (%d empresas, %s)",
-        target_frontend,
-        len(df),
-        meta["generated_at"],
+        "✅ Build completo (%s) — empresas: %d, alerts: %d",
+        meta["generated_at"], len(df), meta.get("n_alerts", 0),
     )
     return meta
 
@@ -180,13 +215,29 @@ def main():
     parser = argparse.ArgumentParser(description="Build watchlist dashboard JSON")
     parser.add_argument("--xlsx", default="data/raw/watchlist_ratings.xlsx")
     parser.add_argument("--out", default="docs/data")
-    parser.add_argument(
-        "--skip-enrichment",
-        action="store_true",
-        help="Omitir yfinance (útil en dev sin red)",
-    )
+    parser.add_argument("--skip-enrichment", action="store_true",
+                        help="Omitir yfinance price refresh (más rápido)")
+    parser.add_argument("--skip-backtest", action="store_true",
+                        help="Omitir backtest (Q4) — descarga ~5min")
+    parser.add_argument("--skip-history", action="store_true",
+                        help="Omitir historical multiples (Q3) — descarga ~10min")
+    parser.add_argument("--skip-alerts", action="store_true",
+                        help="Omitir generación de alertas")
+    parser.add_argument("--quick", action="store_true",
+                        help="Solo watchlist principal (skip backtest, history, alerts)")
     args = parser.parse_args()
-    build(xlsx_path=args.xlsx, output_dir=args.out, skip_enrichment=args.skip_enrichment)
+    if args.quick:
+        args.skip_backtest = True
+        args.skip_history = True
+        args.skip_alerts = True
+    build(
+        xlsx_path=args.xlsx,
+        output_dir=args.out,
+        skip_enrichment=args.skip_enrichment,
+        skip_backtest=args.skip_backtest,
+        skip_history=args.skip_history,
+        skip_alerts=args.skip_alerts,
+    )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,5794 @@
+{
+  "meta": {
+    "generated_at": "2026-04-19T14:04:16+00:00",
+    "n_with_history": 61,
+    "n_missing": 0,
+    "missing": []
+  },
+  "companies": {
+    "VEEV": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2022-01-31",
+          "period": "annual",
+          "mcap": 38145.9,
+          "ev": 38145.9,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-01-31",
+          "period": "annual",
+          "mcap": 27539.2,
+          "ev": 26713.7,
+          "ev_fcf": 34.23,
+          "ev_sales": 12.4,
+          "ev_ebitda": 54.72
+        },
+        {
+          "date": "2024-01-31",
+          "period": "annual",
+          "mcap": 35403.6,
+          "ev": 34755.9,
+          "ev_fcf": 38.14,
+          "ev_sales": 14.7,
+          "ev_ebitda": 75.24
+        },
+        {
+          "date": "2025-01-31",
+          "period": "annual",
+          "mcap": 38841.7,
+          "ev": 37798.7,
+          "ev_fcf": 34.68,
+          "ev_sales": 13.76,
+          "ev_ebitda": 51.72
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 48305.1,
+          "ev": 46734.8,
+          "ev_fcf": 33.92,
+          "ev_sales": 15.17,
+          "ev_ebitda": 52.01
+        },
+        {
+          "date": "2026-01-31",
+          "period": "annual",
+          "mcap": 30541.3,
+          "ev": 29215.9,
+          "ev_fcf": 20.64,
+          "ev_sales": 9.14,
+          "ev_ebitda": 30.61
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 20.64,
+          "ev_fcf_base": 20.64,
+          "ev_fcf_bull": 20.64
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 20.1,
+          "ev_fcf_base": 21.3,
+          "ev_fcf_bull": 22.5
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 19.6,
+          "ev_fcf_base": 22.0,
+          "ev_fcf_bull": 24.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 19.1,
+          "ev_fcf_base": 22.7,
+          "ev_fcf_bull": 26.3
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 18.5,
+          "ev_fcf_base": 23.3,
+          "ev_fcf_bull": 28.1
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 24.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "MSFT": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-06-30",
+          "period": "annual",
+          "mcap": 1984988.4,
+          "ev": 1984988.4,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-06-30",
+          "period": "annual",
+          "mcap": 1927179.9,
+          "ev": 1974518.9,
+          "ev_fcf": 30.31,
+          "ev_sales": 9.96,
+          "ev_ebitda": 19.7
+        },
+        {
+          "date": "2023-06-30",
+          "period": "annual",
+          "mcap": 2412304.9,
+          "ev": 2437565.9,
+          "ev_fcf": 40.98,
+          "ev_sales": 11.5,
+          "ev_ebitda": 23.18
+        },
+        {
+          "date": "2024-06-30",
+          "period": "annual",
+          "mcap": 3416012.8,
+          "ev": 3464824.8,
+          "ev_fcf": 46.78,
+          "ev_sales": 14.14,
+          "ev_ebitda": 26.05
+        },
+        {
+          "date": "2025-06-30",
+          "period": "annual",
+          "mcap": 3702297.5,
+          "ev": 3732643.5,
+          "ev_fcf": 52.12,
+          "ev_sales": 13.25,
+          "ev_ebitda": 23.3
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 3778487.2,
+          "ev": 3810194.2,
+          "ev_fcf": 48.84,
+          "ev_sales": 12.97,
+          "ev_ebitda": 22.57
+        },
+        {
+          "date": "2025-12-31",
+          "period": "quarterly_ttm",
+          "mcap": 3550850.9,
+          "ev": 3584161.9,
+          "ev_fcf": 46.3,
+          "ev_sales": 11.73,
+          "ev_ebitda": 18.73
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 46.3,
+          "ev_fcf_base": 46.3,
+          "ev_fcf_bull": 46.3
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 41.0,
+          "ev_fcf_base": 42.0,
+          "ev_fcf_bull": 43.0
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 35.8,
+          "ev_fcf_base": 37.8,
+          "ev_fcf_bull": 39.8
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 30.5,
+          "ev_fcf_base": 33.5,
+          "ev_fcf_bull": 36.5
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 25.3,
+          "ev_fcf_base": 29.3,
+          "ev_fcf_bull": 33.3
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 20.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 7
+    },
+    "ADYEN": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 61988.5,
+          "ev": 61988.5,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 42259.2,
+          "ev": 36008.5,
+          "ev_fcf": 18.73,
+          "ev_sales": 4.03,
+          "ev_ebitda": 45.26
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 36330.3,
+          "ev": 28335.2,
+          "ev_fcf": 15.74,
+          "ev_sales": 15.21,
+          "ev_ebitda": 27.43
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 46434.6,
+          "ev": 36931.0,
+          "ev_fcf": 23.03,
+          "ev_sales": 16.59,
+          "ev_ebitda": 27.2
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 45778.7,
+          "ev": 35606.0,
+          "ev_fcf": 39.36,
+          "ev_sales": 13.45,
+          "ev_ebitda": 22.98
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 39.36,
+          "ev_fcf_base": 39.36,
+          "ev_fcf_bull": 39.36
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 35.0,
+          "ev_fcf_base": 36.0,
+          "ev_fcf_bull": 37.1
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 30.6,
+          "ev_fcf_base": 32.7,
+          "ev_fcf_bull": 34.8
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 26.2,
+          "ev_fcf_base": 29.4,
+          "ev_fcf_bull": 32.5
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 21.9,
+          "ev_fcf_base": 26.1,
+          "ev_fcf_bull": 30.3
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 17.5,
+          "ev_fcf_base": 22.8,
+          "ev_fcf_bull": 28.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "BN": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 65837.1,
+          "ev": 65837.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 49073.5,
+          "ev": 248751.5,
+          "ev_fcf": 164.19,
+          "ev_sales": 2.68,
+          "ev_ebitda": 9.93
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 58393.0,
+          "ev": 280881.0,
+          "ev_fcf": null,
+          "ev_sales": 2.93,
+          "ev_ebitda": 9.15
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 81257.9,
+          "ev": 300998.9,
+          "ev_fcf": null,
+          "ev_sales": 3.5,
+          "ev_ebitda": 10.31
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 95964.2,
+          "ev": 338491.2,
+          "ev_fcf": null,
+          "ev_sales": 4.55,
+          "ev_ebitda": 11.38
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 106430.9,
+          "ev": 349800.9,
+          "ev_fcf": null,
+          "ev_sales": 4.66,
+          "ev_ebitda": 10.98
+        }
+      ],
+      "forward": [],
+      "n_quarters": 6
+    },
+    "COST": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-08-31",
+          "period": "annual",
+          "mcap": 196165.8,
+          "ev": 196165.8,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-08-31",
+          "period": "annual",
+          "mcap": 227756.2,
+          "ev": 226592.2,
+          "ev_fcf": 64.72,
+          "ev_sales": 1.0,
+          "ev_ebitda": 22.89
+        },
+        {
+          "date": "2023-08-31",
+          "period": "annual",
+          "mcap": 235722.1,
+          "ev": 230906.1,
+          "ev_fcf": 34.23,
+          "ev_sales": 0.95,
+          "ev_ebitda": 21.53
+        },
+        {
+          "date": "2024-08-31",
+          "period": "annual",
+          "mcap": 393632.9,
+          "ev": 391895.9,
+          "ev_fcf": 59.12,
+          "ev_sales": 1.54,
+          "ev_ebitda": 32.27
+        },
+        {
+          "date": "2025-08-31",
+          "period": "annual",
+          "mcap": 423083.1,
+          "ev": 417095.1,
+          "ev_fcf": 53.22,
+          "ev_sales": 1.52,
+          "ev_ebitda": 31.13
+        },
+        {
+          "date": "2025-11-30",
+          "period": "quarterly_ttm",
+          "mcap": 387405.0,
+          "ev": 379290.0,
+          "ev_fcf": 42.13,
+          "ev_sales": 1.35,
+          "ev_ebitda": 27.64
+        },
+        {
+          "date": "2026-02-28",
+          "period": "quarterly_ttm",
+          "mcap": 442481.3,
+          "ev": 433263.3,
+          "ev_fcf": 47.62,
+          "ev_sales": 1.51,
+          "ev_ebitda": 30.81
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 47.62,
+          "ev_fcf_base": 47.62,
+          "ev_fcf_bull": 47.62
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 42.1,
+          "ev_fcf_base": 43.1,
+          "ev_fcf_bull": 44.1
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 36.6,
+          "ev_fcf_base": 38.6,
+          "ev_fcf_bull": 40.6
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 31.0,
+          "ev_fcf_base": 34.0,
+          "ev_fcf_bull": 37.0
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 25.5,
+          "ev_fcf_base": 29.5,
+          "ev_fcf_bull": 33.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 20.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 7
+    },
+    "DSGX": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2022-01-31",
+          "period": "annual",
+          "mcap": 6193.7,
+          "ev": 6193.7,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-01-31",
+          "period": "annual",
+          "mcap": 6369.2,
+          "ev": 6100.2,
+          "ev_fcf": 32.74,
+          "ev_sales": 12.55,
+          "ev_ebitda": 30.46
+        },
+        {
+          "date": "2024-01-31",
+          "period": "annual",
+          "mcap": 7693.2,
+          "ev": 7379.2,
+          "ev_fcf": 36.51,
+          "ev_sales": 12.88,
+          "ev_ebitda": 33.77
+        },
+        {
+          "date": "2025-01-31",
+          "period": "annual",
+          "mcap": 10538.0,
+          "ev": 10309.7,
+          "ev_fcf": 48.51,
+          "ev_sales": 15.84,
+          "ev_ebitda": 38.52
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 7126.3,
+          "ev": 6855.1,
+          "ev_fcf": 28.02,
+          "ev_sales": 9.74,
+          "ev_ebitda": 23.55
+        },
+        {
+          "date": "2026-01-31",
+          "period": "annual",
+          "mcap": 5964.1,
+          "ev": 5615.9,
+          "ev_fcf": 21.56,
+          "ev_sales": 7.7,
+          "ev_ebitda": 18.4
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 21.56,
+          "ev_fcf_base": 21.56,
+          "ev_fcf_bull": 21.56
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 20.7,
+          "ev_fcf_base": 21.6,
+          "ev_fcf_bull": 22.6
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 19.9,
+          "ev_fcf_base": 21.8,
+          "ev_fcf_bull": 23.7
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 19.1,
+          "ev_fcf_base": 22.0,
+          "ev_fcf_bull": 24.8
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 18.3,
+          "ev_fcf_base": 22.1,
+          "ev_fcf_bull": 25.9
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 17.5,
+          "ev_fcf_base": 22.2,
+          "ev_fcf_bull": 27.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "RAA": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 8499.9,
+          "ev": 8273.8,
+          "ev_fcf": 56.56,
+          "ev_sales": 10.61,
+          "ev_ebitda": 43.59
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 6511.5,
+          "ev": 6304.5,
+          "ev_fcf": 51.08,
+          "ev_sales": 6.17,
+          "ev_ebitda": 23.42
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 7295.1,
+          "ev": 7197.6,
+          "ev_fcf": 32.17,
+          "ev_sales": 6.39,
+          "ev_ebitda": 22.64
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 9117.0,
+          "ev": 9002.7,
+          "ev_fcf": 35.8,
+          "ev_sales": 7.54,
+          "ev_ebitda": 24.67
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 8430.9,
+          "ev": 8329.0,
+          "ev_fcf": 38.59,
+          "ev_sales": 6.84,
+          "ev_ebitda": 22.48
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 38.59,
+          "ev_fcf_base": 38.59,
+          "ev_fcf_bull": 38.59
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 33.9,
+          "ev_fcf_base": 35.1,
+          "ev_fcf_bull": 36.3
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 29.2,
+          "ev_fcf_base": 31.6,
+          "ev_fcf_bull": 34.0
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 24.4,
+          "ev_fcf_base": 28.0,
+          "ev_fcf_bull": 31.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 19.7,
+          "ev_fcf_base": 24.5,
+          "ev_fcf_bull": 29.3
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 21.0,
+          "ev_fcf_bull": 27.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "ZS": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-07-31",
+          "period": "annual",
+          "mcap": 38670.2,
+          "ev": 38670.2,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-07-31",
+          "period": "annual",
+          "mcap": 29008.3,
+          "ev": 29040.8,
+          "ev_fcf": 125.54,
+          "ev_sales": 26.62,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-07-31",
+          "period": "annual",
+          "mcap": 23202.1,
+          "ev": 23150.4,
+          "ev_fcf": 69.39,
+          "ev_sales": 14.32,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-07-31",
+          "period": "annual",
+          "mcap": 28035.5,
+          "ev": 27850.4,
+          "ev_fcf": 47.61,
+          "ev_sales": 12.85,
+          "ev_ebitda": 429.56
+        },
+        {
+          "date": "2025-07-31",
+          "period": "annual",
+          "mcap": 43364.4,
+          "ev": 42772.0,
+          "ev_fcf": 58.86,
+          "ev_sales": 16.0,
+          "ev_ebitda": 395.6
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 52884.1,
+          "ev": 53379.9,
+          "ev_fcf": 62.94,
+          "ev_sales": 18.84,
+          "ev_ebitda": 453.21
+        },
+        {
+          "date": "2026-01-31",
+          "period": "quarterly_ttm",
+          "mcap": 28032.3,
+          "ev": 28693.9,
+          "ev_fcf": 32.84,
+          "ev_sales": 9.56,
+          "ev_ebitda": 218.75
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 32.84,
+          "ev_fcf_base": 32.84,
+          "ev_fcf_bull": 32.84
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 30.3,
+          "ev_fcf_base": 31.3,
+          "ev_fcf_bull": 32.3
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 27.7,
+          "ev_fcf_base": 29.7,
+          "ev_fcf_bull": 31.7
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 25.1,
+          "ev_fcf_base": 28.1,
+          "ev_fcf_bull": 31.1
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 22.6,
+          "ev_fcf_base": 26.6,
+          "ev_fcf_bull": 30.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 20.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 7
+    },
+    "NTO": {
+      "currency": "JPY",
+      "history": [
+        {
+          "date": "2022-03-31",
+          "period": "annual",
+          "mcap": 6697314.0,
+          "ev": 5490808.0,
+          "ev_fcf": 19.47,
+          "ev_sales": 3.24,
+          "ev_ebitda": 8.01
+        },
+        {
+          "date": "2023-03-31",
+          "period": "annual",
+          "mcap": 5874003.3,
+          "ev": 4610337.3,
+          "ev_fcf": 15.33,
+          "ev_sales": 2.88,
+          "ev_ebitda": 7.53
+        },
+        {
+          "date": "2024-03-31",
+          "period": "annual",
+          "mcap": 8708024.4,
+          "ev": 7223674.4,
+          "ev_fcf": 16.2,
+          "ev_sales": 4.32,
+          "ev_ebitda": 13.21
+        },
+        {
+          "date": "2025-03-31",
+          "period": "annual",
+          "mcap": 11889256.3,
+          "ev": 10302981.3,
+          "ev_fcf": null,
+          "ev_sales": 8.84,
+          "ev_ebitda": 34.58
+        }
+      ],
+      "forward": [],
+      "n_quarters": 4
+    },
+    "AMZN": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 1736661.0,
+          "ev": 1736661.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 966484.6,
+          "ev": 1052714.6,
+          "ev_fcf": null,
+          "ev_sales": 2.05,
+          "ev_ebitda": 27.45
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 1653251.1,
+          "ev": 1715475.1,
+          "ev_fcf": 53.25,
+          "ev_sales": 2.98,
+          "ev_ebitda": 19.19
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 2354535.9,
+          "ev": 2406656.9,
+          "ev_fcf": 73.2,
+          "ev_sales": 3.77,
+          "ev_ebitda": 19.44
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 2326897.4,
+          "ev": 2395394.4,
+          "ev_fcf": 226.84,
+          "ev_sales": 3.46,
+          "ev_ebitda": 15.24
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 2660386.9,
+          "ev": 2726563.9,
+          "ev_fcf": 354.33,
+          "ev_sales": 3.8,
+          "ev_ebitda": 16.49
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 354.33,
+          "ev_fcf_base": 354.33,
+          "ev_fcf_bull": 354.33
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 288.0,
+          "ev_fcf_base": 288.8,
+          "ev_fcf_bull": 289.5
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 221.6,
+          "ev_fcf_base": 223.1,
+          "ev_fcf_bull": 224.6
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 155.2,
+          "ev_fcf_base": 157.4,
+          "ev_fcf_bull": 159.7
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 88.9,
+          "ev_fcf_base": 91.9,
+          "ev_fcf_bull": 94.9
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 22.5,
+          "ev_fcf_base": 26.2,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "SU": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 83717.2,
+          "ev": 83717.2,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 76910.8,
+          "ev": 83387.8,
+          "ev_fcf": 25.57,
+          "ev_sales": 2.44,
+          "ev_ebitda": 13.1
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 94728.6,
+          "ev": 103965.6,
+          "ev_fcf": 22.89,
+          "ev_sales": 2.9,
+          "ev_ebitda": 14.27
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 138299.6,
+          "ev": 146243.6,
+          "ev_fcf": 35.15,
+          "ev_sales": 3.83,
+          "ev_ebitda": 18.11
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 132298.7,
+          "ev": 145544.7,
+          "ev_fcf": 31.72,
+          "ev_sales": 3.62,
+          "ev_ebitda": 17.38
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 31.72,
+          "ev_fcf_base": 31.72,
+          "ev_fcf_bull": 31.72
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 28.9,
+          "ev_fcf_base": 29.6,
+          "ev_fcf_bull": 30.4
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 26.0,
+          "ev_fcf_base": 27.5,
+          "ev_fcf_bull": 29.0
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 23.2,
+          "ev_fcf_base": 25.4,
+          "ev_fcf_bull": 27.7
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 20.3,
+          "ev_fcf_base": 23.3,
+          "ev_fcf_bull": 26.3
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 17.5,
+          "ev_fcf_base": 21.2,
+          "ev_fcf_bull": 25.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "ITX": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2022-01-31",
+          "period": "annual",
+          "mcap": 70535.7,
+          "ev": 70535.7,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-01-31",
+          "period": "annual",
+          "mcap": 77775.0,
+          "ev": 77810.0,
+          "ev_fcf": 14.8,
+          "ev_sales": 2.39,
+          "ev_ebitda": 9.4
+        },
+        {
+          "date": "2024-01-31",
+          "period": "annual",
+          "mcap": 113865.2,
+          "ev": 112597.2,
+          "ev_fcf": 16.57,
+          "ev_sales": 3.13,
+          "ev_ebitda": 11.22
+        },
+        {
+          "date": "2025-01-31",
+          "period": "annual",
+          "mcap": 160240.1,
+          "ev": 159767.1,
+          "ev_fcf": 24.15,
+          "ev_sales": 4.14,
+          "ev_ebitda": 14.39
+        },
+        {
+          "date": "2025-07-31",
+          "period": "quarterly_ttm",
+          "mcap": 131006.3,
+          "ev": 131458.3,
+          "ev_fcf": null,
+          "ev_sales": 3.38,
+          "ev_ebitda": 11.96
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 150723.6,
+          "ev": 150229.6,
+          "ev_fcf": null,
+          "ev_sales": 3.81,
+          "ev_ebitda": 13.39
+        },
+        {
+          "date": "2026-01-31",
+          "period": "annual",
+          "mcap": 177354.8,
+          "ev": 172080.2,
+          "ev_fcf": 26.39,
+          "ev_sales": 4.32,
+          "ev_ebitda": 14.76
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 26.39,
+          "ev_fcf_base": 26.39,
+          "ev_fcf_bull": 26.39
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 24.3,
+          "ev_fcf_base": 25.1,
+          "ev_fcf_bull": 25.9
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 22.2,
+          "ev_fcf_base": 23.8,
+          "ev_fcf_bull": 25.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 20.2,
+          "ev_fcf_base": 22.6,
+          "ev_fcf_bull": 25.0
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 18.1,
+          "ev_fcf_base": 21.3,
+          "ev_fcf_bull": 24.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 16.0,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 24.0
+        }
+      ],
+      "n_quarters": 7
+    },
+    "LOTB": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 4508.5,
+          "ev": 4508.5,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 4736.9,
+          "ev": 4926.7,
+          "ev_fcf": null,
+          "ev_sales": 5.61,
+          "ev_ebitda": 30.34
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 6197.2,
+          "ev": 6356.5,
+          "ev_fcf": 71.49,
+          "ev_sales": 5.98,
+          "ev_ebitda": 31.04
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 8682.3,
+          "ev": 8865.3,
+          "ev_fcf": 137.47,
+          "ev_sales": 7.2,
+          "ev_ebitda": 36.89
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 7092.5,
+          "ev": 7282.8,
+          "ev_fcf": 78.39,
+          "ev_sales": 5.37,
+          "ev_ebitda": 27.1
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 78.39,
+          "ev_fcf_base": 78.39,
+          "ev_fcf_bull": 78.39
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 65.7,
+          "ev_fcf_base": 66.7,
+          "ev_fcf_bull": 67.7
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 53.0,
+          "ev_fcf_base": 55.0,
+          "ev_fcf_bull": 57.0
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 40.4,
+          "ev_fcf_base": 43.4,
+          "ev_fcf_bull": 46.4
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 27.7,
+          "ev_fcf_base": 31.7,
+          "ev_fcf_bull": 35.7
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 25.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "HLMA": {
+      "currency": "GBp",
+      "history": [
+        {
+          "date": "2022-03-31",
+          "period": "annual",
+          "mcap": 956017.2,
+          "ev": 956292.0,
+          "ev_fcf": 4844.44,
+          "ev_sales": 626.95,
+          "ev_ebitda": 2381.21
+        },
+        {
+          "date": "2023-03-31",
+          "period": "annual",
+          "mcap": 822054.6,
+          "ev": 822651.3,
+          "ev_fcf": 3878.6,
+          "ev_sales": 444.0,
+          "ev_ebitda": 2003.53
+        },
+        {
+          "date": "2024-03-31",
+          "period": "annual",
+          "mcap": 860272.6,
+          "ev": 860925.8,
+          "ev_fcf": 2582.26,
+          "ev_sales": 423.25,
+          "ev_ebitda": 1810.57
+        },
+        {
+          "date": "2025-03-31",
+          "period": "annual",
+          "mcap": 954006.4,
+          "ev": 954542.2,
+          "ev_fcf": 2204.49,
+          "ev_sales": 424.6,
+          "ev_ebitda": 1776.55
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 2204.49,
+          "ev_fcf_base": 2204.49,
+          "ev_fcf_bull": 2204.49
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 1767.2,
+          "ev_fcf_base": 1768.2,
+          "ev_fcf_bull": 1769.2
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 1329.9,
+          "ev_fcf_base": 1331.9,
+          "ev_fcf_bull": 1333.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 892.6,
+          "ev_fcf_base": 895.6,
+          "ev_fcf_bull": 898.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 455.3,
+          "ev_fcf_base": 459.3,
+          "ev_fcf_bull": 463.3
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 23.0,
+          "ev_fcf_bull": 28.0
+        }
+      ],
+      "n_quarters": 4
+    },
+    "FICO": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-09-30",
+          "period": "annual",
+          "mcap": 9511.6,
+          "ev": 9511.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-09-30",
+          "period": "annual",
+          "mcap": 9401.3,
+          "ev": 11180.3,
+          "ev_fcf": 22.21,
+          "ev_sales": 8.12,
+          "ev_ebitda": 19.94
+        },
+        {
+          "date": "2023-09-30",
+          "period": "annual",
+          "mcap": 21092.5,
+          "ev": 22857.7,
+          "ev_fcf": 49.19,
+          "ev_sales": 15.1,
+          "ev_ebitda": 34.43
+        },
+        {
+          "date": "2024-09-30",
+          "period": "annual",
+          "mcap": 47077.0,
+          "ev": 49157.4,
+          "ev_fcf": 80.93,
+          "ev_sales": 28.62,
+          "ev_ebitda": 64.55
+        },
+        {
+          "date": "2025-09-30",
+          "period": "annual",
+          "mcap": 39502.3,
+          "ev": 42443.1,
+          "ev_fcf": 57.4,
+          "ev_sales": 21.32,
+          "ev_ebitda": 44.62
+        },
+        {
+          "date": "2025-12-31",
+          "period": "quarterly_ttm",
+          "mcap": 39509.9,
+          "ev": 42562.6,
+          "ev_fcf": 59.28,
+          "ev_sales": 20.63,
+          "ev_ebitda": 42.31
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 59.28,
+          "ev_fcf_base": 59.28,
+          "ev_fcf_bull": 59.28
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 51.0,
+          "ev_fcf_base": 51.8,
+          "ev_fcf_bull": 52.6
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 42.8,
+          "ev_fcf_base": 44.4,
+          "ev_fcf_bull": 46.0
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 34.5,
+          "ev_fcf_base": 36.9,
+          "ev_fcf_bull": 39.3
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 26.3,
+          "ev_fcf_base": 29.5,
+          "ev_fcf_bull": 32.7
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 22.0,
+          "ev_fcf_bull": 26.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "LIFCO B": {
+      "currency": "SEK",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 91863.9,
+          "ev": 91863.9,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 76587.7,
+          "ev": 83147.7,
+          "ev_fcf": 30.56,
+          "ev_sales": 3.86,
+          "ev_ebitda": 16.24
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 103355.8,
+          "ev": 111285.8,
+          "ev_fcf": 27.98,
+          "ev_sales": 4.55,
+          "ev_ebitda": 17.72
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 135406.6,
+          "ev": 144245.6,
+          "ev_fcf": 35.23,
+          "ev_sales": 5.52,
+          "ev_ebitda": 21.68
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 170551.8,
+          "ev": 180633.8,
+          "ev_fcf": 43.56,
+          "ev_sales": 6.62,
+          "ev_ebitda": 26.69
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 147664.6,
+          "ev": 156750.6,
+          "ev_fcf": 34.21,
+          "ev_sales": 5.55,
+          "ev_ebitda": 22.33
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 34.21,
+          "ev_fcf_base": 34.21,
+          "ev_fcf_bull": 34.21
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 30.6,
+          "ev_fcf_base": 31.6,
+          "ev_fcf_bull": 32.6
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 26.9,
+          "ev_fcf_base": 28.9,
+          "ev_fcf_bull": 30.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 23.3,
+          "ev_fcf_base": 26.3,
+          "ev_fcf_bull": 29.3
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 19.6,
+          "ev_fcf_base": 23.6,
+          "ev_fcf_bull": 27.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 16.0,
+          "ev_fcf_base": 21.0,
+          "ev_fcf_bull": 26.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "EVD": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 6090.5,
+          "ev": 5260.9,
+          "ev_fcf": 11.25,
+          "ev_sales": 12.9,
+          "ev_ebitda": 26.15
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 5735.5,
+          "ev": 4707.9,
+          "ev_fcf": 16.07,
+          "ev_sales": 2.44,
+          "ev_ebitda": 11.57
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 5579.1,
+          "ev": 4673.9,
+          "ev_fcf": 10.18,
+          "ev_sales": 1.98,
+          "ev_ebitda": 9.2
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 8213.9,
+          "ev": 6815.4,
+          "ev_fcf": 20.66,
+          "ev_sales": 2.43,
+          "ev_ebitda": 10.83
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 10088.7,
+          "ev": 9069.8,
+          "ev_fcf": 39.07,
+          "ev_sales": 3.13,
+          "ev_ebitda": 15.04
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 7607.3,
+          "ev": 6708.8,
+          "ev_fcf": 19.6,
+          "ev_sales": 2.29,
+          "ev_ebitda": 10.93
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 19.6,
+          "ev_fcf_base": 19.6,
+          "ev_fcf_bull": 19.6
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 18.1,
+          "ev_fcf_base": 18.9,
+          "ev_fcf_bull": 19.7
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 16.6,
+          "ev_fcf_base": 18.2,
+          "ev_fcf_bull": 19.8
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 17.4,
+          "ev_fcf_bull": 19.8
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 13.5,
+          "ev_fcf_base": 16.7,
+          "ev_fcf_bull": 19.9
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 16.0,
+          "ev_fcf_bull": 20.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "MNST": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 45340.6,
+          "ev": 45340.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 49154.4,
+          "ev": 47847.3,
+          "ev_fcf": 70.83,
+          "ev_sales": 7.58,
+          "ev_ebitda": 29.07
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 57608.4,
+          "ev": 55310.8,
+          "ev_fcf": 37.3,
+          "ev_sales": 7.75,
+          "ev_ebitda": 27.35
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 48641.0,
+          "ev": 47481.7,
+          "ev_fcf": 29.27,
+          "ev_sales": 6.34,
+          "ev_ebitda": 23.61
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 68081.8,
+          "ev": 65987.9,
+          "ev_fcf": 33.94,
+          "ev_sales": 8.27,
+          "ev_ebitda": 27.81
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 75631.2,
+          "ev": 73543.1,
+          "ev_fcf": 37.9,
+          "ev_sales": 8.87,
+          "ev_ebitda": 29.02
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 37.9,
+          "ev_fcf_base": 37.9,
+          "ev_fcf_bull": 37.9
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 33.9,
+          "ev_fcf_base": 34.3,
+          "ev_fcf_bull": 34.7
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 29.9,
+          "ev_fcf_base": 30.7,
+          "ev_fcf_bull": 31.5
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 26.0,
+          "ev_fcf_base": 27.2,
+          "ev_fcf_bull": 28.4
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 22.0,
+          "ev_fcf_base": 23.6,
+          "ev_fcf_bull": 25.2
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 22.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "ABNB": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 68072.5,
+          "ev": 68072.5,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 37503.2,
+          "ev": 32466.2,
+          "ev_fcf": 9.47,
+          "ev_sales": 3.87,
+          "ev_ebitda": 16.46
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 59198.6,
+          "ev": 54628.6,
+          "ev_fcf": 14.07,
+          "ev_sales": 5.51,
+          "ev_ebitda": 35.99
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 54907.8,
+          "ev": 50101.8,
+          "ev_fcf": 11.09,
+          "ev_sales": 4.51,
+          "ev_ebitda": 19.62
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 50062.1,
+          "ev": 44812.1,
+          "ev_fcf": 9.77,
+          "ev_sales": 3.75,
+          "ev_ebitda": 16.28
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 58991.1,
+          "ev": 54498.1,
+          "ev_fcf": 11.73,
+          "ev_sales": 4.45,
+          "ev_ebitda": 21.42
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 11.73,
+          "ev_fcf_base": 11.73,
+          "ev_fcf_bull": 11.73
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 12.6,
+          "ev_fcf_base": 13.4,
+          "ev_fcf_bull": 14.2
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 13.4,
+          "ev_fcf_base": 15.0,
+          "ev_fcf_bull": 16.6
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 14.3,
+          "ev_fcf_base": 16.7,
+          "ev_fcf_bull": 19.1
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 15.1,
+          "ev_fcf_base": 18.3,
+          "ev_fcf_bull": 21.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 16.0,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 24.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "DNP": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-10-31",
+          "period": "annual",
+          "mcap": 2924.6,
+          "ev": 2924.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-10-31",
+          "period": "annual",
+          "mcap": 3223.1,
+          "ev": 4053.4,
+          "ev_fcf": 22.24,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-10-31",
+          "period": "annual",
+          "mcap": 2785.4,
+          "ev": 3713.1,
+          "ev_fcf": 21.32,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-10-31",
+          "period": "annual",
+          "mcap": 3149.1,
+          "ev": 4098.1,
+          "ev_fcf": 19.95,
+          "ev_sales": 4.81,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2025-10-31",
+          "period": "annual",
+          "mcap": 3723.6,
+          "ev": 4669.9,
+          "ev_fcf": 19.8,
+          "ev_sales": 10.64,
+          "ev_ebitda": null
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 19.8,
+          "ev_fcf_base": 19.8,
+          "ev_fcf_bull": 19.8
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 18.8,
+          "ev_fcf_base": 19.3,
+          "ev_fcf_bull": 19.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 17.9,
+          "ev_fcf_base": 18.9,
+          "ev_fcf_bull": 19.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 16.9,
+          "ev_fcf_base": 18.4,
+          "ev_fcf_bull": 19.9
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 16.0,
+          "ev_fcf_base": 18.0,
+          "ev_fcf_bull": 20.0
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 17.5,
+          "ev_fcf_bull": 20.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "VLTO": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 18583.7,
+          "ev": 20598.7,
+          "ev_fcf": 22.66,
+          "ev_sales": 4.1,
+          "ev_ebitda": 16.98
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 24432.1,
+          "ev": 26098.1,
+          "ev_fcf": 31.83,
+          "ev_sales": 5.03,
+          "ev_ebitda": 20.44
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 24945.9,
+          "ev": 25842.9,
+          "ev_fcf": 26.21,
+          "ev_sales": 4.74,
+          "ev_ebitda": 19.26
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 25188.8,
+          "ev": 26036.8,
+          "ev_fcf": 25.68,
+          "ev_sales": 4.73,
+          "ev_ebitda": 19.33
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 25.68,
+          "ev_fcf_base": 25.68,
+          "ev_fcf_bull": 25.68
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 23.0,
+          "ev_fcf_base": 23.8,
+          "ev_fcf_bull": 24.5
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 20.4,
+          "ev_fcf_base": 21.9,
+          "ev_fcf_bull": 23.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 17.8,
+          "ev_fcf_base": 20.1,
+          "ev_fcf_bull": 22.3
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 15.1,
+          "ev_fcf_base": 18.1,
+          "ev_fcf_bull": 21.1
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 12.5,
+          "ev_fcf_base": 16.2,
+          "ev_fcf_bull": 20.0
+        }
+      ],
+      "n_quarters": 4
+    },
+    "LR": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 23657.1,
+          "ev": 23657.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 19486.3,
+          "ev": 21818.6,
+          "ev_fcf": 21.17,
+          "ev_sales": 2.62,
+          "ev_ebitda": 11.63
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 22460.1,
+          "ev": 24499.2,
+          "ev_fcf": 15.48,
+          "ev_sales": 2.91,
+          "ev_ebitda": 12.01
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 24569.9,
+          "ev": 27580.9,
+          "ev_fcf": 21.49,
+          "ev_sales": 3.19,
+          "ev_ebitda": 13.06
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 29638.7,
+          "ev": 32940.2,
+          "ev_fcf": 25.02,
+          "ev_sales": 3.58,
+          "ev_ebitda": 14.83
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 33062.6,
+          "ev": 37293.9,
+          "ev_fcf": 28.08,
+          "ev_sales": 3.93,
+          "ev_ebitda": 16.44
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 28.08,
+          "ev_fcf_base": 28.08,
+          "ev_fcf_bull": 28.08
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 25.1,
+          "ev_fcf_base": 26.2,
+          "ev_fcf_bull": 27.3
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 22.0,
+          "ev_fcf_base": 24.2,
+          "ev_fcf_bull": 26.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 19.0,
+          "ev_fcf_base": 22.3,
+          "ev_fcf_bull": 25.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 16.0,
+          "ev_fcf_base": 20.4,
+          "ev_fcf_bull": 24.8
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 13.0,
+          "ev_fcf_base": 18.5,
+          "ev_fcf_bull": 24.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "JDG": {
+      "currency": "GBp",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 56989.6,
+          "ev": 56992.5,
+          "ev_fcf": 4085.19,
+          "ev_sales": 624.31,
+          "ev_ebitda": 2797.18
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 54730.8,
+          "ev": 54769.9,
+          "ev_fcf": 3912.13,
+          "ev_sales": 483.83,
+          "ev_ebitda": 1733.22
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 64324.4,
+          "ev": 64376.0,
+          "ev_fcf": 3125.05,
+          "ev_sales": 473.0,
+          "ev_ebitda": 1773.44
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 52343.4,
+          "ev": 52399.1,
+          "ev_fcf": 2371.0,
+          "ev_sales": 392.21,
+          "ev_ebitda": 1695.76
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 2371.0,
+          "ev_fcf_base": 2371.0,
+          "ev_fcf_bull": 2371.0
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 1898.8,
+          "ev_fcf_base": 1899.8,
+          "ev_fcf_bull": 1900.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 1426.6,
+          "ev_fcf_base": 1428.6,
+          "ev_fcf_bull": 1430.6
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 954.4,
+          "ev_fcf_base": 957.4,
+          "ev_fcf_bull": 960.4
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 482.2,
+          "ev_fcf_base": 486.2,
+          "ev_fcf_bull": 490.2
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 10.0,
+          "ev_fcf_base": 15.0,
+          "ev_fcf_bull": 20.0
+        }
+      ],
+      "n_quarters": 4
+    },
+    "STMN": {
+      "currency": "CHF",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 26088.9,
+          "ev": 26088.9,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 18069.5,
+          "ev": 18075.0,
+          "ev_fcf": 82.26,
+          "ev_sales": 7.79,
+          "ev_ebitda": 26.65
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 20350.4,
+          "ev": 20352.4,
+          "ev_fcf": 64.28,
+          "ev_sales": 8.94,
+          "ev_ebitda": 29.71
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 18816.9,
+          "ev": 18855.3,
+          "ev_fcf": 59.74,
+          "ev_sales": 7.53,
+          "ev_ebitda": 25.97
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 15984.9,
+          "ev": 15928.4,
+          "ev_fcf": 56.78,
+          "ev_sales": 6.11,
+          "ev_ebitda": 25.34
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 56.78,
+          "ev_fcf_base": 56.78,
+          "ev_fcf_bull": 56.78
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 49.0,
+          "ev_fcf_base": 49.7,
+          "ev_fcf_bull": 50.4
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 41.3,
+          "ev_fcf_base": 42.7,
+          "ev_fcf_bull": 44.1
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 33.5,
+          "ev_fcf_base": 35.6,
+          "ev_fcf_bull": 37.7
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 25.8,
+          "ev_fcf_base": 28.6,
+          "ev_fcf_bull": 31.4
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 21.5,
+          "ev_fcf_bull": 25.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "META": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 714847.0,
+          "ev": 714847.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 289778.1,
+          "ev": 301688.1,
+          "ev_fcf": 15.64,
+          "ev_sales": 2.59,
+          "ev_ebitda": 8.0
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 807234.3,
+          "ev": 802606.3,
+          "ev_fcf": 18.21,
+          "ev_sales": 5.95,
+          "ev_ebitda": 13.59
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 1347051.9,
+          "ev": 1352222.9,
+          "ev_fcf": 25.01,
+          "ev_sales": 8.22,
+          "ev_ebitda": 15.56
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 1546284.8,
+          "ev": 1587157.8,
+          "ev_fcf": 35.4,
+          "ev_sales": 8.38,
+          "ev_ebitda": 15.45
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 1432922.7,
+          "ev": 1480946.7,
+          "ev_fcf": 32.12,
+          "ev_sales": 7.37,
+          "ev_ebitda": 14.01
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 32.12,
+          "ev_fcf_base": 32.12,
+          "ev_fcf_bull": 32.12
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 29.3,
+          "ev_fcf_base": 30.1,
+          "ev_fcf_bull": 30.9
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 26.5,
+          "ev_fcf_base": 28.1,
+          "ev_fcf_bull": 29.7
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 23.6,
+          "ev_fcf_base": 26.0,
+          "ev_fcf_bull": 28.4
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 20.8,
+          "ev_fcf_base": 24.0,
+          "ev_fcf_bull": 27.2
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 22.0,
+          "ev_fcf_bull": 26.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "KKR": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 59593.1,
+          "ev": 59593.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 43594.5,
+          "ev": 74846.0,
+          "ev_fcf": null,
+          "ev_sales": 13.45,
+          "ev_ebitda": 55.62
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 72479.5,
+          "ev": 101518.5,
+          "ev_fcf": null,
+          "ev_sales": 7.09,
+          "ev_ebitda": 10.69
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 124709.1,
+          "ev": 160647.1,
+          "ev_fcf": 24.68,
+          "ev_sales": 7.42,
+          "ev_ebitda": 17.53
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 104689.7,
+          "ev": 136456.9,
+          "ev_fcf": 26.83,
+          "ev_sales": 8.16,
+          "ev_ebitda": 14.69
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 119829.0,
+          "ev": 157474.7,
+          "ev_fcf": 496.77,
+          "ev_sales": 8.2,
+          "ev_ebitda": 15.48
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 496.77,
+          "ev_fcf_base": 496.77,
+          "ev_fcf_bull": 496.77
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 400.4,
+          "ev_fcf_base": 401.4,
+          "ev_fcf_bull": 402.4
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 304.1,
+          "ev_fcf_base": 306.1,
+          "ev_fcf_bull": 308.1
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 207.7,
+          "ev_fcf_base": 210.7,
+          "ev_fcf_bull": 213.7
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 111.4,
+          "ev_fcf_base": 115.4,
+          "ev_fcf_bull": 119.4
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 25.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "NET": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 35171.6,
+          "ev": 35171.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 13274.7,
+          "ev": 14647.6,
+          "ev_fcf": null,
+          "ev_sales": 15.02,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 25714.1,
+          "ev": 27062.5,
+          "ev_fcf": 226.53,
+          "ev_sales": 20.87,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 35765.4,
+          "ev": 37080.9,
+          "ev_fcf": 222.15,
+          "ev_sales": 22.21,
+          "ev_ebitda": 597.63
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 67904.1,
+          "ev": 70353.2,
+          "ev_fcf": 336.82,
+          "ev_sales": 34.94,
+          "ev_ebitda": 802.34
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 58046.6,
+          "ev": 60621.3,
+          "ev_fcf": 232.66,
+          "ev_sales": 27.96,
+          "ev_ebitda": 572.97
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 232.66,
+          "ev_fcf_base": 232.66,
+          "ev_fcf_bull": 232.66
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 190.1,
+          "ev_fcf_base": 191.1,
+          "ev_fcf_bull": 192.1
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 147.6,
+          "ev_fcf_base": 149.6,
+          "ev_fcf_bull": 151.6
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 105.1,
+          "ev_fcf_base": 108.1,
+          "ev_fcf_bull": 111.1
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 62.5,
+          "ev_fcf_base": 66.5,
+          "ev_fcf_bull": 70.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 20.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "CRWD": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2022-01-31",
+          "period": "annual",
+          "mcap": 47649.0,
+          "ev": 47649.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-01-31",
+          "period": "annual",
+          "mcap": 27633.8,
+          "ev": 25962.0,
+          "ev_fcf": 38.49,
+          "ev_sales": 11.58,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-01-31",
+          "period": "annual",
+          "mcap": 83525.3,
+          "ev": 80943.1,
+          "ev_fcf": 87.12,
+          "ev_sales": 26.49,
+          "ev_ebitda": 292.55
+        },
+        {
+          "date": "2025-01-31",
+          "period": "annual",
+          "mcap": 108780.2,
+          "ev": 105245.8,
+          "ev_fcf": 98.55,
+          "ev_sales": 26.62,
+          "ev_ebitda": 352.19
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 141397.5,
+          "ev": 137414.4,
+          "ev_fcf": 124.45,
+          "ev_sales": 30.1,
+          "ev_ebitda": 2401.3
+        },
+        {
+          "date": "2026-01-31",
+          "period": "annual",
+          "mcap": 104841.5,
+          "ev": 100431.5,
+          "ev_fcf": 80.9,
+          "ev_sales": 20.87,
+          "ev_ebitda": 550.36
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 80.9,
+          "ev_fcf_base": 80.9,
+          "ev_fcf_bull": 80.9
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 68.7,
+          "ev_fcf_base": 69.7,
+          "ev_fcf_bull": 70.7
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 56.5,
+          "ev_fcf_base": 58.5,
+          "ev_fcf_bull": 60.5
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 44.4,
+          "ev_fcf_base": 47.4,
+          "ev_fcf_bull": 50.4
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 32.2,
+          "ev_fcf_base": 36.2,
+          "ev_fcf_bull": 40.2
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 20.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "GOOG": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 747429.2,
+          "ev": 747429.2,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 481335.4,
+          "ev": 489135.4,
+          "ev_fcf": 8.15,
+          "ev_sales": 1.73,
+          "ev_ebitda": 5.74
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 775616.7,
+          "ev": 778689.7,
+          "ev_fcf": 11.2,
+          "ev_sales": 2.53,
+          "ev_ebitda": 7.95
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 1045648.2,
+          "ev": 1044756.2,
+          "ev_fcf": 14.36,
+          "ev_sales": 2.98,
+          "ev_ebitda": 7.72
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 1289720.0,
+          "ev": 1288237.0,
+          "ev_fcf": 17.51,
+          "ev_sales": 3.34,
+          "ev_ebitda": 7.5
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 1788603.3,
+          "ev": 1817186.3,
+          "ev_fcf": 24.8,
+          "ev_sales": 4.51,
+          "ev_ebitda": 10.06
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 24.8,
+          "ev_fcf_base": 24.8,
+          "ev_fcf_bull": 24.8
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 23.8,
+          "ev_fcf_base": 24.8,
+          "ev_fcf_bull": 25.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 22.9,
+          "ev_fcf_base": 24.9,
+          "ev_fcf_bull": 26.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 21.9,
+          "ev_fcf_base": 24.9,
+          "ev_fcf_bull": 27.9
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 21.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 29.0
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 20.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "ABBNE": {
+      "currency": "CHF",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 52678.8,
+          "ev": 52678.8,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 50487.8,
+          "ev": 54880.8,
+          "ev_fcf": 104.53,
+          "ev_sales": 1.86,
+          "ev_ebitda": 12.65
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 62449.8,
+          "ev": 67301.8,
+          "ev_fcf": 19.12,
+          "ev_sales": 2.09,
+          "ev_ebitda": 11.54
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 86367.3,
+          "ev": 89749.3,
+          "ev_fcf": 23.16,
+          "ev_sales": 2.93,
+          "ev_ebitda": 15.59
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 85677.0,
+          "ev": 90119.0,
+          "ev_fcf": 24.1,
+          "ev_sales": 2.73,
+          "ev_ebitda": 13.66
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 107561.1,
+          "ev": 112011.1,
+          "ev_fcf": 25.07,
+          "ev_sales": 3.37,
+          "ev_ebitda": 15.74
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 25.07,
+          "ev_fcf_base": 25.07,
+          "ev_fcf_bull": 25.07
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 22.9,
+          "ev_fcf_base": 24.0,
+          "ev_fcf_bull": 25.1
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 20.6,
+          "ev_fcf_base": 22.8,
+          "ev_fcf_bull": 25.0
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 18.4,
+          "ev_fcf_base": 21.7,
+          "ev_fcf_bull": 25.0
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 16.2,
+          "ev_fcf_base": 20.6,
+          "ev_fcf_bull": 25.0
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 14.0,
+          "ev_fcf_base": 19.5,
+          "ev_fcf_bull": 25.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "GRMN": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 22790.1,
+          "ev": 22790.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 17853.8,
+          "ev": 16689.1,
+          "ev_fcf": 30.68,
+          "ev_sales": 3.43,
+          "ev_ebitda": 14.0
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 22858.2,
+          "ev": 21277.7,
+          "ev_fcf": 17.99,
+          "ev_sales": 4.07,
+          "ev_ebitda": 16.76
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 39465.6,
+          "ev": 37521.0,
+          "ev_fcf": 30.29,
+          "ev_sales": 5.96,
+          "ev_ebitda": 21.15
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 47355.7,
+          "ev": 45438.6,
+          "ev_fcf": 34.1,
+          "ev_sales": 6.54,
+          "ev_ebitda": 23.1
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 40698.1,
+          "ev": 38584.3,
+          "ev_fcf": 28.31,
+          "ev_sales": 5.33,
+          "ev_ebitda": 18.69
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 28.31,
+          "ev_fcf_base": 28.31,
+          "ev_fcf_bull": 28.31
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 26.2,
+          "ev_fcf_base": 27.0,
+          "ev_fcf_bull": 27.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 24.2,
+          "ev_fcf_base": 25.8,
+          "ev_fcf_bull": 27.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 22.1,
+          "ev_fcf_base": 24.5,
+          "ev_fcf_bull": 26.9
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 20.1,
+          "ev_fcf_base": 23.3,
+          "ev_fcf_bull": 26.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 22.0,
+          "ev_fcf_bull": 26.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "KRX": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 16710.8,
+          "ev": 16710.8,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 9803.0,
+          "ev": 11539.4,
+          "ev_fcf": 27.29,
+          "ev_sales": 1.38,
+          "ev_ebitda": 11.73
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 13054.8,
+          "ev": 14254.1,
+          "ev_fcf": 15.42,
+          "ev_sales": 1.76,
+          "ev_ebitda": 13.07
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 11629.0,
+          "ev": 13445.2,
+          "ev_fcf": 25.47,
+          "ev_sales": 1.56,
+          "ev_ebitda": 11.44
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 13130.9,
+          "ev": 15235.8,
+          "ev_fcf": 33.52,
+          "ev_sales": 1.66,
+          "ev_ebitda": 12.25
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 33.52,
+          "ev_fcf_base": 33.52,
+          "ev_fcf_bull": 33.52
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 29.6,
+          "ev_fcf_base": 30.4,
+          "ev_fcf_bull": 31.2
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 25.7,
+          "ev_fcf_base": 27.3,
+          "ev_fcf_bull": 28.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 21.8,
+          "ev_fcf_base": 24.2,
+          "ev_fcf_bull": 26.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 17.9,
+          "ev_fcf_base": 21.1,
+          "ev_fcf_bull": 24.3
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 14.0,
+          "ev_fcf_base": 18.0,
+          "ev_fcf_bull": 22.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "KSPI": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 17025.4,
+          "ev": -380988.6,
+          "ev_fcf": -0.78,
+          "ev_sales": -0.15,
+          "ev_ebitda": -0.3
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 13697.6,
+          "ev": -49767.4,
+          "ev_fcf": -0.14,
+          "ev_sales": -0.01,
+          "ev_ebitda": -0.03
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 15206.3,
+          "ev": -417360.7,
+          "ev_fcf": -0.85,
+          "ev_sales": -0.1,
+          "ev_ebitda": -0.32
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": -0.85,
+          "ev_fcf_base": -0.85,
+          "ev_fcf_bull": -0.85
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 0.9,
+          "ev_fcf_base": 1.6,
+          "ev_fcf_bull": 2.3
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 2.7,
+          "ev_fcf_base": 4.1,
+          "ev_fcf_bull": 5.5
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 4.5,
+          "ev_fcf_base": 6.6,
+          "ev_fcf_bull": 8.7
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 6.2,
+          "ev_fcf_base": 9.0,
+          "ev_fcf_bull": 11.8
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 8.0,
+          "ev_fcf_base": 11.5,
+          "ev_fcf_bull": 15.0
+        }
+      ],
+      "n_quarters": 3
+    },
+    "CBAV": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 246.6,
+          "ev": 275.3,
+          "ev_fcf": 7.0,
+          "ev_sales": 1.39,
+          "ev_ebitda": 4.91
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 343.3,
+          "ev": 382.5,
+          "ev_fcf": 10.89,
+          "ev_sales": 1.7,
+          "ev_ebitda": 5.69
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 509.3,
+          "ev": 562.6,
+          "ev_fcf": 15.63,
+          "ev_sales": 2.14,
+          "ev_ebitda": 7.2
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 656.8,
+          "ev": 679.5,
+          "ev_fcf": 14.65,
+          "ev_sales": 2.31,
+          "ev_ebitda": 8.06
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 813.7,
+          "ev": 878.8,
+          "ev_fcf": 18.77,
+          "ev_sales": 2.91,
+          "ev_ebitda": 10.18
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 18.77,
+          "ev_fcf_base": 18.77,
+          "ev_fcf_bull": 18.77
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 17.4,
+          "ev_fcf_base": 17.9,
+          "ev_fcf_bull": 18.3
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 16.1,
+          "ev_fcf_base": 17.0,
+          "ev_fcf_bull": 17.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 14.7,
+          "ev_fcf_base": 16.0,
+          "ev_fcf_bull": 17.4
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 13.4,
+          "ev_fcf_base": 15.2,
+          "ev_fcf_bull": 17.0
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 14.2,
+          "ev_fcf_bull": 16.5
+        }
+      ],
+      "n_quarters": 5
+    },
+    "NVDA": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2022-01-31",
+          "period": "annual",
+          "mcap": 626276.0,
+          "ev": 626276.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-01-31",
+          "period": "annual",
+          "mcap": 516194.8,
+          "ev": 524836.8,
+          "ev_fcf": 137.82,
+          "ev_sales": 19.46,
+          "ev_ebitda": 87.68
+        },
+        {
+          "date": "2024-01-31",
+          "period": "annual",
+          "mcap": 1751761.3,
+          "ev": 1755537.3,
+          "ev_fcf": 64.97,
+          "ev_sales": 28.82,
+          "ev_ebitda": 49.34
+        },
+        {
+          "date": "2025-01-31",
+          "period": "annual",
+          "mcap": 3244688.1,
+          "ev": 3246081.1,
+          "ev_fcf": 53.34,
+          "ev_sales": 24.87,
+          "ev_ebitda": 37.69
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 4836384.1,
+          "ev": 4835379.1,
+          "ev_fcf": 62.53,
+          "ev_sales": 25.84,
+          "ev_ebitda": 40.6
+        },
+        {
+          "date": "2026-01-31",
+          "period": "annual",
+          "mcap": 4581273.8,
+          "ev": 4581708.8,
+          "ev_fcf": 47.39,
+          "ev_sales": 21.22,
+          "ev_ebitda": 31.7
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 47.39,
+          "ev_fcf_base": 47.39,
+          "ev_fcf_bull": 47.39
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 41.9,
+          "ev_fcf_base": 42.9,
+          "ev_fcf_bull": 43.9
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 36.4,
+          "ev_fcf_base": 38.4,
+          "ev_fcf_bull": 40.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 31.0,
+          "ev_fcf_base": 34.0,
+          "ev_fcf_bull": 37.0
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 25.5,
+          "ev_fcf_base": 29.5,
+          "ev_fcf_bull": 33.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 20.0,
+          "ev_fcf_base": 25.0,
+          "ev_fcf_bull": 30.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "COR": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-09-30",
+          "period": "annual",
+          "mcap": 21944.1,
+          "ev": 21944.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-09-30",
+          "period": "annual",
+          "mcap": 25916.2,
+          "ev": 28230.8,
+          "ev_fcf": 12.79,
+          "ev_sales": 0.12,
+          "ev_ebitda": 9.1
+        },
+        {
+          "date": "2023-09-30",
+          "period": "annual",
+          "mcap": 35812.0,
+          "ev": 38007.4,
+          "ev_fcf": 11.01,
+          "ev_sales": 0.14,
+          "ev_ebitda": 11.28
+        },
+        {
+          "date": "2024-09-30",
+          "period": "annual",
+          "mcap": 42723.7,
+          "ev": 43979.1,
+          "ev_fcf": 14.67,
+          "ev_sales": 0.15,
+          "ev_ebitda": 13.04
+        },
+        {
+          "date": "2025-09-30",
+          "period": "annual",
+          "mcap": 61653.6,
+          "ev": 64958.3,
+          "ev_fcf": 20.25,
+          "ev_sales": 0.2,
+          "ev_ebitda": 17.34
+        },
+        {
+          "date": "2025-12-31",
+          "period": "quarterly_ttm",
+          "mcap": 65190.4,
+          "ev": 71359.0,
+          "ev_fcf": 19.78,
+          "ev_sales": 0.22,
+          "ev_ebitda": 18.54
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 19.78,
+          "ev_fcf_base": 19.78,
+          "ev_fcf_bull": 19.78
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 17.5,
+          "ev_fcf_base": 17.9,
+          "ev_fcf_bull": 18.2
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 15.3,
+          "ev_fcf_base": 16.0,
+          "ev_fcf_bull": 16.7
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 13.0,
+          "ev_fcf_base": 14.1,
+          "ev_fcf_bull": 15.1
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 10.8,
+          "ev_fcf_base": 12.2,
+          "ev_fcf_bull": 13.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 8.5,
+          "ev_fcf_base": 10.2,
+          "ev_fcf_bull": 12.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "TSM": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 603998.6,
+          "ev": 603998.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 401140.3,
+          "ev": -53499.4,
+          "ev_fcf": -0.1,
+          "ev_sales": -0.02,
+          "ev_ebitda": -0.03
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 507208.9,
+          "ev": -1961.0,
+          "ev_fcf": -0.01,
+          "ev_sales": -0.0,
+          "ev_ebitda": -0.0
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 1063326.0,
+          "ev": -17258.9,
+          "ev_fcf": -0.02,
+          "ev_sales": -0.01,
+          "ev_ebitda": -0.01
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 1447616.9,
+          "ev": -73935.3,
+          "ev_fcf": -0.08,
+          "ev_sales": -0.02,
+          "ev_ebitda": -0.03
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 1673758.3,
+          "ev": -29515.4,
+          "ev_fcf": -0.03,
+          "ev_sales": -0.01,
+          "ev_ebitda": -0.01
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": -0.03,
+          "ev_fcf_base": -0.03,
+          "ev_fcf_bull": -0.03
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 2.8,
+          "ev_fcf_base": 3.6,
+          "ev_fcf_bull": 4.4
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 5.6,
+          "ev_fcf_base": 7.2,
+          "ev_fcf_bull": 8.8
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 8.4,
+          "ev_fcf_base": 10.8,
+          "ev_fcf_bull": 13.2
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 11.2,
+          "ev_fcf_base": 14.4,
+          "ev_fcf_bull": 17.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 14.0,
+          "ev_fcf_base": 18.0,
+          "ev_fcf_bull": 22.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "SPOT": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 46202.1,
+          "ev": 46202.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 18692.1,
+          "ev": 17892.1,
+          "ev_fcf": 852.0,
+          "ev_sales": 1.53,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 40515.6,
+          "ev": 39097.6,
+          "ev_fcf": 58.01,
+          "ev_sales": 2.95,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 94609.1,
+          "ev": 91904.1,
+          "ev_fcf": 40.24,
+          "ev_sales": 5.86,
+          "ev_ebitda": 61.35
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 141089.1,
+          "ev": 137879.1,
+          "ev_fcf": 47.3,
+          "ev_sales": 8.16,
+          "ev_ebitda": 74.85
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 111046.8,
+          "ev": 107744.8,
+          "ev_fcf": 37.52,
+          "ev_sales": 6.27,
+          "ev_ebitda": 45.71
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 37.52,
+          "ev_fcf_base": 37.52,
+          "ev_fcf_bull": 37.52
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 33.6,
+          "ev_fcf_base": 34.3,
+          "ev_fcf_bull": 35.0
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 29.7,
+          "ev_fcf_base": 31.1,
+          "ev_fcf_bull": 32.5
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 25.8,
+          "ev_fcf_base": 27.9,
+          "ev_fcf_bull": 30.0
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 21.9,
+          "ev_fcf_base": 24.7,
+          "ev_fcf_bull": 27.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 21.5,
+          "ev_fcf_bull": 25.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "PRY": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 8819.7,
+          "ev": 8819.7,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 9451.6,
+          "ev": 11233.6,
+          "ev_fcf": 19.24,
+          "ev_sales": 0.7,
+          "ev_ebitda": 9.46
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 11225.5,
+          "ev": 12530.5,
+          "ev_fcf": 15.82,
+          "ev_sales": 0.82,
+          "ev_ebitda": 8.57
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 18558.6,
+          "ev": 22940.6,
+          "ev_fcf": 20.12,
+          "ev_sales": 1.35,
+          "ev_ebitda": 13.82
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 17587.3,
+          "ev": 22314.3,
+          "ev_fcf": 18.93,
+          "ev_sales": 1.18,
+          "ev_ebitda": 10.34
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 25032.9,
+          "ev": 28215.9,
+          "ev_fcf": 20.58,
+          "ev_sales": 1.44,
+          "ev_ebitda": 11.23
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 20.58,
+          "ev_fcf_base": 20.58,
+          "ev_fcf_bull": 20.58
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 20.1,
+          "ev_fcf_base": 20.6,
+          "ev_fcf_bull": 21.0
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 19.5,
+          "ev_fcf_base": 20.4,
+          "ev_fcf_bull": 21.3
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 19.0,
+          "ev_fcf_base": 20.4,
+          "ev_fcf_bull": 21.7
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 18.5,
+          "ev_fcf_base": 20.3,
+          "ev_fcf_bull": 22.1
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 20.2,
+          "ev_fcf_bull": 22.5
+        }
+      ],
+      "n_quarters": 6
+    },
+    "JFN": {
+      "currency": "CHF",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 737.0,
+          "ev": 737.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 669.1,
+          "ev": 730.3,
+          "ev_fcf": 12.54,
+          "ev_sales": 4.09,
+          "ev_ebitda": 7.65
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 899.2,
+          "ev": 985.1,
+          "ev_fcf": 16.73,
+          "ev_sales": 4.01,
+          "ev_ebitda": 7.04
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 1027.1,
+          "ev": 1051.0,
+          "ev_fcf": 15.6,
+          "ev_sales": 4.03,
+          "ev_ebitda": 7.73
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 1662.9,
+          "ev": 1689.5,
+          "ev_fcf": 22.7,
+          "ev_sales": 6.21,
+          "ev_ebitda": 12.16
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 22.7,
+          "ev_fcf_base": 22.7,
+          "ev_fcf_bull": 22.7
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 21.2,
+          "ev_fcf_base": 21.9,
+          "ev_fcf_bull": 22.6
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 19.6,
+          "ev_fcf_base": 21.0,
+          "ev_fcf_bull": 22.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 18.1,
+          "ev_fcf_base": 20.2,
+          "ev_fcf_bull": 22.3
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 16.5,
+          "ev_fcf_base": 19.3,
+          "ev_fcf_bull": 22.1
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 18.5,
+          "ev_fcf_bull": 22.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "CPR": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 14092.2,
+          "ev": 14092.2,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 11546.6,
+          "ev": 12900.5,
+          "ev_fcf": 513.96,
+          "ev_sales": 4.78,
+          "ev_ebitda": 21.61
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 10918.3,
+          "ev": 12551.9,
+          "ev_fcf": null,
+          "ev_sales": 4.3,
+          "ev_ebitda": 19.39
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 6728.0,
+          "ev": 8925.3,
+          "ev_fcf": 42.42,
+          "ev_sales": 2.91,
+          "ev_ebitda": 18.09
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 7540.4,
+          "ev": 9789.4,
+          "ev_fcf": null,
+          "ev_sales": 3.18,
+          "ev_ebitda": 28.15
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 6893.0,
+          "ev": 8751.2,
+          "ev_fcf": 22.54,
+          "ev_sales": 2.87,
+          "ev_ebitda": 12.26
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 22.54,
+          "ev_fcf_base": 22.54,
+          "ev_fcf_bull": 22.54
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 21.0,
+          "ev_fcf_base": 21.5,
+          "ev_fcf_bull": 22.0
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 19.5,
+          "ev_fcf_base": 20.5,
+          "ev_fcf_bull": 21.5
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 19.5,
+          "ev_fcf_bull": 21.0
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 16.5,
+          "ev_fcf_base": 18.5,
+          "ev_fcf_bull": 20.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 17.5,
+          "ev_fcf_bull": 20.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "SIKA": {
+      "currency": "CHF",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 50481.4,
+          "ev": 50481.4,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 35991.6,
+          "ev": 38013.1,
+          "ev_fcf": 45.59,
+          "ev_sales": 3.62,
+          "ev_ebitda": 19.57
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 36995.2,
+          "ev": 42189.4,
+          "ev_fcf": 29.41,
+          "ev_sales": 3.75,
+          "ev_ebitda": 21.12
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 33466.6,
+          "ev": 38482.8,
+          "ev_fcf": 27.81,
+          "ev_sales": 3.27,
+          "ev_ebitda": 16.7
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 25738.2,
+          "ev": 30454.4,
+          "ev_fcf": 22.86,
+          "ev_sales": 2.72,
+          "ev_ebitda": 14.82
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 22.86,
+          "ev_fcf_base": 22.86,
+          "ev_fcf_bull": 22.86
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 21.9,
+          "ev_fcf_base": 22.4,
+          "ev_fcf_bull": 22.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 20.9,
+          "ev_fcf_base": 21.8,
+          "ev_fcf_bull": 22.7
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 19.9,
+          "ev_fcf_base": 21.2,
+          "ev_fcf_bull": 22.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 19.0,
+          "ev_fcf_base": 20.8,
+          "ev_fcf_bull": 22.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 20.2,
+          "ev_fcf_bull": 22.5
+        }
+      ],
+      "n_quarters": 5
+    },
+    "CHKP": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 12623.6,
+          "ev": 12623.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 12991.6,
+          "ev": 12795.6,
+          "ev_fcf": 11.89,
+          "ev_sales": 5.49,
+          "ev_ebitda": 13.24
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 16179.0,
+          "ev": 15641.3,
+          "ev_fcf": 15.35,
+          "ev_sales": 6.48,
+          "ev_ebitda": 15.26
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 18970.4,
+          "ev": 18464.2,
+          "ev_fcf": 17.96,
+          "ev_sales": 7.2,
+          "ev_ebitda": 17.46
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 20383.8,
+          "ev": 19763.9,
+          "ev_fcf": 17.47,
+          "ev_sales": 7.36,
+          "ev_ebitda": 18.8
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 20082.5,
+          "ev": 20254.6,
+          "ev_fcf": 17.27,
+          "ev_sales": 7.43,
+          "ev_ebitda": 19.48
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 17.27,
+          "ev_fcf_base": 17.27,
+          "ev_fcf_bull": 17.27
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 15.9,
+          "ev_fcf_bull": 16.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 12.8,
+          "ev_fcf_base": 14.6,
+          "ev_fcf_bull": 16.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 10.5,
+          "ev_fcf_base": 13.2,
+          "ev_fcf_bull": 15.9
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 8.3,
+          "ev_fcf_base": 11.9,
+          "ev_fcf_bull": 15.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 6.0,
+          "ev_fcf_base": 10.5,
+          "ev_fcf_bull": 15.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "TGYM": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 1407.5,
+          "ev": 1407.5,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 1381.1,
+          "ev": 1279.6,
+          "ev_fcf": 16.56,
+          "ev_sales": 1.77,
+          "ev_ebitda": 10.28
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 1599.3,
+          "ev": 1476.2,
+          "ev_fcf": 20.9,
+          "ev_sales": 1.83,
+          "ev_ebitda": 10.06
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 1911.5,
+          "ev": 1753.5,
+          "ev_fcf": 15.4,
+          "ev_sales": 1.95,
+          "ev_ebitda": 10.01
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 3417.8,
+          "ev": 3267.7,
+          "ev_fcf": 28.18,
+          "ev_sales": 3.21,
+          "ev_ebitda": 15.4
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 28.18,
+          "ev_fcf_base": 28.18,
+          "ev_fcf_bull": 28.18
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 25.5,
+          "ev_fcf_base": 26.2,
+          "ev_fcf_bull": 27.0
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 22.9,
+          "ev_fcf_base": 24.4,
+          "ev_fcf_bull": 25.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 20.3,
+          "ev_fcf_base": 22.6,
+          "ev_fcf_bull": 24.8
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 17.6,
+          "ev_fcf_base": 20.6,
+          "ev_fcf_bull": 23.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 15.0,
+          "ev_fcf_base": 18.8,
+          "ev_fcf_bull": 22.5
+        }
+      ],
+      "n_quarters": 5
+    },
+    "VID": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 2392.3,
+          "ev": 2392.3,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 2672.1,
+          "ev": 2795.1,
+          "ev_fcf": null,
+          "ev_sales": 2.08,
+          "ev_ebitda": 10.12
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 2923.6,
+          "ev": 3404.5,
+          "ev_fcf": 30.47,
+          "ev_sales": 2.38,
+          "ev_ebitda": 9.24
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 3039.2,
+          "ev": 3285.0,
+          "ev_fcf": 16.96,
+          "ev_sales": 2.06,
+          "ev_ebitda": 7.12
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 3164.9,
+          "ev": 3171.7,
+          "ev_fcf": 16.54,
+          "ev_sales": 2.16,
+          "ev_ebitda": 7.2
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 16.54,
+          "ev_fcf_base": 16.54,
+          "ev_fcf_bull": 16.54
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 15.2,
+          "ev_fcf_base": 16.0,
+          "ev_fcf_bull": 16.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 13.9,
+          "ev_fcf_base": 15.5,
+          "ev_fcf_bull": 17.1
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 12.6,
+          "ev_fcf_base": 15.0,
+          "ev_fcf_bull": 17.4
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 11.3,
+          "ev_fcf_base": 14.5,
+          "ev_fcf_bull": 17.7
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 10.0,
+          "ev_fcf_base": 14.0,
+          "ev_fcf_bull": 18.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "TFPM": {
+      "currency": "CAD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 3071.0,
+          "ev": 3071.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 3771.0,
+          "ev": 3701.8,
+          "ev_fcf": 56.01,
+          "ev_sales": 24.37,
+          "ev_ebitda": 32.57
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 3394.7,
+          "ev": 3436.5,
+          "ev_fcf": null,
+          "ev_sales": 16.84,
+          "ev_ebitda": 31.47
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 4568.6,
+          "ev": 4534.0,
+          "ev_fcf": 29.06,
+          "ev_sales": 16.86,
+          "ev_ebitda": 65.95
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 8646.5,
+          "ev": 8652.0,
+          "ev_fcf": 580.71,
+          "ev_sales": 25.15,
+          "ev_ebitda": 32.07
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 10084.8,
+          "ev": 10015.0,
+          "ev_fcf": 106.3,
+          "ev_sales": 25.77,
+          "ev_ebitda": 28.36
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 106.3,
+          "ev_fcf_base": 106.3,
+          "ev_fcf_bull": 106.3
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 88.6,
+          "ev_fcf_base": 89.0,
+          "ev_fcf_bull": 89.4
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 71.0,
+          "ev_fcf_base": 71.8,
+          "ev_fcf_bull": 72.6
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 53.3,
+          "ev_fcf_base": 54.5,
+          "ev_fcf_bull": 55.7
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 35.7,
+          "ev_fcf_base": 37.3,
+          "ev_fcf_bull": 38.9
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 22.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "NFLX": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 227320.0,
+          "ev": 227320.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 137920.5,
+          "ev": 147126.4,
+          "ev_fcf": 90.9,
+          "ev_sales": 4.65,
+          "ev_ebitda": 7.24
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 201415.1,
+          "ev": 208841.5,
+          "ev_fcf": 30.15,
+          "ev_sales": 6.19,
+          "ev_ebitda": 9.71
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 352734.4,
+          "ev": 360512.4,
+          "ev_fcf": 52.08,
+          "ev_sales": 9.24,
+          "ev_ebitda": 13.7
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 513751.1,
+          "ev": 518926.9,
+          "ev_fcf": 57.87,
+          "ev_sales": 11.96,
+          "ev_ebitda": 17.91
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 376698.0,
+          "ev": 382127.2,
+          "ev_fcf": 40.39,
+          "ev_sales": 8.46,
+          "ev_ebitda": 12.63
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 40.39,
+          "ev_fcf_base": 40.39,
+          "ev_fcf_bull": 40.39
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 35.5,
+          "ev_fcf_base": 36.3,
+          "ev_fcf_bull": 37.1
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 30.6,
+          "ev_fcf_base": 32.2,
+          "ev_fcf_bull": 33.8
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 25.8,
+          "ev_fcf_base": 28.2,
+          "ev_fcf_bull": 30.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 20.9,
+          "ev_fcf_base": 24.1,
+          "ev_fcf_bull": 27.3
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 16.0,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 24.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "NKE": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-05-31",
+          "period": "annual",
+          "mcap": 145930.6,
+          "ev": 145930.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-05-31",
+          "period": "annual",
+          "mcap": 128878.0,
+          "ev": 132931.0,
+          "ev_fcf": 30.01,
+          "ev_sales": 2.85,
+          "ev_ebitda": 17.69
+        },
+        {
+          "date": "2023-05-31",
+          "period": "annual",
+          "mcap": 120357.8,
+          "ev": 125060.8,
+          "ev_fcf": 25.67,
+          "ev_sales": 2.44,
+          "ev_ebitda": 18.46
+        },
+        {
+          "date": "2024-05-31",
+          "period": "annual",
+          "mcap": 110705.7,
+          "ev": 112797.7,
+          "ev_fcf": 17.05,
+          "ev_sales": 2.2,
+          "ev_ebitda": 15.76
+        },
+        {
+          "date": "2025-05-31",
+          "period": "annual",
+          "mcap": 75233.1,
+          "ev": 78787.1,
+          "ev_fcf": 24.11,
+          "ev_sales": 1.7,
+          "ev_ebitda": 17.47
+        },
+        {
+          "date": "2025-11-30",
+          "period": "quarterly_ttm",
+          "mcap": 78394.7,
+          "ev": 82702.7,
+          "ev_fcf": 33.42,
+          "ev_sales": 1.78,
+          "ev_ebitda": 21.43
+        },
+        {
+          "date": "2026-02-28",
+          "period": "quarterly_ttm",
+          "mcap": 67267.9,
+          "ev": 71785.9,
+          "ev_fcf": 68.5,
+          "ev_sales": 1.54,
+          "ev_ebitda": 19.95
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 68.5,
+          "ev_fcf_base": 68.5,
+          "ev_fcf_bull": 68.5
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 57.6,
+          "ev_fcf_base": 58.3,
+          "ev_fcf_bull": 59.0
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 46.7,
+          "ev_fcf_base": 48.1,
+          "ev_fcf_bull": 49.5
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 35.8,
+          "ev_fcf_base": 37.9,
+          "ev_fcf_bull": 40.0
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 24.9,
+          "ev_fcf_base": 27.7,
+          "ev_fcf_bull": 30.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 14.0,
+          "ev_fcf_base": 17.5,
+          "ev_fcf_bull": 21.0
+        }
+      ],
+      "n_quarters": 7
+    },
+    "MIPS": {
+      "currency": "SEK",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 22589.4,
+          "ev": 22589.4,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 10574.0,
+          "ev": 10439.0,
+          "ev_fcf": 48.55,
+          "ev_sales": 18.54,
+          "ev_ebitda": 43.5
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 8174.3,
+          "ev": 7963.3,
+          "ev_fcf": 3981.66,
+          "ev_sales": 22.31,
+          "ev_ebitda": 77.31
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 12675.8,
+          "ev": 12305.8,
+          "ev_fcf": 93.23,
+          "ev_sales": 25.48,
+          "ev_ebitda": 60.62
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 11799.1,
+          "ev": 11564.1,
+          "ev_fcf": 71.83,
+          "ev_sales": 22.37,
+          "ev_ebitda": 66.08
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 9457.3,
+          "ev": 9570.3,
+          "ev_fcf": 72.5,
+          "ev_sales": 17.96,
+          "ev_ebitda": 54.07
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 72.5,
+          "ev_fcf_base": 72.5,
+          "ev_fcf_bull": 72.5
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 61.5,
+          "ev_fcf_base": 62.0,
+          "ev_fcf_bull": 62.5
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 50.5,
+          "ev_fcf_base": 51.5,
+          "ev_fcf_bull": 52.5
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 39.5,
+          "ev_fcf_base": 41.0,
+          "ev_fcf_bull": 42.5
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 28.5,
+          "ev_fcf_base": 30.5,
+          "ev_fcf_bull": 32.5
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 17.5,
+          "ev_fcf_base": 20.0,
+          "ev_fcf_bull": 22.5
+        }
+      ],
+      "n_quarters": 6
+    },
+    "FERG": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-07-31",
+          "period": "annual",
+          "mcap": 25437.0,
+          "ev": 25437.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-07-31",
+          "period": "annual",
+          "mcap": 23493.8,
+          "ev": 27850.8,
+          "ev_fcf": 32.42,
+          "ev_sales": 0.97,
+          "ev_ebitda": 8.93
+        },
+        {
+          "date": "2023-07-31",
+          "period": "annual",
+          "mcap": 30433.8,
+          "ev": 35090.8,
+          "ev_fcf": 15.38,
+          "ev_sales": 1.18,
+          "ev_ebitda": 11.82
+        },
+        {
+          "date": "2024-07-31",
+          "period": "annual",
+          "mcap": 38687.8,
+          "ev": 43633.8,
+          "ev_fcf": 29.07,
+          "ev_sales": 1.47,
+          "ev_ebitda": 14.65
+        },
+        {
+          "date": "2025-07-31",
+          "period": "annual",
+          "mcap": 44354.3,
+          "ev": 49646.3,
+          "ev_fcf": 30.97,
+          "ev_sales": 1.61,
+          "ev_ebitda": 16.63
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 50102.3,
+          "ev": 55592.3,
+          "ev_fcf": 33.75,
+          "ev_sales": 1.78,
+          "ev_ebitda": 18.06
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 47758.1,
+          "ev": 47758.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        }
+      ],
+      "forward": [],
+      "n_quarters": 7
+    },
+    "S": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2022-01-31",
+          "period": "annual",
+          "mcap": 15506.5,
+          "ev": 15506.5,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-01-31",
+          "period": "annual",
+          "mcap": 5093.1,
+          "ev": 4982.2,
+          "ev_fcf": null,
+          "ev_sales": 11.8,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-01-31",
+          "period": "annual",
+          "mcap": 9919.1,
+          "ev": 9685.4,
+          "ev_fcf": null,
+          "ev_sales": 15.59,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2025-01-31",
+          "period": "annual",
+          "mcap": 8219.2,
+          "ev": 8051.6,
+          "ev_fcf": 1221.43,
+          "ev_sales": 9.8,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2025-10-31",
+          "period": "quarterly_ttm",
+          "mcap": 5741.0,
+          "ev": 5601.2,
+          "ev_fcf": 124.09,
+          "ev_sales": 5.86,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2026-01-31",
+          "period": "annual",
+          "mcap": 4585.5,
+          "ev": 4430.9,
+          "ev_fcf": 85.73,
+          "ev_sales": 4.43,
+          "ev_ebitda": null
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 85.73,
+          "ev_fcf_base": 85.73,
+          "ev_fcf_bull": 85.73
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 72.2,
+          "ev_fcf_base": 73.0,
+          "ev_fcf_bull": 73.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 58.6,
+          "ev_fcf_base": 60.2,
+          "ev_fcf_bull": 61.8
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 45.1,
+          "ev_fcf_base": 47.5,
+          "ev_fcf_bull": 49.9
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 31.5,
+          "ev_fcf_base": 34.7,
+          "ev_fcf_bull": 37.9
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 18.0,
+          "ev_fcf_base": 22.0,
+          "ev_fcf_bull": 26.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "TREX": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 12026.2,
+          "ev": 12026.2,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 5006.4,
+          "ev": 5247.5,
+          "ev_fcf": 131.21,
+          "ev_sales": 4.74,
+          "ev_ebitda": 17.12
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 8450.3,
+          "ev": 8480.4,
+          "ev_fcf": 37.97,
+          "ev_sales": 7.75,
+          "ev_ebitda": 26.11
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 6708.1,
+          "ev": 6962.2,
+          "ev_fcf": null,
+          "ev_sales": 6.05,
+          "ev_ebitda": 18.49
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 5225.6,
+          "ev": 5372.6,
+          "ev_fcf": 511.67,
+          "ev_sales": 4.55,
+          "ev_ebitda": 16.31
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 4327.0,
+          "ev": 4510.5,
+          "ev_fcf": 36.22,
+          "ev_sales": 3.84,
+          "ev_ebitda": 14.06
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 36.22,
+          "ev_fcf_base": 36.22,
+          "ev_fcf_bull": 36.22
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 31.4,
+          "ev_fcf_base": 32.0,
+          "ev_fcf_bull": 32.6
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 26.5,
+          "ev_fcf_base": 27.7,
+          "ev_fcf_bull": 28.9
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 21.7,
+          "ev_fcf_base": 23.5,
+          "ev_fcf_bull": 25.3
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 16.8,
+          "ev_fcf_base": 19.2,
+          "ev_fcf_bull": 21.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 15.0,
+          "ev_fcf_bull": 18.0
+        }
+      ],
+      "n_quarters": 6
+    },
+    "SGO": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 27653.9,
+          "ev": 27653.9,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 23152.9,
+          "ev": 31058.9,
+          "ev_fcf": 8.19,
+          "ev_sales": 0.61,
+          "ev_ebitda": 4.32
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 29143.7,
+          "ev": 36095.7,
+          "ev_fcf": 8.88,
+          "ev_sales": 0.75,
+          "ev_ebitda": 5.12
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 40085.0,
+          "ev": 49464.0,
+          "ev_fcf": 14.19,
+          "ev_sales": 1.06,
+          "ev_ebitda": 6.6
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 41238.5,
+          "ev": 51385.5,
+          "ev_fcf": 14.9,
+          "ev_sales": 1.11,
+          "ev_ebitda": 6.83
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 14.9,
+          "ev_fcf_base": 14.9,
+          "ev_fcf_bull": 14.9
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 14.3,
+          "ev_fcf_base": 14.7,
+          "ev_fcf_bull": 15.1
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 13.7,
+          "ev_fcf_base": 14.5,
+          "ev_fcf_bull": 15.3
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 13.2,
+          "ev_fcf_base": 14.4,
+          "ev_fcf_bull": 15.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 12.6,
+          "ev_fcf_base": 14.2,
+          "ev_fcf_bull": 15.8
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 14.0,
+          "ev_fcf_bull": 16.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "TFF": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-04-30",
+          "period": "annual",
+          "mcap": 526.7,
+          "ev": 526.7,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-04-30",
+          "period": "annual",
+          "mcap": 555.9,
+          "ev": 692.7,
+          "ev_fcf": 38.54,
+          "ev_sales": 2.29,
+          "ev_ebitda": 10.82
+        },
+        {
+          "date": "2023-04-30",
+          "period": "annual",
+          "mcap": 851.3,
+          "ev": 1035.4,
+          "ev_fcf": null,
+          "ev_sales": 2.35,
+          "ev_ebitda": 11.43
+        },
+        {
+          "date": "2024-04-30",
+          "period": "annual",
+          "mcap": 884.3,
+          "ev": 1149.9,
+          "ev_fcf": null,
+          "ev_sales": 2.36,
+          "ev_ebitda": 9.99
+        },
+        {
+          "date": "2025-04-30",
+          "period": "annual",
+          "mcap": 493.7,
+          "ev": 806.8,
+          "ev_fcf": null,
+          "ev_sales": 1.9,
+          "ev_ebitda": 9.96
+        }
+      ],
+      "forward": [],
+      "n_quarters": 5
+    },
+    "CELH": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 4256.8,
+          "ev": 4256.8,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 8669.4,
+          "ev": 8056.4,
+          "ev_fcf": 80.63,
+          "ev_sales": 12.33,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 15359.8,
+          "ev": 14606.0,
+          "ev_fcf": 118.0,
+          "ev_sales": 11.08,
+          "ev_ebitda": 49.52
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 6874.5,
+          "ev": 6004.6,
+          "ev_fcf": 25.07,
+          "ev_sales": 4.43,
+          "ev_ebitda": 29.68
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 15593.6,
+          "ev": 15649.1,
+          "ev_fcf": 29.89,
+          "ev_sales": 7.36,
+          "ev_ebitda": 116.62
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 13589.8,
+          "ev": 13860.9,
+          "ev_fcf": 42.86,
+          "ev_sales": 5.51,
+          "ev_ebitda": 68.13
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 42.86,
+          "ev_fcf_base": 42.86,
+          "ev_fcf_bull": 42.86
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 37.5,
+          "ev_fcf_base": 38.1,
+          "ev_fcf_bull": 38.8
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 32.1,
+          "ev_fcf_base": 33.4,
+          "ev_fcf_bull": 34.7
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 26.7,
+          "ev_fcf_base": 28.6,
+          "ev_fcf_bull": 30.6
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 21.4,
+          "ev_fcf_base": 24.0,
+          "ev_fcf_bull": 26.6
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 16.0,
+          "ev_fcf_base": 19.2,
+          "ev_fcf_bull": 22.5
+        }
+      ],
+      "n_quarters": 6
+    },
+    "BFIT": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 2740.1,
+          "ev": 2740.1,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 1823.7,
+          "ev": 3999.1,
+          "ev_fcf": 42.79,
+          "ev_sales": 5.03,
+          "ev_ebitda": 10.27
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 1718.7,
+          "ev": 4182.5,
+          "ev_fcf": 26.51,
+          "ev_sales": 3.99,
+          "ev_ebitda": 8.84
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 1473.8,
+          "ev": 4241.7,
+          "ev_fcf": 17.18,
+          "ev_sales": 3.49,
+          "ev_ebitda": 7.54
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 1941.7,
+          "ev": 4990.3,
+          "ev_fcf": 13.51,
+          "ev_sales": 3.51,
+          "ev_ebitda": 7.8
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 13.51,
+          "ev_fcf_base": 13.51,
+          "ev_fcf_bull": 13.51
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 13.2,
+          "ev_fcf_base": 13.8,
+          "ev_fcf_bull": 14.4
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 12.9,
+          "ev_fcf_base": 14.1,
+          "ev_fcf_bull": 15.3
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 12.6,
+          "ev_fcf_base": 14.4,
+          "ev_fcf_bull": 16.2
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 12.3,
+          "ev_fcf_base": 14.7,
+          "ev_fcf_bull": 17.1
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 15.0,
+          "ev_fcf_bull": 18.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "VRLA": {
+      "currency": "EUR",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 2830.4,
+          "ev": 2830.4,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 1120.7,
+          "ev": 986.6,
+          "ev_fcf": null,
+          "ev_sales": 2.73,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 793.0,
+          "ev": 875.7,
+          "ev_fcf": null,
+          "ev_sales": 5.7,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 385.0,
+          "ev": 433.1,
+          "ev_fcf": null,
+          "ev_sales": 2.55,
+          "ev_ebitda": 13.5
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 786.1,
+          "ev": 838.4,
+          "ev_fcf": null,
+          "ev_sales": 4.66,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 739.5,
+          "ev": 837.1,
+          "ev_fcf": null,
+          "ev_sales": 4.79,
+          "ev_ebitda": null
+        }
+      ],
+      "forward": [],
+      "n_quarters": 6
+    },
+    "KIST": {
+      "currency": "GBp",
+      "history": [
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 34576.9,
+          "ev": 34436.5,
+          "ev_fcf": 118.39,
+          "ev_sales": 78.03,
+          "ev_ebitda": 92.09
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 13714.4,
+          "ev": 13738.6,
+          "ev_fcf": 149.95,
+          "ev_sales": 61.66,
+          "ev_ebitda": 154.31
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 9724.8,
+          "ev": 9864.6,
+          "ev_fcf": null,
+          "ev_sales": 44.53,
+          "ev_ebitda": 257.1
+        }
+      ],
+      "forward": [],
+      "n_quarters": 3
+    },
+    "WOSG": {
+      "currency": "GBp",
+      "history": [
+        {
+          "date": "2021-04-30",
+          "period": "annual",
+          "mcap": 166385.3,
+          "ev": 166385.3,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-04-30",
+          "period": "annual",
+          "mcap": 198320.2,
+          "ev": 198687.3,
+          "ev_fcf": 1573.14,
+          "ev_sales": 160.49,
+          "ev_ebitda": 936.32
+        },
+        {
+          "date": "2023-04-30",
+          "period": "annual",
+          "mcap": 178187.3,
+          "ev": 178596.1,
+          "ev_fcf": 1330.82,
+          "ev_sales": 115.76,
+          "ev_ebitda": 677.01
+        },
+        {
+          "date": "2024-04-30",
+          "period": "annual",
+          "mcap": 77291.6,
+          "ev": 77766.0,
+          "ev_fcf": 724.75,
+          "ev_sales": 50.57,
+          "ev_ebitda": 353.32
+        },
+        {
+          "date": "2025-04-30",
+          "period": "annual",
+          "mcap": 84419.1,
+          "ev": 84986.8,
+          "ev_fcf": 784.74,
+          "ev_sales": 51.46,
+          "ev_ebitda": 397.88
+        }
+      ],
+      "forward": [
+        {
+          "date": "2026-04-19",
+          "year_offset": 0,
+          "ev_fcf_bear": 784.74,
+          "ev_fcf_base": 784.74,
+          "ev_fcf_bull": 784.74
+        },
+        {
+          "date": "2027-04-19",
+          "year_offset": 1,
+          "ev_fcf_bear": 629.4,
+          "ev_fcf_base": 630.0,
+          "ev_fcf_bull": 630.6
+        },
+        {
+          "date": "2028-04-18",
+          "year_offset": 2,
+          "ev_fcf_bear": 474.0,
+          "ev_fcf_base": 475.2,
+          "ev_fcf_bull": 476.4
+        },
+        {
+          "date": "2029-04-18",
+          "year_offset": 3,
+          "ev_fcf_bear": 318.7,
+          "ev_fcf_base": 320.5,
+          "ev_fcf_bull": 322.3
+        },
+        {
+          "date": "2030-04-18",
+          "year_offset": 4,
+          "ev_fcf_bear": 163.3,
+          "ev_fcf_base": 165.7,
+          "ev_fcf_bull": 168.1
+        },
+        {
+          "date": "2031-04-18",
+          "year_offset": 5,
+          "ev_fcf_bear": 8.0,
+          "ev_fcf_base": 11.0,
+          "ev_fcf_bull": 14.0
+        }
+      ],
+      "n_quarters": 5
+    },
+    "IPCO": {
+      "currency": "SEK",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 6166.0,
+          "ev": 6166.0,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 11756.5,
+          "ev": 11578.1,
+          "ev_fcf": 26.08,
+          "ev_sales": 9.32,
+          "ev_ebitda": 18.67
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 13082.3,
+          "ev": 13012.2,
+          "ev_fcf": 395.33,
+          "ev_sales": 13.55,
+          "ev_ebitda": 35.62
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 16506.6,
+          "ev": 16708.2,
+          "ev_fcf": null,
+          "ev_sales": 18.3,
+          "ev_ebitda": 53.89
+        },
+        {
+          "date": "2025-06-30",
+          "period": "quarterly_ttm",
+          "mcap": 17285.1,
+          "ev": 17656.3,
+          "ev_fcf": null,
+          "ev_sales": 21.82,
+          "ev_ebitda": 72.87
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 18458.5,
+          "ev": 18938.3,
+          "ev_fcf": null,
+          "ev_sales": 24.53,
+          "ev_ebitda": 86.85
+        }
+      ],
+      "forward": [],
+      "n_quarters": 6
+    },
+    "OTLY": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2021-12-31",
+          "period": "annual",
+          "mcap": 4527.6,
+          "ev": 4527.6,
+          "ev_fcf": null,
+          "ev_sales": null,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2022-12-31",
+          "period": "annual",
+          "mcap": 1686.2,
+          "ev": 1755.2,
+          "ev_fcf": null,
+          "ev_sales": 2.43,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2023-12-31",
+          "period": "annual",
+          "mcap": 774.4,
+          "ev": 1057.9,
+          "ev_fcf": null,
+          "ev_sales": 1.35,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2024-12-31",
+          "period": "annual",
+          "mcap": 406.5,
+          "ev": 799.1,
+          "ev_fcf": null,
+          "ev_sales": 0.97,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2025-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 427.8,
+          "ev": 916.5,
+          "ev_fcf": null,
+          "ev_sales": 1.09,
+          "ev_ebitda": null
+        },
+        {
+          "date": "2025-12-31",
+          "period": "annual",
+          "mcap": 360.6,
+          "ev": 856.5,
+          "ev_fcf": null,
+          "ev_sales": 0.99,
+          "ev_ebitda": null
+        }
+      ],
+      "forward": [],
+      "n_quarters": 6
+    }
+  }
+}

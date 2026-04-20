@@ -700,6 +700,217 @@ function sunburstOption(companies) {
   };
 }
 
+/* =====================================================================
+   7. BACKTEST — line chart, NAV evolution since 2020
+   ===================================================================== */
+function backtestChartOption(seriesData, activeSeries) {
+  const xData = new Set();
+  Object.values(seriesData).forEach((s) => s.data.forEach((d) => xData.add(d.date)));
+  const dates = [...xData].sort();
+
+  const series = [];
+  let colorIdx = 0;
+  for (const [name, info] of Object.entries(seriesData)) {
+    if (!activeSeries.includes(name)) continue;
+    const map = new Map(info.data.map((d) => [d.date, d.nav]));
+    const data = dates.map((d) => map.get(d) ?? null);
+
+    // Benchmarks en gris/blanco, baskets en accent o per-category
+    let color, dashStyle;
+    if (info.type === 'benchmark') {
+      color = name === 'S&P 500' ? THEME.text0
+            : name === 'NASDAQ 100' ? THEME.neutral
+            : THEME.text1;
+      dashStyle = 'dashed';
+    } else if (name === 'All Watchlist') {
+      color = THEME.accent;
+      dashStyle = 'solid';
+    } else {
+      color = CATEGORY_COLORS[colorIdx % CATEGORY_COLORS.length];
+      colorIdx++;
+      dashStyle = 'solid';
+    }
+
+    series.push({
+      name,
+      type: 'line',
+      data,
+      smooth: false,
+      symbol: 'none',
+      lineStyle: {
+        color,
+        width: name === 'All Watchlist' ? 2.5 : 1.5,
+        type: dashStyle,
+      },
+      itemStyle: { color },
+      emphasis: { lineStyle: { width: 3 } },
+      connectNulls: true,
+    });
+  }
+
+  return {
+    ...baseOption(),
+    grid: { left: 65, right: 30, top: 30, bottom: 50 },
+    legend: {
+      type: 'scroll',
+      top: 0,
+      textStyle: { color: THEME.text1, fontFamily: THEME.fontMono, fontSize: 10 },
+      pageTextStyle: { color: THEME.text2 },
+      pageIconColor: THEME.accent,
+      pageIconInactiveColor: THEME.text3,
+    },
+    xAxis: {
+      type: 'category',
+      data: dates,
+      axisLabel: {
+        ...axisStyle().axisLabel,
+        formatter: (v) => v.substring(0, 7), // YYYY-MM
+        interval: Math.floor(dates.length / 12),
+      },
+      ...axisStyle(),
+    },
+    yAxis: {
+      type: 'log',
+      name: 'NAV (base 100)',
+      nameLocation: 'middle',
+      nameGap: 45,
+      axisLabel: { ...axisStyle().axisLabel, formatter: '{value}' },
+      ...axisStyle(),
+    },
+    tooltip: {
+      ...baseOption().tooltip,
+      trigger: 'axis',
+      axisPointer: { type: 'cross', lineStyle: { color: THEME.border } },
+      formatter: (params) => {
+        const date = params[0].axisValue;
+        let html = `<div style="margin-bottom:4px;color:${THEME.accent};">${date}</div>`;
+        params
+          .filter((p) => p.value != null)
+          .sort((a, b) => b.value - a.value)
+          .forEach((p) => {
+            html += `<div><span style="color:${p.color};">●</span> ${p.seriesName}: <b>${p.value.toFixed(1)}</b></div>`;
+          });
+        return html;
+      },
+    },
+    series,
+  };
+}
+
+/* =====================================================================
+   8. MULTIPLE HISTORY — historical EV/FCF, EV/Sales for selected ticker
+   With forward projection cone
+   ===================================================================== */
+function multipleHistoryOption(historyData, ticker, metric = 'ev_fcf') {
+  const company = historyData.companies[ticker];
+  if (!company) return null;
+
+  const histDates = company.history.map((p) => p.date);
+  const histValues = company.history.map((p) => p[metric]);
+
+  const fwdSeries = [];
+  if (company.forward && company.forward.length > 0 && metric === 'ev_fcf') {
+    const fwdDates = company.forward.map((p) => p.date);
+    fwdSeries.push(
+      {
+        name: 'Bear projection',
+        type: 'line',
+        data: fwdDates.map((d, i) => [d, company.forward[i].ev_fcf_bear]),
+        lineStyle: { color: THEME.negative, type: 'dashed', width: 1 },
+        itemStyle: { color: THEME.negative },
+        symbol: 'circle',
+        symbolSize: 4,
+      },
+      {
+        name: 'Base projection',
+        type: 'line',
+        data: fwdDates.map((d, i) => [d, company.forward[i].ev_fcf_base]),
+        lineStyle: { color: THEME.text1, type: 'dashed', width: 1.5 },
+        itemStyle: { color: THEME.text1 },
+        symbol: 'circle',
+        symbolSize: 4,
+      },
+      {
+        name: 'Bull projection',
+        type: 'line',
+        data: fwdDates.map((d, i) => [d, company.forward[i].ev_fcf_bull]),
+        lineStyle: { color: THEME.positive, type: 'dashed', width: 1 },
+        itemStyle: { color: THEME.positive },
+        symbol: 'circle',
+        symbolSize: 4,
+      }
+    );
+  }
+
+  const metricLabel = {
+    ev_fcf: 'EV / FCF',
+    ev_sales: 'EV / Sales',
+    ev_ebitda: 'EV / EBITDA',
+  }[metric] || metric;
+
+  return {
+    ...baseOption(),
+    grid: { left: 65, right: 30, top: 30, bottom: 50 },
+    legend: {
+      top: 0,
+      textStyle: { color: THEME.text1, fontFamily: THEME.fontMono, fontSize: 10 },
+    },
+    xAxis: {
+      type: 'time',
+      ...axisStyle(),
+    },
+    yAxis: {
+      type: 'value',
+      name: metricLabel,
+      nameLocation: 'middle',
+      nameGap: 45,
+      ...axisStyle(),
+    },
+    tooltip: {
+      ...baseOption().tooltip,
+      trigger: 'axis',
+      formatter: (params) => {
+        let html = `<div style="margin-bottom:4px;color:${THEME.accent};">${params[0].axisValueLabel}</div>`;
+        params.forEach((p) => {
+          if (p.value == null) return;
+          const v = Array.isArray(p.value) ? p.value[1] : p.value;
+          html += `<div><span style="color:${p.color};">●</span> ${p.seriesName}: <b>${v != null ? v.toFixed(1) + 'x' : '—'}</b></div>`;
+        });
+        return html;
+      },
+    },
+    series: [
+      {
+        name: `${ticker} ${metricLabel} (historical)`,
+        type: 'line',
+        data: histDates.map((d, i) => [d, histValues[i]]),
+        lineStyle: { color: THEME.accent, width: 2 },
+        itemStyle: { color: THEME.accent },
+        symbol: 'circle',
+        symbolSize: 6,
+        markLine: {
+          silent: true,
+          symbol: 'none',
+          lineStyle: { color: THEME.border, type: 'solid' },
+          data: [
+            {
+              xAxis: new Date().toISOString().split('T')[0],
+              label: {
+                formatter: 'today',
+                color: THEME.text2,
+                fontFamily: THEME.fontMono,
+                fontSize: 9,
+                position: 'end',
+              },
+            },
+          ],
+        },
+      },
+      ...fwdSeries,
+    ],
+  };
+}
+
 /* Expose globals */
 window.CHARTS = {
   quadrant: quadrantChartOption,
@@ -708,6 +919,8 @@ window.CHARTS = {
   radar: radarOption,
   heatmap: heatmapOption,
   sunburst: sunburstOption,
+  backtest: backtestChartOption,
+  multipleHistory: multipleHistoryOption,
   fmt,
   THEME,
   QUADRANT_COLOR,

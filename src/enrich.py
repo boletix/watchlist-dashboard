@@ -23,31 +23,14 @@ from typing import Any
 
 import pandas as pd
 
-log = logging.getLogger(__name__)
+from src.tickers import TICKER_YF_OVERRIDE, to_yf
 
-# Mapeo explícito ticker Excel → símbolo yfinance.
-# Rellena según empresas concretas cuando detectemos mismatches.
-TICKER_YF_OVERRIDE: dict[str, str] = {
-    "ADYEN": "ADYEN.AS",
-    "ITX": "ITX.MC",
-    "HLMA": "HLMA.L",
-    "WOSG": "WOSG.L",
-    "KIST": "KIST.L",
-    "BFIT": "BFIT.AS",
-    "SGO": "SGO.PA",
-    "TFF": "TFF.PA",
-    "SU": "SU.PA",
-    "RAA": "RAA.DE",
-    "LOTB": "LOTB.BR",
-    "VRLA": "VLA.PA",
-    "NTO": "NTO.OL",
-    "IPCO": "IPCO.ST",
-}
+log = logging.getLogger(__name__)
 
 
 def _map_ticker(ticker: str) -> str:
     """Aplica override si existe, si no devuelve el ticker tal cual."""
-    return TICKER_YF_OVERRIDE.get(ticker, ticker)
+    return to_yf(ticker)
 
 
 def fetch_quotes(tickers: list[str], max_retries: int = 2) -> dict[str, dict[str, Any]]:

@@ -1,17 +1,35 @@
-.PHONY: install build build-offline test clean serve snapshot
+.PHONY: install build build-quick build-offline test clean serve snapshot backtest history alerts
 
 PYTHON := python3
 
 install:
 	$(PYTHON) -m pip install -r requirements.txt
 
-# Build completo con yfinance enrichment
+# Build completo: enrichment + analytics + backtest + history + alerts
+# Tiempo: ~5-10 min (yfinance fetches)
 build:
 	$(PYTHON) -m src.build
 
+# Build rápido: solo watchlist principal sin backtest/history/alerts
+# Tiempo: ~30 segundos
+build-quick:
+	$(PYTHON) -m src.build --quick
+
 # Build sin red (útil en desarrollo offline)
 build-offline:
-	$(PYTHON) -m src.build --skip-enrichment
+	$(PYTHON) -m src.build --skip-enrichment --quick
+
+# Solo backtest (Q4)
+backtest:
+	$(PYTHON) -m src.backtest
+
+# Solo history (Q3)
+history:
+	$(PYTHON) -m src.history
+
+# Solo alerts (rápido, sin re-fetch)
+alerts:
+	$(PYTHON) -m src.alerts
 
 test:
 	$(PYTHON) -m pytest tests/ -v
@@ -30,4 +48,4 @@ snapshot:
 
 clean:
 	rm -rf .pytest_cache __pycache__ src/__pycache__ tests/__pycache__
-	rm -f docs/data/watchlist.json data/processed/watchlist.json
+	rm -f docs/data/*.json data/processed/*.json

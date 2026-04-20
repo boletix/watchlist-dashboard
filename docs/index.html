@@ -111,6 +111,9 @@
         <div class="topbar__meta" id="topbar-meta"></div>
       </div>
 
+      <!-- Alerts banner -->
+      <div id="alerts-banner" class="alerts-banner" style="display:none;"></div>
+
       <!-- KPI strip -->
       <div id="kpis" class="kpis"></div>
 
@@ -197,6 +200,38 @@
             </p>
           </div>
         </div>
+      </div>
+
+      <!-- Q4: BACKTEST — equipment vs benchmarks -->
+      <div class="panel" style="margin-top: var(--space-5);">
+        <div class="panel__header">
+          <div class="panel__title">portfolio backtest <em>·</em> equiponderado vs benchmarks</div>
+          <div class="panel__hint" id="backtest-stats"></div>
+        </div>
+        <div id="backtest-selector" class="chip-row" style="margin-bottom:8px;"></div>
+        <div id="chart-backtest" class="chart chart--tall"></div>
+        <div id="backtest-stats-table" style="margin-top:12px;"></div>
+      </div>
+
+      <!-- Q3: MULTIPLE HISTORY — historical EV/FCF, EV/Sales, EV/EBITDA -->
+      <div class="panel" style="margin-top: var(--space-5);">
+        <div class="panel__header">
+          <div class="panel__title">multiple evolution <em>·</em> históricos + cono forward</div>
+          <div class="panel__hint">EV/FCF · EV/Sales · EV/EBITDA</div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:center;margin-bottom:8px;flex-wrap:wrap;">
+          <div>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-2);letter-spacing:0.08em;text-transform:uppercase;">Ticker:</span>
+            <select id="history-ticker" style="background:var(--bg-1);border:1px solid var(--border-0);color:var(--text-0);padding:4px 8px;font-family:var(--font-mono);font-size:12px;"></select>
+          </div>
+          <div>
+            <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-2);letter-spacing:0.08em;text-transform:uppercase;">Métrica:</span>
+            <button class="metric-chip chip active" data-metric="ev_fcf">EV/FCF</button>
+            <button class="metric-chip chip" data-metric="ev_sales">EV/Sales</button>
+            <button class="metric-chip chip" data-metric="ev_ebitda">EV/EBITDA</button>
+          </div>
+        </div>
+        <div id="chart-history" class="chart"></div>
       </div>
 
       <!-- Rankings table -->
