@@ -93,6 +93,10 @@ COLUMN_MAP: dict[str, str] = {
     "FVE max": "fve_max",
     "Worst IRR": "irr_worst",
     "Best IRR": "irr_best",
+    # Earnings calendar (añadido 2026-04-26)
+    "Última\nActualización": "earnings_updated_at",
+    "Última Presentación": "earnings_last_date",
+    "Próxima Presentación": "earnings_next_date",
 }
 
 

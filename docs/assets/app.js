@@ -427,6 +427,37 @@ function openDrawer(ticker) {
     `;
   };
 
+  // ── Earnings dates helpers ──────────────────────────────────────────
+  const _calToday = new Date(); _calToday.setHours(0,0,0,0);
+  const _fmtEDate = (iso) => {
+    if (!iso) return null;
+    const d = new Date(iso + 'T00:00:00');
+    return d.toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' });
+  };
+  const _relDays = (iso) => {
+    if (!iso) return null;
+    const d = new Date(iso + 'T00:00:00'); d.setHours(0,0,0,0);
+    const diff = Math.round((d - _calToday) / 86400000);
+    if (diff === 0) return 'hoy';
+    if (diff === 1) return 'mañana';
+    if (diff === -1) return 'ayer';
+    return diff > 0 ? `en ${diff}d` : `hace ${Math.abs(diff)}d`;
+  };
+  const _edCls = (iso) => {
+    if (!iso) return '';
+    const d = new Date(iso + 'T00:00:00'); d.setHours(0,0,0,0);
+    const diff = Math.round((d - _calToday) / 86400000);
+    if (diff < 0)  return 'earnings-badge__date--past';
+    if (diff <= 14) return 'earnings-badge__date--soon';
+    return 'earnings-badge__date--future';
+  };
+  const _ebadge = (label, iso) => `
+    <div class="earnings-badge">
+      <div class="earnings-badge__label">${label}</div>
+      <div class="earnings-badge__date ${_edCls(iso)}">${_fmtEDate(iso) || 'N/D'}</div>
+      ${iso ? `<div class="earnings-badge__rel">${_relDays(iso)}</div>` : ''}
+    </div>`;
+
   $('#drawer').innerHTML = `
     <div class="drawer__header">
       <button class="drawer__close" aria-label="Close">✕</button>
@@ -437,6 +468,15 @@ function openDrawer(ticker) {
       </div>
     </div>
     <div class="drawer__body">
+      <div class="drawer__section">
+        <h3>Earnings Calendar</h3>
+        <div class="earnings-row">
+          ${_ebadge('Última presentación', c.earnings_last_date)}
+          ${_ebadge('Próxima presentación', c.earnings_next_date)}
+        </div>
+        ${c.earnings_updated_at ? `<div style="margin-top:6px;font-family:var(--font-mono);font-size:9px;color:var(--text-3);">actualizado ${c.earnings_updated_at} · fuente yfinance / IR</div>` : ''}
+      </div>
+
       <div class="drawer__section">
         <h3>Rating Summary</h3>
         <div class="stat-grid">
@@ -686,6 +726,126 @@ function renderHistoryChart() {
 }
 
 /* =====================================================================
+   EARNINGS CALENDAR
+   ===================================================================== */
+function renderEarningsCalendar() {
+  const el = document.getElementById('earnings-calendar');
+  if (!el) return;
+
+  const allCompanies = STATE.raw.companies;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const DAYS_BACK = 30;
+  const DAYS_FWD  = 30;
+
+  // Build day range: today-30 … today+30
+  const days = [];
+  for (let i = -DAYS_BACK; i <= DAYS_FWD; i++) {
+    const d = new Date(today);
+    d.setDate(d.getDate() + i);
+    days.push(d);
+  }
+
+  // Map iso date → list of companies (last or next)
+  const events = {}; // { 'YYYY-MM-DD': [{ticker, name, rating_tier, rating_composite, type:'past'|'future'}] }
+  allCompanies.forEach((c) => {
+    ['earnings_last_date', 'earnings_next_date'].forEach((field) => {
+      const iso = c[field];
+      if (!iso) return;
+      const d = new Date(iso + 'T00:00:00'); d.setHours(0,0,0,0);
+      const diffDays = Math.round((d - today) / 86400000);
+      if (diffDays < -DAYS_BACK || diffDays > DAYS_FWD) return;
+      if (!events[iso]) events[iso] = [];
+      // Avoid duplicate if last == next
+      const type = diffDays <= 0 ? 'past' : 'future';
+      if (!events[iso].find((x) => x.ticker === c.ticker)) {
+        events[iso].push({ ticker: c.ticker, name: c.name, rating_tier: c.rating_tier,
+          rating_composite: c.rating_composite, type });
+      }
+    });
+  });
+
+  // Tier color map (mirrors CSS tier classes)
+  const TIER_COLOR = {
+    best_in_class: '#6cbb8e',
+    high: '#a8c88a',
+    above_avg: '#c8c87a',
+    mixed: '#c8a060',
+    low: '#c07070',
+  };
+  const DOW = ['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
+  const MON = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+
+  const fmtDayLabel = (d) => {
+    const isToday = d.getTime() === today.getTime();
+    const dow = DOW[d.getDay()];
+    const dayNum = d.getDate();
+    const mon = MON[d.getMonth()];
+    return `<span class="cal-day__label-dow">${dow}</span>${dayNum} ${mon}${isToday ? ' ●' : ''}`;
+  };
+
+  // Build total event count for hint
+  const totalEvents = Object.values(events).reduce((s, arr) => s + arr.length, 0);
+  const hintEl = document.getElementById('cal-hint');
+  if (hintEl) {
+    hintEl.textContent = `${totalEvents} presentaciones · click empresa para detalle`;
+  }
+
+  // Legend
+  const legend = `
+    <div class="cal-legend">
+      <span><span class="cal-legend__dot" style="background:var(--accent);opacity:0.9;"></span>Hoy</span>
+      <span><span class="cal-legend__dot" style="background:var(--positive);"></span>Próximos</span>
+      <span><span class="cal-legend__dot" style="background:var(--text-3);"></span>Pasados</span>
+      <span style="color:var(--text-3);">Color = tier de calidad</span>
+    </div>`;
+
+  // Build days HTML — only render days that have events OR are today
+  const daysCols = days.map((d) => {
+    const iso = d.toISOString().split('T')[0];
+    const isToday = d.getTime() === today.getTime();
+    const isPast  = d < today;
+    const dayEvts = events[iso] || [];
+
+    if (!isToday && dayEvts.length === 0) return ''; // skip empty non-today days
+
+    const evtCards = dayEvts
+      .sort((a, b) => (b.rating_composite || 0) - (a.rating_composite || 0))
+      .map((ev) => {
+        const col = TIER_COLOR[ev.rating_tier] || 'var(--text-2)';
+        const cardCls = [
+          'cal-card',
+          ev.type === 'past' ? 'cal-card--past' : '',
+          isToday ? 'cal-card--today' : '',
+        ].filter(Boolean).join(' ');
+        return `
+          <div class="${cardCls}" data-ticker="${ev.ticker}" title="${ev.name || ev.ticker}">
+            <div class="cal-card__ticker">${ev.ticker}</div>
+            <span class="cal-card__tier" style="background:${col}22;color:${col};">${(ev.rating_tier||'').replace(/_/g,' ')}</span>
+          </div>`;
+      }).join('');
+
+    const dayCls = [
+      'cal-day',
+      isToday ? 'cal-day--today' : '',
+      isPast  ? 'cal-day--past'  : '',
+    ].filter(Boolean).join(' ');
+
+    return `
+      <div class="${dayCls}">
+        <div class="cal-day__label">${fmtDayLabel(d)}</div>
+        <div class="cal-events">${evtCards}</div>
+      </div>`;
+  }).filter(Boolean).join('');
+
+  el.innerHTML = legend + `<div class="cal-scroll"><div class="cal-track">${daysCols}</div></div>`;
+
+  // Wire click events on cal-cards
+  el.querySelectorAll('.cal-card').forEach((card) => {
+    card.addEventListener('click', () => openDrawer(card.dataset.ticker));
+  });
+}
+
+/* =====================================================================
    REFRESH ORCHESTRATOR
    ===================================================================== */
 function refresh() {
@@ -694,6 +854,7 @@ function refresh() {
   renderKPIs();
   renderTable();
   renderCharts();
+  renderEarningsCalendar();
 }
 
 /* =====================================================================

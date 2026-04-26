@@ -16,6 +16,9 @@ venv/
 # Excel temp files
 ~$*.xlsx
 
+# Backups locales del Excel (solo en local, no subir a GitHub)
+data/raw/*.backup_*.xlsx
+
 # Node
 node_modules/
 

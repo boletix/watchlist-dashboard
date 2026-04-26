@@ -728,3 +728,176 @@ input[type="range"]::-webkit-slider-thumb {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+/* =====================================================================
+   EARNINGS CALENDAR
+   ===================================================================== */
+.cal-scroll {
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.cal-track {
+  display: flex;
+  gap: 0;
+  min-width: max-content;
+  position: relative;
+}
+.cal-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  padding: 0 4px;
+  border-left: 1px solid var(--border-0);
+  position: relative;
+}
+.cal-day--today {
+  border-left: 2px solid var(--accent);
+  background: linear-gradient(to bottom, rgba(199,125,70,0.06), transparent 60%);
+}
+.cal-day--today .cal-day__label {
+  color: var(--accent);
+  font-weight: 500;
+}
+.cal-day--past .cal-day__label {
+  color: var(--text-3);
+}
+.cal-day__label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-2);
+  letter-spacing: 0.06em;
+  padding: 6px 0 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+.cal-day__label-dow {
+  display: block;
+  font-size: 8px;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+.cal-events {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  padding-bottom: 8px;
+}
+.cal-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border-0);
+  border-radius: 4px;
+  padding: 5px 7px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.cal-card:hover {
+  background: var(--bg-3);
+  border-color: var(--accent);
+}
+.cal-card--past {
+  opacity: 0.5;
+}
+.cal-card--today {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(199,125,70,0.3);
+}
+.cal-card__ticker {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-0);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cal-card__tier {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  border-radius: 2px;
+  padding: 1px 3px;
+  margin-top: 2px;
+  letter-spacing: 0.04em;
+}
+.cal-today-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent);
+  opacity: 0.4;
+  pointer-events: none;
+}
+.cal-empty {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-3);
+  text-align: center;
+  padding: 24px 0;
+}
+.cal-legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-2);
+  flex-wrap: wrap;
+}
+.cal-legend__dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* Earnings info inside drawer */
+.earnings-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.earnings-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--bg-2);
+  border: 1px solid var(--border-0);
+  border-radius: 4px;
+  padding: 6px 10px;
+  min-width: 130px;
+}
+.earnings-badge__label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.earnings-badge__date {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-0);
+}
+.earnings-badge__date--past {
+  color: var(--text-2);
+}
+.earnings-badge__date--soon {
+  color: var(--accent);
+}
+.earnings-badge__date--future {
+  color: var(--positive);
+}
+.earnings-badge__rel {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-3);
+}
