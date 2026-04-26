@@ -152,13 +152,32 @@ def build(
         "enrichment_stats": enrich_stats,
     }
 
+    # 7a. Inyectar earnings dates desde data/earnings.json (fuente canónica)
+    earnings_path = Path("data/earnings.json")
+    earnings_map: dict = {}
+    if earnings_path.exists():
+        with open(earnings_path, encoding="utf-8") as f:
+            earnings_raw = json.load(f)
+        earnings_map = earnings_raw.get("companies", {})
+        log.info("📅 earnings.json: %d tickers cargados", len(earnings_map))
+    else:
+        log.warning("data/earnings.json no encontrado — earnings fields omitidos")
+
+    companies_records = df_to_records(df)
+    for rec in companies_records:
+        ticker = rec.get("ticker", "")
+        ed = earnings_map.get(ticker, {})
+        rec["earnings_last_date"]  = ed.get("earnings_last_date")
+        rec["earnings_next_date"]  = ed.get("earnings_next_date")
+        rec["earnings_updated_at"] = ed.get("earnings_updated_at")
+
     # 7. Construir payload del watchlist principal
     payload = {
         "meta": meta,
         "kpis": kpis,
         "category_stats": cat_stats,
         "deltas": deltas,
-        "companies": df_to_records(df),
+        "companies": companies_records,
     }
 
     # 8. Escribir watchlist.json
