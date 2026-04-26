@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T08:34:44+00:00",
+    "generated_at": "2026-04-26T09:07:18+00:00",
     "n_companies": 61,
     "source_file": "watchlist_ratings.xlsx",
     "validation_issues": [],
@@ -224,13 +224,6 @@
         "delta": 0.29
       },
       {
-        "ticker": "CELH",
-        "name": "CELH",
-        "from": 3.04,
-        "to": 3.24,
-        "delta": 0.2
-      },
-      {
         "ticker": "IPCO",
         "name": "IPCO",
         "from": 1.51,
@@ -238,17 +231,24 @@
         "delta": 0.2
       },
       {
-        "ticker": "KIST",
-        "name": "KIST",
-        "from": 1.95,
-        "to": 2.14,
-        "delta": 0.19
+        "ticker": "CELH",
+        "name": "CELH",
+        "from": 3.04,
+        "to": 3.24,
+        "delta": 0.2
       },
       {
         "ticker": "SPOT",
         "name": "SPOT",
         "from": 5.27,
         "to": 5.46,
+        "delta": 0.19
+      },
+      {
+        "ticker": "KIST",
+        "name": "KIST",
+        "from": 1.95,
+        "to": 2.14,
         "delta": 0.19
       },
       {
@@ -259,17 +259,17 @@
         "delta": -0.13
       },
       {
-        "ticker": "ITX",
-        "name": "ITX",
-        "from": 7.78,
-        "to": 7.68,
-        "delta": -0.1
-      },
-      {
         "ticker": "META",
         "name": "META",
         "from": 6.61,
         "to": 6.51,
+        "delta": -0.1
+      },
+      {
+        "ticker": "ITX",
+        "name": "ITX",
+        "from": 7.78,
+        "to": 7.68,
         "delta": -0.1
       }
     ]
