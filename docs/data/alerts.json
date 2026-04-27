@@ -1,114 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T19:03:27+00:00",
-    "n_alerts": 8,
+    "generated_at": "2026-04-27T09:36:25+00:00",
+    "n_alerts": 0,
     "by_severity": {
-      "high": 3,
-      "medium": 4,
-      "low": 1
+      "high": 0,
+      "medium": 0,
+      "low": 0
     }
   },
-  "alerts": [
-    {
-      "type": "best_irr_crossed_25",
-      "severity": "high",
-      "ticker": "CHKP",
-      "name": "CHKP",
-      "category": "Cyber",
-      "message": "CHKP Best IRR crossed 25% (24.7% → 25.1%)",
-      "metrics": {
-        "from": 0.24721865267453946,
-        "to": 0.25127380265601795
-      }
-    },
-    {
-      "type": "hunting_ground_entry",
-      "severity": "high",
-      "ticker": "VEEV",
-      "name": "VEEV",
-      "category": "Vertical Saas",
-      "message": "VEEV entered Hunting Ground (rating 8.28, EV/FCF 19.3x)",
-      "metrics": {
-        "rating_composite": 8.28,
-        "ev_fcf": 19.288643560909094,
-        "irr_best": 0.3492125774520394
-      }
-    },
-    {
-      "type": "best_irr_crossed_25",
-      "severity": "high",
-      "ticker": "VRLA",
-      "name": "VRLA",
-      "category": "Alcohol",
-      "message": "VRLA Best IRR crossed 25% (-0.1% → 25.1%)",
-      "metrics": {
-        "from": -0.0011284590928781757,
-        "to": 0.2513938577307431
-      }
-    },
-    {
-      "type": "composite_downgrade",
-      "severity": "medium",
-      "ticker": "EVD",
-      "name": "EVD",
-      "category": "Consumo",
-      "message": "EVD composite downgraded 7.58 → 6.64 (-0.94)",
-      "metrics": {
-        "from": 7.58,
-        "to": 6.64,
-        "delta": -0.9400000000000004
-      }
-    },
-    {
-      "type": "composite_upgrade",
-      "severity": "medium",
-      "ticker": "NFLX",
-      "name": "NFLX",
-      "category": "Consumo",
-      "message": "NFLX composite upgraded 4.93 → 6.13 (+1.20)",
-      "metrics": {
-        "from": 4.93,
-        "to": 6.13,
-        "delta": 1.2000000000000002
-      }
-    },
-    {
-      "type": "composite_upgrade",
-      "severity": "medium",
-      "ticker": "OTLY",
-      "name": "OTLY",
-      "category": "Consumo",
-      "message": "OTLY composite upgraded -0.73 → 2.20 (+2.93)",
-      "metrics": {
-        "from": -0.73,
-        "to": 2.2,
-        "delta": 2.93
-      }
-    },
-    {
-      "type": "composite_upgrade",
-      "severity": "medium",
-      "ticker": "VRLA",
-      "name": "VRLA",
-      "category": "Alcohol",
-      "message": "VRLA composite upgraded 2.07 → 3.79 (+1.72)",
-      "metrics": {
-        "from": 2.07,
-        "to": 3.79,
-        "delta": 1.7200000000000002
-      }
-    },
-    {
-      "type": "exited_hunting",
-      "severity": "low",
-      "ticker": "EVD",
-      "name": "EVD",
-      "category": "Consumo",
-      "message": "EVD exited Hunting Ground",
-      "metrics": {
-        "rating_composite": 6.64,
-        "ev_fcf": 10.892444444444445
-      }
-    }
-  ]
+  "alerts": []
 }
