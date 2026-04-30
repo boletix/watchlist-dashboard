@@ -1,12 +1,37 @@
 {
   "meta": {
-    "generated_at": "2026-04-30T09:33:40+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-04-30T16:10:20+00:00",
+    "n_alerts": 2,
     "by_severity": {
-      "high": 0,
+      "high": 2,
       "medium": 0,
       "low": 0
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "ABNB",
+      "name": "ABNB",
+      "category": "Consumo",
+      "message": "ABNB Best IRR crossed 25% (24.9% → 26.3%)",
+      "metrics": {
+        "from": 0.24926996986099637,
+        "to": 0.26296129615196784
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "NKE",
+      "name": "NKE",
+      "category": "Consumo",
+      "message": "NKE Best IRR crossed 25% (24.7% → 25.1%)",
+      "metrics": {
+        "from": 0.24704718365297818,
+        "to": 0.2514812617037485
+      }
+    }
+  ]
 }
