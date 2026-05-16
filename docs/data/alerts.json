@@ -1,12 +1,63 @@
 {
   "meta": {
-    "generated_at": "2026-05-15T10:02:51+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-05-16T08:32:43+00:00",
+    "n_alerts": 4,
     "by_severity": {
-      "high": 0,
+      "high": 4,
       "medium": 0,
       "low": 0
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "CELH",
+      "name": "CELH",
+      "category": "Consumo",
+      "message": "CELH now has favorable IRR asymmetry (best 25.8%, worst -4.6%)",
+      "metrics": {
+        "irr_best": 0.2578770221855504,
+        "irr_worst": -0.046144114741918374,
+        "irr_asymmetry_ratio": 6.080422738549376
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "CELH",
+      "name": "CELH",
+      "category": "Consumo",
+      "message": "CELH Best IRR crossed 25% (21.4% → 25.8%)",
+      "metrics": {
+        "from": 0.21424094136893213,
+        "to": 0.2578770221855504
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "NKE",
+      "name": "NKE",
+      "category": "Consumo",
+      "message": "NKE Best IRR crossed 25% (24.9% → 26.7%)",
+      "metrics": {
+        "from": 0.24911366502958132,
+        "to": 0.2674586693590104
+      }
+    },
+    {
+      "type": "hunting_ground_entry",
+      "severity": "high",
+      "ticker": "VEEV",
+      "name": "VEEV",
+      "category": "Vertical Saas",
+      "message": "VEEV entered Hunting Ground (rating 8.28, EV/FCF 18.9x)",
+      "metrics": {
+        "rating_composite": 8.28,
+        "ev_fcf": 18.932495892727275,
+        "irr_best": 0.3542809151652808
+      }
+    }
+  ]
 }
