@@ -1,14 +1,26 @@
 {
   "meta": {
-    "generated_at": "2026-05-19T10:48:37+00:00",
-    "n_alerts": 3,
+    "generated_at": "2026-05-19T19:22:16+00:00",
+    "n_alerts": 4,
     "by_severity": {
-      "high": 2,
+      "high": 3,
       "medium": 0,
       "low": 1
     }
   },
   "alerts": [
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "BN",
+      "name": "BN",
+      "category": "Real Assets",
+      "message": "BN Best IRR crossed 25% (24.4% → 25.0%)",
+      "metrics": {
+        "from": 0.24371109875113417,
+        "to": 0.25007229949436627
+      }
+    },
     {
       "type": "asymmetry_improved",
       "severity": "high",
@@ -28,10 +40,10 @@
       "ticker": "KKR",
       "name": "KKR",
       "category": "Real Assets",
-      "message": "KKR Best IRR crossed 25% (24.8% → 25.2%)",
+      "message": "KKR Best IRR crossed 25% (24.8% → 26.3%)",
       "metrics": {
         "from": 0.2480987917744295,
-        "to": 0.2523172655273396
+        "to": 0.2627578346630166
       }
     },
     {
@@ -43,7 +55,7 @@
       "message": "RAA exited Hunting Ground",
       "metrics": {
         "rating_composite": 7.97,
-        "ev_fcf": 27.29380769230769
+        "ev_fcf": 27.424999999999997
       }
     }
   ]
