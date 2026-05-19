@@ -352,3 +352,68 @@ watchlist-dashboard/
 ## Disclaimers
 
 Uso personal. No es investment advice.
+
+---
+
+## v2.0 — Asymmetry & Terminal Safety (2026-05-19)
+
+Refactor profundo del modelo para alinearlo con la filosofía de inversión: largo plazo, asimetría positiva, riesgo de valor terminal = 0. Todas las métricas legacy se mantienen para compatibilidad (frontend antiguo sigue funcionando); las nuevas se añaden en paralelo.
+
+### Nuevas métricas
+
+| Campo | Cómo se calcula | Para qué sirve |
+|---|---|---|
+| `composite_geometric` | `quality^(2/3) × survival^(1/3) × 10` | Penaliza no-linealmente cuando el componente de supervivencia colapsa. Reemplaza la media aritmética cuando el riesgo terminal importa. |
+| `survival_score` | Promedio normalizado [0,1] de durability + risk_disappear + terminal_risk con sus escalas reales del Excel (`[0,15]`, `[-20,0]`, `[-20,0]`) | 0 = quiebra inminente; 1 = supervivencia perfecta a 10 años |
+| `kill_flag` | `True` si `survival_score < 0.5` OR `r3_terminal_risk < -10` | Fuerza `quality_zone = avoid` independientemente del rating |
+| `quality_zone` | Quadrant adaptativo: el cutoff EV/FCF depende del composite (35x si ≥8.5, 25x si ≥7.5, 20x si ≥7.0, 15x resto) | Una compounder excepcional puede pagar más múltiplo; un name mediocre no |
+| `quality_adjusted_multiple` | 50/50 blend de (EV/NOPAT)/ROIC y (EV/FCF)/(g + 1/duration) | Múltiplo ajustado por calidad de reinversión |
+| `irr_worst_repriced` / `irr_best_repriced` | Replica las fórmulas Excel: `FVE = (FCF·exit_mult + Cash − Debt)/Shares`; `IRR_worst = (FVE_min/Price)^(1/5)−1`; `IRR_best = (FVE_max/Price)^(1/4)−1` | IRRs realmente dinámicos al precio post-enrichment |
+| `edge_to_fair` | `(geom_mean(FVE_min, FVE_max) / price) − 1` | Upside al fair value base |
+| `suggested_weight_pct` | `min(0.25 × Kelly × survival_score, 10%)` | Propuesta de tamaño (decides tú según convicción) |
+| `rating_dispersion` | `std(R1, R2, R3)` | Alto = "contested", bajo = consenso analista |
+| `ev_fcf_zscore_self_5y` | `(EV/FCF_now − mean_5y)/std_5y` desde `history.json` | Caro/barato vs propia historia |
+| `ev_fcf_zscore_sector` | Z-score dentro de la categoría | Caro/barato vs sector |
+| `moat_erosion_flag` | OLS slope sobre FCF yield y EV/Sales÷EV/FCF en `history.json`, p<0.20 | Señal de deterioro del moat |
+| `buyback_yield_ttm` / `dividend_yield` / `sbc_dilution_pct` / `net_shareholder_return` | yfinance balance sheet + income statement | Retorno entregado al accionista, neto de dilución SBC |
+
+### Nuevos módulos
+
+- `src/snapshots.py` — guarda snapshot completo (todas las columnas) en `data/snapshots/YYYY-MM-DD_watchlist.json` cada build. Construye `docs/data/process_backtest.json` con drift de rating por ticker. En ≥6 meses de snapshots semanales, mostrará correlación entre rating_geom(t) y forward return.
+- `src/correlations.py` — matriz de correlación retornos diarios 1y entre la watchlist + clusters jerárquicos. Output: `docs/data/correlations.json` con clusters y pares con |corr|>0.75.
+- `src/shareholder.py` — buyback yield + dividend yield + SBC dilution vía yfinance. Output: `docs/data/shareholder.json`.
+
+### Cambios en archivos existentes
+
+- `src/etl.py` — `validate_or_raise()` para fallar CI en blockers (duplicados, market cap negativo, composite ≠ media R1/R2/R3 fuera de tolerancia).
+- `src/enrich.py` — fallback single-ticker con `ThreadPoolExecutor(8)` tras batch fallido, para evitar que un ticker corrupto rompa todo el enrichment.
+- `src/analytics.py` — todas las funciones nuevas + `inject_history_derived()` que combina watchlist con `history.json`.
+- `src/build.py` — orquesta los 3 módulos nuevos. Banderas `--skip-correlations`, `--skip-shareholder`, `--skip-snapshot`.
+
+### Frontend
+
+- Drawer (tarjeta empresa) tiene ahora sección destacada **v2.0 - Asymmetry & Terminal Safety** con composite_geometric, survival_score, kill_flag banner, quality_zone, edge_to_fair, suggested_weight. Sección dedicada **Valuation Z-Scores** muestra los z-scores propio y sectorial. Sección **Shareholder Return** desglosa buyback/div/SBC/neto. Sección **Valuation & Returns** muestra los IRRs cached vs repriced en paralelo.
+- Tabla principal añade columnas **Geom** (composite geométrico), **Weight** (suggested_weight), **Kill** (badge), **Zone v2** (quality_zone). Las empresas con moat_erosion_flag llevan un **!** naranja junto al rating.
+- Dos nuevos paneles bajo backtest/history: **process backtest · rating drift** y **diversification · correlation clusters**.
+
+### Backup
+
+Se guardó `/sessions/.../.backup_v1/` con todos los archivos pre-v2. Cuando confirmes que todo va bien en GitHub Pages, borra esa carpeta:
+
+```bash
+rm -rf .backup_v1/
+```
+
+### Limitaciones honestas
+
+- `moat_erosion_flag` usa proxies sobre múltiplos (no márgenes reales) porque `history.json` no expone revenue absoluto. Con p<0.20 puede dar falsos positivos. Para apretar, subir a `p_threshold=0.10` en `detect_moat_erosion()`.
+- `suggested_weight_pct` asume `p_win=0.55`. Si tu convicción real es distinta, ajusta `_kelly_fractional(row, p_win=…)` en `analytics.py`.
+- `composite_geometric` pondera quality^(2/3) · survival^(1/3). Esto refleja que para 10y holding, supervivencia importa, pero menos que calidad si la calidad ya es alta. Si quieres más castigo terminal, sube el peso a survival^(1/2).
+- `KILL_TERMINAL_THRESHOLD = -10` (en escala -20..0). Aprieta o relaja en `analytics.py:54` según veas.
+
+### Roadmap a partir de v2.0
+
+- [ ] v2.1 — acumular 6+ meses de snapshots para activar el process backtest real (correlación rating→forward return)
+- [ ] v2.2 — DeGiro overlay (position_pct real para cruce con suggested_weight)
+- [ ] v2.3 — Monte Carlo sobre IRR scenarios usando distribución g_min..g_max + exit_mult_min..max
+- [ ] v2.4 — Factor decomposition: regresión Fama-French 5-factor del backtest vs S&P; aislar alpha del proceso

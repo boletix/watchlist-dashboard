@@ -1,24 +1,14 @@
 """
-Build: orquesta ETL + enrichment + analytics y escribe JSON al frontend.
+Build v2.0: orquesta ETL + enrichment + analytics (incl. v2.0) + escribe JSON.
 
 Output:
 - docs/data/watchlist.json       (consumido por el frontend)
-- data/processed/watchlist.json  (copia para inspección / git diff)
+- data/processed/watchlist.json  (copia para inspeccion / git diff)
+- docs/data/process_backtest.json
+- docs/data/correlations.json
+- docs/data/shareholder.json
 
-Formato del JSON:
-{
-  "meta": {
-    "generated_at": "2026-04-19T10:30:00Z",
-    "n_companies": 61,
-    "source_file": "watchlist_ratings.xlsx",
-    "validation_issues": [],
-    "enrichment_stats": {"yfinance": 45, "stale": 16}
-  },
-  "kpis": { ... headline_kpis ... },
-  "category_stats": [ ... ],
-  "deltas": { ... cambios vs snapshot previo ... },
-  "companies": [ { ...61 filas... } ]
-}
+Tambien guarda un snapshot completo (no solo tickers) en data/snapshots/.
 """
 from __future__ import annotations
 
@@ -33,10 +23,8 @@ import numpy as np
 import pandas as pd
 
 from src.analytics import (
-    category_stats,
-    compute_deltas,
-    enrich as enrich_analytics,
-    headline_kpis,
+    category_stats, compute_deltas, enrich as enrich_analytics,
+    headline_kpis, inject_history_derived,
 )
 from src.enrich import apply_quotes, fetch_quotes
 from src.etl import load_watchlist, validate
@@ -45,7 +33,6 @@ log = logging.getLogger(__name__)
 
 
 def _to_jsonable(value):
-    """Convierte tipos numpy/pandas a JSON-friendly. Preserva None para NaN."""
     if value is None:
         return None
     if isinstance(value, (np.integer,)):
@@ -58,13 +45,15 @@ def _to_jsonable(value):
         return bool(value)
     if isinstance(value, pd.Timestamp):
         return value.isoformat()
-    if pd.isna(value) if not isinstance(value, (list, dict)) else False:
-        return None
+    try:
+        if not isinstance(value, (list, dict)) and pd.isna(value):
+            return None
+    except Exception:
+        pass
     return value
 
 
-def df_to_records(df: pd.DataFrame) -> list[dict]:
-    """Convierte DataFrame a lista de dicts con NaN → None."""
+def df_to_records(df: pd.DataFrame) -> list:
     records = []
     for _, row in df.iterrows():
         rec = {}
@@ -77,14 +66,13 @@ def df_to_records(df: pd.DataFrame) -> list[dict]:
     return records
 
 
-def load_previous_snapshot(snapshots_dir: Path) -> pd.DataFrame | None:
-    """Carga el snapshot más reciente si existe."""
+def load_previous_snapshot(snapshots_dir: Path):
     if not snapshots_dir.exists():
         return None
-    snapshots = sorted(snapshots_dir.glob("*_watchlist.json"))
-    if not snapshots:
+    snaps = sorted(snapshots_dir.glob("*_watchlist.json"))
+    if not snaps:
         return None
-    latest = snapshots[-1]
+    latest = snaps[-1]
     log.info("Snapshot previo: %s", latest.name)
     try:
         with open(latest) as f:
@@ -96,16 +84,18 @@ def load_previous_snapshot(snapshots_dir: Path) -> pd.DataFrame | None:
 
 
 def build(
-    xlsx_path: str | Path = "data/raw/watchlist_ratings.xlsx",
-    output_dir: str | Path = "docs/data",
-    processed_dir: str | Path = "data/processed",
-    snapshots_dir: str | Path = "data/snapshots",
-    skip_enrichment: bool = False,
-    skip_backtest: bool = False,
-    skip_history: bool = False,
-    skip_alerts: bool = False,
+    xlsx_path="data/raw/watchlist_ratings.xlsx",
+    output_dir="docs/data",
+    processed_dir="data/processed",
+    snapshots_dir="data/snapshots",
+    skip_enrichment=False,
+    skip_backtest=False,
+    skip_history=False,
+    skip_alerts=False,
+    skip_correlations=False,
+    skip_shareholder=False,
+    skip_snapshot=False,
 ) -> dict:
-    """Pipeline completo. Devuelve el dict de meta."""
     xlsx_path = Path(xlsx_path)
     output_dir = Path(output_dir)
     processed_dir = Path(processed_dir)
@@ -117,22 +107,22 @@ def build(
     df = load_watchlist(xlsx_path)
     issues = validate(df)
     if issues:
-        log.warning("Validación con %d issues: %s", len(issues), issues)
+        log.warning("Validacion con %d issues: %s", len(issues), issues)
 
-    # 2. Enrichment (yfinance)
+    # 2. Enrichment
     enrich_stats = {"yfinance": 0, "stale": len(df), "skipped": 0}
     if not skip_enrichment:
         quotes = fetch_quotes(df["ticker"].tolist())
         df = apply_quotes(df, quotes)
         enrich_stats = {
             "yfinance": int((df["price_source"] == "yfinance").sum()),
-            "stale": int((df["price_source"] == "stale").sum()),
-            "skipped": int((df["price_source"] == "skipped").sum()),
+            "stale":    int((df["price_source"] == "stale").sum()),
+            "skipped":  int((df["price_source"] == "skipped").sum()),
         }
     else:
         df["price_source"] = "manual"
 
-    # 3. Analytics
+    # 3. Analytics v2.0 (legacy + nuevas metricas)
     df = enrich_analytics(df)
 
     # 4. Deltas vs snapshot previo
@@ -150,18 +140,16 @@ def build(
         "source_file": xlsx_path.name,
         "validation_issues": issues,
         "enrichment_stats": enrich_stats,
+        "version": "2.0",
     }
 
-    # 7a. Inyectar earnings dates desde data/earnings.json (fuente canónica)
+    # 7. Earnings dates
     earnings_path = Path("data/earnings.json")
-    earnings_map: dict = {}
+    earnings_map = {}
     if earnings_path.exists():
         with open(earnings_path, encoding="utf-8") as f:
             earnings_raw = json.load(f)
         earnings_map = earnings_raw.get("companies", {})
-        log.info("📅 earnings.json: %d tickers cargados", len(earnings_map))
-    else:
-        log.warning("data/earnings.json no encontrado — earnings fields omitidos")
 
     companies_records = df_to_records(df)
     for rec in companies_records:
@@ -171,7 +159,104 @@ def build(
         rec["earnings_next_date"]  = ed.get("earnings_next_date")
         rec["earnings_updated_at"] = ed.get("earnings_updated_at")
 
-    # 7. Construir payload del watchlist principal
+    # 8. Backtest
+    if not skip_backtest:
+        try:
+            from src.backtest import build_backtest
+            meta["backtest"] = build_backtest(df, output_path=output_dir / "backtest.json")
+        except Exception as e:
+            log.error("Backtest fallo: %s", e)
+            meta["backtest_error"] = str(e)
+
+    # 9. History (Q3) + inject z-score + moat erosion
+    history_payload = None
+    if not skip_history:
+        try:
+            from src.history import build_history
+            meta["history"] = build_history(df, output_path=output_dir / "history.json")
+            # Re-leer history.json e inyectar metricas v2.0 derivadas
+            history_path = output_dir / "history.json"
+            if history_path.exists():
+                with open(history_path) as fh:
+                    history_payload = json.load(fh)
+                df = inject_history_derived(df, history_payload)
+                # Refresh records con los campos nuevos inyectados
+                companies_records = df_to_records(df)
+                for rec in companies_records:
+                    ticker = rec.get("ticker", "")
+                    ed = earnings_map.get(ticker, {})
+                    rec["earnings_last_date"]  = ed.get("earnings_last_date")
+                    rec["earnings_next_date"]  = ed.get("earnings_next_date")
+                    rec["earnings_updated_at"] = ed.get("earnings_updated_at")
+        except Exception as e:
+            log.error("History fallo: %s", e)
+            meta["history_error"] = str(e)
+    else:
+        # Si no se reconstruye history, intentar leer el existente
+        history_path = output_dir / "history.json"
+        if history_path.exists():
+            try:
+                with open(history_path) as fh:
+                    history_payload = json.load(fh)
+                df = inject_history_derived(df, history_payload)
+                companies_records = df_to_records(df)
+                for rec in companies_records:
+                    ticker = rec.get("ticker", "")
+                    ed = earnings_map.get(ticker, {})
+                    rec["earnings_last_date"]  = ed.get("earnings_last_date")
+                    rec["earnings_next_date"]  = ed.get("earnings_next_date")
+                    rec["earnings_updated_at"] = ed.get("earnings_updated_at")
+            except Exception as e:
+                log.warning("No se pudo leer history existente: %s", e)
+
+    # 10. Shareholder return
+    if not skip_shareholder:
+        try:
+            from src.shareholder import build_shareholder
+            meta["shareholder"] = build_shareholder(df, output_path=output_dir / "shareholder.json")
+            # Inyectar shareholder en companies
+            sh_path = output_dir / "shareholder.json"
+            if sh_path.exists():
+                with open(sh_path) as fh:
+                    sh = json.load(fh).get("companies", {})
+                for rec in companies_records:
+                    t = rec.get("ticker", "")
+                    s = sh.get(t, {})
+                    rec["buyback_yield_ttm"]     = s.get("buyback_yield_ttm")
+                    rec["dividend_yield"]        = s.get("dividend_yield")
+                    rec["sbc_dilution_pct"]      = s.get("sbc_dilution_pct")
+                    rec["net_shareholder_return"] = s.get("net_shareholder_return")
+        except Exception as e:
+            log.error("Shareholder fallo: %s", e)
+            meta["shareholder_error"] = str(e)
+
+    # 11. Correlations
+    if not skip_correlations:
+        try:
+            from src.correlations import build_correlations
+            meta["correlations"] = build_correlations(df, output_path=output_dir / "correlations.json")
+        except Exception as e:
+            log.error("Correlations fallo: %s", e)
+            meta["correlations_error"] = str(e)
+
+    # 12. Alerts
+    if not skip_alerts:
+        try:
+            from src.alerts import detect_alerts, write_alerts_json, notify_email, notify_whatsapp
+            alerts = detect_alerts(df, prev_df)
+            write_alerts_json(alerts, output_path=output_dir / "alerts.json")
+            meta["n_alerts"] = len(alerts)
+            notify_email(alerts)
+            notify_whatsapp(alerts)
+        except Exception as e:
+            log.error("Alerts fallo: %s", e)
+            meta["alerts_error"] = str(e)
+
+    # 13. Re-actualizar kpis y cat_stats con metricas v2.0 ya inyectadas
+    kpis = headline_kpis(df)
+    cat_stats = category_stats(df)
+
+    # 14. Payload final
     payload = {
         "meta": meta,
         "kpis": kpis,
@@ -179,83 +264,60 @@ def build(
         "deltas": deltas,
         "companies": companies_records,
     }
-
-    # 8. Escribir watchlist.json
     target_frontend = output_dir / "watchlist.json"
     target_processed = processed_dir / "watchlist.json"
     with open(target_frontend, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
     shutil.copy(target_frontend, target_processed)
-    log.info("✅ watchlist.json → %s (%d empresas)", target_frontend, len(df))
+    log.info("watchlist.json -> %s (%d empresas)", target_frontend, len(df))
 
-    # 9. Backtest (Q4): NAVs vs benchmarks desde 2020
-    if not skip_backtest:
+    # 15. Snapshot semanal completo (no solo tickers)
+    if not skip_snapshot:
         try:
-            from src.backtest import build_backtest
-            backtest_meta = build_backtest(df, output_path=output_dir / "backtest.json")
-            meta["backtest"] = backtest_meta
+            from src.snapshots import save_full_snapshot, build_process_backtest
+            save_full_snapshot(df, snapshots_dir)
+            meta["process_backtest"] = build_process_backtest(
+                snapshots_dir, output_path=output_dir / "process_backtest.json")
         except Exception as e:
-            log.error("❌ Backtest falló: %s", e)
-            meta["backtest_error"] = str(e)
+            log.error("Snapshot/Process backtest fallo: %s", e)
+            meta["snapshot_error"] = str(e)
 
-    # 10. History (Q3): multiples evolution
-    if not skip_history:
-        try:
-            from src.history import build_history
-            history_meta = build_history(df, output_path=output_dir / "history.json")
-            meta["history"] = history_meta
-        except Exception as e:
-            log.error("❌ History falló: %s", e)
-            meta["history_error"] = str(e)
-
-    # 11. Alerts: detectar eventos vs snapshot previo
-    if not skip_alerts:
-        try:
-            from src.alerts import detect_alerts, write_alerts_json, notify_email, notify_whatsapp
-            alerts = detect_alerts(df, prev_df)
-            write_alerts_json(alerts, output_path=output_dir / "alerts.json")
-            meta["n_alerts"] = len(alerts)
-            # Notificaciones (silentes si no hay credenciales)
-            notify_email(alerts)
-            notify_whatsapp(alerts)
-        except Exception as e:
-            log.error("❌ Alerts falló: %s", e)
-            meta["alerts_error"] = str(e)
-
-    log.info(
-        "✅ Build completo (%s) — empresas: %d, alerts: %d",
-        meta["generated_at"], len(df), meta.get("n_alerts", 0),
-    )
+    log.info("Build v2.0 completo - empresas: %d, alerts: %d",
+             len(df), meta.get("n_alerts", 0))
     return meta
 
 
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
-    parser = argparse.ArgumentParser(description="Build watchlist dashboard JSON")
-    parser.add_argument("--xlsx", default="data/raw/watchlist_ratings.xlsx")
-    parser.add_argument("--out", default="docs/data")
-    parser.add_argument("--skip-enrichment", action="store_true",
-                        help="Omitir yfinance price refresh (más rápido)")
-    parser.add_argument("--skip-backtest", action="store_true",
-                        help="Omitir backtest (Q4) — descarga ~5min")
-    parser.add_argument("--skip-history", action="store_true",
-                        help="Omitir historical multiples (Q3) — descarga ~10min")
-    parser.add_argument("--skip-alerts", action="store_true",
-                        help="Omitir generación de alertas")
-    parser.add_argument("--quick", action="store_true",
-                        help="Solo watchlist principal (skip backtest, history, alerts)")
-    args = parser.parse_args()
+    p = argparse.ArgumentParser(description="Build watchlist dashboard v2.0")
+    p.add_argument("--xlsx", default="data/raw/watchlist_ratings.xlsx")
+    p.add_argument("--out", default="docs/data")
+    p.add_argument("--skip-enrichment", action="store_true")
+    p.add_argument("--skip-backtest", action="store_true")
+    p.add_argument("--skip-history", action="store_true")
+    p.add_argument("--skip-alerts", action="store_true")
+    p.add_argument("--skip-correlations", action="store_true")
+    p.add_argument("--skip-shareholder", action="store_true")
+    p.add_argument("--skip-snapshot", action="store_true")
+    p.add_argument("--quick", action="store_true",
+                   help="solo watchlist principal (skip backtest, history, alerts, corr, sh)")
+    args = p.parse_args()
     if args.quick:
         args.skip_backtest = True
         args.skip_history = True
         args.skip_alerts = True
+        args.skip_correlations = True
+        args.skip_shareholder = True
+        args.skip_snapshot = True
     build(
-        xlsx_path=args.xlsx,
-        output_dir=args.out,
+        xlsx_path=args.xlsx, output_dir=args.out,
         skip_enrichment=args.skip_enrichment,
         skip_backtest=args.skip_backtest,
         skip_history=args.skip_history,
         skip_alerts=args.skip_alerts,
+        skip_correlations=args.skip_correlations,
+        skip_shareholder=args.skip_shareholder,
+        skip_snapshot=args.skip_snapshot,
     )
 
 

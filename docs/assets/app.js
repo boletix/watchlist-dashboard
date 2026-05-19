@@ -7,6 +7,8 @@ const STATE = {
   backtest: null,
   history: null,
   alerts: null,
+  processBacktest: null,
+  correlations: null,
   filtered: [],
   charts: {},
   filters: {
@@ -48,22 +50,18 @@ function debounce(fn, ms = 150) {
    ===================================================================== */
 async function loadData() {
   // watchlist.json es OBLIGATORIO. Los otros son opcionales.
-  const [watchlist, backtest, history, alerts] = await Promise.all([
+  const [watchlist, backtest, history, alerts, processBacktest, correlations] = await Promise.all([
     fetch('data/watchlist.json?v=' + Date.now()).then((r) => {
       if (!r.ok) throw new Error('No se pudo cargar watchlist.json');
       return r.json();
     }),
-    fetch('data/backtest.json?v=' + Date.now())
-      .then((r) => (r.ok ? r.json() : null))
-      .catch(() => null),
-    fetch('data/history.json?v=' + Date.now())
-      .then((r) => (r.ok ? r.json() : null))
-      .catch(() => null),
-    fetch('data/alerts.json?v=' + Date.now())
-      .then((r) => (r.ok ? r.json() : null))
-      .catch(() => null),
+    fetch('data/backtest.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch('data/history.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch('data/alerts.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch('data/process_backtest.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch('data/correlations.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
   ]);
-  return { watchlist, backtest, history, alerts };
+  return { watchlist, backtest, history, alerts, processBacktest, correlations };
 }
 
 /* =====================================================================
@@ -222,7 +220,24 @@ const TABLE_COLS = [
     label: 'Rating',
     num: true,
     fmt: (v, c) =>
-      `<span class="rating-badge tier-${c.rating_tier}">${CHARTS.fmt.rating(v)}</span>`,
+      `<span class="rating-badge tier-${c.rating_tier}">${CHARTS.fmt.rating(v)}</span>${c.moat_erosion_flag ? '<span class="moat-warn" title="Moat erosion detected">!</span>' : ''}`,
+  },
+  {
+    key: 'composite_geometric',
+    label: 'Geom',
+    num: true,
+    fmt: (v) => v != null ? `<span class="rating-badge" style="color:var(--accent);border:1px solid var(--accent-dim);">${v.toFixed(2)}</span>` : '—',
+  },
+  {
+    key: 'suggested_weight_pct',
+    label: 'Weight',
+    num: true,
+    fmt: (v) => v != null && v > 0 ? `<span style="color:var(--accent);font-weight:500;">${(v*100).toFixed(1)}%</span>` : '—',
+  },
+  {
+    key: 'kill_flag',
+    label: 'Kill',
+    fmt: (v) => v ? '<span style="color:var(--negative);font-family:var(--font-mono);font-size:10px;">KILL</span>' : '',
   },
   { key: 'rating_1', label: 'R1', num: true, fmt: (v) => CHARTS.fmt.rating(v) },
   { key: 'rating_2', label: 'R2', num: true, fmt: (v) => CHARTS.fmt.rating(v) },
@@ -242,6 +257,11 @@ const TABLE_COLS = [
     key: 'quadrant',
     label: 'Quadrant',
     fmt: (v) => `<span class="quadrant-pill q-${v}">${CHARTS.QUADRANT_LABEL[v] || v}</span>`,
+  },
+  {
+    key: 'quality_zone',
+    label: 'Zone v2',
+    fmt: (v) => `<span class="quadrant-pill q-${v}">${(CHARTS.QUADRANT_LABEL[v] || v || '—').replace(/_/g,' ')}</span>`,
   },
 ];
 
@@ -477,15 +497,50 @@ function openDrawer(ticker) {
         ${c.earnings_updated_at ? `<div style="margin-top:6px;font-family:var(--font-mono);font-size:9px;color:var(--text-3);">actualizado ${c.earnings_updated_at} · fuente yfinance / IR</div>` : ''}
       </div>
 
+      <!-- v2.0 BANNER: composite geometric + flags destacados -->
       <div class="drawer__section">
-        <h3>Rating Summary</h3>
+        <h3>v2.0 - Asymmetry &amp; Terminal Safety</h3>
+        ${c.kill_flag ? '<div class="v2-kill">KILL FLAG - terminal risk demasiado alto, no entra en Hunting Ground</div>' : ''}
+        ${c.moat_erosion_flag ? '<div class="v2-moat">MOAT EROSION DETECTED - FCF yield / margin trend deteriorando</div>' : ''}
         <div class="stat-grid">
           <div class="stat">
-            <div class="stat__label">Composite</div>
+            <div class="stat__label">Composite Geom <em style="color:var(--accent);">(v2)</em></div>
+            <div class="stat__value">${F.rating(c.composite_geometric)}
+              <span style="color:var(--text-2);font-size:11px"> vs ${F.rating(c.rating_composite)} aritm.</span>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Survival Score</div>
+            <div class="stat__value ${c.survival_score >= 0.7 ? 'positive' : c.survival_score < 0.5 ? 'negative' : ''}">${c.survival_score != null ? (c.survival_score*100).toFixed(0) + '%' : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Quality Zone <em style="color:var(--text-2);font-size:9px;">(adaptive)</em></div>
+            <div class="stat__value" style="color:${CHARTS.QUADRANT_COLOR[c.quality_zone]||'var(--text-1)'}">${(CHARTS.QUADRANT_LABEL[c.quality_zone]||c.quality_zone||'—').replace(/_/g,' ')}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Edge to Fair</div>
+            <div class="stat__value ${c.edge_to_fair > 0 ? 'positive' : 'negative'}">${c.edge_to_fair != null ? (c.edge_to_fair*100).toFixed(0)+'%' : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Suggested Weight <em style="color:var(--text-3);font-size:9px;">Kelly·Surv</em></div>
+            <div class="stat__value" style="color:var(--accent);">${c.suggested_weight_pct != null ? (c.suggested_weight_pct*100).toFixed(1)+'%' : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Rating Dispersion</div>
+            <div class="stat__value">${c.rating_dispersion != null ? c.rating_dispersion.toFixed(2) : '—'} <span style="color:var(--text-2);font-size:10px;">${c.rating_dispersion > 0.8 ? 'CONTESTED' : 'consensus'}</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drawer__section">
+        <h3>Rating Summary (legacy)</h3>
+        <div class="stat-grid">
+          <div class="stat">
+            <div class="stat__label">Composite (aritm)</div>
             <div class="stat__value">${F.rating(c.rating_composite)} <span style="color:var(--text-2);font-size:11px">#${c.composite_rank ?? '—'}</span></div>
           </div>
           <div class="stat">
-            <div class="stat__label">Quadrant</div>
+            <div class="stat__label">Quadrant (legacy)</div>
             <div class="stat__value" style="color:${CHARTS.QUADRANT_COLOR[c.quadrant]}">${CHARTS.QUADRANT_LABEL[c.quadrant]}</div>
           </div>
           <div class="stat">
@@ -508,7 +563,54 @@ function openDrawer(ticker) {
       </div>
 
       <div class="drawer__section">
-        <h3>Valuation & Returns</h3>
+        <h3>Valuation Z-Scores</h3>
+        <div class="stat-grid">
+          <div class="stat">
+            <div class="stat__label">EV/FCF vs Own 5y</div>
+            <div class="stat__value ${c.ev_fcf_zscore_self_5y < -1 ? 'positive' : c.ev_fcf_zscore_self_5y > 1 ? 'negative' : ''}">${c.ev_fcf_zscore_self_5y != null ? c.ev_fcf_zscore_self_5y.toFixed(2) + ' σ' : '—'}</div>
+            <div style="font-size:9px;color:var(--text-3);font-family:var(--font-mono);margin-top:2px;">${c.ev_fcf_zscore_self_5y != null ? (c.ev_fcf_zscore_self_5y < -1 ? 'cheap vs history' : c.ev_fcf_zscore_self_5y > 1 ? 'expensive vs history' : 'normal') : 'no history data'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">EV/FCF vs Sector</div>
+            <div class="stat__value ${c.ev_fcf_zscore_sector < -1 ? 'positive' : c.ev_fcf_zscore_sector > 1 ? 'negative' : ''}">${c.ev_fcf_zscore_sector != null ? c.ev_fcf_zscore_sector.toFixed(2) + ' σ' : '—'}</div>
+            <div style="font-size:9px;color:var(--text-3);font-family:var(--font-mono);margin-top:2px;">${c.ev_fcf_zscore_sector != null ? (c.ev_fcf_zscore_sector < -1 ? 'cheap vs sector' : c.ev_fcf_zscore_sector > 1 ? 'expensive vs sector' : 'normal') : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">EV/FCF Mean 5y</div>
+            <div class="stat__value">${c.ev_fcf_mean_5y != null ? c.ev_fcf_mean_5y.toFixed(1) + 'x' : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Quality-Adjusted Mult</div>
+            <div class="stat__value">${c.quality_adjusted_multiple != null ? c.quality_adjusted_multiple.toFixed(2) : '—'}</div>
+            <div style="font-size:9px;color:var(--text-3);font-family:var(--font-mono);margin-top:2px;">50/50 EV/NOPAT/ROIC + EV/FCF/(g+1/dur)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drawer__section">
+        <h3>Shareholder Return</h3>
+        <div class="stat-grid">
+          <div class="stat">
+            <div class="stat__label">Buyback Yield (TTM)</div>
+            <div class="stat__value ${c.buyback_yield_ttm > 0 ? 'positive' : c.buyback_yield_ttm < 0 ? 'negative' : ''}">${c.buyback_yield_ttm != null ? (c.buyback_yield_ttm*100).toFixed(2)+'%' : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Dividend Yield</div>
+            <div class="stat__value positive">${c.dividend_yield != null ? (c.dividend_yield*100).toFixed(2)+'%' : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">SBC / Revenue</div>
+            <div class="stat__value negative">${c.sbc_dilution_pct != null ? (c.sbc_dilution_pct*100).toFixed(2)+'%' : '—'}</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Net Shareholder Return</div>
+            <div class="stat__value ${c.net_shareholder_return > 0 ? 'positive' : 'negative'}">${c.net_shareholder_return != null ? (c.net_shareholder_return*100).toFixed(2)+'%' : '—'}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drawer__section">
+        <h3>Valuation &amp; Returns (live + repriced)</h3>
         <div class="stat-grid">
           <div class="stat"><div class="stat__label">Price</div><div class="stat__value">${F.num(c.price)}</div></div>
           <div class="stat"><div class="stat__label">Market Cap</div><div class="stat__value">${F.mcap(c.market_cap_m)}</div></div>
@@ -516,14 +618,16 @@ function openDrawer(ticker) {
           <div class="stat"><div class="stat__label">EV/FCF</div><div class="stat__value">${F.multiple(c.ev_fcf)}</div></div>
           <div class="stat"><div class="stat__label">EV/EBITDA</div><div class="stat__value">${F.multiple(c.ev_ebitda)}</div></div>
           <div class="stat"><div class="stat__label">EV/Sales</div><div class="stat__value">${F.multiple(c.ev_sales)}</div></div>
-          <div class="stat"><div class="stat__label">Worst IRR</div><div class="stat__value ${c.irr_worst > 0 ? 'positive' : 'negative'}">${F.pct(c.irr_worst)}</div></div>
-          <div class="stat"><div class="stat__label">Best IRR</div><div class="stat__value positive">${F.pct(c.irr_best)}</div></div>
+          <div class="stat"><div class="stat__label">Worst IRR (cached)</div><div class="stat__value ${c.irr_worst > 0 ? 'positive' : 'negative'}">${F.pct(c.irr_worst)}</div></div>
+          <div class="stat"><div class="stat__label">Worst IRR <em style="color:var(--accent);font-size:9px;">repriced</em></div><div class="stat__value ${c.irr_worst_repriced > 0 ? 'positive' : 'negative'}">${F.pct(c.irr_worst_repriced)}</div></div>
+          <div class="stat"><div class="stat__label">Best IRR (cached)</div><div class="stat__value positive">${F.pct(c.irr_best)}</div></div>
+          <div class="stat"><div class="stat__label">Best IRR <em style="color:var(--accent);font-size:9px;">repriced</em></div><div class="stat__value positive">${F.pct(c.irr_best_repriced)}</div></div>
           <div class="stat"><div class="stat__label">IRR Asymmetry</div><div class="stat__value">${c.irr_asymmetry_ratio ? c.irr_asymmetry_ratio.toFixed(1) + 'x' : '—'}</div></div>
           <div class="stat"><div class="stat__label">FCF CAGR (5y)</div><div class="stat__value">${F.pct(c.fcf_min_cagr)} → ${F.pct(c.fcf_max_cagr)}</div></div>
         </div>
       </div>
 
-      <div class="drawer__section">
+            <div class="drawer__section">
         <h3>R1 — Structural Quality Breakdown</h3>
         ${r1Dims.map(ratingBar).join('')}
       </div>
@@ -945,6 +1049,8 @@ async function boot() {
     STATE.backtest = data.backtest;
     STATE.history = data.history;
     STATE.alerts = data.alerts;
+    STATE.processBacktest = data.processBacktest;
+    STATE.correlations = data.correlations;
 
     renderSidebar();
     wireFilters();
@@ -968,6 +1074,8 @@ async function boot() {
       renderHistorySelector();
       renderHistoryChart();
     }
+    if (STATE.processBacktest) renderProcessBacktest();
+    if (STATE.correlations) renderCorrelations();
 
     // Extra safety: resize after one frame in case of any lingering size issues
     requestAnimationFrame(() => {
@@ -980,3 +1088,122 @@ async function boot() {
 }
 
 document.addEventListener('DOMContentLoaded', boot);
+
+/* =====================================================================
+   V2.0 PANELS — Process Backtest + Correlations
+   ===================================================================== */
+function renderProcessBacktest() {
+  const target = document.getElementById('process-backtest-panel');
+  if (!target || !STATE.processBacktest) return;
+  const pb = STATE.processBacktest;
+  const meta = pb.meta || {};
+  const drift = pb.drift_summary || [];
+
+  let html = `
+    <div class="panel__header">
+      <div class="panel__title">process backtest <em>·</em> rating drift</div>
+      <div class="panel__hint">${meta.n_snapshots ?? 0} snapshots · ${meta.first_snapshot || '—'} → ${meta.last_snapshot || '—'}</div>
+    </div>
+  `;
+  if (!meta.has_enough_data) {
+    html += `<div style="padding:24px;color:var(--text-2);font-family:var(--font-mono);font-size:12px;text-align:center;">
+      <strong style="color:var(--accent);">Acumulando snapshots.</strong><br/>
+      Cuando haya al menos 6 meses de snapshots semanales, este panel mostrará la correlación entre rating composite_geometric (en t) y forward return 3m/6m/12m.<br/>
+      Hoy: <strong>${meta.n_snapshots}</strong> snapshots.<br/>
+      ${drift.length > 0 ? 'Mientras tanto, mostramos drift de rating entre el primer y último snapshot disponible:' : ''}
+    </div>`;
+  }
+  if (drift.length > 0) {
+    html += `<div class="stats-mini-table" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;">
+      <div class="header">Ticker</div>
+      <div class="header num">Rating Δ</div>
+      <div class="header num">Geom Δ</div>
+      <div class="header num">Price %</div>
+      <div class="header num">From → To</div>
+      <div class="header num">N obs</div>`;
+    drift.slice(0, 30).forEach(d => {
+      const ratingD = d.rating_delta != null ? d.rating_delta.toFixed(2) : '—';
+      const geomD = d.geom_delta != null ? d.geom_delta.toFixed(2) : '—';
+      const priceP = d.price_pct_change != null ? (d.price_pct_change*100).toFixed(1)+'%' : '—';
+      const cls_r = d.rating_delta > 0 ? 'positive' : d.rating_delta < 0 ? 'negative' : '';
+      const cls_g = d.geom_delta > 0 ? 'positive' : d.geom_delta < 0 ? 'negative' : '';
+      const cls_p = d.price_pct_change > 0 ? 'positive' : d.price_pct_change < 0 ? 'negative' : '';
+      html += `
+        <div class="name accent">${d.ticker}</div>
+        <div class="num ${cls_r}">${ratingD}</div>
+        <div class="num ${cls_g}">${geomD}</div>
+        <div class="num ${cls_p}">${priceP}</div>
+        <div class="num" style="font-size:9px;color:var(--text-2);">${d.rating_first?.toFixed(1) ?? '—'} → ${d.rating_last?.toFixed(1) ?? '—'}</div>
+        <div class="num">${d.n_obs}</div>
+      `;
+    });
+    html += '</div>';
+  }
+  target.innerHTML = html;
+}
+
+function renderCorrelations() {
+  const target = document.getElementById('correlations-panel');
+  if (!target || !STATE.correlations) return;
+  const c = STATE.correlations;
+  const meta = c.meta || {};
+  const redundant = c.redundant_with || {};
+  const clusters = c.clusters || {};
+
+  // Group tickers by cluster
+  const clusterGroups = {};
+  for (const [t, cl] of Object.entries(clusters)) {
+    if (!clusterGroups[cl]) clusterGroups[cl] = [];
+    clusterGroups[cl].push(t);
+  }
+  const nonTrivial = Object.entries(clusterGroups).filter(([, ts]) => ts.length >= 2);
+
+  let html = `
+    <div class="panel__header">
+      <div class="panel__title">diversification <em>·</em> correlation clusters</div>
+      <div class="panel__hint">${meta.n_tickers ?? 0} tickers · ${nonTrivial.length} clusters con ≥2 names · |corr| > 0.75</div>
+    </div>
+  `;
+  if (meta.error) {
+    html += `<div style="padding:16px;color:var(--negative);font-family:var(--font-mono);font-size:12px;">Error: ${meta.error}</div>`;
+  } else {
+    if (nonTrivial.length === 0) {
+      html += `<div style="padding:16px;color:var(--text-2);font-family:var(--font-mono);font-size:12px;">
+        Ningún cluster de empresas con correlación > 0.75 detectado. Buena diversificación.
+      </div>`;
+    } else {
+      html += `<div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:12px;padding:8px 0;">`;
+      nonTrivial.forEach(([clId, tickers]) => {
+        html += `<div class="cluster-card">
+          <div class="cluster-card__head">Cluster #${clId}</div>
+          <div class="cluster-card__list">${tickers.map(t => `<button class="chip cluster-chip" data-t="${t}">${t}</button>`).join('')}</div>
+        </div>`;
+      });
+      html += '</div>';
+    }
+    // Top redundant pairs table
+    const flatPairs = [];
+    for (const [t, peers] of Object.entries(redundant)) {
+      for (const p of peers) {
+        if (t < p.ticker) {
+          flatPairs.push({a: t, b: p.ticker, corr: p.corr});
+        }
+      }
+    }
+    flatPairs.sort((x, y) => Math.abs(y.corr) - Math.abs(x.corr));
+    if (flatPairs.length > 0) {
+      html += `<div style="margin-top:14px;">
+        <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-2);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">Top pares correlacionados</div>
+        <div class="stats-mini-table" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div class="header">Ticker A</div><div class="header">Ticker B</div><div class="header num">Corr 1y</div>`;
+      flatPairs.slice(0, 15).forEach(p => {
+        html += `<div class="name accent">${p.a}</div><div class="name">${p.b}</div><div class="num ${Math.abs(p.corr) > 0.85 ? 'negative' : ''}">${p.corr.toFixed(2)}</div>`;
+      });
+      html += '</div></div>';
+    }
+  }
+  target.innerHTML = html;
+  target.querySelectorAll('.cluster-chip').forEach(el => {
+    el.addEventListener('click', () => openDrawer(el.dataset.t));
+  });
+}

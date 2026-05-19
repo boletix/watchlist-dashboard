@@ -250,3 +250,19 @@ if __name__ == "__main__":
             print(" -", i)
     else:
         print("\n✅ Validación OK")
+
+
+
+def validate_or_raise(df, allow=("Ratings 0-10 fuera de tolerancia",)):
+    """validate() wrapper que LANZA si hay issues bloqueantes.
+    Para uso en CI: la falla bloquea el merge/deploy.
+    """
+    issues = validate(df)
+    blockers = []
+    for i in issues:
+        if not any(w in str(i) for w in allow):
+            blockers.append(i)
+    if blockers:
+        msg = "Validacion BLOQUEANTE fallo:\n  - " + "\n  - ".join(map(str, blockers))
+        raise ValueError(msg)
+    return issues
