@@ -332,7 +332,7 @@ function renderCharts() {
   const allData = STATE.raw.companies;
 
   for (const [id, optFn, useAll] of [
-    ['chart-quadrant', CHARTS.quadrant, false],
+    ['chart-quadrant', CHARTS.asymmetryQualityConstellation, false],
     ['chart-asymmetry', CHARTS.irrAsymmetry, false],
     ['chart-bubble', CHARTS.roicVsValuation, false],
     ['chart-heatmap', CHARTS.heatmap, true],  // heatmap uses full universe
@@ -958,6 +958,7 @@ function refresh() {
   renderKPIs();
   renderTable();
   renderCharts();
+  renderScoreV2Table();
   renderEarningsCalendar();
 }
 
@@ -1150,7 +1151,6 @@ function renderCorrelations() {
   const redundant = c.redundant_with || {};
   const clusters = c.clusters || {};
 
-  // Group tickers by cluster
   const clusterGroups = {};
   for (const [t, cl] of Object.entries(clusters)) {
     if (!clusterGroups[cl]) clusterGroups[cl] = [];
@@ -1161,7 +1161,7 @@ function renderCorrelations() {
   let html = `
     <div class="panel__header">
       <div class="panel__title">diversification <em>·</em> correlation clusters</div>
-      <div class="panel__hint">${meta.n_tickers ?? 0} tickers · ${nonTrivial.length} clusters con ≥2 names · |corr| > 0.75</div>
+      <div class="panel__hint">${meta.n_tickers ?? 0} tickers · ${nonTrivial.length} clusters con >=2 names · |corr| > 0.75</div>
     </div>
   `;
   if (meta.error) {
@@ -1169,7 +1169,7 @@ function renderCorrelations() {
   } else {
     if (nonTrivial.length === 0) {
       html += `<div style="padding:16px;color:var(--text-2);font-family:var(--font-mono);font-size:12px;">
-        Ningún cluster de empresas con correlación > 0.75 detectado. Buena diversificación.
+        Ningun cluster de empresas con correlacion > 0.75 detectado. Buena diversificacion.
       </div>`;
     } else {
       html += `<div style="display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:12px;padding:8px 0;">`;
@@ -1181,13 +1181,10 @@ function renderCorrelations() {
       });
       html += '</div>';
     }
-    // Top redundant pairs table
     const flatPairs = [];
     for (const [t, peers] of Object.entries(redundant)) {
       for (const p of peers) {
-        if (t < p.ticker) {
-          flatPairs.push({a: t, b: p.ticker, corr: p.corr});
-        }
+        if (t < p.ticker) flatPairs.push({ a: t, b: p.ticker, corr: p.corr });
       }
     }
     flatPairs.sort((x, y) => Math.abs(y.corr) - Math.abs(x.corr));
@@ -1205,5 +1202,45 @@ function renderCorrelations() {
   target.innerHTML = html;
   target.querySelectorAll('.cluster-chip').forEach(el => {
     el.addEventListener('click', () => openDrawer(el.dataset.t));
+  });
+}
+/* =====================================================================
+   SCORE V2 — top 10 ranking table (under the constellation hero)
+   ===================================================================== */
+function renderScoreV2Table() {
+  const target = document.getElementById('score-v2-table');
+  if (!target) return;
+  const ranked = [...STATE.filtered]
+    .filter((c) => c.score_v2 != null)
+    .sort((a, b) => (b.score_v2 || 0) - (a.score_v2 || 0))
+    .slice(0, 10);
+  if (!ranked.length) { target.innerHTML = ''; return; }
+  const F = CHARTS.fmt;
+  let html = `<div class="stats-mini-table" style="grid-template-columns: 28px 1.4fr 0.8fr 0.8fr 0.9fr 0.7fr 0.8fr 0.7fr;">
+    <div class="header num">#</div>
+    <div class="header">Ticker</div>
+    <div class="header num">Score</div>
+    <div class="header num">Geom</div>
+    <div class="header num">Surv</div>
+    <div class="header num">EV/FCF 5y</div>
+    <div class="header num">Asym</div>
+    <div class="header num">Weight</div>`;
+  ranked.forEach((c, i) => {
+    const flags = (c.pure_upside ? ' ★' : '') + (c.moat_erosion_flag ? ' !' : '');
+    html += `
+      <div class="num" style="color:var(--text-2);">${i + 1}</div>
+      <div class="name accent" style="cursor:pointer;" data-ticker="${c.ticker}">${c.ticker}<span style="color:var(--accent);font-size:9px;">${flags}</span></div>
+      <div class="num" style="color:var(--accent);font-weight:600;">${c.score_v2.toFixed(1)}</div>
+      <div class="num">${F.rating(c.composite_geometric)}</div>
+      <div class="num ${c.survival_score >= 0.7 ? 'positive' : c.survival_score < 0.5 ? 'negative' : ''}">${c.survival_score != null ? (c.survival_score*100).toFixed(0)+'%' : '—'}</div>
+      <div class="num">${F.multiple(c.ev_fcf_5y_base)}</div>
+      <div class="num">${c.asymmetry_v2 != null ? c.asymmetry_v2.toFixed(1) : '—'}</div>
+      <div class="num" style="color:var(--accent);">${c.suggested_weight_pct != null ? (c.suggested_weight_pct*100).toFixed(1)+'%' : '—'}</div>
+    `;
+  });
+  html += '</div>';
+  target.innerHTML = html;
+  target.querySelectorAll('[data-ticker]').forEach((el) => {
+    el.addEventListener('click', () => openDrawer(el.dataset.ticker));
   });
 }

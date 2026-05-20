@@ -405,6 +405,90 @@ def compute_zscore_self_history(history_payload):
     return out
 
 
+
+ASYM_V2_CAP = 30.0
+EV_FCF_5Y_EXPENSIVE = 25.0  # >= 25x EV/FCF a 5y base = caro
+
+
+def _asymmetry_v2(row):
+    """Asimetria normalizada que respeta 'pure upside' (worst IRR > 0)."""
+    best = row.get("irr_best_repriced")
+    if best is None or pd.isna(best):
+        best = row.get("irr_best")
+    worst = row.get("irr_worst_repriced")
+    if worst is None or pd.isna(worst):
+        worst = row.get("irr_worst")
+    if best is None or worst is None or pd.isna(best) or pd.isna(worst):
+        return np.nan
+    downside_risk = max(0.0, -float(worst))
+    asym = (float(best) - float(worst)) / max(downside_risk, 0.01)
+    return float(min(max(asym, -ASYM_V2_CAP), ASYM_V2_CAP))
+
+
+def _pure_upside(row):
+    """True si incluso el peor IRR es positivo (no hay downside modelado)."""
+    worst = row.get("irr_worst_repriced")
+    if worst is None or pd.isna(worst):
+        worst = row.get("irr_worst")
+    if worst is None or pd.isna(worst):
+        return False
+    return bool(float(worst) > 0)
+
+
+def _ev_today(row):
+    """EV recalculado con precio live: price*shares + debt - cash."""
+    price = _safe_float(row.get("price"))
+    shares = _safe_float(row.get("shares_out_m"))
+    cash = _safe_float(row.get("cash"))
+    debt = _safe_float(row.get("total_debt"))
+    if None in (price, shares, cash, debt):
+        # fallback al EV cached del Excel
+        return _safe_float(row.get("ev"))
+    return price * shares + debt - cash
+
+
+def _ev_fcf_5y_base(row):
+    """EV hoy / FCF proyectado a 5y (geom mean del cono bear/bull del Excel)."""
+    ev = _ev_today(row)
+    fcf_min = _safe_float(row.get("fcf_5y_min"))
+    fcf_max = _safe_float(row.get("fcf_5y_max"))
+    if ev is None or fcf_min is None or fcf_max is None:
+        return np.nan
+    if fcf_min <= 0 or fcf_max <= 0:
+        return np.nan
+    fcf_5y_base = (fcf_min * fcf_max) ** 0.5
+    if fcf_5y_base <= 0:
+        return np.nan
+    return float(ev / fcf_5y_base)
+
+
+def _score_v2(row):
+    """
+    Score ADITIVO 0-100 = 25% calidad + 25% supervivencia + 25% edge a 5y + 25% asimetria.
+    kill_flag fuerza score = 0.
+    """
+    if bool(row.get("kill_flag", False)):
+        return 0.0
+    cg = _safe_float(row.get("composite_geometric"))
+    sv = _safe_float(row.get("survival_score"))
+    ev5 = _safe_float(row.get("ev_fcf_5y_base"))
+    asym = _safe_float(row.get("asymmetry_v2"))
+    if cg is None or sv is None:
+        return np.nan
+    quality_norm  = max(0.0, min(1.0, cg / 10.0))
+    survival_norm = max(0.0, min(1.0, sv))
+    if ev5 is None or ev5 <= 0:
+        edge_norm = 0.0
+    else:
+        edge_norm = max(0.0, min(1.0, (EV_FCF_5Y_EXPENSIVE - ev5) / EV_FCF_5Y_EXPENSIVE))
+    if asym is None:
+        asym_norm = 0.0
+    else:
+        asym_norm = max(0.0, min(1.0, asym / ASYM_V2_CAP))
+    score = 0.25 * quality_norm + 0.25 * survival_norm + 0.25 * edge_norm + 0.25 * asym_norm
+    return float(score * 100.0)
+
+
 def enrich(df):
     out = df.copy()
     out["irr_spread"] = out["irr_best"] - out["irr_worst"]
@@ -443,6 +527,12 @@ def enrich(df):
     out["quality_zone"] = out.apply(_quality_zone, axis=1)
     out["kelly_fraction"] = out.apply(_kelly_fractional, axis=1)
     out["suggested_weight_pct"] = out.apply(_suggested_weight, axis=1)
+    # Score v2 (aditivo) + asimetria normalizada + EV/FCF 5y proyectado
+    out["asymmetry_v2"] = out.apply(_asymmetry_v2, axis=1)
+    out["pure_upside"] = out.apply(_pure_upside, axis=1)
+    out["ev_fcf_5y_base"] = out.apply(_ev_fcf_5y_base, axis=1)
+    out["score_v2"] = out.apply(_score_v2, axis=1)
+    out["score_v2_rank"] = out["score_v2"].rank(method="min", ascending=False).astype("Int64")
     return out
 
 

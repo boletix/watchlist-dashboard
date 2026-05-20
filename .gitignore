@@ -25,3 +25,6 @@ node_modules/
 # Build artifacts del sistema (pero no docs/data/watchlist.json que SÍ se commitea)
 pytest-cache-files-*/
 .pytest_cache/
+.backup_v1/
+pytest-cache-files-*/
+.pytest_cache/

@@ -914,6 +914,7 @@ function multipleHistoryOption(historyData, ticker, metric = 'ev_fcf') {
 /* Expose globals */
 window.CHARTS = {
   quadrant: quadrantChartOption,
+  asymmetryQualityConstellation: asymmetryQualityConstellationOption,
   irrAsymmetry: irrAsymmetryOption,
   roicVsValuation: roicVsValuationOption,
   radar: radarOption,
@@ -927,3 +928,171 @@ window.CHARTS = {
   QUADRANT_LABEL,
   CATEGORY_COLORS,
 };
+
+/* =====================================================================
+   ASYMMETRY-QUALITY CONSTELLATION (v2.1 headline chart)
+   X = EV/FCF 5y base (log, inverted: barato a la derecha)
+   Y = composite_geometric
+   size = asymmetry_v2
+   color = survival_score (visualMap rojo->verde)
+   star = pure_upside ; hollow X = kill_flag ; glow = top-N por score_v2
+   ===================================================================== */
+function asymmetryQualityConstellationOption(companies) {
+  const valid = companies.filter(
+    (c) => c.composite_geometric != null &&
+           c.ev_fcf_5y_base != null && c.ev_fcf_5y_base > 0 &&
+           c.asymmetry_v2 != null
+  );
+  if (!valid.length) {
+    return { ...baseOption(), title: { text: 'Sin datos v2.1', textStyle: { color: THEME.text2 } } };
+  }
+
+  // Top-N por score_v2 para el efecto glow
+  const ranked = [...valid].sort((a, b) => (b.score_v2 || 0) - (a.score_v2 || 0));
+  const topGlow = new Set(ranked.slice(0, 8).map((c) => c.ticker));
+
+  // Bounds X (log, invertido). Clipamos a P95 para que respire.
+  const { min: xMin, max: xMax, outliers } = smartLogBounds(
+    valid.map((c) => c.ev_fcf_5y_base),
+    valid.map((c) => c.ticker),
+    0.02, 0.95, 1.15
+  );
+
+  // Survival -> color gradient (rojo -> ambar -> verde)
+  const survColor = (s) => {
+    if (s == null) return THEME.text2;
+    // 0 -> rojo, 0.5 -> ambar, 1 -> verde
+    const stops = [
+      [0.0, [184, 90, 90]],
+      [0.5, [199, 140, 70]],
+      [0.7, [168, 156, 100]],
+      [1.0, [124, 168, 120]],
+    ];
+    let lo = stops[0], hi = stops[stops.length - 1];
+    for (let i = 0; i < stops.length - 1; i++) {
+      if (s >= stops[i][0] && s <= stops[i + 1][0]) { lo = stops[i]; hi = stops[i + 1]; break; }
+    }
+    const t = (s - lo[0]) / Math.max(1e-6, hi[0] - lo[0]);
+    const c = lo[1].map((v, i) => Math.round(v + t * (hi[1][i] - v)));
+    return `rgb(${c[0]},${c[1]},${c[2]})`;
+  };
+
+  // symbolSize a partir de asymmetry_v2 (area ~ sqrt)
+  const sizeOf = (asym) => {
+    const a = Math.max(0, Math.min(30, asym || 0));
+    return 10 + Math.sqrt(a) * 6;  // 10 (asym 0) -> ~43 (asym 30)
+  };
+
+  const data = valid.map((c) => {
+    const clippedX = Math.max(xMin * 1.02, Math.min(xMax * 0.98, c.ev_fcf_5y_base));
+    const kill = !!c.kill_flag;
+    const pure = !!c.pure_upside;
+    const glow = topGlow.has(c.ticker);
+    return {
+      value: [clippedX, c.composite_geometric],
+      name: c.ticker,
+      company: c,
+      symbol: kill ? 'pin' : (pure ? 'diamond' : 'circle'),
+      symbolSize: sizeOf(c.asymmetry_v2),
+      itemStyle: {
+        color: kill ? 'transparent' : survColor(c.survival_score),
+        borderColor: kill ? THEME.negative
+                          : (pure ? THEME.accent : 'rgba(232,230,224,0.25)'),
+        borderWidth: kill ? 2 : (pure ? 2 : 0.5),
+        borderType: kill ? 'dashed' : 'solid',
+        opacity: kill ? 0.9 : 0.9,
+        shadowBlur: glow ? 22 : 0,
+        shadowColor: glow ? survColor(c.survival_score) : 'transparent',
+      },
+      label: glow ? {
+        show: true, formatter: c.ticker, position: 'top',
+        color: THEME.text0, fontFamily: THEME.fontMono, fontSize: 10, fontWeight: 500,
+      } : { show: false },
+    };
+  });
+
+  // Y bounds
+  const ys = valid.map((c) => c.composite_geometric);
+  const yMin = Math.max(0, Math.floor(Math.min(...ys) - 0.5));
+  const yMax = Math.min(10, Math.ceil(Math.max(...ys) + 0.5));
+
+  return {
+    ...baseOption(),
+    grid: { left: 70, right: 36, top: 36, bottom: 58 },
+    visualMap: {
+      show: true, type: 'continuous', min: 0, max: 1,
+      dimension: null, seriesIndex: -1,  // solo leyenda, color lo ponemos manual
+      calculable: false,
+      orient: 'horizontal', left: 'center', bottom: 4,
+      itemWidth: 10, itemHeight: 90,
+      text: ['survival 1.0', '0.0'],
+      textStyle: { color: THEME.text2, fontFamily: THEME.fontMono, fontSize: 9 },
+      inRange: { color: ['#b85a5a', '#c78c46', '#a89c64', '#7ca878'] },
+    },
+    xAxis: {
+      type: 'log', inverse: true,
+      name: `EV/FCF a 5y (base, log) - barato ->  ${outliers.length ? '· ' + outliers.length + ' outliers' : ''}`,
+      nameLocation: 'middle', nameGap: 34,
+      min: xMin, max: xMax, ...axisStyle(),
+    },
+    yAxis: {
+      type: 'value',
+      name: 'Composite Geometrico (calidad x supervivencia)',
+      nameLocation: 'middle', nameGap: 44,
+      min: yMin, max: yMax, ...axisStyle(),
+    },
+    tooltip: {
+      ...baseOption().tooltip,
+      formatter: (p) => {
+        const c = p.data.company;
+        const flags = [];
+        if (c.pure_upside) flags.push('<span style="color:'+THEME.accent+'">PURE UPSIDE</span>');
+        if (c.kill_flag) flags.push('<span style="color:'+THEME.negative+'">KILL</span>');
+        if (c.moat_erosion_flag) flags.push('<span style="color:'+THEME.accent+'">MOAT EROSION</span>');
+        return `
+          <div style="font-family:${THEME.font};margin-bottom:4px;">
+            <span style="color:${THEME.accent};font-weight:600;">${c.ticker}</span>
+            <span style="color:${THEME.text2};margin-left:6px;font-size:10px;">${c.category || ''}</span>
+            <span style="color:${THEME.text2};margin-left:6px;font-size:10px;">#${c.score_v2_rank ?? '—'} score</span>
+          </div>
+          <div style="border-top:1px solid ${THEME.border};padding-top:4px;line-height:1.6;">
+            Score v2&nbsp;&nbsp;&nbsp; <b style="color:${THEME.accent}">${c.score_v2 != null ? c.score_v2.toFixed(1) : '—'}</b> / 100<br/>
+            Composite&nbsp; <b>${fmt.rating(c.composite_geometric)}</b> geom<br/>
+            Survival&nbsp;&nbsp; <b>${c.survival_score != null ? (c.survival_score*100).toFixed(0)+'%' : '—'}</b><br/>
+            EV/FCF 5y&nbsp; <b>${fmt.multiple(c.ev_fcf_5y_base)}</b> <span style="color:${THEME.text2};font-size:10px;">(hoy ${fmt.multiple(c.ev_fcf)})</span><br/>
+            Asym v2&nbsp;&nbsp; <b>${c.asymmetry_v2 != null ? c.asymmetry_v2.toFixed(1) : '—'}</b><br/>
+            IRR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:${c.irr_worst_repriced>0?THEME.positive:THEME.text1}">${fmt.pct(c.irr_worst_repriced)}</b> → <b style="color:${THEME.positive}">${fmt.pct(c.irr_best_repriced)}</b><br/>
+            Weight&nbsp;&nbsp;&nbsp; <b style="color:${THEME.accent}">${c.suggested_weight_pct != null ? (c.suggested_weight_pct*100).toFixed(1)+'%' : '—'}</b><br/>
+            ${flags.length ? '<div style="margin-top:4px;font-size:10px;">'+flags.join(' · ')+'</div>' : ''}
+          </div>
+        `;
+      },
+    },
+    series: [
+      {
+        type: 'scatter',
+        data,
+        markArea: {
+          silent: true,
+          itemStyle: { color: 'rgba(124, 168, 120, 0.06)' },
+          label: {
+            show: true, position: 'insideTopRight',
+            color: 'rgba(124,168,120,0.5)', fontFamily: THEME.fontMono,
+            fontSize: 9, formatter: 'SWEET SPOT\ncalidad alta · barato 5y',
+          },
+          // Top-right en eje invertido = X bajo (barato) + Y alto (calidad)
+          data: [[{ yAxis: 7.5, xAxis: 15 }, { yAxis: yMax, xAxis: xMin }]],
+        },
+        markLine: {
+          silent: true, symbol: 'none',
+          lineStyle: { color: THEME.accentDim, type: 'dashed', width: 1 },
+          label: { color: THEME.text2, fontFamily: THEME.fontMono, fontSize: 9 },
+          data: [
+            { yAxis: 7.5, label: { formatter: 'geom 7.5', position: 'start' } },
+            { xAxis: 15, label: { formatter: 'EV/FCF 5y 15x', position: 'middle' } },
+          ],
+        },
+      },
+    ],
+  };
+}

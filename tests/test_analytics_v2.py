@@ -232,3 +232,63 @@ def test_enrich_adds_v2_columns():
 if __name__ == "__main__":
     import sys
     pytest.main([__file__, "-v"] + sys.argv[1:])
+
+
+# ---- v2.1: asymmetry_v2, ev_fcf_5y_base, score_v2 ----
+from src.analytics import (
+    _asymmetry_v2, _pure_upside, _ev_fcf_5y_base, _score_v2, ASYM_V2_CAP,
+)
+
+def test_asymmetry_v2_negative_worst():
+    # best 30%, worst -10% -> downside 0.10 -> (0.30-(-0.10))/0.10 = 4.0
+    row = {"irr_best_repriced": 0.30, "irr_worst_repriced": -0.10}
+    assert abs(_asymmetry_v2(row) - 4.0) < 1e-9
+
+def test_asymmetry_v2_pure_upside_capped():
+    # worst positive -> downside 0 -> huge -> capped at 30
+    row = {"irr_best_repriced": 0.40, "irr_worst_repriced": 0.05}
+    assert _asymmetry_v2(row) == ASYM_V2_CAP
+
+def test_asymmetry_v2_cap_is_30():
+    assert ASYM_V2_CAP == 30.0
+
+def test_pure_upside_true():
+    assert _pure_upside({"irr_worst_repriced": 0.02}) is True
+
+def test_pure_upside_false():
+    assert _pure_upside({"irr_worst_repriced": -0.05}) is False
+
+def test_ev_fcf_5y_base_basic():
+    # ev = 100*100 + 500 - 1000 = 9500; fcf_5y_base = sqrt(50*200)=100; 9500/100=95
+    row = {"price": 100, "shares_out_m": 100, "cash": 1000, "total_debt": 500,
+           "fcf_5y_min": 50, "fcf_5y_max": 200}
+    assert abs(_ev_fcf_5y_base(row) - 95.0) < 1e-6
+
+def test_score_v2_additive_components():
+    # quality 0.8, survival 0.9, ev5 0x (edge 1.0), asym 30 (norm 1.0)
+    row = {"composite_geometric": 8.0, "survival_score": 0.9,
+           "ev_fcf_5y_base": 0.0001, "asymmetry_v2": 30.0, "kill_flag": False}
+    s = _score_v2(row)
+    # 0.25*0.8 + 0.25*0.9 + 0.25*~1 + 0.25*1 = ~0.925 -> 92.5
+    assert 90 < s < 95
+
+def test_score_v2_kill_zero():
+    row = {"composite_geometric": 9.0, "survival_score": 0.9,
+           "ev_fcf_5y_base": 10, "asymmetry_v2": 30, "kill_flag": True}
+    assert _score_v2(row) == 0.0
+
+def test_score_v2_expensive_5y_zero_edge():
+    # ev5 = 25 -> edge_norm = 0
+    row = {"composite_geometric": 8.0, "survival_score": 0.8,
+           "ev_fcf_5y_base": 25.0, "asymmetry_v2": 0, "kill_flag": False}
+    s = _score_v2(row)
+    # 0.25*0.8 + 0.25*0.8 + 0 + 0 = 0.4 -> 40
+    assert abs(s - 40.0) < 1.0
+
+def test_score_v2_is_additive_not_multiplicative():
+    # Una dimension a cero NO anula el score (aditivo)
+    row = {"composite_geometric": 8.0, "survival_score": 0.8,
+           "ev_fcf_5y_base": 100, "asymmetry_v2": 0, "kill_flag": False}
+    s = _score_v2(row)
+    # 0.25*0.8 + 0.25*0.8 + ~0 + 0 = 0.4 -> 40, sigue positivo (no se anula)
+    assert s > 30

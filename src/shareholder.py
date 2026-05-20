@@ -1,28 +1,4 @@
-"""
-Shareholder return: dilucion neta, buybacks, dividendos.
-
-Para cada ticker computa:
-  - buyback_yield_ttm   : (shares_t-1 - shares_t) / shares_t-1 anualizado
-  - dividend_yield      : dividendos LTM / market_cap actual
-  - sbc_dilution_pct    : stock-based comp LTM / revenue LTM (no dilucion exacta,
-                          pero proxy fuerte; SBC reportado neto bajaria buybacks)
-  - net_shareholder_return : buyback_yield + dividend_yield - sbc_dilution_pct
-
-Output: docs/data/shareholder.json
-Inyectado en watchlist.json para que aparezca en la tarjeta empresa.
-
-Fuentes yfinance:
-  Ticker.info -> dividendYield, sharesOutstanding
-  Ticker.dividends -> historial dividendos
-  Ticker.income_stmt -> StockBasedCompensation (anual)
-  Ticker.balance_sheet / quarterly_balance_sheet -> shares history (imperfecto)
-
-Limitaciones:
-  - yfinance no expone shares_outstanding historicos por fecha. Usamos el
-    cambio reportado en balance_sheet annual (>=2 anos) como proxy.
-  - SBC no esta siempre desglosado en yfinance; cobertura ~70% US.
-  - Empresas EU/UK con cobertura ~50%.
-"""
+"""Shareholder return: dilucion neta, buybacks, dividendos (yfinance)."""
 from __future__ import annotations
 
 import json
@@ -38,46 +14,23 @@ from src.tickers import to_yf
 log = logging.getLogger(__name__)
 
 
-def _safe(v):
-    try:
-        if v is None or pd.isna(v):
-            return None
-    except Exception:
-        return None
-    try:
-        return float(v)
-    except Exception:
-        return None
-
-
-def fetch_shareholder_return(yf_symbol: str) -> dict:
-    """Computa los 4 numeros para un ticker via yfinance."""
+def fetch_shareholder_return(yf_symbol):
     import yfinance as yf
-    out = {
-        "buyback_yield_ttm":     None,
-        "dividend_yield":        None,
-        "sbc_dilution_pct":      None,
-        "net_shareholder_return": None,
-        "currency":              None,
-    }
+    out = {"buyback_yield_ttm": None, "dividend_yield": None,
+           "sbc_dilution_pct": None, "net_shareholder_return": None, "currency": None}
     try:
         t = yf.Ticker(yf_symbol)
         info = t.info or {}
         out["currency"] = info.get("currency") or "USD"
-
-        # Dividend yield: info.dividendYield es ratio (0.02 = 2%)
         div_y = info.get("dividendYield")
         if div_y is not None:
             try:
                 div_y = float(div_y)
-                # yfinance a veces devuelve % (5.0) y otras ratio (0.05); normalizamos
                 if div_y > 1:
                     div_y = div_y / 100.0
                 out["dividend_yield"] = float(div_y)
             except Exception:
                 pass
-
-        # Buyback yield: comparar shares de annual_balance_sheet (>= 2 anos)
         try:
             bs = t.balance_sheet
             if bs is not None and not bs.empty and "Ordinary Shares Number" in bs.index:
@@ -87,36 +40,28 @@ def fetch_shareholder_return(yf_symbol: str) -> dict:
                     last = float(shares_series.iloc[-1])
                     prev = float(shares_series.iloc[-2])
                     if prev > 0:
-                        # Annualizar segun gap (1 ano por defecto)
                         out["buyback_yield_ttm"] = float((prev - last) / prev)
         except Exception as e:
-            log.debug("buyback fetch fail %s: %s", yf_symbol, e)
-
-        # SBC: income_stmt -> Stock Based Compensation (anual mas reciente) / Revenue
+            log.debug("buyback fail %s: %s", yf_symbol, e)
         try:
             inc = t.income_stmt
             if inc is not None and not inc.empty:
-                sbc_keys = ["Stock Based Compensation", "StockBasedCompensation"]
-                rev_keys = ["Total Revenue", "TotalRevenue"]
-                sbc = None; rev = None
-                for k in sbc_keys:
+                sbc = None
+                rev = None
+                for k in ("Stock Based Compensation", "StockBasedCompensation"):
                     if k in inc.index:
                         s = inc.loc[k].dropna()
                         if len(s) > 0:
-                            sbc = float(s.iloc[0])
-                            break
-                for k in rev_keys:
+                            sbc = float(s.iloc[0]); break
+                for k in ("Total Revenue", "TotalRevenue"):
                     if k in inc.index:
                         s = inc.loc[k].dropna()
                         if len(s) > 0:
-                            rev = float(s.iloc[0])
-                            break
+                            rev = float(s.iloc[0]); break
                 if sbc is not None and rev is not None and rev > 0:
                     out["sbc_dilution_pct"] = float(sbc / rev)
         except Exception as e:
-            log.debug("sbc fetch fail %s: %s", yf_symbol, e)
-
-        # Net shareholder return = buyback + div - sbc
+            log.debug("sbc fail %s: %s", yf_symbol, e)
         parts = []
         for k in ("buyback_yield_ttm", "dividend_yield", "sbc_dilution_pct"):
             v = out.get(k)
@@ -126,14 +71,11 @@ def fetch_shareholder_return(yf_symbol: str) -> dict:
             net = sum(v if k != "sbc_dilution_pct" else -v for k, v in parts)
             out["net_shareholder_return"] = float(net)
     except Exception as e:
-        log.warning("shareholder fetch fail %s: %s", yf_symbol, e)
+        log.warning("shareholder fail %s: %s", yf_symbol, e)
     return out
 
 
-def build_shareholder(df_meta: pd.DataFrame,
-                      output_path: str | Path = "docs/data/shareholder.json",
-                      rate_limit_seconds: float = 0.3) -> dict:
-    """Pipeline: para cada ticker, fetch shareholder return numbers."""
+def build_shareholder(df_meta, output_path="docs/data/shareholder.json", rate_limit_seconds=0.3):
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     companies = {}
@@ -148,11 +90,8 @@ def build_shareholder(df_meta: pd.DataFrame,
             n_with_data += 1
         time.sleep(rate_limit_seconds)
     payload = {
-        "meta": {
-            "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-            "n_tickers": len(df_meta),
-            "n_with_data": n_with_data,
-        },
+        "meta": {"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                 "n_tickers": len(df_meta), "n_with_data": n_with_data},
         "companies": companies,
     }
     with open(output_path, "w", encoding="utf-8") as f:
