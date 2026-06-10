@@ -1,12 +1,62 @@
 {
   "meta": {
-    "generated_at": "2026-06-11T11:56:12+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-06-10T12:05:52+00:00",
+    "n_alerts": 4,
     "by_severity": {
-      "high": 0,
+      "high": 3,
       "medium": 0,
-      "low": 0
+      "low": 1
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "BN",
+      "name": "BN",
+      "category": "Real Assets",
+      "message": "BN Best IRR crossed 25% (24.4% → 25.0%)",
+      "metrics": {
+        "from": 0.24371109875113417,
+        "to": 0.25007229949436627
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "CSU",
+      "name": "CSU",
+      "category": "Vertical Saas",
+      "message": "CSU now has favorable IRR asymmetry (best 45.5%, worst 14.3%)",
+      "metrics": {
+        "irr_best": 0.45488435118754245,
+        "irr_worst": 0.14337252119652866,
+        "irr_asymmetry_ratio": 2.172744312447483
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "KKR",
+      "name": "KKR",
+      "category": "Real Assets",
+      "message": "KKR Best IRR crossed 25% (24.8% → 26.3%)",
+      "metrics": {
+        "from": 0.2480987917744295,
+        "to": 0.2627578346630166
+      }
+    },
+    {
+      "type": "exited_hunting",
+      "severity": "low",
+      "ticker": "RAA",
+      "name": "RAA",
+      "category": "Hardware",
+      "message": "RAA exited Hunting Ground",
+      "metrics": {
+        "rating_composite": 7.97,
+        "ev_fcf": 27.424999999999997
+      }
+    }
+  ]
 }

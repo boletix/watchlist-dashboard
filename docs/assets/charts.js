@@ -1,6 +1,7 @@
 /* =====================================================================
    CHARTS — ECharts configurations
    Every chart reads from the shared DATA object and filters.
+   (v2.2: hero labels toggle, backtest drawdown/escala, history ±1σ)
    ===================================================================== */
 
 const THEME = {
@@ -703,7 +704,10 @@ function sunburstOption(companies) {
 /* =====================================================================
    7. BACKTEST — line chart, NAV evolution since 2020
    ===================================================================== */
-function backtestChartOption(seriesData, activeSeries) {
+function backtestChartOption(seriesData, activeSeries, opts = {}) {
+  const scale = opts.scale === 'linear' ? 'value' : 'log';
+  const showDD = !!opts.drawdown;
+
   const xData = new Set();
   Object.values(seriesData).forEach((s) => s.data.forEach((d) => xData.add(d.date)));
   const dates = [...xData].sort();
@@ -745,38 +749,103 @@ function backtestChartOption(seriesData, activeSeries) {
       itemStyle: { color },
       emphasis: { lineStyle: { width: 3 } },
       connectNulls: true,
+      xAxisIndex: 0,
+      yAxisIndex: 0,
+    });
+
+    // Drawdown serie (panel inferior): dd = nav / running-max - 1
+    if (showDD) {
+      let runMax = null;
+      const dd = data.map((v) => {
+        if (v == null) return null;
+        runMax = runMax == null ? v : Math.max(runMax, v);
+        return ((v / runMax) - 1) * 100;
+      });
+      series.push({
+        name: name + ' DD',
+        type: 'line',
+        data: dd,
+        smooth: false,
+        symbol: 'none',
+        lineStyle: { color, width: 1, type: dashStyle },
+        areaStyle: name === 'All Watchlist'
+          ? { color, opacity: 0.12 }
+          : undefined,
+        itemStyle: { color },
+        connectNulls: true,
+        xAxisIndex: 1,
+        yAxisIndex: 1,
+        legendHoverLink: false,
+        showSymbol: false,
+        tooltip: { show: true },
+      });
+    }
+  }
+
+  const xAxisBase = {
+    type: 'category',
+    data: dates,
+    axisLabel: {
+      ...axisStyle().axisLabel,
+      formatter: (v) => v.substring(0, 7), // YYYY-MM
+      interval: Math.floor(dates.length / 12),
+    },
+    ...axisStyle(),
+  };
+
+  const grids = showDD
+    ? [
+        { left: 65, right: 30, top: 30, height: '52%' },
+        { left: 65, right: 30, top: '72%', height: '20%' },
+      ]
+    : [{ left: 65, right: 30, top: 30, bottom: 50 }];
+
+  const xAxes = showDD
+    ? [
+        { ...xAxisBase, gridIndex: 0, axisLabel: { ...xAxisBase.axisLabel, show: false } },
+        { ...xAxisBase, gridIndex: 1 },
+      ]
+    : [{ ...xAxisBase, gridIndex: 0 }];
+
+  const yAxes = [
+    {
+      type: scale,
+      name: 'NAV (base 100)',
+      nameLocation: 'middle',
+      nameGap: 45,
+      gridIndex: 0,
+      axisLabel: { ...axisStyle().axisLabel, formatter: '{value}' },
+      ...axisStyle(),
+    },
+  ];
+  if (showDD) {
+    yAxes.push({
+      type: 'value',
+      name: 'DD %',
+      nameLocation: 'middle',
+      nameGap: 45,
+      gridIndex: 1,
+      max: 0,
+      axisLabel: { ...axisStyle().axisLabel, formatter: '{value}%' },
+      ...axisStyle(),
     });
   }
 
   return {
     ...baseOption(),
-    grid: { left: 65, right: 30, top: 30, bottom: 50 },
+    grid: grids,
+    axisPointer: showDD ? { link: [{ xAxisIndex: 'all' }] } : undefined,
     legend: {
       type: 'scroll',
       top: 0,
+      data: series.filter((s) => !s.name.endsWith(' DD')).map((s) => s.name),
       textStyle: { color: THEME.text1, fontFamily: THEME.fontMono, fontSize: 10 },
       pageTextStyle: { color: THEME.text2 },
       pageIconColor: THEME.accent,
       pageIconInactiveColor: THEME.text3,
     },
-    xAxis: {
-      type: 'category',
-      data: dates,
-      axisLabel: {
-        ...axisStyle().axisLabel,
-        formatter: (v) => v.substring(0, 7), // YYYY-MM
-        interval: Math.floor(dates.length / 12),
-      },
-      ...axisStyle(),
-    },
-    yAxis: {
-      type: 'log',
-      name: 'NAV (base 100)',
-      nameLocation: 'middle',
-      nameGap: 45,
-      axisLabel: { ...axisStyle().axisLabel, formatter: '{value}' },
-      ...axisStyle(),
-    },
+    xAxis: xAxes,
+    yAxis: yAxes,
     tooltip: {
       ...baseOption().tooltip,
       trigger: 'axis',
@@ -788,7 +857,8 @@ function backtestChartOption(seriesData, activeSeries) {
           .filter((p) => p.value != null)
           .sort((a, b) => b.value - a.value)
           .forEach((p) => {
-            html += `<div><span style="color:${p.color};">●</span> ${p.seriesName}: <b>${p.value.toFixed(1)}</b></div>`;
+            const isDD = p.seriesName.endsWith(' DD');
+            html += `<div><span style="color:${p.color};">●</span> ${p.seriesName}: <b>${p.value.toFixed(1)}${isDD ? '%' : ''}</b></div>`;
           });
         return html;
       },
@@ -807,6 +877,19 @@ function multipleHistoryOption(historyData, ticker, metric = 'ev_fcf') {
 
   const histDates = company.history.map((p) => p.date);
   const histValues = company.history.map((p) => p[metric]);
+
+  // Contexto estadístico: media ±1σ de la propia historia + z-score actual
+  const cleanVals = histValues.filter((v) => v != null && isFinite(v));
+  let stats = null;
+  if (cleanVals.length >= 6) {
+    const mean = cleanVals.reduce((a, b) => a + b, 0) / cleanVals.length;
+    const sd = Math.sqrt(
+      cleanVals.reduce((s, v) => s + (v - mean) ** 2, 0) / cleanVals.length
+    );
+    const last = [...histValues].reverse().find((v) => v != null && isFinite(v));
+    const z = sd > 1e-9 && last != null ? (last - mean) / sd : null;
+    stats = { mean, sd, z, last };
+  }
 
   const fwdSeries = [];
   if (company.forward && company.forward.length > 0 && metric === 'ev_fcf') {
@@ -848,11 +931,28 @@ function multipleHistoryOption(historyData, ticker, metric = 'ev_fcf') {
     ev_ebitda: 'EV / EBITDA',
   }[metric] || metric;
 
+  const zColor = stats && stats.z != null
+    ? (stats.z > 1 ? THEME.negative : stats.z < -1 ? THEME.positive : THEME.text1)
+    : THEME.text2;
+  const zLabel = stats && stats.z != null
+    ? `μ ${stats.mean.toFixed(1)}x ± ${stats.sd.toFixed(1)} · ahora ${stats.last.toFixed(1)}x (z ${stats.z >= 0 ? '+' : ''}${stats.z.toFixed(1)}σ ${stats.z > 1 ? 'caro' : stats.z < -1 ? 'barato' : 'normal'} vs su historia)`
+    : '';
+
   return {
     ...baseOption(),
     grid: { left: 65, right: 30, top: 30, bottom: 50 },
+    title: zLabel ? {
+      text: zLabel,
+      right: 10,
+      top: 2,
+      textStyle: {
+        color: zColor, fontFamily: THEME.fontMono,
+        fontSize: 10, fontWeight: 400,
+      },
+    } : undefined,
     legend: {
       top: 0,
+      left: 0,
       textStyle: { color: THEME.text1, fontFamily: THEME.fontMono, fontSize: 10 },
     },
     xAxis: {
@@ -903,8 +1003,35 @@ function multipleHistoryOption(historyData, ticker, metric = 'ev_fcf') {
                 position: 'end',
               },
             },
+            ...(stats ? [{
+              yAxis: stats.mean,
+              lineStyle: { color: THEME.neutral, type: 'dashed', width: 1 },
+              label: {
+                formatter: `μ ${stats.mean.toFixed(1)}x`,
+                color: THEME.neutral,
+                fontFamily: THEME.fontMono,
+                fontSize: 9,
+                position: 'insideEndTop',
+              },
+            }] : []),
           ],
         },
+        markArea: stats ? {
+          silent: true,
+          itemStyle: { color: 'rgba(107, 128, 168, 0.07)' },
+          label: {
+            show: true,
+            position: 'insideTopRight',
+            color: 'rgba(107,128,168,0.55)',
+            fontFamily: THEME.fontMono,
+            fontSize: 9,
+            formatter: '±1σ',
+          },
+          data: [[
+            { yAxis: Math.max(0, stats.mean - stats.sd) },
+            { yAxis: stats.mean + stats.sd },
+          ]],
+        } : undefined,
       },
       ...fwdSeries,
     ],
@@ -937,7 +1064,8 @@ window.CHARTS = {
    color = survival_score (visualMap rojo->verde)
    star = pure_upside ; hollow X = kill_flag ; glow = top-N por score_v2
    ===================================================================== */
-function asymmetryQualityConstellationOption(companies) {
+function asymmetryQualityConstellationOption(companies, opts = {}) {
+  const labelsAll = !!opts.labelsAll;
   const valid = companies.filter(
     (c) => c.composite_geometric != null &&
            c.ev_fcf_5y_base != null && c.ev_fcf_5y_base > 0 &&
@@ -1004,9 +1132,10 @@ function asymmetryQualityConstellationOption(companies) {
         shadowBlur: glow ? 22 : 0,
         shadowColor: glow ? survColor(c.survival_score) : 'transparent',
       },
-      label: glow ? {
+      label: (glow || labelsAll) ? {
         show: true, formatter: c.ticker, position: 'top',
-        color: THEME.text0, fontFamily: THEME.fontMono, fontSize: 10, fontWeight: 500,
+        color: glow ? THEME.text0 : THEME.text1,
+        fontFamily: THEME.fontMono, fontSize: glow ? 10 : 9, fontWeight: glow ? 500 : 400,
       } : { show: false },
     };
   });

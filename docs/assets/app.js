@@ -1,5 +1,6 @@
 /* =====================================================================
    APP — filter state, rendering, interactivity
+   (v2.2: updates feed, deltas strip, calendario est., backtest dd)
    ===================================================================== */
 
 const STATE = {
@@ -28,9 +29,15 @@ const STATE = {
   radarSelection: [],
   // Backtest UI state
   backtestActive: new Set(['All Watchlist', 'S&P 500', 'NASDAQ 100']),
+  backtestScale: 'log',        // 'log' | 'linear'
+  backtestDrawdown: false,     // panel inferior de drawdown
   // History UI state
   historyTicker: null,
   historyMetric: 'ev_fcf',
+  // Updates feed
+  updates: null,
+  // Hero chart
+  heroLabelsAll: false,
 };
 
 /* ---------- Utilities ---------- */
@@ -50,7 +57,7 @@ function debounce(fn, ms = 150) {
    ===================================================================== */
 async function loadData() {
   // watchlist.json es OBLIGATORIO. Los otros son opcionales.
-  const [watchlist, backtest, history, alerts, processBacktest, correlations] = await Promise.all([
+  const [watchlist, backtest, history, alerts, processBacktest, correlations, updates] = await Promise.all([
     fetch('data/watchlist.json?v=' + Date.now()).then((r) => {
       if (!r.ok) throw new Error('No se pudo cargar watchlist.json');
       return r.json();
@@ -60,8 +67,9 @@ async function loadData() {
     fetch('data/alerts.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     fetch('data/process_backtest.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     fetch('data/correlations.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch('data/updates.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : null)).catch(() => null),
   ]);
-  return { watchlist, backtest, history, alerts, processBacktest, correlations };
+  return { watchlist, backtest, history, alerts, processBacktest, correlations, updates };
 }
 
 /* =====================================================================
@@ -332,7 +340,7 @@ function renderCharts() {
   const allData = STATE.raw.companies;
 
   for (const [id, optFn, useAll] of [
-    ['chart-quadrant', CHARTS.asymmetryQualityConstellation, false],
+    ['chart-quadrant', (d) => CHARTS.asymmetryQualityConstellation(d, { labelsAll: STATE.heroLabelsAll }), false],
     ['chart-asymmetry', CHARTS.irrAsymmetry, false],
     ['chart-bubble', CHARTS.roicVsValuation, false],
     ['chart-heatmap', CHARTS.heatmap, true],  // heatmap uses full universe
@@ -492,10 +500,24 @@ function openDrawer(ticker) {
         <h3>Earnings Calendar</h3>
         <div class="earnings-row">
           ${_ebadge('Última presentación', c.earnings_last_date)}
-          ${_ebadge('Próxima presentación', c.earnings_next_date)}
+          ${_ebadge('Próxima presentación' + (c.earnings_next_estimated ? ' (est.)' : ''), c.earnings_next_date)}
         </div>
-        ${c.earnings_updated_at ? `<div style="margin-top:6px;font-family:var(--font-mono);font-size:9px;color:var(--text-3);">actualizado ${c.earnings_updated_at} · fuente yfinance / IR</div>` : ''}
+        ${c.earnings_updated_at ? `<div style="margin-top:6px;font-family:var(--font-mono);font-size:9px;color:var(--text-3);">actualizado ${c.earnings_updated_at} · fuente yfinance / IR${c.earnings_next_estimated ? ' · próxima fecha estimada' : ''}</div>` : ''}
       </div>
+
+      ${(() => {
+        const u = latestUpdateFor(c.ticker);
+        if (!u) return '';
+        return `
+          <div class="drawer__section">
+            <h3>Última publicación <em style="color:var(--text-2);font-size:10px;font-weight:400;">· updates log</em></h3>
+            <div class="drawer-update">
+              <div class="drawer-update__date">${u.date || ''}</div>
+              <div class="drawer-update__summary">${u.summary || '—'}</div>
+              <div class="drawer-update__source">${u.source || ''}</div>
+            </div>
+          </div>`;
+      })()}
 
       <!-- v2.0 BANNER: composite geometric + flags destacados -->
       <div class="drawer__section">
@@ -699,8 +721,117 @@ function renderAlertsBanner() {
 }
 
 /* =====================================================================
+   DELTAS STRIP — qué ha cambiado vs snapshot anterior
+   ===================================================================== */
+function renderDeltasStrip() {
+  const el = document.getElementById('deltas-strip');
+  if (!el) return;
+  const d = STATE.raw && STATE.raw.deltas;
+  if (!d || !d.available) { el.style.display = 'none'; return; }
+
+  const entered = d.entered || [];
+  const exited = d.exited || [];
+  const changes = [...(d.rating_changes || [])]
+    .sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))
+    .slice(0, 8);
+
+  if (!entered.length && !exited.length && !changes.length) {
+    el.style.display = 'none';
+    return;
+  }
+
+  const chip = (t, html, cls = '') =>
+    `<button class="delta-chip ${cls}" data-ticker="${t}">${html}</button>`;
+
+  let html = `<div class="deltas-strip__label">Δ vs snapshot anterior</div><div class="deltas-strip__chips">`;
+  entered.forEach((t) => { html += chip(t, `<span class="arrow">＋</span>${t} <em>entra</em>`, 'delta-chip--in'); });
+  exited.forEach((t) => { html += chip(t, `<span class="arrow">－</span>${t} <em>sale</em>`, 'delta-chip--out'); });
+  changes.forEach((ch) => {
+    const up = ch.delta > 0;
+    html += chip(
+      ch.ticker,
+      `${ch.ticker} <span class="arrow">${up ? '▲' : '▼'}</span><em>${ch.from.toFixed(2)} → ${ch.to.toFixed(2)}</em>`,
+      up ? 'delta-chip--up' : 'delta-chip--down'
+    );
+  });
+  html += '</div>';
+  el.innerHTML = html;
+  el.style.display = 'flex';
+  el.querySelectorAll('.delta-chip').forEach((c) => {
+    c.addEventListener('click', () => openDrawer(c.dataset.ticker));
+  });
+}
+
+/* =====================================================================
+   UPDATES FEED — últimas publicaciones (hoja Updates Log del Excel)
+   ===================================================================== */
+function latestUpdateFor(ticker) {
+  if (!STATE.updates || !STATE.updates.updates) return null;
+  return STATE.updates.updates.find((u) => u.ticker === ticker) || null;
+}
+
+function renderUpdatesFeed() {
+  const target = document.getElementById('updates-panel');
+  if (!target) return;
+  if (!STATE.updates || !STATE.updates.updates || !STATE.updates.updates.length) {
+    target.style.display = 'none';
+    return;
+  }
+  const ups = STATE.updates.updates.slice(0, 14);
+  const byTicker = Object.fromEntries(STATE.raw.companies.map((c) => [c.ticker, c]));
+
+  let html = `
+    <div class="panel__header">
+      <div class="panel__title">últimas publicaciones <em>·</em> updates log</div>
+      <div class="panel__hint">${STATE.updates.updates.length} updates registrados · click para ficha</div>
+    </div>
+    <div class="updates-feed">
+  `;
+  ups.forEach((u) => {
+    const c = byTicker[u.ticker];
+    const tier = c ? c.rating_tier : '';
+    html += `
+      <div class="update-card" data-ticker="${u.ticker}">
+        <div class="update-card__head">
+          <span class="update-card__ticker">${u.ticker}</span>
+          <span class="rating-badge tier-${tier}" style="font-size:9px;">${c ? CHARTS.fmt.rating(c.rating_composite) : ''}</span>
+          <span class="update-card__date">${u.date || ''}</span>
+        </div>
+        <div class="update-card__summary">${u.summary || '—'}</div>
+        <div class="update-card__source">${u.source || ''}</div>
+      </div>`;
+  });
+  html += '</div>';
+  target.innerHTML = html;
+  target.style.display = 'block';
+  target.querySelectorAll('.update-card').forEach((card) => {
+    card.addEventListener('click', () => openDrawer(card.dataset.ticker));
+  });
+}
+
+/* =====================================================================
    BACKTEST PANEL
    ===================================================================== */
+function renderBacktestControls() {
+  const el = document.getElementById('backtest-controls');
+  if (!el || !STATE.backtest) return;
+  el.innerHTML = `
+    <button class="chip ${STATE.backtestScale === 'log' ? 'active' : ''}" data-ctl="log">log</button>
+    <button class="chip ${STATE.backtestScale === 'linear' ? 'active' : ''}" data-ctl="linear">lineal</button>
+    <span style="width:8px;"></span>
+    <button class="chip ${STATE.backtestDrawdown ? 'active' : ''}" data-ctl="dd">drawdown</button>
+  `;
+  el.querySelectorAll('.chip').forEach((b) => {
+    b.addEventListener('click', () => {
+      const ctl = b.dataset.ctl;
+      if (ctl === 'log' || ctl === 'linear') STATE.backtestScale = ctl;
+      if (ctl === 'dd') STATE.backtestDrawdown = !STATE.backtestDrawdown;
+      renderBacktestControls();
+      renderBacktestChart();
+    });
+  });
+}
+
 function renderBacktestSelector() {
   const sel = $('#backtest-selector');
   if (!sel || !STATE.backtest) return;
@@ -731,7 +862,10 @@ function renderBacktestChart() {
   if (!STATE.charts['chart-backtest']) {
     STATE.charts['chart-backtest'] = echarts.init(el, null, { renderer: 'canvas' });
   }
-  const opt = CHARTS.backtest(STATE.backtest.series, [...STATE.backtestActive]);
+  const opt = CHARTS.backtest(STATE.backtest.series, [...STATE.backtestActive], {
+    scale: STATE.backtestScale,
+    drawdown: STATE.backtestDrawdown,
+  });
   STATE.charts['chart-backtest'].setOption(opt, true);
   // Header summary
   const meta = STATE.backtest.meta;
@@ -850,7 +984,7 @@ function renderEarningsCalendar() {
   }
 
   // Map iso date → list of companies (last or next)
-  const events = {}; // { 'YYYY-MM-DD': [{ticker, name, rating_tier, rating_composite, type:'past'|'future'}] }
+  const events = {}; // { 'YYYY-MM-DD': [{ticker, name, rating_tier, rating_composite, type:'past'|'future', estimated}] }
   allCompanies.forEach((c) => {
     ['earnings_last_date', 'earnings_next_date'].forEach((field) => {
       const iso = c[field];
@@ -861,9 +995,10 @@ function renderEarningsCalendar() {
       if (!events[iso]) events[iso] = [];
       // Avoid duplicate if last == next
       const type = diffDays <= 0 ? 'past' : 'future';
+      const estimated = field === 'earnings_next_date' && !!c.earnings_next_estimated;
       if (!events[iso].find((x) => x.ticker === c.ticker)) {
         events[iso].push({ ticker: c.ticker, name: c.name, rating_tier: c.rating_tier,
-          rating_composite: c.rating_composite, type });
+          rating_composite: c.rating_composite, type, estimated, diffDays });
       }
     });
   });
@@ -887,11 +1022,17 @@ function renderEarningsCalendar() {
     return `<span class="cal-day__label-dow">${dow}</span>${dayNum} ${mon}${isToday ? ' ●' : ''}`;
   };
 
-  // Build total event count for hint
+  // Build total event count for hint (+ próximos 7 días)
   const totalEvents = Object.values(events).reduce((s, arr) => s + arr.length, 0);
+  const next7 = Object.values(events).reduce(
+    (s, arr) => s + arr.filter((e) => e.diffDays > 0 && e.diffDays <= 7).length, 0);
+  const reported14 = Object.values(events).reduce(
+    (s, arr) => s + arr.filter((e) => e.diffDays <= 0 && e.diffDays >= -14).length, 0);
   const hintEl = document.getElementById('cal-hint');
   if (hintEl) {
-    hintEl.textContent = `${totalEvents} presentaciones · click empresa para detalle`;
+    hintEl.innerHTML = `${totalEvents} presentaciones · ` +
+      `<span style="color:var(--positive);">${next7} próximos 7d</span> · ` +
+      `<span style="color:var(--accent);">${reported14} reportadas 14d</span> · click para detalle`;
   }
 
   // Legend
@@ -900,6 +1041,7 @@ function renderEarningsCalendar() {
       <span><span class="cal-legend__dot" style="background:var(--accent);opacity:0.9;"></span>Hoy</span>
       <span><span class="cal-legend__dot" style="background:var(--positive);"></span>Próximos</span>
       <span><span class="cal-legend__dot" style="background:var(--text-3);"></span>Pasados</span>
+      <span style="color:var(--text-2);font-style:italic;">~ fecha estimada</span>
       <span style="color:var(--text-3);">Color = tier de calidad</span>
     </div>`;
 
@@ -916,14 +1058,17 @@ function renderEarningsCalendar() {
       .sort((a, b) => (b.rating_composite || 0) - (a.rating_composite || 0))
       .map((ev) => {
         const col = TIER_COLOR[ev.rating_tier] || 'var(--text-2)';
+        const hasUpdate = ev.type === 'past' && typeof latestUpdateFor === 'function' && latestUpdateFor(ev.ticker);
         const cardCls = [
           'cal-card',
           ev.type === 'past' ? 'cal-card--past' : '',
           isToday ? 'cal-card--today' : '',
+          ev.estimated ? 'cal-card--est' : '',
         ].filter(Boolean).join(' ');
+        const titleTxt = (ev.name || ev.ticker) + (ev.estimated ? ' · fecha estimada' : '');
         return `
-          <div class="${cardCls}" data-ticker="${ev.ticker}" title="${ev.name || ev.ticker}">
-            <div class="cal-card__ticker">${ev.ticker}</div>
+          <div class="${cardCls}" data-ticker="${ev.ticker}" title="${titleTxt}">
+            <div class="cal-card__ticker">${ev.estimated ? '~' : ''}${ev.ticker}${hasUpdate ? ' <span class="cal-card__note" title="resumen disponible en la ficha">✓</span>' : ''}</div>
             <span class="cal-card__tier" style="background:${col}22;color:${col};">${(ev.rating_tier||'').replace(/_/g,' ')}</span>
           </div>`;
       }).join('');
@@ -1031,6 +1176,22 @@ function wireFilters() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeDrawer();
   });
+  // Hero: toggle de etiquetas para todos los tickers
+  const heroToggle = $('#hero-labels-toggle');
+  if (heroToggle) {
+    heroToggle.addEventListener('click', () => {
+      STATE.heroLabelsAll = !STATE.heroLabelsAll;
+      heroToggle.classList.toggle('active', STATE.heroLabelsAll);
+      renderCharts();
+    });
+  }
+  // Sidebar colapsable (móvil)
+  const sbToggle = $('#sidebar-toggle');
+  if (sbToggle) {
+    sbToggle.addEventListener('click', () => {
+      document.querySelector('.app').classList.toggle('sidebar-open');
+    });
+  }
   window.addEventListener(
     'resize',
     debounce(() => {
@@ -1052,6 +1213,7 @@ async function boot() {
     STATE.alerts = data.alerts;
     STATE.processBacktest = data.processBacktest;
     STATE.correlations = data.correlations;
+    STATE.updates = data.updates;
 
     renderSidebar();
     wireFilters();
@@ -1066,8 +1228,11 @@ async function boot() {
 
     // Render new panels (only if data is available)
     if (STATE.alerts) renderAlertsBanner();
+    renderDeltasStrip();
+    renderUpdatesFeed();
     if (STATE.backtest) {
       renderBacktestSelector();
+      renderBacktestControls();
       renderBacktestChart();
       renderBacktestStatsTable();
     }

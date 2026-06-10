@@ -158,6 +158,15 @@ def build(
         rec["earnings_last_date"]  = ed.get("earnings_last_date")
         rec["earnings_next_date"]  = ed.get("earnings_next_date")
         rec["earnings_updated_at"] = ed.get("earnings_updated_at")
+        rec["earnings_next_estimated"] = bool(ed.get("earnings_next_estimated", False))
+
+    # 7b. Updates feed (hoja "Updates Log" del Excel -> updates.json)
+    try:
+        from src.updates import build_updates
+        meta["updates"] = build_updates(xlsx_path, output_path=output_dir / "updates.json")
+    except Exception as e:
+        log.error("Updates feed fallo: %s", e)
+        meta["updates_error"] = str(e)
 
     # 8. Backtest
     if not skip_backtest:
@@ -188,6 +197,7 @@ def build(
                     rec["earnings_last_date"]  = ed.get("earnings_last_date")
                     rec["earnings_next_date"]  = ed.get("earnings_next_date")
                     rec["earnings_updated_at"] = ed.get("earnings_updated_at")
+                    rec["earnings_next_estimated"] = bool(ed.get("earnings_next_estimated", False))
         except Exception as e:
             log.error("History fallo: %s", e)
             meta["history_error"] = str(e)
@@ -206,6 +216,7 @@ def build(
                     rec["earnings_last_date"]  = ed.get("earnings_last_date")
                     rec["earnings_next_date"]  = ed.get("earnings_next_date")
                     rec["earnings_updated_at"] = ed.get("earnings_updated_at")
+                    rec["earnings_next_estimated"] = bool(ed.get("earnings_next_estimated", False))
             except Exception as e:
                 log.warning("No se pudo leer history existente: %s", e)
 
@@ -229,6 +240,22 @@ def build(
         except Exception as e:
             log.error("Shareholder fallo: %s", e)
             meta["shareholder_error"] = str(e)
+    else:
+        # Si no se reconstruye shareholder, inyectar desde el JSON existente
+        sh_path = output_dir / "shareholder.json"
+        if sh_path.exists():
+            try:
+                with open(sh_path) as fh:
+                    sh = json.load(fh).get("companies", {})
+                for rec in companies_records:
+                    t = rec.get("ticker", "")
+                    s = sh.get(t, {})
+                    rec["buyback_yield_ttm"]      = s.get("buyback_yield_ttm")
+                    rec["dividend_yield"]         = s.get("dividend_yield")
+                    rec["sbc_dilution_pct"]       = s.get("sbc_dilution_pct")
+                    rec["net_shareholder_return"] = s.get("net_shareholder_return")
+            except Exception as e:
+                log.warning("No se pudo leer shareholder existente: %s", e)
 
     # 11. Correlations
     if not skip_correlations:

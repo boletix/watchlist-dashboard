@@ -10,18 +10,16 @@ del Excel, añade aquí el override. La verificación rápida es:
 from __future__ import annotations
 
 # Mapeo Excel ticker → yfinance symbol
-# Incluye todos los overrides necesarios para los 61 tickers actuales.
+# Incluye todos los overrides necesarios para los 62 tickers actuales.
 TICKER_YF_OVERRIDE: dict[str, str] = {
     # Europa Continental
     "ADYEN": "ADYEN.AS",
     "ITX": "ITX.MC",
     "BFIT": "BFIT.AS",
-    "CBAV": "CBAV.AS",
     "SU": "SU.PA",
     "SGO": "SGO.PA",
     "TFF": "TFF.PA",
     "VRLA": "VLA.PA",
-    "JFN": "JFN.PA",
     "RAA": "RAA.DE",
     "EVD": "EVD.DE",
     "ABBNE": "ABBN.SW",
@@ -50,6 +48,7 @@ TICKER_YF_OVERRIDE: dict[str, str] = {
     "JFN": "JFN.SW",     # Jungfraubahn
     # Otros
     "TFPM": "TFPM.TO",   # Triple Flag, Toronto
+    "CSU": "CSU.TO",     # Constellation Software, Toronto
     "KRX": "KRX.IR",     # Kingspan, Irlanda
 }
 
