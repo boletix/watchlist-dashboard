@@ -52,7 +52,7 @@ def build_updates(xlsx_path, output_path="docs/data/updates.json") -> dict:
             "summary": resumen,
         })
 
-    # Más recientes primero (fecha desc, orden de fila desc como desempate)
+    # Más recientes primero (fecha desc)
     entries.sort(key=lambda e: (e["date"] or "", ), reverse=True)
 
     payload = {
@@ -68,3 +68,18 @@ def build_updates(xlsx_path, output_path="docs/data/updates.json") -> dict:
         json.dump(payload, f, indent=2, ensure_ascii=False)
     log.info("updates.json -> %s (%d updates)", output_path, len(entries))
     return {"n_updates": len(entries)}
+
+
+def main():
+    import argparse
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    p = argparse.ArgumentParser(description="Exporta Updates Log del Excel a updates.json")
+    p.add_argument("--xlsx", default="data/raw/watchlist_ratings.xlsx")
+    p.add_argument("--out", default="docs/data/updates.json")
+    args = p.parse_args()
+    stats = build_updates(args.xlsx, output_path=args.out)
+    print(stats)
+
+
+if __name__ == "__main__":
+    main()

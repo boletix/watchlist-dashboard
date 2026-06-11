@@ -13,14 +13,17 @@ log = logging.getLogger(__name__)
 
 
 def _jsonify(v):
-    if isinstance(v, (np.integer,)):
-        return int(v)
-    if isinstance(v, (np.floating,)):
-        return None if np.isnan(v) else float(v)
-    if isinstance(v, (np.bool_,)):
+    # bool antes que int (bool es subclase de int)
+    if isinstance(v, (bool, np.bool_)):
         return bool(v)
+    if isinstance(v, (int, np.integer)):
+        return int(v)
+    if isinstance(v, (float, np.floating)):
+        return None if np.isnan(v) else float(v)
     if isinstance(v, pd.Timestamp):
         return v.isoformat()
+    if isinstance(v, str):
+        return v
     return str(v)
 
 
