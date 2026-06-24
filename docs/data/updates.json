@@ -1,10 +1,262 @@
 {
   "meta": {
-    "n_updates": 46,
+    "n_updates": 82,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "TSM",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "Q2 2026 (16/07/2026)",
+      "summary": "Q2: ingresos $40,2B (+36% i.a., sobre guia), margen bruto 67,7%, HPC +20% t/t. Sube guia FY26 a >30% en USD por demanda IA (2nm/3nm). Prox Q3 ~15-oct (est)."
+    },
+    {
+      "ticker": "NFLX",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "Q2 2026 (16/07/2026)",
+      "summary": "Q2: rev $12,56B (+13%), margen op 33%, BPA $0,80, BN $3,40B. Estrecha guia FY26 a $51,0-51,4B (margen op 31,5%); Q3 +12%. Reduce reporte de metricas de engagement; accion cayo tras publicar."
+    },
+    {
+      "ticker": "ABBNE",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "Q2 2026 (16/07/2026)",
+      "summary": "Q2: pedidos record $12B, ventas comparables +12%, margen EBITA op 20,2% (+90pb); Electrificacion pedidos $7,2B (+70%). OPA sobre Rotork £503p (~$5,5B) recomendada; desinversion Robotics ~$4,8B caja (cierre 2S26). Buyback $2B, ND/EBITDA 0,3."
+    },
+    {
+      "ticker": "LIFCO B",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "Interim Q2/H1 2026 (14/07/2026)",
+      "summary": "Q2: ventas +11% (organico +5%, M&A +7%), margen EBITA 23,1% (vs 22,5%), BN/BPA +18%. 4 adquisiciones en 1S (Ethoss, Glass Umbrella, Karl Kaps, Metalltech ~500M SEK); Boscaro consolidada en jul. Vuelta a la normalidad tras un 2025 dificil."
+    },
+    {
+      "ticker": "NKE",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "Q4/FY26 (30/06/2026)",
+      "summary": "Q4 FY26 (cierre 31-may): ventas $10,97B (-1%; -4% cc) sobre est., BPA aj $0,20 vs $0,13e; margen bruto 49,2% (+890pb por recuperacion aranceles IEEPA). FY26 ventas $46,4B (planas). Guia: BPA 'plano' en 1S FY27. Prox ~30-sep (est)."
+    },
+    {
+      "ticker": "MIPS",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "Interim Q2 2026 (16/07/2026)",
+      "summary": "Q2: ventas +72% (SEK 232M), organico +42%, margen op 41% (aj 47%). Resuelto litigio de patentes con BrainGuard (paga USD 3,25M, se contabiliza en Q3). Fuerte recuperacion en todas las categorias."
+    },
+    {
+      "ticker": "WOSG",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "FY26 Results (14/07/2026)",
+      "summary": "FY26 (53 sem, cierre 3-may): ingresos record £1,83B (+11%; +13% cc), EBIT aj +6% a £155M, PBT +76% a £133M. EEUU +24% cc (ya 1er mercado, £927M); FCF £162M, deuda neta baja a £57M. Guia FY27: ventas +5-10% cc. Rumores de posible venta."
+    },
+    {
+      "ticker": "TFF",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "Resultats annuels 2025/26 (08/07/2026)",
+      "summary": "FY (cierre 30-abr): CA €312,75M (-26,5%; -23,4% cc); Alcools -36,7% (Bourbon -35,4%, volumenes -28%), Vin -14,1%. EBITDA €48,2M (15,4%, -40%), BN €9,2M (-71%). Deuda neta baja a €285M; caja €97M por desdstock. Dividendo €0,40, AG 28-oct."
+    },
+    {
+      "ticker": "KIST",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BO; BP",
+      "source": "FY2025 Full Year Results (26/06/2026)",
+      "summary": "FY25: ingresos $212,9M, produccion 8.940 boepd (tope de guia), EBITDA aj $97M. Guia FY26 proforma 19-21k boepd. Adquisicion Oman (Bloques 3&4 y 9, +25,6 mmboe 2P); FID Balder Next (86 mmboe, primer crudo 4T27); bono $300M al 9,875% sobresuscrito. Caja ~$268M."
+    },
+    {
+      "ticker": "TREX",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BP",
+      "source": "Preanuncio Q2 2026 + guia (jul-2026)",
+      "summary": "Preliminar Q2: ventas ~$418M (sobre guia $388-403M), EBITDA aj ~$112M. SUBE guia FY26 a ventas $1.215-1.250M y EBITDA aj $335-350M. Termina distribucion con Boise Cascade (12-ago) y amplia con SBP. Resultados completos ~4-ago."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jul-2026)",
+      "summary": "6-jul: recorta ~4.800 empleos (~2,1%) reestructurando comercial y Xbox mientras eleva el capex record en IA; accion -23% en 1S26. Sin resultados nuevos; Q4 FY26 el 29-jul."
+    },
+    {
+      "ticker": "META",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-jul 2026)",
+      "summary": "Jun: paga $14,3B por el 49% de Scale AI e incorpora a Alexandr Wang para liderar Meta Superintelligence Labs; fichajes de primer nivel (Nat Friedman, Daniel Gross, +11 ingenieros de OpenAI/Google/Anthropic, fundadores de Virtue AI). Fuerte gasto en talento IA. Q2 el 29-jul."
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-jul 2026)",
+      "summary": "16.000+ despidos en 2026 (AWS, Alexa, Prime Video); nueva unidad AWS 'Forward Deployed Engineering' ($1B); capex 2026 ~$200B en IA; emision de bonos ~$25B para infraestructura. Q2 el 30-jul."
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "DOJ/Prensa (2026)",
+      "summary": "Remedios antitrust finalizados (abr-26): conductuales (sin contratos exclusivos, compartir datos/sindicacion), sin ruptura estructural; Google y DOJ+35 estados han apelado. Gemini 750M MAU; capex 2026 $175-185B. Q2 el 28-jul."
+    },
+    {
+      "ticker": "KKR",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-jul 2026)",
+      "summary": "30-jun: acuerdo para comprar las operaciones norteamericanas de EDF power solutions ($4,2B, renovables). Cierra fondo buyout NA de $23B y $2,5B de credito privado en Asia; monetizaciones >$900M (mar-jun). Q2 el 30-jul."
+    },
+    {
+      "ticker": "BN",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Junta/RNS (16-17 jul 2026)",
+      "summary": "16-17-jul: la junta aprueba la simplificacion de la estructura corporativa; nueva matriz 'Brookfield Corporation Ltd.' cotizara en TSX/NYSE como BN, cierre previsto para fin de ano. Q2 el 13-ago."
+    },
+    {
+      "ticker": "COR",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-2026)",
+      "summary": "Fusion de MWI Animal Health con Covetrus (plataforma salud animal) y compra del negocio de retina de EyeSouth; relevo de CFO (Cleary sale 30-jun, entra Eva Boratto). Guia FY26 BPA aj $17,65-17,90, buyback $1B. Q3 FY26 el 4-ago."
+    },
+    {
+      "ticker": "SU",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (30-jun-2026)",
+      "summary": "30-jun: acuerdo para comprar el 100% de Cognite (software IA industrial) por $3,1B en efectivo (refuerza AVEVA); colaboracion con Foxconn en centros de datos IA. Mantiene objetivo EBITA aj +10-15% organico. S1 el 30-jul."
+    },
+    {
+      "ticker": "SGO",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-jul 2026)",
+      "summary": "Rotacion de cartera: compra Xypex (quimicos de construccion, 6-jul); vende Dahl (distribucion nordica, €1,5B, 15-jun), HKO (1-jun) y distribucion de azulejos nordica (26-may). Objetivo: rotar >20% de ventas via M&A/desinversiones hasta 2030. S1 el 30-jul."
+    },
+    {
+      "ticker": "LR",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-2026)",
+      "summary": "Adquisiciones en centros de datos: Girtz Industries (EEUU, ~$80M ventas) y SRS Power Engineering (Malasia, ~€90M). Reafirma guia FY26 (ventas +2-6%, margen op aj 20-21%); guia data center al alto de 10-20%. Varias mejoras de rating. S1 el 6-ago."
+    },
+    {
+      "ticker": "PRY",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-jul 2026)",
+      "summary": "Ambicion M&A ~€4B (posible operacion tamano Encore Wire en 12m) y cerca de contratos a largo plazo con hyperscalers (capacidad optica +40-50%). Confia en batir con holgura el punto medio de la guia EBITDA FY26 (€2.625-2.775M); adquirio Xtera (subsea). S1 el 30-jul."
+    },
+    {
+      "ticker": "ADYEN",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa/IR (jun-jul 2026)",
+      "summary": "11-jun: adquisicion de Orb (billing para software). Reafirma guia FY26 (ingresos +20-22% cc, margen EBITDA 55%). Resultados S1 2026 el 13-ago."
+    },
+    {
+      "ticker": "STMN",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BP",
+      "source": "Ad-hoc (17-jun-2026)",
+      "summary": "17-jun: SUBE guia de rentabilidad FY26 - expansion de margen core EBIT ahora 140-170pb (antes 30-60pb) por eficiencias de fabricacion, mix geografico y menores aranceles. Resultados S1 el 19-ago."
+    },
+    {
+      "ticker": "FICO",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-jul 2026)",
+      "summary": "Presion competitiva: VantageScore 4.0 aprobado para Fannie/Freddie/FHA; FICO baja el score hipotecario 10T a $0,99 (aunque sube el score base a $10). Accion ~-50% desde maximos. Sube guia FY26 (~$2,45B ingresos). Q3 FY26 ~28-jul. VIGILAR tesis."
+    },
+    {
+      "ticker": "NET",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (01-jul-2026)",
+      "summary": "1-jul: nueva politica 'Pay Per Use' - desde 15-sept bloquea por defecto crawlers de IA de uso mixto en paginas con publicidad y paga a editores cuando su contenido alimenta respuestas IA. Q2 el 6-ago."
+    },
+    {
+      "ticker": "CHKP",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (may-jul 2026)",
+      "summary": "19-may: adquiere Deepchecks (~$20M, seguridad IA). Reorganizacion comercial (nuevo CRO, cambios GTM) que ha pesado en la percepcion de la guia. Q2 el 30-jul."
+    },
+    {
+      "ticker": "ABNB",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Summer Release (20-may-2026)",
+      "summary": "20-may: 'Summer Release 2026' - nuevos Servicios (comida via Instacart, recogidas aeropuerto, alquiler de coche, consigna), +3.000 experiencias, hoteles boutique, mejoras IA y experiencias del Mundial 2026. Q2 el 6-ago."
+    },
+    {
+      "ticker": "MNST",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-2026)",
+      "summary": "Lanza FLRT (energetica enfocada a mujeres, vs Alani Nu/Bloom) y planea subida de precios en EEUU; la subida de Red Bull (1-ago) se ve positiva. Presion de costes de aluminio. Q2 el 6-ago."
+    },
+    {
+      "ticker": "TFPM",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (25-jun-2026)",
+      "summary": "25-jun: completa el stream de oro de Ravenswood (Australia) por US$440M; sube el objetivo 2030 a 150-160k GEOs. Primera entrega en Q3. Q2 el 4-ago."
+    },
+    {
+      "ticker": "FERG",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-jul 2026)",
+      "summary": "Adquisicion de FloWorks ($1,6B, control de flujo industrial; data centers/semis; ~10x EBITDA, cierre Q3). Cancela su cotizacion secundaria en el LSE (efectivo 20-jul). Mantiene guia FY. Q4 FY26 el 4-ago."
+    },
+    {
+      "ticker": "IPCO",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jun-2026)",
+      "summary": "Jun: primer crudo en Blackrod Fase 1 (hito). Produccion Q1 43k boepd; guia FY 44-47k con fuerte rampa en 2S. Recompras ralentizadas para priorizar Blackrod; perdida de cobertura ~$30M en Q2. Q2 el 4-ago."
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Prensa (jul-2026)",
+      "summary": "Se reanudan (muy pocos) envios de H200 a China tras licencias; sigue practicamente fuera del mercado de data center chino. Sin resultados nuevos desde Q1 FY27 (20-may). Q2 FY27 el 26-ago."
+    },
+    {
+      "ticker": "JFN",
+      "date": "2026-07-18",
+      "fields_changed": "BN",
+      "source": "Ad-hoc Jungfraubahn (jun-2026)",
+      "summary": "Advertencia: caida de visitantes en los primeros 4 meses (Jungfraujoch -12,3%, Experience Mountains -9,6%, total -5,7%) por el conflicto en Oriente Medio, restricciones de espacio aereo y menor demanda asiatica; la tendencia se acentua y pesara en el resultado 2026. Fuertes reservas futuras como colchon. S1 el 28-ago."
+    },
+    {
+      "ticker": "VID",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BP",
+      "source": "Calendario/IR (jul-2026)",
+      "summary": "Sin novedad material desde may; resultados S1 2026 el 23-jul. Q1: rev €368M/EBITDA €104M; guia FY EBITDA >€450M, BPA +5%."
+    },
+    {
+      "ticker": "OTLY",
+      "date": "2026-07-18",
+      "fields_changed": "BN; BP",
+      "source": "Calendario/IR (jul-2026)",
+      "summary": "Sin novedad material; resultados Q2 2026 el 22-jul. Q1: rev $228,3M (+15,6%), EBITDA aj +$5,0M (positivo). Revision estrategica de China en curso."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "2026-07-18",
+      "fields_changed": "Revision sin cambios de celda",
+      "source": "Barrido de noticias 18-may -> 18-jul",
+      "summary": "Revisados sin novedad material (resultados ya capturados en jun o proximos en ago-sep): VEEV, COST, DSGX, ZS, S, CRWD, ITX, DNP, EVD, KSPI, CELH, HLMA (Q1/anteriores ya analizados en jun); RAA (Rational, Q1 6-may), NTO (Nintendo, FY 8-may), SPOT, VLTO, GRMN, KRX (Kingspan), CPR (Campari), JDG, BFIT, VRLA (Verallia, OPA BWGI fue 2025), LOTB, CBAV (Clinica Baviera), SIKA, TGYM (Technogym). No se ha modificado su celda BN."
+    },
     {
       "ticker": "MSFT",
       "date": "2026-06-24",
