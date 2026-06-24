@@ -1,7 +1,12 @@
 {
   "meta": {
+<<<<<<< HEAD
     "generated_at": "2026-06-24T10:32:17+00:00",
     "n_snapshots": 13,
+=======
+    "generated_at": "2026-06-24T07:45:18+00:00",
+    "n_snapshots": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
     "first_snapshot": "2026-04-19",
     "last_snapshot": "2026-06-24",
     "has_enough_data": true,
@@ -12,651 +17,1051 @@
       "ticker": "OTLY",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": -0.73,
       "rating_last": 2.2,
       "rating_delta": 2.93,
       "geom_first": null,
       "geom_last": 3.3676399281805853,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.386834343108871
+=======
+      "price_pct_change": -0.26930475846787993
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "VRLA",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 2.07,
       "rating_last": 3.79,
       "rating_delta": 1.7200000000000002,
       "geom_first": null,
       "geom_last": 4.517760265563592,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.09918948727768684
+=======
+      "price_pct_change": 6.61482029717757
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "NFLX",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 4.93,
       "rating_last": 6.13,
       "rating_delta": 1.2000000000000002,
       "geom_first": null,
       "geom_last": 6.594548647966196,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.2516699052327408
+=======
+      "price_pct_change": -0.08570545440176325
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "EVD",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.58,
       "rating_last": 6.64,
       "rating_delta": -0.9400000000000004,
       "geom_first": null,
       "geom_last": 7.011424353050801,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.17510372177693856
+=======
+      "price_pct_change": -0.06639004149377592
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "VID",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.04,
       "rating_last": 5.44,
       "rating_delta": 0.40000000000000036,
       "geom_first": null,
       "geom_last": 6.217722445812111,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.022085927015433326
+=======
+      "price_pct_change": -0.07484662576687107
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "WOSG",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 1.79,
       "rating_last": 2.08,
       "rating_delta": 0.29000000000000004,
       "geom_first": null,
       "geom_last": 2.632689137228979,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.3074816560880067
+=======
+      "price_pct_change": 0.2073515551366636
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "CELH",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 3.04,
       "rating_last": 3.24,
       "rating_delta": 0.20000000000000018,
       "geom_first": null,
       "geom_last": 3.9687605658263356,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.2011347561017841
+=======
+      "price_pct_change": -0.1676595744680851
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "IPCO",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 1.51,
       "rating_last": 1.71,
       "rating_delta": 0.19999999999999996,
       "geom_first": null,
       "geom_last": 2.6119982934995694,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.030548081155917006
+=======
+      "price_pct_change": -0.8233153687259542
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "SPOT",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.27,
       "rating_last": 5.46,
       "rating_delta": 0.1900000000000004,
       "geom_first": null,
       "geom_last": 6.14737681377664,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.15115258300387924
+=======
+      "price_pct_change": -0.18331747085756323
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "KIST",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 1.95,
       "rating_last": 2.14,
       "rating_delta": 0.19000000000000017,
       "geom_first": null,
       "geom_last": 2.9717345240051642,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.10588235294117643
+=======
+      "price_pct_change": 0.13725490196078427
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "VEEV",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 8.41,
       "rating_last": 8.28,
       "rating_delta": -0.13000000000000078,
       "geom_first": null,
       "geom_last": 8.396329920459591,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.04906216364454208
+=======
+      "price_pct_change": -0.02280438831697318
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "ITX",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.78,
       "rating_last": 7.68,
       "rating_delta": -0.10000000000000053,
       "geom_first": null,
       "geom_last": 7.9181180472260095,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.0018174931532008998
+=======
+      "price_pct_change": -0.09451109441112193
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "META",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.61,
       "rating_last": 6.51,
       "rating_delta": -0.10000000000000053,
       "geom_first": null,
       "geom_last": 6.8510347061482,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.1835015290479216
+=======
+      "price_pct_change": -0.1268680405804239
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "AMZN",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.98,
       "rating_last": 8.08,
       "rating_delta": 0.09999999999999964,
       "geom_first": null,
       "geom_last": 8.574747334224037,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.06565292588013905
+=======
+      "price_pct_change": 0.03416348389532731
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "ABNB",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.65,
       "rating_last": 7.75,
       "rating_delta": 0.09999999999999964,
       "geom_first": null,
       "geom_last": 8.092051530624143,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.01907450999668958
+=======
+      "price_pct_change": -0.07559168365291635
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "DNP",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.35,
       "rating_last": 7.44,
       "rating_delta": 0.09000000000000075,
       "geom_first": null,
       "geom_last": 7.951044388985206,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.020715656252309644
+=======
+      "price_pct_change": 2.04143129454465
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "COST",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.92,
       "rating_last": 8.01,
       "rating_delta": 0.08999999999999986,
       "geom_first": null,
       "geom_last": 8.333417494705577,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.042214664967423765
+=======
+      "price_pct_change": 0.09300021401279612
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "ADYEN",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.66,
       "rating_last": 7.73,
       "rating_delta": 0.07000000000000028,
       "geom_first": null,
       "geom_last": 7.7471972830726665,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.1525028007755288
+=======
+      "price_pct_change": -0.03279523161071951
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "MSFT",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 8.07,
       "rating_last": 8.01,
       "rating_delta": -0.0600000000000005,
       "geom_first": null,
       "geom_last": 8.35752153268189,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.11554200694486194
+=======
+      "price_pct_change": -0.010951083165036346
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "BN",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.9,
       "rating_last": 7.93,
       "rating_delta": 0.02999999999999936,
       "geom_first": null,
       "geom_last": 8.3301702350846,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.05687919118265361
+=======
+      "price_pct_change": -0.04228160863138508
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "DSGX",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.85,
       "rating_last": 7.82,
       "rating_delta": -0.02999999999999936,
       "geom_first": null,
       "geom_last": 7.957799277655687,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.11385949693326514
+=======
+      "price_pct_change": -0.06713785389665239
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "RAA",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.97,
       "rating_last": 7.97,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 8.225136283129716,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.08392603129445231
+=======
+      "price_pct_change": -0.07539118065433859
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "ZS",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.45,
       "rating_last": 7.45,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.809507598982374,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.06318677583627641
+=======
+      "price_pct_change": 0.304648125597923
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "NTO",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.92,
       "rating_last": 7.92,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 8.225136283129716,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 148.07075317900228
+=======
+      "price_pct_change": -0.09803282251929146
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "SU",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.85,
       "rating_last": 7.85,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 8.298645929976256,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.009689618755327478
+=======
+      "price_pct_change": -0.0820024920042629
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "LOTB",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 8.0,
       "rating_last": 8.0,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 8.350954030617867,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.13883299798792748
+=======
+      "price_pct_change": 0.07042253521126751
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "HLMA",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.88,
       "rating_last": 7.88,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 8.192149105484017,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.14829570606463038
+=======
+      "price_pct_change": -0.026117751217352825
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "FICO",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.16,
       "rating_last": 7.16,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.305696557126884,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.024116936971275482
+=======
+      "price_pct_change": 0.10975573657228854
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "LIFCO B",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.9,
       "rating_last": 7.9,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 8.200560034017968,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.06809819695408359
+=======
+      "price_pct_change": -0.11226993865030677
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "MNST",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 7.41,
       "rating_last": 7.41,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.614808488951498,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.22119396442506467
+=======
+      "price_pct_change": 0.1251954982595196
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "VLTO",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.95,
       "rating_last": 6.95,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.266973539584719,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.07012535334586001
+=======
+      "price_pct_change": -0.04704334138285582
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "LR",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.93,
       "rating_last": 6.93,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.351062246741879,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.03407211379424413
+=======
+      "price_pct_change": -0.036718491564670885
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "JDG",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.74,
       "rating_last": 6.74,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.258000820765272,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.00893854748603351
+=======
+      "price_pct_change": 0.1061452513966481
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "STMN",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.7,
       "rating_last": 6.7,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.203703227567625,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.11495994804070153
+=======
+      "price_pct_change": -0.0655986144187054
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "KKR",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.61,
       "rating_last": 6.61,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.0225181117792355,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.09749033419767894
+=======
+      "price_pct_change": -0.1067084810515957
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "NET",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.58,
       "rating_last": 6.58,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.2281359357122765,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.11916013878141207
+=======
+      "price_pct_change": 0.016667468109253125
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "CRWD",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.56,
       "rating_last": 6.56,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.00306671182772,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.6061327121218163
+=======
+      "price_pct_change": 0.462035575310499
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "GOOG",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.53,
       "rating_last": 6.53,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 7.0287630563873265,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.019681770170622448
+=======
+      "price_pct_change": 0.13532706814816287
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "ABBNE",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.24,
       "rating_last": 6.24,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 6.798062693023175,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.15703584804708393
+=======
+      "price_pct_change": 0.06179775280898858
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "GRMN",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.07,
       "rating_last": 6.07,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 6.546356674768935,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.11595994394041464
+=======
+      "price_pct_change": -0.13968667845358895
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "KRX",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.05,
       "rating_last": 6.05,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 6.798062693023175,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.07932379713914162
+=======
+      "price_pct_change": -0.05136540962288694
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "KSPI",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 6.0,
       "rating_last": 6.0,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 6.319440557453992,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.016605860337968403
+=======
+      "price_pct_change": 0.054292735120300195
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "CBAV",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.84,
       "rating_last": 5.84,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 6.465499318400721,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.07307690840501047
+=======
+      "price_pct_change": 0.06153846153846154
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "NVDA",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.75,
       "rating_last": 5.75,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 6.187108528025973,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.008131691041286748
+=======
+      "price_pct_change": 0.10025836998479276
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "COR",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.5,
       "rating_last": 5.5,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 6.1280372737612945,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.14183658505726848
+=======
+      "price_pct_change": -0.9789046280024961
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "TSM",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.36,
       "rating_last": 5.36,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 5.962800188783897,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.1778407952724359
+=======
+      "price_pct_change": 0.06439946018893394
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "PRY",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.24,
       "rating_last": 5.24,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 5.975369864419413,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.22359232308685262
+=======
+      "price_pct_change": 0.15495273325113024
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "JFN",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.24,
       "rating_last": 5.24,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 5.868227173259393,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.1228070175438597
+=======
+      "price_pct_change": -0.1105263157894737
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "CPR",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.23,
       "rating_last": 5.23,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 5.869788803178787,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": -0.18045115650148325
+=======
+      "price_pct_change": -0.16992481203007526
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "ticker": "SIKA",
       "first_date": "2026-04-19",
       "last_date": "2026-06-24",
+<<<<<<< HEAD
       "n_obs": 13,
+=======
+      "n_obs": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "rating_first": 5.13,
       "rating_last": 5.13,
       "rating_delta": 0.0,
       "geom_first": null,
       "geom_last": 5.817493918606837,
       "geom_delta": null,
+<<<<<<< HEAD
       "price_pct_change": 0.03053435114503822
+=======
+      "price_pct_change": -0.10941475826972002
+>>>>>>> 46d26c8 (WIP antes de sync)
     }
   ],
   "rating_timelines": {
@@ -772,6 +1177,7 @@
         "price": 163.22500610351562
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 8.28,
         "composite_geometric": 8.396329920459591,
@@ -794,15 +1200,25 @@
         "price": 153.3000030517578
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 8.28,
         "composite_geometric": 8.396329920459591,
         "survival_score": 0.8944444444444445,
+<<<<<<< HEAD
         "score_v2": 83.10985746596789,
         "irr_best_repriced": 0.352475373143073,
         "ev_fcf": 19.712882403636364,
         "edge_to_fair": 1.0949379687252527,
         "price": 159.7100067138672
+=======
+        "score_v2": 82.4807530219613,
+        "irr_best_repriced": 0.34329692568943093,
+        "ev_fcf": 19.712882403636364,
+        "edge_to_fair": 1.0386458509032743,
+        "price": 164.12
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "MSFT": [
@@ -917,6 +1333,7 @@
         "price": 388.17999267578125
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 8.01,
         "composite_geometric": 8.35752153268189,
@@ -939,15 +1356,25 @@
         "price": 379.3999938964844
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 8.01,
         "composite_geometric": 8.35752153268189,
         "survival_score": 0.8777777777777778,
+<<<<<<< HEAD
         "score_v2": 48.8842903876072,
         "irr_best_repriced": 0.13667813046760613,
         "ev_fcf": 43.903919708571436,
         "edge_to_fair": 0.12073970565727077,
         "price": 373.94000244140625
+=======
+        "score_v2": 45.362652788824384,
+        "irr_best_repriced": 0.10535648659769592,
+        "ev_fcf": 43.903919708571436,
+        "edge_to_fair": 0.0022226139986145643,
+        "price": 418.16
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "ADYEN": [
@@ -1062,6 +1489,7 @@
         "price": 785.2000122070312
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.73,
         "composite_geometric": 7.7471972830726665,
@@ -1084,15 +1512,25 @@
         "price": 892.5999755859375
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.73,
         "composite_geometric": 7.7471972830726665,
         "survival_score": 0.8388888888888889,
+<<<<<<< HEAD
         "score_v2": 80.59016257030832,
         "irr_best_repriced": 0.33837999302812594,
         "ev_fcf": 27.28141768101266,
         "edge_to_fair": 1.0009845156333599,
         "price": 834.7000122070312
+=======
+        "score_v2": 77.32436491807313,
+        "irr_best_repriced": 0.2948945307939521,
+        "ev_fcf": 27.28141768101266,
+        "edge_to_fair": 0.7533296237930358,
+        "price": 952.6
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "BN": [
@@ -1207,6 +1645,7 @@
         "price": 44.7400016784668
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.93,
         "composite_geometric": 8.3301702350846,
@@ -1229,15 +1668,25 @@
         "price": 44.439998626708984
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.93,
         "composite_geometric": 8.3301702350846,
         "survival_score": 0.8777777777777778,
+<<<<<<< HEAD
         "score_v2": 74.214852123149,
         "irr_best_repriced": 0.254881615491517,
         "ev_fcf": 23.271675365540002,
         "edge_to_fair": 0.6569705619779449,
         "price": 43.939998626708984
+=======
+        "score_v2": 73.88482399087832,
+        "irr_best_repriced": 0.25007229949436627,
+        "ev_fcf": 23.271675365540002,
+        "edge_to_fair": 0.6317149494915546,
+        "price": 44.6201
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "COST": [
@@ -1352,6 +1801,7 @@
         "price": 982.25
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 8.01,
         "composite_geometric": 8.333417494705577,
@@ -1374,15 +1824,25 @@
         "price": 951.4500122070312
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 8.01,
         "composite_geometric": 8.333417494705577,
         "survival_score": 0.9500000000000001,
+<<<<<<< HEAD
         "score_v2": 45.54112110809421,
         "irr_best_repriced": 0.016936285544999263,
         "ev_fcf": 56.45399343529412,
         "edge_to_fair": -0.2349896825884672,
         "price": 957.6799926757812
+=======
+        "score_v2": 45.31879644665314,
+        "irr_best_repriced": -0.01608919969173561,
+        "ev_fcf": 56.45399343529412,
+        "edge_to_fair": -0.3296289847233239,
+        "price": 1092.88
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "DSGX": [
@@ -1497,6 +1957,7 @@
         "price": 74.27999877929688
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.82,
         "composite_geometric": 7.957799277655687,
@@ -1519,15 +1980,25 @@
         "price": 67.33000183105469
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.82,
         "composite_geometric": 7.957799277655687,
         "survival_score": 0.9277777777777777,
+<<<<<<< HEAD
         "score_v2": 73.54903545378644,
         "irr_best_repriced": 0.24433879433172856,
         "ev_fcf": 24.06478486666667,
         "edge_to_fair": 0.6399197355448614,
         "price": 67.70999908447266
+=======
+        "score_v2": 72.36926313585137,
+        "irr_best_repriced": 0.22845688983290469,
+        "ev_fcf": 24.06478486666667,
+        "edge_to_fair": 0.5577856873225477,
+        "price": 71.28
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "RAA": [
@@ -1642,6 +2113,7 @@
         "price": 640.5
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.97,
         "composite_geometric": 8.225136283129716,
@@ -1664,15 +2136,25 @@
         "price": 668.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.97,
         "composite_geometric": 8.225136283129716,
         "survival_score": 0.9111111111111111,
+<<<<<<< HEAD
         "score_v2": 53.50587433292881,
         "irr_best_repriced": 0.15857541253726937,
         "ev_fcf": 27.424999999999997,
         "edge_to_fair": 0.13551033839889248,
         "price": 644.0
+=======
+        "score_v2": 53.247931224767456,
+        "irr_best_repriced": 0.1558924719250312,
+        "ev_fcf": 27.424999999999997,
+        "edge_to_fair": 0.1250287045059797,
+        "price": 650.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "ZS": [
@@ -1787,6 +2269,7 @@
         "price": 124.94999694824219
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.45,
         "composite_geometric": 7.809507598982374,
@@ -1809,15 +2292,25 @@
         "price": 124.8499984741211
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.45,
         "composite_geometric": 7.809507598982374,
         "survival_score": 0.8388888888888889,
+<<<<<<< HEAD
         "score_v2": 78.87338070830765,
         "irr_best_repriced": 0.34605963684711427,
         "ev_fcf": 35.41442999589041,
         "edge_to_fair": 1.048036019806787,
         "price": 126.16999816894531
+=======
+        "score_v2": 61.694182308991266,
+        "irr_best_repriced": 0.23909386335572558,
+        "ev_fcf": 35.41442999589041,
+        "edge_to_fair": 0.47060896288746457,
+        "price": 175.71
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "NTO": [
@@ -1932,6 +2425,7 @@
         "price": 7144.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.92,
         "composite_geometric": 8.225136283129716,
@@ -1954,15 +2448,25 @@
         "price": 7076.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.92,
         "composite_geometric": 8.225136283129716,
         "survival_score": 0.9111111111111111,
+<<<<<<< HEAD
         "score_v2": 56.398017897577226,
         "irr_best_repriced": 0.15314896351408902,
         "ev_fcf": 24.020130161396967,
         "edge_to_fair": 0.17390558148481072,
         "price": 6858.0
+=======
+        "score_v2": 68.34061848560206,
+        "irr_best_repriced": 3.1346222836194304,
+        "ev_fcf": 24.020130161396967,
+        "edge_to_fair": 193.01480847868015,
+        "price": 41.495
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "AMZN": [
@@ -2077,6 +2581,7 @@
         "price": 238.97000122070312
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 8.08,
         "composite_geometric": 8.574747334224037,
@@ -2099,15 +2604,25 @@
         "price": 244.38999938964844
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 8.08,
         "composite_geometric": 8.574747334224037,
         "survival_score": 0.8777777777777778,
+<<<<<<< HEAD
         "score_v2": 44.932001331749134,
         "irr_best_repriced": 0.06922939643861148,
         "ev_fcf": 53.31504506153846,
         "edge_to_fair": -0.07292861659355399,
         "price": 234.11000061035156
+=======
+        "score_v2": 44.572233207346564,
+        "irr_best_repriced": 0.042438993232079225,
+        "ev_fcf": 53.31504506153846,
+        "edge_to_fair": -0.16240860552978342,
+        "price": 259.12
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "SU": [
@@ -2222,6 +2737,7 @@
         "price": 264.29998779296875
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.85,
         "composite_geometric": 8.298645929976256,
@@ -2244,15 +2760,25 @@
         "price": 289.04998779296875
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.85,
         "composite_geometric": 8.298645929976256,
         "survival_score": 0.9111111111111111,
+<<<<<<< HEAD
         "score_v2": 44.916117160496135,
         "irr_best_repriced": 0.05120702818511158,
         "ev_fcf": 34.806207888888885,
         "edge_to_fair": -0.17046345399538498,
         "price": 281.3500061035156
+=======
+        "score_v2": 47.35827840951615,
+        "irr_best_repriced": 0.07652681743381295,
+        "ev_fcf": 34.806207888888885,
+        "edge_to_fair": -0.08760706692147102,
+        "price": 255.8
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "ITX": [
@@ -2367,6 +2893,7 @@
         "price": 55.31999969482422
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.68,
         "composite_geometric": 7.9181180472260095,
@@ -2389,15 +2916,25 @@
         "price": 55.720001220703125
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.68,
         "composite_geometric": 7.9181180472260095,
         "survival_score": 0.8944444444444445,
+<<<<<<< HEAD
         "score_v2": 53.80150792304139,
         "irr_best_repriced": 0.1363221095498539,
         "ev_fcf": 22.11870809846154,
         "edge_to_fair": 0.15741139797462522,
         "price": 55.119998931884766
+=======
+        "score_v2": 58.80777093343157,
+        "irr_best_repriced": 0.1654075470295897,
+        "ev_fcf": 22.11870809846154,
+        "edge_to_fair": 0.280540245285279,
+        "price": 49.82
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "LOTB": [
@@ -2512,6 +3049,7 @@
         "price": 11780.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 8.0,
         "composite_geometric": 8.350954030617867,
@@ -2534,15 +3072,25 @@
         "price": 11140.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 8.0,
         "composite_geometric": 8.350954030617867,
         "survival_score": 0.9111111111111111,
+<<<<<<< HEAD
         "score_v2": 44.503555410602424,
         "irr_best_repriced": 0.003038090600488097,
         "ev_fcf": 48.79081333333333,
         "edge_to_fair": -0.36497941026980696,
         "price": 11320.0
+=======
+        "score_v2": 44.58724933109188,
+        "irr_best_repriced": 0.018693712124910222,
+        "ev_fcf": 48.79081333333333,
+        "edge_to_fair": -0.32439538761787734,
+        "price": 10640.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "HLMA": [
@@ -2657,6 +3205,7 @@
         "price": 3928.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.88,
         "composite_geometric": 8.192149105484017,
@@ -2679,15 +3228,24 @@
         "price": 3950.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.88,
         "composite_geometric": 8.192149105484017,
         "survival_score": 0.9333333333333332,
         "score_v2": 43.81370609704337,
+<<<<<<< HEAD
         "irr_best_repriced": -0.656510780993648,
         "ev_fcf": 42.510983,
         "edge_to_fair": -0.9907919880073505,
         "price": 3848.0
+=======
+        "irr_best_repriced": -0.6678312996571707,
+        "ev_fcf": 42.510983,
+        "edge_to_fair": -0.9919471749664283,
+        "price": 4400.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "FICO": [
@@ -2802,6 +3360,7 @@
         "price": 1198.4150390625
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.16,
         "composite_geometric": 7.305696557126884,
@@ -2824,15 +3383,25 @@
         "price": 1096.47998046875
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.16,
         "composite_geometric": 7.305696557126884,
         "survival_score": 0.8777777777777778,
+<<<<<<< HEAD
         "score_v2": 46.73950968775406,
         "irr_best_repriced": 0.12760664144787315,
         "ev_fcf": 40.86078722458904,
         "edge_to_fair": 0.04172304245932512,
         "price": 1099.4100341796875
+=======
+        "score_v2": 44.71880356819261,
+        "irr_best_repriced": 0.10519309436556035,
+        "ev_fcf": 40.86078722458904,
+        "edge_to_fair": -0.03866573854259292,
+        "price": 1191.345
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "LIFCO B": [
@@ -2947,6 +3516,7 @@
         "price": 302.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.9,
         "composite_geometric": 8.200560034017968,
@@ -2969,15 +3539,25 @@
         "price": 307.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.9,
         "composite_geometric": 8.200560034017968,
         "survival_score": 0.9111111111111111,
+<<<<<<< HEAD
         "score_v2": 49.40900731944917,
         "irr_best_repriced": 0.12616400876735945,
         "ev_fcf": 34.778495552631576,
         "edge_to_fair": -0.027056694393596148,
         "price": 303.79998779296875
+=======
+        "score_v2": 50.5496486147035,
+        "irr_best_repriced": 0.1399188881795328,
+        "ev_fcf": 34.778495552631576,
+        "edge_to_fair": 0.021355094562806265,
+        "price": 289.4
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "EVD": [
@@ -3092,6 +3672,7 @@
         "price": 49.65999984741211
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.64,
         "composite_geometric": 7.011424353050801,
@@ -3114,15 +3695,25 @@
         "price": 52.849998474121094
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.64,
         "composite_geometric": 7.011424353050801,
         "survival_score": 0.7888888888888889,
+<<<<<<< HEAD
         "score_v2": 81.33557761215461,
         "irr_best_repriced": 0.39406103828414407,
         "ev_fcf": 10.444444444444445,
         "edge_to_fair": 1.3979365238499692,
         "price": 49.70000076293945
+=======
+        "score_v2": 79.62822682984478,
+        "irr_best_repriced": 0.35157533189574863,
+        "ev_fcf": 10.444444444444445,
+        "edge_to_fair": 1.1187101700413131,
+        "price": 56.25
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "MNST": [
@@ -3237,6 +3828,7 @@
         "price": 92.1500015258789
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.41,
         "composite_geometric": 7.614808488951498,
@@ -3259,15 +3851,25 @@
         "price": 91.33999633789062
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.41,
         "composite_geometric": 7.614808488951498,
         "survival_score": 0.8722222222222222,
+<<<<<<< HEAD
         "score_v2": 41.286696190260265,
         "irr_best_repriced": -0.06752590531191605,
         "ev_fcf": 45.48697179583334,
         "edge_to_fair": -0.41152883894799264,
         "price": 93.69000244140625
+=======
+        "score_v2": 41.36773713289512,
+        "irr_best_repriced": -0.04824330340588645,
+        "ev_fcf": 45.48697179583334,
+        "edge_to_fair": -0.3613221602587925,
+        "price": 86.325
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "ABNB": [
@@ -3382,6 +3984,7 @@
         "price": 129.4949951171875
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.75,
         "composite_geometric": 8.092051530624143,
@@ -3404,15 +4007,25 @@
         "price": 142.41000366210938
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.75,
         "composite_geometric": 8.092051530624143,
         "survival_score": 0.8166666666666668,
+<<<<<<< HEAD
         "score_v2": 74.55137012213528,
         "irr_best_repriced": 0.26608926717647763,
         "ev_fcf": 16.347646705952382,
         "edge_to_fair": 0.7189216217244505,
         "price": 138.85000610351562
+=======
+        "score_v2": 75.81078624952968,
+        "irr_best_repriced": 0.2850125561438366,
+        "ev_fcf": 16.347646705952382,
+        "edge_to_fair": 0.8240143497738244,
+        "price": 130.85
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "DNP": [
@@ -3527,6 +4140,7 @@
         "price": 10.750100135803223
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 7.44,
         "composite_geometric": 7.951044388985206,
@@ -3549,15 +4163,25 @@
         "price": 10.6899995803833
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 7.44,
         "composite_geometric": 7.951044388985206,
         "survival_score": 0.8555555555555555,
+<<<<<<< HEAD
         "score_v2": 83.1298332080374,
         "irr_best_repriced": 0.39753530621367217,
         "ev_fcf": 45.95274285714285,
         "edge_to_fair": 1.5425303027267852,
         "price": 10.84000015258789
+=======
+        "score_v2": 47.382678931662504,
+        "irr_best_repriced": 0.06370078528253065,
+        "ev_fcf": 45.95274285714285,
+        "edge_to_fair": -0.14671737246075256,
+        "price": 32.3
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "VLTO": [
@@ -3672,6 +4296,7 @@
         "price": 83.52999877929688
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.95,
         "composite_geometric": 7.266973539584719,
@@ -3694,15 +4319,25 @@
         "price": 84.0199966430664
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.95,
         "composite_geometric": 7.266973539584719,
         "survival_score": 0.9111111111111111,
+<<<<<<< HEAD
         "score_v2": 55.12248847677568,
         "irr_best_repriced": 0.15736303134996676,
         "ev_fcf": 20.721326645454546,
         "edge_to_fair": 0.1466189700976226,
         "price": 84.5999984741211
+=======
+        "score_v2": 54.55737719879741,
+        "irr_best_repriced": 0.15029020156422734,
+        "ev_fcf": 20.721326645454546,
+        "edge_to_fair": 0.11884617209523851,
+        "price": 86.7
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "LR": [
@@ -3817,6 +4452,7 @@
         "price": 133.75
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.93,
         "composite_geometric": 7.351062246741879,
@@ -3839,15 +4475,25 @@
         "price": 150.39999389648438
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.93,
         "composite_geometric": 7.351062246741879,
         "survival_score": 0.8888888888888888,
+<<<<<<< HEAD
         "score_v2": 48.14036901831022,
         "irr_best_repriced": 0.12006176947202518,
         "ev_fcf": 31.29459532307692,
         "edge_to_fair": -0.09057409650151393,
         "price": 146.0
+=======
+        "score_v2": 48.198195267945636,
+        "irr_best_repriced": 0.12083025141255477,
+        "ev_fcf": 31.29459532307692,
+        "edge_to_fair": -0.08807567368970481,
+        "price": 145.6
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "JDG": [
@@ -3962,6 +4608,7 @@
         "price": 4500.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.74,
         "composite_geometric": 7.258000820765272,
@@ -3984,15 +4631,25 @@
         "price": 4800.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.74,
         "composite_geometric": 7.258000820765272,
         "survival_score": 0.8555555555555555,
+<<<<<<< HEAD
         "score_v2": 39.58373498727173,
         "irr_best_repriced": -0.5869887852297495,
         "ev_fcf": 18.734589,
         "edge_to_fair": -0.9852451563935974,
         "price": 4515.0
+=======
+        "score_v2": 39.57983901759255,
+        "irr_best_repriced": -0.5963778574557396,
+        "ev_fcf": 18.734589,
+        "edge_to_fair": -0.9865417941650693,
+        "price": 4950.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "STMN": [
@@ -4107,6 +4764,7 @@
         "price": 92.31999969482422
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.7,
         "composite_geometric": 7.203703227567625,
@@ -4129,15 +4787,25 @@
         "price": 105.0999984741211
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.7,
         "composite_geometric": 7.203703227567625,
         "survival_score": 0.8888888888888888,
+<<<<<<< HEAD
         "score_v2": 41.20727711918911,
         "irr_best_repriced": 0.022817728241618207,
         "ev_fcf": 40.46906532571428,
         "edge_to_fair": -0.2687700043179765,
         "price": 103.0
+=======
+        "score_v2": 42.476474706015985,
+        "irr_best_repriced": 0.06900489828663159,
+        "ev_fcf": 40.46906532571428,
+        "edge_to_fair": -0.12747115899851225,
+        "price": 86.32
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "META": [
@@ -4252,6 +4920,7 @@
         "price": 566.030029296875
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.51,
         "composite_geometric": 6.8510347061482,
@@ -4274,15 +4943,25 @@
         "price": 577.219970703125
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.51,
         "composite_geometric": 6.8510347061482,
         "survival_score": 0.7999999999999999,
+<<<<<<< HEAD
         "score_v2": 50.136552040865524,
         "irr_best_repriced": 0.18017156379239951,
         "ev_fcf": 29.761744309700003,
         "edge_to_fair": 0.27006093362767714,
         "price": 562.2000122070312
+=======
+        "score_v2": 47.50973595320641,
+        "irr_best_repriced": 0.16055043524378698,
+        "ev_fcf": 29.761744309700003,
+        "edge_to_fair": 0.1876816546863389,
+        "price": 601.195
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "KKR": [
@@ -4397,6 +5076,7 @@
         "price": 94.13999938964844
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.61,
         "composite_geometric": 7.0225181117792355,
@@ -4419,15 +5099,25 @@
         "price": 97.01000213623047
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.61,
         "composite_geometric": 7.0225181117792355,
         "survival_score": 0.8222222222222223,
+<<<<<<< HEAD
         "score_v2": 48.36545278869125,
         "irr_best_repriced": 0.2595209885897243,
         "ev_fcf": 31.688963697738092,
         "edge_to_fair": 0.07242068443761007,
         "price": 93.5
+=======
+        "score_v2": 48.51187550994767,
+        "irr_best_repriced": 0.2627578346630166,
+        "ev_fcf": 31.688963697738092,
+        "edge_to_fair": 0.08348731962738709,
+        "price": 92.545
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "NET": [
@@ -4542,6 +5232,7 @@
         "price": 226.6999969482422
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.58,
         "composite_geometric": 7.2281359357122765,
@@ -4564,15 +5255,25 @@
         "price": 224.05999755859375
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.58,
         "composite_geometric": 7.2281359357122765,
         "survival_score": 0.8722222222222222,
+<<<<<<< HEAD
         "score_v2": 40.14100751530804,
         "irr_best_repriced": -0.22046545406542983,
         "ev_fcf": 256.1688689571429,
         "edge_to_fair": -0.7711146538016237,
         "price": 224.94000244140625
+=======
+        "score_v2": 40.16786034970465,
+        "irr_best_repriced": -0.2015206430773644,
+        "ev_fcf": 256.1688689571429,
+        "edge_to_fair": -0.7480401765064848,
+        "price": 204.34
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "CRWD": [
@@ -4687,6 +5388,7 @@
         "price": 691.0999755859375
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.56,
         "composite_geometric": 7.00306671182772,
@@ -4709,15 +5411,25 @@
         "price": 684.8599853515625
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.56,
         "composite_geometric": 7.00306671182772,
         "survival_score": 0.8166666666666668,
+<<<<<<< HEAD
         "score_v2": 38.43004927536116,
         "irr_best_repriced": -0.09167647757975006,
         "ev_fcf": 128.43279899583334,
         "edge_to_fair": -0.5751840579330835,
         "price": 680.9199829101562
+=======
+        "score_v2": 38.490564858448195,
+        "irr_best_repriced": -0.0700781916175458,
+        "ev_fcf": 128.43279899583334,
+        "edge_to_fair": -0.533314515250687,
+        "price": 619.83
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "GOOG": [
@@ -4832,6 +5544,7 @@
         "price": 349.5799865722656
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.53,
         "composite_geometric": 7.0287630563873265,
@@ -4854,15 +5567,25 @@
         "price": 367.4599914550781
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.53,
         "composite_geometric": 7.0287630563873265,
         "survival_score": 0.7666666666666666,
+<<<<<<< HEAD
         "score_v2": 37.721541464066505,
         "irr_best_repriced": 0.024565472122580978,
         "ev_fcf": 60.9821104,
         "edge_to_fair": -0.2733137924067156,
         "price": 346.0799865722656
+=======
+        "score_v2": 37.55802065368002,
+        "irr_best_repriced": -0.00258560513030226,
+        "ev_fcf": 60.9821104,
+        "edge_to_fair": -0.3473346145741715,
+        "price": 385.33
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "ABBNE": [
@@ -4977,6 +5700,7 @@
         "price": 81.27999877929688
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.24,
         "composite_geometric": 6.798062693023175,
@@ -4999,15 +5723,25 @@
         "price": 86.5199966430664
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.24,
         "composite_geometric": 6.798062693023175,
         "survival_score": 0.8333333333333334,
+<<<<<<< HEAD
         "score_v2": 38.865697057053026,
         "irr_best_repriced": 0.03725513568993066,
         "ev_fcf": 44.23924768119809,
         "edge_to_fair": -0.2881281037579727,
         "price": 86.5
+=======
+        "score_v2": 40.085842983325556,
+        "irr_best_repriced": 0.059770550732811456,
+        "ev_fcf": 44.23924768119809,
+        "edge_to_fair": -0.22427665627443483,
+        "price": 79.38
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "GRMN": [
@@ -5122,6 +5856,7 @@
         "price": 235.3249969482422
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.07,
         "composite_geometric": 6.546356674768935,
@@ -5144,15 +5879,25 @@
         "price": 234.1999969482422
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.07,
         "composite_geometric": 6.546356674768935,
         "survival_score": 0.8500000000000001,
+<<<<<<< HEAD
         "score_v2": 42.99135245163186,
         "irr_best_repriced": 0.09592818624142585,
         "ev_fcf": 31.438047425384614,
         "edge_to_fair": 0.00583451341119523,
         "price": 236.41000366210938
+=======
+        "score_v2": 43.81182705198237,
+        "irr_best_repriced": 0.1034074721678333,
+        "ev_fcf": 31.438047425384614,
+        "edge_to_fair": 0.033574602825360955,
+        "price": 230.065
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "KRX": [
@@ -5267,6 +6012,7 @@
         "price": 81.55000305175781
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.05,
         "composite_geometric": 6.798062693023175,
@@ -5289,15 +6035,25 @@
         "price": 85.5
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.05,
         "composite_geometric": 6.798062693023175,
         "survival_score": 0.8333333333333334,
+<<<<<<< HEAD
         "score_v2": 46.55679616626404,
         "irr_best_repriced": 0.13171889091822941,
         "ev_fcf": 25.259562241666668,
         "edge_to_fair": -0.0508626930323367,
         "price": 83.0
+=======
+        "score_v2": 49.083195659936706,
+        "irr_best_repriced": 0.16883111517589322,
+        "ev_fcf": 25.259562241666668,
+        "edge_to_fair": 0.07989577077883547,
+        "price": 72.95
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "KSPI": [
@@ -5412,6 +6168,7 @@
         "price": 80.69999694824219
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.0,
         "composite_geometric": 6.319440557453992,
@@ -5434,15 +6191,24 @@
         "price": 82.20500183105469
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.0,
         "composite_geometric": 6.319440557453992,
         "survival_score": 0.638888888888889,
         "score_v2": 56.7708236158572,
+<<<<<<< HEAD
         "irr_best_repriced": 4.649360981110622,
         "ev_fcf": 17.504320408291704,
         "edge_to_fair": 588.8659948514161,
         "price": 83.5
+=======
+        "irr_best_repriced": 4.5518909422045,
+        "ev_fcf": 17.504320408291704,
+        "edge_to_fair": 549.198956323651,
+        "price": 89.52
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "CBAV": [
@@ -5557,6 +6323,7 @@
         "price": 58.400001525878906
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.84,
         "composite_geometric": 6.465499318400721,
@@ -5579,15 +6346,25 @@
         "price": 55.400001525878906
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.84,
         "composite_geometric": 6.465499318400721,
         "survival_score": 0.8333333333333334,
+<<<<<<< HEAD
         "score_v2": 51.46993005976863,
         "irr_best_repriced": 0.13177220574549642,
         "ev_fcf": 22.028057523809526,
         "edge_to_fair": 0.08008599170033204,
         "price": 55.79999923706055
+=======
+        "score_v2": 51.69886345718303,
+        "irr_best_repriced": 0.13483521283755318,
+        "ev_fcf": 22.028057523809526,
+        "edge_to_fair": 0.0918260418992447,
+        "price": 55.2
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "NVDA": [
@@ -5702,6 +6479,7 @@
         "price": 202.9600067138672
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.75,
         "composite_geometric": 6.187108528025973,
@@ -5724,15 +6502,25 @@
         "price": 210.69000244140625
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.75,
         "composite_geometric": 6.187108528025973,
         "survival_score": 0.6944444444444445,
+<<<<<<< HEAD
         "score_v2": 34.15108816650142,
         "irr_best_repriced": 0.1057605671444517,
         "ev_fcf": 89.07563381755,
         "edge_to_fair": -0.2561483596349873,
         "price": 200.0399932861328
+=======
+        "score_v2": 33.989700038793956,
+        "irr_best_repriced": 0.07745944297825824,
+        "ev_fcf": 89.07563381755,
+        "edge_to_fair": -0.3294276246630984,
+        "price": 221.9001
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "COR": [
@@ -5847,6 +6635,7 @@
         "price": 284.3500061035156
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.5,
         "composite_geometric": 6.1280372737612945,
@@ -5869,15 +6658,25 @@
         "price": 271.8299865722656
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.5,
         "composite_geometric": 6.1280372737612945,
         "survival_score": 0.8333333333333334,
+<<<<<<< HEAD
         "score_v2": 36.1583629820524,
         "irr_best_repriced": -0.5619976057684178,
         "ev_fcf": 12.737874999999999,
         "edge_to_fair": -0.9761047973666332,
         "price": 281.1000061035156
+=======
+        "score_v2": 52.719947088192484,
+        "irr_best_repriced": 0.10617079067082402,
+        "ev_fcf": 12.737874999999999,
+        "edge_to_fair": -0.027938986094912854,
+        "price": 6.91
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "TSM": [
@@ -5992,6 +6791,7 @@
         "price": 415.9599914550781
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.36,
         "composite_geometric": 5.962800188783897,
@@ -6014,15 +6814,25 @@
         "price": 462.1199951171875
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.36,
         "composite_geometric": 5.962800188783897,
         "survival_score": 0.611111111111111,
+<<<<<<< HEAD
         "score_v2": 30.945553328199672,
         "irr_best_repriced": -0.017258523588193686,
         "ev_fcf": 57.581431765714285,
         "edge_to_fair": -0.44406505077148795,
         "price": 436.3900146484375
+=======
+        "score_v2": 31.054506010495835,
+        "irr_best_repriced": 0.007940213394228346,
+        "ev_fcf": 57.581431765714285,
+        "edge_to_fair": -0.3848147361867108,
+        "price": 394.36
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "SPOT": [
@@ -6137,6 +6947,7 @@
         "price": 490.989990234375
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.46,
         "composite_geometric": 6.14737681377664,
@@ -6159,15 +6970,25 @@
         "price": 468.0799865722656
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.46,
         "composite_geometric": 6.14737681377664,
         "survival_score": 0.7555555555555555,
+<<<<<<< HEAD
         "score_v2": 44.51286987324225,
         "irr_best_repriced": 0.130505967223836,
         "ev_fcf": 21.053523534370402,
         "edge_to_fair": 0.15824466020343086,
         "price": 455.5
+=======
+        "score_v2": 46.143084490159545,
+        "irr_best_repriced": 0.14147643617200845,
+        "ev_fcf": 21.053523534370402,
+        "edge_to_fair": 0.2038619083667914,
+        "price": 438.24
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "PRY": [
@@ -6282,6 +7103,7 @@
         "price": 142.9499969482422
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.24,
         "composite_geometric": 5.975369864419413,
@@ -6304,15 +7126,25 @@
         "price": 151.9499969482422
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.24,
         "composite_geometric": 5.975369864419413,
         "survival_score": 0.85,
+<<<<<<< HEAD
         "score_v2": 36.965163685763194,
         "irr_best_repriced": -0.011484995384884122,
         "ev_fcf": 50.938593222222224,
         "edge_to_fair": -0.38507587729895965,
         "price": 148.85000610351562
+=======
+        "score_v2": 37.03683775395214,
+        "irr_best_repriced": 0.0028856079868728735,
+        "ev_fcf": 50.938593222222224,
+        "edge_to_fair": -0.34853053795552424,
+        "price": 140.5
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "JFN": [
@@ -6427,6 +7259,7 @@
         "price": 246.5
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.24,
         "composite_geometric": 5.868227173259393,
@@ -6449,15 +7282,25 @@
         "price": 249.5
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.24,
         "composite_geometric": 5.868227173259393,
         "survival_score": 0.8555555555555555,
+<<<<<<< HEAD
         "score_v2": 41.07650614937995,
         "irr_best_repriced": 0.04938956415641349,
         "ev_fcf": 18.722299999999997,
         "edge_to_fair": -0.13502351280974434,
         "price": 250.0
+=======
+        "score_v2": 40.718693520354314,
+        "irr_best_repriced": 0.045748504586241134,
+        "ev_fcf": 18.722299999999997,
+        "edge_to_fair": -0.14696598896424495,
+        "price": 253.5
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "CPR": [
@@ -6572,6 +7415,7 @@
         "price": 5.427999973297119
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.23,
         "composite_geometric": 5.869788803178787,
@@ -6594,15 +7438,25 @@
         "price": 5.438000202178955
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.23,
         "composite_geometric": 5.869788803178787,
         "survival_score": 0.8388888888888889,
+<<<<<<< HEAD
         "score_v2": 37.387600616815995,
         "irr_best_repriced": 0.0003570757790058998,
         "ev_fcf": 33.988664533333335,
         "edge_to_fair": -0.4788397894019548,
         "price": 5.449999809265137
+=======
+        "score_v2": 37.17073279453649,
+        "irr_best_repriced": -0.002829548869233367,
+        "ev_fcf": 33.988664533333335,
+        "edge_to_fair": -0.4854487231239266,
+        "price": 5.52
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "SIKA": [
@@ -6717,6 +7571,7 @@
         "price": 146.5
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.13,
         "composite_geometric": 5.817493918606837,
@@ -6739,15 +7594,25 @@
         "price": 165.3000030517578
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.13,
         "composite_geometric": 5.817493918606837,
         "survival_score": 0.8166666666666668,
+<<<<<<< HEAD
         "score_v2": 43.10230055389685,
         "irr_best_repriced": 0.10109542207756372,
         "ev_fcf": 23.60645636363636,
         "edge_to_fair": 0.048679308284852674,
         "price": 162.0
+=======
+        "score_v2": 48.067198628036415,
+        "irr_best_repriced": 0.14201471985891367,
+        "ev_fcf": 23.60645636363636,
+        "edge_to_fair": 0.21347177101532933,
+        "price": 140.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "CHKP": [
@@ -6862,6 +7727,7 @@
         "price": 123.4000015258789
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.11,
         "composite_geometric": 5.54508586048544,
@@ -6884,15 +7750,25 @@
         "price": 122.33000183105469
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.11,
         "composite_geometric": 5.54508586048544,
         "survival_score": 0.6944444444444445,
+<<<<<<< HEAD
         "score_v2": 62.57228410279806,
         "irr_best_repriced": 0.2782763442259002,
         "ev_fcf": 7.840619689230768,
         "edge_to_fair": 0.5508606663311013,
         "price": 123.88999938964844
+=======
+        "score_v2": 60.1199427458869,
+        "irr_best_repriced": 0.270828299681956,
+        "ev_fcf": 7.840619689230768,
+        "edge_to_fair": 0.5150301766692156,
+        "price": 126.82
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "TGYM": [
@@ -7007,6 +7883,7 @@
         "price": 16.020000457763672
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.06,
         "composite_geometric": 5.632192405365048,
@@ -7029,15 +7906,25 @@
         "price": 16.81999969482422
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.06,
         "composite_geometric": 5.632192405365048,
         "survival_score": 0.7722222222222221,
+<<<<<<< HEAD
         "score_v2": 38.72275099699481,
         "irr_best_repriced": 0.07483098056381232,
         "ev_fcf": 43.29950210526316,
         "edge_to_fair": -0.12531955981948661,
         "price": 15.510000228881836
+=======
+        "score_v2": 34.22067312257356,
+        "irr_best_repriced": 0.00024293691631660508,
+        "ev_fcf": 43.29950210526316,
+        "edge_to_fair": -0.34398966018383814,
+        "price": 20.68
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "VID": [
@@ -7152,6 +8039,7 @@
         "price": 77.30000305175781
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 5.44,
         "composite_geometric": 6.217722445812111,
@@ -7174,15 +8062,25 @@
         "price": 79.80000305175781
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 5.44,
         "composite_geometric": 6.217722445812111,
         "survival_score": 0.7888888888888889,
+<<<<<<< HEAD
         "score_v2": 51.92792212312342,
         "irr_best_repriced": 0.17994079212565461,
         "ev_fcf": 13.79776002,
         "edge_to_fair": 0.1739586028608604,
         "price": 79.69999694824219
+=======
+        "score_v2": 53.19710127056274,
+        "irr_best_repriced": 0.1964152917686044,
+        "ev_fcf": 13.79776002,
+        "edge_to_fair": 0.240908449142881,
+        "price": 75.4
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "TFPM": [
@@ -7297,6 +8195,7 @@
         "price": 39.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 4.98,
         "composite_geometric": 5.294501470188533,
@@ -7319,15 +8218,25 @@
         "price": 42.43000030517578
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 4.98,
         "composite_geometric": 5.294501470188533,
         "survival_score": 0.7444444444444445,
+<<<<<<< HEAD
         "score_v2": 33.296486011594325,
         "irr_best_repriced": 0.05519051463746649,
         "ev_fcf": 33.28068008489263,
         "edge_to_fair": -0.1936671443481066,
         "price": 40.939998626708984
+=======
+        "score_v2": 32.9709768100296,
+        "irr_best_repriced": 0.04463476090138441,
+        "ev_fcf": 33.28068008489263,
+        "edge_to_fair": -0.2254512904021856,
+        "price": 42.62
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "NFLX": [
@@ -7442,6 +8351,7 @@
         "price": 81.37000274658203
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 6.13,
         "composite_geometric": 6.594548647966196,
@@ -7464,15 +8374,25 @@
         "price": 77.37999725341797
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 6.13,
         "composite_geometric": 6.594548647966196,
         "survival_score": 0.7388888888888889,
+<<<<<<< HEAD
         "score_v2": 45.08220548345589,
         "irr_best_repriced": 0.12883269782604145,
         "ev_fcf": 31.659218324369746,
         "edge_to_fair": 0.13760983170726848,
         "price": 72.81999969482422
+=======
+        "score_v2": 39.41867341072947,
+        "irr_best_repriced": 0.07369603981996953,
+        "ev_fcf": 31.659218324369746,
+        "edge_to_fair": -0.06889122628130462,
+        "price": 88.97
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "NKE": [
@@ -7587,6 +8507,7 @@
         "price": 44.95000076293945
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 4.88,
         "composite_geometric": 5.443982110153412,
@@ -7609,15 +8530,25 @@
         "price": 45.20000076293945
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 4.88,
         "composite_geometric": 5.443982110153412,
         "survival_score": 0.8111111111111112,
+<<<<<<< HEAD
         "score_v2": 69.03045071687953,
         "irr_best_repriced": 0.2637036320786774,
         "ev_fcf": 12.821758499460001,
         "edge_to_fair": 0.6683774498312234,
         "price": 42.380001068115234
+=======
+        "score_v2": 69.07743129333339,
+        "irr_best_repriced": 0.2644659027112839,
+        "ev_fcf": 12.821758499460001,
+        "edge_to_fair": 0.6724065789896521,
+        "price": 42.2779
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "MIPS": [
@@ -7732,6 +8663,7 @@
         "price": 238.8000030517578
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 4.68,
         "composite_geometric": 5.196851589644416,
@@ -7754,15 +8686,25 @@
         "price": 236.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 4.68,
         "composite_geometric": 5.196851589644416,
         "survival_score": 0.7555555555555555,
+<<<<<<< HEAD
         "score_v2": 32.61023289604017,
         "irr_best_repriced": -0.023232536469802945,
         "ev_fcf": 54.82433152542372,
         "edge_to_fair": -0.4295539651824465,
         "price": 242.60000610351562
+=======
+        "score_v2": 32.577213329283076,
+        "irr_best_repriced": -0.03150929679545411,
+        "ev_fcf": 54.82433152542372,
+        "edge_to_fair": -0.44864457558380577,
+        "price": 251.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "FERG": [
@@ -7877,6 +8819,7 @@
         "price": 225.69500732421875
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 4.67,
         "composite_geometric": 5.24688748068069,
@@ -7899,15 +8842,25 @@
         "price": 238.35000610351562
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 4.67,
         "composite_geometric": 5.24688748068069,
         "survival_score": 0.8111111111111112,
+<<<<<<< HEAD
         "score_v2": 44.82585747762995,
         "irr_best_repriced": 0.11134684761392899,
         "ev_fcf": 19.329120971250003,
         "edge_to_fair": -0.05249142994990763,
         "price": 234.0500030517578
+=======
+        "score_v2": 45.88150623507053,
+        "irr_best_repriced": 0.12753573096805093,
+        "ev_fcf": 19.329120971250003,
+        "edge_to_fair": 0.0039357328676103975,
+        "price": 220.895
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "S": [
@@ -8022,6 +8975,7 @@
         "price": 14.699999809265137
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 3.93,
         "composite_geometric": 4.788494579387974,
@@ -8044,15 +8998,25 @@
         "price": 15.020000457763672
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 3.93,
         "composite_geometric": 4.788494579387974,
         "survival_score": 0.65,
+<<<<<<< HEAD
         "score_v2": 29.26302205808602,
         "irr_best_repriced": 0.035313207535470736,
         "ev_fcf": 97.72362426000001,
         "edge_to_fair": -0.26732950239217357,
         "price": 15.130000114440918
+=======
+        "score_v2": 29.04402183768401,
+        "irr_best_repriced": -0.0021023309776532217,
+        "ev_fcf": 97.72362426000001,
+        "edge_to_fair": -0.36763806545043376,
+        "price": 17.53
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "TREX": [
@@ -8167,6 +9131,7 @@
         "price": 43.86750030517578
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 3.92,
         "composite_geometric": 4.668738082682039,
@@ -8189,15 +9154,25 @@
         "price": 47.130001068115234
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 3.92,
         "composite_geometric": 4.668738082682039,
         "survival_score": 0.7555555555555555,
+<<<<<<< HEAD
         "score_v2": 38.6371743905442,
         "irr_best_repriced": 0.0833151147069986,
         "ev_fcf": 20.524081363157894,
         "edge_to_fair": -0.20165237704788852,
         "price": 45.34000015258789
+=======
+        "score_v2": 42.740553849278555,
+        "irr_best_repriced": 0.14312557641689128,
+        "ev_fcf": 20.524081363157894,
+        "edge_to_fair": -0.010197392768200308,
+        "price": 36.57
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "SGO": [
@@ -8312,6 +9287,7 @@
         "price": 73.27999877929688
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 3.77,
         "composite_geometric": 4.676148973601609,
@@ -8334,15 +9310,25 @@
         "price": 79.31999969482422
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 3.77,
         "composite_geometric": 4.676148973601609,
         "survival_score": 0.7388888888888889,
+<<<<<<< HEAD
         "score_v2": 41.19870216055686,
         "irr_best_repriced": 0.07163149022879689,
         "ev_fcf": 18.596726419166668,
         "edge_to_fair": -0.13497736516830394,
         "price": 77.5199966430664
+=======
+        "score_v2": 42.12991805603669,
+        "irr_best_repriced": 0.08777342911361763,
+        "ev_fcf": 18.596726419166668,
+        "edge_to_fair": -0.08166869695522405,
+        "price": 73.02
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "TFF": [
@@ -8457,6 +9443,7 @@
         "price": 17.600000381469727
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 3.31,
         "composite_geometric": 4.13233162004201,
@@ -8479,15 +9466,25 @@
         "price": 16.559999465942383
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 3.31,
         "composite_geometric": 4.13233162004201,
         "survival_score": 0.6999999999999998,
+<<<<<<< HEAD
         "score_v2": 32.74826248807471,
         "irr_best_repriced": -0.12010739820815908,
         "ev_fcf": 28.342399999999998,
         "edge_to_fair": null,
         "price": 16.15999984741211
+=======
+        "score_v2": 32.18985024839146,
+        "irr_best_repriced": -0.1311840727301199,
+        "ev_fcf": 28.342399999999998,
+        "edge_to_fair": null,
+        "price": 17.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "CELH": [
@@ -8602,6 +9599,7 @@
         "price": 28.479999542236328
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 3.24,
         "composite_geometric": 3.9687605658263356,
@@ -8624,15 +9622,25 @@
         "price": 30.799999237060547
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 3.24,
         "composite_geometric": 3.9687605658263356,
         "survival_score": 0.6611111111111111,
+<<<<<<< HEAD
         "score_v2": 47.12959037283971,
         "irr_best_repriced": 0.27964014438729423,
         "ev_fcf": 29.911315163636363,
         "edge_to_fair": 0.5058508759325453,
         "price": 28.15999984741211
+=======
+        "score_v2": 44.90840094713882,
+        "irr_best_repriced": 0.2665752311148395,
+        "ev_fcf": 29.911315163636363,
+        "edge_to_fair": 0.44528835843510106,
+        "price": 29.34
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "BFIT": [
@@ -8747,6 +9755,7 @@
         "price": 32.279998779296875
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 2.94,
         "composite_geometric": 3.9776677955666835,
@@ -8769,15 +9778,25 @@
         "price": 31.959999084472656
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 2.94,
         "composite_geometric": 3.9776677955666835,
         "survival_score": 0.6444444444444444,
+<<<<<<< HEAD
         "score_v2": 29.19153525016472,
         "irr_best_repriced": 0.029387834636674715,
         "ev_fcf": 33.3185,
         "edge_to_fair": -0.5605362443792015,
         "price": 31.360000610351562
+=======
+        "score_v2": 30.089810478268515,
+        "irr_best_repriced": 0.042778032705823144,
+        "ev_fcf": 33.3185,
+        "edge_to_fair": -0.5372201596878565,
+        "price": 29.78
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "VRLA": [
@@ -8892,6 +9911,7 @@
         "price": 2.2139999866485596
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 3.79,
         "composite_geometric": 4.517760265563592,
@@ -8914,15 +9934,25 @@
         "price": 2.2790000438690186
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 3.79,
         "composite_geometric": 4.517760265563592,
         "survival_score": 0.8000000000000002,
+<<<<<<< HEAD
         "score_v2": 75.6138419135481,
         "irr_best_repriced": 1.097163295192829,
         "ev_fcf": 17.18668523293173,
         "edge_to_fair": 4.880126829517865,
         "price": 2.3340001106262207
+=======
+        "score_v2": 46.6832899272668,
+        "irr_best_repriced": 0.22991668959596412,
+        "ev_fcf": 17.18668523293173,
+        "edge_to_fair": -0.30439854685296985,
+        "price": 19.73
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "KIST": [
@@ -9037,6 +10067,7 @@
         "price": 263.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 2.14,
         "composite_geometric": 2.9717345240051642,
@@ -9059,15 +10090,24 @@
         "price": 232.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 2.14,
         "composite_geometric": 2.9717345240051642,
         "survival_score": 0.4444444444444444,
         "score_v2": 0.0,
+<<<<<<< HEAD
         "irr_best_repriced": -0.563652835093627,
         "ev_fcf": 8.618930636363636,
         "edge_to_fair": -0.9863781487710784,
         "price": 228.0
+=======
+        "irr_best_repriced": -0.5891187050161439,
+        "ev_fcf": 8.618930636363636,
+        "edge_to_fair": -0.9892904066200203,
+        "price": 290.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "WOSG": [
@@ -9182,6 +10222,7 @@
         "price": 705.0
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 2.08,
         "composite_geometric": 2.632689137228979,
@@ -9204,15 +10245,25 @@
         "price": 719.0
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 2.08,
         "composite_geometric": 2.632689137228979,
         "survival_score": 0.638888888888889,
+<<<<<<< HEAD
         "score_v2": 22.584546120863013,
         "irr_best_repriced": -0.6576846798747547,
         "ev_fcf": 18.825519422222225,
         "edge_to_fair": -0.9933574475975132,
         "price": 693.6190185546875
+=======
+        "score_v2": 22.58697872375857,
+        "irr_best_repriced": -0.6507979369374961,
+        "ev_fcf": 18.825519422222225,
+        "edge_to_fair": -0.9928065563183279,
+        "price": 640.5
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "IPCO": [
@@ -9327,6 +10378,7 @@
         "price": 245.8000030517578
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 1.71,
         "composite_geometric": 2.6119982934995694,
@@ -9349,15 +10401,24 @@
         "price": 213.1999969482422
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 1.71,
         "composite_geometric": 2.6119982934995694,
         "survival_score": 0.45,
         "score_v2": 0.0,
+<<<<<<< HEAD
         "irr_best_repriced": -0.3045634649752287,
         "ev_fcf": 15.682321885203478,
         "edge_to_fair": -0.8840295974333966,
         "price": 215.8000030517578
+=======
+        "irr_best_repriced": 0.06436204136689838,
+        "ev_fcf": 15.682321885203478,
+        "edge_to_fair": -0.36368133160979943,
+        "price": 39.33
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "OTLY": [
@@ -9472,6 +10533,7 @@
         "price": 8.25
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 2.2,
         "composite_geometric": 3.3676399281805853,
@@ -9494,15 +10556,24 @@
         "price": 8.260000228881836
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 2.2,
         "composite_geometric": 3.3676399281805853,
         "survival_score": 0.4000000000000001,
         "score_v2": 0.0,
+<<<<<<< HEAD
         "irr_best_repriced": 0.6064605739099025,
         "ev_fcf": -8.169435499999999,
         "edge_to_fair": null,
         "price": 8.289999961853027
+=======
+        "irr_best_repriced": 0.5375542825323709,
+        "ev_fcf": -8.169435499999999,
+        "edge_to_fair": null,
+        "price": 9.879
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ],
     "CSU": [
@@ -9562,6 +10633,7 @@
         "price": 3096.68994140625
       },
       {
+<<<<<<< HEAD
         "date": "2026-06-14",
         "rating_composite": 8.55,
         "composite_geometric": 8.74478579137964,
@@ -9584,15 +10656,25 @@
         "price": 2749.989990234375
       },
       {
+=======
+>>>>>>> 46d26c8 (WIP antes de sync)
         "date": "2026-06-24",
         "rating_composite": 8.55,
         "composite_geometric": 8.74478579137964,
         "survival_score": 0.9500000000000001,
+<<<<<<< HEAD
         "score_v2": 84.01836102591413,
         "irr_best_repriced": 0.42934321124208963,
         "ev_fcf": 20.80074074074074,
         "edge_to_fair": 1.7565033483890646,
         "price": 2790.8798828125
+=======
+        "score_v2": 84.79757287388858,
+        "irr_best_repriced": 0.45488435118754245,
+        "ev_fcf": 20.80074074074074,
+        "edge_to_fair": 1.9588729776632063,
+        "price": 2600.0
+>>>>>>> 46d26c8 (WIP antes de sync)
       }
     ]
   }

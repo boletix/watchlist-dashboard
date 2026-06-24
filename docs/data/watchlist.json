@@ -1,17 +1,21 @@
 {
   "meta": {
+<<<<<<< HEAD
     "generated_at": "2026-06-24T10:29:29+00:00",
+=======
+    "generated_at": "2026-06-24T07:45:17+00:00",
+>>>>>>> 46d26c8 (WIP antes de sync)
     "n_companies": 62,
     "source_file": "watchlist_ratings.xlsx",
     "validation_issues": [],
     "enrichment_stats": {
-      "yfinance": 62,
-      "stale": 0,
+      "yfinance": 0,
+      "stale": 62,
       "skipped": 0
     },
     "version": "2.0",
     "updates": {
-      "n_updates": 19
+      "n_updates": 46
     },
     "backtest": {
       "generated_at": "2026-06-24T10:29:40+00:00",
@@ -55,7 +59,11 @@
     "median_composite": 6.1850000000000005,
     "avg_composite_geometric": 6.48741645376521,
     "avg_survival_score": 0.7982974910394265,
+<<<<<<< HEAD
     "weighted_avg_roic": 0.34424758900050284,
+=======
+    "weighted_avg_roic": 0.41410826175406446,
+>>>>>>> 46d26c8 (WIP antes de sync)
     "median_ev_fcf": 29.761744309700003,
     "pct_best_irr_gt_15pct": 38.70967741935484,
     "n_top_tier": 16,
@@ -63,7 +71,7 @@
     "n_quality_zone_hunt": 7,
     "n_killed": 3,
     "pct_positive_worst_irr": 12.903225806451612,
-    "pct_positive_worst_irr_repriced": 19.35483870967742
+    "pct_positive_worst_irr_repriced": 16.129032258064516
   },
   "category_stats": [
     {
@@ -76,8 +84,13 @@
       "median_ev_fcf": 17.1867,
       "avg_irr_best": 0.0797,
       "avg_irr_worst": -0.5036,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.1191,
       "avg_edge_to_fair": 0.8998
+=======
+      "avg_irr_best_repriced": 0.0797,
+      "avg_edge_to_fair": -0.1442
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Consumo",
@@ -89,8 +102,13 @@
       "median_ev_fcf": 21.0535,
       "avg_irr_best": 0.2003,
       "avg_irr_worst": -0.2441,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.1349,
       "avg_edge_to_fair": 0.1974
+=======
+      "avg_irr_best_repriced": 0.1278,
+      "avg_edge_to_fair": 0.1797
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Cyber",
@@ -102,8 +120,13 @@
       "median_ev_fcf": 97.7236,
       "avg_irr_best": 0.0472,
       "avg_irr_worst": -0.1475,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.0695,
       "avg_edge_to_fair": -0.0029
+=======
+      "avg_irr_best_repriced": 0.0472,
+      "avg_edge_to_fair": -0.1327
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Defensive",
@@ -115,8 +138,13 @@
       "median_ev_fcf": 51.2034,
       "avg_irr_best": 0.0238,
       "avg_irr_worst": -0.1217,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.2072,
       "avg_edge_to_fair": 0.6538
+=======
+      "avg_irr_best_repriced": 0.0238,
+      "avg_edge_to_fair": -0.2382
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Electrify",
@@ -128,8 +156,13 @@
       "median_ev_fcf": 39.5227,
       "avg_irr_best": 0.0498,
       "avg_irr_worst": -0.1371,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.0493,
       "avg_edge_to_fair": -0.2336
+=======
+      "avg_irr_best_repriced": 0.065,
+      "avg_edge_to_fair": -0.1871
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Fintech",
@@ -141,8 +174,13 @@
       "median_ev_fcf": 22.3929,
       "avg_irr_best": 0.2434,
       "avg_irr_worst": -0.0285,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 2.4939,
       "avg_edge_to_fair": 294.9335
+=======
+      "avg_irr_best_repriced": 2.4234,
+      "avg_edge_to_fair": 274.9761
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Hardware",
@@ -154,8 +192,13 @@
       "median_ev_fcf": 27.425,
       "avg_irr_best": 0.1559,
       "avg_irr_worst": -0.0665,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.1586,
       "avg_edge_to_fair": 0.1355
+=======
+      "avg_irr_best_repriced": 0.1559,
+      "avg_edge_to_fair": 0.125
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Healthcare",
@@ -167,8 +210,13 @@
       "median_ev_fcf": 31.2486,
       "avg_irr_best": 0.1327,
       "avg_irr_worst": -0.0895,
+<<<<<<< HEAD
       "avg_irr_best_repriced": -0.2722,
       "avg_edge_to_fair": -0.5412
+=======
+      "avg_irr_best_repriced": -0.2651,
+      "avg_edge_to_fair": -0.5035
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "IA",
@@ -180,8 +228,13 @@
       "median_ev_fcf": 73.3285,
       "avg_irr_best": 0.0427,
       "avg_irr_worst": -0.1895,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.0443,
       "avg_edge_to_fair": -0.3501
+=======
+      "avg_irr_best_repriced": 0.0427,
+      "avg_edge_to_fair": -0.3571
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "IP owner",
@@ -193,8 +246,13 @@
       "median_ev_fcf": 39.4222,
       "avg_irr_best": 0.0452,
       "avg_irr_worst": -0.1304,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.065,
       "avg_edge_to_fair": -0.1278
+=======
+      "avg_irr_best_repriced": 1.5516,
+      "avg_edge_to_fair": 96.2831
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Industrial",
@@ -206,8 +264,13 @@
       "median_ev_fcf": 27.7499,
       "avg_irr_best": 0.1451,
       "avg_irr_worst": -0.0784,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.1418,
       "avg_edge_to_fair": 0.0598
+=======
+      "avg_irr_best_repriced": 0.1451,
+      "avg_edge_to_fair": 0.0701
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Mag 7",
@@ -219,8 +282,13 @@
       "median_ev_fcf": 48.6095,
       "avg_irr_best": 0.0764,
       "avg_irr_worst": -0.0948,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.1027,
       "avg_edge_to_fair": 0.0111
+=======
+      "avg_irr_best_repriced": 0.0764,
+      "avg_edge_to_fair": -0.08
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Materials",
@@ -232,8 +300,13 @@
       "median_ev_fcf": 15.6823,
       "avg_irr_best": 0.165,
       "avg_irr_worst": -0.1478,
+<<<<<<< HEAD
       "avg_irr_best_repriced": -0.271,
       "avg_edge_to_fair": -0.688
+=======
+      "avg_irr_best_repriced": -0.16,
+      "avg_edge_to_fair": -0.5261
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Real Assets",
@@ -245,8 +318,13 @@
       "median_ev_fcf": 27.4803,
       "avg_irr_best": 0.2564,
       "avg_irr_worst": -0.0629,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.2572,
       "avg_edge_to_fair": 0.3647
+=======
+      "avg_irr_best_repriced": 0.2564,
+      "avg_edge_to_fair": 0.3576
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Sports",
@@ -258,8 +336,13 @@
       "median_ev_fcf": 32.3783,
       "avg_irr_best": 0.048,
       "avg_irr_worst": -0.1507,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.0624,
       "avg_edge_to_fair": -0.2038
+=======
+      "avg_irr_best_repriced": 0.048,
+      "avg_edge_to_fair": -0.2487
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "Vertical Saas",
@@ -271,8 +354,13 @@
       "median_ev_fcf": 22.4328,
       "avg_irr_best": 0.283,
       "avg_irr_worst": 0.0287,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.2884,
       "avg_edge_to_fair": 0.8833
+=======
+      "avg_irr_best_repriced": 0.283,
+      "avg_edge_to_fair": 0.8792
+>>>>>>> 46d26c8 (WIP antes de sync)
     },
     {
       "category": "construction",
@@ -284,8 +372,13 @@
       "median_ev_fcf": 20.5241,
       "avg_irr_best": 0.1339,
       "avg_irr_worst": -0.082,
+<<<<<<< HEAD
       "avg_irr_best_repriced": 0.0998,
       "avg_edge_to_fair": -0.0783
+=======
+      "avg_irr_best_repriced": 0.1339,
+      "avg_edge_to_fair": 0.0411
+>>>>>>> 46d26c8 (WIP antes de sync)
     }
   ],
   "deltas": {
@@ -302,9 +395,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 159.7100067138672,
       "shares_out_m": 163.1987,
       "market_cap_m": 26064.4654726944,
+=======
+      "price": 164.12,
+      "shares_out_m": 163.1987,
+      "market_cap_m": 26784.170644,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.5,
       "r1_moat": 8.0,
       "r1_optionality": 2.0,
@@ -362,7 +461,7 @@
       "irr_worst": 0.05002369226837189,
       "irr_best": 0.34329692568943093,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.29327323342105904,
       "irr_asymmetry_ratio": 5.8626866615058875,
       "quadrant": "hunting_ground",
@@ -378,13 +477,20 @@
       "rating_dispersion": 0.21181753153756352,
       "fve_min_repriced": 209.48696282507152,
       "fve_max_repriced": 534.3792566975104,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.05575944279865919,
       "irr_best_repriced": 0.352475373143073,
       "irr_repriced_delta": 0.009178447453642047,
+=======
+      "irr_worst_repriced": 0.05002369226837189,
+      "irr_best_repriced": 0.34329692568943093,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 26.770581041975312,
       "quality_multiple_a": 0.49575150077732066,
       "quality_multiple_b": 0.8438655094287132,
       "quality_adjusted_multiple": 0.6698085051030169,
+<<<<<<< HEAD
       "edge_to_fair": 1.0949379687252527,
       "quality_zone": "hunting_ground",
       "kelly_fraction": 0.11970318980326913,
@@ -394,6 +500,17 @@
       "ev_fcf_5y_base": 9.968405974993338,
       "score_v2": 83.10985746596789,
       "score_v2_rank": 3,
+=======
+      "edge_to_fair": 1.0386458509032743,
+      "quality_zone": "hunting_ground",
+      "kelly_fraction": 0.12110700327015748,
+      "suggested_weight_pct": 0.1,
+      "asymmetry_v2": 29.327323342105903,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 10.31061900872037,
+      "score_v2": 82.4807530219613,
+      "score_v2_rank": 2,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.4897252332190447,
       "ev_fcf_mean_5y": 28.426,
       "ev_fcf_std_5y": 8.91171049799083,
@@ -416,9 +533,15 @@
       "style": "Compounder",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 373.94000244140625,
       "shares_out_m": 7428.435,
       "market_cap_m": 2777789.002035828,
+=======
+      "price": 418.16,
+      "shares_out_m": 7428.435,
+      "market_cap_m": 3106274.3796000006,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 8.0,
       "r1_optionality": 3.0,
@@ -476,7 +599,7 @@
       "irr_worst": -0.07618759896757232,
       "irr_best": 0.10535648659769592,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.18154408556526824,
       "irr_asymmetry_ratio": 2.38285610815139,
       "quadrant": "wonderful_expensive",
@@ -492,13 +615,20 @@
       "rating_dispersion": 0.4993551397107634,
       "fve_min_repriced": 281.359398042791,
       "fve_max_repriced": 624.2405028784663,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.0553043840634353,
       "irr_best_repriced": 0.13667813046760613,
       "irr_repriced_delta": 0.03132164386991021,
+=======
+      "irr_worst_repriced": -0.07618759896757232,
+      "irr_best_repriced": 0.10535648659769592,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 34.14749310666667,
       "quality_multiple_a": 1.0623664522074077,
       "quality_multiple_b": 1.9620832447236312,
       "quality_adjusted_multiple": 1.5122248484655194,
+<<<<<<< HEAD
       "edge_to_fair": 0.12073970565727077,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.09197886808335387,
@@ -508,6 +638,17 @@
       "ev_fcf_5y_base": 21.846774280681174,
       "score_v2": 48.8842903876072,
       "score_v2_rank": 22,
+=======
+      "edge_to_fair": 0.0022226139986145643,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.05614663334322569,
+      "suggested_weight_pct": 0.04928426704572033,
+      "asymmetry_v2": 2.38285610815139,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 24.46130891078428,
+      "score_v2": 45.362652788824384,
+      "score_v2_rank": 30,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.6160652140220437,
       "ev_fcf_mean_5y": 42.35666666666666,
       "ev_fcf_std_5y": 7.0068339656525485,
@@ -530,9 +671,15 @@
       "style": "Compounder",
       "exchange": "XAMS",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 834.7000122070312,
       "shares_out_m": 31.54768,
       "market_cap_m": 26332.848881103517,
+=======
+      "price": 952.6,
+      "shares_out_m": 31.54768,
+      "market_cap_m": 30052.319968,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -590,7 +737,7 @@
       "irr_worst": 0.01802375232889153,
       "irr_best": 0.2948945307939521,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.2768707784650606,
       "irr_asymmetry_ratio": 5.537415569301212,
       "quadrant": "wonderful_expensive",
@@ -606,13 +753,20 @@
       "rating_dispersion": 0.400027776813338,
       "fve_min_repriced": 1041.5979875540768,
       "fve_max_repriced": 2678.2318065860945,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.04528313278161433,
       "irr_best_repriced": 0.33837999302812594,
       "irr_repriced_delta": 0.04348546223417382,
+=======
+      "irr_worst_repriced": 0.01802375232889153,
+      "irr_best_repriced": 0.2948945307939521,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 35.92053328,
       "quality_multiple_a": 1.496688886666667,
       "quality_multiple_b": 0.9135097068474467,
       "quality_adjusted_multiple": 1.2050992967570568,
+<<<<<<< HEAD
       "edge_to_fair": 1.0009845156333599,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.12244487693452913,
@@ -622,6 +776,17 @@
       "ev_fcf_5y_base": 9.174791213471538,
       "score_v2": 80.59016257030832,
       "score_v2_rank": 5,
+=======
+      "edge_to_fair": 0.7533296237930358,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.1306240768299733,
+      "suggested_weight_pct": 0.1,
+      "asymmetry_v2": 27.687077846506057,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 11.088415383919147,
+      "score_v2": 77.32436491807313,
+      "score_v2_rank": 4,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 1.660664666364738,
       "ev_fcf_mean_5y": 24.215,
       "ev_fcf_std_5y": 9.119842378023865,
@@ -644,9 +809,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 43.939998626708984,
       "shares_out_m": 2450.877,
       "market_cap_m": 107691.53201423264,
+=======
+      "price": 44.6201,
+      "shares_out_m": 2450.877,
+      "market_cap_m": 109358.3768277,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 3.0,
@@ -704,7 +875,7 @@
       "irr_worst": 0.017441883555142645,
       "irr_best": 0.25007229949436627,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.23263041593922362,
       "irr_asymmetry_ratio": 4.6526083187844725,
       "quadrant": "wonderful_expensive",
@@ -720,13 +891,20 @@
       "rating_dispersion": 0.3111626941363989,
       "fve_min_repriced": 48.64952423153019,
       "fve_max_repriced": 108.96099641067259,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.02057214723226619,
       "irr_best_repriced": 0.254881615491517,
       "irr_repriced_delta": 0.0048093159971507315,
+=======
+      "irr_worst_repriced": 0.017441883555142645,
+      "irr_best_repriced": 0.25007229949436627,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 21.156068514127274,
       "quality_multiple_a": 3.461902120493554,
       "quality_multiple_b": 1.0762261091923258,
       "quality_adjusted_multiple": 2.26906411484294,
+<<<<<<< HEAD
       "edge_to_fair": 0.6569705619779449,
       "quality_zone": "hunting_ground",
       "kelly_fraction": 0.1284198371990585,
@@ -736,6 +914,17 @@
       "ev_fcf_5y_base": 13.080806930611173,
       "score_v2": 74.214852123149,
       "score_v2_rank": 9,
+=======
+      "edge_to_fair": 0.6317149494915546,
+      "quality_zone": "hunting_ground",
+      "kelly_fraction": 0.12965342161478485,
+      "suggested_weight_pct": 0.1,
+      "asymmetry_v2": 23.263041593922363,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 13.270914036212933,
+      "score_v2": 73.88482399087832,
+      "score_v2_rank": 6,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": null,
       "ev_fcf_mean_5y": null,
       "ev_fcf_std_5y": null,
@@ -758,9 +947,15 @@
       "style": "Defensive",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 957.6799926757812,
       "shares_out_m": 443.6525,
       "market_cap_m": 424877.122950592,
+=======
+      "price": 1092.88,
+      "shares_out_m": 443.6525,
+      "market_cap_m": 484858.9442,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.5,
       "r1_moat": 8.0,
       "r1_optionality": 1.0,
@@ -818,7 +1013,7 @@
       "irr_worst": -0.13670046069207387,
       "irr_best": -0.01608919969173561,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.12061126100033825,
       "irr_asymmetry_ratio": 0.8823032518670327,
       "quadrant": "wonderful_expensive",
@@ -834,13 +1029,20 @@
       "rating_dispersion": 0.2946561084081275,
       "fve_min_repriced": 524.058807287235,
       "fve_max_repriced": 1024.225040994923,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.1135955617270511,
       "irr_best_repriced": 0.016936285544999263,
       "irr_repriced_delta": 0.033025485236734875,
+=======
+      "irr_worst_repriced": -0.13670046069207387,
+      "irr_best_repriced": -0.01608919969173561,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 63.981192560000004,
       "quality_multiple_a": 3.4123302698666667,
       "quality_multiple_b": 3.053970636763322,
       "quality_adjusted_multiple": 3.2331504533149946,
+<<<<<<< HEAD
       "edge_to_fair": -0.2349896825884672,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.0,
@@ -850,6 +1052,17 @@
       "ev_fcf_5y_base": 32.16552196958042,
       "score_v2": 45.54112110809421,
       "score_v2_rank": 28,
+=======
+      "edge_to_fair": -0.3296289847233239,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.8823032518670327,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 36.76054866599871,
+      "score_v2": 45.31879644665314,
+      "score_v2_rank": 31,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.29309117652010763,
       "ev_fcf_mean_5y": 51.12166666666667,
       "ev_fcf_std_5y": 9.62726582276724,
@@ -872,9 +1085,15 @@
       "style": "Compounder",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 67.70999908447266,
       "shares_out_m": 86.0206,
       "market_cap_m": 5824.454747245789,
+=======
+      "price": 71.28,
+      "shares_out_m": 86.0206,
+      "market_cap_m": 6131.548368000001,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -932,7 +1151,7 @@
       "irr_worst": 0.012780072095005313,
       "irr_best": 0.22845688983290469,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.21567681773789937,
       "irr_asymmetry_ratio": 4.3135363547579875,
       "quadrant": "wonderful_expensive",
@@ -948,13 +1167,20 @@
       "rating_dispersion": 0.6405379683429308,
       "fve_min_repriced": 75.9527369025559,
       "fve_max_repriced": 162.33320855702007,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.023241448949900434,
       "irr_best_repriced": 0.24433879433172856,
       "irr_repriced_delta": 0.015881904498823873,
+=======
+      "irr_worst_repriced": 0.012780072095005313,
+      "irr_best_repriced": 0.22845688983290469,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 36.097177300000006,
       "quality_multiple_a": 2.1432699021875004,
       "quality_multiple_b": 1.0917553198511212,
       "quality_adjusted_multiple": 1.6175126110193108,
+<<<<<<< HEAD
       "edge_to_fair": 0.6399197355448614,
       "quality_zone": "hunting_ground",
       "kelly_fraction": 0.12679902632115808,
@@ -964,6 +1190,17 @@
       "ev_fcf_5y_base": 12.964685966616242,
       "score_v2": 73.54903545378644,
       "score_v2_rank": 10,
+=======
+      "edge_to_fair": 0.5577856873225477,
+      "quality_zone": "hunting_ground",
+      "kelly_fraction": 0.1312066546264388,
+      "suggested_weight_pct": 0.1,
+      "asymmetry_v2": 21.567681773789936,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 13.692747647557232,
+      "score_v2": 72.36926313585137,
+      "score_v2_rank": 7,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.0924741336950947,
       "ev_fcf_mean_5y": 31.894,
       "ev_fcf_std_5y": 10.237313319421261,
@@ -986,9 +1223,15 @@
       "style": "Compounder",
       "exchange": "XFRA",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 644.0,
       "shares_out_m": 11.37,
       "market_cap_m": 7322.28,
+=======
+      "price": 650.0,
+      "shares_out_m": 11.37,
+      "market_cap_m": 7390.499999999999,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -1046,7 +1289,7 @@
       "irr_worst": -0.06646309117005589,
       "irr_best": 0.1558924719250312,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.22235556309508708,
       "irr_asymmetry_ratio": 3.345549525016173,
       "quadrant": "wonderful_expensive",
@@ -1062,13 +1305,20 @@
       "rating_dispersion": 0.3410115670895766,
       "fve_min_repriced": 460.8619173262973,
       "fve_max_repriced": 1160.3342128408092,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.06473002804343553,
       "irr_best_repriced": 0.15857541253726937,
       "irr_repriced_delta": 0.0026829406122381716,
+=======
+      "irr_worst_repriced": -0.06646309117005589,
+      "irr_best_repriced": 0.1558924719250312,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 31.002173913043475,
       "quality_multiple_a": 0.8087523629489601,
       "quality_multiple_b": 1.4599754890075591,
       "quality_adjusted_multiple": 1.1343639259782596,
+<<<<<<< HEAD
       "edge_to_fair": 0.13551033839889248,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.09157782304728357,
@@ -1085,6 +1335,24 @@
       "moat_erosion_flag": false,
       "roic_slope_5y": 3.717895933067569e-05,
       "fcf_margin_slope_5y": -0.053796765995490596,
+=======
+      "edge_to_fair": 0.1250287045059797,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.08953682599742835,
+      "suggested_weight_pct": 0.08157799701987917,
+      "asymmetry_v2": 3.345549525016173,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 17.880645198348084,
+      "score_v2": 53.247931224767456,
+      "score_v2_rank": 15,
+      "ev_fcf_zscore_self_5y": -0.534752005918104,
+      "ev_fcf_mean_5y": 37.288,
+      "ev_fcf_std_5y": 6.373047622605686,
+      "ev_sales_zscore_self_5y": -0.9521433263603108,
+      "moat_erosion_flag": true,
+      "roic_slope_5y": 0.001991251341003375,
+      "fcf_margin_slope_5y": 1.5018896137004885,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "earnings_last_date": "2026-05-06",
       "earnings_next_date": "2026-08-05",
       "earnings_next_estimated": true,
@@ -1100,9 +1368,15 @@
       "style": "Growth",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 126.16999816894531,
       "shares_out_m": 160.7907,
       "market_cap_m": 20286.962324583434,
+=======
+      "price": 175.71,
+      "shares_out_m": 160.7907,
+      "market_cap_m": 28252.533896999998,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 6.0,
       "r1_optionality": 2.0,
@@ -1160,7 +1434,7 @@
       "irr_worst": -0.01708600546988659,
       "irr_best": 0.23909386335572558,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.25617986882561217,
       "irr_asymmetry_ratio": 5.123597376512243,
       "quadrant": "avoid",
@@ -1176,13 +1450,20 @@
       "rating_dispersion": 0.45183576170502004,
       "fve_min_repriced": 161.2033531790085,
       "fve_max_repriced": 414.2030602516191,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.05022800514934378,
       "irr_best_repriced": 0.34605963684711427,
       "irr_repriced_delta": 0.1069657734913887,
+=======
+      "irr_worst_repriced": -0.0170860054698867,
+      "irr_best_repriced": 0.23909386335572558,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 86.17511298999999,
       "quality_multiple_a": 5.745007532666666,
       "quality_multiple_b": 1.3099561608813928,
       "quality_adjusted_multiple": 3.5274818467740294,
+<<<<<<< HEAD
       "edge_to_fair": 1.048036019806787,
       "quality_zone": "avoid",
       "kelly_fraction": 0.1211714543458948,
@@ -1192,6 +1473,17 @@
       "ev_fcf_5y_base": 11.275246486184718,
       "score_v2": 78.87338070830765,
       "score_v2_rank": 6,
+=======
+      "edge_to_fair": 0.47060896288746457,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.12946058155410528,
+      "suggested_weight_pct": 0.1,
+      "asymmetry_v2": 14.993549503253849,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 16.296433496731765,
+      "score_v2": 61.694182308991266,
+      "score_v2_rank": 10,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.9897242937952553,
       "ev_fcf_mean_5y": 60.794999999999995,
       "ev_fcf_std_5y": 32.509053482581336,
@@ -1214,9 +1506,15 @@
       "style": "Compounder",
       "exchange": "XFRA",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 6858.0,
       "shares_out_m": 1287.26,
       "market_cap_m": 8828029.08,
+=======
+      "price": 41.495,
+      "shares_out_m": 1287.26,
+      "market_cap_m": 53414.8537,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 3.0,
@@ -1274,7 +1572,7 @@
       "irr_worst": -0.06938106946150746,
       "irr_best": 0.1218094535347829,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.19119052299629036,
       "irr_asymmetry_ratio": 2.7556583442744804,
       "quadrant": "wonderful_expensive",
@@ -1290,13 +1588,20 @@
       "rating_dispersion": 0.29936970825756976,
       "fve_min_repriced": 5344.685611298417,
       "fve_max_repriced": 12126.602240417631,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.0486398924289827,
       "irr_best_repriced": 0.15314896351408902,
       "irr_repriced_delta": 0.031339509979306124,
+=======
+      "irr_worst_repriced": 1.642319190826206,
+      "irr_best_repriced": 3.1346222836194304,
+      "irr_repriced_delta": 3.0128128300846475,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 22.647551295031427,
       "quality_multiple_a": 1.0353166306300081,
       "quality_multiple_b": 1.3953596695512431,
       "quality_adjusted_multiple": 1.2153381500906257,
+<<<<<<< HEAD
       "edge_to_fair": 0.17390558148481072,
       "quality_zone": "hunting_ground",
       "kelly_fraction": 0.10177016041961555,
@@ -1306,6 +1611,17 @@
       "ev_fcf_5y_base": 15.3997912098602,
       "score_v2": 56.398017897577226,
       "score_v2_rank": 14,
+=======
+      "edge_to_fair": 193.01480847868015,
+      "quality_zone": "hunting_ground",
+      "kelly_fraction": 0.07855799925769313,
+      "suggested_weight_pct": 0.07157506599034263,
+      "asymmetry_v2": 30.0,
+      "pure_upside": true,
+      "ev_fcf_5y_base": -4.189460366923382,
+      "score_v2": 68.34061848560206,
+      "score_v2_rank": 9,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.447436405489333,
       "ev_fcf_mean_5y": 16.913333333333338,
       "ev_fcf_std_5y": 1.7730638893044877,
@@ -1328,9 +1644,15 @@
       "style": "Compounder",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 234.11000061035156,
       "shares_out_m": 10757.11,
       "market_cap_m": 2518347.028665619,
+=======
+      "price": 259.12,
+      "shares_out_m": 10757.11,
+      "market_cap_m": 2787382.3432,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.5,
       "r1_moat": 8.0,
       "r1_optionality": 3.0,
@@ -1388,7 +1710,7 @@
       "irr_worst": -0.09890129785427904,
       "irr_best": 0.042438993232079225,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.14134029108635826,
       "irr_asymmetry_ratio": 1.4291045128104258,
       "quadrant": "wonderful_expensive",
@@ -1404,13 +1726,20 @@
       "rating_dispersion": 0.8440774056131739,
       "fve_min_repriced": 153.94399611047947,
       "fve_max_repriced": 305.98738880610125,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.08042203111955148,
       "irr_best_repriced": 0.06922939643861148,
       "irr_repriced_delta": 0.026790403206532254,
+=======
+      "irr_worst_repriced": -0.09890129785427904,
+      "irr_best_repriced": 0.042438993232079225,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 50.406951694545455,
       "quality_multiple_a": 2.749470092429752,
       "quality_multiple_b": 2.5033621372575436,
       "quality_adjusted_multiple": 2.626416114843648,
+<<<<<<< HEAD
       "edge_to_fair": -0.07292861659355399,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.0068116079818447165,
@@ -1420,6 +1749,17 @@
       "ev_fcf_5y_base": 28.048646529168455,
       "score_v2": 44.932001331749134,
       "score_v2_rank": 30,
+=======
+      "edge_to_fair": -0.16240860552978342,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.4291045128104258,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 31.063041399248,
+      "score_v2": 44.572233207346564,
+      "score_v2_rank": 35,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 1.4117281514422813,
       "ev_fcf_mean_5y": 160.29999999999998,
       "ev_fcf_std_5y": 137.50522705216216,
@@ -1442,9 +1782,15 @@
       "style": "Compounder",
       "exchange": "XPAR",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 281.3500061035156,
       "shares_out_m": 577.1225,
       "market_cap_m": 162373.4188974762,
+=======
+      "price": 255.8,
+      "shares_out_m": 577.1225,
+      "market_cap_m": 147627.9355,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 3.0,
@@ -1502,7 +1848,7 @@
       "irr_worst": -0.09123229995457716,
       "irr_best": 0.07652681743381295,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1677591173883901,
       "irr_asymmetry_ratio": 1.8388127611812288,
       "quadrant": "wonderful_expensive",
@@ -1518,13 +1864,20 @@
       "rating_dispersion": 0.20510160083886902,
       "fve_min_repriced": 158.54952804647195,
       "fve_max_repriced": 343.5579101490585,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.10837219161919376,
       "irr_best_repriced": 0.05120702818511158,
       "irr_repriced_delta": -0.025319789248701374,
+=======
+      "irr_worst_repriced": -0.09123229995457716,
+      "irr_best_repriced": 0.07652681743381295,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 32.63081989583333,
       "quality_multiple_a": 2.583273241753472,
       "quality_multiple_b": 1.8537811290931578,
       "quality_adjusted_multiple": 2.218527185423315,
+<<<<<<< HEAD
       "edge_to_fair": -0.17046345399538498,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.0,
@@ -1537,6 +1890,20 @@
       "ev_fcf_zscore_self_5y": 0.5972773938857264,
       "ev_fcf_mean_5y": 28.444999999999997,
       "ev_fcf_std_5y": 4.780023535506911,
+=======
+      "edge_to_fair": -0.08760706692147102,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.003381868747948235,
+      "suggested_weight_pct": 0.0030812581925750587,
+      "asymmetry_v2": 1.8388127611812288,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 22.69845816085329,
+      "score_v2": 47.35827840951615,
+      "score_v2_rank": 26,
+      "ev_fcf_zscore_self_5y": 0.5977301931211715,
+      "ev_fcf_mean_5y": 28.46,
+      "ev_fcf_std_5y": 4.7847674969636715,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_sales_zscore_self_5y": 0.7671443388490432,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.003848038290718023,
@@ -1556,9 +1923,15 @@
       "style": "Compounder",
       "exchange": "BMEX",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 55.119998931884766,
       "shares_out_m": 3116.652,
       "market_cap_m": 171789.85491105652,
+=======
+      "price": 49.82,
+      "shares_out_m": 3116.652,
+      "market_cap_m": 155271.60264,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 6.5,
       "r1_optionality": 2.0,
@@ -1616,7 +1989,7 @@
       "irr_worst": -0.023268864808639433,
       "irr_best": 0.1654075470295897,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.18867641183822914,
       "irr_asymmetry_ratio": 3.773528236764583,
       "quadrant": "wonderful_expensive",
@@ -1632,13 +2005,20 @@
       "rating_dispersion": 0.3840138886377246,
       "fve_min_repriced": 44.28726723419875,
       "fve_max_repriced": 91.89989771074859,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.04281929278419139,
       "irr_best_repriced": 0.1363221095498539,
       "irr_repriced_delta": -0.0290854374797358,
+=======
+      "irr_worst_repriced": -0.023268864808639433,
+      "irr_best_repriced": 0.1654075470295897,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 22.11870809846154,
       "quality_multiple_a": 0.612518070418935,
       "quality_multiple_b": 1.2537664610636403,
       "quality_adjusted_multiple": 0.9331422657412877,
+<<<<<<< HEAD
       "edge_to_fair": 0.15741139797462522,
       "quality_zone": "hunting_ground",
       "kelly_fraction": 0.10216332237574524,
@@ -1652,6 +2032,21 @@
       "ev_fcf_mean_5y": 20.3525,
       "ev_fcf_std_5y": 5.102094545380358,
       "ev_sales_zscore_self_5y": 0.9452866426424802,
+=======
+      "edge_to_fair": 0.280540245285279,
+      "quality_zone": "hunting_ground",
+      "kelly_fraction": 0.1216739549495668,
+      "suggested_weight_pct": 0.1,
+      "asymmetry_v2": 8.108535306293756,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 15.105748050989366,
+      "score_v2": 58.80777093343157,
+      "score_v2_rank": 12,
+      "ev_fcf_zscore_self_5y": 1.2062779031810598,
+      "ev_fcf_mean_5y": 20.127499999999998,
+      "ev_fcf_std_5y": 4.81025142274289,
+      "ev_sales_zscore_self_5y": 1.0070065971776385,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.01138890316939148,
       "fcf_margin_slope_5y": -0.12672394636135234,
@@ -1670,9 +2065,15 @@
       "style": "Compounder",
       "exchange": "XBRU",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 11320.0,
       "shares_out_m": 0.81601,
       "market_cap_m": 9237.2332,
+=======
+      "price": 10640.0,
+      "shares_out_m": 0.81601,
+      "market_cap_m": 8682.3464,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 7.0,
       "r1_optionality": 3.0,
@@ -1730,7 +2131,7 @@
       "irr_worst": -0.1577478234655395,
       "irr_best": 0.018693712124910222,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.17644153559044973,
       "irr_asymmetry_ratio": 1.1185037721233213,
       "quadrant": "wonderful_expensive",
@@ -1746,13 +2147,20 @@
       "rating_dispersion": 0.07760297817881856,
       "fve_min_repriced": 4509.748655040992,
       "fve_max_repriced": 11458.19291430252,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.1681190441262317,
       "irr_best_repriced": 0.003038090600488097,
       "irr_repriced_delta": -0.015655621524422125,
+=======
+      "irr_worst_repriced": -0.1577478234655395,
+      "irr_best_repriced": 0.018693712124910222,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 53.22634181818182,
       "quality_multiple_a": 2.5806711184573006,
       "quality_multiple_b": 2.294251213602326,
       "quality_adjusted_multiple": 2.4374611660298133,
+<<<<<<< HEAD
       "edge_to_fair": -0.36497941026980696,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.0,
@@ -1765,6 +2173,20 @@
       "ev_fcf_zscore_self_5y": -0.5871396598415956,
       "ev_fcf_mean_5y": 95.04,
       "ev_fcf_std_5y": 29.379722031814165,
+=======
+      "edge_to_fair": -0.32439538761787734,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.1185037721233213,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 28.455380190963982,
+      "score_v2": 44.58724933109188,
+      "score_v2_rank": 34,
+      "ev_fcf_zscore_self_5y": -0.5873274426051085,
+      "ev_fcf_mean_5y": 95.03666666666668,
+      "ev_fcf_std_5y": 29.381679476995338,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_sales_zscore_self_5y": -0.9517668812943803,
       "moat_erosion_flag": false,
       "roic_slope_5y": -0.0006240168248711859,
@@ -1784,9 +2206,15 @@
       "style": "Compounder",
       "exchange": "XLON",
       "currency": "GBp",
+<<<<<<< HEAD
       "price": 3848.0,
       "shares_out_m": 379.6453,
       "market_cap_m": 1460875.1144,
+=======
+      "price": 4400.0,
+      "shares_out_m": 379.6453,
+      "market_cap_m": 16704.393200000002,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 6.0,
       "r1_optionality": 3.0,
@@ -1844,7 +2272,7 @@
       "irr_worst": -0.11835786122721392,
       "irr_best": 0.050409660501293585,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1687675217285075,
       "irr_asymmetry_ratio": 1.425908849472374,
       "quadrant": "wonderful_expensive",
@@ -1860,13 +2288,20 @@
       "rating_dispersion": 0.48421758194706893,
       "fve_min_repriced": 23.43766668519273,
       "fve_max_repriced": 53.56578890875246,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.6394746043963268,
       "irr_best_repriced": -0.656510780993648,
       "irr_repriced_delta": -0.7069204414949416,
+=======
+      "irr_worst_repriced": -0.6490119426924323,
+      "irr_best_repriced": -0.6678312996571707,
+      "irr_repriced_delta": -0.7182409601584643,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 45.957819459459465,
       "quality_multiple_a": 2.608416780131483,
       "quality_multiple_b": 2.351447299823666,
       "quality_adjusted_multiple": 2.479932039977575,
+<<<<<<< HEAD
       "edge_to_fair": -0.9907919880073505,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.0,
@@ -1876,6 +2311,17 @@
       "ev_fcf_5y_base": 2380.9927502026485,
       "score_v2": 43.81370609704337,
       "score_v2_rank": 35,
+=======
+      "edge_to_fair": -0.9919471749664283,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": -0.028996934766201788,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 2722.478756443912,
+      "score_v2": 43.81370609704337,
+      "score_v2_rank": 36,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.1169284879287504,
       "ev_fcf_mean_5y": 3377.4474999999998,
       "ev_fcf_std_5y": 1050.1634730215815,
@@ -1898,9 +2344,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 1099.4100341796875,
       "shares_out_m": 23.19091,
       "market_cap_m": 25496.319155758054,
+=======
+      "price": 1191.345,
+      "shares_out_m": 23.19091,
+      "market_cap_m": 27628.37467395,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 8.0,
       "r1_optionality": 2.0,
@@ -1958,7 +2410,7 @@
       "irr_worst": -0.09134454503960554,
       "irr_best": 0.10519309436556035,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1965376394051659,
       "irr_asymmetry_ratio": 2.1516078417156743,
       "quadrant": "avoid",
@@ -1974,13 +2426,20 @@
       "rating_dispersion": 0.7282093716019378,
       "fve_min_repriced": 737.9615547643452,
       "fve_max_repriced": 1777.420549689512,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.07663202450248296,
       "irr_best_repriced": 0.12760664144787315,
       "irr_repriced_delta": 0.0224135470823128,
+=======
+      "irr_worst_repriced": -0.09134454503960554,
+      "irr_best_repriced": 0.10519309436556035,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 46.60683542804687,
       "quality_multiple_a": 1.6021099678391113,
       "quality_multiple_b": 1.7984593518058707,
       "quality_adjusted_multiple": 1.700284659822491,
+<<<<<<< HEAD
       "edge_to_fair": 0.04172304245932512,
       "quality_zone": "avoid",
       "kelly_fraction": 0.06994001520053311,
@@ -1990,6 +2449,17 @@
       "ev_fcf_5y_base": 20.690165212460627,
       "score_v2": 46.73950968775406,
       "score_v2_rank": 26,
+=======
+      "edge_to_fair": -0.03866573854259292,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.039810495009832,
+      "suggested_weight_pct": 0.03494476784196364,
+      "asymmetry_v2": 2.1516078417156743,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 22.28288880383211,
+      "score_v2": 44.71880356819261,
+      "score_v2_rank": 33,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.046224429160984,
       "ev_fcf_mean_5y": 48.675000000000004,
       "ev_fcf_std_5y": 19.1498109216079,
@@ -2012,9 +2482,15 @@
       "style": "Compounder",
       "exchange": "XSTO",
       "currency": "SEK",
+<<<<<<< HEAD
       "price": 303.79998779296875,
       "shares_out_m": 423.8365,
       "market_cap_m": 128761.5235262146,
+=======
+      "price": 289.4,
+      "shares_out_m": 423.8365,
+      "market_cap_m": 122658.28309999999,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 7.0,
       "r1_optionality": 3.0,
@@ -2072,7 +2548,7 @@
       "irr_worst": -0.09182081492257865,
       "irr_best": 0.1399188881795328,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.23173970310211145,
       "irr_asymmetry_ratio": 2.523825379871758,
       "quadrant": "wonderful_expensive",
@@ -2088,13 +2564,20 @@
       "rating_dispersion": 0.1704894913672593,
       "fve_min_repriced": 178.79536094696894,
       "fve_max_repriced": 488.64597551178343,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.10059831089585847,
       "irr_best_repriced": 0.12616400876735945,
       "irr_repriced_delta": -0.013754879412173349,
+=======
+      "irr_worst_repriced": -0.09182081492257865,
+      "irr_best_repriced": 0.1399188881795328,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 38.87008326470588,
       "quality_multiple_a": 2.515123034775087,
       "quality_multiple_b": 1.6083527199851697,
       "quality_adjusted_multiple": 2.0617378773801285,
+<<<<<<< HEAD
       "edge_to_fair": -0.027056694393596148,
       "quality_zone": "wonderful_expensive",
       "kelly_fraction": 0.04779684229000153,
@@ -2104,6 +2587,17 @@
       "ev_fcf_5y_base": 20.74861758723069,
       "score_v2": 49.40900731944917,
       "score_v2_rank": 21,
+=======
+      "edge_to_fair": 0.021355094562806265,
+      "quality_zone": "wonderful_expensive",
+      "kelly_fraction": 0.06367264321357625,
+      "suggested_weight_pct": 0.05801285270570281,
+      "asymmetry_v2": 2.523825379871758,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 19.832717064678995,
+      "score_v2": 50.5496486147035,
+      "score_v2_rank": 19,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 0.3018721342783701,
       "ev_fcf_mean_5y": 31.926,
       "ev_fcf_std_5y": 2.5971261039849414,
@@ -2126,9 +2620,15 @@
       "style": "Compounder",
       "exchange": "XFRA",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 49.70000076293945,
       "shares_out_m": 96.0,
       "market_cap_m": 4771.2000732421875,
+=======
+      "price": 56.25,
+      "shares_out_m": 96.0,
+      "market_cap_m": 5400.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.5,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -2186,7 +2686,7 @@
       "irr_worst": 0.061100245802087505,
       "irr_best": 0.35157533189574863,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.29047508609366113,
       "irr_asymmetry_ratio": 4.754073936699891,
       "quadrant": "value_trap",
@@ -2202,13 +2702,20 @@
       "rating_dispersion": 0.12364824660660949,
       "fve_min_repriced": 75.66666666666667,
       "fve_max_repriced": 187.70833333333334,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.08770128452474579,
       "irr_best_repriced": 0.39406103828414407,
       "irr_repriced_delta": 0.04248570638839544,
+=======
+      "irr_worst_repriced": 0.061100245802087505,
+      "irr_best_repriced": 0.35157533189574863,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 13.428571428571429,
       "quality_multiple_a": 0.6138775510204082,
       "quality_multiple_b": 0.5496747282437741,
       "quality_adjusted_multiple": 0.5817761396320911,
+<<<<<<< HEAD
       "edge_to_fair": 1.3979365238499692,
       "quality_zone": "value_trap",
       "kelly_fraction": 0.11246226840391267,
@@ -2218,6 +2725,17 @@
       "ev_fcf_5y_base": 5.915205492694622,
       "score_v2": 81.33557761215461,
       "score_v2_rank": 4,
+=======
+      "edge_to_fair": 1.1187101700413131,
+      "quality_zone": "value_trap",
+      "kelly_fraction": 0.11794863496062033,
+      "suggested_weight_pct": 0.09304836758004492,
+      "asymmetry_v2": 29.047508609366112,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 6.828813449476196,
+      "score_v2": 79.62822682984478,
+      "score_v2_rank": 3,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 1.2817366837171318,
       "ev_fcf_mean_5y": 38.696,
       "ev_fcf_std_5y": 29.034044568402795,
@@ -2240,9 +2758,15 @@
       "style": "Compounder",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 93.69000244140625,
       "shares_out_m": 978.0081,
       "market_cap_m": 91629.5812767151,
+=======
+      "price": 86.325,
+      "shares_out_m": 978.0081,
+      "market_cap_m": 84426.54923250001,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -2300,7 +2824,7 @@
       "irr_worst": -0.13045515233215055,
       "irr_best": -0.04824330340588645,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.0822118489262641,
       "irr_asymmetry_ratio": 0.6301924259529845,
       "quadrant": "avoid",
@@ -2316,13 +2840,20 @@
       "rating_dispersion": 0.4436965930302674,
       "fve_min_repriced": 42.913755008777535,
       "fve_max_repriced": 70.83376916816947,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.14457753107670634,
       "irr_best_repriced": -0.06752590531191605,
       "irr_repriced_delta": -0.019282601906029595,
+=======
+      "irr_worst_repriced": -0.13045515233215055,
+      "irr_best_repriced": -0.04824330340588645,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 43.09292064868421,
       "quality_multiple_a": 0.72577550566205,
       "quality_multiple_b": 2.5031798820231113,
       "quality_adjusted_multiple": 1.6144776938425807,
+<<<<<<< HEAD
       "edge_to_fair": -0.41152883894799264,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -2332,6 +2863,17 @@
       "ev_fcf_5y_base": 34.563674325725806,
       "score_v2": 41.286696190260265,
       "score_v2_rank": 38,
+=======
+      "edge_to_fair": -0.3613221602587925,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.6301924259529845,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 31.768833463591054,
+      "score_v2": 41.36773713289512,
+      "score_v2_rank": 41,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.4667748095909842,
       "ev_fcf_mean_5y": 42.114,
       "ev_fcf_std_5y": 14.68374012300681,
@@ -2354,9 +2896,15 @@
       "style": "Growth",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 138.85000610351562,
       "shares_out_m": 593.5049,
       "market_cap_m": 82408.15898746644,
+=======
+      "price": 130.85,
+      "shares_out_m": 593.5049,
+      "market_cap_m": 77660.116165,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.5,
       "r1_moat": 7.0,
       "r1_optionality": 3.0,
@@ -2414,7 +2962,7 @@
       "irr_worst": 0.04060378983105162,
       "irr_best": 0.2850125561438366,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.24440876631278496,
       "irr_asymmetry_ratio": 4.888175326255699,
       "quadrant": "hunting_ground",
@@ -2430,13 +2978,20 @@
       "rating_dispersion": 0.8911041839575589,
       "fve_min_repriced": 159.66169782254536,
       "fve_max_repriced": 356.78222707175627,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.028326358581800326,
       "irr_best_repriced": 0.26608926717647763,
       "irr_repriced_delta": -0.018923288967358953,
+=======
+      "irr_worst_repriced": 0.04060378983105162,
+      "irr_best_repriced": 0.2850125561438366,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 45.773410776666665,
       "quality_multiple_a": 1.2206242873777777,
       "quality_multiple_b": 0.7726026139987925,
       "quality_adjusted_multiple": 0.9966134506882851,
+<<<<<<< HEAD
       "edge_to_fair": 0.7189216217244505,
       "quality_zone": "hunting_ground",
       "kelly_fraction": 0.12552388621582766,
@@ -2446,6 +3001,17 @@
       "ev_fcf_5y_base": 10.909001087314858,
       "score_v2": 74.55137012213528,
       "score_v2_rank": 8,
+=======
+      "edge_to_fair": 0.8240143497738244,
+      "quality_zone": "hunting_ground",
+      "kelly_fraction": 0.12147289432509066,
+      "suggested_weight_pct": 0.09920286369882406,
+      "asymmetry_v2": 24.440876631278496,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 10.203406436429422,
+      "score_v2": 75.81078624952968,
+      "score_v2_rank": 5,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.32361065803614664,
       "ev_fcf_mean_5y": 11.298,
       "ev_fcf_std_5y": 1.477083613070025,
@@ -2468,9 +3034,15 @@
       "style": "Defensive",
       "exchange": "XWAR",
       "currency": "PLN",
+<<<<<<< HEAD
       "price": 10.84000015258789,
       "shares_out_m": 980.4,
       "market_cap_m": 10627.536149597168,
+=======
+      "price": 32.3,
+      "shares_out_m": 980.4,
+      "market_cap_m": 31666.92,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.5,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -2528,7 +3100,7 @@
       "irr_worst": -0.10673240875431,
       "irr_best": 0.06370078528253065,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.17043319403684065,
       "irr_asymmetry_ratio": 1.5968270183910593,
       "quadrant": "avoid",
@@ -2544,13 +3116,20 @@
       "rating_dispersion": 0.3322983933488427,
       "fve_min_repriced": 18.370053039575684,
       "fve_max_repriced": 41.35046919624643,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.11126138752566495,
       "irr_best_repriced": 0.39753530621367217,
       "irr_repriced_delta": 0.3338345209311415,
+=======
+      "irr_worst_repriced": -0.10673240875431,
+      "irr_best_repriced": 0.06370078528253065,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 18.921717647058824,
       "quality_multiple_a": 0.7234774394463669,
       "quality_multiple_b": 1.6116379648914276,
       "quality_adjusted_multiple": 1.1675577021688972,
+<<<<<<< HEAD
       "edge_to_fair": 1.5425303027267852,
       "quality_zone": "avoid",
       "kelly_fraction": 0.10601372469063274,
@@ -2560,6 +3139,17 @@
       "ev_fcf_5y_base": 6.992826543981779,
       "score_v2": 83.1298332080374,
       "score_v2_rank": 2,
+=======
+      "edge_to_fair": -0.14671737246075256,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.5968270183910593,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 20.214510111681946,
+      "score_v2": 47.382678931662504,
+      "score_v2_rank": 25,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.021571430497539,
       "ev_fcf_mean_5y": 20.6325,
       "ev_fcf_std_5y": 1.0009089618941376,
@@ -2582,9 +3172,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 84.5999984741211,
       "shares_out_m": 245.5993,
       "market_cap_m": 20777.70040524521,
+=======
+      "price": 86.7,
+      "shares_out_m": 245.5993,
+      "market_cap_m": 21293.459310000002,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 6.0,
       "r1_optionality": 1.0,
@@ -2642,7 +3238,7 @@
       "irr_worst": -0.06489104536673262,
       "irr_best": 0.15029020156422734,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.21518124693095997,
       "irr_asymmetry_ratio": 3.3160391501610156,
       "quadrant": "avoid",
@@ -2658,13 +3254,20 @@
       "rating_dispersion": 0.8155706931686276,
       "fve_min_repriced": 61.9912190303474,
       "fve_max_repriced": 151.7919635764434,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.0602940768902579,
       "irr_best_repriced": 0.15736303134996676,
       "irr_repriced_delta": 0.007072829785739421,
+=======
+      "irr_worst_repriced": -0.06489104536673262,
+      "irr_best_repriced": 0.15029020156422734,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 22.793459310000003,
       "quality_multiple_a": 1.48157485515,
       "quality_multiple_b": 1.174703813763705,
       "quality_adjusted_multiple": 1.3281393344568526,
+<<<<<<< HEAD
       "edge_to_fair": 0.1466189700976226,
       "quality_zone": "avoid",
       "kelly_fraction": 0.09439531656854776,
@@ -2674,6 +3277,17 @@
       "ev_fcf_5y_base": 13.830994159132096,
       "score_v2": 55.12248847677568,
       "score_v2_rank": 15,
+=======
+      "edge_to_fair": 0.11884617209523851,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.08892569157685494,
+      "suggested_weight_pct": 0.08102118565891228,
+      "asymmetry_v2": 3.3160391501610156,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 14.151200386409682,
+      "score_v2": 54.55737719879741,
+      "score_v2_rank": 14,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.8715235226247583,
       "ev_fcf_mean_5y": 25.612499999999997,
       "ev_fcf_std_5y": 3.823763689089585,
@@ -2696,9 +3310,15 @@
       "style": "Compounder",
       "exchange": "XPAR",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 146.0,
       "shares_out_m": 262.2457,
       "market_cap_m": 38287.8722,
+=======
+      "price": 145.6,
+      "shares_out_m": 262.2457,
+      "market_cap_m": 38182.97392,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 6.0,
       "r1_optionality": 2.0,
@@ -2756,7 +3376,7 @@
       "irr_worst": -0.120265456758615,
       "irr_best": 0.12083025141255477,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.24109570817116976,
       "irr_asymmetry_ratio": 2.0046962333920484,
       "quadrant": "avoid",
@@ -2772,13 +3392,20 @@
       "rating_dispersion": 0.39262648351270896,
       "fve_min_repriced": 76.72194434455932,
       "fve_max_repriced": 229.78451124270103,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.12074803222368191,
       "irr_best_repriced": 0.12006176947202518,
       "irr_repriced_delta": -0.0007684819405295862,
+=======
+      "irr_worst_repriced": -0.120265456758615,
+      "irr_best_repriced": 0.12083025141255477,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 28.057223393103445,
       "quality_multiple_a": 1.8382318774791913,
       "quality_multiple_b": 1.4881704852102,
       "quality_adjusted_multiple": 1.6632011813446956,
+<<<<<<< HEAD
       "edge_to_fair": -0.09057409650151393,
       "quality_zone": "avoid",
       "kelly_fraction": 0.02435695967250117,
@@ -2788,6 +3415,17 @@
       "ev_fcf_5y_base": 19.121439297403196,
       "score_v2": 48.14036901831022,
       "score_v2_rank": 24,
+=======
+      "edge_to_fair": -0.08807567368970481,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.025525856710760946,
+      "suggested_weight_pct": 0.022689650409565283,
+      "asymmetry_v2": 2.0046962333920484,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 19.07226276562466,
+      "score_v2": 48.198195267945636,
+      "score_v2_rank": 22,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 1.6771558535976625,
       "ev_fcf_mean_5y": 24.28,
       "ev_fcf_std_5y": 7.232482284803744,
@@ -2810,9 +3448,15 @@
       "style": "Compounder",
       "exchange": "XLON",
       "currency": "GBp",
+<<<<<<< HEAD
       "price": 4515.0,
       "shares_out_m": 6.66044,
       "market_cap_m": 30071.8866,
+=======
+      "price": 4950.0,
+      "shares_out_m": 6.66044,
+      "market_cap_m": 329.69178,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 5.0,
       "r1_optionality": 2.0,
@@ -2870,7 +3514,7 @@
       "irr_worst": -0.07356515836524025,
       "irr_best": 0.27636528451701214,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.3499304428822524,
       "irr_asymmetry_ratio": 4.756741515391008,
       "quadrant": "value_trap",
@@ -2886,13 +3530,20 @@
       "rating_dispersion": 0.1939644870130157,
       "fve_min_repriced": 33.78155196953955,
       "fve_max_repriced": 131.3727021037649,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.6243318565119154,
       "irr_best_repriced": -0.5869887852297495,
       "irr_repriced_delta": -0.8633540697467617,
+=======
+      "irr_worst_repriced": -0.6311796464946084,
+      "irr_best_repriced": -0.5963778574557396,
+      "irr_repriced_delta": -0.8727431419727517,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 20.816209999999998,
       "quality_multiple_a": 1.3877473333333332,
       "quality_multiple_b": 0.8466698122037767,
       "quality_adjusted_multiple": 1.117208572768555,
+<<<<<<< HEAD
       "edge_to_fair": -0.9852451563935974,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -2902,6 +3553,17 @@
       "ev_fcf_5y_base": 854.5732134790215,
       "score_v2": 39.58373498727173,
       "score_v2_rank": 43,
+=======
+      "edge_to_fair": -0.9865417941650693,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.05513769214857938,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 936.7844876710601,
+      "score_v2": 39.57983901759255,
+      "score_v2_rank": 45,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.2944127736512268,
       "ev_fcf_mean_5y": 2781.81,
       "ev_fcf_std_5y": 819.9702765649496,
@@ -2924,9 +3586,15 @@
       "style": "Compounder",
       "exchange": "XSWX",
       "currency": "CHF",
+<<<<<<< HEAD
       "price": 103.0,
       "shares_out_m": 159.4552,
       "market_cap_m": 16423.885599999998,
+=======
+      "price": 86.32,
+      "shares_out_m": 159.4552,
+      "market_cap_m": 13764.172863999998,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 6.0,
       "r1_optionality": 2.0,
@@ -2984,7 +3652,7 @@
       "irr_worst": -0.10230633508946507,
       "irr_best": 0.06900489828663159,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.17131123337609666,
       "irr_asymmetry_ratio": 1.674492916067104,
       "quadrant": "avoid",
@@ -3000,13 +3668,20 @@
       "rating_dispersion": 0.3090127649287143,
       "fve_min_repriced": 50.32134417692242,
       "fve_max_repriced": 112.72758743521692,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.13347119957144016,
       "irr_best_repriced": 0.022817728241618207,
       "irr_repriced_delta": -0.04618717004501338,
+=======
+      "irr_worst_repriced": -0.10230633508946507,
+      "irr_best_repriced": 0.06900489828663159,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 37.27413911578947,
       "quality_multiple_a": 2.7465155137950132,
       "quality_multiple_b": 1.8980627669445558,
       "quality_adjusted_multiple": 2.3222891403697847,
+<<<<<<< HEAD
       "edge_to_fair": -0.2687700043179765,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -3015,6 +3690,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 28.685320755471015,
       "score_v2": 41.20727711918911,
+=======
+      "edge_to_fair": -0.12747115899851225,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.674492916067104,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 24.15041634851455,
+      "score_v2": 42.476474706015985,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 39,
       "ev_fcf_zscore_self_5y": -0.9078921946085392,
       "ev_fcf_mean_5y": 65.04249999999999,
@@ -3038,9 +3723,15 @@
       "style": "Compounder",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 562.2000122070312,
       "shares_out_m": 2538.423,
       "market_cap_m": 1427101.4415866088,
+=======
+      "price": 601.195,
+      "shares_out_m": 2538.423,
+      "market_cap_m": 1526087.215485,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": -0.5,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -3098,7 +3789,7 @@
       "irr_worst": -0.04906944052715512,
       "irr_best": 0.16055043524378698,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.2096198757709421,
       "irr_asymmetry_ratio": 4.1923975154188415,
       "quadrant": "avoid",
@@ -3114,13 +3805,20 @@
       "rating_dispersion": 0.27776888874666233,
       "fve_min_repriced": 467.47606683362073,
       "fve_max_repriced": 1090.6149211538032,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.03622932853256666,
       "irr_best_repriced": 0.18017156379239951,
       "irr_repriced_delta": 0.019621128548612532,
+=======
+      "irr_worst_repriced": -0.04906944052715512,
+      "irr_best_repriced": 0.16055043524378698,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 27.056131190636364,
       "quality_multiple_a": 0.9346663502219834,
       "quality_multiple_b": 1.3878663473216786,
       "quality_adjusted_multiple": 1.1612663487718309,
+<<<<<<< HEAD
       "edge_to_fair": 0.27006093362767714,
       "quality_zone": "avoid",
       "kelly_fraction": 0.11487823120295476,
@@ -3134,6 +3832,21 @@
       "ev_fcf_mean_5y": 24.17,
       "ev_fcf_std_5y": 6.408797079015687,
       "ev_sales_zscore_self_5y": 0.28760685843175066,
+=======
+      "edge_to_fair": 0.1876816546863389,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.10311633700386635,
+      "suggested_weight_pct": 0.08249306960309308,
+      "asymmetry_v2": 4.271902706022052,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 18.177769733849143,
+      "score_v2": 47.50973595320641,
+      "score_v2_rank": 24,
+      "ev_fcf_zscore_self_5y": 0.9018590288892033,
+      "ev_fcf_mean_5y": 24.192,
+      "ev_fcf_std_5y": 6.417854470148103,
+      "ev_sales_zscore_self_5y": 0.2876068584317511,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.010271182005018788,
       "fcf_margin_slope_5y": 0.597882809763771,
@@ -3152,9 +3865,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 93.5,
       "shares_out_m": 897.8729,
       "market_cap_m": 83951.11615,
+=======
+      "price": 92.545,
+      "shares_out_m": 897.8729,
+      "market_cap_m": 83093.64753049999,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 6.0,
       "r1_optionality": 2.0,
@@ -3212,7 +3931,7 @@
       "irr_worst": -0.14321180154884217,
       "irr_best": 0.2627578346630166,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.4059696362118588,
       "irr_asymmetry_ratio": 2.8347498727149483,
       "quadrant": "avoid",
@@ -3228,13 +3947,20 @@
       "rating_dispersion": 0.5277204647243547,
       "fve_min_repriced": 42.72876483965604,
       "fve_max_repriced": 235.30613297271807,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.144969226797951,
       "irr_best_repriced": 0.2595209885897243,
       "irr_repriced_delta": -0.003236846073292332,
+=======
+      "irr_worst_repriced": -0.14321180154884217,
+      "irr_best_repriced": 0.2627578346630166,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 29.576366117888888,
       "quality_multiple_a": 5.258020643180248,
       "quality_multiple_b": 1.3558790346495995,
       "quality_adjusted_multiple": 3.3069498389149237,
+<<<<<<< HEAD
       "edge_to_fair": 0.07242068443761007,
       "quality_zone": "avoid",
       "kelly_fraction": 0.07465715209241755,
@@ -3244,6 +3970,17 @@
       "ev_fcf_5y_base": 17.071547920771778,
       "score_v2": 48.36545278869125,
       "score_v2_rank": 23,
+=======
+      "edge_to_fair": 0.08348731962738709,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.07618374012555211,
+      "suggested_weight_pct": 0.06263996410323174,
+      "asymmetry_v2": 2.8347498727149483,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 16.96226688565177,
+      "score_v2": 48.51187550994767,
+      "score_v2_rank": 21,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": null,
       "ev_fcf_mean_5y": null,
       "ev_fcf_std_5y": null,
@@ -3266,9 +4003,15 @@
       "style": "Growth",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 224.94000244140625,
       "shares_out_m": 353.4662,
       "market_cap_m": 79508.68789095459,
+=======
+      "price": 204.34,
+      "shares_out_m": 353.4662,
+      "market_cap_m": 72227.283308,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 5.0,
       "r1_optionality": 3.0,
@@ -3326,7 +4069,7 @@
       "irr_worst": -0.3102025827724172,
       "irr_best": -0.2015206430773644,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1086819396950528,
       "irr_asymmetry_ratio": 0.35035794584208296,
       "quadrant": "avoid",
@@ -3342,13 +4085,20 @@
       "rating_dispersion": 0.39194670839569784,
       "fve_min_repriced": 31.912527987117297,
       "fve_max_repriced": 83.06310476079466,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.3233269148752459,
       "irr_best_repriced": -0.22046545406542983,
       "irr_repriced_delta": -0.01894481098806544,
+=======
+      "irr_worst_repriced": -0.3102025827724172,
+      "irr_best_repriced": -0.2015206430773644,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 1434.5456661599999,
       "quality_multiple_a": 1004.1819663119999,
       "quality_multiple_b": 8.175611999957196,
       "quality_adjusted_multiple": 506.1787891559785,
+<<<<<<< HEAD
       "edge_to_fair": -0.7711146538016237,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -3358,6 +4108,17 @@
       "ev_fcf_5y_base": 109.72180182006755,
       "score_v2": 40.14100751530804,
       "score_v2_rank": 42,
+=======
+      "edge_to_fair": -0.7480401765064848,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.35035794584208296,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 99.60989068789773,
+      "score_v2": 40.16786034970465,
+      "score_v2_rank": 43,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.6857996212768465,
       "ev_fcf_mean_5y": 220.3675,
       "ev_fcf_std_5y": 16.40616099975859,
@@ -3380,9 +4141,15 @@
       "style": "Growth",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 680.9199829101562,
       "shares_out_m": 254.5365,
       "market_cap_m": 173318.98923001098,
+=======
+      "price": 619.83,
+      "shares_out_m": 254.5365,
+      "market_cap_m": 157769.358795,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 6.0,
       "r1_optionality": 2.0,
@@ -3440,7 +4207,7 @@
       "irr_worst": -0.21863748777809278,
       "irr_best": -0.0700781916175458,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.14855929616054697,
       "irr_asymmetry_ratio": 0.6794776946546696,
       "quadrant": "avoid",
@@ -3456,13 +4223,20 @@
       "rating_dispersion": 0.10677078252031318,
       "fve_min_repriced": 180.52420772659323,
       "fve_max_repriced": 463.50916273304614,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.2331898133295589,
       "irr_best_repriced": -0.09167647757975006,
       "irr_repriced_delta": -0.021598285962204256,
+=======
+      "irr_worst_repriced": -0.21863748777809278,
+      "irr_best_repriced": -0.0700781916175458,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 220.17051256428573,
       "quality_multiple_a": 11.008525628214286,
       "quality_multiple_b": 4.257661866393222,
       "quality_adjusted_multiple": 7.633093747303754,
+<<<<<<< HEAD
       "edge_to_fair": -0.5751840579330835,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -3471,6 +4245,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 59.76237005375471,
       "score_v2": 38.43004927536116,
+=======
+      "edge_to_fair": -0.533314515250687,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.6794776946546696,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 54.285336374981064,
+      "score_v2": 38.490564858448195,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 47,
       "ev_fcf_zscore_self_5y": 0.5540267668245594,
       "ev_fcf_mean_5y": 79.502,
@@ -3494,9 +4278,15 @@
       "style": "Compounder",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 346.0799865722656,
       "shares_out_m": 12116.0,
       "market_cap_m": 4193105.1173095703,
+=======
+      "price": 385.33,
+      "shares_out_m": 12116.0,
+      "market_cap_m": 4668658.28,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 3.0,
@@ -3554,7 +4344,7 @@
       "irr_worst": -0.15515755125191266,
       "irr_best": -0.00258560513030226,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1525719461216104,
       "irr_asymmetry_ratio": 0.983335615254044,
       "quadrant": "avoid",
@@ -3570,13 +4360,20 @@
       "rating_dispersion": 0.3872409528388694,
       "fve_min_repriced": 165.84846483988116,
       "fve_max_repriced": 381.3601848794982,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.13680881999108163,
       "irr_best_repriced": 0.024565472122580978,
       "irr_repriced_delta": 0.027151077252883238,
+=======
+      "irr_worst_repriced": -0.15515755125191266,
+      "irr_best_repriced": -0.00258560513030226,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 48.143771368421056,
       "quality_multiple_a": 1.7737178925207757,
       "quality_multiple_b": 2.8819194562183705,
       "quality_adjusted_multiple": 2.3278186743695732,
+<<<<<<< HEAD
       "edge_to_fair": -0.2733137924067156,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -3585,6 +4382,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 34.10389199163941,
       "score_v2": 37.721541464066505,
+=======
+      "edge_to_fair": -0.3473346145741715,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.983335615254044,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 38.06138288863336,
+      "score_v2": 37.55802065368002,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 48,
       "ev_fcf_zscore_self_5y": 1.3505355389228315,
       "ev_fcf_mean_5y": 17.375999999999998,
@@ -3608,9 +4415,15 @@
       "style": "Compounder",
       "exchange": "XSWX",
       "currency": "CHF",
+<<<<<<< HEAD
       "price": 86.5,
       "shares_out_m": 1823.154,
       "market_cap_m": 157702.821,
+=======
+      "price": 79.38,
+      "shares_out_m": 1823.154,
+      "market_cap_m": 144721.96451999998,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 6.0,
       "r1_optionality": 2.0,
@@ -3668,7 +4481,7 @@
       "irr_worst": -0.17740631721761912,
       "irr_best": -0.0010310812251596024,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.17637523599245952,
       "irr_asymmetry_ratio": 0.9941880241846472,
       "quadrant": "avoid",
@@ -3684,13 +4497,20 @@
       "rating_dispersion": 0.2524986248587417,
       "fve_min_repriced": 37.868441173921674,
       "fve_max_repriced": 100.12867810398902,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.15228032272027847,
       "irr_best_repriced": 0.03725513568993066,
       "irr_repriced_delta": 0.038286216915090265,
+=======
+      "irr_worst_repriced": -0.1375910266312237,
+      "irr_best_repriced": 0.059770550732811456,
+      "irr_repriced_delta": 0.06080163195797106,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 41.28996450245155,
       "quality_multiple_a": 2.0186204867865203,
       "quality_multiple_b": 2.277022483535664,
       "quality_adjusted_multiple": 2.147821485161092,
+<<<<<<< HEAD
       "edge_to_fair": -0.2881281037579727,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -3699,6 +4519,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 26.04864690510516,
       "score_v2": 38.865697057053026,
+=======
+      "edge_to_fair": -0.22427665627443483,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.4344073316133514,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 23.937986525576846,
+      "score_v2": 40.085842983325556,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 44,
       "ev_fcf_zscore_self_5y": -0.16130430937992007,
       "ev_fcf_mean_5y": 41.696,
@@ -3722,9 +4552,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 236.41000366210938,
       "shares_out_m": 192.8562,
       "market_cap_m": 45593.1349482605,
+=======
+      "price": 230.065,
+      "shares_out_m": 192.8562,
+      "market_cap_m": 44369.461653,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 5.0,
       "r1_optionality": 2.0,
@@ -3782,7 +4618,7 @@
       "irr_worst": -0.06341328082157438,
       "irr_best": 0.1034074721678333,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.16682075298940768,
       "irr_asymmetry_ratio": 2.6306910922775053,
       "quadrant": "avoid",
@@ -3798,13 +4634,20 @@
       "rating_dispersion": 0.5873291713813945,
       "fve_min_repriced": 165.80229207046494,
       "fve_max_repriced": 341.03129689374776,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.0684955454995092,
       "irr_best_repriced": 0.09592818624142585,
       "irr_repriced_delta": -0.007479285926407453,
+=======
+      "irr_worst_repriced": -0.06341328082157438,
+      "irr_best_repriced": 0.1034074721678333,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 34.057884710833335,
       "quality_multiple_a": 1.3623153884333334,
       "quality_multiple_b": 1.5946395045442494,
       "quality_adjusted_multiple": 1.4784774464887915,
+<<<<<<< HEAD
       "edge_to_fair": 0.00583451341119523,
       "quality_zone": "avoid",
       "kelly_fraction": 0.05717169222504163,
@@ -3818,6 +4661,21 @@
       "ev_fcf_mean_5y": 27.901999999999997,
       "ev_fcf_std_5y": 5.163093646255121,
       "ev_sales_zscore_self_5y": 1.185862760368918,
+=======
+      "edge_to_fair": 0.033574602825360955,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0685108453202643,
+      "suggested_weight_pct": 0.058234218522224664,
+      "asymmetry_v2": 2.6306910922775053,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 20.996307211837895,
+      "score_v2": 43.81182705198237,
+      "score_v2_rank": 37,
+      "ev_fcf_zscore_self_5y": 0.8946679360287607,
+      "ev_fcf_mean_5y": 28.032000000000004,
+      "ev_fcf_std_5y": 5.184046296089571,
+      "ev_sales_zscore_self_5y": 1.184551236262726,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.0025654570684020108,
       "fcf_margin_slope_5y": 1.5935504300469676,
@@ -3836,9 +4694,15 @@
       "style": "Compounder",
       "exchange": "XFRA",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 83.0,
       "shares_out_m": 180.3391,
       "market_cap_m": 14968.1453,
+=======
+      "price": 72.95,
+      "shares_out_m": 180.3391,
+      "market_cap_m": 13155.737345000001,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 5.0,
       "r1_optionality": 2.0,
@@ -3896,7 +4760,7 @@
       "irr_worst": -0.08976962382662435,
       "irr_best": 0.16883111517589322,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.25860073900251757,
       "irr_asymmetry_ratio": 2.88071541328906,
       "quadrant": "avoid",
@@ -3912,13 +4776,20 @@
       "rating_dispersion": 0.24997777679003577,
       "fve_min_repriced": 45.580797508693344,
       "fve_max_repriced": 136.15461095236697,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.11296498123520249,
       "irr_best_repriced": 0.13171889091822941,
       "irr_repriced_delta": -0.037112224257663806,
+=======
+      "irr_worst_repriced": -0.08976962382662435,
+      "irr_best_repriced": 0.16883111517589322,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 21.65105335,
       "quality_multiple_a": 2.0104549539285714,
       "quality_multiple_b": 1.247563948535954,
       "quality_adjusted_multiple": 1.6290094512322626,
+<<<<<<< HEAD
       "edge_to_fair": -0.0508626930323367,
       "quality_zone": "avoid",
       "kelly_fraction": 0.04101755697024732,
@@ -3928,6 +4799,17 @@
       "ev_fcf_5y_base": 18.076706608565615,
       "score_v2": 46.55679616626404,
       "score_v2_rank": 27,
+=======
+      "edge_to_fair": 0.07989577077883547,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.07768233742060097,
+      "suggested_weight_pct": 0.06473528118383415,
+      "asymmetry_v2": 2.88071541328906,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 16.14589058369545,
+      "score_v2": 49.083195659936706,
+      "score_v2_rank": 20,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 1.2449820871375408,
       "ev_fcf_mean_5y": 25.425000000000004,
       "ev_fcf_std_5y": 6.502101583334423,
@@ -3950,9 +4832,15 @@
       "style": "Growth",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 83.5,
       "shares_out_m": 189.3335,
       "market_cap_m": 15809.347249999999,
+=======
+      "price": 89.52,
+      "shares_out_m": 189.3335,
+      "market_cap_m": 16949.134919999997,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -4010,7 +4898,7 @@
       "irr_worst": -0.07504790123452265,
       "irr_best": 0.1919856433128022,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.26703354454732486,
       "irr_asymmetry_ratio": 3.5581747144780542,
       "quadrant": "value_trap",
@@ -4026,13 +4914,20 @@
       "rating_dispersion": 0.4304261454264444,
       "fve_min_repriced": 28523.045314220675,
       "fve_max_repriced": 85051.85294731255,
+<<<<<<< HEAD
       "irr_worst_repriced": 2.2114553133102794,
       "irr_best_repriced": 4.649360981110622,
       "irr_repriced_delta": 4.45737533779782,
+=======
+      "irr_worst_repriced": 2.1670517778583656,
+      "irr_best_repriced": 4.5518909422045,
+      "irr_repriced_delta": 4.359905298891698,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 17.08755087476095,
       "quality_multiple_a": 0.7323236089183265,
       "quality_multiple_b": 0.6523636524054255,
       "quality_adjusted_multiple": 0.692343630661876,
+<<<<<<< HEAD
       "edge_to_fair": 588.8659948514161,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0839896953026055,
@@ -4040,6 +4935,15 @@
       "asymmetry_v2": 30.0,
       "pure_upside": true,
       "ev_fcf_5y_base": -1.0238241442118767,
+=======
+      "edge_to_fair": 549.198956323651,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0839413079960576,
+      "suggested_weight_pct": 0.053629168997481255,
+      "asymmetry_v2": 30.0,
+      "pure_upside": true,
+      "ev_fcf_5y_base": -1.0223360594818065,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2": 56.7708236158572,
       "score_v2_rank": 13,
       "ev_fcf_zscore_self_5y": null,
@@ -4064,9 +4968,15 @@
       "style": "Compounder",
       "exchange": "BMEX",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 55.79999923706055,
       "shares_out_m": 16.30758,
       "market_cap_m": 909.9629515583039,
+=======
+      "price": 55.2,
+      "shares_out_m": 16.30758,
+      "market_cap_m": 900.1784160000001,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 5.0,
       "r1_optionality": 2.0,
@@ -4124,7 +5034,7 @@
       "irr_worst": -0.06391532123941857,
       "irr_best": 0.13483521283755318,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.19875053407697174,
       "irr_asymmetry_ratio": 3.109591412870755,
       "quadrant": "avoid",
@@ -4140,13 +5050,20 @@
       "rating_dispersion": 0.39160637833870304,
       "fve_min_repriced": 39.67480153401056,
       "fve_max_repriced": 91.55251729563797,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.06593711873214692,
       "irr_best_repriced": 0.13177220574549642,
       "irr_repriced_delta": -0.0030630070920567576,
+=======
+      "irr_worst_repriced": -0.06391532123941857,
+      "irr_best_repriced": 0.13483521283755318,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 26.43366902857143,
       "quality_multiple_a": 1.6615449103673472,
       "quality_multiple_b": 0.9778186393737868,
       "quality_adjusted_multiple": 1.319681774870567,
+<<<<<<< HEAD
       "edge_to_fair": 0.08008599170033204,
       "quality_zone": "avoid",
       "kelly_fraction": 0.08120644541161101,
@@ -4156,6 +5073,17 @@
       "ev_fcf_5y_base": 13.025862061714694,
       "score_v2": 51.46993005976863,
       "score_v2_rank": 19,
+=======
+      "edge_to_fair": 0.0918260418992447,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.08417213787768091,
+      "suggested_weight_pct": 0.07014344823140076,
+      "asymmetry_v2": 3.109591412870755,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 12.889544349544405,
+      "score_v2": 51.69886345718303,
+      "score_v2_rank": 18,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 0.8269005497115806,
       "ev_fcf_mean_5y": 13.651999999999997,
       "ev_fcf_std_5y": 4.302814892602283,
@@ -4178,9 +5106,15 @@
       "style": "Growth",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 200.0399932861328,
       "shares_out_m": 24220.53,
       "market_cap_m": 4845074.658586578,
+=======
+      "price": 221.9001,
+      "shares_out_m": 24220.53,
+      "market_cap_m": 5374538.029053,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 7.0,
       "r1_optionality": 2.0,
@@ -4238,7 +5172,7 @@
       "irr_worst": -0.1971072838725768,
       "irr_best": 0.07745944297825824,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.27456672685083505,
       "irr_asymmetry_ratio": 1.3929811291414942,
       "quadrant": "avoid",
@@ -4254,13 +5188,20 @@
       "rating_dispersion": 0.13140268896284663,
       "fve_min_repriced": 74.03636501761109,
       "fve_max_repriced": 299.061994101698,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.1802797736067414,
       "irr_best_repriced": 0.1057605671444517,
       "irr_repriced_delta": 0.02830112416619346,
+=======
+      "irr_worst_repriced": -0.1971072838725768,
+      "irr_best_repriced": 0.07745944297825824,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 71.26050705403999,
       "quality_multiple_a": 0.85512608464848,
       "quality_multiple_b": 3.005611304375347,
       "quality_adjusted_multiple": 1.9303686945119136,
+<<<<<<< HEAD
       "edge_to_fair": -0.2561483596349873,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -4269,6 +5210,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 33.07170992386056,
       "score_v2": 34.15108816650142,
+=======
+      "edge_to_fair": -0.3294276246630984,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.3929811291414942,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 36.70825976886649,
+      "score_v2": 33.989700038793956,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 52,
       "ev_fcf_zscore_self_5y": -0.73275203085975,
       "ev_fcf_mean_5y": 69.18199999999999,
@@ -4292,9 +5243,15 @@
       "style": "Defensive",
       "exchange": "XLIS",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 281.1000061035156,
       "shares_out_m": 133.0,
       "market_cap_m": 37386.30081176758,
+=======
+      "price": 6.91,
+      "shares_out_m": 133.0,
+      "market_cap_m": 919.03,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 6.0,
       "r1_optionality": 1.0,
@@ -4352,7 +5309,7 @@
       "irr_worst": -0.08794787185922881,
       "irr_best": 0.10617079067082402,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.19411866253005283,
       "irr_asymmetry_ratio": 2.2072013617425923,
       "quadrant": "value_trap",
@@ -4368,13 +5325,20 @@
       "rating_dispersion": 0.5668823119092318,
       "fve_min_repriced": 4.360902255639098,
       "fve_max_repriced": 10.345864661654135,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.5653465816400305,
       "irr_best_repriced": -0.5619976057684178,
       "irr_repriced_delta": -0.6681683964392419,
+=======
+      "irr_worst_repriced": -0.08794787185922881,
+      "irr_best_repriced": 0.10617079067082402,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 10.1903,
       "quality_multiple_a": 0.7642725,
       "quality_multiple_b": 0.7496379792482608,
       "quality_adjusted_multiple": 0.7569552396241304,
+<<<<<<< HEAD
       "edge_to_fair": -0.9761047973666332,
       "quality_zone": "value_trap",
       "kelly_fraction": 0.0,
@@ -4384,6 +5348,17 @@
       "ev_fcf_5y_base": 377.89838567176474,
       "score_v2": 36.1583629820524,
       "score_v2_rank": 51,
+=======
+      "edge_to_fair": -0.027938986094912854,
+      "quality_zone": "value_trap",
+      "kelly_fraction": 0.04430925025001091,
+      "suggested_weight_pct": 0.03692437520834243,
+      "asymmetry_v2": 2.2072013617425923,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 10.27281389766291,
+      "score_v2": 52.719947088192484,
+      "score_v2_rank": 17,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 2.145172702936203,
       "ev_fcf_mean_5y": 20.810000000000002,
       "ev_fcf_std_5y": 11.985049019507597,
@@ -4406,9 +5381,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 436.3900146484375,
       "shares_out_m": 5186.505,
       "market_cap_m": 2263338.9929241943,
+=======
+      "price": 394.36,
+      "shares_out_m": 5186.505,
+      "market_cap_m": 2045350.1118,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 7.0,
       "r1_optionality": 1.0,
@@ -4466,7 +5447,7 @@
       "irr_worst": -0.18180927585216144,
       "irr_best": 0.007940213394228346,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1897494892463898,
       "irr_asymmetry_ratio": 1.0436733129099802,
       "quadrant": "avoid",
@@ -4482,13 +5463,20 @@
       "rating_dispersion": 0.7542914261447996,
       "fve_min_repriced": 144.5991086483094,
       "fve_max_repriced": 407.03518072382076,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.1982145658780644,
       "irr_best_repriced": -0.017258523588193686,
       "irr_repriced_delta": -0.025198736982422032,
+=======
+      "irr_worst_repriced": -0.18180927585216144,
+      "irr_best_repriced": 0.007940213394228346,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 40.307002236,
       "quality_multiple_a": 0.9673680536639999,
       "quality_multiple_b": 2.1403579361771268,
       "quality_adjusted_multiple": 1.5538629949205633,
+<<<<<<< HEAD
       "edge_to_fair": -0.44406505077148795,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -4497,6 +5485,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 32.02057932525717,
       "score_v2": 30.945553328199672,
+=======
+      "edge_to_fair": -0.3848147361867108,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.0436733129099802,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 28.89515578580516,
+      "score_v2": 31.054506010495835,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 56,
       "ev_fcf_zscore_self_5y": null,
       "ev_fcf_mean_5y": null,
@@ -4520,9 +5518,15 @@
       "style": "Growth",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 455.5,
       "shares_out_m": 209.7413,
       "market_cap_m": 95537.16215,
+=======
+      "price": 438.24,
+      "shares_out_m": 209.7413,
+      "market_cap_m": 91917.027312,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 4.0,
       "r1_optionality": 2.0,
@@ -4580,7 +5584,7 @@
       "irr_worst": -0.0018959662457834758,
       "irr_best": 0.18471893092662084,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.18661489717240431,
       "irr_asymmetry_ratio": 3.7322979434480863,
       "quadrant": "avoid",
@@ -4596,13 +5600,20 @@
       "rating_dispersion": 0.24041630560342606,
       "fve_min_repriced": 374.10848507184807,
       "fve_max_repriced": 744.0117897619591,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.038605052470288226,
       "irr_best_repriced": 0.130505967223836,
       "irr_repriced_delta": -0.05421296370278483,
+=======
+      "irr_worst_repriced": -0.031148739321249397,
+      "irr_best_repriced": 0.14147643617200845,
+      "irr_repriced_delta": -0.04324249475461239,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 18.71424314166258,
       "quality_multiple_a": 1.0396801745368098,
       "quality_multiple_b": 1.0281648485979091,
       "quality_adjusted_multiple": 1.0339225115673596,
+<<<<<<< HEAD
       "edge_to_fair": 0.15824466020343086,
       "quality_zone": "avoid",
       "kelly_fraction": 0.10422130404996384,
@@ -4612,6 +5623,17 @@
       "ev_fcf_5y_base": 18.39491198144145,
       "score_v2": 44.51286987324225,
       "score_v2_rank": 33,
+=======
+      "edge_to_fair": 0.2038619083667914,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.11273097649010559,
+      "suggested_weight_pct": 0.085174515570302,
+      "asymmetry_v2": 5.541963471230903,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 17.732549325863353,
+      "score_v2": 46.143084490159545,
+      "score_v2_rank": 28,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.5364302201169935,
       "ev_fcf_mean_5y": 203.166,
       "ev_fcf_std_5y": 323.986221287264,
@@ -4634,9 +5656,15 @@
       "style": "Compounder",
       "exchange": "XMIL",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 148.85000610351562,
       "shares_out_m": 296.4038,
       "market_cap_m": 44119.70743910522,
+=======
+      "price": 140.5,
+      "shares_out_m": 296.4038,
+      "market_cap_m": 41644.7339,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 5.0,
       "r1_optionality": 1.0,
@@ -4694,7 +5722,7 @@
       "irr_worst": -0.15946363807643493,
       "irr_best": 0.0028856079868728735,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1623492460633078,
       "irr_asymmetry_ratio": 1.0180957114843305,
       "quadrant": "avoid",
@@ -4710,13 +5738,20 @@
       "rating_dispersion": 0.7980949539719917,
       "fve_min_repriced": 58.946612695248845,
       "fve_max_repriced": 142.12874463822664,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.16911293239557545,
       "irr_best_repriced": -0.011484995384884122,
       "irr_repriced_delta": -0.014370603371756996,
+=======
+      "irr_worst_repriced": -0.15946363807643482,
+      "irr_best_repriced": 0.0028856079868728735,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 43.66165133333333,
       "quality_multiple_a": 3.9503398825396823,
       "quality_multiple_b": 2.2257322175358185,
       "quality_adjusted_multiple": 3.0880360500377506,
+<<<<<<< HEAD
       "edge_to_fair": -0.38507587729895965,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -4725,6 +5760,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 30.689010044222364,
       "score_v2": 36.965163685763194,
+=======
+      "edge_to_fair": -0.34853053795552424,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.0180957114843305,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 29.117094736239462,
+      "score_v2": 37.03683775395214,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 50,
       "ev_fcf_zscore_self_5y": 1.9618807943255339,
       "ev_fcf_mean_5y": 23.372,
@@ -4748,9 +5793,15 @@
       "style": "Defensive",
       "exchange": "XSWX",
       "currency": "CHF",
+<<<<<<< HEAD
       "price": 250.0,
       "shares_out_m": 5.835,
       "market_cap_m": 1458.75,
+=======
+      "price": 253.5,
+      "shares_out_m": 5.835,
+      "market_cap_m": 1479.1725,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 7.0,
       "r1_optionality": 0.0,
@@ -4808,7 +5859,7 @@
       "irr_worst": -0.09459114614862663,
       "irr_best": 0.045748504586241134,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.14033965073486776,
       "irr_asymmetry_ratio": 1.4836446797500336,
       "quadrant": "value_trap",
@@ -4824,13 +5875,20 @@
       "rating_dispersion": 0.8086202240030028,
       "fve_min_repriced": 154.24164524421593,
       "fve_max_repriced": 303.1705227077978,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.09207008007184458,
       "irr_best_repriced": 0.04938956415641349,
       "irr_repriced_delta": 0.003641059570172356,
+=======
+      "irr_worst_repriced": -0.09459114614862663,
+      "irr_best_repriced": 0.045748504586241134,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 18.002211538461538,
       "quality_multiple_a": 1.0385891272189347,
       "quality_multiple_b": 2.128739572758597,
       "quality_adjusted_multiple": 1.5836643499887657,
+<<<<<<< HEAD
       "edge_to_fair": -0.13502351280974434,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -4840,6 +5898,17 @@
       "ev_fcf_5y_base": 21.26331272691972,
       "score_v2": 41.07650614937995,
       "score_v2_rank": 41,
+=======
+      "edge_to_fair": -0.14696598896424495,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.4836446797500336,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 21.577133868141416,
+      "score_v2": 40.718693520354314,
+      "score_v2_rank": 42,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 1.573727870264447,
       "ev_fcf_mean_5y": 16.3725,
       "ev_fcf_std_5y": 3.556841119589122,
@@ -4862,9 +5931,15 @@
       "style": "Defensive",
       "exchange": "XMIL",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 5.449999809265137,
       "shares_out_m": 1231.268,
       "market_cap_m": 6710.410365154266,
+=======
+      "price": 5.52,
+      "shares_out_m": 1231.268,
+      "market_cap_m": 6796.599359999999,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 6.0,
       "r1_optionality": 1.0,
@@ -4922,7 +5997,7 @@
       "irr_worst": -0.23165557658460967,
       "irr_best": -0.002829548869233367,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.2288260277153763,
       "irr_asymmetry_ratio": 0.9877855352720166,
       "quadrant": "avoid",
@@ -4938,13 +6013,20 @@
       "rating_dispersion": 0.785252967025418,
       "fve_min_repriced": 1.4781509793156322,
       "fve_max_repriced": 5.457788231319258,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.2296919052075037,
       "irr_best_repriced": 0.0003570757790058998,
       "irr_repriced_delta": 0.003186624648239267,
+=======
+      "irr_worst_repriced": -0.23165557658460967,
+      "irr_best_repriced": -0.002829548869233367,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 24.277617523809525,
       "quality_multiple_a": 3.1792118185941045,
       "quality_multiple_b": 1.964560629222388,
       "quality_adjusted_multiple": 2.5718862239082463,
+<<<<<<< HEAD
       "edge_to_fair": -0.4788397894019548,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -4953,6 +6035,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 24.09372243487059,
       "score_v2": 37.387600616815995,
+=======
+      "edge_to_fair": -0.4854487231239266,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.9877855352720166,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 24.299116048359384,
+      "score_v2": 37.17073279453649,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 49,
       "ev_fcf_zscore_self_5y": -0.7505517556361572,
       "ev_fcf_mean_5y": 190.42,
@@ -4976,9 +6068,15 @@
       "style": "Compounder",
       "exchange": "XSWX",
       "currency": "CHF",
+<<<<<<< HEAD
       "price": 162.0,
       "shares_out_m": 160.4793,
       "market_cap_m": 25997.6466,
+=======
+      "price": 140.0,
+      "shares_out_m": 160.4793,
+      "market_cap_m": 22467.102,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 5.0,
       "r1_optionality": 1.0,
@@ -5036,7 +6134,7 @@
       "irr_worst": -0.02842907500236669,
       "irr_best": 0.14201471985891367,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.17044379486128036,
       "irr_asymmetry_ratio": 3.4088758972256072,
       "quadrant": "avoid",
@@ -5052,13 +6150,20 @@
       "rating_dispersion": 0.716147098483731,
       "fve_min_repriced": 121.19943195165982,
       "fve_max_repriced": 238.13040061864677,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.0563800504305253,
       "irr_best_repriced": 0.10109542207756372,
       "irr_repriced_delta": -0.04091929778134995,
+=======
+      "irr_worst_repriced": -0.02842907500236669,
+      "irr_best_repriced": 0.14201471985891367,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 20.7736816,
       "quality_multiple_a": 2.07736816,
       "quality_multiple_b": 1.294014408562895,
       "quality_adjusted_multiple": 1.6856912842814475,
+<<<<<<< HEAD
       "edge_to_fair": 0.048679308284852674,
       "quality_zone": "avoid",
       "kelly_fraction": 0.07475971420775389,
@@ -5068,6 +6173,17 @@
       "ev_fcf_5y_base": 19.185689469802938,
       "score_v2": 43.10230055389685,
       "score_v2_rank": 36,
+=======
+      "edge_to_fair": 0.21347177101532933,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.1149792997448179,
+      "suggested_weight_pct": 0.09389976145826796,
+      "asymmetry_v2": 5.995404171507202,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 16.889372978070014,
+      "score_v2": 48.067198628036415,
+      "score_v2_rank": 23,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.0030669851870706,
       "ev_fcf_mean_5y": 31.4175,
       "ev_fcf_std_5y": 8.531334523390818,
@@ -5090,9 +6206,15 @@
       "style": "Special situation",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 123.88999938964844,
       "shares_out_m": 104.0278,
       "market_cap_m": 12888.00407850647,
+=======
+      "price": 126.82,
+      "shares_out_m": 104.0278,
+      "market_cap_m": 13192.805595999998,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 5.0,
       "r1_optionality": 1.0,
@@ -5150,7 +6272,7 @@
       "irr_worst": -0.025237055057837354,
       "irr_best": 0.270828299681956,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.29606535473979334,
       "irr_asymmetry_ratio": 5.921307094795867,
       "quadrant": "value_trap",
@@ -5166,13 +6288,20 @@
       "rating_dispersion": 0.30025914733036113,
       "fve_min_repriced": 111.6047825677367,
       "fve_max_repriced": 330.7769653880982,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.020669430741073858,
       "irr_best_repriced": 0.2782763442259002,
       "irr_repriced_delta": 0.00744804454394421,
+=======
+      "irr_worst_repriced": -0.025237055057837354,
+      "irr_best_repriced": 0.270828299681956,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 10.192805595999998,
       "quality_multiple_a": 0.12231366715199998,
       "quality_multiple_b": 0.43307717142547153,
       "quality_adjusted_multiple": 0.27769541928873576,
+<<<<<<< HEAD
       "edge_to_fair": 0.5508606663311013,
       "quality_zone": "value_trap",
       "kelly_fraction": 0.1291438784445035,
@@ -5182,6 +6311,17 @@
       "ev_fcf_5y_base": 5.70419479061148,
       "score_v2": 62.57228410279806,
       "score_v2_rank": 12,
+=======
+      "edge_to_fair": 0.5150301766692156,
+      "quality_zone": "value_trap",
+      "kelly_fraction": 0.12701672075133638,
+      "suggested_weight_pct": 0.08820605607731695,
+      "asymmetry_v2": 11.731374919192499,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 5.8800287824315625,
+      "score_v2": 60.1199427458869,
+      "score_v2_rank": 11,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.0037121083378058,
       "ev_fcf_mean_5y": 14.972,
       "ev_fcf_std_5y": 2.432968557133446,
@@ -5204,9 +6344,15 @@
       "style": "Compounder",
       "exchange": "XMIL",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 15.510000228881836,
       "shares_out_m": 201.3275,
       "market_cap_m": 3122.5895710802074,
+=======
+      "price": 20.68,
+      "shares_out_m": 201.3275,
+      "market_cap_m": 4163.4527,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 4.0,
       "r1_optionality": 2.0,
@@ -5264,7 +6410,7 @@
       "irr_worst": -0.15534398490081958,
       "irr_best": 0.00024293691631660508,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.15558692181713618,
       "irr_asymmetry_ratio": 1.0015638643264604,
       "quadrant": "avoid",
@@ -5280,13 +6426,20 @@
       "rating_dispersion": 0.6676492758593808,
       "fve_min_repriced": 8.890986079894699,
       "fve_max_repriced": 20.70010306590009,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.10532021396222924,
       "irr_best_repriced": 0.07483098056381232,
       "irr_repriced_delta": 0.07458804364749572,
+=======
+      "irr_worst_repriced": -0.15534398490081958,
+      "irr_best_repriced": 0.00024293691631660508,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 45.70503,
       "quality_multiple_a": 2.2852515,
       "quality_multiple_b": 1.919633955692052,
       "quality_adjusted_multiple": 2.102442727846026,
+<<<<<<< HEAD
       "edge_to_fair": -0.12531955981948661,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -5296,6 +6449,17 @@
       "ev_fcf_5y_base": 21.088709902123394,
       "score_v2": 38.72275099699481,
       "score_v2_rank": 45,
+=======
+      "edge_to_fair": -0.34398966018383814,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.0015638643264604,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 28.23267106771734,
+      "score_v2": 34.22067312257356,
+      "score_v2_rank": 51,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 1.5811620141031877,
       "ev_fcf_mean_5y": 19.869999999999997,
       "ev_fcf_std_5y": 4.920431891612767,
@@ -5318,9 +6482,15 @@
       "style": "Defensive",
       "exchange": "BMEX",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 79.69999694824219,
       "shares_out_m": 35.20626,
       "market_cap_m": 2805.938814559021,
+=======
+      "price": 75.4,
+      "shares_out_m": 35.20626,
+      "market_cap_m": 2654.552004,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.75,
       "r1_moat": 6.0,
       "r1_optionality": 1.0,
@@ -5378,7 +6548,7 @@
       "irr_worst": -0.055525292084644406,
       "irr_best": 0.1964152917686044,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.2519405838532488,
       "irr_asymmetry_ratio": 4.537402225082996,
       "quadrant": "value_trap",
@@ -5394,13 +6564,20 @@
       "rating_dispersion": 0.21684607956387456,
       "fve_min_repriced": 56.666058820221174,
       "fve_max_repriced": 154.48957088881352,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.06594394376925417,
       "irr_best_repriced": 0.17994079212565461,
       "irr_repriced_delta": -0.01647449964294978,
+=======
+      "irr_worst_repriced": -0.055525292084644406,
+      "irr_best_repriced": 0.1964152917686044,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 13.14072382857143,
       "quality_multiple_a": 0.750898504489796,
       "quality_multiple_b": 0.767653544655639,
       "quality_adjusted_multiple": 0.7592760245727175,
+<<<<<<< HEAD
       "edge_to_fair": 0.1739586028608604,
       "quality_zone": "value_trap",
       "kelly_fraction": 0.09627147373642472,
@@ -5414,6 +6591,21 @@
       "ev_fcf_mean_5y": 21.13,
       "ev_fcf_std_5y": 6.422818695868661,
       "ev_sales_zscore_self_5y": -0.10018048746260552,
+=======
+      "edge_to_fair": 0.240908449142881,
+      "quality_zone": "value_trap",
+      "kelly_fraction": 0.10569700083799195,
+      "suggested_weight_pct": 0.08338318954997143,
+      "asymmetry_v2": 4.537402225082996,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 10.850595587092263,
+      "score_v2": 53.19710127056274,
+      "score_v2_rank": 16,
+      "ev_fcf_zscore_self_5y": -0.7394799880936048,
+      "ev_fcf_mean_5y": 21.180000000000003,
+      "ev_fcf_std_5y": 6.436955802240684,
+      "ev_sales_zscore_self_5y": -0.05826615916343592,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.013970324876428632,
       "fcf_margin_slope_5y": 2.6253709241182617,
@@ -5432,9 +6624,15 @@
       "style": "Raw materials",
       "exchange": "XTSE",
       "currency": "CAD",
+<<<<<<< HEAD
       "price": 40.939998626708984,
       "shares_out_m": 206.6039,
       "market_cap_m": 8458.36338227272,
+=======
+      "price": 42.62,
+      "shares_out_m": 206.6039,
+      "market_cap_m": 8805.458218,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 5.0,
       "r1_optionality": 1.0,
@@ -5492,7 +6690,7 @@
       "irr_worst": -0.07078301132131726,
       "irr_best": 0.13123023861760363,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.2020132499389209,
       "irr_asymmetry_ratio": 2.8539793118137924,
       "quadrant": "avoid",
@@ -5508,13 +6706,20 @@
       "rating_dispersion": 1.0518660666749462,
       "fve_min_repriced": 21.471037090780957,
       "fve_max_repriced": 50.75412419610665,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.12109681217570056,
       "irr_best_repriced": 0.05519051463746649,
       "irr_repriced_delta": -0.07603972398013714,
+=======
+      "irr_worst_repriced": -0.12813766683976258,
+      "irr_best_repriced": 0.04463476090138441,
+      "irr_repriced_delta": -0.08659547771621923,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 45.16663725806857,
       "quality_multiple_a": 5.807139076037387,
       "quality_multiple_b": 1.4104212868405415,
       "quality_adjusted_multiple": 3.6087801814389646,
+<<<<<<< HEAD
       "edge_to_fair": -0.1936671443481066,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -5523,6 +6728,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 24.7640081963018,
       "score_v2": 33.296486011594325,
+=======
+      "edge_to_fair": -0.2254512904021856,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.3483344281365808,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 25.78991969770922,
+      "score_v2": 32.9709768100296,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 53,
       "ev_fcf_zscore_self_5y": -0.21239281466302262,
       "ev_fcf_mean_5y": 61.8125,
@@ -5546,9 +6761,15 @@
       "style": "Growth",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 72.81999969482422,
       "shares_out_m": 4210.798,
       "market_cap_m": 306630.3090749664,
+=======
+      "price": 88.97,
+      "shares_out_m": 4210.798,
+      "market_cap_m": 374634.69805999997,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.5,
       "r1_moat": 6.5,
       "r1_optionality": 2.0,
@@ -5606,7 +6827,7 @@
       "irr_worst": -0.08188922026571144,
       "irr_best": 0.07369603981996953,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.15558526008568097,
       "irr_asymmetry_ratio": 1.899947997805365,
       "quadrant": "avoid",
@@ -5622,13 +6843,20 @@
       "rating_dispersion": 0.17682382946499817,
       "fve_min_repriced": 58.038880041265344,
       "fve_max_repriced": 118.24124548363517,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.04436142917969221,
       "irr_best_repriced": 0.12883269782604145,
       "irr_repriced_delta": 0.055136658006071926,
+=======
+      "irr_worst_repriced": -0.08188922026571144,
+      "irr_best_repriced": 0.07369603981996953,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 27.300340439130434,
       "quality_multiple_a": 0.5539199509388784,
       "quality_multiple_b": 1.4628833382577602,
       "quality_adjusted_multiple": 1.0084016445983193,
+<<<<<<< HEAD
       "edge_to_fair": 0.13760983170726848,
       "quality_zone": "avoid",
       "kelly_fraction": 0.09876246778240957,
@@ -5638,6 +6866,17 @@
       "ev_fcf_5y_base": 18.129855206803917,
       "score_v2": 45.08220548345589,
       "score_v2_rank": 29,
+=======
+      "edge_to_fair": -0.06889122628130462,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.012492777055624104,
+      "suggested_weight_pct": 0.0092307741577667,
+      "asymmetry_v2": 1.899947997805365,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 22.123210429579384,
+      "score_v2": 39.41867341072947,
+      "score_v2_rank": 46,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.6187816362418476,
       "ev_fcf_mean_5y": 50.032,
       "ev_fcf_std_5y": 21.642529796675806,
@@ -5660,9 +6899,15 @@
       "style": "Special situation",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 42.380001068115234,
       "shares_out_m": 1480.887,
       "market_cap_m": 62759.99264175796,
+=======
+      "price": 42.2779,
+      "shares_out_m": 1480.887,
+      "market_cap_m": 62608.792497300004,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 5.0,
       "r1_optionality": 1.0,
@@ -5720,7 +6965,7 @@
       "irr_worst": 0.01814831938693162,
       "irr_best": 0.2644659027112839,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.24631758332435227,
       "irr_asymmetry_ratio": 4.9263516664870455,
       "quadrant": "value_trap",
@@ -5736,13 +6981,20 @@
       "rating_dispersion": 0.6513746148637424,
       "fve_min_repriced": 46.25606140103871,
       "fve_max_repriced": 108.07914445869267,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.017657265347551965,
       "irr_best_repriced": 0.2637036320786774,
       "irr_repriced_delta": -0.0007622706326064765,
+=======
+      "irr_worst_repriced": 0.01814831938693162,
+      "irr_best_repriced": 0.2644659027112839,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 13.3559984369375,
       "quality_multiple_a": 0.5564999348723959,
       "quality_multiple_b": 0.7069707429794594,
       "quality_adjusted_multiple": 0.6317353389259277,
+<<<<<<< HEAD
       "edge_to_fair": 0.6683774498312234,
       "quality_zone": "value_trap",
       "kelly_fraction": 0.12996714072179738,
@@ -5752,6 +7004,17 @@
       "ev_fcf_5y_base": 10.361146230542234,
       "score_v2": 69.03045071687953,
       "score_v2_rank": 11,
+=======
+      "edge_to_fair": 0.6724065789896521,
+      "quality_zone": "value_trap",
+      "kelly_fraction": 0.12977996535621947,
+      "suggested_weight_pct": 0.1,
+      "asymmetry_v2": 24.631758332435226,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 10.336767036857266,
+      "score_v2": 69.07743129333339,
+      "score_v2_rank": 8,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 2.129034114928434,
       "ev_fcf_mean_5y": 32.843333333333334,
       "ev_fcf_std_5y": 16.480086636773354,
@@ -5774,9 +7037,15 @@
       "style": "Compounder",
       "exchange": "XSTO",
       "currency": "SEK",
+<<<<<<< HEAD
       "price": 242.60000610351562,
       "shares_out_m": 26.49112,
       "market_cap_m": 6426.745873688965,
+=======
+      "price": 251.0,
+      "shares_out_m": 26.49112,
+      "market_cap_m": 6649.271119999999,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 4.0,
       "r1_optionality": 2.0,
@@ -5834,7 +7103,7 @@
       "irr_worst": -0.19146970777908034,
       "irr_best": -0.03150929679545411,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.15996041098362623,
       "irr_asymmetry_ratio": 0.8354345595397793,
       "quadrant": "avoid",
@@ -5850,13 +7119,20 @@
       "rating_dispersion": 0.5502928513275654,
       "fve_min_repriced": 86.72717499297879,
       "fve_max_repriced": 220.82871543370007,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.18594662997445854,
       "irr_best_repriced": -0.023232536469802945,
       "irr_repriced_delta": 0.008276760325651167,
+=======
+      "irr_worst_repriced": -0.19146970777908034,
+      "irr_best_repriced": -0.03150929679545411,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 45.23965818181818,
       "quality_multiple_a": 1.1072643610934518,
       "quality_multiple_b": 3.067597781246049,
       "quality_adjusted_multiple": 2.0874310711697506,
+<<<<<<< HEAD
       "edge_to_fair": -0.4295539651824465,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -5866,6 +7142,17 @@
       "ev_fcf_5y_base": 35.77345472986991,
       "score_v2": 32.61023289604017,
       "score_v2_rank": 55,
+=======
+      "edge_to_fair": -0.44864457558380577,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.8354345595397793,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 37.04779772158505,
+      "score_v2": 32.577213329283076,
+      "score_v2_rank": 54,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.504154142088159,
       "ev_fcf_mean_5y": 844.2320000000002,
       "ev_fcf_std_5y": 1551.23589138983,
@@ -5888,9 +7175,15 @@
       "style": "Defensive",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 234.0500030517578,
       "shares_out_m": 193.9378,
       "market_cap_m": 45391.1426818512,
+=======
+      "price": 220.895,
+      "shares_out_m": 193.9378,
+      "market_cap_m": 42839.890331,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 4.0,
       "r1_optionality": 1.0,
@@ -5948,7 +7241,7 @@
       "irr_worst": -0.09013258019809511,
       "irr_best": 0.12753573096805093,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.21766831116614604,
       "irr_asymmetry_ratio": 2.4149792526492693,
       "quadrant": "value_trap",
@@ -5964,13 +7257,20 @@
       "rating_dispersion": 1.223628483922578,
       "fve_min_repriced": 137.74519459331805,
       "fve_max_repriced": 357.03199685672416,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.10059859605669441,
       "irr_best_repriced": 0.11134684761392899,
       "irr_repriced_delta": -0.01618888335412194,
+=======
+      "irr_worst_repriced": -0.09013258019809511,
+      "irr_best_repriced": 0.12753573096805093,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 16.567817975357144,
       "quality_multiple_a": 0.7100493418010205,
       "quality_multiple_b": 1.1405471321861154,
       "quality_adjusted_multiple": 0.925298236993568,
+<<<<<<< HEAD
       "edge_to_fair": -0.05249142994990763,
       "quality_zone": "avoid",
       "kelly_fraction": 0.03585956473937597,
@@ -5980,6 +7280,17 @@
       "ev_fcf_5y_base": 15.324841466716098,
       "score_v2": 44.82585747762995,
       "score_v2_rank": 32,
+=======
+      "edge_to_fair": 0.0039357328676103975,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.05799353388795917,
+      "suggested_weight_pct": 0.047039199709122445,
+      "asymmetry_v2": 2.4149792526492693,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 14.525972954950028,
+      "score_v2": 45.88150623507053,
+      "score_v2_rank": 29,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": 0.8129236877222701,
       "ev_fcf_mean_5y": 27.389999999999997,
       "ev_fcf_std_5y": 6.4335682167829695,
@@ -6002,9 +7313,15 @@
       "style": "Growth",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 15.130000114440918,
       "shares_out_m": 341.4821,
       "market_cap_m": 5166.624212079525,
+=======
+      "price": 17.53,
+      "shares_out_m": 341.4821,
+      "market_cap_m": 5986.181213000001,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 4.0,
       "r1_optionality": 2.0,
@@ -6062,7 +7379,7 @@
       "irr_worst": -0.1660932653387287,
       "irr_best": -0.0021023309776532217,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.16399093436107548,
       "irr_asymmetry_ratio": 0.9873424670568927,
       "quadrant": "avoid",
@@ -6078,13 +7395,20 @@
       "rating_dispersion": 0.2546893532652409,
       "fve_min_repriced": 7.069184592691681,
       "fve_max_repriced": 17.383048774738118,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.14117223122240596,
       "irr_best_repriced": 0.035313207535470736,
       "irr_repriced_delta": 0.03741553851312396,
+=======
+      "irr_worst_repriced": -0.1660932653387287,
+      "irr_best_repriced": -0.0021023309776532217,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": null,
       "quality_multiple_a": null,
       "quality_multiple_b": 3.050282168956958,
       "quality_adjusted_multiple": 3.050282168956958,
+<<<<<<< HEAD
       "edge_to_fair": -0.26732950239217357,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -6098,6 +7422,21 @@
       "ev_fcf_mean_5y": 486.28000000000003,
       "ev_fcf_std_5y": 523.6003920930542,
       "ev_sales_zscore_self_5y": -1.0071245080176348,
+=======
+      "edge_to_fair": -0.36763806545043376,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.9873424670568927,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 41.9325880299785,
+      "score_v2": 29.04402183768401,
+      "score_v2_rank": 58,
+      "ev_fcf_zscore_self_5y": -0.6482415919337924,
+      "ev_fcf_mean_5y": 488.5933333333333,
+      "ev_fcf_std_5y": 526.089867692668,
+      "ev_sales_zscore_self_5y": -1.0075494847061544,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.006559833891232183,
       "fcf_margin_slope_5y": 2.8170159697954724,
@@ -6116,9 +7455,15 @@
       "style": "Compounder",
       "exchange": "XNYS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 45.34000015258789,
       "shares_out_m": 103.8987,
       "market_cap_m": 4710.7670738536835,
+=======
+      "price": 36.57,
+      "shares_out_m": 103.8987,
+      "market_cap_m": 3799.575459,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 4.0,
       "r1_optionality": 1.0,
@@ -6176,7 +7521,7 @@
       "irr_worst": -0.10516227721852367,
       "irr_best": 0.14312557641689128,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.24828785363541495,
       "irr_asymmetry_ratio": 2.360997310085642,
       "quadrant": "avoid",
@@ -6192,13 +7537,20 @@
       "rating_dispersion": 0.6954295235480173,
       "fve_min_repriced": 20.981975712881873,
       "fve_max_repriced": 62.44543964457688,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.14281813845911584,
       "irr_best_repriced": 0.0833151147069986,
       "irr_repriced_delta": -0.05981046170989268,
+=======
+      "irr_worst_repriced": -0.10516227721852367,
+      "irr_best_repriced": 0.14312557641689128,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 20.524081363157894,
       "quality_multiple_a": 0.9721933277285316,
       "quality_multiple_b": 0.9326866182144947,
       "quality_adjusted_multiple": 0.9524399729715132,
+<<<<<<< HEAD
       "edge_to_fair": -0.20165237704788852,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -6208,6 +7560,17 @@
       "ev_fcf_5y_base": 18.24303060469587,
       "score_v2": 38.6371743905442,
       "score_v2_rank": 46,
+=======
+      "edge_to_fair": -0.010197392768200308,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.05484002766477118,
+      "suggested_weight_pct": 0.04143468756893823,
+      "asymmetry_v2": 2.360997310085642,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 14.787678004720133,
+      "score_v2": 42.740553849278555,
+      "score_v2_rank": 38,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.8189481483787666,
       "ev_fcf_mean_5y": 56.56999999999999,
       "ev_fcf_std_5y": 43.616925040630726,
@@ -6230,9 +7593,15 @@
       "style": "Special situation",
       "exchange": "XPAR",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 77.5199966430664,
       "shares_out_m": 494.8253,
       "market_cap_m": 38358.85559490433,
+=======
+      "price": 73.02,
+      "shares_out_m": 494.8253,
+      "market_cap_m": 36132.143406,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 4.0,
       "r1_optionality": 1.0,
@@ -6290,7 +7659,7 @@
       "irr_worst": -0.09641502993483808,
       "irr_best": 0.08777342911361763,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.1841884590484557,
       "irr_asymmetry_ratio": 1.9103708122368384,
       "quadrant": "value_trap",
@@ -6306,13 +7675,20 @@
       "rating_dispersion": 0.6402777175222917,
       "fve_min_repriced": 43.98319972725727,
       "fve_max_repriced": 102.23406119290989,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.10715799292869665,
       "irr_best_repriced": 0.07163149022879689,
       "irr_repriced_delta": -0.01614193888482074,
+=======
+      "irr_worst_repriced": -0.09641502993483808,
+      "irr_best_repriced": 0.08777342911361763,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 14.877381135333334,
       "quality_multiple_a": 1.3885555726311112,
       "quality_multiple_b": 1.0334271747346728,
       "quality_adjusted_multiple": 1.2109913736828921,
+<<<<<<< HEAD
       "edge_to_fair": -0.13497736516830394,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -6326,6 +7702,21 @@
       "ev_fcf_mean_5y": 11.31,
       "ev_fcf_std_5y": 2.9596114609860535,
       "ev_sales_zscore_self_5y": 1.0660428928017756,
+=======
+      "edge_to_fair": -0.08166869695522405,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.013923981867805697,
+      "suggested_weight_pct": 0.010288275491211987,
+      "asymmetry_v2": 1.9103708122368384,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 14.624652277053587,
+      "score_v2": 42.12991805603669,
+      "score_v2_rank": 40,
+      "ev_fcf_zscore_self_5y": 1.1121633323045848,
+      "ev_fcf_mean_5y": 11.255,
+      "ev_fcf_std_5y": 2.9447113610674984,
+      "ev_sales_zscore_self_5y": 1.06527850273715,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.021060842302435955,
       "fcf_margin_slope_5y": -0.12211549458843632,
@@ -6344,9 +7735,15 @@
       "style": "Special situation",
       "exchange": "XPAR",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 16.15999984741211,
       "shares_out_m": 21.68,
       "market_cap_m": 350.3487966918945,
+=======
+      "price": 17.0,
+      "shares_out_m": 21.68,
+      "market_cap_m": 368.56,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 5.0,
       "r1_optionality": 1.0,
@@ -6404,7 +7801,7 @@
       "irr_worst": -1.8758890163876756,
       "irr_best": -0.1311840727301199,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 1.7447049436575557,
       "irr_asymmetry_ratio": 0.9300683187629427,
       "quadrant": "avoid",
@@ -6421,8 +7818,13 @@
       "fve_min_repriced": -8.763837638376383,
       "fve_max_repriced": 9.686346863468636,
       "irr_worst_repriced": -0.99,
+<<<<<<< HEAD
       "irr_best_repriced": -0.12010739820815908,
       "irr_repriced_delta": 0.011076674521960816,
+=======
+      "irr_best_repriced": -0.1311840727301199,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 35.428,
       "quality_multiple_a": 8.857,
       "quality_multiple_b": 1.2512219278304033,
@@ -6431,11 +7833,19 @@
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
       "suggested_weight_pct": 0.0,
+<<<<<<< HEAD
       "asymmetry_v2": 0.8786793957493343,
       "pure_upside": false,
       "ev_fcf_5y_base": 20.814799391821424,
       "score_v2": 32.74826248807471,
       "score_v2_rank": 54,
+=======
+      "asymmetry_v2": 0.8674908356261415,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 21.363887831402014,
+      "score_v2": 32.18985024839146,
+      "score_v2_rank": 55,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": null,
       "ev_fcf_mean_5y": null,
       "ev_fcf_std_5y": null,
@@ -6458,9 +7868,15 @@
       "style": "Growth",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 28.15999984741211,
       "shares_out_m": 255.6404,
       "market_cap_m": 7198.8336249923705,
+=======
+      "price": 29.34,
+      "shares_out_m": 255.6404,
+      "market_cap_m": 7500.489336,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 4.0,
       "r1_optionality": 2.0,
@@ -6518,7 +7934,7 @@
       "irr_worst": -0.040871029258974345,
       "irr_best": 0.2665752311148395,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.30744626037381384,
       "irr_asymmetry_ratio": 6.148925207476276,
       "quadrant": "avoid",
@@ -6534,13 +7950,20 @@
       "rating_dispersion": 0.6362913378843582,
       "fve_min_repriced": 23.814702214516956,
       "fve_max_repriced": 75.50645359653639,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.03296431281894108,
       "irr_best_repriced": 0.27964014438729423,
       "irr_repriced_delta": 0.013064913272454737,
+=======
+      "irr_worst_repriced": -0.040871029258974345,
+      "irr_best_repriced": 0.2665752311148395,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 36.558274088888886,
       "quality_multiple_a": 1.2186091362962963,
       "quality_multiple_b": 0.8739130006568794,
       "quality_adjusted_multiple": 1.0462610684765878,
+<<<<<<< HEAD
       "edge_to_fair": 0.5058508759325453,
       "quality_zone": "avoid",
       "kelly_fraction": 0.12423836619468084,
@@ -6550,6 +7973,17 @@
       "ev_fcf_5y_base": 12.222686873628843,
       "score_v2": 47.12959037283971,
       "score_v2_rank": 25,
+=======
+      "edge_to_fair": 0.44528835843510106,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.12025162034970226,
+      "suggested_weight_pct": 0.07949968234230316,
+      "asymmetry_v2": 7.52235179656763,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 12.809904742344484,
+      "score_v2": 44.90840094713882,
+      "score_v2_rank": 32,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -0.813273398889342,
       "ev_fcf_mean_5y": 59.208000000000006,
       "ev_fcf_std_5y": 34.868962932671224,
@@ -6572,9 +8006,15 @@
       "style": "Growth",
       "exchange": "XAMS",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 31.360000610351562,
       "shares_out_m": 66.0,
       "market_cap_m": 2069.760040283203,
+=======
+      "price": 29.78,
+      "shares_out_m": 66.0,
+      "market_cap_m": 1965.48,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 4.0,
       "r1_optionality": 1.0,
@@ -6632,7 +8072,7 @@
       "irr_worst": -0.2894473331173706,
       "irr_best": 0.042778032705823144,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.33222536582319373,
       "irr_asymmetry_ratio": 1.1477921121093098,
       "quadrant": "avoid",
@@ -6648,13 +8088,20 @@
       "rating_dispersion": 0.6847383928674269,
       "fve_min_repriced": 5.393939393939394,
       "fve_max_repriced": 35.21212121212121,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.29675605749633804,
       "irr_best_repriced": 0.029387834636674715,
       "irr_repriced_delta": -0.013390198069148429,
+=======
+      "irr_worst_repriced": -0.2894473331173706,
+      "irr_best_repriced": 0.042778032705823144,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 53.3096,
       "quality_multiple_a": 15.99288,
       "quality_multiple_b": 1.3712230081029573,
       "quality_adjusted_multiple": 8.68205150405148,
+<<<<<<< HEAD
       "edge_to_fair": -0.5605362443792015,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -6664,6 +8111,17 @@
       "ev_fcf_5y_base": 22.779603914202145,
       "score_v2": 29.19153525016472,
       "score_v2_rank": 58,
+=======
+      "edge_to_fair": -0.5372201596878565,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.1477921121093098,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 21.921963548517063,
+      "score_v2": 30.089810478268515,
+      "score_v2_rank": 57,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": -1.0154239402012413,
       "ev_fcf_mean_5y": 24.9975,
       "ev_fcf_std_5y": 11.313008828335635,
@@ -6686,9 +8144,15 @@
       "style": "Special situation",
       "exchange": "XWBO",
       "currency": "EUR",
+<<<<<<< HEAD
       "price": 2.3340001106262207,
       "shares_out_m": 120.8051,
       "market_cap_m": 281.9591167642117,
+=======
+      "price": 19.73,
+      "shares_out_m": 120.8051,
+      "market_cap_m": 2383.484623,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.75,
       "r1_moat": 5.5,
       "r1_optionality": 0.5,
@@ -6746,7 +8210,7 @@
       "irr_worst": -0.26710183149488786,
       "irr_best": 0.22991668959596412,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.497018521090852,
       "irr_asymmetry_ratio": 1.8607829018213398,
       "quadrant": "value_trap",
@@ -6762,13 +8226,20 @@
       "rating_dispersion": 0.6073073539997869,
       "fve_min_repriced": 4.1720092943095946,
       "fve_max_repriced": 45.1471005777074,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.12317875199976314,
       "irr_best_repriced": 1.097163295192829,
       "irr_repriced_delta": 0.8672466055968648,
+=======
+      "irr_worst_repriced": -0.26710183149488786,
+      "irr_best_repriced": 0.22991668959596412,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 15.84994304814815,
       "quality_multiple_a": 1.9959187542112482,
       "quality_multiple_b": 0.862807299374686,
       "quality_adjusted_multiple": 1.4293630267929671,
+<<<<<<< HEAD
       "edge_to_fair": 4.880126829517865,
       "quality_zone": "avoid",
       "kelly_fraction": 0.12486960153453014,
@@ -6778,6 +8249,17 @@
       "ev_fcf_5y_base": 5.680558750360889,
       "score_v2": 75.6138419135481,
       "score_v2_rank": 7,
+=======
+      "edge_to_fair": -0.30439854685296985,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.006805024807114539,
+      "suggested_weight_pct": 0.005444019845691633,
+      "asymmetry_v2": 1.8607829018213398,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 11.161763154826629,
+      "score_v2": 46.6832899272668,
+      "score_v2_rank": 27,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_fcf_zscore_self_5y": null,
       "ev_fcf_mean_5y": null,
       "ev_fcf_std_5y": null,
@@ -6800,9 +8282,15 @@
       "style": "Raw materials",
       "exchange": "XLON",
       "currency": "GBp",
+<<<<<<< HEAD
       "price": 228.0,
       "shares_out_m": 83.11765,
       "market_cap_m": 18950.8242,
+=======
+      "price": 290.0,
+      "shares_out_m": 83.11765,
+      "market_cap_m": 241.04118499999998,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 2.0,
       "r1_optionality": 1.0,
@@ -6860,7 +8348,7 @@
       "irr_worst": -0.1664414776683104,
       "irr_best": 0.29932074010850207,
       "earnings_updated_at": "2026-04-26",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.4657622177768125,
       "irr_asymmetry_ratio": 2.7983542582155962,
       "quadrant": "value_trap",
@@ -6876,13 +8364,20 @@
       "rating_dispersion": 0.6808980997346242,
       "fve_min_repriced": 1.1670204824125803,
       "fve_max_repriced": 8.265392488839614,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.6518000324678958,
       "irr_best_repriced": -0.563652835093627,
       "irr_repriced_delta": -0.862973575202129,
+=======
+      "irr_worst_repriced": -0.6681543751837768,
+      "irr_best_repriced": -0.5891187050161439,
+      "irr_repriced_delta": -0.888439445124646,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 2.9627574062499997,
       "quality_multiple_a": 0.05555170136718749,
       "quality_multiple_b": 0.24428391267974417,
       "quality_adjusted_multiple": 0.14991780702346583,
+<<<<<<< HEAD
       "edge_to_fair": -0.9863781487710784,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -6890,6 +8385,15 @@
       "asymmetry_v2": 0.1352365648717737,
       "pure_upside": false,
       "ev_fcf_5y_base": 230.9461041764424,
+=======
+      "edge_to_fair": -0.9892904066200203,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.11828953472899736,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 292.9844772271956,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2": 0.0,
       "score_v2_rank": 60,
       "ev_fcf_zscore_self_5y": null,
@@ -6914,9 +8418,15 @@
       "style": "Special situation",
       "exchange": "XLON",
       "currency": "GBp",
+<<<<<<< HEAD
       "price": 693.6190185546875,
       "shares_out_m": 233.3016,
       "market_cap_m": 161822.4268192383,
+=======
+      "price": 640.5,
+      "shares_out_m": 233.3016,
+      "market_cap_m": 1494.2967480000002,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.5,
       "r1_moat": 3.0,
       "r1_optionality": 1.0,
@@ -6974,7 +8484,7 @@
       "irr_worst": -0.1903202113899677,
       "irr_best": 0.1042738829072658,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.2945940942972335,
       "irr_asymmetry_ratio": 1.5478865441863543,
       "quadrant": "value_trap",
@@ -6990,13 +8500,20 @@
       "rating_dispersion": 0.8611620056644395,
       "fve_min_repriced": 2.228874555510978,
       "fve_max_repriced": 9.524152427587294,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.6827563581824079,
       "irr_best_repriced": -0.6576846798747547,
       "irr_repriced_delta": -0.7619585627820205,
+=======
+      "irr_worst_repriced": -0.6776606703021063,
+      "irr_best_repriced": -0.6507979369374961,
+      "irr_repriced_delta": -0.7550718198447619,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 21.178709350000002,
       "quality_multiple_a": 2.382604801875001,
       "quality_multiple_b": 0.6626450668045353,
       "quality_adjusted_multiple": 1.522624934339768,
+<<<<<<< HEAD
       "edge_to_fair": -0.9933574475975132,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -7005,6 +8522,16 @@
       "pure_upside": false,
       "ev_fcf_5y_base": 1298.4667306123372,
       "score_v2": 22.584546120863013,
+=======
+      "edge_to_fair": -0.9928065563183279,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 0.03964039015667619,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 1199.1497625011111,
+      "score_v2": 22.58697872375857,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2_rank": 59,
       "ev_fcf_zscore_self_5y": -0.886006832559756,
       "ev_fcf_mean_5y": 1103.3625,
@@ -7028,9 +8555,15 @@
       "style": "Raw materials",
       "exchange": "XTSE",
       "currency": "CAD",
+<<<<<<< HEAD
       "price": 215.8000030517578,
       "shares_out_m": 112.8268,
       "market_cap_m": 24348.02378432007,
+=======
+      "price": 39.33,
+      "shares_out_m": 112.8268,
+      "market_cap_m": 4437.478044,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 0.0,
       "r1_moat": 2.0,
       "r1_optionality": 1.0,
@@ -7088,7 +8621,7 @@
       "irr_worst": -0.20604047417631832,
       "irr_best": 0.06436204136689838,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.2704025155432167,
       "irr_asymmetry_ratio": 1.3123757194997563,
       "quadrant": "value_trap",
@@ -7104,13 +8637,20 @@
       "rating_dispersion": 0.7732758599332812,
       "fve_min_repriced": 12.408399422832163,
       "fve_max_repriced": 50.47559622359226,
+<<<<<<< HEAD
       "irr_worst_repriced": -0.4351503504117078,
       "irr_best_repriced": -0.3045634649752287,
       "irr_repriced_delta": -0.36892550634212706,
+=======
+      "irr_worst_repriced": -0.20604047417631832,
+      "irr_best_repriced": 0.06436204136689838,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 21.21725902115765,
       "quality_multiple_a": 2.2465333081225745,
       "quality_multiple_b": 0.5504063271422073,
       "quality_adjusted_multiple": 1.3984698176323909,
+<<<<<<< HEAD
       "edge_to_fair": -0.8840295974333966,
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
@@ -7118,6 +8658,15 @@
       "asymmetry_v2": 0.300096013511025,
       "pure_upside": false,
       "ev_fcf_5y_base": 92.09836005331272,
+=======
+      "edge_to_fair": -0.36368133160979943,
+      "quality_zone": "avoid",
+      "kelly_fraction": 0.0,
+      "suggested_weight_pct": 0.0,
+      "asymmetry_v2": 1.3123757194997563,
+      "pure_upside": false,
+      "ev_fcf_5y_base": 17.942470102547272,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "score_v2": 0.0,
       "score_v2_rank": 60,
       "ev_fcf_zscore_self_5y": null,
@@ -7142,9 +8691,15 @@
       "style": "Special situation",
       "exchange": "XNAS",
       "currency": "USD",
+<<<<<<< HEAD
       "price": 8.289999961853027,
       "shares_out_m": 31.225,
       "market_cap_m": 258.8552488088608,
+=======
+      "price": 9.879,
+      "shares_out_m": 31.225,
+      "market_cap_m": 308.471775,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 1.0,
       "r1_moat": 5.0,
       "r1_optionality": 1.5,
@@ -7202,7 +8757,7 @@
       "irr_worst": -2.178084715575773,
       "irr_best": 0.5375542825323709,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 2.715638998108144,
       "irr_asymmetry_ratio": 1.2468013657541641,
       "quadrant": "avoid",
@@ -7219,8 +8774,13 @@
       "fve_min_repriced": -22.41793434747798,
       "fve_max_repriced": 55.21216973578863,
       "irr_worst_repriced": -0.99,
+<<<<<<< HEAD
       "irr_best_repriced": 0.6064605739099025,
       "irr_repriced_delta": 0.06890629137753157,
+=======
+      "irr_best_repriced": 0.5375542825323709,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": null,
       "quality_multiple_a": null,
       "quality_multiple_b": null,
@@ -7229,7 +8789,11 @@
       "quality_zone": "avoid",
       "kelly_fraction": 0.0,
       "suggested_weight_pct": 0.0,
+<<<<<<< HEAD
       "asymmetry_v2": 1.6125864382928308,
+=======
+      "asymmetry_v2": 1.5429841237700717,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "pure_upside": false,
       "ev_fcf_5y_base": null,
       "score_v2": 0.0,
@@ -7256,9 +8820,15 @@
       "style": "Compounder",
       "exchange": "XTSE",
       "currency": "CAD",
+<<<<<<< HEAD
       "price": 2790.8798828125,
       "shares_out_m": 21.2,
       "market_cap_m": 59166.653515624996,
+=======
+      "price": 2600.0,
+      "shares_out_m": 21.2,
+      "market_cap_m": 55120.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "r1_mission": 2.0,
       "r1_moat": 7.5,
       "r1_optionality": 2.5,
@@ -7316,7 +8886,7 @@
       "irr_worst": 0.14337252119652866,
       "irr_best": 0.45488435118754245,
       "earnings_updated_at": "2026-06-10",
-      "price_source": "yfinance",
+      "price_source": "stale",
       "irr_spread": 0.3115118299910138,
       "irr_asymmetry_ratio": 2.172744312447483,
       "quadrant": "wonderful_expensive",
@@ -7332,13 +8902,20 @@
       "rating_dispersion": 0.3242769735204082,
       "fve_min_repriced": 5080.566037735849,
       "fve_max_repriced": 11648.962264150943,
+<<<<<<< HEAD
       "irr_worst_repriced": 0.12728620159296877,
       "irr_best_repriced": 0.42934321124208963,
       "irr_repriced_delta": -0.025541139945452818,
+=======
+      "irr_worst_repriced": 0.14337252119652866,
+      "irr_best_repriced": 0.45488435118754245,
+      "irr_repriced_delta": 0.0,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "ev_nopat": 40.11571428571428,
       "quality_multiple_a": 1.4327040816326528,
       "quality_multiple_b": 0.8868487692338762,
       "quality_adjusted_multiple": 1.1597764254332645,
+<<<<<<< HEAD
       "edge_to_fair": 1.7565033483890646,
       "quality_zone": "hunting_ground",
       "kelly_fraction": 0.10414743425712472,
@@ -7355,6 +8932,24 @@
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.00709863844168162,
       "fcf_margin_slope_5y": 1.1194567257012262,
+=======
+      "edge_to_fair": 1.9588729776632063,
+      "quality_zone": "hunting_ground",
+      "kelly_fraction": 0.10204173771311044,
+      "suggested_weight_pct": 0.09693965082745493,
+      "asymmetry_v2": 30.0,
+      "pure_upside": true,
+      "ev_fcf_5y_base": 10.81439160456052,
+      "score_v2": 84.79757287388858,
+      "score_v2_rank": 1,
+      "ev_fcf_zscore_self_5y": null,
+      "ev_fcf_mean_5y": null,
+      "ev_fcf_std_5y": null,
+      "ev_sales_zscore_self_5y": null,
+      "moat_erosion_flag": false,
+      "roic_slope_5y": null,
+      "fcf_margin_slope_5y": null,
+>>>>>>> 46d26c8 (WIP antes de sync)
       "earnings_last_date": "2026-05-12",
       "earnings_next_date": "2026-08-07",
       "earnings_next_estimated": true,
