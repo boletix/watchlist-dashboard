@@ -1,25 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-07-18T07:29:55+00:00",
-    "n_alerts": 1,
+    "generated_at": "2026-07-18T08:05:28+00:00",
+    "n_alerts": 0,
     "by_severity": {
-      "high": 1,
+      "high": 0,
       "medium": 0,
       "low": 0
     }
   },
-  "alerts": [
-    {
-      "type": "best_irr_crossed_25",
-      "severity": "high",
-      "ticker": "ZS",
-      "name": "ZS",
-      "category": "Cyber",
-      "message": "ZS Best IRR crossed 25% (23.9% → 34.4%)",
-      "metrics": {
-        "from": 0.23909386335572558,
-        "to": 0.3441435362985037
-      }
-    }
-  ]
+  "alerts": []
 }
