@@ -1,10 +1,143 @@
 {
   "meta": {
-    "n_updates": 82,
+    "n_updates": 101,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "MSFT",
+      "date": "2026-07-30",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q4 FY26 press release (29/07/2026) - microsoft.com/investor",
+      "summary": "Q4 FY26: ingresos $90,0B (+18%, bate $87,7B e.), BPA aj. $4,74 (bate $4,24e). Azure +43% (Intelligent Cloud $39,3B, +32%). FY26 completo: ingresos $331,8B (+18%), BN $133,7B (+31%); Azure supera $100B (+41%) por primera vez."
+    },
+    {
+      "ticker": "META",
+      "date": "2026-07-30",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q2 2026 results (29/07/2026) - investor.atmeta.com",
+      "summary": "Q2: ingresos $60,8B (+28%, bate estimacion) por impresiones +14% y precio/anuncio +12%; pero BPA $6,18 vs $7,22e (-13% i.a.) por gastos +55% a $42,0B (capex IA). FCF se desploma a $784M. Accion -9,6% tras publicar. Guia Q3 hasta $64B."
+    },
+    {
+      "ticker": "FICO",
+      "date": "2026-07-30",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q3 FY26 results (29/07/2026) - SEC 8-K",
+      "summary": "Q3 FY26: ingresos $674M (+26% i.a.), BPA GAAP $10,45 (BN $237,2M) vs $7,40 ano anterior; BPA aj. $12,18 bate $12,02e (+42%). Sube guia FY26."
+    },
+    {
+      "ticker": "SU",
+      "date": "2026-07-30",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Resultats S1 2026 (30/07/2026) - se.com",
+      "summary": "S1 record: ingresos EUR21,23B (+9,8% reportado, +14% organico); EBITA aj. EUR4,09B (+16,6%/+22,1% organico), margen 19,3% (+1,2pt). Sube guia FY26: EBITA organico +14-19% (antes +10-15%), ventas organicas +10-13%. Impulsado por demanda de centros de datos (Norteamerica, China)."
+    },
+    {
+      "ticker": "PRY",
+      "date": "2026-07-30",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Risultati H1 2026 (30/07/2026) - prysmian.com",
+      "summary": "S1: ingresos EUR11,24B (+7,2% organico); EBITDA EUR1,33B (+17,6%); BN EUR569M (+34,2% desde EUR424M). Sube guia FY26: EBITDA EUR2,8-2,9B (antes EUR2,63-2,78B), caja generada EUR1,65-1,75B (antes EUR1,3-1,4B). Digital Solutions +18%, Power Grid +13%."
+    },
+    {
+      "ticker": "CHKP",
+      "date": "2026-07-30",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q2 2026 financial results (30/07/2026) - checkpoint.com",
+      "summary": "Q2: ingresos $673,6M (+1% i.a., miss de $689,9Me); BPA no-GAAP $2,55 bate $2,50e (+8%); BPA GAAP $1,87 (+2%). Suscripciones de seguridad $332,6M (+12%). Accion cayo pese al beat de BPA por el miss de ingresos."
+    },
+    {
+      "ticker": "TGYM",
+      "date": "2026-07-30",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Risultati H1 2026 (30/07/2026) - corporate.technogym.com",
+      "summary": "S1: ingresos EUR493M (+7,4%, +9% a tipos de cambio constantes); EBITDA aj. EUR85,7M (+1%); BN aj. EUR43,8M (estable). Posicion financiera neta positiva +EUR89M. CEO: 2026 ano de transicion hacia 'Vision 2031' (nuevo Healthness Lab, nueva planta, inversion en IA)."
+    },
+    {
+      "ticker": "COR",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "H1 2026 results (29/07/2026) - amorim.com/investidores + prensa (Sapo/ECO)",
+      "summary": "OJO: ticker = Corticeira Amorim (Lisboa/cortica), NO Cencora -- logs de 24-jun/18-jul documentaron por error noticias de Cencora. H1 2026: ventas EUR445,8M (-5,8%; -4,6% ex-USD), BN EUR25,2M (-31,7%) por reestructuracion de suelos (ACS) y dolar debil. Q2 BN -51,9% a EUR9,8M; ACS mejora secuencial +5,3% (aeroespacial/sellado/deportes). Vigilar recuperacion de suelos."
+    },
+    {
+      "ticker": "VRLA",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Resultats S1 2026 (28/07/2026) - verallia.com/investisseurs",
+      "summary": "S1: ingresos EUR1.698,8M (-1,4%), BN EUR27M (EUR0,21/acc.) vs EUR68M en S1 2025 por cargos excepcionales de adaptacion industrial en Europa (-EUR43M neto); ex-excepcionales BN EUR70M (EUR0,59/acc.). Mantiene objetivos FY26. Capex EUR91M (-12%); nuevo horno hibrido en Saint-Romain en 2S26."
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q2 2026 press release (28/07/2026) - investors.veralto.com",
+      "summary": "Q2: ventas $1.474M (+7,6%), BN $241M (BPA $0,98), BPA aj. $1,11 bate estimacion ($1,00e); margen op. aj. 24,6%. FCF aj. $328M. Sube guia FY26: core sales +4,0-4,5%, BPA aj. $4,35-4,43 (incl. $0,05 por reembolsos arancelarios IEEPA)."
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q2 2026 results (22/07/2026) - abc.xyz / CNBC",
+      "summary": "Q2: ingresos $119,8B (+24%, bate $116,9B e.), Cloud +82% a $24,8B (vs +63% en Q1); BPA $9,11 vs $2,89e (incluye ganancias no operativas). Emite $49,6B en acciones (jun) + $20,3B en bonos para capex IA; dividendo $0,22/acc. Accion cayo por subida de capex."
+    },
+    {
+      "ticker": "GRMN",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q2 2026 press release (29/07/2026) - garmin.com/newsroom",
+      "summary": "Q2 record: ingresos $2,02B (+11,4%, bate $1,94B e.), BPA $2,81 vs $2,30e; margen bruto 62,4%, margen op. 30,4% (+30%). Fitness lidera (+25%, 37% ventas); Outdoor -2%. Sube guia FY26 a ~$8,05B ingresos y BPA ~$10."
+    },
+    {
+      "ticker": "SIKA",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "H1 2026 results (28/07/2026) - sika.com",
+      "summary": "H1: ventas CHF5,59B (+4,0% en moneda local, -1,5% reportado por FX -5,5%); BN CHF552,1M (-0,4%); EBITDA CHF1.063M (-0,7%), margen bruto 55,7% (+60pb). Sube guia FY26: ventas +3-6% LC, margen EBITDA 19,0-19,5%. Fast Forward: CHF80M ahorro 2026."
+    },
+    {
+      "ticker": "VID",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Resultados S1 2026 (23/07/2026) - vidrala.com / CNMV",
+      "summary": "S1: ventas EUR754M (+0,5%), BN EUR117,4M (+8,9%) impulsado por Sudamerica; EBITDA EUR225,5M (+4,4%, margen 29,9%, +110pb); BPA EUR3,36 (+9,9%). Deuda neta EUR252,3M (0,6x EBITDA). Guia FY: EBITDA >EUR450M, BPA +5%, caja ~EUR200M."
+    },
+    {
+      "ticker": "BFIT",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Half-Year Report 2026 (28/07/2026) - corporate.basic-fit.com",
+      "summary": "H1: ingresos EUR800M (+18%), EBITDA aj. (menos alquiler) EUR204M (+36%); BN +EUR23,6M vs -EUR7,9M en H1 2025. Clubes +35% a 2.192 (consolidacion Clever Fit), socios +34% a 6,1M. Sube guia FY26 EBITDA-menos-alquiler a EUR430-460M (antes EUR415-455M)."
+    },
+    {
+      "ticker": "OTLY",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BO; BP (est.)",
+      "source": "Q2 2026 financial results (22/07/2026) - investors.oatly.com",
+      "summary": "Q2: ingresos $240,1M (+15,2%; +12,7% cc, bate $220,1M e.), perdida aj. BPA -$0,99 (mejor que -$1,02e). Margen bruto 33,9% (+140pb); EBITDA aj. positivo +$0,4M (primer trimestre rentable a nivel aj.). Sube guia FY26 crecimiento cc a 8-10% (antes 3-5%)."
+    },
+    {
+      "ticker": "FICO",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BP (confirmado, sin cambios en BO)",
+      "source": "FICO confirma fecha de publicacion - biggo/marketbeat (jul-2026)",
+      "summary": "Confirma publicacion de Q3 FY26 hoy 29-jul tras cierre (antes estimado 28-jul); aun sin resultados publicados a la hora de este barrido. Consenso: ingresos $679,3M (+26,6%), BPA $12,02 (+40,3%)."
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BP (confirmado, sin cambios en BO)",
+      "source": "Kaspi.kz confirma fecha - globenewswire (14/07/2026)",
+      "summary": "Confirma publicacion de Q2/S1 2026 el 10-ago (antes estimado 27-jul); aun sin resultados."
+    },
+    {
+      "ticker": "SPOT",
+      "date": "2026-07-29",
+      "fields_changed": "BN; BP (confirmado, sin cambios en BO)",
+      "source": "Spotify confirma fecha - stocktitan (jul-2026)",
+      "summary": "Confirma publicacion de Q2 2026 el 4-ago antes de apertura (antes estimado 28-jul); aun sin resultados. Guia: ingresos ~EUR4,8B (+15%), MAU 778M, suscriptores 299M."
+    },
     {
       "ticker": "TSM",
       "date": "2026-07-18",
