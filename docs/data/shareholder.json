@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-24T10:32:14+00:00",
+    "generated_at": "2026-07-30T09:58:27+00:00",
     "n_tickers": 62,
     "n_with_data": 62
   },
@@ -14,9 +14,9 @@
     },
     "MSFT": {
       "buyback_yield_ttm": -2.6628504491861013e-06,
-      "dividend_yield": 0.97,
+      "dividend_yield": 0.93,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.9699973371495508,
+      "net_shareholder_return": 0.9299973371495509,
       "currency": "USD"
     },
     "ADYEN": {
@@ -28,9 +28,9 @@
     },
     "BN": {
       "buyback_yield_ttm": -0.48990633227456293,
-      "dividend_yield": 0.64,
+      "dividend_yield": 0.66,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.15009366772543709,
+      "net_shareholder_return": 0.1700936677254371,
       "currency": "USD"
     },
     "COST": {
@@ -49,9 +49,9 @@
     },
     "RAA": {
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0246,
+      "dividend_yield": 0.023700000000000002,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0246,
+      "net_shareholder_return": 0.023700000000000002,
       "currency": "EUR"
     },
     "ZS": {
@@ -62,10 +62,10 @@
       "currency": "USD"
     },
     "NTO": {
-      "buyback_yield_ttm": -8.32647269718767e-06,
-      "dividend_yield": 0.0317,
+      "buyback_yield_ttm": 0.009808457644113448,
+      "dividend_yield": 0.0274,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.03169167352730281,
+      "net_shareholder_return": 0.03720845764411345,
       "currency": "JPY"
     },
     "AMZN": {
@@ -77,30 +77,30 @@
     },
     "SU": {
       "buyback_yield_ttm": -0.00223041738728756,
-      "dividend_yield": 0.015,
+      "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01276958261271244,
+      "net_shareholder_return": -0.00223041738728756,
       "currency": "EUR"
     },
     "ITX": {
       "buyback_yield_ttm": -0.0005203037165384361,
-      "dividend_yield": 0.0118,
+      "dividend_yield": 0.0115,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.011279696283461564,
+      "net_shareholder_return": 0.010979696283461564,
       "currency": "EUR"
     },
     "LOTB": {
       "buyback_yield_ttm": 0.0005083289639197209,
-      "dividend_yield": 0.81,
+      "dividend_yield": 0.83,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.8105083289639198,
+      "net_shareholder_return": 0.8305083289639197,
       "currency": "EUR"
     },
     "HLMA": {
-      "buyback_yield_ttm": -0.0013615115727118314,
-      "dividend_yield": 0.63,
+      "buyback_yield_ttm": 6.194836208734506e-05,
+      "dividend_yield": 0.73,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6286384884272882,
+      "net_shareholder_return": 0.7300619483620874,
       "currency": "GBp"
     },
     "FICO": {
@@ -112,16 +112,16 @@
     },
     "LIFCO B": {
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.9,
+      "dividend_yield": 0.84,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.9,
+      "net_shareholder_return": 0.84,
       "currency": "SEK"
     },
     "EVD": {
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0286,
+      "dividend_yield": 0.0233,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0286,
+      "net_shareholder_return": 0.0233,
       "currency": "EUR"
     },
     "MNST": {
@@ -140,51 +140,51 @@
     },
     "DNP": {
       "buyback_yield_ttm": -0.017045990919422997,
-      "dividend_yield": 0.07200000000000001,
+      "dividend_yield": 0.071,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.054954009080577015,
+      "net_shareholder_return": 0.053954009080577,
       "currency": "USD"
     },
     "VLTO": {
       "buyback_yield_ttm": -0.004042037186742118,
-      "dividend_yield": 0.61,
+      "dividend_yield": 0.55,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6059579628132579,
+      "net_shareholder_return": 0.5459579628132579,
       "currency": "USD"
     },
     "LR": {
       "buyback_yield_ttm": 0.0018982809032665696,
-      "dividend_yield": 0.016200000000000003,
+      "dividend_yield": 0.0184,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.018098280903266574,
+      "net_shareholder_return": 0.020298280903266568,
       "currency": "EUR"
     },
     "JDG": {
       "buyback_yield_ttm": -0.0012898789067463316,
-      "dividend_yield": 0.0256,
+      "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02431012109325367,
+      "net_shareholder_return": -0.0012898789067463316,
       "currency": "GBp"
     },
     "STMN": {
       "buyback_yield_ttm": 2.634040570508854e-07,
-      "dividend_yield": 0.97,
+      "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.970000263404057,
+      "net_shareholder_return": 2.634040570508854e-07,
       "currency": "CHF"
     },
     "META": {
       "buyback_yield_ttm": 0.0019133389649935491,
-      "dividend_yield": 0.37,
+      "dividend_yield": 0.35,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.37191333896499357,
+      "net_shareholder_return": 0.35191333896499355,
       "currency": "USD"
     },
     "KKR": {
       "buyback_yield_ttm": -0.003624806772649062,
-      "dividend_yield": 0.8,
+      "dividend_yield": 0.73,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.796375193227351,
+      "net_shareholder_return": 0.7263751932273509,
       "currency": "USD"
     },
     "NET": {
@@ -203,65 +203,65 @@
     },
     "GOOG": {
       "buyback_yield_ttm": 0.010072885103595119,
-      "dividend_yield": 0.25,
+      "dividend_yield": 0.26,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.2600728851035951,
+      "net_shareholder_return": 0.2700728851035951,
       "currency": "USD"
     },
     "ABBNE": {
       "buyback_yield_ttm": 0.010907923578449916,
-      "dividend_yield": 0.0109,
+      "dividend_yield": 0.0121,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.021807923578449916,
+      "net_shareholder_return": 0.023007923578449916,
       "currency": "CHF"
     },
     "GRMN": {
       "buyback_yield_ttm": -0.0007897416713427686,
-      "dividend_yield": 0.0178,
+      "dividend_yield": 0.014199999999999999,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01701025832865723,
+      "net_shareholder_return": 0.013410258328657231,
       "currency": "USD"
     },
     "KRX": {
       "buyback_yield_ttm": 0.010253213976411582,
-      "dividend_yield": 0.68,
+      "dividend_yield": 0.72,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6902532139764116,
+      "net_shareholder_return": 0.7302532139764115,
       "currency": "EUR"
     },
     "KSPI": {
       "buyback_yield_ttm": -0.0011167654441912016,
-      "dividend_yield": 0.043,
+      "dividend_yield": 0.0412,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.04188323455580879,
+      "net_shareholder_return": 0.0400832345558088,
       "currency": "USD"
     },
     "CBAV": {
       "buyback_yield_ttm": -0.0015787270454156797,
-      "dividend_yield": 0.0279,
+      "dividend_yield": 0.0268,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02632127295458432,
+      "net_shareholder_return": 0.02522127295458432,
       "currency": "EUR"
     },
     "NVDA": {
       "buyback_yield_ttm": 0.007067859623319852,
-      "dividend_yield": 0.5,
+      "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.5070678596233199,
+      "net_shareholder_return": 0.007067859623319852,
       "currency": "USD"
     },
     "COR": {
       "buyback_yield_ttm": 0.005161970438603158,
-      "dividend_yield": 0.85,
+      "dividend_yield": 0.75,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.8551619704386031,
+      "net_shareholder_return": 0.7551619704386031,
       "currency": "USD"
     },
     "TSM": {
       "buyback_yield_ttm": 8.048553850928476e-06,
-      "dividend_yield": 0.87,
+      "dividend_yield": 0.0101,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.8700080485538509,
+      "net_shareholder_return": 0.010108048553850928,
       "currency": "USD"
     },
     "SPOT": {
@@ -273,30 +273,30 @@
     },
     "PRY": {
       "buyback_yield_ttm": 0.0003582043695307712,
-      "dividend_yield": 0.61,
+      "dividend_yield": 0.77,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6103582043695308,
+      "net_shareholder_return": 0.7703582043695308,
       "currency": "EUR"
     },
     "JFN": {
       "buyback_yield_ttm": -0.027769586990563862,
-      "dividend_yield": 0.0337,
+      "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.005930413009436138,
+      "net_shareholder_return": -0.027769586990563862,
       "currency": "CHF"
     },
     "CPR": {
       "buyback_yield_ttm": 0.003092840814239913,
-      "dividend_yield": 0.0184,
+      "dividend_yield": 0.017,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02149284081423991,
+      "net_shareholder_return": 0.020092840814239912,
       "currency": "EUR"
     },
     "SIKA": {
       "buyback_yield_ttm": 3.287117668061136e-05,
-      "dividend_yield": 0.023,
+      "dividend_yield": 0.0209,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02303287117668061,
+      "net_shareholder_return": 0.02093287117668061,
       "currency": "CHF"
     },
     "CHKP": {
@@ -308,23 +308,23 @@
     },
     "TGYM": {
       "buyback_yield_ttm": -0.0006509283172220123,
-      "dividend_yield": 0.024,
+      "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02334907168277799,
+      "net_shareholder_return": -0.0006509283172220123,
       "currency": "EUR"
     },
     "VID": {
       "buyback_yield_ttm": -0.04913845218741435,
-      "dividend_yield": 0.021099999999999997,
+      "dividend_yield": 0.0189,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.02803845218741435,
+      "net_shareholder_return": -0.030238452187414347,
       "currency": "EUR"
     },
     "TFPM": {
       "buyback_yield_ttm": -0.02643961170814384,
-      "dividend_yield": 0.78,
+      "dividend_yield": 0.8,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7535603882918562,
+      "net_shareholder_return": 0.7735603882918562,
       "currency": "CAD"
     },
     "NFLX": {
@@ -335,24 +335,24 @@
       "currency": "USD"
     },
     "NKE": {
-      "buyback_yield_ttm": 0.017964071856287425,
-      "dividend_yield": 0.0387,
+      "buyback_yield_ttm": -0.005080422086720867,
+      "dividend_yield": 0.0381,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.056664071856287426,
+      "net_shareholder_return": 0.033019577913279134,
       "currency": "USD"
     },
     "MIPS": {
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0106,
+      "dividend_yield": 0.57,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0106,
+      "net_shareholder_return": 0.57,
       "currency": "SEK"
     },
     "FERG": {
       "buyback_yield_ttm": 0.03583304576885921,
-      "dividend_yield": 0.0152,
+      "dividend_yield": 0.015300000000000001,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.05103304576885921,
+      "net_shareholder_return": 0.051133045768859214,
       "currency": "USD"
     },
     "S": {
@@ -371,16 +371,16 @@
     },
     "SGO": {
       "buyback_yield_ttm": 0.00839634075661331,
-      "dividend_yield": 0.0297,
+      "dividend_yield": 0.03,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.03809634075661331,
+      "net_shareholder_return": 0.03839634075661331,
       "currency": "EUR"
     },
     "TFF": {
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0302,
+      "dividend_yield": 0.0332,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0302,
+      "net_shareholder_return": 0.0332,
       "currency": "EUR"
     },
     "CELH": {
@@ -405,10 +405,10 @@
       "currency": "EUR"
     },
     "KIST": {
-      "buyback_yield_ttm": 0.0,
+      "buyback_yield_ttm": -0.0013064459325714988,
       "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0,
+      "net_shareholder_return": -0.0013064459325714988,
       "currency": "GBp"
     },
     "WOSG": {
@@ -434,9 +434,9 @@
     },
     "CSU": {
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.2,
+      "dividend_yield": 0.19,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.2,
+      "net_shareholder_return": 0.19,
       "currency": "CAD"
     }
   }
