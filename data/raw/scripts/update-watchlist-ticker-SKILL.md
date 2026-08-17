@@ -1,154 +1,84 @@
 ---
 name: update-watchlist-ticker
-description: "Debes actualizar el excel de watchlist_rating con las últimas noticias y resultados"
+description: Debes actualizar el excel de watchlist_rating con las últimas noticias y resultados
 ---
 
 # Watchlist Ratings Updater (Local) — con Log de Updates
 
 ## Contexto fijo (NO preguntar)
 - Archivo Excel (local):
-  C:\Users\roger\Downloads\watchlist-dashboard\watchlist-dashboard\data\raw\watchlist_ratings.xlsx
+  C:\Users\roger\Cosas Roger\repos\watchlist-dashboard\data\raw\watchlist_ratings.xlsx
 - Hoja a actualizar: "Watchlist Ratings"
 - Hoja de auditoría: "Updates Log" (si no existe, crearla)
-- Script de restauración col A:
-  C:\Users\roger\Downloads\watchlist-dashboard\watchlist-dashboard\data\raw\scripts\restore_column_a.py
 
----
+## Qué hace esta skill
+Cuando el usuario pida actualizar un ticker con nuevos datos (texto pegado de resultados/Q/earnings/presentación o nota tipo "Claude"), debes:
+1) Inspeccionar el Excel y localizar la fila del ticker.
+2) Extraer del texto los campos que correspondan con columnas existentes en "Watchlist Ratings".
+3) Actualizar SOLO celdas permitidas (respetando columnas protegidas y fórmulas).
+4) Registrar SIEMPRE el update en una fila nueva en "Updates Log" con:
+   - Ticker
+   - Fecha (YYYY-MM-DD)
+   - Campos cambiados (lista separada por "; ")
+   - Fuente (texto breve: ej. "Q1 2026 presentation", "Earnings call", URL…)
+   - Resumen (1–2 líneas)
 
-## Dos modos de uso
+## Restricciones OBLIGATORIAS (nunca romper esto)
+### Columnas que NO se modifican nunca
+- A a I (incluidas)
+- Además: R, S, AB, AC, AL, AM, AN, AO, AR, AW, AX, AY, BA, BB, BC, BE, BG, BH, BI, BJ, BK, BL, BM
 
-### Modo A — Ticker específico (el usuario pide un ticker concreto)
-El usuario escribe, por ejemplo: "Actualiza MSFT" o pega texto de resultados de NVDA.
-→ Saltar al bloque "Flujo de actualización" directamente para ese ticker.
+### Regla adicional anti-roturas
+- Aunque la columna sea editable, si la celda contiene una FÓRMULA, NO se modifica.
 
-### Modo B — Scan completo (el usuario no especifica ticker, o pide "escanear" / "ver qué hay que actualizar")
-→ Ejecutar primero el "Scan de pendientes" descrito a continuación, luego aplicar el flujo de actualización a cada empresa detectada.
+## Regla de negocio (OBLIGATORIA)
+- En Rating 3, "Capital Intensity (0–10)":
+  - Más alto = más asset-light (menos intensidad de capital)
+  - Más bajo = más intensivo en capital
 
----
-
-## Scan de pendientes (Modo B)
-
-### Lógica de detección
-Abrir el Excel y, para cada fila de la hoja "Watchlist Ratings" a partir de la fila 4:
-
-1. Leer **col BN** ("Última actualización") → fecha en que se actualizó por última vez el ticker.
-2. Leer **col BO** ("Últimos resultados") → fecha en que la empresa presentó sus últimos resultados.
-3. Leer **col B** ("Ticker") → identificador de la empresa.
-
-**Condición para marcar como PENDIENTE de actualización:**
-```
-BO es una fecha válida (no N/D, no vacío)
-  Y  BO <= hoy                          ← los resultados ya se han presentado
-  Y  (BN está vacío/N/D  O  BN < BO)   ← no hemos actualizado desde esos resultados
-```
-
-En otras palabras: si la empresa presentó resultados en una fecha que ya ha pasado, y nuestra última actualización es anterior a esa presentación (o no existe), el ticker está pendiente.
-
-### Salida del scan
-Antes de actualizar nada, mostrar al usuario una tabla resumen:
-
-| Ticker | Últimos resultados (BO) | Última actualización (BN) | Días sin actualizar |
-|--------|------------------------|--------------------------|---------------------|
-| MSFT   | 2026-01-28             | 2025-11-05               | 84                  |
-| …      | …                      | …                        | …                   |
-
-Y preguntar: **"¿Actualizo todos estos tickers o prefieres que empiece por alguno en concreto?"**
-
-Esperar confirmación antes de arrancar el flujo de actualización.
-
----
-
-## Flujo de actualización (para cada ticker)
+## Modo de trabajo (siempre)
+Siempre que el usuario pida una actualización, ejecuta estos pasos:
 
 ### A) Inspect (interno)
-- Abrir el Excel.
-- Confirmar hojas "Watchlist Ratings" y "Updates Log".
-- Detectar la fila de headers (fila con "Company Name" en col A).
-- Localizar la fila del ticker en col B.
+- Abre el Excel.
+- Confirma que existen las hojas "Watchlist Ratings" y (si existe) "Updates Log".
+- Detecta la fila de headers (busca "Company Name" en la hoja "Watchlist Ratings" y usa esa fila como encabezados).
+- Localiza la columna "Ticker" y encuentra la fila del ticker solicitado.
 
-### B) Buscar datos en la página de Investor Relations
-Ir a la página oficial de Investor Relations de la empresa:
+### B) Analyze (interno)
+Del texto de update, construye:
+- `extracted_fields`: mapa {NombreDeColumnaEnExcel: valor}
+- `source`: si el usuario no especifica fuente, usar "No especificada (texto pegado)"
+- `summary_1_2_lines`: 1–2 líneas con lo esencial (qué cambió y qué vigilar)
 
-1. Buscar en la web: `"{TICKER}" OR "{nombre empresa}" investor relations results {AÑO}`
-2. Navegar directamente a la sección de resultados/earnings de su web IR.
-3. Localizar la presentación, press release o earnings release más reciente.
-4. Si la empresa es europea, buscar también en el idioma local (ej. "resultados trimestrales", "résultats", "Quartalsergebnisse", etc.).
-
-**Prioridad de fuentes (de mayor a menor fiabilidad):**
-1. Web IR oficial de la empresa (earnings release, press release, presentation PDF)
-2. SEC EDGAR / EDGAR filing (para empresas US)
-3. Bolsa local (BME, Euronext, LSE, etc.)
-4. Bloomberg, Reuters solo para confirmar cifras (no como fuente primaria)
-
-Extraer del documento encontrado los valores que correspondan a columnas editables del Excel.
-
-### C) Extraer campos
-Del texto/PDF encontrado, construir el mapa `extracted_fields`:
-- `{NombreDeColumnaEnExcel: valor}`
-- `source`: URL o referencia de la fuente
-- `summary_1_2_lines`: 1–2 líneas con lo más relevante
-
-Campos financieros prioritarios a extraer (si están disponibles):
-- Cash & Equivalents (col AP)
-- Total Debt (col AQ)
-- FCF LTM unlevered (col AS)
-- NOPAT LTM (col AT)
-- EBITDA LTM (col AU)
-- Revenue LTM (col AV)
-- Capital Employed (col AZ)
-- FCF @5y Min / Max (cols BD, BF) — solo si hay guidance nuevo
-- Últimos resultados (col BO) → fecha de la presentación encontrada (DD/MM/YYYY)
-- Próximos resultados (col BP) → si se anuncia la siguiente fecha (DD/MM/YYYY)
-- Última actualización (col BN) → fecha de hoy (DD/MM/YYYY)
-
-### D) Update — con Change Log
+### C) Update (interno) — con Change Log
 Para cada campo en `extracted_fields`:
-- Si la columna está protegida → `SKIP_PROTECTED`
-- Si la celda contiene una fórmula → `SKIP_FORMULA`
-- Si el header no existe en el Excel → `NOT_FOUND_HEADER`
-- Si se escribe el valor → `UPDATED`
+- Si la columna está protegida → SKIP_PROTECTED
+- Si la celda tiene fórmula → SKIP_FORMULA
+- Si el header no existe en el Excel → NOT_FOUND_HEADER
+- Si se escribe → UPDATED
 
-**Columnas que NUNCA se modifican:**
-- A a I (cols 1–9)
-- R, S, AB, AC, AL, AM, AN, AO, AR, AW, AX, AY, BA, BB, BC, BE, BG, BH, BI, BJ, BK, BL, BM
+Construye:
+- `changed_fields`: lista de headers que realmente quedaron como UPDATED
 
-**Regla de negocio — Capital Intensity (col AF, Rating 3):**
-Más alto = más asset-light · Más bajo = más intensivo en capital.
+### D) Audit Log (OBLIGATORIO SIEMPRE)
+- Si NO existe la hoja "Updates Log": crearla y poner headers en fila 1:
+  Ticker | Fecha | Campos cambiados | Fuente | Resumen
+- Añadir una nueva fila al final con:
+  - Ticker: el ticker
+  - Fecha: hoy (YYYY-MM-DD)
+  - Campos cambiados: "; ".join(changed_fields) (si vacío, escribir "Sin cambios aplicables (todo protegido o fórmulas)")
+  - Fuente: source
+  - Resumen: summary_1_2_lines
 
 ### E) Guardado seguro
-1. Crear backup ANTES de modificar:
-   `watchlist_ratings.backup_YYYYMMDD_HHMM.xlsx` (misma carpeta)
-2. Guardar el Excel actualizado en la ruta original.
-
-### F) Restaurar Columna A (OBLIGATORIO tras cada guardado)
-```bash
-python "C:\Users\roger\Downloads\watchlist-dashboard\watchlist-dashboard\data\raw\scripts\restore_column_a.py"
-```
-- Copia A4:última_fila desde el backup más reciente al Excel principal.
-- Si devuelve `"status": "error"`, informar al usuario inmediatamente.
-
-### G) Audit Log (OBLIGATORIO)
-En la hoja "Updates Log" (crearla si no existe con headers: Ticker | Fecha | Campos cambiados | Fuente | Resumen):
-- **Ticker**: el ticker
-- **Fecha**: hoy (YYYY-MM-DD)
-- **Campos cambiados**: `"; ".join(changed_fields)` (o "Sin cambios aplicables" si todo protegido/fórmulas)
-- **Fuente**: URL o referencia
-- **Resumen**: `summary_1_2_lines`
-
----
+- Antes de sobrescribir, crea un backup del Excel con timestamp (misma carpeta, nombre tipo):
+  watchlist_ratings.backup_YYYYMMDD_HHMM.xlsx
+- Guarda el Excel actualizado en la ruta original.
 
 ## Salida obligatoria al usuario (siempre)
-
-Para cada ticker procesado:
-1. Resumen de 1–2 líneas (qué cambió y qué vigilar)
-2. Change log (UPDATED / SKIP_PROTECTED / SKIP_FORMULA / NOT_FOUND_HEADER)
-3. Confirmación de backup creado
-4. Resultado JSON del script `restore_column_a.py`
-5. Fila de auditoría añadida
-
-Si se procesaron varios tickers (Modo B), mostrar también la tabla resumen final:
-
-| Ticker | Estado | Campos actualizados | Fuente |
-|--------|--------|---------------------|--------|
-| MSFT   | ✅     | Revenue, FCF, EBITDA | microsoft.com/ir |
-| GOOG   | ⚠️ Sin datos nuevos | — | — |
+Devuelve SIEMPRE:
+1) Resumen (1–2 líneas)
+2) Change log (UPDATED / SKIP_PROTECTED / SKIP_FORMULA / NOT_FOUND_HEADER)
+3) Fila de auditoría creada (Ticker, Fecha, Campos cambiados, Fuente, Resumen)
+4) Confirmación de backup creado + guardado
