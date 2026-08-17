@@ -1,10 +1,66 @@
 {
   "meta": {
-    "n_updates": 101,
+    "n_updates": 109,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "UBER",
+      "date": "2026-08-17",
+      "fields_changed": "ALTA fila 66 (A-I; J-AK; AP-AV; AZ; BD/BF; BH/BI; BN-BP)",
+      "source": "UBER deep dive + modelo (12/08/2026)",
+      "summary": "Alta tras primer deep dive: de quema de caja a maquina de FCF ($10,1bn TTM) con duopolio Mobility US 76/24; conviccion 4/5, asimetria ~5:1, riesgo terminal medio (Waymo, deuda neta x3 para buybacks); sizing sugerido ~3%. FVE 5y $57-$312 (FVE min/max cuadran con bear/bull del modelo). Sub-scores propuestos por el Analista (Glassdoor pendiente de scuttlebutt)."
+    },
+    {
+      "ticker": "VEEV",
+      "date": "2026-08-17",
+      "fields_changed": "AP; AQ; AS; AV; BD; BF; BO; BP; BN",
+      "source": "VEEVA deep dive + modelo (16/08/2026)",
+      "summary": "Deep dive competencia/unit economics: caja neta 7.213M (AP 7313/AQ 100), FCF TTM 1.640M (inflado por estacionalidad Q1; ancla limpia ~1.386M), revenue TTM 3.319M; BD/BF recalibrados a escenarios bear 'Erosion CRM'/bull 'Compounder Regulado' (1497/3288). Q2 FY27 el 26/08: vigilar top-20 CRM (10/20) y Veeva AI."
+    },
+    {
+      "ticker": "ADYEN",
+      "date": "2026-08-17",
+      "fields_changed": "N; Y; AP; AQ; AS; AU; AV; BD; BF; BO; BP; BN",
+      "source": "Adyen Scenarios Dashboard post-H1 (13/08/2026)",
+      "summary": "H1-26: ingresos netos 1.302,9M EUR +19% (+21% cc), EBITDA 641,5M (49%), guia FY26 subida a 21-23% cc. Correccion clave: caja neta REAL ~3,0B EUR ex-fondos de comercios (antes AP=9000 sobreestimaba; EV real 29,1B). BD/BF = P10-P90 del FCF 2031 del MC 5 escenarios. CFO interino desde 1-sep (Y 12 a 11); concentracion top-300 mejora (N a -0.5)."
+    },
+    {
+      "ticker": "BN",
+      "date": "2026-08-17",
+      "fields_changed": "Y; AH; AQ; AS; BD; BF; BO; BN",
+      "source": "Tesis ecosistema Brookfield (05/08/2026) + Q2 BAM/BIP/BEP",
+      "summary": "Plan value MtM 70,46$/acc vs ~44$ (-37%); DE LTM 6.009M (2,54$/acc). AQ=17815 = deuda con recurso 14.271 + prefs 3.544 (solo 5,4% del balance con recurso); AS=6936 = DE unlevered. BD/BF sobre DE (worst matriz +10%/plan 2030 5,85$). Simplificacion en marcha: BN+BNT cierre 4T26, BIP/BEP votan 14-oct. Sucesion ejecutada (Y a 14), funding 87% sin recurso (AH a 2)."
+    },
+    {
+      "ticker": "CELH",
+      "date": "2026-08-17",
+      "fields_changed": "N; U; X; AA; AH; AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BN",
+      "source": "CELH Modelo Escenarios 2030 + analisis cualitativo adquisiciones (06-08/08/2026)",
+      "summary": "Q2-26: revenue LTM 3.047M, EBITDA aj. 719M; CELSIUS NA -13,2%, Alani neto plano 3 trimestres (peaje PepsiCo 18pts bruto-neto). Re-rating a la baja documentado: N -3 (PepsiCo 59,6% ingresos), X 5, AA -18 (canibalizacion), U 10, AH 1 (prestamo 900M + prefs PepsiCo 1.760M 5% no en AQ). BD/BF = FCF 2030 S1/S5 (427/1467). VE modelo 40,1-40,6$/acc."
+    },
+    {
+      "ticker": "MNST",
+      "date": "2026-08-17",
+      "fields_changed": "V; AP; AQ; AT; AU; AV; AZ; BO; BN",
+      "source": "MNST Analisis Financiero y Cuotas (8-K 06/08/2026)",
+      "summary": "Q2-26: ventas LTM 9.219M (+20,2% en Q2, volumen +22,3%), margen bruto 55,9%, caja neta 4.201M sin deuda; internacional 45,8% con cuota record en Europa. V 10 a 11 (reaceleracion por volumen). OJO: SPLIT 2:1 efectivo 11-ago — G y H del maestro siguen pre-split (90,36/979,5): hay que pasar H a ~1.959M cuando se refresque precio."
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-08-17",
+      "fields_changed": "AG; AS; AT; AU; AV; AZ; BD; BF; BO; BN",
+      "source": "Kaspi modelo + README (14/08/2026; resultados 2T el 10/08)",
+      "summary": "2T-26: ingresos UDM 4,45bn KZT (consolida Hepsiburada 1P: el salto de revenue y compresion de margen es mix contable), BN plano 5 trimestres (1,07bn KZT) por coste financiacion 14,5%, impuesto bancario y Turquia (VAN esperado -511M USD; AG 12 a 11). AS=FCF distribuible FY25 (940bn), BD/BF = modas escenarios compresion/compounder (785bn/2.735bn KZT). Vigilar NPL 7,0% y take rate de Pagos."
+    },
+    {
+      "ticker": "OTLY",
+      "date": "2026-08-17",
+      "fields_changed": "AP; AQ; BN",
+      "source": "Sintesis tesis Oatly + Q2 (22/07/2026)",
+      "summary": "Balance actualizado al Q2: caja 44,6M vs deuda 517,8M (convertibles PIK 9,25% acretando hacia ~844M en 2028 + Nordic Bonds), patrimonio neto NEGATIVO. Operativo valida (+15,2%, guia FY26 +8-10% cc) pero muro 2028 sin avances: hueco 550-700M. Doc sugiere recortar/cerrar posicion-opcion y no perseguir."
+    },
     {
       "ticker": "MSFT",
       "date": "2026-07-30",

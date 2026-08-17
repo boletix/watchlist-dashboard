@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T08:08:23+00:00",
-    "n_tickers": 62,
-    "n_with_data": 62
+    "generated_at": "2026-08-17T17:04:27+00:00",
+    "n_tickers": 63,
+    "n_with_data": 63
   },
   "companies": {
     "VEEV": {
@@ -438,6 +438,13 @@
       "sbc_dilution_pct": null,
       "net_shareholder_return": 0.18,
       "currency": "CAD"
+    },
+    "UBER": {
+      "buyback_yield_ttm": 0.018998526058218567,
+      "dividend_yield": null,
+      "sbc_dilution_pct": null,
+      "net_shareholder_return": 0.018998526058218567,
+      "currency": "USD"
     }
   }
 }
