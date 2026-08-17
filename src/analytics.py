@@ -15,6 +15,8 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
+from src import fx
+
 log = logging.getLogger(__name__)
 
 COMPOSITE_HIGH_QUALITY = 7.5
@@ -183,7 +185,46 @@ def _safe_float(x):
             return None
 
 
-def _reprice_valuation(row):
+def quote_currency(row):
+    """
+    Moneda en la que esta expresado `price`.
+
+    Prioridad: `price_currency` (lo que devuelve yfinance junto al precio, que
+    es la fuente autorizada) y, si no esta, la columna "Currency" del Excel.
+    No son intercambiables: NTO tiene Currency=EUR en el Excel pero cotiza en
+    Tokio (7974.T) y el precio llega en JPY.
+    """
+    for key in ("price_currency", "currency"):
+        val = row.get(key)
+        if val is not None and not pd.isna(val) and str(val).strip():
+            return str(val).strip()
+    return None
+
+
+def _fx_factor(row, fx_map=None):
+    """
+    Multiplicador que lleva importes en la moneda de reporte (FCF, caja, deuda)
+    a la moneda de cotizacion del precio.
+
+    Devuelve None cuando las monedas difieren y no hay tipo de cambio: en ese
+    caso el llamante propaga NaN. Nunca cae de vuelta a 1.0 en silencio, que es
+    exactamente lo que produjo el FVE de 37.394 $ de KSPI.
+    """
+    report = row.get("fx_reporting")
+    quote = quote_currency(row)
+    if report is None or (not isinstance(report, str) and pd.isna(report)):
+        return 1.0                      # sin dato de reporte: se asume misma moneda
+    report = str(report).strip()
+    if not report or quote is None:
+        return 1.0
+    if report == quote:
+        return 1.0
+    if fx_map is not None and (report, quote) in fx_map:
+        return fx_map[(report, quote)]
+    return fx.conversion_factor(report, quote)
+
+
+def _reprice_valuation(row, fx_map=None):
     out = {"fve_min_repriced": np.nan, "fve_max_repriced": np.nan,
            "irr_worst_repriced": np.nan, "irr_best_repriced": np.nan}
     _v = _safe_float
@@ -195,6 +236,19 @@ def _reprice_valuation(row):
         return out
     if price <= 0 or shares <= 0:
         return out
+    # Caja, deuda y FCF vienen en la moneda de reporte; el precio, en la de
+    # cotizacion. Sin esta conversion el cociente fve/price no significa nada.
+    factor = _fx_factor(row, fx_map)
+    if factor is None:
+        log.warning("%s: sin tipo de cambio %s->%s, TIR repriced = NaN",
+                    row.get("ticker"), row.get("fx_reporting"), quote_currency(row))
+        return out
+    cash *= factor
+    debt *= factor
+    if fcf_min is not None:
+        fcf_min *= factor
+    if fcf_max is not None:
+        fcf_max *= factor
     if fcf_min is not None and em_min is not None:
         fve_min = (fcf_min * em_min + cash - debt) / shares
         out["fve_min_repriced"] = float(fve_min)
@@ -435,8 +489,11 @@ def _pure_upside(row):
     return bool(float(worst) > 0)
 
 
-def _ev_today(row):
-    """EV recalculado con precio live: price*shares + debt - cash."""
+def _ev_today(row, fx_map=None):
+    """
+    EV recalculado con precio live: price*shares + debt - cash, todo en la
+    moneda de cotizacion (price*shares ya lo esta; deuda y caja se convierten).
+    """
     price = _safe_float(row.get("price"))
     shares = _safe_float(row.get("shares_out_m"))
     cash = _safe_float(row.get("cash"))
@@ -444,19 +501,27 @@ def _ev_today(row):
     if None in (price, shares, cash, debt):
         # fallback al EV cached del Excel
         return _safe_float(row.get("ev"))
-    return price * shares + debt - cash
+    factor = _fx_factor(row, fx_map)
+    if factor is None:
+        return np.nan
+    return price * shares + debt * factor - cash * factor
 
 
-def _ev_fcf_5y_base(row):
+def _ev_fcf_5y_base(row, fx_map=None):
     """EV hoy / FCF proyectado a 5y (geom mean del cono bear/bull del Excel)."""
-    ev = _ev_today(row)
+    ev = _ev_today(row, fx_map)
     fcf_min = _safe_float(row.get("fcf_5y_min"))
     fcf_max = _safe_float(row.get("fcf_5y_max"))
-    if ev is None or fcf_min is None or fcf_max is None:
+    if ev is None or pd.isna(ev) or fcf_min is None or fcf_max is None:
         return np.nan
     if fcf_min <= 0 or fcf_max <= 0:
         return np.nan
-    fcf_5y_base = (fcf_min * fcf_max) ** 0.5
+    factor = _fx_factor(row, fx_map)
+    if factor is None:
+        return np.nan
+    # El FCF va en moneda de reporte y el EV en moneda de cotizacion: sin
+    # convertir, el multiplo mezcla dos unidades distintas.
+    fcf_5y_base = ((fcf_min * factor) * (fcf_max * factor)) ** 0.5
     if fcf_5y_base <= 0:
         return np.nan
     return float(ev / fcf_5y_base)
@@ -489,8 +554,66 @@ def _score_v2(row):
     return float(score * 100.0)
 
 
-def enrich(df):
+def build_fx_map(df, fetcher=None):
+    """
+    Resuelve una sola vez todos los pares (moneda de reporte, moneda de
+    cotizacion) presentes en el DataFrame. Las filas donde ambas coinciden no
+    generan ninguna llamada de red.
+    """
+    if "fx_reporting" not in df.columns:
+        return {}
+    pairs = []
+    for _, row in df.iterrows():
+        rep = row.get("fx_reporting")
+        if rep is None or pd.isna(rep):
+            continue
+        rep = str(rep).strip()
+        quo = quote_currency(row)
+        if not rep or quo is None or rep == quo:
+            continue
+        pairs.append((rep, quo))
+    if not pairs:
+        return {}
+    log.info("Divisas a convertir: %s", sorted(set(pairs)))
+    return fx.build_factor_map(pairs, fetcher=fetcher)
+
+
+def currency_mismatches(df, fx_map=None):
+    """
+    Filas donde la moneda de reporte y la de cotizacion difieren. Se publica en
+    el JSON para que el panel avise en vez de mostrar el numero a secas, y para
+    detectar el dia que una empresa nueva entre con esta condicion.
+    """
+    rows = []
+    if "fx_reporting" not in df.columns:
+        return rows
+    has_irr = "irr_best_repriced" in df.columns
+    for _, row in df.iterrows():
+        rep = row.get("fx_reporting")
+        if rep is None or pd.isna(rep):
+            continue
+        rep = str(rep).strip()
+        quo = quote_currency(row)
+        if not rep or quo is None or rep == quo:
+            continue
+        excel_ccy = row.get("currency")
+        factor = fx_map.get((rep, quo)) if fx_map else None
+        rows.append({
+            "ticker": row.get("ticker"),
+            "reporting": rep,
+            "quote": quo,
+            "excel_currency": (None if excel_ccy is None or pd.isna(excel_ccy)
+                               else str(excel_ccy).strip()),
+            "factor": None if factor is None else float(factor),
+            "resolved": bool(pd.notna(row.get("irr_best_repriced"))) if has_irr else None,
+        })
+    return rows
+
+
+def enrich(df, fx_map=None):
     out = df.copy()
+    if fx_map is None:
+        fx_map = build_fx_map(out)
     out["irr_spread"] = out["irr_best"] - out["irr_worst"]
     out["irr_asymmetry_ratio"] = out.apply(
         lambda r: _irr_asymmetry_ratio(r["irr_worst"], r["irr_best"]), axis=1)
@@ -514,7 +637,7 @@ def enrich(df):
     out["kill_flag"] = out.apply(
         lambda r: _kill_flag(r, r.get("survival_score")), axis=1)
     out["rating_dispersion"] = out.apply(_rating_dispersion, axis=1)
-    reprice_records = [_reprice_valuation(r) for _, r in out.iterrows()]
+    reprice_records = [_reprice_valuation(r, fx_map) for _, r in out.iterrows()]
     for col in ["fve_min_repriced", "fve_max_repriced",
                 "irr_worst_repriced", "irr_best_repriced"]:
         out[col] = [rec[col] for rec in reprice_records]
@@ -530,7 +653,7 @@ def enrich(df):
     # Score v2 (aditivo) + asimetria normalizada + EV/FCF 5y proyectado
     out["asymmetry_v2"] = out.apply(_asymmetry_v2, axis=1)
     out["pure_upside"] = out.apply(_pure_upside, axis=1)
-    out["ev_fcf_5y_base"] = out.apply(_ev_fcf_5y_base, axis=1)
+    out["ev_fcf_5y_base"] = out.apply(lambda r: _ev_fcf_5y_base(r, fx_map), axis=1)
     out["score_v2"] = out.apply(_score_v2, axis=1)
     out["score_v2_rank"] = out["score_v2"].rank(method="min", ascending=False).astype("Int64")
     return out

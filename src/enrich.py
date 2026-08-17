@@ -44,6 +44,48 @@ def _single_ticker_fetch(yf_symbol: str) -> tuple[str, float | None]:
     return (yf_symbol, None)
 
 
+def fetch_currencies(tickers: list) -> dict:
+    """
+    Moneda en la que yfinance devuelve el precio de cada ticker.
+
+    Es un dato distinto de la columna "Currency" del Excel y manda sobre ella:
+    los tickers de Londres devuelven "GBp" (peniques) mientras el Excel dice
+    "GBP", y NTO tiene "EUR" en el Excel pero cotiza en Tokio y llega en JPY.
+    Sin este dato la conversion de divisa de `src/fx.py` parte de una premisa
+    equivocada.
+    """
+    try:
+        import yfinance as yf
+    except ImportError:
+        log.warning("yfinance no instalado - sin monedas de cotizacion")
+        return {}
+
+    def _one(excel_t: str) -> tuple[str, str | None]:
+        symbol = _map_ticker(excel_t)
+        try:
+            fi = yf.Ticker(symbol).fast_info
+            cur = None
+            try:
+                cur = fi["currency"]
+            except (KeyError, TypeError):
+                cur = getattr(fi, "currency", None)
+            if cur:
+                return (excel_t, str(cur))
+        except Exception as e:  # noqa: BLE001
+            log.debug("currency fetch fail %s: %s", symbol, e)
+        return (excel_t, None)
+
+    out: dict = {}
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs = [ex.submit(_one, t) for t in tickers]
+        for fut in as_completed(futs):
+            t, cur = fut.result()
+            if cur:
+                out[t] = cur
+    log.info("Monedas de cotizacion resueltas: %d/%d", len(out), len(tickers))
+    return out
+
+
 def fetch_quotes(tickers: list, max_retries: int = 2) -> dict:
     """Descarga precio actual con batch primero, single-fallback si falla."""
     try:
@@ -101,14 +143,30 @@ def fetch_quotes(tickers: list, max_retries: int = 2) -> dict:
     return result
 
 
-def apply_quotes(df: pd.DataFrame, quotes: dict) -> pd.DataFrame:
-    """Aplica precios al DataFrame y recalcula market_cap_m."""
+def apply_quotes(df: pd.DataFrame, quotes: dict, currencies: dict | None = None) -> pd.DataFrame:
+    """
+    Aplica precios al DataFrame y recalcula market_cap_m.
+
+    Si se pasan `currencies` (de `fetch_currencies`), guarda la moneda real de
+    cotizacion en la columna `price_currency`. Esa columna es la que usa
+    `src/fx.py` para convertir FCF, caja y deuda; si falta, analytics cae a la
+    columna "Currency" del Excel, que no siempre coincide.
+    """
     out = df.copy()
     out["price_source"] = "stale"
+    if "price_currency" not in out.columns:
+        out["price_currency"] = None
     for idx, row in out.iterrows():
         quote = quotes.get(row["ticker"])
         if not quote or quote["price"] is None:
+            # Precio sin actualizar: se queda el del Excel, que esta en la
+            # moneda del Excel. Etiquetarlo con la moneda de yfinance seria
+            # mentir sobre el par y volveriamos a mezclar unidades.
             continue
+        if currencies:
+            cur = currencies.get(row["ticker"])
+            if cur:
+                out.at[idx, "price_currency"] = cur
         new_price = quote["price"]
         out.at[idx, "price"] = new_price
         out.at[idx, "price_source"] = quote["source"]

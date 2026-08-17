@@ -23,10 +23,11 @@ import numpy as np
 import pandas as pd
 
 from src.analytics import (
-    category_stats, compute_deltas, enrich as enrich_analytics,
+    build_fx_map, category_stats, compute_deltas, currency_mismatches,
+    enrich as enrich_analytics,
     headline_kpis, inject_history_derived,
 )
-from src.enrich import apply_quotes, fetch_quotes
+from src.enrich import apply_quotes, fetch_currencies, fetch_quotes
 from src.etl import load_watchlist, validate
 
 log = logging.getLogger(__name__)
@@ -113,7 +114,8 @@ def build(
     enrich_stats = {"yfinance": 0, "stale": len(df), "skipped": 0}
     if not skip_enrichment:
         quotes = fetch_quotes(df["ticker"].tolist())
-        df = apply_quotes(df, quotes)
+        currencies = fetch_currencies(df["ticker"].tolist())
+        df = apply_quotes(df, quotes, currencies)
         enrich_stats = {
             "yfinance": int((df["price_source"] == "yfinance").sum()),
             "stale":    int((df["price_source"] == "stale").sum()),
@@ -123,7 +125,13 @@ def build(
         df["price_source"] = "manual"
 
     # 3. Analytics v2.0 (legacy + nuevas metricas)
-    df = enrich_analytics(df)
+    #    El mapa de divisas se resuelve antes para poder reportarlo en meta.
+    fx_map = build_fx_map(df)
+    df = enrich_analytics(df, fx_map=fx_map)
+    fx_issues = currency_mismatches(df, fx_map)
+    unresolved_fx = [r["ticker"] for r in fx_issues if not r["resolved"]]
+    if unresolved_fx:
+        log.warning("Sin conversion de divisa (TIR repriced = NaN): %s", unresolved_fx)
 
     # 4. Deltas vs snapshot previo
     prev_df = load_previous_snapshot(snapshots_dir)
@@ -141,6 +149,8 @@ def build(
         "validation_issues": issues,
         "enrichment_stats": enrich_stats,
         "version": "2.0",
+        "currency_mismatches": fx_issues,
+        "currency_unresolved": unresolved_fx,
     }
 
     # 7. Earnings dates

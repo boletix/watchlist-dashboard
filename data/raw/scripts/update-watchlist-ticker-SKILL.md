@@ -36,6 +36,35 @@ Cuando el usuario pida actualizar un ticker con nuevos datos (texto pegado de re
   - Más alto = más asset-light (menos intensidad de capital)
   - Más bajo = más intensivo en capital
 
+## Regla de DIVISA (OBLIGATORIA — alta de empresa nueva o cambio de listing)
+
+Contexto: el 17/08/2026 se detectó que 11 de 63 empresas tenían las TIR "repriced" del dashboard sin sentido porque el pipeline dividía un valor por acción en la **moneda de reporte** entre un precio en la **moneda de cotización**. KSPI (reporta en tenge, cotiza en dólares) salía con una TIR de +588% y encabezaba el ranking de asimetría; HLMA, JDG, KIST y WOSG (cotizan en peniques, reportan en libras) salían con TIR del −57% al −69%. Ya está corregido en `src/fx.py`, pero la corrección **solo funciona si estas dos columnas del Excel son correctas**.
+
+Al dar de alta un ticker nuevo, o si una empresa cambia de mercado, es OBLIGATORIO:
+
+1. **Rellenar las dos columnas por separado y no darlas por iguales:**
+   - `Currency` → moneda en la que **cotiza** la acción (la del precio).
+   - `FX Reporting` → moneda en la que la empresa **publica sus cuentas** (la del FCF, la caja y la deuda de las columnas del Excel).
+
+2. **Comprobarlo contra yfinance, no de memoria.** El símbolo tiene que estar en `src/tickers.py`:
+   ```
+   python -c "import yfinance as yf; fi=yf.Ticker('SIMBOLO').fast_info; print(fi['currency'], fi['lastPrice'])"
+   ```
+   Casos que engañan y que ya han fallado una vez:
+   - Los tickers `.L` (Londres) devuelven **`GBp`** (peniques), no `GBP`. Se diferencian solo por la caja de la última letra.
+   - **ADR y listings secundarios**: KSPI cotiza en el Nasdaq en USD pero reporta en KZT. Que el precio esté en dólares no quiere decir que las cuentas lo estén.
+   - **El Excel puede estar desactualizado**: NTO tiene `Currency = EUR` pero el símbolo mapeado es `7974.T` y el precio llega en JPY. Manda siempre lo que devuelve yfinance; la columna del Excel es solo el respaldo para cuando no hay conexión.
+
+3. **Verificar que el par se resuelve** antes de dar el alta por buena. Si `FX Reporting` ≠ `Currency`, el pipeline necesita un tipo de cambio:
+   ```
+   python -c "from src.fx import conversion_factor; print(conversion_factor('KZT','USD'))"
+   ```
+   Si devuelve `None`, el ticker entrará en el dashboard con las TIR repriced en NaN (a propósito: es preferible un hueco visible a un número falso). Anótalo en el resumen al usuario en vez de dejarlo pasar.
+
+4. **Verificación de cordura del resultado.** Tras cualquier alta, la TIR "mejor" repriced debería quedar en un rango creíble (aproximadamente −30% a +60%). Si sale por encima del 100% o por debajo del −50%, la causa más probable NO es una oportunidad excepcional sino un desajuste de divisa o de unidades. Compárala con las columnas `irr_best` / `irr_worst` que ya trae el Excel: si las dos parejas discrepan mucho, hay un problema de datos.
+
+5. **Nunca "arreglarlo"** metiendo el FCF ya convertido a mano en el Excel. El Excel guarda las cuentas en la moneda de reporte y la conversión la hace `src/fx.py` en cada build con el tipo de cambio del día. Convertir a mano congela un tipo de cambio viejo y rompe la trazabilidad.
+
 ## Modo de trabajo (siempre)
 Siempre que el usuario pida una actualización, ejecuta estos pasos:
 
@@ -82,3 +111,4 @@ Devuelve SIEMPRE:
 2) Change log (UPDATED / SKIP_PROTECTED / SKIP_FORMULA / NOT_FOUND_HEADER)
 3) Fila de auditoría creada (Ticker, Fecha, Campos cambiados, Fuente, Resumen)
 4) Confirmación de backup creado + guardado
+5) **Solo en altas nuevas**: `Currency` y `FX Reporting` con los que queda el ticker, si coinciden o no, y si el par de divisas se resuelve. Una línea basta: `KSPI — cotiza USD / reporta KZT — par KZT→USD resuelto (0,0019)`.
