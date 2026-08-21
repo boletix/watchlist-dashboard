@@ -19,6 +19,19 @@ import pandas as pd
 
 log = logging.getLogger(__name__)
 
+
+# Ponderación del rating compuesto. Hasta el 20-ago-2026 era media aritmética
+# simple (1/3 cada uno). Desde el 21-ago-2026:
+#   - R2 (calidad económica) pesa más: 100 puntos de granularidad, todo anclado
+#     en economía (márgenes, FCF, ROIC, moat, TAM, riesgos).
+#   - R3 (durabilidad y riesgo existencial) pesa igual que R2: el riesgo terminal
+#     es un divisor en el framework de sizing, no un sumando.
+#   - R1 (calidad estructural) baja a capa de matiz: 16 puntos, 4 de juicio blando.
+# Debe cuadrar con la fórmula de la columna AN del Excel.
+W_RATING_1 = 0.20
+W_RATING_2 = 0.40
+W_RATING_3 = 0.40
+
 # Mapa de nombres de columna Excel → snake_case estable.
 # Se matchea por substring en el header aplanado (insensible a mayúsculas/saltos).
 COLUMN_MAP: dict[str, str] = {
@@ -205,14 +218,20 @@ def validate(df: pd.DataFrame) -> list[str]:
                 col, oor["ticker"].tolist(),
             )
 
-    # 3. Integridad composite = media(R1, R2, R3), tolerancia 0.05
+    # 3. Integridad composite = media ponderada de R1, R2 y R3, tolerancia 0.05
     if all(c in df.columns for c in ["rating_1", "rating_2", "rating_3", "rating_composite"]):
-        expected = (df["rating_1"] + df["rating_2"] + df["rating_3"]) / 3
+        # Ponderacion desde 21-ago-2026: 20% R1 + 40% R2 + 40% R3 (antes media simple).
+        # Ver hoja "Framework Notes" del Excel y la formula de la columna AN.
+        expected = (
+            W_RATING_1 * df["rating_1"]
+            + W_RATING_2 * df["rating_2"]
+            + W_RATING_3 * df["rating_3"]
+        )
         delta = (df["rating_composite"] - expected).abs()
         bad = df[delta > 0.05]
         if len(bad):
             issues.append(
-                "Composite ≠ media(R1,R2,R3) en: "
+                "Composite ≠ media ponderada 20/40/40 de (R1,R2,R3) en: "
                 f"{bad[['ticker']].assign(delta=delta[bad.index].round(3)).to_dict('records')}"
             )
 

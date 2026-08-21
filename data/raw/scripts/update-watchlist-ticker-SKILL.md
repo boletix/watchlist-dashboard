@@ -7,7 +7,7 @@ description: Debes actualizar el excel de watchlist_rating con las últimas noti
 
 ## Contexto fijo (NO preguntar)
 - Archivo Excel (local):
-  C:\Users\roger\Cosas Roger\repos\watchlist-dashboard\data\raw\watchlist_ratings.xlsx
+  C:\Users\roger\Cosas Roger\BOLSA E INVERSIÓN\repos\watchlist-dashboard\data\raw\watchlist_ratings.xlsx
 - Hoja a actualizar: "Watchlist Ratings"
 - Hoja de auditoría: "Updates Log" (si no existe, crearla)
 
