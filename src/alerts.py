@@ -356,7 +356,10 @@ def notify_email(alerts: list[dict]) -> bool:
     Solo envía si hay al menos 1 alerta high o medium.
     """
     host = os.environ.get("SMTP_HOST")
-    port = int(os.environ.get("SMTP_PORT", "587"))
+    # 25-ago-2026: GitHub Actions exporta "" cuando el secret no existe, y os.environ.get
+    # devuelve "" (no el default), asi que int("") reventaba y la notificacion no salia
+    # NUNCA - aunque alerts.json ya se habia escrito y el banner del dashboard si funcionaba.
+    port = int(os.environ.get("SMTP_PORT") or "587")
     user = os.environ.get("SMTP_USER")
     password = os.environ.get("SMTP_PASSWORD")
     to_addr = os.environ.get("EMAIL_TO") or user

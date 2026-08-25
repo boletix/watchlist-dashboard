@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 221,
+    "n_updates": 227,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -410,6 +410,48 @@
       "fields_changed": "Framework Notes fila 58",
       "source": "Deep dive 25-ago-2026",
       "summary": "Se anade LOTB (16) a la lista de filas con FCF normalizado: capex LTM 101,8 frente a un D&A de 37,7, con un compromiso publicado de al menos 500 M EUR de capacidad Biscoff a cinco anos. Con ella son trece."
+    },
+    {
+      "ticker": "LOTB",
+      "date": "46259",
+      "fields_changed": "AS; BD; BF",
+      "source": "Deep dive 2a version - se retira la normalizacion del FCF",
+      "summary": "Lotus Bakeries. RECTIFICA LA ENTRADA DE ESTA MANANA. Se retira el FCF normalizado: AS vuelve de 182,6 a 131,7 M EUR (el reportado) y el EV/FCF pasa de 59,2x a 82,2x. Motivo: la regla del libro se escribio para un PICO temporal de capex (caso Amazon/Microsoft), y en Lotus no hay pico sino REGIMEN - el capex supera el doble del D&A en cinco de los ultimos seis ejercicios (1,90x - 5,09x - 2,07x - 3,33x - 2,89x - 2,70x) y hay 500 M EUR mas comprometidos hasta 2030. El dato que lo cierra: en cinco ejercicios el FCF acumulado es 302,9 M EUR contra un beneficio neto acumulado de 648,2, o sea una CONVERSION DE CAJA DEL 47% sostenida. BD/BF rebasados sobre el FCF reportado: 185 (+7,0%/a) y 243 (+13,0%/a, el organico de Biscoff en 2025). Resultado: bajista -75% y alcista -44%. TAMBIEN SE RETIRA la recomendacion de subir los multiplos de 15x/25x a 17x/28x: era contar dos veces el mismo argumento, porque yo habia subido el FCF por normalizacion Y ademas pedia mas multiplo. A 13.100 EUR Lotus cotiza a 56 veces beneficio y 82 veces caja libre. El negocio sigue siendo de los mejores del libro; el precio no."
+    },
+    {
+      "ticker": "TFF",
+      "date": "46259",
+      "fields_changed": "BD; BF",
+      "source": "Deep dive 2a version - FCF de ciclo completo",
+      "summary": "TFF Group. RECTIFICA LA ENTRADA DE ESTA MANANA, que decia que TFF era la unica del grupo con asimetria positiva (+180%). Estaba construida sobre UN ano anomalo. El historico de cinco ejercicios: FCF de +18,0 / -29,2 / -55,7 / -17,5 / +59,1, o sea un ACUMULADO DE -25,3 M EUR en cinco anos. El unico ano positivo de verdad es el ultimo y es el del desalmacenamiento de madera. A traves del ciclo TFF no genera caja libre: el beneficio se reinvierte en roble secandose tres anos. BD/BF pasan a 12 y 42 (antes 59 y 104), que es lo que se puede defender sobre el ciclo completo y no sobre el ano de destocking. Resultado: bajista -100% (topado) y alcista -34%. SE RETIRA la recomendacion de subir el multiplo bajista de 6x a 8x: Roger tiene razon en que en un ciclico el multiplo es alto en el suelo y bajo en el pico, asi que lo que debe crecer es el FCF, no el multiplo. AVISO METODOLOGICO: para esta fila el EV/FCF da falsos positivos en el suelo y falsos negativos en la recuperacion. La metrica honesta es EV/EBITDA (14,6x hoy, unas 8x a mitad de ciclo)."
+    },
+    {
+      "ticker": "MIPS",
+      "date": "46259",
+      "fields_changed": "BD; BF",
+      "source": "Deep dive 2a version - pico de ciclo",
+      "summary": "Mips AB. El historico dice que hoy es MAXIMO HISTORICO de ingresos y que el ciclo es violento: 608 (2021) - 563 - 357 (2023, un -41% desde el pico) - 483 - 533 - 664 LTM. Y el margen EBIT del 46,7% de hoy tampoco es record: en 2021 fue del 52%. Rebasar el caso alcista al 18% anual desde este punto era anclar la valoracion en el mejor momento del ciclo, que es justo lo que el paso 4 del framework prohibe. BD pasa de 121 a 90 (el bajista repite la caida de 2023) y BF de 384 a 270 (+10,0%/a, el recorrido de volumen que da la propia guia de Safety). Resultado: bajista -85% y alcista -39%. SE RETIRA la recomendacion de subir el multiplo alcista de 22,5x a 25x, por la misma razon que en TFF: no se sube el multiplo de salida de un negocio que esta en pico de ciclo."
+    },
+    {
+      "ticker": "OTLY",
+      "date": "46259",
+      "fields_changed": "AE (R3 Risk of Disappearance)",
+      "source": "Revertido por indicacion de Roger",
+      "summary": "Oatly. R3 Risk of Disappearance vuelve de -12 a -10. Roger no ve tanto riesgo de desaparicion: la distribucion es buena y muchos consumidores perciben el producto como unico, y ademas la mejora financiera es real - estan reduciendo gastos y creciendo a la vez, con apalancamiento operativo. Se mantiene el resto de la fila como estaba, incluido BD=0 (en el escenario malo la accion vale cero) y BF=114. La asimetria a 15,57 $ es exigente; a 8 $ el planteamiento era razonable."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "BL4:BM71 (Worst IRR y Best IRR)",
+      "source": "Suelo de -99% en las TIR",
+      "summary": "Se anade suelo: =IF($BJn<=0,-0,99,MAX(-0,99,($BJn/Gn)^(1/5)-1)) y la equivalente en BM. Antes, cuando el FVE salia negativo la formula devolvia disparates (-188% anual en TFF, -216% en Oatly) que contaminaban cualquier media por categoria; y cuando el FVE era negativo con exponente fraccionario podia dar error. Una accion no puede perder mas del 100%. El pipeline de Python ya hacia esto (devuelve -0,99); ahora el Excel coincide. BL y BM son columnas protegidas: se tocan por indicacion expresa de Roger. AVISO: en la primera pasada la plantilla de BL se escribio con comillas dobles y PowerShell interpolo $BJ como variable vacia, dejando =IF(57<=0,...) en las 68 filas; detectado y corregido en el mismo turno con comillas simples."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "Framework Notes filas 58 y 59",
+      "source": "Condicion nueva para normalizar el FCF",
+      "summary": "Fila 58: la normalizacion solo vale si el capex elevado es TEMPORAL. Si lleva TRES O MAS EJERCICIOS SEGUIDOS por encima del doble del D&A, no es una fase de inversion sino como funciona el negocio, y se usa el FCF reportado. Sale LOTB y quedan doce filas normalizadas. PENDIENTE: pasar este test a las doce restantes, empezando por META, GOOG, MSFT y AMZN, que tambien llevan varios ejercicios de capex alto. Fila 59: advertencia nueva sobre los negocios cuyo FCF a traves del ciclo no existe porque el beneficio se reinvierte en circulante y no en activo fijo, con TFF como caso extremo del libro."
     },
     {
       "ticker": "MSFT",
