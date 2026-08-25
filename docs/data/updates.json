@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 211,
+    "n_updates": 221,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -340,6 +340,76 @@
       "fields_changed": "ninguno",
       "source": "Revision del realismo del caso bajista",
       "summary": "Somero no ha publicado el semestre: los resultados del 1S2026 son el 8-sep-2026, la fecha que ya tenia la hoja. AVISO PARA ENTONCES: los ingresos LTM de la hoja son 64,9 M$ y la actualizacion de trading de julio situa las expectativas de mercado para 2026 en 86,0 M$ de ingresos y 15,9 M$ de EBITDA ajustado; la cifra de la hoja parece corta. Su caso bajista asume el FCF creciendo un 6,5% anual para un ciclico puro de construccion no residencial en EE.UU., lo que tambien habra que endurecer."
+    },
+    {
+      "ticker": "NET",
+      "date": "46259",
+      "fields_changed": "T (R2 Financials)",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "Cloudflare. R2 Financials 8 -> 7. El 8 se puso el 21-ago justificandolo con un ROIC del 1,4% que no esta en las cuentas: en GAAP el margen operativo LTM es -7,8% y el ROIC -5,1%. Aun quitando los hasta 165 M$ de cargos de reestructuracion (125 en caja, 35 en SBC), el margen seria -2,6%. El SBC son 508 M$, el 20% de los ingresos, y ES el FCF. A favor: ingresos +36% en el Q2 y caja neta de 634 M$. A vigilar: el recorte del 20% de la plantilla del 7-may es una apuesta por un modelo operativo agentic-AI que toca soporte y no la fuerza comercial. VALORACION: con un EV/FCF de 285x, para que el caso alcista solo EMPATE con el precio de hoy hace falta un FCF a 5 anos de 3.253 M$, un 56,9% anual. Los multiplos de salida (20x/30x) ya son los mas altos del libro, los mismos que Microsoft y Costco. No es un problema de multiplo: el precio esta fuera del marco."
+    },
+    {
+      "ticker": "CRWD",
+      "date": "46259",
+      "fields_changed": "V (R2 Potential)",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "CrowdStrike. R2 Potential 15 -> 16. Hecho nuevo del Q1 FY2027 (3-jun-2026): ARR 5.510 M$ +24%, net new ARR record de 256 M$ +32%, ingresos +26% con CUATRO trimestres consecutivos de aceleracion y guia de net new ARR subida 520 pb. La recuperacion del apagon de 2024 esta completa y la consolidacion de plataforma funciona. FCF record de 468 M$ en el trimestre, 1.510 LTM con margen del 29,7%. En GAAP sigue en perdidas (-160 M$ operativo) por el SBC; R2 Financials se deja en 12 porque un margen FCF del 29,7% lo justifica. VALORACION: EV/FCF de 121x. Para que el alcista empate hace falta un FCF a 5 anos de 6.098 M$, un 32,2% anual, que es justo lo que crece hoy el net new ARR: a diferencia de Cloudflare NO es imposible, pero exige que se cumpla el escenario bueno entero solo para no perder dinero."
+    },
+    {
+      "ticker": "S",
+      "date": "46259",
+      "fields_changed": "T (R2 Financials); AH (R3 Financing Source); AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "SentinelOne. R2 Financials 6 -> 7 y R3 Financing Source 0 -> 1. Inflexion real en el Q1 FY2027 (28-may-2026): primer resultado operativo NON-GAAP positivo de su historia (+10,5 M$ frente a -3,9), guia de margen operativo FY27 del 10% (+650 pb), ARR 1.163 M$ +23% y net new ARR record de 44 M$ +55%. Ya no necesita levantar capital: 657 M$ de caja e inversiones a corto mas 156 a largo, sin deuda, y FCF LTM positivo de 62 M$. En contra: en GAAP el resultado operativo LTM es -301 M$, el 29% de los ingresos, y recortaron un 8% de plantilla. Financials corregidos: caja 1.100 -> 657 (el 1.100 incluia inversiones a largo), ingresos 815 -> 1.050, EBITDA 10 -> -259, NOPAT -20 -> -301. VALORACION: EV/FCF de 101x sobre una base de FCF de solo 62 M$. Para que el alcista empate hacen falta 241 M$ a cinco anos, un 31,2% anual, alcanzable con ingresos al 21% y el margen yendo del 6% al 15%. Es la unica de las tres de ciber cuyo caso alcista casi cuadra: -4%."
+    },
+    {
+      "ticker": "MIPS",
+      "date": "46259",
+      "fields_changed": "V (R2 Potential); AA (R2 Risks); AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "Mips AB. R2 Potential 10 -> 12 y R2 Risks -12 -> -13. El Q2 2026 (16-jul) cambia la tesis: ventas +72% (organico +42%), margen EBIT ajustado del 46,7% frente al 40,4% y sobre todo el segmento Safety +604% (organico +80%) por la compra de KOROYD y los cascos de ala completa. Deja de ser una historia de un solo ciclo (bici y nieve) y gana una segunda pata industrial: por eso sube Potential. Baja Risks porque aparece la primera grieta en el foso: pagan 3,25 M$ a BrainGuard para cerrar un pleito de infraccion de patente, con unos 35 MSEK de impacto en el Q3. En un negocio que ES una patente, perder un pleito no es un gasto, es informacion. Financials: aparece deuda de 331 MSEK (Koroyd) donde la hoja tenia cero, capital empleado 350 -> 1.185 y el ROIC baja del 40,9% al 16,1%. VALORACION: EV/FCF 58,7x. Para empatar hace falta un 21,1% anual durante cinco anos; el alcista se fija en el 18%, ya agresivo para un licenciador de IP expuesto al ciclo del casco."
+    },
+    {
+      "ticker": "LOTB",
+      "date": "46259",
+      "fields_changed": "AF (R3 Capital Intensity); AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "Lotus Bakeries. R3 Capital Intensity 7 -> 6. El 1S2026 (7-ago) confirma la calidad -ingresos 749,1 M EUR +14%, EBITDA subyacente 156,3 +20,9%, beneficio neto 98,1 +23,5%, Biscoff creciendo mas del 20% en VOLUMEN y no solo en precio, y la planta de Tailandia en la parte alta de las expectativas- y a la vez que el negocio se vuelve mas intensivo en capital: capex de 2026 y 2027 por encima de 250 M EUR combinados y compromiso de al menos 500 M EUR a cinco anos entre Mebane, Lembeke y Chonburi. El capex LTM (101,8) es 2,7 veces el D&A (37,7). FCF NORMALIZADO: mantenimiento = max(37,7 ; 50,9) = 50,9 y FCF = 233,5 - 50,9 = 182,6 en vez de los 131,7 reportados. Financials corregidos: caja 100 -> 274, deuda 200 -> 409 (deuda neta 115,4, o sea 0,3x EBITDA), capital empleado 800 -> 1.309. VALORACION: EV/FCF de 59,2x, la mas cara del libro entre las de calidad alta. El alcista se rebasa al 18% anual desde el negocio; para EMPATAR harian falta 433, un 18,8% anual. Lotus a este precio descuenta exactamente lo que esta entregando hoy, sin margen."
+    },
+    {
+      "ticker": "MNST",
+      "date": "46259",
+      "fields_changed": "V (R2 Potential); AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "Monster Beverage. R2 Potential 11 -> 12. Hecho nuevo del Q2 2026 (6-ago): ventas 2.540 M$ +20,2%, primera vez por encima de 2.500; margen bruto 55,9%; y sobre todo INTERNACIONAL 1.160 M$ +34,6%, ya el 46% del negocio frente al 41% de hace un ano. El motor de crecimiento ya no es Estados Unidos y eso alarga el recorrido. En contra: el segmento de alcohol cae un 15,2%, o sea que la diversificacion fuera de la bebida energetica no funciona. Split 2:1 el 11-ago. Financials corregidos: caja 4.201 -> 3.419, aparece deuda de 93, FCF 1.800 -> 2.100, capital empleado 5.164 -> 9.665 (ROIC 22,3%). VALORACION: el EV/FCF baja de 50,5x a 43,7x con el dato correcto. Alcista rebasado al 14% anual desde el negocio; para empatar harian falta 4.171, un 14,7% anual. Se queda a un pelo, y la razon es el multiplo de salida alcista de 22x contra un EV/FCF de 43,7x: es la unica fila del grupo donde lo que rompe el caso es el multiplo y no el crecimiento."
+    },
+    {
+      "ticker": "TFF",
+      "date": "46259",
+      "fields_changed": "AA (R2 Risks); AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "TFF Group. R2 Risks -13 -> -14. El ejercicio cerrado el 30-abr-2026 (publicado el 16-jul) es un desplome: ingresos 312,75 M EUR frente a 425,43, un -26,5% publicado y -23,4% a tipo constante; EBITDA 48,2 -40%; beneficio neto 9,20 -71,1%, el 2,9% de las ventas; dividendo recortado de 0,50 a 0,40 EUR. La amplitud del ciclo es mayor de lo que asumia el rating. LO IMPORTANTE, Y ES BUENA NOTICIA: la fila estaba MAL. La caja real son 97,2 M EUR y no 25 (subio 17,5 en el ano) y el FCF LTM es 59,1 y no 25, porque al frenar la produccion liberan el circulante inmovilizado en madera. La deuda neta baja a 285,2 desde 314. Con los datos correctos el EV/FCF pasa de 28,1x a 11,0x y el FVE minimo DEJA DE SER NEGATIVO: ese defecto era un error de datos, no de formula. VALORACION: bajista -81% y alcista +180%. El bajista es tan duro porque el multiplo de salida de 6x es solo el 55% del actual, punitivo para un ciclico en el suelo. Ver la recomendacion de subirlo a 8x."
+    },
+    {
+      "ticker": "OTLY",
+      "date": "46259",
+      "fields_changed": "AE (R3 Risk of Disappearance); AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "Oatly. R3 Risk of Disappearance -10 -> -12. La revision del 21-ago recogio bien la mejora operativa (Q2 del 22-jul: ingresos +15,2%, margen bruto 33,9%, adj EBITDA +0,4 M$ frente a -3,6, guia subida al 8-10%) pero no miro el balance en detalle. Al hacerlo: pasivo corriente de 574,9 M$ contra un activo total de 744, deuda de 549,1 contra 44,6 de caja, capital empleado de solo 169 y Altman Z de -1,9. El FCF LTM sigue negativo (-21,9) aunque mejorando desde -50. La operativa mejora de verdad; la estructura de capital es lo que puede matarla antes de que la mejora llegue. Financials corregidos: ingresos 830 -> 925, EBITDA -10 -> -13,6, NOPAT -100 -> -49,2, capital empleado 650 -> 169. VALORACION: el FVE minimo negativo NO es aqui un error de datos: con un FCF terminal cercano a cero y 504 M$ de deuda neta, en el caso bajista la accion vale cero. Lo que si es un defecto de formula es que la TIR lo exprese como -200% anual en vez de topar en -100%. BD se pone en 0 y BF se deja en 114."
+    },
+    {
+      "ticker": "BN",
+      "date": "46259",
+      "fields_changed": "AT (NOPAT); AU (EBITDA)",
+      "source": "Metricas non-GAAP por indicacion de Roger",
+      "summary": "Brookfield. Se sustituyen las cifras de relleno por las metricas que la compania reporta y que son las que tienen sentido en una gestora: NOPAT 5.500 -> 5.700, que es el DISTRIBUTABLE EARNINGS ANTES DE REALIZACIONES de los ultimos doce meses (2,39 $/accion), la parte recurrente y no grumosa; y EBITDA 15.000 -> 5.700, porque en Brookfield no existe analogo de EBITDA y la columna AX debe leerse como EV / DE antes de realizaciones (19,5x). El FCF sigue en 6.200, el DE TOTAL incluyendo realizaciones (2,61 $/accion). El Q2 2026 fue record: DE antes de realizaciones 1.400 M$ +15% y DE total 1.500. AVISO: no se tocan caja ni deuda, que son de perimetro CORPORATIVO a proposito (10.000 y 17.815); el consolidado GAAP trae 268.910 M$ de deuda de Global Atlantic y de los vehiculos y daria un EV sin sentido. AZ (90.000) sigue sin base publicada."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "Framework Notes fila 58",
+      "source": "Deep dive 25-ago-2026",
+      "summary": "Se anade LOTB (16) a la lista de filas con FCF normalizado: capex LTM 101,8 frente a un D&A de 37,7, con un compromiso publicado de al menos 500 M EUR de capacidad Biscoff a cinco anos. Con ella son trece."
     },
     {
       "ticker": "MSFT",
