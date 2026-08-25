@@ -94,8 +94,8 @@ def test_reprice_replicates_excel_veev():
     assert abs(out["fve_max_repriced"] - 35.0) < 1e-9
     # IRR_worst = (15/100)^(1/5) - 1 = -0.32
     assert abs(out["irr_worst_repriced"] - ((15/100)**(1/5) - 1)) < 1e-9
-    # IRR_best = (35/100)^(1/4) - 1
-    assert abs(out["irr_best_repriced"] - ((35/100)**(1/4) - 1)) < 1e-9
+    # IRR_best = (35/100)^(1/5) - 1  (ambos escenarios salen de FCF@5y: horizonte 5)
+    assert abs(out["irr_best_repriced"] - ((35/100)**(1/5) - 1)) < 1e-9
 
 def test_reprice_missing_returns_nan():
     out = _reprice_valuation({"price": None, "shares_out_m": 100, "cash": 0, "total_debt": 0})

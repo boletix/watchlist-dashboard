@@ -108,8 +108,10 @@ COLUMN_MAP: dict[str, str] = {
     "Best IRR": "irr_best",
     # Earnings calendar (añadido 2026-04-26)
     "Última\nActualización": "earnings_updated_at",
-    "Última Presentación": "earnings_last_date",
-    "Próxima Presentación": "earnings_next_date",
+    # 25-ago-2026: las cabeceras reales de la hoja son "Últimos/Próximos resultados";
+    # "Última/Próxima Presentación" no existe y el mapeo llevaba meses sin resolver.
+    "Últimos resultados": "earnings_last_date",
+    "Próximos resultados": "earnings_next_date",
 }
 
 

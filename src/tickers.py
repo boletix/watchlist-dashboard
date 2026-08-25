@@ -37,7 +37,9 @@ TICKER_YF_OVERRIDE: dict[str, str] = {
     # Nintendo: el Excel lleva la linea de Frankfurt (XFRA, EUR, ~46 EUR) y convierte
     # EUR->JPY con Framework Notes E4. Si aqui se apuntara a 7974.T el precio llegaria
     # en yenes (~13.000) contra unas cuentas ya convertidas: descuadre de 2 ordenes.
-    "NTO": "NTO.DE",     # Nintendo, linea de Frankfurt (EUR). Reporta en JPY.
+    # 25-ago-2026: NTO.DE dejo de devolver precio en yfinance ("possibly delisted");
+    # NTO.F es la misma linea de Frankfurt y si resuelve, en EUR. Reporta en JPY.
+    "NTO": "NTO.F",
     # Nórdicos
     "LIFCO B": "LIFCO-B.ST",
     "MIPS": "MIPS.ST",

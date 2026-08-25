@@ -260,7 +260,7 @@ def _reprice_valuation(row, fx_map=None):
         fve_max = (fcf_max * em_max + cash - debt) / shares
         out["fve_max_repriced"] = float(fve_max)
         if fve_max > 0:
-            out["irr_best_repriced"] = float((fve_max / price) ** (1 / 4) - 1)
+            out["irr_best_repriced"] = float((fve_max / price) ** (1 / 5) - 1)
         else:
             out["irr_best_repriced"] = -0.99
     return out
