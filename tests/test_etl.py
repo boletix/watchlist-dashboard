@@ -4,7 +4,13 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from src.etl import load_watchlist, validate
+from src.etl import (
+    W_RATING_1,
+    W_RATING_2,
+    W_RATING_3,
+    load_watchlist,
+    validate,
+)
 
 FIXTURE = Path("data/raw/watchlist_ratings.xlsx")
 
@@ -50,14 +56,29 @@ def test_ratings_in_range(df):
         )
 
 
-def test_composite_equals_mean_of_r1_r2_r3(df):
-    """Integridad: composite = media(R1, R2, R3) con tolerancia 0.05."""
-    expected = (df["rating_1"] + df["rating_2"] + df["rating_3"]) / 3
+def test_composite_equals_weighted_mean_of_r1_r2_r3(df):
+    """Integridad: composite = media ponderada de R1, R2 y R3, tolerancia 0.05.
+
+    Los pesos se importan de src.etl para que test y validación no puedan
+    divergir: hasta el 20-ago-2026 era media simple y el cambio a 20/40/40
+    se aplicó en etl.py sin tocar este test, lo que rompió el build.
+    """
+    expected = (
+        W_RATING_1 * df["rating_1"]
+        + W_RATING_2 * df["rating_2"]
+        + W_RATING_3 * df["rating_3"]
+    )
     delta = (df["rating_composite"] - expected).abs()
     bad = df[delta > 0.05]
     assert bad.empty, (
-        f"Composite ≠ media en: {bad[['ticker']].to_dict('records')}"
+        f"Composite ≠ media ponderada {W_RATING_1}/{W_RATING_2}/{W_RATING_3} "
+        f"en: {bad[['ticker']].to_dict('records')}"
     )
+
+
+def test_rating_weights_sum_to_one():
+    """Los pesos del compuesto tienen que sumar 1 o el rating se descalibra."""
+    assert abs(W_RATING_1 + W_RATING_2 + W_RATING_3 - 1.0) < 1e-9
 
 
 def test_percentages_are_decimals(df):
