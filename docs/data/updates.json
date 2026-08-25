@@ -1,10 +1,724 @@
 {
   "meta": {
-    "n_updates": 109,
+    "n_updates": 211,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "BO9; BO10; BO16; BO65 (formato de fecha)",
+      "source": "Auditoria de fechas de resultados",
+      "summary": "Bug de la sesion del 22-ago: al escribir \"10/09/2026\" via COM, Excel parsea en en-US y guarda mm/dd. DSGX quedo en 9-oct en vez de 10-sep, RAA en 8-jun en vez de 6-ago, LOTB en 8-jul en vez de 7-ago y CSU en 8-nov (fecha futura como \"ultimos resultados\") en vez de 11-ago. Las cuatro celdas se reescriben como TEXTO con formato \"@\", que es lo que usa el resto de la columna."
+    },
+    {
+      "ticker": "NTO",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; BD; BF; BO; BP",
+      "source": "Q1 FY2027 (6-ago-2026) + resultados FY2026 (8-may-2026)",
+      "summary": "LTM a jun-2026: ingresos 2.000.000 -> 2.258.501 MJPY (FY2026 2.313.000 menos Q1FY26 572.300 mas Q1FY27 517.800). EBITDA 550.000 -> 461.600 (EBIT LTM 445.785 + D&A 15.854). NOPAT 350.000 -> 325.400 (27% de tipo efectivo). Caja 1.950.000 -> 1.967.908 y deuda 20.000 -> 0. FCF 330.000 -> 262.620: es el FY2026 (289.789 de operaciones menos 27.169 de capex) porque Nintendo NO publica estado de flujos trimestral. Capex 27.169 < 2x D&A, asi que no se normaliza. FCF@5y rebasado sobre la nueva base manteniendo las CAGR implicitas (0% y 13%): min 330.000 -> 262.620, max 608.004 -> 483.861. Sin cambios de rating: el +150,5% de resultado operativo del Q1 lleva dentro unos 300 M$ de devolucion de aranceles (partida no recurrente) y el hardware de Switch 2 cayo un 34%; la guia del ejercicio se mantiene. AVISO: con estos numeros la asimetria de Nintendo queda mal, bajista -47% y alcista solo +16% total a 5 anos."
+    },
+    {
+      "ticker": "ABNB",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "Q2 2026 (6-ago-2026)",
+      "summary": "Ingresos LTM 11.100 -> 13.159 M$, FCF LTM 4.200 -> 4.800 (dato de la propia compania, margen FCF LTM del 37%). EBITDA 3.500 -> 2.874 por coherencia con el metodo del libro (EBIT + D&A = 2.738 + 136); el 3.500 anterior era EBITDA ajustado con el SBC sumado. NOPAT 1.500 -> 2.081. Caja mas inversiones a corto 11.000 -> 12.069 y deuda 2.000 -> 2.496. Capital empleado 4.000 -> 10.662 (activo 28.754 menos pasivo corriente 18.092). El trimestre: ingresos +17%, GBV +16% hasta 27.200, noches +10% acelerando. FCF@5y: el max se rebasa a 9.655 manteniendo el 15,0%/a implicito, pero el min NO se rebasa mecanicamente porque con 6.126 el caso bajista solo perdia un 3%; se endurece a 5.100 (+1,2%/a) para cumplir el test del -15%. Sin cambios de rating: MOAT y Optionality ya se ajustaron el 21-ago."
+    },
+    {
+      "ticker": "DNP",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "Q2 2026 (13-ago-2026)",
+      "summary": "Ingresos LTM 36.000 -> 35.628 MPLN, EBITDA 2.500 -> 2.609 (EBIT 2.045 + D&A 564), NOPAT 1.700 -> 1.656 (19% CIT polaco). Caja 500 -> 771, deuda 1.000 -> 852, capital empleado 6.500 -> 9.909. FCF NORMALIZADO: capex LTM 2.024 supera el doble del D&A (1.128), asi que se aplica la regla del libro. Capex de mantenimiento = max(563,86 ; 1.012) = 1.012 y FCF = 2.693 - 1.012 = 1.681 en vez de los 669 reportados. Sin la normalizacion el EV/FCF salia 51x para un discounter que abre cientos de tiendas al ano; con ella queda en 20,3x. FCF@5y rebasado: min 1.234 -> 1.900 (+2,5%/a, endurecido porque el rebase mecanico daba un caso bajista que GANABA un 30%) y max 2.052 -> 3.381 (+15,0%/a, bajado desde el 24,0%/a implicito anterior porque no se sostiene con la nueva base)."
+    },
+    {
+      "ticker": "LR",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "1S 2026 (6-ago-2026)",
+      "summary": "LTM a jun-2026: ingresos 9.500 -> 10.107 M EUR, EBITDA 2.250 -> 2.319 (EBIT 1.904 + D&A 414,5), NOPAT 1.450 -> 1.409, FCF 1.300 -> 1.340 (operaciones 1.567 menos capex 228). Caja 1.800 -> 1.971 y deuda 4.300 -> 7.724: la deuda estaba infravalorada en 3.400 M EUR, es el cambio mas importante de la fila. Capital empleado 9.500 -> 15.683. FCF@5y rebasado manteniendo las CAGR (6,0% y 15,0%): min 1.740 -> 1.794 y max 2.615 -> 2.696. Sin cambios de rating. AVISO: el multiplo de salida bajista (13x, columna protegida) frente a un EV/FCF de 30,6x hace que el caso bajista pierda un 50%; casi todo viene del de-rating, no del negocio."
+    },
+    {
+      "ticker": "STMN",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "1S 2026 (19-ago-2026)",
+      "summary": "LTM a jun-2026: ingresos 2.600 -> 2.637 MCHF, EBITDA 550 -> 779 (EBIT 651,3 + D&A 128), NOPAT 380 -> 528. FCF 350 -> 384 (FY2025 328,3 menos 1S25 113,6 mas 1S26 169,0). Caja 300 -> 415 y deuda 700 -> 475. Capital empleado 2.800 -> 3.139, con lo que el ROIC pasa del 13,6% al 16,8%. El semestre: organico +7,8% (Q2 +8,5%, acelerando), margen core EBIT del 26,9% a tipos constantes (+90 pb) y guia del ejercicio confirmada al alza. FCF@5y rebasado manteniendo las CAGR (6,0% y 16,0%): min 468 -> 514 y max 735 -> 807. Sin cambios de rating: la aceleracion del organico confirma la tesis pero no aporta un hecho estructural nuevo."
+    },
+    {
+      "ticker": "KKR",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; BD; BF; BO; BP",
+      "source": "Q2 2026 (30-jul-2026)",
+      "summary": "Ingresos LTM 17.500 -> 25.833 M$, EBITDA 7.500 -> 6.752 (EBIT 6.636 + D&A 116), NOPAT 4.500 -> 5.176. Caja 10.000 -> 21.080 y deuda 60.000 -> 56.164. FCF 4.200 -> 5.000: se usa el beneficio neto ajustado LTM, mismo criterio que en Brookfield, y NO el FCF contable (2.340), que en una gestora consolidada con la aseguradora no significa nada. El calculo: FY2025 4.400 menos 1S25 (2.110) mas 1S26 (Q1 ~1.200 estimado + Q2 1.493 reportado) = ~4.980. PENDIENTE: el ANI del Q1 2026 es una estimacion, conviene sustituirlo por el dato publicado. El trimestre fue record en las tres metricas: FRE 1.214, TOE 1.539, ANI 1.493 (+38% por accion) y AUM 796.000. FCF@5y rebasado manteniendo las CAGR (7,0% y 20,0%): min 5.891 -> 7.013 y max 10.451 -> 12.442. AZ (capital empleado) NO se toca: activo menos pasivo corriente da 349.000 M$ y el ROIC resultante (1,5%) no significa nada en un balance consolidado con Global Atlantic y los vehiculos."
+    },
+    {
+      "ticker": "NET",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "Q2 2026 (6-ago-2026)",
+      "summary": "Ingresos LTM 1.850 -> 2.512 M$ (Q2 696,1, +36%). FCF 280 -> 342 (operaciones 633,4 menos capex 291,5; capex < 2x D&A, no se normaliza). Caja mas inversiones a corto 1.800 -> 4.163 y deuda 1.300 -> 3.529. Capital empleado 3.500 -> 3.846. CAMBIO IMPORTANTE DE SIGNO: en GAAP el resultado operativo LTM es -194,7 y el EBITDA (EBIT + D&A) es -2,2, no +320. El NOPAT pasa de +50 a -195 y el ROIC de +1,4% a -5,1%. AVISO: el rating R2 Financials se bajo de 10 a 8 el 21-ago justificandolo con \"ROIC 1,4%\", una cifra que no esta en las cuentas; antes de volver a tocar el rating hay que decidir si esta fila se juzga en GAAP o en no-GAAP. El SBC LTM es 507,7 M$, el 20% de los ingresos, y todo el FCF se explica por sumarlo de vuelta. SEGUNDO AVISO: en el Q2 la compania anuncio una reestructuracion con recorte del 20% de la plantilla mientras los ingresos crecian un 36%; hay que leer la llamada antes de la proxima revision. La fila entera esta rota como valoracion: con un EV/FCF de 303x, el caso bajista pierde un 87% y el ALCISTA un 66%; los multiplos de salida (20-30x, columnas protegidas) no pueden capturar este precio."
+    },
+    {
+      "ticker": "KRX",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; BD; BF; V (R2 Potential); BO; BP",
+      "source": "1S 2026 (7-ago-2026)",
+      "summary": "LTM a jun-2026: ingresos 9.200 -> 9.561 M EUR (FY2025 9.200 menos 1S25 4.496,3 mas 1S26 4.857,8), EBITDA 1.200 -> 1.277, NOPAT 700 -> 780. FCF 600 -> 594 (FY2025 429,3 menos 1S25 -20,0 mas 1S26 144,3). Caja 800 -> 590 y deuda 2.800 -> 2.450, reconstruidas desde la deuda neta publicada de 1.859,8 y una liquidez disponible de 1.290 con 700 de credito no dispuesto. R2 Potential 13 -> 14: hecho nuevo del paso 2, el segmento Advnsys (centros de datos) crecio un 36% en el semestre y la guia del ejercicio sube a 1.125 M EUR de trading profit (+18%) con ingresos que rompen los 10.000 M EUR por primera vez; es un vector de crecimiento nuevo, no el ciclo de la construccion europea. FCF@5y rebasado manteniendo las CAGR (4,0% y 15,0%): min 730 -> 723 y max 1.207 -> 1.195."
+    },
+    {
+      "ticker": "CBAV",
+      "date": "46259",
+      "fields_changed": "AP; AT; AU; AV; BO; BP",
+      "source": "1S 2026 (29-jul-2026)",
+      "summary": "Clinica Baviera. La fila llevaba sin tocarse desde el 26-abr y no tenia fecha de proximos resultados. LTM a jun-2026: ingresos 290 -> 320 M EUR (FY2025 304,9 menos 1S25 154,5 mas 1S26 169,9), EBITDA 62 -> 95, NOPAT 35 -> 50. Caja 45 -> 51,6. El semestre: ingresos +10%, EBITDA +14%, beneficio neto 26,7 (+17%), posicion financiera neta POSITIVA de 41,7 y capex de 12,4. Espana +11% en ingresos y +15% en EBITDA, Reino Unido +28%, Alemania plana con el EBITDA -11%. PENDIENTE: AQ (deuda 70) son pasivos por arrendamiento IFRS16, no deuda financiera; conviene decidir el criterio. El FCF (42) se deja como estaba: no hay estado de flujos semestral publicado."
+    },
+    {
+      "ticker": "SPOT",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; T (R2 Financials); BO; BP",
+      "source": "Q2 2026 (29-jul-2026)",
+      "summary": "La fila estaba MUY mal. Ingresos LTM 30.000 -> 18.113 M EUR (un 65% de exceso), EBITDA 7.500 -> 2.750 (EBIT 2.653 + D&A 97), NOPAT 4.500 -> 2.122, FCF 4.000 -> 3.267. Y sobre todo el balance: la deuda pasa de 10.000 a 466 y la caja mas inversiones a corto de 5.000 a 6.985, o sea de 5.000 M EUR de deuda neta a 6.519 M EUR de CAJA NETA. Capital empleado 25.000 -> 8.834. R2 Financials 12 -> 13: el rating estaba calibrado contra un balance que no existe; con caja neta de 6.500 M EUR, FCF del 18% sobre ingresos y margen operativo del 14,7%, un 12 sobre 17 lo dejaba por debajo de companias claramente peor financiadas. FCF@5y rebasado manteniendo las CAGR (3,0% y 10,0%): min 4.637 -> 3.787 y max 6.442 -> 5.262. Resultado: bajista -20%, alcista +47%."
+    },
+    {
+      "ticker": "CPR",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "1S 2026 (29-jul-2026)",
+      "summary": "LTM a jun-2026: ingresos 3.100 -> 3.035 M EUR, EBITDA 700 -> 664 (EBIT 549,7 + D&A 113,9), NOPAT 420 -> 412. Caja 800 -> 711 y deuda 4.200 -> 2.806: la deuda estaba sobrevalorada en 1.400 M EUR, la deuda neta real es 2.095. Capital empleado 5.500 -> 7.090. FCF NORMALIZADO: capex LTM 245,6 supera el doble del D&A (227,8), asi que capex de mantenimiento = max(113,9 ; 122,8) = 122,8 y FCF = 556,6 - 122,8 = 433,8 en vez de los 311 reportados; Campari sigue en ciclo de capacidad (agave y tequila). FCF@5y rebasado manteniendo las CAGR (3,0% y 11,0%): min 348 -> 503 y max 506 -> 731. El semestre: ventas 1.510 (+2,7% organico), EBIT ajustado 358 (+8,5% organico, margen 23,7% frente al 23,0%) y guia del ejercicio subida. Sin cambios de rating."
+    },
+    {
+      "ticker": "TFPM",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; V (R2 Potential); BO; BP",
+      "source": "Q2 2026 (5-ago-2026)",
+      "summary": "La fila estaba desfasada mas del doble. Ingresos LTM 230 -> 489 M$ (Q2 129,2 + Q1 147,0 + Q4 118,9 + Q3 93,5), EBITDA 210 -> 377 (EBIT 302,2 + agotamiento 74,8), NOPAT 140 -> 257. Caja 80 -> 35 y deuda 0 -> 236, tras financiar Ravenswood. Capital empleado 1.800 -> 2.539. FCF 190 -> 395: se usa el flujo de operaciones LTM SIN restar capex. EXCEPCION EXPLICITA a la regla de FCF normalizado: el \"capex\" de 622 M$ del periodo son compras de streams (440 de Ravenswood), o sea M&A de crecimiento, no reposicion; en una royalty el capex de sostenimiento es cero y el agotamiento es contable. R2 Potential 10 -> 12: hecho nuevo, la guia de 2026 sube a 100.000-110.000 GEO y la de 2030 a 150.000-160.000, un recorrido de volumen del 9-10% anual que antes no estaba publicado. FCF@5y REHECHO, no rebasado: el min mecanico (503) daba un caso bajista que GANABA un 27%, asi que queda en 330 (-3,5%/a, reversion parcial del precio del oro); y el max mecanico (983) implicaba un 20,0%/a durante cinco anos mas sobre una base que acaba de duplicarse, asi que se ancla al 9,0%/a de la guia de volumen: 608. Resultado: bajista -18%, alcista +89%."
+    },
+    {
+      "ticker": "FERG",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BO; BP",
+      "source": "Q2 2026 cerrado el 30-jun (4-ago-2026)",
+      "summary": "Ferguson cambio de ejercicio fiscal: el cierre pasa del 31-jul al 31-dic y desde el 1-ene-2026 reporta por ano natural, asi que ahora hay resultados en agosto (antes no los habia y por eso la fila tenia mal el calendario). LTM a jun-2026: ingresos 30.000 -> 31.446 M$, EBITDA 3.700 -> 3.071 (EBIT 2.687 + D&A 383,8), NOPAT 2.800 -> 2.015. Caja 450 -> 437 y deuda 4.000 -> 6.887. Capital empleado 12.000 -> 12.926. FCF 2.400 -> 1.118 (operaciones 1.655 menos capex 537). PASO 4 DEJADO A PROPOSITO SIN HACER: con la nueva base y los multiplos de salida actuales (12-18x, columnas protegidas) frente a un EV/FCF de 47,7x, el rebase mecanico deja el caso ALCISTA perdiendo un 41%. Antes de rebasar hay que decidir si 1.118 es el FCF del ciclo o un ano con acumulacion de circulante: el beneficio neto LTM es 1.987 y la conversion historica de Ferguson ronda el 90%. BD y BF se quedan como estaban."
+    },
+    {
+      "ticker": "TREX",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "Q2 2026 (4-ago-2026)",
+      "summary": "LTM a jun-2026: ingresos 1.100 -> 1.208 M$ (Q2 record de 418, +8%), EBITDA 270 -> 313 (EBIT 243,6 + D&A 69,2), NOPAT 190 -> 183. Caja 50 -> 6,5 y deuda 150 -> 303. Capital empleado 900 -> 1.176. FCF NORMALIZADO: capex LTM 150,1 supera el doble del D&A (138,5), capex de mantenimiento = max(69,2 ; 75,0) = 75,0 y FCF = 358,1 - 75,0 = 283 en vez de los 208 reportados; Trex sigue levantando la planta de Arkansas. FCF@5y rebasado manteniendo las CAGR (0,0% y 14,0%): min 190 -> 283 y max 366 -> 545. Resultado: bajista -35%, alcista +99%."
+    },
+    {
+      "ticker": "SGO",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF; BO; BP",
+      "source": "1S 2026 (30-jul-2026)",
+      "summary": "La fila llevaba con datos del FY2025 desde febrero. LTM a jun-2026: ingresos 46.600 -> 46.226 M EUR, EBITDA 6.800 -> 7.337 (EBIT 4.976 + D&A 2.361), NOPAT 3.000 -> 3.632, FCF 2.400 -> 3.378 (operaciones 5.327 menos capex 1.949). Caja 6.500 -> 5.751 y deuda 15.000 -> 17.270. Capital empleado 28.000 -> 43.914 (activo 61.537 menos pasivo corriente 17.623), con lo que el ROIC queda en el 8,3%. FCF@5y rebasado manteniendo las CAGR (1,0% y 9,0%): min 2.522 -> 3.550 y max 3.693 -> 5.198. Sin cambios de rating. Es la fila mas barata del grupo revisado: EV/FCF de 15,3x, bajista -23% y alcista +78%."
+    },
+    {
+      "ticker": "IPCO",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BO; BP",
+      "source": "Q2 2026 (4-ago-2026)",
+      "summary": "LTM a jun-2026: ingresos 790 -> 707 M$, EBITDA 380 -> 253 (EBIT 109,0 + D&A 143,6), NOPAT 170 -> 76. Caja 50 -> 11,3 y deuda 430 -> 517. FCF NORMALIZADO POR LA SEGUNDA CONDICION de la regla (FCF reportado negativo con flujo de operaciones positivo): operaciones 162,2, D&A 143,6, capex 268,0; capex de mantenimiento = max(143,6 ; 134,0) = 143,6 y FCF = 18,6 frente a los -105,8 reportados y los 230 que habia en la hoja. Con Blackrod en construccion el capex es el 38% de las ventas y la compania no genera caja libre. PASO 4 DEJADO A PROPOSITO SIN HACER: rebasar FCF@5y sobre una base de 18,6 daria unas CAGR implicitas del 57% y el 85% anual, que no significan nada; la nota metodologica del libro ya dice que el FCF normalizado no sustituye a FCF@5y, que es la vision forward de post-Blackrod. BD y BF se quedan como estaban. Sin cambios de rating: Capital Intensity ya esta en 2 sobre 10, el minimo practico del libro."
+    },
+    {
+      "ticker": "JDG",
+      "date": "46259",
+      "fields_changed": "BO; BP",
+      "source": "Calendario de Judges Scientific",
+      "summary": "La fila no tenia ninguna de las dos fechas (\"N/D\") desde el 26-abr. Ultimos resultados: 31-mar-2026 (preliminares del FY2025). Proximos: 22-sep-2026, los del semestre cerrado el 30-jun-2026, con webinar de inversores el 23-sep. Financieros sin tocar: el semestre todavia no esta publicado."
+    },
+    {
+      "ticker": "UBER",
+      "date": "46259",
+      "fields_changed": "BO; BP",
+      "source": "Calendario de Uber",
+      "summary": "La fila tenia las dos fechas en \"N/D\" pese a haberse actualizado el 17-ago. Ultimos resultados: 5-ago-2026 (Q2 2026). Proximos: 3-nov-2026 (sin confirmar por la compania)."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "BP7; BP13; BP21; BP36; BP58; BP65; BP10; BP16; BP9",
+      "source": "Calendario: proximos resultados vencidos",
+      "summary": "Nueve filas tenian la fecha de proximos resultados ya pasada o igual a la de ultimos resultados, con lo que el disparador de revision no saltaba. Quedan: BN 12-nov, AMZN 29-oct, MNST 5-nov, KSPI 9-nov, CELH 5-nov, CSU 5-nov, RAA 5-nov, LOTB 25-feb-2027 (Lotus solo publica semestre y ejercicio) y DSGX 10-sep. Todas son estimaciones sobre el calendario del ano anterior salvo DSGX, que ya estaba confirmada."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "BM4:BM71 (Best IRR)",
+      "source": "Correccion del horizonte de anualizacion",
+      "summary": "La TIR alcista se anualizaba a 4 anos y la bajista a 5: =(BK/G)^(1/4)-1 frente a =(BJ/G)^(1/5)-1. Las dos valoraciones salen de FCF@5y, asi que el horizonte correcto es 5 en las dos. Detectado el 21-ago-2026 y corregido hoy por indicacion expresa de Roger; BM esta en la lista de columnas protegidas de la skill, se toca solo por eso. Baja la TIR alcista de las 68 filas. Falta replicar el mismo cambio en repos/watchlist-dashboard/src/analytics.py, linea 263 (_reprice_valuation)."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "Framework Notes filas 58 y 72",
+      "source": "Framework de actualizacion en 4 pasos",
+      "summary": "Actualizada la lista de filas con FCF normalizado: se anaden DNP (23), CPR (44), TREX (55) e IPCO (63) a las que ya estaban (MSFT y AMZN), y se documenta la excepcion de TFPM (49), donde la regla se activa mecanicamente pero no se aplica porque el capex son compras de streams. Actualizado el estado de los cuatro pasos a 25-ago-2026. NOTA: esta fila se reescribe el 25-ago porque la entrada de la correccion de la TIR la piso al calcular la primera fila libre con UsedRange en vez de con End(xlUp)."
+    },
+    {
+      "ticker": "BN",
+      "date": "46259",
+      "fields_changed": "AV",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Brookfield. Solo se corrigen los ingresos LTM: 98.000 -> 80.690 M$, la cifra GAAP publicada. AVISO: el resto de la fila es DELIBERADAMENTE de perimetro corporativo (caja 10.000, deuda 17.815, FCF 6.200 de beneficio distribuible), fijado el 22-ago. No se sustituye por el consolidado GAAP (deuda de 268.910 M$ incluyendo Global Atlantic y los vehiculos) porque daria un EV sin sentido. EBITDA (15.000) y NOPAT (5.500) siguen siendo cifras de relleno: necesitan una definicion explicita antes de tocarlas."
+    },
+    {
+      "ticker": "COST",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Costco. FCF NORMALIZADO: capex LTM 6.190 supera el doble del D&A (5.120); mantenimiento = max(2.560 ; 3.095) = 3.095 y FCF = 15.000 - 3.095 = 11.905 en vez de los 8.810 reportados. Abre unos 25-30 almacenes al ano, es capex de crecimiento.  Cambios: AP 12,500->20,000; AQ 7,500->8,230; AS 8,500->11,905; AT 7,500->8,445; AU 11,800->13,790; AV 287,790->293,590; AZ 40,000->44,305; BD 11,375->15,932; BF 14,980->20,981."
+    },
+    {
+      "ticker": "DSGX",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Descartes. Q1 FY2027 cerrado el 30-abr-2026. CASO BAJISTA ENDURECIDO: asumia el FCF creciendo un 8,0% anual, que es su caso base, no el malo; Descartes crece a doble digito COMPRANDO. Un caso bajista es que pare la maquina de adquisiciones: queda en +0,8%/a y el escenario pasa de +13% a -18%.  Cambios: AP 356->377; AQ 0.0->8.1; AS 240->281; AT 160->176; AU 329->320; AV 729->754; AZ 950->1,676; BD 353->293; BF 504->590."
+    },
+    {
+      "ticker": "ZS",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Zscaler. CAMBIO DE SIGNO EN GAAP: resultado operativo LTM -135,0 y EBITDA -60,8, no +50 y +550. El FCF (963) sigue siendo real pero se explica por el SBC. Aparece deuda de 1.870 que la hoja tenia en cero. CASO BAJISTA ENDURECIDO: asumia +10,0% anual de FCF durante cinco anos, que es un caso base optimista; queda en +3,1%/a y pasa de +11% a -18%.  Cambios: AP 2,400->3,540; AQ 0.0->1,870.0; AS 730->963; AT 300->-135; AU 550->-61; AV 2,700->3,170; AZ 2,000->4,597; BD 1,176->1,122; BF 2,140->2,823."
+    },
+    {
+      "ticker": "SU",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Schneider Electric. La deuda estaba infravalorada en 8.300 M EUR (12.500 -> 20.810). Capital empleado 38.000 -> 43.259, ROIC 12,6% -> 13,2%.  Cambios: AP 3,500->4,520; AQ 12,500->20,810; AS 4,500->6,190; AT 4,800->5,727; AU 8,800->8,520; AV 39,500->42,040; AZ 38,000->43,259; BD 5,743->7,900; BF 8,291->11,405."
+    },
+    {
+      "ticker": "ITX",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Inditex. La hoja tenia DEUDA CERO; son 6.040 M EUR, practicamente todo pasivos por arrendamiento IFRS16 (coherente con un EBITDA post-IFRS16). Caja 11.500 -> 10.800.  Cambios: AP 11,500->10,800; AQ 0.0->6,040.0; AS 6,500->7,040; AT 6,500->6,327; AU 11,000->9,510; AV 38,600->40,340; AZ 18,000->24,023; BD 7,908->8,565; BF 11,455->12,407."
+    },
+    {
+      "ticker": "EVD",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "CTS Eventim. El FCF estaba inflado un 64% (450 -> 274) y la deuda un 564% (800 -> 120). Con el FCF correcto el EV/FCF sube de 11,1x a 16,3x, con lo que el multiplo de salida bajista de 12x YA NO esta por encima del actual: el defecto senalado el 21-ago se resuelve solo. CASO BAJISTA ENDURECIDO de +4,0% a +0,9%/a. AVISO: no se normaliza el FCF pese a que la regla se dispara, porque el D&A de la fuente (38,5) es implausible para esta compania y el capex derivado no es fiable.  Cambios: AP 1,500->1,360; AQ 800->120; AS 450->274; AT 350->332; AU 630->529; AV 3,100->3,300; AZ 1,600->1,573; BD 547->287; BF 866->527."
+    },
+    {
+      "ticker": "VLTO",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Veralto. Fila que ya estaba casi bien: solo cambian caja (1.000 -> 2.120) y deuda (2.500 -> 3.590). El capital empleado de 6.500 era correcto.  Cambios: AP 1,000->2,120; AQ 2,500->3,590; AS 1,100->1,050; AT 1,000->1,062; AU 1,350->1,390; AV 5,500->5,700; AZ 6,500->6,501; BD 1,338->1,277; BF 1,939->1,851."
+    },
+    {
+      "ticker": "JDG",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Judges Scientific. NOPAT sobrevalorado mas del doble (18 -> 8,4): el margen operativo real es del 8,5%, no del 12%. Deuda 55 -> 65,2 y capital empleado 120 -> 158,5, con lo que el ROIC cae del 15% al 5,3%. CASO BAJISTA ENDURECIDO: asumia +6,2% anual justo despues de que la compania rebajara expectativas por la debilidad de EE.UU.; queda en +1,4%/a y pasa de +8% a -18%.  Cambios: AP 10->19; AQ 55->65; AS 20->24; AT 18->8; AU 30->29; AV 145->146; AZ 120->158; BD 27->26; BF 46->56."
+    },
+    {
+      "ticker": "META",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Meta. FCF NORMALIZADO: capex LTM 89.320 (el 39% de las ventas) frente a un D&A de 22.730; mantenimiento = max(22.730 ; 44.660) = 44.660 y FCF = 130.300 - 44.660 = 85.640 en vez de los 40.980 reportados. Mismo caso que Amazon y Microsoft. CASO BAJISTA REHECHO: con la base nueva el escenario malo GANABA un 39%; para que sea un caso bajista de verdad el FCF tiene que CAER un 5,4% anual, que es justo la tesis de que el capex de IA no se paga. Queda en -18%.  Cambios: AP 68,000->90,260; AQ 30,000->112,320; AS 50,000->85,640; AT 55,000->67,631; AU 95,000->109,660; AV 164,000->228,250; AZ 190,000->393,577; BD 63,814->65,043; BF 105,017->179,873."
+    },
+    {
+      "ticker": "CRWD",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "CrowdStrike. CAMBIO DE SIGNO EN GAAP: resultado operativo LTM -160,4 y EBITDA 59,3, no +700 y +1.400. ROIC +20,0% -> -2,2%. AVISO: la fila esta rota como valoracion, con un EV/FCF de 127x el bajista pierde un 71% y el ALCISTA un 24%; los multiplos de salida (columnas protegidas) no pueden capturar este precio. Mismo problema que Cloudflare.  Cambios: AP 4,400->4,550; AQ 750->821; AS 1,200->1,510; AT 700->-160; AU 1,400->59; AV 4,000->5,090; AZ 3,500->7,154; BD 2,115->2,661; BF 3,811->4,796."
+    },
+    {
+      "ticker": "GOOG",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Alphabet. FCF NORMALIZADO: capex LTM 132.410 frente a un D&A de 25.530; mantenimiento = max(25.530 ; 66.205) = 66.205 y FCF = 185.680 - 66.205 = 119.475 en vez de los 53.270 reportados. Capital empleado 350.000 -> 795.872, ROIC 27,1% -> 15,1%.  Cambios: AP 110,000->242,470; AQ 15,000->120,790; AS 75,000->119,475; AT 95,000->120,466; AU 148,000->173,160; AV 350,000->445,870; AZ 350,000->795,872; BD 95,721->152,484; BF 150,852->240,307."
+    },
+    {
+      "ticker": "ABBNE",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "ABB. Los numeros de la hoja estaban en el orden de magnitud pero no eran los publicados. OJO: ABB reporta en USD y cotiza en CHF; se han tomado las cifras del ADR (ABBNY) para que cuadren con la columna AO=USD y con el factor E5.  Cambios: AP 5,000->5,860; AQ 7,500->9,150; AS 4,200->4,870; AT 4,500->4,811; AU 6,200->7,150; AV 33,500->35,750; AZ 22,000->27,296; BD 5,110->5,925; BF 7,402->8,583."
+    },
+    {
+      "ticker": "GRMN",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Garmin. Deuda 0 -> 227 y capital empleado 4.800 -> 9.341, con lo que el ROIC baja del 25,0% al 18,8%. El capex (380) queda justo en el doble del D&A (190), asi que NO se normaliza.  Cambios: AP 3,500->2,670; AQ 0.0->227.0; AS 1,300->1,600; AT 1,200->1,754; AU 1,650->2,310; AV 6,300->7,670; AZ 4,800->9,341; BD 1,582->1,947; BF 2,395->2,948."
+    },
+    {
+      "ticker": "NVDA",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Nvidia. LTM al 26-abr-2026 (el Q2 FY2027 se publica el 26-ago). Ingresos 130.000 -> 253.490. FCF NORMALIZADO por la regla, aunque el disparador salta por poco (capex 6.570 frente a 6.440) y el efecto es solo del 2,8%: 119.080 -> 122.365. CASO ALCISTA CON TOPE: la CAGR heredada del 32% anual sobre la base nueva daba un FCF de 490.000 M$ en 2031, mas que los ingresos de toda la industria hoy; se baja al 18%/a (279.941). El alcista pasa del +184% al +62%.  Cambios: AP 40,000->53,170; AQ 10,000->12,810; AS 60,000->122,365; AT 75,000->136,729; AU 90,000->165,510; AV 130,000->253,490; AZ 90,000->215,590; BD 88,160->179,795; BF 240,448->279,942."
+    },
+    {
+      "ticker": "TSM",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "TSMC. FCF NORMALIZADO: capex LTM 46.770 (el 34% de las ventas) frente a un D&A de 21.290; mantenimiento = 23.385 y FCF = 59.255 en vez de los 35.870 reportados. Capital empleado 120.000 -> 244.100 (activo menos pasivo corriente en TWD convertido a unos 30,8 TWD/USD), ROIC 41,7% -> 26,6%, que ya es creible. CASO ALCISTA CON TOPE del 22% al 16% anual por la misma razon que Nvidia.  Cambios: AP 60,000->110,580; AQ 30,000->33,590; AS 35,000->59,255; AT 50,000->65,027; AU 75,000->99,560; AV 122,400->139,570; AZ 120,000->244,100; BD 51,426->87,064; BF 94,595->124,456."
+    },
+    {
+      "ticker": "SIKA",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Sika. Caja 1.200 -> 625 y deuda 4.700 -> 6.080: la deuda neta real es 5.455, no 3.500. El capital empleado de 12.500 era correcto.  Cambios: AP 1,200->625; AQ 4,700->6,080; AS 1,100->1,320; AT 1,250->1,173; AU 2,100->1,940; AV 11,760->11,110; AZ 12,500->12,207; BD 1,275->1,530; BF 1,854->2,225."
+    },
+    {
+      "ticker": "CHKP",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Check Point. FCF 1.300 -> 1.100, caja 3.000 -> 2.280 y aparece deuda de 1.970 que la hoja tenia en cero. El EV/FCF sube de 7,9x a 11,8x y el caso bajista pasa de -12,9% a -43%: el defecto del test bajista se resuelve solo con el dato correcto. Sigue siendo la fila mas barata del libro.  Cambios: AP 3,000->2,280; AQ 0.0->1,970.0; AS 1,300->1,100; AT 1,000->682; AU 1,250->846; AV 2,730->2,760; AZ 1,200->5,759; BD 1,435->1,214; BF 2,094->1,772."
+    },
+    {
+      "ticker": "NFLX",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Netflix. FCF NORMALIZADO (disparador por poco, efecto del 3,7%): capex 820 frente a un D&A de 380; mantenimiento = 410 y FCF = 11.560. Caja 12.250 -> 9.130 y deuda 14.360 -> 16.650.  Cambios: AP 12,250->9,130; AQ 14,360->16,650; AS 11,900->11,560; AT 13,800->11,876; AU 14,000->14,730; AV 46,900->48,370; AZ 28,000->46,315; BD 14,500->14,086; BF 20,000->19,429."
+    },
+    {
+      "ticker": "NKE",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Nike. LO QUE SENALABA LA NOTA DEL 21-AGO, CORREGIDO: el FCF LTM pasa de 5.000 a 2.180 M$ reales del FY2026 (cerrado el 31-may-2026) y los ingresos de 51.000 a 46.400. El EV/FCF real es 28,7x, no 12,4x. LA ASIMETRIA SE INVIERTE: el caso bajista pasa de +13,3% a -53% y el alcista de +30% a +13%. Con el dato correcto el multiplo de salida bajista de 14x ya no esta por encima del EV/FCF actual: el defecto del 21-ago se resuelve solo.  Cambios: AP 8,000->9,030; AQ 9,500->11,040; AS 5,000->2,180; AT 4,800->3,331; AU 7,500->4,930; AV 51,000->46,400; AZ 20,000->25,863; BD 5,000->2,180; BF 7,693->3,354."
+    },
+    {
+      "ticker": "IP",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Interpump. Cifras ya casi correctas del 21-ago, se ajustan a las publicadas. CASO BAJISTA ENDURECIDO: asumia +2,5% anual para un industrial ciclico; un caso malo de verdad es que el FCF CAIGA un 3,0% anual. Pasa de +11% a -18%.  Cambios: AP 416->370; AQ 707->675; AS 230->263; AT 236->229; AU 456->446; AV 2,080->2,080; BD 260->226; BF 480->549."
+    },
+    {
+      "ticker": "RBT",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Robertet. Cifras del 21-ago ya correctas, se ajustan caja (142,3 -> 180,7) y EBITDA (174 -> 167,2). CASO BAJISTA ENDURECIDO de +6,6% a +4,2%/a: un +6,6% anual durante cinco anos no es un escenario malo para una casa de fragancias cuya conversion de EBITDA a FCF esta en el 40%.  Cambios: AP 142->181; AQ 253->253; AS 67->67; AT 107->108; AU 174->167; AV 844->844; BD 92->82; BF 145->145."
+    },
+    {
+      "ticker": "ROKO B",
+      "date": "46259",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Refresco de LTM contra los ultimos cuatro trimestres publicados",
+      "summary": "Roko. Deuda 4.887 -> 3.020 y capital empleado 9.895. El caso bajista (FCF plano, 0%/a) esta bien planteado y NO se toca; lo que hace que solo pierda un 1% es el multiplo de salida bajista de 22x contra un EV/FCF de 21,9x, o sea que el escenario malo casi no incluye de-rating. BH es columna protegida: queda como aviso.  Cambios: AP 500->435; AQ 4,887->3,020; AS 1,150->1,150; AT 891->893; AU 1,750->1,560; AV 7,091->7,090; AZ 10,160->9,895; BD 1,150->1,150; BF 1,900->1,900."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "Framework Notes fila 58",
+      "source": "Refresco de LTM",
+      "summary": "Se anaden a la lista de filas con FCF normalizado: COST (8), META (28), GOOG (32), NVDA (38), TSM (40) y NFLX (50). Con MSFT, AMZN, DNP, CPR, TREX e IPCO son doce. Todas cumplen el disparador escrito (capex del periodo por encima del doble del D&A, o FCF reportado negativo con flujo de operaciones positivo); NVDA y NFLX lo cumplen por poco y el efecto es del 2,8% y el 3,7%, se aplican igual para no elegir a dedo."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "BD de DSGX, ZS, EVD, JDG, META, IP, RBT",
+      "source": "Revision del realismo del caso bajista",
+      "summary": "Roger pidio comprobar si el caso bajista era demasiado optimista en las once filas que no perdian un 15%. Diagnostico: en ocho de ellas el escenario MALO asumia que el FCF CRECIA, entre un +2,5% y un +10,0% anual durante cinco anos, que no es un caso bajista sino un caso base. Se endurece el FCF@5y minimo en siete (ZS +10,0->+3,1; DSGX +8,0->+0,8; RBT +6,6->+4,2; JDG +6,2->+1,4; META +5,0->-5,4; EVD +4,0->+0,9; IP +2,5->-3,0). NO se tocan: ROKO B (el 0%/a esta bien, el problema es el multiplo de salida, columna protegida), BN (el beneficio distribuible es contratado y el escenario se fijo a proposito el 22-ago), CHKP y NKE (se arreglan solos al corregir el LTM) y SOM (publica el 8-sep, se revisa entonces)."
+    },
+    {
+      "ticker": "SOM",
+      "date": "46259",
+      "fields_changed": "ninguno",
+      "source": "Revision del realismo del caso bajista",
+      "summary": "Somero no ha publicado el semestre: los resultados del 1S2026 son el 8-sep-2026, la fecha que ya tenia la hoja. AVISO PARA ENTONCES: los ingresos LTM de la hoja son 64,9 M$ y la actualizacion de trading de julio situa las expectativas de mercado para 2026 en 86,0 M$ de ingresos y 15,9 M$ de EBITDA ajustado; la cifra de la hoja parece corta. Su caso bajista asume el FCF creciendo un 6,5% anual para un ciclico puro de construccion no residencial en EE.UU., lo que tambien habra que endurecer."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-08-22",
+      "fields_changed": "AV; AS; AP; AQ; AU; AT; BN",
+      "source": "Verificacion del top 10 contra investor relations - FY2026 (29-jul-2026)",
+      "summary": "El ejercicio cerro el 30-jun-2026, asi que el ano fiscal ES el LTM. Ingresos 270.000 -> 331.839 (+18%). FCF 70.000 -> 66.987 (flujo de operaciones 182.935 menos capex 115.948). Caja 78.000 -> 76.843. Deuda 45.000 -> 40.294. EBITDA 144.000 -> 193.771 (resultado operativo 155.237 + D&A y otros 38.534). NOPAT 90.000 -> 125.127 (EBIT por 1 menos la tasa fiscal efectiva del 19,4%). AVISO: el FCF del Q4 cayo un 23% y la guia de capex del ano natural 2026 es de unos 190.000 M$, asi que este FCF es la ultima foto antes de la caida."
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2026-08-22",
+      "fields_changed": "AV; AS; AP; AQ; BO; BN",
+      "source": "Verificacion del top 10 contra investor relations - Q2 2026 (30-jul-2026)",
+      "summary": "Ingresos 637.000 -> 775.656 TTM (FY2025 716.900 menos 1S2025 323.369 mas 1S2026 382.125). FCF 52.000 -> -7.604: el flujo de caja libre TTM es NEGATIVO porque el capex TTM (169.007) supera al flujo de operaciones (161.403), tras subir 66.100 M$ interanuales. No es deterioro sino inversion en infraestructura de IA, y el flujo de operaciones crece un 33%. El EV/FCF queda negativo a proposito: el multiplo no aplica en un ciclo de capex, y la valoracion se apoya en las columnas FCF@5y, que son la vision forward. Caja 80.000 -> 78.213 (aparte hay 44.775 de valores negociables). Deuda 65.000 -> 128.894 (deuda a largo plazo reportada). EBITDA y NOPAT NO se tocan: no hay cifras TTM exactas publicadas."
+    },
+    {
+      "ticker": "LOTB",
+      "date": "2026-08-22",
+      "fields_changed": "AV; AU; BO; BN",
+      "source": "Verificacion del top 10 contra investor relations - 1S2026 (7-ago-2026)",
+      "summary": "La fila llevaba sin actualizarse desde el 26-abr y se habia perdido el semestre. Ingresos 1.200 -> 1.446,8 LTM (FY2025 1.355,0 menos 1S2025 657,3 mas 1S2026 749,1). EBITDA subyacente 260 -> 300,4 (273,4 menos 129,3 mas 156,3). Biscoff crecio mas del 20% en volumen y en ingresos a la vez; EBIT subyacente del semestre 131,0 (17,5%) y beneficio neto +23,5%. NOPAT no se toca: falta el EBIT subyacente de 2025."
+    },
+    {
+      "ticker": "DSGX",
+      "date": "2026-08-22",
+      "fields_changed": "BP; BN",
+      "source": "Verificacion del top 10 contra investor relations - Calendario",
+      "summary": "Los resultados del Q2 FY2027 son el 10-sep-2026, no el 9. El resto de la fila esta al dia: el Q1 FY2027 del 3-jun ya estaba recogido."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-08-22",
+      "fields_changed": "AZ (Capital Employed)",
+      "source": "Verificacion del top 10 - coherencia del ROIC",
+      "summary": "Capital empleado 280.000 -> 589.551 (activo total 758.376 menos pasivo corriente 168.825 a 30-jun-2026). Era necesario porque al actualizar el NOPAT a 125.127 con el capital empleado viejo el ROIC saltaba al 44,7%, imposible para Microsoft. Con la cifra correcta queda en 21,2%. AVISO IMPORTANTE: la columna Capital Employed son estimaciones manuales redondeadas en las otras 67 filas (Veeva 1.500, Costco 40.000, Amazon 300.000, Lotus 800...) y no siguen ninguna definicion homogenea, asi que el ROIC NO es comparable entre empresas hasta que esa columna tenga una sola definicion. Esta fila es ahora la unica con la definicion de libro."
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2026-08-22",
+      "fields_changed": "AS (FCF); AF (R3 Capital Intensity)",
+      "source": "FCF normalizado + revision de ratings tras resultados",
+      "summary": "FCF pasa de -7.604 reportado a 76.899 normalizado. Partida: flujo de operaciones TTM 161.403, D&A TTM 75.200 (65.756 de 2025 menos 29.489 del 1S25 mas 38.933 del 1S26), capex TTM 169.007. Capex de mantenimiento = max(75.200 ; 84.504) = 84.504. El EV/FCF queda en 36,9x en vez de -373x. Capital Intensity 4->3: el capex es el 21,8% de las ventas y el FCF reportado es negativo; un 4 sobre 10, donde 10 es asset-light, era generoso."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-08-22",
+      "fields_changed": "AS (FCF); AF (R3 Capital Intensity)",
+      "source": "FCF normalizado + revision de ratings tras resultados",
+      "summary": "FCF pasa de 66.987 reportado a 124.961 normalizado. Partida: flujo de operaciones 182.935, D&A y otros 38.534, capex 115.948. Capex de mantenimiento = max(38.534 ; 57.974) = 57.974. El EV/FCF queda en 28,4x en vez de 53x. Capital Intensity 5->4: el capex es el 34,9% de las ventas del ejercicio, y la guia del ano natural 2026 son unos 190.000 M$."
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-08-22",
+      "fields_changed": "AV (Ingresos); AG (R3 Capital Allocation); BO; BN",
+      "source": "FCF normalizado + revision de ratings tras resultados",
+      "summary": "Ingresos 12.149 -> 12.641 LTM (FY2025 11.623 menos 1S25 5.498 mas 1S26 6.516). Capital Allocation 15 -> 13: era la unica nota perfecta del libro y el Q2 2026 muestra crecimiento organico del 3% en el trimestre y del 1% quitando divisa, frente a un +17% de titular. Practicamente todo el crecimiento viene de comprar companias (732 M$ en un solo trimestre) y un 15/15 dice que cada euro reinvertido genera spread positivo, lo cual con el organico al 1% ya no se sostiene solo. Un 13 sigue diciendo excelente. El FCF de 2.700 no se toca: el FCFA2S LTM es 2.031 pero la columna pide FCF sin apalancar y no tengo el desglose para convertirlo."
+    },
+    {
+      "ticker": "COST",
+      "date": "2026-08-22",
+      "fields_changed": "AV; BN",
+      "source": "Verificacion del top 10 contra investor relations",
+      "summary": "Ingresos 262.000 -> 287.790 LTM (FY2025 de 52 semanas 269.900, menos las 36 semanas comparables de 185.480, mas las 36 semanas del FY2026 de 203.370). El Q3 FY26 cerro con ventas de 69,15 MM$ (+11,6%) y comparables del +9,8%, del +6,6% sin gasolina ni divisa. NOPAT no se toca: falta el resultado operativo. Sin cambios de rating: los resultados confirman la nota."
+    },
+    {
+      "ticker": "BN",
+      "date": "2026-08-22",
+      "fields_changed": "AS; BN",
+      "source": "Verificacion del top 10 contra investor relations",
+      "summary": "FCF 6.936 -> 6.200, que es el beneficio distribuible total de los ultimos doce meses reportado en el Q2 2026 (2,61 $/accion). El trimestre trajo un record de 77.000 M$ captados, 100.000 M$ en el semestre, capital con comisiones +19% hasta 672.000 M$ y 210.000 M$ de capital desplegable. Sin cambios de rating. PENDIENTE: la celda de proximos resultados sigue en 13/08/2026, que es la fecha de los ultimos."
+    },
+    {
+      "ticker": "RAA",
+      "date": "2026-08-22",
+      "fields_changed": "AV; AU; BO; BN",
+      "source": "Verificacion del top 10 contra investor relations",
+      "summary": "Ingresos 1.200 -> 1.296 LTM (FY2025 1.260,0 menos 1S25 605,7 mas 1S26 642,0). EBITDA 320 -> 350: el 320 era imposible porque quedaba POR DEBAJO del EBIT LTM de 349,8; se pone el EBIT como suelo hasta tener el D&A exacto, asi que el EV/EBITDA real es algo menor. Contexto: margen EBIT del 26% en 2025 pese a aranceles de EE.UU. y divisa en contra, 50% de cuota mundial y ratio de fondos propios del 80%. El 26,5% del 1S26 incluye 14 M EUR de devolucion de aranceles: sin eso es 24,3%. El Q2 se freno al +4% por China. Sin cambios de rating: la concentracion de producto ya se bajo a -1 el 21-ago."
+    },
+    {
+      "ticker": "LIFCO B",
+      "date": "2026-08-22",
+      "fields_changed": "AV; AU; BN",
+      "source": "Verificacion del top 10 contra investor relations",
+      "summary": "Ingresos 26.500 -> 29.251 MSEK LTM (FY2025 28.251 menos 1S25 13.881 mas 1S26 14.881). EBITDA 5.800 -> 6.627: igual que en Rational, el 5.800 quedaba por debajo del EBITA LTM, asi que se pone el EBITA como suelo. Margen EBITA del 22,6% en el semestre, +60 pb. Crecimiento organico del 4,2% en 2025 y del 2,9% en el 1S26, con 16 negocios consolidados en 2025. Sin cambios de rating: su mezcla de organico y M&A es mas sana que la de Constellation y su Capital Allocation de 14 sobre 15 se sostiene."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-08-22",
+      "fields_changed": "V (R2 Potential); BD; BF",
+      "source": "Framework 4 pasos: transcript/outlook -> ratings -> FCF@5y y multiplos",
+      "summary": "Potential 14 -> 15: Azure supero los 100.000 M$ anuales creciendo al 43% en el Q4. FCF@5y rebasado tras el FCF normalizado: min 102.853 -> 145.000 (+3,0%/a) y max 153.471 -> 220.000 (+12,0%/a). Los anteriores estaban calibrados sobre una base de 70.000 y con la nueva de 124.961 implicaban un -3,8% anual en el bajista y solo un +4,2% en el alcista. Multiplos 20-30 se mantienen: ya cumplen el anclaje sobre un EV/FCF de 28,4. Resultado: bajista -18%, alcista +85%."
+    },
+    {
+      "ticker": "LOTB",
+      "date": "2026-08-22",
+      "fields_changed": "V (R2 Potential)",
+      "source": "Framework 4 pasos: transcript/outlook -> ratings -> FCF@5y y multiplos",
+      "summary": "Potential 13 -> 14: Biscoff crecio mas del 20% en VOLUMEN y en ingresos a la vez en el 1S26, o sea que no es precio, y Natural Foods crecio un 17% en 2025 hasta ser un negocio de 300 M EUR."
+    },
+    {
+      "ticker": "RAA",
+      "date": "2026-08-22",
+      "fields_changed": "AA (R2 Risks)",
+      "source": "Framework 4 pasos: transcript/outlook -> ratings -> FCF@5y y multiplos",
+      "summary": "Risks -7 -> -8: los aranceles de EE.UU. han pasado de evento a coste recurrente (el margen del 26,5% del 1S26 incluye 14 M EUR de devolucion; sin eso es 24,3%) y el Q2 se freno al +4% por China. Un -7 era la penalizacion mas baja del libro."
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-08-22",
+      "fields_changed": "BD; BF; BH; BI",
+      "source": "Framework 4 pasos: transcript/outlook -> ratings -> FCF@5y y multiplos",
+      "summary": "Caso bajista rehecho: no existia. El multiplo de salida bajista era 25x contra un EV/FCF actual de 17,7x, o sea que el escenario pesimista incluia expansion de multiplo, y ademas el FCF crecia al 10% anual. Queda min 4.350 -> 3.100 (+2,8%/a) con multiplo 25 -> 12, y max 6.200 -> 5.200 (+14,0%/a) con multiplo 40 -> 22. Motivo: el crecimiento organico del Q2 es del 3%, del 1% quitando divisa. Resultado: bajista -23%, alcista +142%."
+    },
+    {
+      "ticker": "BN",
+      "date": "2026-08-22",
+      "fields_changed": "BD; BF; BH; BI",
+      "source": "Framework 4 pasos: transcript/outlook -> ratings -> FCF@5y y multiplos",
+      "summary": "Mismo problema: multiplo bajista de 18x contra un EV/FCF actual de 17,7x y FCF creciendo al 9,3% anual en el escenario pesimista. Queda min 9.682 -> 6.845 (+2,0%/a) con multiplo 18 -> 13, y max 13.846 -> 11.420 (+13,0%/a) con multiplo 25 -> 22. El alcista sigue siendo generoso y esta justificado: capital con comisiones +19% hasta 672.000 M$, record de 77.000 M$ captados en el trimestre y 210.000 M$ desplegables. Resultado: bajista -21%, alcista +138%."
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2026-08-22",
+      "fields_changed": "BD; BF",
+      "source": "Framework 4 pasos: transcript/outlook -> ratings -> FCF@5y y multiplos",
+      "summary": "FCF@5y rebasado tras el FCF normalizado: min 72.933 -> 93.500 (+4,0%/a) y max 109.218 -> 161.500 (+16,0%/a) sobre la nueva base de 76.899. Multiplos 22,5-30 se mantienen: cumplen el anclaje sobre un EV/FCF de 36,9. Resultado: bajista -26%, alcista +72%."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "2026-08-22",
+      "fields_changed": "Framework Notes filas 61-72",
+      "source": "Framework 4 pasos: transcript/outlook -> ratings -> FCF@5y y multiplos",
+      "summary": "Documentado el framework de actualizacion en cuatro pasos: 1) financials y recalculo del LTM, 2) transcript y Q&A buscando organico frente a adquirido, guia, margenes y en que se gasta el capital, 3) mover R1/R2/R3 solo si el paso 2 da un hecho nuevo, 4) rebasar FCF@5y y anclar los multiplos de salida (bajista como maximo 0,75x el EV/FCF actual, alcista como maximo 1,25x) con el test de que el caso bajista pierda al menos un 15%."
+    },
+    {
+      "ticker": "IP",
+      "date": "2026-08-21",
+      "fields_changed": "ALTA NUEVA fila 68: A-I (mercado); J-Q Rating 1; T-AA Rating 2; AD-AK Rating 3; AO-AV financieros; AZ capital empleado; BD/BF FCF 5y; BH/BI múltiplos de salida; BN-BP fechas",
+      "source": "Deep dive propio 21-ago-2026 (Interpump_Deep_Dive.md + Interpump_Model_2019-2030.xlsx). Fuentes: nota de prensa FY2025 (20-mar-2026), resultados Q2/1S 2026 (6-ago-2026), earnings call Q2 2026, Highlights de IR, S&P Global vía stockanalysis",
+      "summary": "Alta nueva. Compounder industrial italiano: bombas de alta presion y componentes hidraulicos moviles, lider mundial en tomas de fuerza para camion. Margen EBITDA 22-24% durante siete anos; balance a 0,63x EBITDA con objetivo de deuda cero en 2028; sin dilucion. Composite 5,31. PUNTOS QUE PENALIZAN: ROIC 10,0% en el valle (13,4% en el pico de 2023) y ROIIC 2019-2025 del 7% - el crecimiento es M&A, no reinversion organica; sucesion sin resolver (Montipo, 82 anos, sigue de presidente ejecutivo con poderes delegados); no publica cartera ni book-to-bill; cilindros hidraulicos (18% de ventas) sin moat. PUNTOS QUE SUMAN: no publica ningun EBITDA ajustado (contabilidad limpia); recompro 95 M EUR en 2022 con la accion cara y volvio a recomprar 22 M EUR en el 1S 2026 con la accion barata; una sola compra grande evitada en el ciclo caro. AS/AT/AU/AV son LTM a jun-2026; AP/AQ son del cierre de 2025. BD/BF = FCF 2030E conservador (260) y alcista (480) del modelo propio; BH/BI son multiplos EV/FCF calibrados para reproducir las TIR del modelo (0,0% / +26,8%). Asimetria prudente 2,98:1 sobre un bajista construido a mano de 26 EUR; el escenario conservador del modelo (36,50) queda POR ENCIMA del precio actual. Sizing 2,0-2,5%, entrada escalonada."
+    },
+    {
+      "ticker": "RBT",
+      "date": "2026-08-21",
+      "fields_changed": "ALTA NUEVA fila 69: A-I (mercado); J-Q Rating 1; T-AA Rating 2; AD-AK Rating 3; AO-AV financieros; AZ capital empleado; BD/BF FCF 5y; BH/BI múltiplos de salida; BN-BP fechas",
+      "source": "Deep dive propio 21-ago-2026 (Robertet_Deep_Dive.md + Robertet_Model_2019-2030.xlsx). Fuentes: resultados anuales 2025 y presentacion (9-abr-2026), ventas 1S 2026 (6-ago-2026), texto de resoluciones de la junta 2026, nota Robertet/Peugeot Invest/FSP (nov-2024), S&P Global via stockanalysis",
+      "summary": "Alta nueva y la de MAYOR CALIDAD de la tanda de agosto de 2026. Casa familiar de Grasse fundada en 1850, lider mundial en ingredientes naturales de perfumeria y aroma; es a la vez proveedor y competidor de Givaudan, IFF, dsm-firmenich y Symrise. Composite 7,01. PUNTOS QUE SUMAN: moat de aprovisionamiento agricola no replicable con dinero (red en ~50 paises, destilerias propias); margen EBITDA del 17,3% (2019) al 20,6% (2025) y margen bruto +3,7 pt desde 2022; ROIC 15,0% y ROIIC 2021-2025 del 15,5% sobre inversion ORGANICA, no comprando empresas; circulante bajado del 60,9% al 48,4% de ventas (~100 M EUR liberados) desde que Jerome Bruhat es director general en 2022; familia Maubert con 38% del capital y 62% de los votos; sin metricas ajustadas; balance a 0,64x. PUNTOS QUE PENALIZAN: el director general no tiene participacion relevante (quien ejecuta no es dueno); transparencia muy pobre (sin margen por division, sin call trimestral, resultados semestrales); iliquidez real (2.169.297 titulos, 40% de free float); objetivo de +5% organico de 2026 en riesgo (1S en +2,8%, Q2 en +0,7%). OPCIONALIDAD NO MODELIZADA: Givaudan posee el 4,68% comprado en mercado sin negociacion previa. AP/AQ/AU/AV/AZ del cierre de 2025 (ultimo periodo completo reportado). BD/BF = FCF 2030E conservador (92) y alcista (145). Asimetria prudente 2,66:1 sobre un bajista de 588 EUR. Sizing 2,5-3,0%, candidata a nucleo resiliente; iniciar 1,5% y ampliar tras los resultados completos del 1S el 17-sep-2026."
+    },
+    {
+      "ticker": "ROKO B",
+      "date": "2026-08-21",
+      "fields_changed": "ALTA NUEVA fila 70: A-I (mercado); J-Q Rating 1; T-AA Rating 2; AD-AK Rating 3; AO-AV financieros; AZ capital empleado; BD/BF FCF 5y; BH/BI múltiplos de salida; BN-BP fechas",
+      "source": "Deep dive propio 21-ago-2026 (Roko_Deep_Dive.md + Roko_Model_2019-2030.xlsx). Fuentes: informe anual 2025, year-end report 2025, informe intermedio ene-jun 2026 y presentacion, nota de cambio de CEO (8-mar-2026), prospecto de la salida a bolsa (mar-2025), stockanalysis y MarketScreener",
+      "summary": "Alta nueva. Consolidador nordico fundado en 2019 por Fredrik Karlsson (CEO de Lifco 1998-2019) y Tomas Billing. 34 companias de nicho en 8 paises, 1.829 empleados y OCHO personas en la oficina central. Composite 5,98. PUNTOS QUE SUMAN: el mejor alineamiento de la watchlist - 21% del capital y 65% de los votos en manos de los tres ejecutivos, y Karlsson ha comprado acciones por 97 MSEK tras la salida a bolsa; compra por debajo de 8x EBITA lo que el mercado le valora a 21x; ROCE sube cinco anos seguidos (9,2% a 14,8%) MIENTRAS compra; ROCE sin fondo de comercio 127%; capex 1% de ventas y conversion de caja 72%; una sola adquisicion en 2023, el ano caro (la disciplina que Storskogen no tuvo). PUNTOS QUE PENALIZAN: solo 17 meses de historia publica (salida a bolsa 11-mar-2025) y una sola memoria anual; cambio de consejero delegado el 22-abr-2026 (Johan Bladh sustituye a Karlsson, que sigue como adjunto y presidente del Comite de Inversiones) SIN QUE LA COMPANIA HAYA EXPLICADO POR QUE AHORA; apalancamiento de 2,0x (dic-25) a 2,6x (jun-26) contra un techo declarado de 3,0x; el 32% de las ventas es B2C de retail especializado, el segmento con peor economia de la cartera. TRAMPA CONTABLE IMPORTANTE: hay DOS cifras de deuda. La deuda neta con intereses es 1.817 MSEK; la deuda financiera neta es 4.387 MSEK e incluye 2.570 MSEK de opciones de venta, earn-outs y pagos aplazados a los minoritarios de las filiales, que CRECEN cuando las filiales van bien. AQ=4.887 y AP=500 estan puestos para que AR reproduzca el EV correcto de 31.617 MSEK. Con esa deuda el descuento en EV/EBITA frente a Lifco casi desaparece (21,5x vs 22-24x), aunque en P/E siga pareciendo barata. AU es EBITDA estimado (adj. EBITA LTM 1.473 + amortizacion de tangibles); la compania reporta adj. EBITA, no EBITDA. Asimetria 3,02:1, la mejor de la tanda. Sizing 1,5-2,0%, media posicion ahora. Fechas BO/BP estimadas."
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-08-21",
+      "fields_changed": "ALTA NUEVA fila 71: A-I (mercado); J-Q Rating 1; T-AA Rating 2; AD-AK Rating 3; AO-AV financieros; AZ capital empleado; BD/BF FCF 5y; BH/BI múltiplos de salida; BN-BP fechas",
+      "source": "Deep dive propio 21-ago-2026 (USPH_Deep_Dive.md + USPH_Model_2019-2030.xlsx). Fuentes: 8-K de resultados Q2 2026 (5-ago-2026) y Q1 2026 (5-may-2026), presentacion de inversores Q4 2025, CMS/APTA sobre el Medicare Physician Fee Schedule 2026 y 2027, S&P Global via stockanalysis",
+      "summary": "Alta nueva. Unico operador cotizado puro de fisioterapia ambulatoria de EE.UU.: 780 clinicas en 44 estados mas un negocio de prevencion de lesiones laborales (15% de ingresos, sin exposicion al reembolso sanitario). Mercado de mas de 40.000 M USD tan fragmentado que ningun operador supera el 10%. Composite 2,94, el mas bajo de la tanda. AVISO CRITICO: el BPA GAAP de USPH NO SIGNIFICA NADA. Los fundadores de cada clinica conservan el 20-50% en participaciones REDIMIBLES que se revalorizan cada trimestre, y esa revalorizacion se resta del BPA sin pasar por el beneficio neto; en el Q1 2026 hubo beneficio neto positivo (5,0 M USD) y BPA NEGATIVO (-0,12 USD), y el PER oficial LTM es de 437x. Solo sirven el EBITDA ajustado y los Operating Results per share. PUNTOS QUE PENALIZAN: el margen NO expande (EBITDA ajustado 12,9% en 2023, 12,2% en 2024 y 2025) y el margen bruto de clinica ha caido del 23,9% (2021) al 19,9% (Q2 2026); tijera estructural entre el ingreso por visita (+2,1%) y el coste salarial por visita (~+4,1%); ROIIC 2023-2025 de ~7% despues de impuestos porque compra clinicas a 8-10x contra cuatro fondos de private equity; apalancamiento de 1,36x (2023) a 3,47x (jun-26) MAS 318 M USD de participaciones redimibles fuera de esa cifra; dividendo (27,4 M USD) MAYOR que el flujo de caja atribuible al accionista de USPH (~20-25 M USD tras la salida hacia los socios de clinica), financiado con deuda; ampliacion de capital del 15% en 2023; insiders con solo 2-3% del capital. PUNTOS QUE SUMAN: demanda demografica garantizada, la mejor transparencia operativa de la tanda (visitas, visitas diarias por clinica, ingreso por visita por pagador, salarios sobre ingresos), CEO con 22 anos en el puesto, circulante practicamente cero y capex del 1,8% de ventas, y las afiliaciones hospitalarias (NYU Langone y un sistema de la Costa del Golfo, 70 clinicas integrandose en 2026) como opcionalidad que crece sin capital. AZ excluye las participaciones redimibles. AU=96 es EBITDA AJUSTADO LTM (metrica de la compania, ya neta de minoritarios); por eso el EV de AR no les suma los 318 M USD. Asimetria 1,75:1, POR DEBAJO del minimo de 2:1: sizing HOY 0%. Alerta de precio en 75,72 USD (2:1) y compra en 72 USD (2,5:1); por debajo de 65 USD, 2,5-3% - es donde recompro la propia compania en el 1S 2026 (media 62,80 USD). Q3 2026 en noviembre es el trimestre decisivo: el margen bruto de clinica tiene que volver por encima del 21% y la guia de EBITDA ajustado de 102-106 M USD exige un 2S de ~57 M USD frente a 47 en el 1S."
+    },
+    {
+      "ticker": "PRY",
+      "date": "2026-08-21",
+      "fields_changed": "M (Financials); P (Founder/CEO); Q (Ownership); K (MOAT)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Financials 0>1 por deuda neta 0,9x EBITDA. Founder/CEO 0>1: la columna se aplica como calidad del liderazgo y el equipo cumplio los seis objetivos del CMD con adelanto. Ownership -1>0 para igualar el criterio de ABB, Schneider, Legrand y Veralto. MOAT 5>5,5 por la posicion en HVDC."
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-08-21",
+      "fields_changed": "P (Founder/CEO); Y (Mgmt & Culture)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Founder/CEO 0>1: los fundadores conservan el control de voto via acciones B. Mgmt & Culture 9>11: un 9 sobre 14 lo ponia por debajo de Airbnb y Descartes."
+    },
+    {
+      "ticker": "NET",
+      "date": "2026-08-21",
+      "fields_changed": "J (Mission); T (R2 Financials)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Mission 2>1: el maximo de la columna para un vendedor de CDN/SSE mientras Inditex y Lifco estan en 0. R2 Financials 10>8 con ROIC 1,4% y EV/FCF 369x."
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-08-21",
+      "fields_changed": "J (Mission)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Mission 2>1, mismo criterio que Cloudflare y Zscaler."
+    },
+    {
+      "ticker": "ZS",
+      "date": "2026-08-21",
+      "fields_changed": "J (Mission)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Mission 2>1. Con el 2 su Rating 1 igualaba al de Veeva con un moat de 6 frente a 8."
+    },
+    {
+      "ticker": "ABNB",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT); L (Optionality)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 7>6: el anfitrion tiene Booking a un clic y la oferta es legislable ciudad a ciudad. Optionality 3>2: Experiences y Hoteles llevan cinco anos sin monetizarse."
+    },
+    {
+      "ticker": "FERG",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT); M (Financials)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 4>5 por la densidad de red en distribucion de fontaneria y climatizacion, con ROIC del 23%. Financials 0>1 por apalancamiento en torno a 1x."
+    },
+    {
+      "ticker": "TFPM",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 5>6: estructura de royalty sin capex ni inflacion de costes, margen NOPAT del 61%."
+    },
+    {
+      "ticker": "SIKA",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 5>6: prescripcion con el arquitecto y margen EBITDA del 20% a traves de ciclos."
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 6>6,5: especificacion regulatoria en calidad del agua y trazabilidad. R2 le daba 16/20 y R3 13/15."
+    },
+    {
+      "ticker": "ROKO B",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 4>5: mismo modelo que Lifco (7/8) ejecutado por quien construyo Lifco. La diferencia real es historial, ya penalizada en R2."
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 7>6: foso encerrado en el perimetro regulatorio de un solo pais."
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-08-21",
+      "fields_changed": "K (MOAT)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "MOAT 3>4: densidad local de clinicas y relacion con el medico prescriptor."
+    },
+    {
+      "ticker": "LOTB",
+      "date": "2026-08-21",
+      "fields_changed": "N (Concentration)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Concentration 0>-1: el beneficio depende de una sola marca."
+    },
+    {
+      "ticker": "RAA",
+      "date": "2026-08-21",
+      "fields_changed": "N (Concentration)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Concentration 0>-1: una sola familia de producto, los hornos combinados."
+    },
+    {
+      "ticker": "NTO",
+      "date": "2026-08-21",
+      "fields_changed": "N (Concentration)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Concentration 0>-1: el negocio pivota sobre una generacion de consola cada vez."
+    },
+    {
+      "ticker": "SPOT",
+      "date": "2026-08-21",
+      "fields_changed": "N (Concentration)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Concentration 0>-2: tres discograficas controlan el catalogo sin el cual el producto no existe."
+    },
+    {
+      "ticker": "DNP",
+      "date": "2026-08-21",
+      "fields_changed": "V (Potential)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Potential 14>11: un 14 sobre 18 lo igualaba a Airbnb para una alimentaria europea que crece a un digito medio."
+    },
+    {
+      "ticker": "OTLY",
+      "date": "2026-08-21",
+      "fields_changed": "K; L; M (R1); U; V; Y; AA (R2); AD; AE; AG; AH; AJ; AK (R3)",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Revision completa tras Q2 2026 (22-jul-2026): ingresos +15,2%, margen bruto 33,9% (+140pb), adj EBITDA +0,4 M$ frente a -3,6, FCF -0,6 M$ frente a -5,2, guia de crecimiento subida del 3-5% al 8-10%, opex del 57,8% al 41,4% de ventas en cuatro anos. Sube Mgmt & Culture, Potential, Durability y Capital Allocation, y baja el doble castigo por apalancamiento (Risk of Disappearance y Terminal Risk). En contra: deuda neta ~459 M$ frente a adj EBITDA guiado de 25-35 M$, por lo que baja R1 Financials a -1 y Financing Source a -4, y se alinean los tres MOAT (R1 5>4, R2 5>6, R3 9>7) que se contradecian entre si."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "2026-08-21",
+      "fields_changed": "R (R1 Sum); S (RATING 1) filas 4-71",
+      "source": "Auditoria cualitativa de ratings contra el checklist del deep dive de Prysmian",
+      "summary": "Glassdoor sale del Rating 1 y la normalizacion pasa de /17 a /16. Motivo: la columna estaba en blanco en 38 de 68 filas y mezclaba dos escalas. Las filas con la columna rellena tenian una divergencia media de +0,05 frente al resto de ratings; las que la tenian en blanco, de -0,70. La columna O se conserva con sus valores, solo deja de sumar."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "2026-08-21",
+      "fields_changed": "AN (Composite) filas 4-71; Framework Notes filas 8, 14, 39, 40, 41",
+      "source": "Auditoria cualitativa de ratings - reponderacion del compuesto",
+      "summary": "El compuesto pasa de media simple a 20% R1 + 40% R2 + 40% R3. Motivo: R2 es el rating mas denso y falsable (100 puntos, todo anclado en economia); R3 lleva el riesgo terminal, que en el framework de sizing es un divisor y no un sumando; R1 es el mas ruidoso (16 puntos, 4 de juicio blando) y baja a capa de matiz. Movimiento maximo +-0,25 puntos. IMPORTANTE: src/etl.py valida composite = media(R1,R2,R3) con tolerancia 0,05, hay que actualizar esa comprobacion o el build falla."
+    },
+    {
+      "ticker": "KIST",
+      "date": "2026-08-21",
+      "fields_changed": "AO61; AR61; BJ61; BK61",
+      "source": "Auditoria de divisa cotizacion vs reporte",
+      "summary": "Kistos cambio su moneda de presentacion de EUR a USD el 1-ene-2024; la hoja ponia GBP. Se corrige AO y se anaden la conversion GBP->USD (Framework Notes E9) y el *100 de peniques en AR, BJ y BK. AR no tenia formula: era un valor congelado."
+    },
+    {
+      "ticker": "SOM",
+      "date": "2026-08-21",
+      "fields_changed": "AO67; AR67; BJ67; BK67",
+      "source": "Auditoria de divisa cotizacion vs reporte",
+      "summary": "Somero Enterprise Inc. es sociedad de Delaware: reporta en USD y cotiza en peniques en AIM; la hoja ponia GBP. Ademas a BJ67 y BK67 les faltaba el *100 que si tienen HLMA, JDG, KIST y WOSG, con lo que el FVE salia en libras contra un precio en peniques: error de factor 100 latente porque el FCF@5y esta vacio."
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-08-21",
+      "fields_changed": "AR65; BJ65; BK65",
+      "source": "Auditoria de divisa cotizacion vs reporte",
+      "summary": "Constellation Software cotiza en CAD y reporta en USD, y ninguna de las tres formulas convertia: la capitalizacion en CAD se mezclaba con caja, deuda y FCF en USD. EV/FCF pasa de 24,7x a ~18,2x. Es la empresa mejor puntuada del libro."
+    },
+    {
+      "ticker": "IPCO",
+      "date": "2026-08-21",
+      "fields_changed": "BJ63; BK63",
+      "source": "Auditoria de divisa cotizacion vs reporte",
+      "summary": "AR63 ya convertia CAD->USD pero BJ63 y BK63 no, con lo que el FVE por accion salia en USD contra un precio en CAD."
+    },
+    {
+      "ticker": "DNP",
+      "date": "2026-08-21",
+      "fields_changed": "V (Potential)",
+      "source": "Auditoria de divisa cotizacion vs reporte",
+      "summary": "Revertido 11 -> 14. El cambio del 21-ago se hizo creyendo que DNP era Danone; es Dino Polska (supermercados, Varsovia, PLN). El argumento de alimentaria europea madura no aplica a un discounter polaco que sigue abriendo cientos de tiendas al ano."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "2026-08-21",
+      "fields_changed": "E60; E35; Framework Notes C9/E9",
+      "source": "Auditoria de divisa cotizacion vs reporte",
+      "summary": "Codigos de mercado: Verallia XWBO->XPAR (Euronext Paris) y Kingspan XFRA->XDUB (Euronext Dublin). Nuevo tipo de cambio en Framework Notes E9 = 1,3641 USD/GBP. AVISO: los tipos E4:E8 estan congelados porque la columna D, que deberia traerlos en vivo, esta en #VALUE! en las cinco filas."
+    },
+    {
+      "ticker": "PRY",
+      "date": "2026-08-20",
+      "fields_changed": "Cash & Equivalents; Total Debt; FCF LTM; NOPAT LTM; EBITDA LTM; Revenue LTM; Capital Employed; Ultima actualizacion",
+      "source": "Deep dive propio 19-ago-2026 (Prysmian_Deep_Dive.md), datos FY2025 reportados + Q2/1H2026 (30-jul-2026)",
+      "summary": "LTM refrescado a cifras FY2025 auditadas (Rev 19.650M, Adj EBITDA 2.398M, margen 14,2%). Deuda neta bajo control (0,9x EBITDA guiado a cierre 2026). Vigilar CMD 2027 y despliegue de 2.600M de M&A pendiente."
+    },
+    {
+      "ticker": "SOM",
+      "date": "2026-08-20",
+      "fields_changed": "ALTA NUEVA: Company Name; Ticker; Category; Estilo inversion; Exchange; Currency; Price; Shares Outstanding; Market Cap; FX Reporting; Cash & Equivalents; Total Debt; FCF LTM; NOPAT LTM; EBITDA LTM; Revenue LTM; Enterprise Value; EV/FCF; EV/EBITDA; EV/Sales; NOPAT M%",
+      "source": "Tesis de Somero.docx + Somero_Operating_Model_2022_2030.xlsx (hojas Dashboard/Valuation/P&L/Assumptions)",
+      "summary": "Alta nueva. Lider de nicho (Laser Screed hormigon), balance sin deuda neta (caja neta ~30M USD), ciclico en fondo de ciclo (Revenue -33% y EBITDA -60% pico-2022 a 2025). AGM jun-2026 con voto mayoritario EN CONTRA en 4 resoluciones (gobierno corporativo) - bandera roja pendiente de resolver. Ratings cualitativos (Rating 1/2/3, columnas J:AK) sin rellenar: la tesis no incluye scores 0-10, quedan pendientes de tu criterio."
+    },
+    {
+      "ticker": "SOM",
+      "date": "2026-08-20",
+      "fields_changed": "Rating 1 (J:S completo); Rating 2 (T:AC completo); Rating 3 (AD:AM completo); Composite (AN); A67 vinculado como Stocks data type (B,E,F,G,H,I ahora formulas en vivo); Ultimos/Proximos resultados",
+      "source": "Tesis de Somero.docx (texto completo) + Somero_Operating_Model + investigacion web: Investegate (resultado AGM 17-jun-2026), TradingView/Investing.com (governance review 8-jul-2026), Johan Lunau Substack (moat/market share historico), busquedas Glassdoor/insider ownership",
+      "summary": "Ratings calibrados contra Kistos/WOSG/Judges/Rational ya existentes en la hoja. Composite 3.56 (tier especial situacion, coherente con Estilo asignado). Puntos clave que penalizan: escandalo de voto en AGM jun-2026 (VN Capital denuncia 8.3M votos excluidos por cambio de fecha limite en Computershare/CREST), Remuneration Policy rechazada 61.35%, presidente L.Horsch 90 anos forzado a dimitir, sin stake verificable del CEO, Glassdoor negativo (equipo UK). Puntos que suman: caja neta sin deuda, >80% cuota estimada en screed automatizado, >100 patentes, board ya en revision de gobierno (QCA code) desde jul-2026."
+    },
+    {
+      "ticker": "PRY",
+      "date": "2026-08-20",
+      "fields_changed": "Rating 1: Optionality, Concentration, Glassdoor, Ownership. Rating 2: Potential, Risks. Rating 3: Capital Allocation, Financing Source, Terminal Risk. FVE inputs: FCF @5y Min/Max (BD/BF)",
+      "source": "Deep dive propio 19-ago-2026 + toggle de escenarios del modelo Prysmian_Model_2019-2030.xlsx (Assumptions!B4, lectura Valuation!M14/M18 2030E por escenario) + investigacion web: anuncio adquisicion Atkore (prysmian.com, ~1-ago-2026), insider ownership (<5%, disperso), Glassdoor (3.7/5, 72% recomienda)",
+      "summary": "Composite 5.24 -> 5.16 (practicamente estable). Hallazgo relevante no recogido en el deep dive: Prysmian anuncio compra de Atkore por 3.800M USD en efectivo (95 USD/accion), 9.8x EV/EBITDA 2025A o 7.1x con sinergias (150M USD/año en 3 años) - POR DEBAJO del umbral de alerta de 12x que el propio deep dive marcaba como limite de disciplina. Cierre esperado a finales de 2026; financiado con deuda+hibridos+autocartera manteniendo rating IG. Sube Optionality y Capital Allocation por la disciplina de precio; sube Concentration (penaliza) y Terminal Risk por la mayor exposicion a EEUU y el riesgo de integracion de una segunda gran adquisicion tan pronto tras Encore Wire. Ownership baja a -1: confirmado externamente insider ownership <5% disperso, sin comprador relevante en mercado abierto. FVE inputs (BD/BF) recalculados directamente alternando el toggle de escenario del modelo propio (Assumptions!B4=1/2/3) y leyendo el FCF 2030E resultante (5 anios vista): conservador 1.701M€, base 2.506M€ (sin cambio), alcista 3.496M€. FVE resultante: 93,76€ (min) - 252,93€ (max) con multiplos de salida 18x-22,5x FCF (sin cambio respecto al default de la hoja). IMPORTANTE: este FVE es standalone, NO incorpora el pro forma de Atkore (deal aun no cerrado, sin modelo combinado propio)."
+    },
     {
       "ticker": "UBER",
       "date": "2026-08-17",
