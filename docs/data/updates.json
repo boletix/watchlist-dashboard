@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 227,
+    "n_updates": 237,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -452,6 +452,76 @@
       "fields_changed": "Framework Notes filas 58 y 59",
       "source": "Condicion nueva para normalizar el FCF",
       "summary": "Fila 58: la normalizacion solo vale si el capex elevado es TEMPORAL. Si lleva TRES O MAS EJERCICIOS SEGUIDOS por encima del doble del D&A, no es una fase de inversion sino como funciona el negocio, y se usa el FCF reportado. Sale LOTB y quedan doce filas normalizadas. PENDIENTE: pasar este test a las doce restantes, empezando por META, GOOG, MSFT y AMZN, que tambien llevan varios ejercicios de capex alto. Fila 59: advertencia nueva sobre los negocios cuyo FCF a traves del ciclo no existe porque el beneficio se reinvierte en circulante y no en activo fijo, con TFF como caso extremo del libro."
+    },
+    {
+      "ticker": "S",
+      "date": "46259",
+      "fields_changed": "AH (R3 Financing Source); AI (R3 Incentives)",
+      "source": "Correccion de un error propio",
+      "summary": "SentinelOne. CORRIGE UN ERROR MIO DEL 25-AGO: el mapa de columnas del script tenia AH en la posicion 35, que es AI, asi que el cambio previsto -Financing Source de 0 a 1- se escribio en Incentives y lo bajo de 6 a 1. Efecto real: el R3 cayo 5 puntos en vez de subir 1. Restaurado: AH=1 (que era la intencion, por 657 M$ de caja e inversiones a corto mas 156 a largo, sin deuda y FCF LTM positivo de 62 M$) y AI=6 (valor original). El R3 pasa de 2,86 a 3,71."
+    },
+    {
+      "ticker": "COST",
+      "date": "46259",
+      "fields_changed": "V (R2 Potential)",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Costco. R2 Potential 11 -> 13. El 11 estaba calibrado como el de un retailer americano maduro y el deep dive muestra que el motor no son las aperturas: el parque solo ha crecido un 17% en seis anos (795 a 931 almacenes) mientras la FACTURACION POR ALMACEN subia de 209,8 a 315,3 M$ (+50%) y el BENEFICIO POR ALMACEN de 5,03 a 9,50 M$ (+89%). O sea apalancamiento operativo sobre una base de costes ya pagada, mas subidas de cuota cada cinco anos, mas penetracion de Kirkland, mas comercio electronico apalancando los mismos almacenes. Y Europa sigue practicamente sin ejecutar. FLYWHEEL confirmado con el indicador que la tesis de 2021 eligio como senal de alarma: la renovacion EE.UU./Canada ha subido del 91% al 92,2% y la mundial del 88% al 89,7%. Las cuotas son el 49% del beneficio operativo. NO se sube Optionality (sigue en 1 sobre 3): Europa lleva cinco anos prometida y sin ejecutar, y una opcion no ejercida no se premia."
+    },
+    {
+      "ticker": "ITX",
+      "date": "46259",
+      "fields_changed": "AD (R3 Durability); L (R1 Optionality); BF",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Inditex. R3 Durability 14 -> 15 y R1 Optionality 2 -> 1,5. Durability al maximo porque el deep dive responde la pregunta que la tesis de 2021 dejo abierta: el online iba a comprimir el margen y ha hecho lo contrario. Es el 26,7% de las ventas (10.700 M EUR) y el margen bruto SUBIO 42 pb hasta el 58,3%, con el EBIT en 20,2% frente al 16-16,5% que se esperaba. Ademas han cerrado casi 2.000 tiendas desde 2019 (7.400 a 5.460) y venden mas que nunca. Absorber un cambio de canal que ha matado a media industria textil expandiendo margen ES antifragilidad demostrada. Optionality baja porque la palanca online ya esta ejercida y esta en la base, no en el futuro; Asia, que era la otra palanca de la tesis, lleva cinco anos sin arrancar; y no lanzan una marca organica desde Uterque en 2008 ni compran una desde Stradivarius en 1998. BF pasa de 12.407 a 10.832 (+12,0%/a a +9,0%/a): con el parque de tiendas ENCOGIENDO y Asia sin ejecutar, un 12% anual de FCF durante cinco anos exige que el margen siga expandiendo por encima del 20,2%. El +9%/a es lo que da el historial real (beneficio neto +9,5% anual entre 2019 y 2025). Alcista pasa de +67% a +46%, asimetria 2,3:1. AVISO ya recogido: la hoja tenia DEUDA CERO y son 6.040 M EUR, casi todo arrendamientos NIIF 16 de 5.460 tiendas; la caja neta excluyendo arrendamientos ronda los 10.000 M EUR."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46259",
+      "fields_changed": "Ninguno - nota de proceso",
+      "source": "Revision de las tesis del Drive",
+      "summary": "Revisadas las 36 tesis de la carpeta de Drive (2020-2021). Once son de empresas de la watchlist: COST, ITX, AMZN, MSFT, NTO, ABNB, GOOG, META, VID, SIKA y SPOT, mas Brookfield Asset Management que no es la matriz que seguimos. PATRON QUE CONVIENE ANOTAR: en Costco e Inditex el analisis del NEGOCIO fue solido -las dos identificaron la metrica correcta a vigilar- y la estimacion del RECORRIDO se quedo corta por un factor de dos o tres. Costco con precio de venta en 450 $ y hoy 947; Inditex con techo en 35-40 EUR y hoy 58,28. Es un sesgo consistente, no mala suerte, y hay que tenerlo delante al fijar los multiplos de salida del escenario alcista. Indice completo en Inversion Roger/00_Tesis_en_Drive_indice.md."
+    },
+    {
+      "ticker": "NTO",
+      "date": "46259",
+      "fields_changed": "Ninguno - deep dive sin cambio de rating",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Nintendo. SIN CAMBIO DE RATING, y se explica por que. El deep dive confirma la tesis del Drive en lo esencial -las IP tienen efecto Lindy, la explotacion fuera de la consola ya esta ocurriendo (Osaka, cine, series) y la caja neta sigue siendo el 19% de la capitalizacion, igual proporcion que en 2021- y no aparece ningun hecho nuevo que mueva R1, R2 ni R3. LO QUE SI APARECE ES UN PROBLEMA DE MEDICION: en el ano de lanzamiento Nintendo fabrica e inventaria millones de consolas antes de venderlas, asi que el circulante absorbe caja justo cuando el beneficio hace maximo y el FCF se deprime en el PICO de ventas. Por eso el EV/FCF sale en 38,1x en el mejor ejercicio de su historia. La tesis de 2021 decia que en la parte alta del ciclo la empresa PARECERIA BARATA y es justo al reves. Mismo mecanismo que TFF Group: negocios donde el circulante se mueve al reves que el beneficio. Para Nintendo la metrica honesta es EV/EBIT sobre beneficio medio de ciclo. Contexto: FY2026 cerro con ventas de 2.313 mm JPY (+98,6%) y la propia guia FY2027 es de 2.050 mm (-11,4%); el +150% de resultado operativo del Q1 incluye unos 300 M$ de devoluciones de aranceles que no se repiten."
+    },
+    {
+      "ticker": "ABNB",
+      "date": "46259",
+      "fields_changed": "U (R2 MOAT)",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Airbnb. R2 MOAT 16 -> 17. Hecho de largo plazo que las ratings no recogian: la marca se ha convertido en CATEGORIA -la gente dice un airbnb- y eso hace que el trafico directo sustituya al comprado. Consecuencia medible: margen operativo del 20,8% frente al 11% que proyectaba la tesis del Drive para este momento, y margen FCF del 37%. Un foso de marca que reduce estructuralmente el coste de adquisicion es exactamente lo que mide esta columna. NO se sube MOAT del R1 (sigue en 6 sobre 8): la observacion del 21-ago de que el anfitrion tiene Booking a un clic y de que la oferta es legislable ciudad a ciudad sigue siendo cierta. PENDIENTE: Experiencias lleva cinco anos sin monetizar; si sigue asi hay que sacarla del caso alcista. AVISO: de los 12.069 M$ de caja, una parte son fondos de anfitriones pendientes de pago -flotacion, no caja propia- y la fila no lo distingue."
+    },
+    {
+      "ticker": "GOOG",
+      "date": "46259",
+      "fields_changed": "AF (R3 Capital Intensity)",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Alphabet. R3 Capital Intensity 6 -> 5. El capex LTM es de 132.410 M$, el 29,7% de las ventas y CINCO VECES el D&A. La tesis del Drive describia Alphabet como un negocio donde para cada dolar extra ganado no hace falta invertir practicamente nada; eso ha dejado de ser cierto. Precedente del libro: a Microsoft se le bajo esta misma columna de 5 a 4 con el capex al 35% de las ventas. El capital empleado sube a 795.872 M$ y el ROIC baja al 15,1%, bajo para Alphabet. RIESGO ESTRUCTURAL QUE HAY QUE VIGILAR y que no estaba en la tesis de 2021: si el usuario deja de teclear una consulta y pasa a preguntar a un asistente que da la respuesta directa SIN ensenar diez enlaces con anuncios encima, el inventario publicitario se encoge aunque la busqueda siga existiendo. Es lo que decide el valor terminal. AVISO: toda la asimetria de esta fila descansa en la normalizacion del FCF; con el reportado (53.270) el EV/FCF seria 76,5x."
+    },
+    {
+      "ticker": "META",
+      "date": "46259",
+      "fields_changed": "AF (R3 Capital Intensity); AH (R3 Financing Source)",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Meta. R3 Capital Intensity 7 -> 5 y R3 Financing Source 4 -> 3. Capex LTM de 89.320 M$, el 39,1% de las ventas y casi CUATRO VECES el D&A: mas intensivo que Microsoft cuando se le bajo esta columna. Y por primera vez en su historia la DEUDA (112.320) SUPERA A LA CAJA (90.260), o sea que la apuesta se esta financiando con apalancamiento. Meta ha pasado de ser el negocio mas ligero en capital de las grandes tecnologicas a uno de los mas pesados. El negocio publicitario sigue siendo extraordinario -38,1% de margen operativo sobre 228.250 M$- y el bucle de la subasta que describia la tesis de 2021 sigue funcionando: el ARPU sube sin necesidad de anadir usuarios. AVISO SOBRE LA ASIMETRIA: 10,5:1 sobre el papel es la mas alta del libro, pero el rango entre el bajista (-5,4% anual de FCF) y el alcista (+16%) es enorme porque la incertidumbre es enorme. Un 10,5:1 no es senal de compra, es senal de resultado BINARIO, y un binario se penaliza por el divisor de riesgo terminal, no se premia por el numerador. WhatsApp sigue sin monetizar cinco anos despues: opcionalidad no ejercida que no se debe pagar."
+    },
+    {
+      "ticker": "SIKA",
+      "date": "46259",
+      "fields_changed": "V (R2 Potential)",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Sika. R2 Potential 11 -> 10. La tesis del Drive es la mejor documentada del lote y su parte cualitativa no necesita correccion: el foso de la ESPECIFICACION es real -el prescriptor escribe el producto en el pliego y cambiarlo puede exigir una nueva homologacion, asi que el coste de cambio es regulatorio y no economico- y ademas se ensancha con la regulacion climatica. Cultura solida (promocion interna, el CEO llevaba 32 anos dentro, compromiso 86/100) y retribucion bien disenada, con el ROCE relativo pesando el 40% del incentivo largo. LO QUE BAJA POTENTIAL ES CUANTITATIVO Y DE LARGO PLAZO: la propia tesis reconoce que el crecimiento organico es bajo, y los numeros lo confirman -de 9.250 M CHF en 2021 a 11.760 en 2024 con MBCC aportando 2.100 de esos 2.500, o sea que casi todo el crecimiento de tres anos vino de una compra financiada con 2.250 M EUR de bonos-. Hoy el ROIC es del 9,6%, cerca del coste de capital, y la deuda neta 5.455 M CHF = 2,8x EBITDA, lo que limita la siguiente compra. Un consolidador que reinvierte al 9,6% no compone, administra. Contraste con la tesis: margen FCF 11,9% cumple lo esperado (9-12%), pero el EBITDA esta en 17,5% y no en el 20% previsto. AVISO: el multiplo de salida bajista de 18x es el 66% del actual, blando para un ciclico apalancado; 15x seria mas honesto."
+    },
+    {
+      "ticker": "SPOT",
+      "date": "46259",
+      "fields_changed": "T (R2 Financials); AH (R3 Financing Source)",
+      "source": "Deep dive completo del 25-ago-2026",
+      "summary": "Spotify. R2 Financials 13 -> 15 y R3 Financing Source 2 -> 4. Ha demostrado lo que tenia que demostrar: que el apalancamiento operativo existia. De perdidas estructurales a un resultado operativo de 2.653 M EUR (14,6% de margen), un FCF de 3.267 (18% de margen) y un ROIC del 24%, con 6.519 M EUR de CAJA NETA. Ya no depende de nadie para financiarse. LA LECCION QUE HAY QUE LLEVARSE AL RESTO DEL LIBRO: la tesis del Drive fijaba el caso alcista en 380 $ y la accion esta en 550,72 $; fallo en una unica variable, el margen, y ella misma la habia senalado como su punto debil (los margenes operativos me generan dudas, el apalancamiento operativo es poco visible). En negocios con base de costes fija grande y margen bruto creciente, el apalancamiento operativo NO es lineal: es explosivo al cruzar el umbral de rentabilidad. Mismo error que en Airbnb (11% proyectado, 20,8% real). Y es lo que puede estar pasando AHORA con SentinelOne, que acaba de cruzar a operativo no-GAAP positivo. NO se sube MOAT ni Concentration: Spotify no es dueno de lo que vende y tres discograficas pueden decidir su margen; el -2 de concentracion esta bien puesto."
     },
     {
       "ticker": "MSFT",
