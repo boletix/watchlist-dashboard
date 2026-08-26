@@ -1,6 +1,6 @@
 {
   "meta": {
-    "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Actualizado: 2026-08-25.",
+    "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Actualizado: 2026-08-26.",
     "fields": "earnings_last_date (ISO), earnings_next_date (ISO), earnings_updated_at (ISO), earnings_next_estimated (bool)"
   },
   "companies": {
@@ -25,7 +25,7 @@
     "BN": {
       "earnings_last_date": "2026-08-13",
       "earnings_next_date": "2026-11-12",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "COST": {
@@ -67,7 +67,7 @@
     "SU": {
       "earnings_last_date": "2026-07-30",
       "earnings_next_date": "2026-10-29",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "ITX": {
@@ -85,19 +85,19 @@
     "HLMA": {
       "earnings_last_date": "2026-06-11",
       "earnings_next_date": "2026-11-19",
-      "earnings_updated_at": "2026-06-24",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "FICO": {
       "earnings_last_date": "2026-07-29",
       "earnings_next_date": "2026-11-18",
-      "earnings_updated_at": "2026-07-30",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "LIFCO B": {
       "earnings_last_date": "2026-07-14",
       "earnings_next_date": "2026-10-22",
-      "earnings_updated_at": "2026-08-22",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "EVD": {
@@ -127,13 +127,13 @@
     "VLTO": {
       "earnings_last_date": "2026-07-28",
       "earnings_next_date": "2026-10-27",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "LR": {
       "earnings_last_date": "2026-08-06",
       "earnings_next_date": "2026-11-05",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "JDG": {
@@ -151,13 +151,13 @@
     "META": {
       "earnings_last_date": "2026-07-29",
       "earnings_next_date": "2026-10-28",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "KKR": {
       "earnings_last_date": "2026-07-30",
       "earnings_next_date": "2026-11-04",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "NET": {
@@ -193,7 +193,7 @@
     "KRX": {
       "earnings_last_date": "2026-08-07",
       "earnings_next_date": "2026-11-20",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": false
     },
     "KSPI": {
@@ -247,7 +247,7 @@
     "CPR": {
       "earnings_last_date": "2026-07-29",
       "earnings_next_date": "2026-10-28",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "SIKA": {
@@ -259,7 +259,7 @@
     "CHKP": {
       "earnings_last_date": "2026-07-30",
       "earnings_next_date": "2026-10-28",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "TGYM": {
@@ -277,7 +277,7 @@
     "TFPM": {
       "earnings_last_date": "2026-08-05",
       "earnings_next_date": "2026-11-04",
-      "earnings_updated_at": "2026-08-25",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     },
     "NFLX": {
@@ -295,7 +295,7 @@
     "MIPS": {
       "earnings_last_date": "2026-07-16",
       "earnings_next_date": "2026-10-23",
-      "earnings_updated_at": "2026-07-18",
+      "earnings_updated_at": "2026-08-25",
       "earnings_next_estimated": true
     },
     "FERG": {
@@ -307,7 +307,7 @@
     "S": {
       "earnings_last_date": "2026-05-28",
       "earnings_next_date": "2026-08-27",
-      "earnings_updated_at": "2026-06-10",
+      "earnings_updated_at": "2026-08-25",
       "earnings_next_estimated": true
     },
     "TREX": {
@@ -325,7 +325,7 @@
     "TFF": {
       "earnings_last_date": "2026-07-08",
       "earnings_next_date": "2027-01-30",
-      "earnings_updated_at": "2026-07-18",
+      "earnings_updated_at": "2026-08-25",
       "earnings_next_estimated": true
     },
     "CELH": {
@@ -367,7 +367,7 @@
     "OTLY": {
       "earnings_last_date": "2026-07-22",
       "earnings_next_date": "2026-11-04",
-      "earnings_updated_at": "2026-08-17",
+      "earnings_updated_at": "2026-08-25",
       "earnings_next_estimated": true
     },
     "CSU": {
@@ -410,6 +410,18 @@
       "earnings_last_date": "2026-08-05",
       "earnings_next_date": "2026-11-05",
       "earnings_updated_at": "2026-08-21",
+      "earnings_next_estimated": true
+    },
+    "SAP": {
+      "earnings_last_date": "2026-07-22",
+      "earnings_next_date": "2026-10-21",
+      "earnings_updated_at": "2026-08-26",
+      "earnings_next_estimated": true
+    },
+    "CTVA": {
+      "earnings_last_date": "2026-08-05",
+      "earnings_next_date": "2026-11-04",
+      "earnings_updated_at": "2026-08-26",
       "earnings_next_estimated": true
     }
   }
