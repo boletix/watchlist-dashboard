@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 252,
+    "n_updates": 258,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -109,6 +109,48 @@
       "fields_changed": "AK (R3 Terminal Risk)",
       "source": "Revision tras el deep dive del 25-ago",
       "summary": "Meta. R3 Terminal Risk -5 -> -6. Al hacer el deep dive se anoto que la asimetria de 10,5:1 -la mas alta del libro- no es una senal de compra sino de resultado BINARIO, y que en el framework de sizing un binario se penaliza por el DIVISOR de riesgo terminal, no se premia por el numerador de asimetria. Esto lo aplica. Los hechos: capex de 89.320 M$, el 39,1% de las ventas y casi cuatro veces el D&A, financiado con deuda neta positiva por primera vez en su historia (112.320 de deuda contra 90.260 de caja). Ademas Meta no controla el sistema operativo por el que llega a sus usuarios - Apple ya demostro en 2021 que puede cambiar las reglas y costarle decenas de miles de millones, riesgo que Alphabet no tiene porque se compro el suyo con Android."
+    },
+    {
+      "ticker": "KKR",
+      "date": "46260",
+      "fields_changed": "AZ (Capital Employed)",
+      "source": "Correccion del capital empleado",
+      "summary": "KKR. AZ de 80.000 a 34.500 M$. Los 80.000 eran una cifra de relleno sin base publicada y el ROIC resultante -6,5%- no media nada, porque el balance consolidado de KKR incluye los fondos que gestiona y la aseguradora Global Atlantic, o sea dinero de TERCEROS. Se sustituye por el VALOR CONTABLE publicado por la compania a 30-jun-2026: 34.500 M$, que incluye 5.300 M$ de caja e inversiones a corto. Es el capital del accionista, que es el denominador correcto para una gestora. El ROIC pasa del 6,5% al 15,0%, que si es una cifra interpretable. AVISO QUE SIGUE ABIERTO: la deuda de 56.164 M$ que entra en el EV es sobre todo pasivo de la aseguradora respaldado por su cartera, no deuda del accionista, asi que el EV/FCF de esta fila sigue estando inflado. Lo honesto para KKR es el multiplo sobre beneficio ajustado: 5.000 M$ contra 96.846 de capitalizacion, 19,4 veces."
+    },
+    {
+      "ticker": "BN",
+      "date": "46260",
+      "fields_changed": "AZ (Capital Employed)",
+      "source": "Correccion del capital empleado",
+      "summary": "Brookfield. AZ de 90.000 a 42.483 M$. Mismo problema y misma solucion que en KKR: los 90.000 no tenian base publicada. El balance de Brookfield a 30-jun-2026 trae 525.515 M$ de activo y 166.636 de patrimonio total, pero de ese patrimonio solo 42.483 M$ son CAPITAL COMUN DE LA MATRIZ; los otros 120.100 son minoritarios de las filiales consolidadas, o sea dinero que no es del accionista de BN. Con el capital comun el ROIC pasa del 6,3% al 13,4% sobre el DE antes de realizaciones de 5.700 M$, que es coherente con lo que la propia compania comunica. Se completa asi la fila que quedo a medias el 25-ago cuando se pasaron NOPAT y EBITDA a metricas non-GAAP."
+    },
+    {
+      "ticker": "ABNB",
+      "date": "46260",
+      "fields_changed": "Ninguno - verificacion",
+      "source": "Verificacion del aviso sobre la flotacion",
+      "summary": "Airbnb. SE COMPRUEBA Y NO HAY QUE CAMBIAR NADA. El 25-ago se aviso de que parte de los 12.069 M$ de caja podian ser fondos de anfitriones pendientes de pago -flotacion, no caja propia- y de que eso afectaria al EV. Revisado el balance a 30-jun-2026: los 12.069 son caja y equivalentes (6.821) mas inversiones a corto (5.248), que son recursos PROPIOS de Airbnb. Los fondos de clientes van en lineas separadas del balance -fondos a cobrar y a pagar por cuenta de clientes- que en la presentacion normalizada quedan dentro de otros activos corrientes (12.308) y otros pasivos corrientes (13.245). El aviso era excesivamente cauteloso y queda retirado. MATIZ QUE SI ES REAL aunque no se ajusta: hay 2.831 M$ de ingresos diferidos, reservas cobradas cuya estancia aun no se ha producido. Es un pasivo genuino contra esa caja, pero es circulante negativo estructural del modelo -igual que en Costco, Inditex y Spotify- y no se neteaba en aquellas, asi que tampoco aqui."
+    },
+    {
+      "ticker": "TFPM",
+      "date": "46260",
+      "fields_changed": "AA (R2 Risks)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Triple Flag. R2 Risks -11 -> -10. La compra del flujo del 5,5% de oro sobre Ravenswood por 440 M$, la mayor de su historia, sube la guia de 2026 a 100.000-110.000 GEO y la perspectiva de 2030 a 150.000-160.000, un +45% de volumen. Mas activos significa menos dependencia de una sola mina, que es el riesgo estructural de una compania de regalias -por eso Customers sigue en 6 sobre 10-. FLYWHEEL: paga por adelantado y recibe metal o dinero durante decadas sin poner un euro mas; no paga costes operativos, ni inflacion de salarios mineros, ni capex de sostenimiento, ni rehabilitacion. Margen bruto del 80%. Y lo que casi nadie valora: si la minera encuentra mas mineral, la regalia lo cubre GRATIS - compra opcionalidad geologica sin pagarla. LO QUE HAY QUE TENER CLARO: es una apuesta apalancada al precio del oro sin admitirlo. Los ingresos pasaron de unos 310 M$ en 2025 a 489 LTM y ese salto es del metal, no del negocio. Por eso el caso bajista asume el FCF CAYENDO un 3,5% anual y el alcista del 9% es solo VOLUMEN, sin sumarle subida de oro. EXCEPCION METODOLOGICA vigente: la regla de FCF normalizado se dispara mecanicamente pero no se aplica, porque ese capex son compras de flujos -M&A de crecimiento- y en una royalty el capex de sostenimiento es cero."
+    },
+    {
+      "ticker": "CPR",
+      "date": "46260",
+      "fields_changed": "AG (R3 Capital Allocation)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Campari. R3 Capital Allocation 9 -> 8. El ROIC es del 5,8%, muy por debajo del coste de capital, con 7.090 M EUR de capital empleado llenos de marcas pagadas a multiplos de mercado -Courvoisier en 2024 por mas de mil millones es el ejemplo mas caro- y una deuda neta de 3,2x EBITDA, la mas alta del libro entre las companias de calidad media o alta. Y la propia estrategia lo reconoce: estan VENDIENDO marcas no prioritarias (Bisquit & Dubouche y Cabo Wabo a Cobblestone) y el consejero delegado dice que la simplificacion de cartera termina en 2027. Es una compania deshaciendo compras. EL HECHO DE LARGO PLAZO MAS IMPORTANTE: Aperol crecio un 3,3% organico en el 1S2026 y el grupo un 2,7%, con guia del 3%. Aperol venia de una decada de doble digito. La joya de la corona ha entrado en crecimiento de un digito medio-bajo. Lo que si funciona es el agave: Espolon +8,2% y Sarti Rosa +8,8%. FLYWHEEL: no vende una bebida, vende un RITUAL con nombre -el Spritz tiene copa, proporcion y momento del dia propios- que se aprende viendo a otros en una terraza, y que el bar adopta porque se hace en diez segundos y se cobra como coctel. El foso no es el gusto del consumidor: es el hueco en la carta y la mano del camarero. Y a diferencia de Lotus, el ritual SI tiene sustituto: el siguiente ritual."
+    },
+    {
+      "ticker": "CHKP",
+      "date": "46260",
+      "fields_changed": "V (R2 Potential)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Check Point. R2 Potential 8 -> 9. Tres hechos nuevos que apuntan en la misma direccion: Gil Shwed dejo de ser consejero delegado en 2024 tras TREINTA Y UN anos y Nadav Zafrir -cofundador de Team8, ex Unidad 8200- lleva el timon; estan contratando cientos de comerciales para preparar un crecimiento mas fuerte en 2027, que es exactamente lo que la tesis bajista decia que nunca harian, gastar margen para comprar crecimiento; y correo, gestion de exposicion y seguridad de IA superaron conjuntamente el 40% de crecimiento en ARR en el Q2 2026. EL FLYWHEEL QUE FUNCIONA es la renovacion: las politicas de seguridad se acumulan durante anos, nadie sabe ya por que esta cada regla, y migrar significa reescribir y auditar la politica de la compania entera. EL QUE SE PARO es el paso cero, ganar clientes nuevos: el sector crece a doble digito y Check Point crecio un 5% en el Q1. Palo Alto y CrowdStrike gastaron el dinero en fuerza comercial y producto; Check Point lo gasto en recomprar acciones. LO QUE HACE INTERESANTE LA FILA: a 11,6x FCF es la mas barata del libro entre las rentables -mediana 26,7x- con un margen de caja libre del 39,9% y CONTABILIDAD LIMPIA, sin la discusion GAAP contra non-GAAP de Cloudflare, CrowdStrike o Zscaler. No hace falta que el despertar funcione para no perder dinero. El multiplo de salida bajista de 6x asume que dentro de cinco anos el mercado paga seis veces el FCF, precio de liquidacion ordenada: para una compania que pierde cuota es el escenario correcto y hay que dejarlo asi."
     },
     {
       "ticker": "VARIOS",
