@@ -61,6 +61,10 @@ TICKER_YF_OVERRIDE: dict[str, str] = {
     # lleva la linea de Toronto y convierte CAD->USD con Framework Notes E7; apuntar a
     # IPCO.ST traeria el precio en coronas contra una conversion pensada para dolares.
     "IPCO": "IPCO.TO",   # Toronto (CAD). Reporta en USD.
+    # 26-ago-2026: altas nuevas. SAP a secas es el ADR de Nueva York en USD;
+    # la fila del Excel usa la linea de XETRA en EUR, asi que hay que forzar .DE.
+    "SAP": "SAP.DE",     # XETRA (EUR). Reporta en EUR.
+    # CTVA no necesita override: cotiza y reporta en USD en Nueva York.
     "TFPM": "TFPM.TO",   # Triple Flag, Toronto
     "CSU": "CSU.TO",     # Constellation Software, Toronto
     "KRX": "KRX.IR",     # Kingspan, Irlanda

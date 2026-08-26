@@ -1,10 +1,66 @@
 {
   "meta": {
-    "n_updates": 237,
+    "n_updates": 245,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "SAP",
+      "date": "46260",
+      "fields_changed": "ALTA NUEVA - fila 72 completa",
+      "source": "Alta desde la tesis del Drive + deep dive del 26-ago-2026",
+      "summary": "SAP SE. ALTA EN LA WATCHLIST. Cubre el unico hueco estructural que quedaba: software empresarial europeo con foso de coste de cambio, sin nada equivalente entre las 68 filas anteriores. La tesis del Drive (2021) acerto en el mecanismo -durante anos SAP se centro en EXTRAER valor en vez de aportarlo, y la migracion a la nube era la palanca- y se quedo corta en la magnitud, como todas: fijaba 36 B de ventas como escenario optimista y hoy son 38.190 M EUR. FLYWHEEL: el cliente implanta SAP en un proyecto de anos, toda su operativa queda codificada dentro, sacarlo es rehacer la empresa, y alrededor crece un ecosistema de consultoras y profesionales que actua de fuerza de ventas gratuita. La migracion a S/4HANA era la unica ventana en veinte anos en que la puerta estaba abierta y la han convertido en palanca: de licencia perpetua a suscripcion recurrente. FINANCIEROS LTM: ingresos 38.190, resultado operativo 10.990 (28,8% de margen), FCF 8.730 (22,9% de margen), caja neta de 1.690, capex del 1,9% de las ventas -no procede normalizar-, capital empleado 55.875 y ROIC del 14,1%. OJO CON EL ROIC: la tesis citaba un 40%, que es sobre capital invertido excluyendo fondo de comercio; con la definicion del libro sale 14,1% porque arrastra el goodwill de Concur, Ariba, SuccessFactors y Qualtrics. Las dos cifras son ciertas: el 40% dice que el negocio operativo es extraordinario, el 14,1% dice que han pagado mucho por comprar crecimiento. VALORACION: EV/FCF de 23,5x frente a la mediana del libro de 26,7x. Bajista 9.600 (+1,9%/a) a 16x y alcista 15.400 (+12,0%/a) a 24x: -25% y +80%, asimetria 3,2:1. RIESGO ESTRUCTURAL: si un agente de IA puede consultar y operar los datos de la empresa sin la capa de interfaz de SAP, el valor se desplaza del software al dato, y el dato es del cliente."
+    },
+    {
+      "ticker": "CTVA",
+      "date": "46260",
+      "fields_changed": "ALTA NUEVA - fila 73 completa",
+      "source": "Alta desde la tesis del Drive + deep dive del 26-ago-2026",
+      "summary": "Corteva. ALTA EN LA WATCHLIST. Es el unico agricola del libro. La tesis del Drive (2021) hace el mejor trabajo del lote explicando POR QUE el agricultor no puede dejar de comprar: la semilla es el eslabon mas barato de la cosecha y el que mas la condiciona, y no puede guardar semilla de su propia cosecha porque la genetica se degrada en la segunda generacion. Es una suscripcion anual disfrazada de venta de producto. FLYWHEEL: 8-9% de las ventas en I+D, mas rendimiento por hectarea, recompra obligatoria cada campana, datos de cada parcela que mejoran la siguiente semilla, y un equipo comercial que llega a cada agricultor en las pocas semanas de la siembra. PROBLEMA DE MEDICION, EL TERCERO DEL LIBRO tras TFF y Nintendo: el FCF de un solo ano no significa nada. Cinco ejercicios: 2.154 / 267 / 1.174 / 1.548 / 2.815, con el capex plano en unos 590. Toda la variacion es circulante, porque entrega semilla en primavera y cobra tras la cosecha, y el corte LTM a junio cae en el pico de cuentas a cobrar (FCF LTM de solo 629). Se fija AS en 2.200, entre la media de cinco anos (1.592) y el calculo limpio de EBITDA menos capex, intereses e impuestos (2.560). EL ROIC DEL 6,8% ESTA DISTORSIONADO: el capital empleado de 30.853 incluye el fondo de comercio de la fusion DowDuPont de 2019; el ratio penaliza una fusion pagada hace siete anos, no el negocio de hoy. Por eso el EV/EBITDA de 13,5x es mejor lente que el EV/FCF de 26,3x. VALORACION: bajista 2.200 (0%/a) a 14x y alcista 3.543 (+10,0%/a) a 22x -multiplos bajos a proposito, por la regla de los ciclicos-. Sale -49% y +36%, asimetria 0,7:1. CONCLUSION HONESTA: buen negocio a precio exigente. La propia tesis decia -no brainer cerca de 28$- y hoy cotiza a 82,91."
+    },
+    {
+      "ticker": "HLMA",
+      "date": "46260",
+      "fields_changed": "AP; AQ; AS; AT; AU; AV; AZ; BD; BF",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Halma. Financieros LTM al dia -llevaban desde el 24-jun- y deep dive nuevo. Correcciones: la DEUDA estaba infravalorada en 513 M GBP (400 -> 913,4) y el CAPITAL EMPLEADO en 1.091 (2.100 -> 3.191), asi que el ROIC baja del 17,6% al 12,6%. Tambien ingresos 2.340 -> 2.580, EBITDA 515 -> 622,8 y FCF 400 -> 425,7. BD/BF rebasados sobre la base nueva manteniendo las CAGR implicitas. FLYWHEEL: compra fabricantes de nicho cuyo producto es OBLIGATORIO por norma -detectores de gas, sensores de humo, instrumentacion de agua-, y la norma solo se regula en una direccion, asi que cada revision AMPLIA el mercado. El producto es barato dentro del proyecto y critico para el resultado, por eso el cliente no negocia el precio y el margen operativo aguanta el 20,6% decadas. Es el mismo mecanismo que Sika pero mas cerca del extremo obligatorio. No procede normalizar el FCF: capex de 54,9 frente a un D&A de 92,4, es de los negocios mas ligeros en capital del libro."
+    },
+    {
+      "ticker": "VARIOS",
+      "date": "46260",
+      "fields_changed": "Ninguno - nota de proceso",
+      "source": "Revision de la watchlist y archivo de material",
+      "summary": "Roger revierte las cuatro salidas que propuse el 25-ago y las cuatro se quedan: IPCO por la expansion en marcha y por ser de los mejor gestionados en materias primas; KIST por el historial de Andrew Austin en RockRose y la opcionalidad de Noruega y Oman a estos precios; WOSG porque el acuerdo de distribucion con Rolex es de largo plazo y beneficia a las dos partes; BFIT se queda pero es la que mas dudas genera a los dos. El libro pasa de 68 a 70 empresas con SAP y Corteva. ARCHIVO: se encontro en la carpeta de Descargas material que existia pero no estaba en las carpetas de empresa y que por eso la auditoria de cobertura no contaba - la nota de analisis completa de Judges Scientific del 6-ago (con matriz C x A, sizing y disparadores de precio), el dashboard de Kaspi, los escenarios de Adyen, tres versiones del ecosistema de Brookfield, cuatro documentos de Celsius, dos de Monster y uno de Orca. Todo movido a su carpeta."
+    },
+    {
+      "ticker": "HLMA",
+      "date": "46260",
+      "fields_changed": "T (R2 Financials)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Halma. R2 Financials 14 -> 13. Hecho nuevo del deep dive: con el balance real el ROIC baja del 17,6% al 12,6%, porque el capital empleado son 3.191 M GBP y no 2.100, y la deuda 913,4 y no 400. El negocio operativo sigue siendo excelente -20,6% de margen operativo, capex del 2,1% de las ventas, conversion de caja del 80% del EBITDA- pero el retorno sobre TODO el capital empleado, incluido lo pagado por decadas de adquisiciones, es cinco puntos mas bajo de lo que decia la hoja. Ese es el numero relevante para juzgar a un comprador en serie. Contexto de largo plazo que NO cambia: sus mercados son obligatorios por norma y la norma solo se regula en una direccion, asi que cada revision normativa amplia el mercado. Por eso Durability sigue en 15 sobre 15, el maximo del libro. AVISO: con 13.600 M GBP de capitalizacion, cada compra de 50-100 M GBP mueve menos la aguja que hace diez anos; el crecimiento por adquisicion se diluye con la escala."
+    },
+    {
+      "ticker": "LIFCO B",
+      "date": "46260",
+      "fields_changed": "V (R2 Potential)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Lifco. R2 Potential 13 -> 12, por el mismo criterio que se aplico a Sika el 25-ago. El crecimiento organico es del 4,2% en 2025 y del 2,9% en el 1S26: la mayor parte del crecimiento es COMPRADO, no generado. Eso esta bien mientras el multiplo de entrada siga siendo bajo -Lifco paga 5-8 veces EBITA a fundadores que se jubilan, y ese es exactamente el modelo- pero el recorrido que mide esta columna depende de que siga habiendo empresas comprables a ese precio, y hay cada vez mas capital privado persiguiendo las mismas. FLYWHEEL, que es lo mejor de la compania: compra barato a un fundador que se jubila, NO integra, deja el nombre y el equipo, y ese trato le da reputacion entre fundadores, de modo que el flujo de operaciones llega solo. El foso es cultural, no financiero: cualquier fondo puede pagar 8 veces EBITA, muy pocos pueden prometer de forma creible que no tocaran la empresa en veinte anos. AVISO SOBRE EL CASO BAJISTA: asume el FCF creciendo un 7,0% anual, que para un comprador en serie es un ano normal y no un escenario malo. El bajista de verdad es que se seque el flujo de adquisiciones y quede el organico del 3%. Conviene endurecerlo."
+    },
+    {
+      "ticker": "SU",
+      "date": "46260",
+      "fields_changed": "AH (R3 Financing Source)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Schneider Electric. R3 Financing Source 4 -> 3. La correccion de deuda del 25-ago -de 12.500 a 20.810 M EUR, ocho mil millones de diferencia por AVEVA y ETAP- deja la deuda neta en 16.290, o sea 1,9x EBITDA. Sigue siendo comodo pero ya no es la compania sin deuda que la hoja asumia, y limita la siguiente compra grande. FLYWHEEL: el instalador especifica Schneider una vez y el equipo dura decadas; toda ampliacion, repuesto o mantenimiento tiene que ser compatible con lo instalado, asi que el ingreso recurrente no exige volver a ganar al cliente. Encima del hardware venden software (EcoStruxure, AVEVA) que solo tiene sentido si el hardware es suyo. El riesgo real es perder la ESPECIFICACION frente a ABB o Siemens: es lento y silencioso, no se ve en los resultados hasta anos despues. COMPARACION UTIL: margen operativo 17,9% frente al 17,7% de ABB, pero ROIC del 13,2% frente al 17,6% de ABB. ABB convierte mejor el capital; Schneider tiene mas software. Y el viento de cola de la electrificacion NO es informacion: esta en el precio, a 30,3x FCF."
+    },
+    {
+      "ticker": "FICO",
+      "date": "46260",
+      "fields_changed": "AK (R3 Terminal Risk)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Fair Isaac. R3 Terminal Risk -6 -> -7. El deep dive deja claro que FICO tiene UN solo riesgo y es binario: el score esta escrito dentro de la normativa del mercado hipotecario estadounidense, y si la FHFA admite scores alternativos, el coste de cambio -que hoy no es de la entidad sino del SISTEMA- deja de existir. El proceso esta abierto. Ademas la compania se apalanca deliberadamente para recomprar acciones (2.200 M$ de deuda neta, 2,5x EBITDA), lo cual es matematicamente correcto con un ROIC del 29,1% pero amplifica el riesgo de cola. AVISO SOBRE EL CASO BAJISTA: +8,0% anual de FCF no es un caso bajista para FICO, es casi su caso base, porque solo con subir el precio por consulta ya llega. El bajista de verdad es regulatorio y es DISCONTINUO: si se abre el mercado, el FCF no crece al 8%, se estanca, y el multiplo se desploma a la vez. Esta fila tiene un riesgo de cola que el escenario lineal no captura, igual que Meta. ECONOMIA DEL NEGOCIO, que es de las mejores del libro: 50,9% de margen EBITDA, 42,4% de margen FCF, 29,1% de ROIC y capital empleado minimo. Casi todo el valor esta en el 40% de los ingresos que es el score; el software es una opcion, no la tesis."
+    },
     {
       "ticker": "VARIOS",
       "date": "46259",
