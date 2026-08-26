@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 245,
+    "n_updates": 252,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -60,6 +60,55 @@
       "fields_changed": "AK (R3 Terminal Risk)",
       "source": "Deep dive del 26-ago-2026",
       "summary": "Fair Isaac. R3 Terminal Risk -6 -> -7. El deep dive deja claro que FICO tiene UN solo riesgo y es binario: el score esta escrito dentro de la normativa del mercado hipotecario estadounidense, y si la FHFA admite scores alternativos, el coste de cambio -que hoy no es de la entidad sino del SISTEMA- deja de existir. El proceso esta abierto. Ademas la compania se apalanca deliberadamente para recomprar acciones (2.200 M$ de deuda neta, 2,5x EBITDA), lo cual es matematicamente correcto con un ROIC del 29,1% pero amplifica el riesgo de cola. AVISO SOBRE EL CASO BAJISTA: +8,0% anual de FCF no es un caso bajista para FICO, es casi su caso base, porque solo con subir el precio por consulta ya llega. El bajista de verdad es regulatorio y es DISCONTINUO: si se abre el mercado, el FCF no crece al 8%, se estanca, y el multiplo se desploma a la vez. Esta fila tiene un riesgo de cola que el escenario lineal no captura, igual que Meta. ECONOMIA DEL NEGOCIO, que es de las mejores del libro: 50,9% de margen EBITDA, 42,4% de margen FCF, 29,1% de ROIC y capital empleado minimo. Casi todo el valor esta en el 40% de los ingresos que es el score; el software es una opcion, no la tesis."
+    },
+    {
+      "ticker": "VLTO",
+      "date": "46260",
+      "fields_changed": "U (R2 MOAT)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Veralto. R2 MOAT 16 -> 17. Hecho de largo plazo: el 61% de los ingresos ya son RECURRENTES y la compania apunta al 65% en 2027. El flywheel es cuchilla y maquinilla con la norma detras - se vende un fotometro de Hach o una impresora Videojet a precio poco relevante, se queda instalado diez o quince anos, y solo funciona con MI consumible: reactivos calibrados para mi instrumento, tintas formuladas para mi cabezal. El consumible es barato y el coste de fallar es enorme, porque si la impresora falla para la linea de envasado y si el reactivo da mala lectura la planta incumple. Nadie arriesga por ahorrar ahi. A eso se suma el Danaher Business System, que se llevaron entero en la escision de 2023 y no aparece en el balance. FINANCIEROS: 24,4% de margen EBITDA, capex del orden del 1% de las ventas, ROIC 16,3%, deuda neta 1,1x EBITDA. LO QUE NO SE SUBE Y POR QUE: Capital Allocation sigue en 13 sobre 15 pero es una nota HEREDADA de la reputacion de Danaher, no ganada por Veralto - lleva menos de tres anos cotizando sola y no hay historial propio de asignacion de capital. RIESGO ESTRUCTURAL: comoditizacion del consumible, dificil en agua porque la homologacion es regulatoria, menos dificil en tintas de codificacion."
+    },
+    {
+      "ticker": "LR",
+      "date": "46260",
+      "fields_changed": "V (R2 Potential); AA (R2 Risks)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Legrand. R2 Potential 13 -> 15 y R2 Risks -7 -> -8, las dos por el mismo hecho. LEGRAND HA DEJADO DE SER LO QUE ERA: los centros de datos fueron el 26% de los ingresos de 2025 y la compania apunta a que puedan llegar al 40%; Norteamerica y Centroamerica son ya el 47% del grupo con el negocio estadounidense creciendo un 27%; y en 2026 lleva SIETE adquisiciones cerradas, unas 450 M EUR de ingresos anuales, todas en centro de datos y transicion energetica. La guia se sube a +16-19% de ventas ex divisa, +8-10% organico y margen operativo ajustado del 20,5-21,0%. SUBE POTENTIAL porque el recorrido es real y grande. BAJA RISKS porque son DOS RUEDAS DISTINTAS: el negocio historico -el enchufe, la marca local, Bticino en Italia y Pass & Seymour en EE.UU.- tiene un foso de habito y distribucion de cien anos; el de centro de datos compite en un mercado nuevo con clientes hiperescaladores que tienen ingenieros propios, homologan a varios proveedores y negocian el precio cada ano. Es lo contrario del cliente que hizo grande a Legrand. Ademas un 26% de ingresos ligado al capex de la IA es una concentracion ciclica NUEVA en una compania que se compraba por no ser ciclica. AVISO: el ROIC es del 9,0% con 15.683 M EUR de capital empleado lleno de fondo de comercio, y la deuda neta esta en 2,5x EBITDA tras las siete compras."
+    },
+    {
+      "ticker": "KKR",
+      "date": "46260",
+      "fields_changed": "X (R2 Revenue Quality)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "KKR. R2 Revenue Quality 8 -> 9. El mix ha migrado de carried interest -que es grumoso y depende de vender bien- a FEE-RELATED EARNINGS, que son contractuales: 1.214 M$ en el Q2 2026, +34% interanual, sobre 638.000 M$ de activos que pagan comision de los 796.000 totales. A eso se suma el capital PERMANENTE de Global Atlantic, que elimina el riesgo de ciclo de captacion: el asegurado financia a largo plazo la municion que la gestora necesita para ser paciente. En los ultimos doce meses ha captado 133.000 M$, con un record de 77.000 en un solo trimestre. AVISOS METODOLOGICOS IMPORTANTES, iguales que en Brookfield: (1) el capital empleado de 80.000 M$ NO TIENE BASE PUBLICADA, es una cifra de relleno, y el ROIC del 6,5% no mide nada - para una gestora la metrica correcta es el retorno sobre capital propio invertido, no sobre un balance que incluye dinero de terceros; (2) la deuda de 56.164 M$ es sobre todo pasivo de la aseguradora, no deuda del accionista de KKR. Lo honesto es juzgarla por el multiplo sobre beneficio ajustado: 5.000 M$ contra 96.846 de capitalizacion son 19,4 veces. AVISO SOBRE EL BAJISTA: +7,0% anual de FCF no es un caso bajista para una gestora; en un mal ciclo las comisiones de exito desaparecen y las de gestion se estancan."
+    },
+    {
+      "ticker": "KRX",
+      "date": "46260",
+      "fields_changed": "Y (R2 Mgmt & Culture); AK (R3 Terminal Risk)",
+      "source": "Deep dive del 26-ago-2026",
+      "summary": "Kingspan. R2 Mgmt & Culture 11 -> 9 y R3 Terminal Risk -4 -> -5. GRENFELL, Y NO ES RUIDO PASADO. El informe final de la investigacion concluyo que Kingspan, aunque NO se le considero causante de la tragedia, CREO A SABIENDAS UN MERCADO FALSO para el aislamiento de la fachada, afirmando falsamente que habia superado ensayos que permitian su uso por encima de 18 metros. Consecuencias concretas: el BRE, el organismo britanico de normalizacion de la construccion, PUSO FIN A SU RELACION con Kingspan citando riesgo reputacional; la investigacion recogio que Kingspan amenazo con demandar por difamacion cuando se expusieron los ensayos defectuosos; y el respaldo de los asesores de voto al consejero delegado sigue siendo cualificado ano tras ano. POR QUE IMPORTA AL FLYWHEEL Y NO SOLO A LA IMAGEN: el motor de Kingspan es que la norma de eficiencia se endurece y su panel es la forma mas barata de cumplirla. Un fabricante cuyo producto se compra PORQUE cumple una norma no puede permitirse que el organismo que fija la norma le retire la confianza. Es dano al primer eslabon. Es la razon por la que esta fila no puede puntuar como Halma con un modelo conceptualmente parecido. NEGOCIO: ejecutan bien -guia subida a 1.125 M EUR de beneficio de explotacion, Advnsys +36%- pero el 79% del grupo crece al 2,2%, el margen EBITDA es del 13,4% (la mitad que Halma o Veralto, porque fabrican y transportan acero y espuma) y a 33,4x FCF la asimetria es 0,7:1."
+    },
+    {
+      "ticker": "LIFCO B",
+      "date": "46260",
+      "fields_changed": "BD",
+      "source": "Revision del caso bajista",
+      "summary": "Lifco. BD de 5.330 a 4.405. El caso bajista asumia el FCF creciendo un 7,0% anual durante cinco anos, que para un comprador en serie es un ano NORMAL y no un escenario malo. El bajista de verdad para Lifco es que se seque el flujo de adquisiciones -por inflacion del multiplo de entrada, que es el riesgo estructural del modelo- y quede solo el organico, que fue del 4,2% en 2025 y del 2,9% en el 1S26. Se fija en +3,0% anual. Ya se senalo al hacer el deep dive del 26-ago y se aplica ahora."
+    },
+    {
+      "ticker": "FICO",
+      "date": "46260",
+      "fields_changed": "BD",
+      "source": "Revision del caso bajista",
+      "summary": "Fair Isaac. BD de 1.073 a 730. El caso bajista asumia el FCF creciendo un 8,0% anual, que NO es un caso bajista para FICO: solo con subir el precio por consulta del score ya llega, y lo lleva haciendo anos sin que el volumen se resienta. El bajista real de esta fila es REGULATORIO Y DISCONTINUO: si la FHFA admite scores alternativos en el mercado hipotecario, el coste de cambio -que hoy no es de la entidad sino del SISTEMA- deja de existir, el FCF se estanca y el multiplo se desploma a la vez. Se pone el FCF@5y plano en 730. Sigue sin capturar que en ese escenario el multiplo tambien caeria, asi que el bajista real es peor que el que sale."
+    },
+    {
+      "ticker": "META",
+      "date": "46260",
+      "fields_changed": "AK (R3 Terminal Risk)",
+      "source": "Revision tras el deep dive del 25-ago",
+      "summary": "Meta. R3 Terminal Risk -5 -> -6. Al hacer el deep dive se anoto que la asimetria de 10,5:1 -la mas alta del libro- no es una senal de compra sino de resultado BINARIO, y que en el framework de sizing un binario se penaliza por el DIVISOR de riesgo terminal, no se premia por el numerador de asimetria. Esto lo aplica. Los hechos: capex de 89.320 M$, el 39,1% de las ventas y casi cuatro veces el D&A, financiado con deuda neta positiva por primera vez en su historia (112.320 de deuda contra 90.260 de caja). Ademas Meta no controla el sistema operativo por el que llega a sus usuarios - Apple ya demostro en 2021 que puede cambiar las reglas y costarle decenas de miles de millones, riesgo que Alphabet no tiene porque se compro el suyo con Android."
     },
     {
       "ticker": "VARIOS",
