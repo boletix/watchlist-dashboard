@@ -1,585 +1,116 @@
 {
   "meta": {
-    "generated_at": "2026-08-27T05:39:13+00:00",
+    "generated_at": "2026-08-27T05:48:01+00:00",
     "n_companies": 70,
-    "source_file": "watchlist_ratings.xlsx",
-    "validation_issues": [],
-    "enrichment_stats": {
-      "yfinance": 70,
-      "stale": 0,
-      "skipped": 0
-    },
-    "version": "2.0",
-    "currency_mismatches": [
-      {
-        "ticker": "NTO",
-        "reporting": "JPY",
-        "quote": "EUR",
-        "excel_currency": "EUR",
-        "factor": 0.00538450013846159,
-        "resolved": true
-      },
-      {
-        "ticker": "HLMA",
-        "reporting": "GBP",
-        "quote": "GBp",
-        "excel_currency": "GBp",
-        "factor": 100.0,
-        "resolved": true
-      },
-      {
-        "ticker": "DNP",
-        "reporting": "PLN",
-        "quote": "USD",
-        "excel_currency": "PLN",
-        "factor": 0.2703762352466583,
-        "resolved": true
-      },
-      {
-        "ticker": "JDG",
-        "reporting": "GBP",
-        "quote": "GBp",
-        "excel_currency": "GBp",
-        "factor": 100.0,
-        "resolved": true
-      },
-      {
-        "ticker": "ABBNE",
-        "reporting": "USD",
-        "quote": "CHF",
-        "excel_currency": "CHF",
-        "factor": 0.8053500056266785,
-        "resolved": true
-      },
-      {
-        "ticker": "KSPI",
-        "reporting": "KZT",
-        "quote": "USD",
-        "excel_currency": "USD",
-        "factor": 0.0021640805061906576,
-        "resolved": true
-      },
-      {
-        "ticker": "COR",
-        "reporting": "EUR",
-        "quote": "USD",
-        "excel_currency": "EUR",
-        "factor": 1.16604483127594,
-        "resolved": true
-      },
-      {
-        "ticker": "SPOT",
-        "reporting": "EUR",
-        "quote": "USD",
-        "excel_currency": "USD",
-        "factor": 1.16604483127594,
-        "resolved": true
-      },
-      {
-        "ticker": "TFPM",
-        "reporting": "USD",
-        "quote": "CAD",
-        "excel_currency": "CAD",
-        "factor": 1.3882800340652466,
-        "resolved": true
-      },
-      {
-        "ticker": "KIST",
-        "reporting": "USD",
-        "quote": "GBp",
-        "excel_currency": "GBp",
-        "factor": 73.58700037002563,
-        "resolved": true
-      },
-      {
-        "ticker": "WOSG",
-        "reporting": "GBP",
-        "quote": "GBp",
-        "excel_currency": "GBp",
-        "factor": 100.0,
-        "resolved": true
-      },
-      {
-        "ticker": "IPCO",
-        "reporting": "USD",
-        "quote": "CAD",
-        "excel_currency": "CAD",
-        "factor": 1.3882800340652466,
-        "resolved": true
-      },
-      {
-        "ticker": "CSU",
-        "reporting": "USD",
-        "quote": "CAD",
-        "excel_currency": "CAD",
-        "factor": 1.3882800340652466,
-        "resolved": true
-      },
-      {
-        "ticker": "SOM",
-        "reporting": "USD",
-        "quote": "GBp",
-        "excel_currency": "GBp",
-        "factor": 73.58700037002563,
-        "resolved": true
-      }
-    ],
-    "currency_unresolved": [],
-    "updates": {
-      "n_updates": 258
-    },
-    "backtest": {
-      "generated_at": "2026-08-27T05:40:21+00:00",
-      "start_date": "2020-01-01",
-      "end_date": "2026-08-26",
-      "n_companies_total": 70,
-      "n_baskets": 12,
-      "n_benchmarks": 3,
-      "currencies_converted": [
-        "CAD",
-        "CHF",
-        "EUR",
-        "GBp",
-        "SEK"
-      ]
-    },
-    "history": {
-      "generated_at": "2026-08-27T05:45:41+00:00",
-      "n_with_history": 67,
-      "n_missing": 3,
-      "missing": [
-        {
-          "ticker": "ITX",
-          "reason": "could not compute multiples"
-        },
-        {
-          "ticker": "HLMA",
-          "reason": "could not compute multiples"
-        },
-        {
-          "ticker": "KRX",
-          "reason": "could not compute multiples"
-        }
-      ]
-    },
-    "shareholder": {
-      "generated_at": "2026-08-27T05:47:49+00:00",
-      "n_tickers": 70,
-      "n_with_data": 70
-    },
-    "correlations": {
-      "generated_at": "2026-08-27T05:48:01+00:00",
-      "n_tickers": 70,
-      "n_clusters": 69,
-      "redundant_threshold": 0.75
-    },
-    "n_alerts": 15
-  },
-  "kpis": {
-    "n_companies": 70,
-    "avg_composite": 5.995285714285714,
-    "median_composite": 6.109999999999999,
-    "avg_composite_geometric": 6.505865914958405,
-    "avg_survival_score": 0.7996031746031746,
-    "weighted_avg_roic": 0.2764567775613191,
-    "median_ev_fcf": 26.430376842105265,
-    "pct_best_irr_gt_15pct": 34.285714285714285,
-    "n_top_tier": 16,
-    "n_hunting_ground": 3,
-    "n_quality_zone_hunt": 4,
-    "n_killed": 2,
-    "pct_positive_worst_irr": 2.857142857142857,
-    "pct_positive_worst_irr_repriced": 4.285714285714286
-  },
-  "category_stats": [
-    {
-      "category": "Alcohol",
-      "count": 5,
-      "avg_composite": 4.83,
-      "avg_composite_geom": 5.4627,
-      "avg_survival": 0.7922,
-      "avg_roic": 0.0959,
-      "median_ev_fcf": 16.4382,
-      "avg_irr_best": 0.0833,
-      "avg_irr_worst": -0.2983,
-      "avg_irr_best_repriced": 0.0776,
-      "avg_edge_to_fair": 0.6912
-    },
-    {
-      "category": "Consumo",
-      "count": 12,
-      "avg_composite": 5.7275,
-      "avg_composite_geom": 6.2193,
-      "avg_survival": 0.7792,
-      "avg_roic": 0.145,
-      "median_ev_fcf": 26.1306,
-      "avg_irr_best": 0.103,
-      "avg_irr_worst": -0.1693,
-      "avg_irr_best_repriced": 0.1026,
-      "avg_edge_to_fair": 0.0248
-    },
-    {
-      "category": "Cyber",
-      "count": 5,
-      "avg_composite": 5.864,
-      "avg_composite_geom": 6.4008,
-      "avg_survival": 0.7744,
-      "avg_roic": -0.0326,
-      "median_ev_fcf": 102.2243,
-      "avg_irr_best": 0.0336,
-      "avg_irr_worst": -0.1741,
-      "avg_irr_best_repriced": 0.0319,
-      "avg_edge_to_fair": -0.2018
-    },
-    {
-      "category": "Defensive",
-      "count": 2,
-      "avg_composite": 7.805,
-      "avg_composite_geom": 8.226,
-      "avg_survival": 0.9028,
-      "avg_roic": 0.1789,
-      "median_ev_fcf": 27.8984,
-      "avg_irr_best": 0.1119,
-      "avg_irr_worst": -0.046,
-      "avg_irr_best_repriced": 0.0986,
-      "avg_edge_to_fair": 0.0914
-    },
-    {
-      "category": "Electrify",
-      "count": 4,
-      "avg_composite": 6.745,
-      "avg_composite_geom": 7.2723,
-      "avg_survival": 0.8625,
-      "avg_roic": 0.1266,
-      "median_ev_fcf": 32.2543,
-      "avg_irr_best": 0.0962,
-      "avg_irr_worst": -0.1008,
-      "avg_irr_best_repriced": 0.0963,
-      "avg_edge_to_fair": -0.0189
-    },
-    {
-      "category": "Fintech",
-      "count": 2,
-      "avg_composite": 6.805,
-      "avg_composite_geom": 7.0344,
-      "avg_survival": 0.7389,
-      "avg_roic": 0.3248,
-      "median_ev_fcf": 19.4907,
-      "avg_irr_best": 0.2817,
-      "avg_irr_worst": -0.0642,
-      "avg_irr_best_repriced": 0.2809,
-      "avg_edge_to_fair": 0.584
-    },
-    {
-      "category": "Hardware",
-      "count": 1,
-      "avg_composite": 7.78,
-      "avg_composite_geom": 7.967,
-      "avg_survival": 0.9111,
-      "avg_roic": 0.3833,
-      "median_ev_fcf": 26.9877,
-      "avg_irr_best": 0.1264,
-      "avg_irr_worst": -0.0636,
-      "avg_irr_best_repriced": 0.1273,
-      "avg_edge_to_fair": 0.1471
-    },
-    {
-      "category": "Healthcare",
-      "count": 5,
-      "avg_composite": 6.094,
-      "avg_composite_geom": 6.6745,
-      "avg_survival": 0.8456,
-      "avg_roic": 0.1251,
-      "median_ev_fcf": 24.6621,
-      "avg_irr_best": 0.1429,
-      "avg_irr_worst": -0.0743,
-      "avg_irr_best_repriced": 0.1429,
-      "avg_edge_to_fair": 0.1775
-    },
-    {
-      "category": "IA",
-      "count": 2,
-      "avg_composite": 5.565,
-      "avg_composite_geom": 6.2021,
-      "avg_survival": 0.6528,
-      "avg_roic": 0.4503,
-      "median_ev_fcf": 38.1909,
-      "avg_irr_best": 0.0805,
-      "avg_irr_worst": -0.081,
-      "avg_irr_best_repriced": 0.0804,
-      "avg_edge_to_fair": -0.0133
-    },
-    {
-      "category": "IP owner",
-      "count": 2,
-      "avg_composite": 6.325,
-      "avg_composite_geom": 6.6716,
-      "avg_survival": 0.8333,
-      "avg_roic": 0.1823,
-      "median_ev_fcf": 47.3205,
-      "avg_irr_best": -0.0351,
-      "avg_irr_worst": -0.221,
-      "avg_irr_best_repriced": -0.0355,
-      "avg_edge_to_fair": -0.4712
-    },
-    {
-      "category": "Industrial",
-      "count": 4,
-      "avg_composite": 6.705,
-      "avg_composite_geom": 7.2287,
-      "avg_survival": 0.8472,
-      "avg_roic": 0.1259,
-      "median_ev_fcf": 23.2397,
-      "avg_irr_best": 0.1354,
-      "avg_irr_worst": -0.0798,
-      "avg_irr_best_repriced": 0.1355,
-      "avg_edge_to_fair": 0.1393
-    },
-    {
-      "category": "Mag 7",
-      "count": 4,
-      "avg_composite": 7.16,
-      "avg_composite_geom": 7.803,
-      "avg_survival": 0.8264,
-      "avg_roic": 0.1797,
-      "median_ev_fcf": 31.3397,
-      "avg_irr_best": 0.1551,
-      "avg_irr_worst": -0.0508,
-      "avg_irr_best_repriced": 0.1545,
-      "avg_edge_to_fair": 0.2633
-    },
-    {
-      "category": "Marketplace",
-      "count": 1,
-      "avg_composite": 5.63,
-      "avg_composite_geom": 6.5095,
-      "avg_survival": 0.7222,
-      "avg_roic": 0.1332,
-      "median_ev_fcf": 16.9815,
-      "avg_irr_best": 0.314,
-      "avg_irr_worst": -0.0647,
-      "avg_irr_best_repriced": 0.3174,
-      "avg_edge_to_fair": 0.6963
-    },
-    {
-      "category": "Materials",
-      "count": 4,
-      "avg_composite": 3.86,
-      "avg_composite_geom": 4.3963,
-      "avg_survival": 0.6333,
-      "avg_roic": 0.186,
-      "median_ev_fcf": 22.6609,
-      "avg_irr_best": 0.1247,
-      "avg_irr_worst": -0.1332,
-      "avg_irr_best_repriced": 0.1268,
-      "avg_edge_to_fair": -0.0484
-    },
-    {
-      "category": "Real Assets",
-      "count": 2,
-      "avg_composite": 7.42,
-      "avg_composite_geom": 7.7965,
-      "avg_survival": 0.85,
-      "avg_roic": 0.1421,
-      "median_ev_fcf": 22.1324,
-      "avg_irr_best": 0.2262,
-      "avg_irr_worst": -0.0229,
-      "avg_irr_best_repriced": 0.2265,
-      "avg_edge_to_fair": 0.577
-    },
-    {
-      "category": "Sports",
-      "count": 4,
-      "avg_composite": 5.0175,
-      "avg_composite_geom": 5.5456,
-      "avg_survival": 0.7806,
-      "avg_roic": 0.1486,
-      "median_ev_fcf": 29.7476,
-      "avg_irr_best": 0.0559,
-      "avg_irr_worst": -0.136,
-      "avg_irr_best_repriced": 0.0555,
-      "avg_edge_to_fair": -0.1726
-    },
-    {
-      "category": "Vertical Saas",
-      "count": 5,
-      "avg_composite": 7.802,
-      "avg_composite_geom": 7.9902,
-      "avg_survival": 0.8989,
-      "avg_roic": 0.2714,
-      "median_ev_fcf": 21.9661,
-      "avg_irr_best": 0.1657,
-      "avg_irr_worst": -0.0665,
-      "avg_irr_best_repriced": 0.1651,
-      "avg_edge_to_fair": 0.2513
-    },
-    {
-      "category": "construction",
-      "count": 6,
-      "avg_composite": 4.7983,
-      "avg_composite_geom": 5.4694,
-      "avg_survival": 0.7796,
-      "avg_roic": 0.1237,
-      "median_ev_fcf": 22.8023,
-      "avg_irr_best": 0.1296,
-      "avg_irr_worst": -0.0699,
-      "avg_irr_best_repriced": 0.129,
-      "avg_edge_to_fair": 0.1837
-    }
-  ],
-  "deltas": {
-    "available": true,
-    "entered": [
-      "IP",
-      "CTVA",
-      "SOM",
-      "USPH",
-      "ROKO B",
-      "SAP",
-      "RBT"
-    ],
-    "exited": [],
-    "rating_changes": [
-      {
-        "ticker": "FERG",
-        "name": "FERG",
-        "from": 4.67,
-        "to": 5.3,
-        "delta": 0.63
-      },
-      {
-        "ticker": "PRY",
-        "name": "PRY",
-        "from": 5.24,
-        "to": 5.85,
-        "delta": 0.61
-      },
-      {
-        "ticker": "TFPM",
-        "name": "TFPM",
-        "from": 4.98,
-        "to": 5.56,
-        "delta": 0.58
-      },
-      {
-        "ticker": "ABNB",
-        "name": "ABNB",
-        "from": 7.75,
-        "to": 7.3,
-        "delta": -0.45
-      },
-      {
-        "ticker": "VLTO",
-        "name": "VLTO",
-        "from": 6.95,
-        "to": 7.34,
-        "delta": 0.39
-      },
-      {
-        "ticker": "NET",
-        "name": "NET",
-        "from": 6.58,
-        "to": 6.2,
-        "delta": -0.38
-      },
-      {
-        "ticker": "SIKA",
-        "name": "SIKA",
-        "from": 5.13,
-        "to": 5.47,
-        "delta": 0.34
-      },
-      {
-        "ticker": "JFN",
-        "name": "JFN",
-        "from": 5.24,
-        "to": 5.52,
-        "delta": 0.28
-      },
-      {
-        "ticker": "AMZN",
-        "name": "AMZN",
-        "from": 8.08,
-        "to": 7.81,
-        "delta": -0.27
-      },
-      {
-        "ticker": "CELH",
-        "name": "CELH",
-        "from": 2.93,
-        "to": 3.19,
-        "delta": 0.26
-      },
-      {
-        "ticker": "KKR",
-        "name": "KKR",
-        "from": 6.61,
-        "to": 6.87,
-        "delta": 0.26
-      },
-      {
-        "ticker": "WOSG",
-        "name": "WOSG",
-        "from": 2.08,
-        "to": 2.33,
-        "delta": 0.25
-      },
-      {
-        "ticker": "TREX",
-        "name": "TREX",
-        "from": 3.92,
-        "to": 4.16,
-        "delta": 0.24
-      },
-      {
-        "ticker": "TGYM",
-        "name": "TGYM",
-        "from": 5.06,
-        "to": 5.3,
-        "delta": 0.24
-      },
-      {
-        "ticker": "ZS",
-        "name": "ZS",
-        "from": 7.45,
-        "to": 7.22,
-        "delta": -0.23
-      },
-      {
-        "ticker": "COR",
-        "name": "COR",
-        "from": 5.5,
-        "to": 5.72,
-        "delta": 0.22
-      },
-      {
-        "ticker": "CPR",
-        "name": "CPR",
-        "from": 5.23,
-        "to": 5.44,
-        "delta": 0.21
-      },
-      {
-        "ticker": "MIPS",
-        "name": "MIPS",
-        "from": 4.68,
-        "to": 4.89,
-        "delta": 0.21
-      },
-      {
-        "ticker": "SGO",
-        "name": "SGO",
-        "from": 3.77,
-        "to": 3.97,
-        "delta": 0.2
-      },
-      {
-        "ticker": "NKE",
-        "name": "NKE",
-        "from": 4.88,
-        "to": 5.08,
-        "delta": 0.2
-      }
+    "columns": [
+      "ticker",
+      "name",
+      "category",
+      "style",
+      "exchange",
+      "currency",
+      "price",
+      "shares_out_m",
+      "market_cap_m",
+      "r1_mission",
+      "r1_moat",
+      "r1_optionality",
+      "r1_financials",
+      "r1_concentration",
+      "r1_glassdoor",
+      "r1_founder",
+      "r1_ownership",
+      "r1_sum",
+      "rating_1",
+      "r2_financials",
+      "r2_moat",
+      "r2_potential",
+      "r2_customers",
+      "r2_revenue_quality",
+      "r2_mgmt",
+      "r2_stock",
+      "r2_risks",
+      "r2_sum",
+      "rating_2",
+      "r3_durability",
+      "r3_risk_disappear",
+      "r3_capital_intensity",
+      "r3_capital_alloc",
+      "r3_financing",
+      "r3_incentives",
+      "r3_moat_structural",
+      "r3_terminal_risk",
+      "r3_sum",
+      "rating_3",
+      "rating_composite",
+      "fx_reporting",
+      "cash",
+      "total_debt",
+      "ev",
+      "fcf_ltm",
+      "nopat_ltm",
+      "ebitda_ltm",
+      "revenue_ltm",
+      "ev_fcf",
+      "ev_ebitda",
+      "ev_sales",
+      "capital_employed",
+      "nopat_margin",
+      "asset_turnover",
+      "roic",
+      "fcf_5y_min",
+      "fcf_min_cagr",
+      "fcf_5y_max",
+      "fcf_max_cagr",
+      "exit_mult_min",
+      "exit_mult_max",
+      "fve_min",
+      "fve_max",
+      "irr_worst",
+      "irr_best",
+      "earnings_updated_at",
+      "earnings_last_date",
+      "earnings_next_date",
+      "price_source",
+      "price_currency",
+      "irr_spread",
+      "irr_asymmetry_ratio",
+      "quadrant",
+      "rating_tier",
+      "roic_zscore_by_category",
+      "ev_fcf_zscore_by_category",
+      "ev_fcf_zscore_sector",
+      "composite_rank",
+      "survival_score",
+      "quality_score",
+      "composite_geometric",
+      "kill_flag",
+      "rating_dispersion",
+      "fve_min_repriced",
+      "fve_max_repriced",
+      "irr_worst_repriced",
+      "irr_best_repriced",
+      "irr_repriced_delta",
+      "ev_nopat",
+      "quality_multiple_a",
+      "quality_multiple_b",
+      "quality_adjusted_multiple",
+      "edge_to_fair",
+      "quality_zone",
+      "kelly_fraction",
+      "suggested_weight_pct",
+      "asymmetry_v2",
+      "pure_upside",
+      "ev_fcf_5y_base",
+      "score_v2",
+      "score_v2_rank",
+      "ev_fcf_zscore_self_5y",
+      "ev_fcf_mean_5y",
+      "ev_fcf_std_5y",
+      "ev_sales_zscore_self_5y",
+      "moat_erosion_flag",
+      "roic_slope_5y",
+      "fcf_margin_slope_5y"
     ]
   },
   "companies": [
@@ -650,8 +181,8 @@
       "irr_worst": -0.03108951078576483,
       "irr_best": 0.2148516896219108,
       "earnings_updated_at": "2026-08-17",
-      "earnings_last_date": "2026-06-03",
-      "earnings_next_date": "2026-08-26",
+      "earnings_last_date": "03/06/2026",
+      "earnings_next_date": "26/08/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.24594120040767564,
@@ -691,12 +222,7 @@
       "ev_sales_zscore_self_5y": -1.4361585104827879,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.010201265456796348,
-      "fcf_margin_slope_5y": 3.668597030894279,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0073468702343995685,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.0073468702343995685
+      "fcf_margin_slope_5y": 3.668597030894279
     },
     {
       "ticker": "MSFT",
@@ -764,9 +290,9 @@
       "fve_max": 893.7457115942332,
       "irr_worst": -0.04372787014630619,
       "irr_best": 0.12564775439289733,
-      "earnings_updated_at": "2026-08-22",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2026-10-28",
+      "earnings_updated_at": "2026-08-22 00:00:00",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "28/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.16937562453920352,
@@ -806,12 +332,7 @@
       "ev_sales_zscore_self_5y": -1.1313400655536163,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.00018604801663348714,
-      "fcf_margin_slope_5y": -2.7637042080542695,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0009629408426984936,
-      "dividend_yield": 0.74,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7409629408426985
+      "fcf_margin_slope_5y": -2.7637042080542695
     },
     {
       "ticker": "ADYEN",
@@ -880,8 +401,8 @@
       "irr_worst": -0.07389708199982303,
       "irr_best": 0.21440249613313545,
       "earnings_updated_at": "2026-08-17",
-      "earnings_last_date": "2026-08-13",
-      "earnings_next_date": "2026-10-28",
+      "earnings_last_date": "13/08/2026",
+      "earnings_next_date": "28/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.2882995781329585,
@@ -921,12 +442,7 @@
       "ev_sales_zscore_self_5y": 0.2311580384519138,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.010385355673396969,
-      "fcf_margin_slope_5y": 1.3494884075631264,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": -0.0016358486293887979,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.0016358486293887979
+      "fcf_margin_slope_5y": 1.3494884075631264
     },
     {
       "ticker": "BN",
@@ -995,8 +511,8 @@
       "irr_worst": 0.016975843125892842,
       "irr_best": 0.21954785350683115,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-08-13",
-      "earnings_next_date": "2026-11-12",
+      "earnings_last_date": "13/08/2026",
+      "earnings_next_date": "12/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.2025720103809383,
@@ -1036,12 +552,7 @@
       "ev_sales_zscore_self_5y": 1.0735578525189897,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.48990633227456293,
-      "dividend_yield": 0.66,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.1700936677254371
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "COST",
@@ -1110,8 +621,8 @@
       "irr_worst": -0.04905182018101617,
       "irr_best": 0.08578961156448228,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-05-28",
-      "earnings_next_date": "2026-09-24",
+      "earnings_last_date": "28/05/2026",
+      "earnings_next_date": "24/09/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.13484143174549845,
@@ -1151,12 +662,7 @@
       "ev_sales_zscore_self_5y": 0.5040302036234267,
       "moat_erosion_flag": true,
       "roic_slope_5y": 8.205729581946031e-05,
-      "fcf_margin_slope_5y": 0.3353290998717811,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.00025049308774479495,
-      "dividend_yield": 0.61,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6097495069122552
+      "fcf_margin_slope_5y": 0.3353290998717811
     },
     {
       "ticker": "DSGX",
@@ -1225,8 +731,8 @@
       "irr_worst": -0.03433476777471989,
       "irr_best": 0.20036217929528854,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-06-03",
-      "earnings_next_date": "2026-09-10",
+      "earnings_last_date": "03/06/2026",
+      "earnings_next_date": "10/09/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.23469694707000843,
@@ -1266,12 +772,7 @@
       "ev_sales_zscore_self_5y": -1.1325221114284834,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.005926366027631037,
-      "fcf_margin_slope_5y": -0.36114820115972135,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.00486016343089347,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.00486016343089347
+      "fcf_margin_slope_5y": -0.36114820115972135
     },
     {
       "ticker": "RAA",
@@ -1340,8 +841,8 @@
       "irr_worst": -0.06356385238468143,
       "irr_best": 0.12636883264119847,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.1899326850258799,
@@ -1381,12 +882,7 @@
       "ev_sales_zscore_self_5y": -1.1273278813547933,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.0010751264151176681,
-      "fcf_margin_slope_5y": 0.22785092501315748,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0253,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0253
+      "fcf_margin_slope_5y": 0.22785092501315748
     },
     {
       "ticker": "ZS",
@@ -1455,8 +951,8 @@
       "irr_worst": -0.023395731461994917,
       "irr_best": 0.26060125856359373,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-05-28",
-      "earnings_next_date": "2026-09-02",
+      "earnings_last_date": "28/05/2026",
+      "earnings_next_date": "02/09/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.28399699002558865,
@@ -1496,12 +992,7 @@
       "ev_sales_zscore_self_5y": -1.087972746988553,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.006077644051527985,
-      "fcf_margin_slope_5y": 2.26073300924782,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.038107416879795394,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.038107416879795394
+      "fcf_margin_slope_5y": 2.26073300924782
     },
     {
       "ticker": "NTO",
@@ -1570,8 +1061,8 @@
       "irr_worst": -0.12447101599239929,
       "irr_best": 0.022838362358715614,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.1473093783511149,
@@ -1611,12 +1102,7 @@
       "ev_sales_zscore_self_5y": null,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.009808457644113448,
-      "dividend_yield": 0.023799999999999998,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.033608457644113444
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "AMZN",
@@ -1685,8 +1171,8 @@
       "irr_worst": -0.05942770540089126,
       "irr_best": 0.1144404281327791,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-30",
-      "earnings_next_date": "2026-10-29",
+      "earnings_last_date": "30/07/2026",
+      "earnings_next_date": "29/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.17386813353367037,
@@ -1726,12 +1212,7 @@
       "ev_sales_zscore_self_5y": 0.5418481713358821,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.007949525489503239,
-      "fcf_margin_slope_5y": -2.2611733445736744,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.013027470971396206,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.013027470971396206
+      "fcf_margin_slope_5y": -2.2611733445736744
     },
     {
       "ticker": "SU",
@@ -1800,8 +1281,8 @@
       "irr_worst": -0.06766456399974285,
       "irr_best": 0.09200830003751403,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-30",
-      "earnings_next_date": "2026-10-29",
+      "earnings_last_date": "30/07/2026",
+      "earnings_next_date": "29/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.1596728640372569,
@@ -1841,12 +1322,7 @@
       "ev_sales_zscore_self_5y": 0.7671443388490432,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.003850818087181857,
-      "fcf_margin_slope_5y": 0.38938386001009706,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.00223041738728756,
-      "dividend_yield": 0.014199999999999999,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01196958261271244
+      "fcf_margin_slope_5y": 0.38938386001009706
     },
     {
       "ticker": "ITX",
@@ -1915,8 +1391,8 @@
       "irr_worst": -0.04824868041192365,
       "irr_best": 0.07832138267831201,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-06-09",
-      "earnings_next_date": "2026-09-09",
+      "earnings_last_date": "09/06/2026",
+      "earnings_next_date": "09/09/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.12657006309023566,
@@ -1956,12 +1432,7 @@
       "ev_sales_zscore_self_5y": null,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0005203037165384361,
-      "dividend_yield": 0.011200000000000002,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.010679696283461566
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "LOTB",
@@ -2030,8 +1501,8 @@
       "irr_worst": -0.2428306618717152,
       "irr_best": -0.10950902492843284,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-07",
-      "earnings_next_date": "2027-02-25",
+      "earnings_last_date": "07/08/2026",
+      "earnings_next_date": "25/02/2027",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.13332163694328236,
@@ -2071,12 +1542,7 @@
       "ev_sales_zscore_self_5y": -0.9517668812943803,
       "moat_erosion_flag": false,
       "roic_slope_5y": -0.0006230236119785088,
-      "fcf_margin_slope_5y": -0.7542627168815027,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": 0.0005083289639197209,
-      "dividend_yield": 0.69,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6905083289639197
+      "fcf_margin_slope_5y": -0.7542627168815027
     },
     {
       "ticker": "HLMA",
@@ -2145,8 +1611,8 @@
       "irr_worst": -0.08078334639663332,
       "irr_best": 0.09070308382052805,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-06-11",
-      "earnings_next_date": "2026-11-19",
+      "earnings_last_date": "11/06/2026",
+      "earnings_next_date": "19/11/2026",
       "price_source": "yfinance",
       "price_currency": "GBp",
       "irr_spread": 0.17148643021716137,
@@ -2186,12 +1652,7 @@
       "ev_sales_zscore_self_5y": null,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 6.194836208734506e-05,
-      "dividend_yield": 0.69,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6900619483620873
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "FICO",
@@ -2260,8 +1721,8 @@
       "irr_worst": -0.14848547435854165,
       "irr_best": 0.11022293283992024,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2026-11-18",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "18/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.2587084071984619,
@@ -2301,12 +1762,7 @@
       "ev_sales_zscore_self_5y": -0.2663984766519816,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.0025702768300222517,
-      "fcf_margin_slope_5y": 1.4204191356644917,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.02575504263693014,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02575504263693014
+      "fcf_margin_slope_5y": 1.4204191356644917
     },
     {
       "ticker": "LIFCO B",
@@ -2375,8 +1831,8 @@
       "irr_worst": -0.14646425343370817,
       "irr_best": 0.08999063481268244,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-14",
-      "earnings_next_date": "2026-10-22",
+      "earnings_last_date": "14/07/2026",
+      "earnings_next_date": "22/10/2026",
       "price_source": "yfinance",
       "price_currency": "SEK",
       "irr_spread": 0.2364548882463906,
@@ -2416,12 +1872,7 @@
       "ev_sales_zscore_self_5y": 0.2524902318426885,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.0013098054235442756,
-      "fcf_margin_slope_5y": 0.355845282954137,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.85,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.85
+      "fcf_margin_slope_5y": 0.355845282954137
     },
     {
       "ticker": "EVD",
@@ -2490,8 +1941,8 @@
       "irr_worst": -0.03890628433119803,
       "irr_best": 0.15588771395518797,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-05-28",
-      "earnings_next_date": "2026-08-27",
+      "earnings_last_date": "28/05/2026",
+      "earnings_next_date": "27/08/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.194793998286386,
@@ -2531,12 +1982,7 @@
       "ev_sales_zscore_self_5y": -1.7836929492490106,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.02189535130653658,
-      "fcf_margin_slope_5y": -5.0171753920261795,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0242,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0242
+      "fcf_margin_slope_5y": -5.0171753920261795
     },
     {
       "ticker": "MNST",
@@ -2605,8 +2051,8 @@
       "irr_worst": -0.12126491952848262,
       "irr_best": 0.012909851886780066,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.13417477141526268,
@@ -2646,12 +2092,7 @@
       "ev_sales_zscore_self_5y": 1.6759097066725441,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.001095392110508141,
-      "fcf_margin_slope_5y": 2.977520389246883,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.005173269590649885,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.005173269590649885
+      "fcf_margin_slope_5y": 2.977520389246883
     },
     {
       "ticker": "ABNB",
@@ -2720,8 +2161,8 @@
       "irr_worst": -0.03887792235502707,
       "irr_best": 0.16765420851689705,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.20653213087192412,
@@ -2761,12 +2202,7 @@
       "ev_sales_zscore_self_5y": -0.006311944030977335,
       "moat_erosion_flag": false,
       "roic_slope_5y": -0.0025968760378712865,
-      "fcf_margin_slope_5y": -1.1600399529154728,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.033707865168539325,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.033707865168539325
+      "fcf_margin_slope_5y": -1.1600399529154728
     },
     {
       "ticker": "DNP",
@@ -2835,8 +2271,8 @@
       "irr_worst": -0.04288588398474025,
       "irr_best": 0.13802784468788287,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-13",
-      "earnings_next_date": "2026-11-12",
+      "earnings_last_date": "13/08/2026",
+      "earnings_next_date": "12/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.18091372867262312,
@@ -2876,12 +2312,7 @@
       "ev_sales_zscore_self_5y": null,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.0020207347005743357,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.017045990919422997,
-      "dividend_yield": 0.071,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.053954009080577
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "VLTO",
@@ -2950,8 +2381,8 @@
       "irr_worst": -0.09682129582724142,
       "irr_best": 0.08066995993182458,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-28",
-      "earnings_next_date": "2026-10-27",
+      "earnings_last_date": "28/07/2026",
+      "earnings_next_date": "27/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.177491255759066,
@@ -2991,12 +2422,7 @@
       "ev_sales_zscore_self_5y": -0.6095141690393672,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.0010807565189364398,
-      "fcf_margin_slope_5y": 0.4814865983927217,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.004042037186742118,
-      "dividend_yield": 0.53,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.5259579628132579
+      "fcf_margin_slope_5y": 0.4814865983927217
     },
     {
       "ticker": "LR",
@@ -3065,8 +2491,8 @@
       "irr_worst": -0.13375248723578703,
       "irr_best": 0.10354698199654355,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.23729946923233058,
@@ -3106,12 +2532,7 @@
       "ev_sales_zscore_self_5y": 0.910244421999507,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.008047911248500312,
-      "fcf_margin_slope_5y": -0.7178876718111502,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0018982809032665696,
-      "dividend_yield": 0.0174,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.019298280903266567
+      "fcf_margin_slope_5y": -0.7178876718111502
     },
     {
       "ticker": "JDG",
@@ -3180,8 +2601,8 @@
       "irr_worst": -0.04359552932105437,
       "irr_best": 0.32012383448322335,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-03-31",
-      "earnings_next_date": "2026-09-22",
+      "earnings_last_date": "31/03/2026",
+      "earnings_next_date": "22/09/2026",
       "price_source": "yfinance",
       "price_currency": "GBp",
       "irr_spread": 0.3637193638042777,
@@ -3221,12 +2642,7 @@
       "ev_sales_zscore_self_5y": -1.5846829240276725,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.0001078119980833052,
-      "fcf_margin_slope_5y": 1.039060941878357,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0012898789067463316,
-      "dividend_yield": 0.028399999999999998,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.027110121093253666
+      "fcf_margin_slope_5y": 1.039060941878357
     },
     {
       "ticker": "STMN",
@@ -3295,8 +2711,8 @@
       "irr_worst": -0.0909875645888093,
       "irr_best": 0.06314335418782857,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-19",
-      "earnings_next_date": "2026-10-29",
+      "earnings_last_date": "19/08/2026",
+      "earnings_next_date": "29/10/2026",
       "price_source": "yfinance",
       "price_currency": "CHF",
       "irr_spread": 0.15413091877663787,
@@ -3336,12 +2752,7 @@
       "ev_sales_zscore_self_5y": -1.4710374123297074,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.0017732814819524825,
-      "fcf_margin_slope_5y": 0.26262119801293093,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": 2.634040570508854e-07,
-      "dividend_yield": 0.0109,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01090026340405705
+      "fcf_margin_slope_5y": 0.26262119801293093
     },
     {
       "ticker": "META",
@@ -3410,8 +2821,8 @@
       "irr_worst": -0.04830662400830832,
       "irr_best": 0.25901747549778387,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2026-10-28",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "28/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.3073240995060922,
@@ -3451,12 +2862,7 @@
       "ev_sales_zscore_self_5y": 0.32398516330296184,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.010463017890510209,
-      "fcf_margin_slope_5y": -0.6228204545061696,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0019133389649935491,
-      "dividend_yield": 0.37,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.37191333896499357
+      "fcf_margin_slope_5y": -0.6228204545061696
     },
     {
       "ticker": "KKR",
@@ -3525,8 +2931,8 @@
       "irr_worst": -0.06272171784099079,
       "irr_best": 0.23277107971299626,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-30",
-      "earnings_next_date": "2026-11-04",
+      "earnings_last_date": "30/07/2026",
+      "earnings_next_date": "04/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.29549279755398705,
@@ -3566,12 +2972,7 @@
       "ev_sales_zscore_self_5y": -0.844681741046813,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.017600749452124757,
-      "fcf_margin_slope_5y": -14.968355837599857,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.003624806772649062,
-      "dividend_yield": 0.73,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7263751932273509
+      "fcf_margin_slope_5y": -14.968355837599857
     },
     {
       "ticker": "NET",
@@ -3640,8 +3041,8 @@
       "irr_worst": -0.3286868058619078,
       "irr_best": -0.18723066776950026,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.14145613809240754,
@@ -3681,12 +3082,7 @@
       "ev_sales_zscore_self_5y": 1.7329126135953918,
       "moat_erosion_flag": true,
       "roic_slope_5y": -6.397715098007759e-05,
-      "fcf_margin_slope_5y": 1.4693435756595874,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.020391178901277347,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.020391178901277347
+      "fcf_margin_slope_5y": 1.4693435756595874
     },
     {
       "ticker": "CRWD",
@@ -3755,8 +3151,8 @@
       "irr_worst": -0.21479908650920088,
       "irr_best": -0.05008419102197048,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-06-03",
-      "earnings_next_date": "2026-09-02",
+      "earnings_last_date": "03/06/2026",
+      "earnings_next_date": "02/09/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.1647148954872304,
@@ -3796,12 +3192,7 @@
       "ev_sales_zscore_self_5y": 0.5807845553377362,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.003571943222641576,
-      "fcf_margin_slope_5y": -1.1396859979809195,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.02215256261296153,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.02215256261296153
+      "fcf_margin_slope_5y": -1.1396859979809195
     },
     {
       "ticker": "GOOG",
@@ -3870,8 +3261,8 @@
       "irr_worst": -0.05164709315995364,
       "irr_best": 0.12137921389497563,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-22",
-      "earnings_next_date": "2026-10-27",
+      "earnings_last_date": "22/07/2026",
+      "earnings_next_date": "27/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.17302630705492927,
@@ -3911,12 +3302,7 @@
       "ev_sales_zscore_self_5y": 1.0475103161070887,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.025858469609415603,
-      "fcf_margin_slope_5y": -2.436706416650807,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.010072885103595119,
-      "dividend_yield": 0.26,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.2700728851035951
+      "fcf_margin_slope_5y": -2.436706416650807
     },
     {
       "ticker": "ABBNE",
@@ -3985,8 +3371,8 @@
       "irr_worst": -0.15107806169951887,
       "irr_best": 0.03178288887645642,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-16",
-      "earnings_next_date": "2026-10-22",
+      "earnings_last_date": "16/07/2026",
+      "earnings_next_date": "22/10/2026",
       "price_source": "yfinance",
       "price_currency": "CHF",
       "irr_spread": 0.1828609505759753,
@@ -4026,12 +3412,7 @@
       "ev_sales_zscore_self_5y": 1.3677943722229138,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.001903379287770755,
-      "fcf_margin_slope_5y": 2.3467699949980263,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.010907923578449916,
-      "dividend_yield": 0.0118,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.022707923578449918
+      "fcf_margin_slope_5y": 2.3467699949980263
     },
     {
       "ticker": "GRMN",
@@ -4100,8 +3481,8 @@
       "irr_worst": -0.07494717434751186,
       "irr_best": 0.07398555295498421,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2026-10-29",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "29/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.14893272730249607,
@@ -4141,12 +3522,7 @@
       "ev_sales_zscore_self_5y": 0.6484971777105456,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.002218653404063324,
-      "fcf_margin_slope_5y": 1.5774229054563385,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0007897416713427686,
-      "dividend_yield": 0.0146,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.013810258328657232
+      "fcf_margin_slope_5y": 1.5774229054563385
     },
     {
       "ticker": "KRX",
@@ -4215,8 +3591,8 @@
       "irr_worst": -0.14397043440779012,
       "irr_best": 0.06330148371973987,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-08-07",
-      "earnings_next_date": "2026-11-20",
+      "earnings_last_date": "07/08/2026",
+      "earnings_next_date": "20/11/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.20727191812752999,
@@ -4256,12 +3632,7 @@
       "ev_sales_zscore_self_5y": null,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": 0.010253213976411582,
-      "dividend_yield": 0.55,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.5602532139764116
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "KSPI",
@@ -4330,8 +3701,8 @@
       "irr_worst": -0.05440775147835508,
       "irr_best": 0.34891455816026773,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-10",
-      "earnings_next_date": "2026-11-09",
+      "earnings_last_date": "10/08/2026",
+      "earnings_next_date": "09/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.4033223096386228,
@@ -4371,12 +3742,7 @@
       "ev_sales_zscore_self_5y": null,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": -0.0011167654441912016,
-      "dividend_yield": 0.0528,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.051683234555808796
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "CBAV",
@@ -4445,8 +3811,8 @@
       "irr_worst": -0.07813949948509247,
       "irr_best": 0.08842343622921622,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2027-02-25",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "25/02/2027",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.1665629357143087,
@@ -4486,12 +3852,7 @@
       "ev_sales_zscore_self_5y": 1.1522750639291288,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.02495514864750548,
-      "fcf_margin_slope_5y": -1.1624767376209835,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0015787270454156797,
-      "dividend_yield": 0.026699999999999998,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.025121272954584318
+      "fcf_margin_slope_5y": -1.1624767376209835
     },
     {
       "ticker": "NVDA",
@@ -4560,8 +3921,8 @@
       "irr_worst": -0.06504710004465286,
       "irr_best": 0.10640181364052959,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-05-20",
-      "earnings_next_date": "2026-08-26",
+      "earnings_last_date": "20/05/2026",
+      "earnings_next_date": "26/08/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.17144891368518245,
@@ -4601,12 +3962,7 @@
       "ev_sales_zscore_self_5y": -0.6930873402350037,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.0043805145594788125,
-      "fcf_margin_slope_5y": 8.118825354899817,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.007067859623319852,
-      "dividend_yield": 0.47,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.4770678596233198
+      "fcf_margin_slope_5y": 8.118825354899817
     },
     {
       "ticker": "COR",
@@ -4675,8 +4031,8 @@
       "irr_worst": -0.09030530407517068,
       "irr_best": 0.08126899662573495,
       "earnings_updated_at": "2026-07-29",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.17157430070090562,
@@ -4716,12 +4072,7 @@
       "ev_sales_zscore_self_5y": 0.77193023561705,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.012765870435172586,
-      "fcf_margin_slope_5y": -0.05497803054260799,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.005161970438603158,
-      "dividend_yield": 0.73,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7351619704386031
+      "fcf_margin_slope_5y": -0.05497803054260799
     },
     {
       "ticker": "TSM",
@@ -4790,8 +4141,8 @@
       "irr_worst": -0.09694939333503094,
       "irr_best": 0.054616826980202315,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-16",
-      "earnings_next_date": "2026-10-15",
+      "earnings_last_date": "16/07/2026",
+      "earnings_next_date": "15/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.15156622031523326,
@@ -4831,12 +4182,7 @@
       "ev_sales_zscore_self_5y": null,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 8.048553850928476e-06,
-      "dividend_yield": 0.0104,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.010408048553850928
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "SPOT",
@@ -4905,8 +4251,8 @@
       "irr_worst": -0.0491961187101948,
       "irr_best": 0.07513624911754468,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2026-10-28",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "28/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.12433236782773949,
@@ -4946,12 +4292,7 @@
       "ev_sales_zscore_self_5y": 0.37302762233865894,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.008737152953869462,
-      "fcf_margin_slope_5y": 5.336700543230514,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": -0.009753115181098736,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.009753115181098736
+      "fcf_margin_slope_5y": 5.336700543230514
     },
     {
       "ticker": "PRY",
@@ -5020,8 +4361,8 @@
       "irr_worst": -0.05074368274660401,
       "irr_best": 0.15764922186115804,
       "earnings_updated_at": "2026-08-20",
-      "earnings_last_date": "2026-07-30",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "30/07/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.20839290460776205,
@@ -5061,12 +4402,7 @@
       "ev_sales_zscore_self_5y": 1.126816961241289,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.0023531545775378124,
-      "fcf_margin_slope_5y": 1.1516261440300546,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0003582043695307712,
-      "dividend_yield": 0.74,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7403582043695308
+      "fcf_margin_slope_5y": 1.1516261440300546
     },
     {
       "ticker": "JFN",
@@ -5135,8 +4471,8 @@
       "irr_worst": -0.09459114614862663,
       "irr_best": 0.036434358651650456,
       "earnings_updated_at": "2026-07-18",
-      "earnings_last_date": "2026-03-31",
-      "earnings_next_date": "2026-08-28",
+      "earnings_last_date": "31/03/2026",
+      "earnings_next_date": "28/08/2026",
       "price_source": "yfinance",
       "price_currency": "CHF",
       "irr_spread": 0.13102550480027708,
@@ -5176,12 +4512,7 @@
       "ev_sales_zscore_self_5y": 1.7312886543073494,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.0105282091444474,
-      "fcf_margin_slope_5y": -1.3923358345022152,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": -0.027769586990563862,
-      "dividend_yield": 0.0334,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.005630413009436137
+      "fcf_margin_slope_5y": -1.3923358345022152
     },
     {
       "ticker": "CPR",
@@ -5250,8 +4581,8 @@
       "irr_worst": -0.057003667910782374,
       "irr_best": 0.11374623762627367,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-29",
-      "earnings_next_date": "2026-10-28",
+      "earnings_last_date": "29/07/2026",
+      "earnings_next_date": "28/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.17074990553705605,
@@ -5291,12 +4622,7 @@
       "ev_sales_zscore_self_5y": -1.0036906684747011,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.013817543449149998,
-      "fcf_margin_slope_5y": 3.7986626685530296,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.003092840814239913,
-      "dividend_yield": 0.0169,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01999284081423991
+      "fcf_margin_slope_5y": 3.7986626685530296
     },
     {
       "ticker": "SIKA",
@@ -5365,8 +4691,8 @@
       "irr_worst": -0.065500180781082,
       "irr_best": 0.07555483038060729,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-28",
-      "earnings_next_date": "2026-10-22",
+      "earnings_last_date": "28/07/2026",
+      "earnings_next_date": "22/10/2026",
       "price_source": "yfinance",
       "price_currency": "CHF",
       "irr_spread": 0.14105501116168928,
@@ -5406,12 +4732,7 @@
       "ev_sales_zscore_self_5y": -1.5551111075350412,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.006734953525054147,
-      "fcf_margin_slope_5y": 1.0873854972739567,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 3.287117668061136e-05,
-      "dividend_yield": 0.0194,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.019432871176680612
+      "fcf_margin_slope_5y": 1.0873854972739567
     },
     {
       "ticker": "CHKP",
@@ -5480,8 +4801,8 @@
       "irr_worst": -0.1031261645198902,
       "irr_best": 0.15486702498934557,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-30",
-      "earnings_next_date": "2026-10-28",
+      "earnings_last_date": "30/07/2026",
+      "earnings_next_date": "28/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.2579931895092358,
@@ -5521,12 +4842,7 @@
       "ev_sales_zscore_self_5y": -0.9378270529255607,
       "moat_erosion_flag": false,
       "roic_slope_5y": -0.0020127903780863803,
-      "fcf_margin_slope_5y": -0.9881163672134996,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0255838865682427,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0255838865682427
+      "fcf_margin_slope_5y": -0.9881163672134996
     },
     {
       "ticker": "TGYM",
@@ -5595,8 +4911,8 @@
       "irr_worst": -0.06912243444121258,
       "irr_best": 0.10229307569067214,
       "earnings_updated_at": "2026-07-30",
-      "earnings_last_date": "2026-07-30",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "30/07/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.17141551013188472,
@@ -5636,12 +4952,7 @@
       "ev_sales_zscore_self_5y": 1.7222677261474315,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.005874244186243773,
-      "fcf_margin_slope_5y": 0.5951004360440132,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0006509283172220123,
-      "dividend_yield": 0.029300000000000003,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.028649071682777992
+      "fcf_margin_slope_5y": 0.5951004360440132
     },
     {
       "ticker": "VID",
@@ -5710,8 +5021,8 @@
       "irr_worst": -0.08918344547896229,
       "irr_best": 0.11313066560128537,
       "earnings_updated_at": "2026-07-29",
-      "earnings_last_date": "2026-07-23",
-      "earnings_next_date": "2026-10-22",
+      "earnings_last_date": "23/07/2026",
+      "earnings_next_date": "22/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.20231411108024766,
@@ -5751,12 +5062,7 @@
       "ev_sales_zscore_self_5y": 0.32967783743364526,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.013106727131983846,
-      "fcf_margin_slope_5y": 2.619407490237294,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.04930209780741115,
-      "dividend_yield": 0.0187,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.030602097807411147
+      "fcf_margin_slope_5y": 2.619407490237294
     },
     {
       "ticker": "TFPM",
@@ -5825,8 +5131,8 @@
       "irr_worst": -0.04692983201953138,
       "irr_best": 0.12540218949683202,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-08-05",
-      "earnings_next_date": "2026-11-04",
+      "earnings_last_date": "05/08/2026",
+      "earnings_next_date": "04/11/2026",
       "price_source": "yfinance",
       "price_currency": "CAD",
       "irr_spread": 0.1723320215163634,
@@ -5866,12 +5172,7 @@
       "ev_sales_zscore_self_5y": -0.8803354256508461,
       "moat_erosion_flag": false,
       "roic_slope_5y": -0.00031179931763566254,
-      "fcf_margin_slope_5y": -2.5246202504774233,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.02643961170814384,
-      "dividend_yield": 0.68,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6535603882918563
+      "fcf_margin_slope_5y": -2.5246202504774233
     },
     {
       "ticker": "NFLX",
@@ -5940,8 +5241,8 @@
       "irr_worst": -0.07139232244842564,
       "irr_best": 0.07211379150082453,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-16",
-      "earnings_next_date": "2026-10-20",
+      "earnings_last_date": "16/07/2026",
+      "earnings_next_date": "20/10/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.14350611394925017,
@@ -5981,12 +5282,7 @@
       "ev_sales_zscore_self_5y": -0.5207459972606141,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.003964791203516686,
-      "fcf_margin_slope_5y": 4.354887613723606,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.012953344316201883,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.012953344316201883
+      "fcf_margin_slope_5y": 4.354887613723606
     },
     {
       "ticker": "NKE",
@@ -6055,8 +5351,8 @@
       "irr_worst": -0.12989649278019666,
       "irr_best": 0.0366110483549873,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-06-30",
-      "earnings_next_date": "2026-09-30",
+      "earnings_last_date": "30/06/2026",
+      "earnings_next_date": "30/09/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.16650754113518396,
@@ -6096,12 +5392,7 @@
       "ev_sales_zscore_self_5y": -1.3548426915295613,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.006283911063243231,
-      "fcf_margin_slope_5y": -2.6320125569629287,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.005080422086720867,
-      "dividend_yield": 0.0415,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.036419577913279134
+      "fcf_margin_slope_5y": -2.6320125569629287
     },
     {
       "ticker": "MIPS",
@@ -6170,8 +5461,8 @@
       "irr_worst": -0.31758386002534267,
       "irr_best": -0.093126006181107,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-16",
-      "earnings_next_date": "2026-10-23",
+      "earnings_last_date": "16/07/2026",
+      "earnings_next_date": "23/10/2026",
       "price_source": "yfinance",
       "price_currency": "SEK",
       "irr_spread": 0.22445785384423567,
@@ -6211,12 +5502,7 @@
       "ev_sales_zscore_self_5y": -1.348291731177008,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.00096804071612653,
-      "fcf_margin_slope_5y": -1.428074489020256,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.68,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.68
+      "fcf_margin_slope_5y": -1.428074489020256
     },
     {
       "ticker": "FERG",
@@ -6285,8 +5571,8 @@
       "irr_worst": -0.12176835782745332,
       "irr_best": 0.07795423369986487,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-04",
-      "earnings_next_date": "2026-11-03",
+      "earnings_last_date": "04/08/2026",
+      "earnings_next_date": "03/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.1997225915273182,
@@ -6326,12 +5612,7 @@
       "ev_sales_zscore_self_5y": 1.2873367692180555,
       "moat_erosion_flag": false,
       "roic_slope_5y": -0.003961074598675978,
-      "fcf_margin_slope_5y": 0.26991314225096275,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.03583304576885921,
-      "dividend_yield": 0.015300000000000001,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.051133045768859214
+      "fcf_margin_slope_5y": 0.26991314225096275
     },
     {
       "ticker": "S",
@@ -6400,8 +5681,8 @@
       "irr_worst": -0.20042570238579438,
       "irr_best": -0.00998480042113603,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-05-28",
-      "earnings_next_date": "2026-08-27",
+      "earnings_last_date": "28/05/2026",
+      "earnings_next_date": "27/08/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.19044090196465835,
@@ -6441,12 +5722,7 @@
       "ev_sales_zscore_self_5y": -1.0075494847061544,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.006528713491376502,
-      "fcf_margin_slope_5y": 2.815306440203534,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.03746507319626669,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.03746507319626669
+      "fcf_margin_slope_5y": 2.815306440203534
     },
     {
       "ticker": "TREX",
@@ -6515,8 +5791,8 @@
       "irr_worst": -0.0836178000578699,
       "irr_best": 0.14679655886391596,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-04",
-      "earnings_next_date": "2026-11-03",
+      "earnings_last_date": "04/08/2026",
+      "earnings_next_date": "03/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.23041435892178586,
@@ -6556,12 +5832,7 @@
       "ev_sales_zscore_self_5y": -0.5550231187944088,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.008514572153391234,
-      "fcf_margin_slope_5y": 2.0632211628117445,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.013224284362630134,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.013224284362630134
+      "fcf_margin_slope_5y": 2.0632211628117445
     },
     {
       "ticker": "SGO",
@@ -6630,8 +5901,8 @@
       "irr_worst": -0.05261364985407968,
       "irr_best": 0.11961872494175907,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-30",
-      "earnings_next_date": "2026-10-29",
+      "earnings_last_date": "30/07/2026",
+      "earnings_next_date": "29/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.17223237479583875,
@@ -6671,12 +5942,7 @@
       "ev_sales_zscore_self_5y": 1.0660428928017756,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.021060842302435955,
-      "fcf_margin_slope_5y": -0.12211549458843632,
-      "earnings_next_estimated": false,
-      "buyback_yield_ttm": 0.00839634075661331,
-      "dividend_yield": 0.028300000000000002,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.036696340756613315
+      "fcf_margin_slope_5y": -0.12211549458843632
     },
     {
       "ticker": "TFF",
@@ -6745,8 +6011,8 @@
       "irr_worst": -0.99,
       "irr_best": -0.07559641057557243,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-08",
-      "earnings_next_date": "2027-01-30",
+      "earnings_last_date": "08/07/2026",
+      "earnings_next_date": "30/01/2027",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.9144035894244276,
@@ -6786,12 +6052,7 @@
       "ev_sales_zscore_self_5y": -1.714687463279912,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.03,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.03
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "CELH",
@@ -6860,8 +6121,8 @@
       "irr_worst": -0.05062887319045495,
       "irr_best": 0.302036724443546,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.35266559763400096,
@@ -6901,12 +6162,7 @@
       "ev_sales_zscore_self_5y": -1.0242255704655603,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.010068747410880383,
-      "fcf_margin_slope_5y": -0.21223413231743238,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.09315208339113132,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.09315208339113132
+      "fcf_margin_slope_5y": -0.21223413231743238
     },
     {
       "ticker": "BFIT",
@@ -6975,8 +6231,8 @@
       "irr_worst": -0.3053980405728852,
       "irr_best": 0.01086516146141614,
       "earnings_updated_at": "2026-07-29",
-      "earnings_last_date": "2026-07-28",
-      "earnings_next_date": "2026-10-27",
+      "earnings_last_date": "28/07/2026",
+      "earnings_next_date": "27/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.31626320203430136,
@@ -7016,12 +6272,7 @@
       "ev_sales_zscore_self_5y": -0.7923550546145243,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.017238494642483164,
-      "fcf_margin_slope_5y": 4.792980720031246,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.018040560606060605,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.018040560606060605
+      "fcf_margin_slope_5y": 4.792980720031246
     },
     {
       "ticker": "VRLA",
@@ -7090,8 +6341,8 @@
       "irr_worst": -0.2647953045593726,
       "irr_best": 0.1837641721817569,
       "earnings_updated_at": "2026-07-29",
-      "earnings_last_date": "2026-07-28",
-      "earnings_next_date": "2026-10-28",
+      "earnings_last_date": "28/07/2026",
+      "earnings_next_date": "28/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.4485594767411295,
@@ -7131,12 +6382,7 @@
       "ev_sales_zscore_self_5y": -0.2281664143369343,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.06784735737011036,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.06784735737011036
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "KIST",
@@ -7205,8 +6451,8 @@
       "irr_worst": -0.20998107550104794,
       "irr_best": 0.16862317690952566,
       "earnings_updated_at": "2026-07-18",
-      "earnings_last_date": "2026-06-26",
-      "earnings_next_date": "2026-09-30",
+      "earnings_last_date": "26/06/2026",
+      "earnings_next_date": "30/09/2026",
       "price_source": "yfinance",
       "price_currency": "GBp",
       "irr_spread": 0.3786042524105736,
@@ -7246,12 +6492,7 @@
       "ev_sales_zscore_self_5y": 0.5141426422042833,
       "moat_erosion_flag": true,
       "roic_slope_5y": -0.0022776295340278807,
-      "fcf_margin_slope_5y": -17.48781952457371,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0013064459325714988,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.0013064459325714988
+      "fcf_margin_slope_5y": -17.48781952457371
     },
     {
       "ticker": "WOSG",
@@ -7320,8 +6561,8 @@
       "irr_worst": -0.20705474407537638,
       "irr_best": 0.06020866004585157,
       "earnings_updated_at": "2026-07-18",
-      "earnings_last_date": "2026-07-14",
-      "earnings_next_date": "2026-12-02",
+      "earnings_last_date": "14/07/2026",
+      "earnings_next_date": "02/12/2026",
       "price_source": "yfinance",
       "price_currency": "GBp",
       "irr_spread": 0.26726340412122795,
@@ -7361,12 +6602,7 @@
       "ev_sales_zscore_self_5y": -0.058319992927350926,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.00019616228062423852,
-      "fcf_margin_slope_5y": 0.3956037073635153,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0070485990328550295,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0070485990328550295
+      "fcf_margin_slope_5y": 0.3956037073635153
     },
     {
       "ticker": "IPCO",
@@ -7435,8 +6671,8 @@
       "irr_worst": -0.15017198595365444,
       "irr_best": 0.14139726909432526,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-04",
-      "earnings_next_date": "2026-11-03",
+      "earnings_last_date": "04/08/2026",
+      "earnings_next_date": "03/11/2026",
       "price_source": "yfinance",
       "price_currency": "CAD",
       "irr_spread": 0.2915692550479797,
@@ -7476,12 +6712,7 @@
       "ev_sales_zscore_self_5y": 0.8847820835445354,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.05798612229542896,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.05798612229542896
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "OTLY",
@@ -7550,8 +6781,8 @@
       "irr_worst": -0.99,
       "irr_best": 0.22377935333798527,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-22",
-      "earnings_next_date": "2026-11-04",
+      "earnings_last_date": "22/07/2026",
+      "earnings_next_date": "04/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 1.2137793533379853,
@@ -7591,12 +6822,7 @@
       "ev_sales_zscore_self_5y": -0.7149887982515615,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.04333762351981382,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.04333762351981382
+      "fcf_margin_slope_5y": null
     },
     {
       "ticker": "CSU",
@@ -7665,8 +6891,8 @@
       "irr_worst": -0.05009003362492148,
       "irr_best": 0.19380116723134355,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-11",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "11/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "CAD",
       "irr_spread": 0.24389120085626503,
@@ -7706,12 +6932,7 @@
       "ev_sales_zscore_self_5y": -1.6227977187754092,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.00709863844168162,
-      "fcf_margin_slope_5y": 1.1194567257012262,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.18,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.18
+      "fcf_margin_slope_5y": 1.1194567257012262
     },
     {
       "ticker": "UBER",
@@ -7780,8 +7001,8 @@
       "irr_worst": -0.06474517110906663,
       "irr_best": 0.3139709484294513,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-05",
-      "earnings_next_date": "2026-11-03",
+      "earnings_last_date": "05/08/2026",
+      "earnings_next_date": "03/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.3787161195385179,
@@ -7821,12 +7042,7 @@
       "ev_sales_zscore_self_5y": -0.10964091648929217,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.016393658847089893,
-      "fcf_margin_slope_5y": 4.892307981553567,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.018998526058218567,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.018998526058218567
+      "fcf_margin_slope_5y": 4.892307981553567
     },
     {
       "ticker": "SOM",
@@ -7895,8 +7111,8 @@
       "irr_worst": 0.04781861748618721,
       "irr_best": 0.29447306727229905,
       "earnings_updated_at": "2026-08-20",
-      "earnings_last_date": "2026-03-10",
-      "earnings_next_date": "2026-09-08",
+      "earnings_last_date": "10/03/2026",
+      "earnings_next_date": "08/09/2026",
       "price_source": "yfinance",
       "price_currency": "GBp",
       "irr_spread": 0.24665444978611184,
@@ -7936,12 +7152,7 @@
       "ev_sales_zscore_self_5y": -1.504568832240836,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.0001134363895083703,
-      "fcf_margin_slope_5y": 0.21375117343493236,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.015346917470918712,
-      "dividend_yield": 0.0316,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.04694691747091871
+      "fcf_margin_slope_5y": 0.21375117343493236
     },
     {
       "ticker": "IP",
@@ -8010,8 +7221,8 @@
       "irr_worst": -0.04263330765040074,
       "irr_best": 0.21663188261264388,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-11-13",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "13/11/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.2592651902630446,
@@ -8051,12 +7262,7 @@
       "ev_sales_zscore_self_5y": -1.7106266028298633,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.012922769656742732,
-      "fcf_margin_slope_5y": 2.3174083029577996,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0033325922555425343,
-      "dividend_yield": 0.92,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.9233325922555425
+      "fcf_margin_slope_5y": 2.3174083029577996
     },
     {
       "ticker": "RBT",
@@ -8125,8 +7331,8 @@
       "irr_worst": -0.04316178459074871,
       "irr_best": 0.1610400099058178,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-08-06",
-      "earnings_next_date": "2026-09-17",
+      "earnings_last_date": "06/08/2026",
+      "earnings_next_date": "17/09/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.2042017944965665,
@@ -8166,12 +7372,7 @@
       "ev_sales_zscore_self_5y": -0.8959937201197709,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.006290855687446569,
-      "fcf_margin_slope_5y": 1.0842309339274627,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0009306225430299523,
-      "dividend_yield": 0.015,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.014069377456970048
+      "fcf_margin_slope_5y": 1.0842309339274627
     },
     {
       "ticker": "ROKO B",
@@ -8240,8 +7441,8 @@
       "irr_worst": -0.033479239811330386,
       "irr_best": 0.15434171348505243,
       "earnings_updated_at": "2026-08-25",
-      "earnings_last_date": "2026-07-17",
-      "earnings_next_date": "2026-10-22",
+      "earnings_last_date": "17/07/2026",
+      "earnings_next_date": "22/10/2026",
       "price_source": "yfinance",
       "price_currency": "SEK",
       "irr_spread": 0.18782095329638282,
@@ -8281,12 +7482,7 @@
       "ev_sales_zscore_self_5y": 0.9631947210202164,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.003738371823121551,
-      "fcf_margin_slope_5y": 2.352397002963203,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0,
-      "dividend_yield": null,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0
+      "fcf_margin_slope_5y": 2.352397002963203
     },
     {
       "ticker": "USPH",
@@ -8355,8 +7551,8 @@
       "irr_worst": -0.07781299973650235,
       "irr_best": 0.15190598168047975,
       "earnings_updated_at": "2026-08-21",
-      "earnings_last_date": "2026-08-05",
-      "earnings_next_date": "2026-11-05",
+      "earnings_last_date": "05/08/2026",
+      "earnings_next_date": "05/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.2297189814169821,
@@ -8396,12 +7592,7 @@
       "ev_sales_zscore_self_5y": -1.1469237169055115,
       "moat_erosion_flag": false,
       "roic_slope_5y": 0.001321526386086836,
-      "fcf_margin_slope_5y": -0.7150598199600783,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0018668533851300844,
-      "dividend_yield": 0.023799999999999998,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.021933146614869913
+      "fcf_margin_slope_5y": -0.7150598199600783
     },
     {
       "ticker": "SAP",
@@ -8470,8 +7661,8 @@
       "irr_worst": -0.06827181855497988,
       "irr_best": 0.10918294724974453,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-07-22",
-      "earnings_next_date": "2026-10-21",
+      "earnings_last_date": "22/07/2026",
+      "earnings_next_date": "21/10/2026",
       "price_source": "yfinance",
       "price_currency": "EUR",
       "irr_spread": 0.1774547658047244,
@@ -8511,12 +7702,7 @@
       "ev_sales_zscore_self_5y": -0.786547984969017,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.003900071274132944,
-      "fcf_margin_slope_5y": 2.0755787039016687,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.0008311295724966266,
-      "dividend_yield": 0.013500000000000002,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.012668870427503375
+      "fcf_margin_slope_5y": 2.0755787039016687
     },
     {
       "ticker": "CTVA",
@@ -8585,8 +7771,8 @@
       "irr_worst": -0.12586883315652864,
       "irr_best": 0.06356918516095167,
       "earnings_updated_at": "2026-08-26",
-      "earnings_last_date": "2026-08-05",
-      "earnings_next_date": "2026-11-04",
+      "earnings_last_date": "05/08/2026",
+      "earnings_next_date": "04/11/2026",
       "price_source": "yfinance",
       "price_currency": "USD",
       "irr_spread": 0.1894380183174803,
@@ -8626,12 +7812,7 @@
       "ev_sales_zscore_self_5y": 1.7213982183010696,
       "moat_erosion_flag": true,
       "roic_slope_5y": 0.011272312298464832,
-      "fcf_margin_slope_5y": 3.6791607046713395,
-      "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.019591741480028298,
-      "dividend_yield": 0.87,
-      "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.8895917414800283
+      "fcf_margin_slope_5y": 3.6791607046713395
     }
   ]
 }
