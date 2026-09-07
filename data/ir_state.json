@@ -4,11 +4,13 @@
 "news:17d0601d-cb9a-3808-827e-c225ff46b0ce",
 "news:91b0a134-7d24-3254-9a4f-2b069e561472",
 "news:992f6715-f03e-345f-82a7-c9570ec5e832",
+"news:f5adcc10-ced6-3788-8153-2845b38c5bbb",
 "sec:0001213900-26-092096:8-K",
 "sec:0001393052-26-000032:8-K",
 "sec:0001628280-26-057403:4"
 ],
 "MSFT": [
+"news:9f31e09e-27a5-31b8-8917-87d84aa02196",
 "sec:0000789019-26-000145:4"
 ],
 "ADYEN": [],
@@ -49,6 +51,7 @@
 "page:https://www.rational-online.com/media/investor-relations/veroeffentlichungen-gj-2026/rational-ag---report-on-the-first-half-year-2026.pdf"
 ],
 "ZS": [
+"news:836c8029-adad-31a8-9f92-a58d8d04eeee",
 "sec:0001713683-26-000132:4"
 ],
 "NTO": [],
@@ -80,7 +83,9 @@
 "sec:0001193125-26-369139:4",
 "sec:0001193125-26-369145:4"
 ],
-"DNP": [],
+"DNP": [
+"news:c62367bb-1cc9-34bc-adb7-a9eab3c4daeb"
+],
 "VLTO": [
 "sec:0001991958-26-000006:4"
 ],
@@ -122,6 +127,7 @@
 "news:1d6cf26c-9fdb-3855-a10a-434433dc4e31",
 "news:3dc49e39-a10d-3ea5-9073-00efcba42715",
 "news:4d13e320-fade-3aee-b580-9dada2095f8d",
+"news:a37a70dc-6b88-3e48-8da5-3a01fd2485ce",
 "news:b209dcf6-928f-34a8-bcc1-98619e57b0c0",
 "news:d9f1afb5-f1b1-3e00-ade5-14fd382b55f9",
 "news:fce0679c-0e0c-32ff-886a-f2a84a6ad6fe",
@@ -151,12 +157,17 @@
 "sec:0001045810-26-000075:10-Q",
 "sec:0001347842-26-000015:4"
 ],
-"COR": [],
+"COR": [
+"news:040f045f-73c1-3c82-97fd-a6b3235b40d6",
+"news:1428772b-8d56-3ef9-8217-ae5744cd92de",
+"news:4d96ba5b-7917-3a9d-9c8f-838e2e20d13d"
+],
 "TSM": [
 "sec:0001046179-26-000543:4",
 "sec:0001046179-26-000545:6-K"
 ],
 "SPOT": [
+"news:0fec3d27-6338-36dd-b8ba-540203dc4b99",
 "sec:0001140361-26-033570:4",
 "sec:0001140361-26-033885:6-K"
 ],
@@ -175,7 +186,9 @@
 "MIPS": [],
 "FERG": [],
 "S": [
-"news:1dd7c312-a4aa-3d88-aa3a-450922ac2dad"
+"news:1ab0b76c-7d7d-388a-8ce6-f200f9427e5f",
+"news:1dd7c312-a4aa-3d88-aa3a-450922ac2dad",
+"news:786f2bee-3dd9-3a12-afa7-d504e0ce1056"
 ],
 "TREX": [
 "news:56cb4a98-55ee-3e7b-b4ec-f012bfab6eeb",
@@ -218,5 +231,5 @@
 "sec:0001193125-26-359264:8-K"
 ]
 },
-"last_run": "2026-08-27T08:05:22+00:00"
+"last_run": "2026-09-07T07:45:33+00:00"
 }
