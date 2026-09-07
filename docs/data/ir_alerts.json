@@ -1,137 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-09-07T07:45:33+00:00",
+  "generated_at": "2026-09-07T13:37:57+00:00",
   "n_tickers": 70,
   "days_back": 10,
-  "n_documents": 11,
+  "n_documents": 0,
   "n_calendar_drift": 24,
   "n_financial_drift": 27,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "news:0fec3d27-6338-36dd-b8ba-540203dc4b99",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "How Investors May Respond To Spotify (SPOT) Boosting Buybacks Amid Shifting Streaming Economics",
-   "date": "2026-08-29",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-spotify-spot-190525433.html",
-   "priority": "media",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "news:c62367bb-1cc9-34bc-adb7-a9eab3c4daeb",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "DNP Select Income Fund Inc's Dividend Analysis",
-   "date": "2026-08-31",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/dnp-select-income-fund-incs-112118979.html",
-   "priority": "media",
-   "ticker": "DNP",
-   "name": "DNP"
-  },
-  {
-   "id": "news:1ab0b76c-7d7d-388a-8ce6-f200f9427e5f",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "SentinelOne’s ARR Guidance Just Moved From Low- to Mid-Single Digits. Scotiabank Says That’s the Real Signal.",
-   "date": "2026-09-02",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/sentinelone-arr-guidance-just-moved-102001295.html",
-   "priority": "media",
-   "ticker": "S",
-   "name": "S"
-  },
-  {
-   "id": "news:f5adcc10-ced6-3788-8153-2845b38c5bbb",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "VEEV Raises FY27 Outlook as Vault CRM and AI Momentum Accelerate Fast",
-   "date": "2026-09-03",
-   "url": "https://finance.yahoo.com/technology/ai/articles/veev-raises-fy27-outlook-vault-181000467.html",
-   "priority": "media",
-   "ticker": "VEEV",
-   "name": "VEEV"
-  },
-  {
-   "id": "news:040f045f-73c1-3c82-97fd-a6b3235b40d6",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "What Cencora (COR)'s Cell and Gene Push and Higher 2026 Outlook Means For Shareholders",
-   "date": "2026-09-03",
-   "url": "https://finance.yahoo.com/healthcare/articles/cencora-cor-cell-gene-push-224035014.html",
-   "priority": "media",
-   "ticker": "COR",
-   "name": "COR"
-  },
-  {
-   "id": "news:1428772b-8d56-3ef9-8217-ae5744cd92de",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Cencora Raises 2026 EPS Outlook as Specialty Businesses Strengthen",
-   "date": "2026-09-03",
-   "url": "https://finance.yahoo.com/healthcare/articles/cencora-raises-2026-eps-outlook-192200990.html",
-   "priority": "media",
-   "ticker": "COR",
-   "name": "COR"
-  },
-  {
-   "id": "news:4d96ba5b-7917-3a9d-9c8f-838e2e20d13d",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Is Cencora (COR) Still Undervalued On Higher 2026 Guidance And Strong Q3 Earnings?",
-   "date": "2026-09-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/cencora-cor-still-undervalued-higher-070734373.html",
-   "priority": "media",
-   "ticker": "COR",
-   "name": "COR"
-  },
-  {
-   "id": "news:836c8029-adad-31a8-9f92-a58d8d04eeee",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Why Zscaler (ZS) Is Down 7.8% After Slower 2027 Outlook And AI-Focused Restructuring – And What's Next",
-   "date": "2026-09-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/why-zscaler-zs-down-7-110844518.html",
-   "priority": "media",
-   "ticker": "ZS",
-   "name": "ZS"
-  },
-  {
-   "id": "news:786f2bee-3dd9-3a12-afa7-d504e0ce1056",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Why SentinelOne (S) Is Down 7.7% After Raising Guidance And Unveiling New OpenAI-Powered Cyber Tools",
-   "date": "2026-09-05",
-   "url": "https://finance.yahoo.com/technology/ai/articles/why-sentinelone-down-7-7-150724302.html",
-   "priority": "media",
-   "ticker": "S",
-   "name": "S"
-  },
-  {
-   "id": "news:a37a70dc-6b88-3e48-8da5-3a01fd2485ce",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "CrowdStrike (CRWD)’s CEO Warns AI Is Exposing Gaps in Legacy Cybersecurity Tools",
-   "date": "2026-09-06",
-   "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-crwd-ceo-warns-ai-221012462.html",
-   "priority": "media",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "news:9f31e09e-27a5-31b8-8917-87d84aa02196",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Microsoft (MSFT)’s Outlook and OpenAI’s ChatGPT Work Both Broke the Same Day",
-   "date": "2026-09-07",
-   "url": "https://finance.yahoo.com/technology/articles/microsoft-msft-outlook-openai-chatgpt-002934990.html",
-   "priority": "media",
-   "ticker": "MSFT",
-   "name": "MSFT"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "VEEV",
