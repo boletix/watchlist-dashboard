@@ -93,6 +93,9 @@ def build(
     skip_backtest=False,
     skip_history=False,
     skip_alerts=False,
+    skip_ir=False,
+    ir_days_back=10,
+    notify_ir=True,
     skip_correlations=False,
     skip_shareholder=False,
     skip_snapshot=False,
@@ -308,6 +311,28 @@ def build(
     shutil.copy(target_frontend, target_processed)
     log.info("watchlist.json -> %s (%d empresas)", target_frontend, len(df))
 
+    # 14b. Vigilante de relacion con inversores: documentos nuevos, deriva de calendario
+    #      y —lo mas util— cuentas del Excel que se han quedado atras.
+    if not skip_ir:
+        try:
+            from src.ir_watch import run as ir_run, format_text as ir_format
+            ir_payload = ir_run(days_back=ir_days_back)
+            meta["ir"] = ir_payload["meta"]
+            n_todo = len(ir_payload.get("todo_excel") or [])
+            log.info("ir_watch: %d documentos, %d con cuentas desfasadas, %d tareas de Excel",
+                     ir_payload["meta"]["n_documents"],
+                     ir_payload["meta"].get("n_financial_drift", 0), n_todo)
+            if notify_ir and n_todo:
+                from src.alerts import notify_email
+                subject, body = ir_format(ir_payload)
+                notify_email([{"severity": "high", "ticker": t["ticker"],
+                               "type": "ir_todo", "message": "%s: %s" % (
+                                   t["ticker"], t["accion"]), "metrics": {}}
+                              for t in ir_payload["todo_excel"]])
+        except Exception as e:
+            log.error("ir_watch fallo: %s", e)
+            meta["ir_error"] = str(e)
+
     # 15. Snapshot semanal completo (no solo tickers)
     if not skip_snapshot:
         try:
@@ -319,8 +344,9 @@ def build(
             log.error("Snapshot/Process backtest fallo: %s", e)
             meta["snapshot_error"] = str(e)
 
-    log.info("Build v2.0 completo - empresas: %d, alerts: %d",
-             len(df), meta.get("n_alerts", 0))
+    log.info("Build v2.0 completo - empresas: %d, alerts: %d, docs RI: %d",
+             len(df), meta.get("n_alerts", 0),
+             (meta.get("ir") or {}).get("n_documents", 0))
     return meta
 
 
@@ -333,6 +359,9 @@ def main():
     p.add_argument("--skip-backtest", action="store_true")
     p.add_argument("--skip-history", action="store_true")
     p.add_argument("--skip-alerts", action="store_true")
+    p.add_argument("--skip-ir", action="store_true",
+                   help="no ejecutar el vigilante de relacion con inversores")
+    p.add_argument("--ir-days-back", type=int, default=10)
     p.add_argument("--skip-correlations", action="store_true")
     p.add_argument("--skip-shareholder", action="store_true")
     p.add_argument("--skip-snapshot", action="store_true")
@@ -343,6 +372,7 @@ def main():
         args.skip_backtest = True
         args.skip_history = True
         args.skip_alerts = True
+        args.skip_ir = True
         args.skip_correlations = True
         args.skip_shareholder = True
         args.skip_snapshot = True
@@ -352,6 +382,8 @@ def main():
         skip_backtest=args.skip_backtest,
         skip_history=args.skip_history,
         skip_alerts=args.skip_alerts,
+        skip_ir=args.skip_ir,
+        ir_days_back=args.ir_days_back,
         skip_correlations=args.skip_correlations,
         skip_shareholder=args.skip_shareholder,
         skip_snapshot=args.skip_snapshot,

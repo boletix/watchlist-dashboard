@@ -58,12 +58,17 @@ jobs:
           # WhatsApp via CallMeBot (configure as GitHub Secrets if you want them)
           WHATSAPP_PHONE: ${{ secrets.WHATSAPP_PHONE }}
           WHATSAPP_API_KEY: ${{ secrets.WHATSAPP_API_KEY }}
+          # La SEC exige un User-Agent con contacto o devuelve 403 (src/ir_watch.py)
+          SEC_CONTACT_EMAIL: ${{ secrets.SEC_CONTACT_EMAIL }}
 
       - name: Commit processed data if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/*.json data/processed/*.json data/earnings.json
+          # ir_state.json TIENE que volver al repo: es la memoria de que documentos de
+          # relacion con inversores ya se han avisado. Si no se devuelve, cada ejecucion
+          # del cron parte del estado commiteado y repite las mismas alertas cada dia.
+          git add docs/data/*.json data/processed/*.json data/earnings.json data/ir_state.json
           if ! git diff --cached --quiet; then
             git commit -m "build: refresh dashboard data [skip ci]"
             git push

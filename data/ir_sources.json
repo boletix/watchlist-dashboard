@@ -1,0 +1,39 @@
+{
+  "_README": [
+    "Configuracion OPCIONAL por ticker del vigilante de RI (src/ir_watch.py).",
+    "",
+    "Si un ticker NO aparece aqui, ir_watch usa la capa por defecto: SEC EDGAR cuando cotiza",
+    "en un mercado estadounidense, y noticias filtradas en cualquier otro caso. La deriva de",
+    "CUENTAS (comparar el LTM de yfinance contra el del Excel) se ejecuta SIEMPRE y sin",
+    "configuracion: es la comprobacion que de verdad dice si hay que tocar el Excel.",
+    "",
+    "Para anadir una empresa europea: pon la URL de su pagina de resultados y comprueba antes",
+    "que devuelve 200 y que el HTML contiene enlaces .pdf directos. Muchas webs de RI cargan",
+    "los documentos por JavaScript y entonces esta capa no sirve de nada: dejala fuera y",
+    "confia en la deriva de cuentas.",
+    "",
+    "Verificado el 27-ago-2026: de 12 URLs europeas probadas (Inditex, Adyen, SAP, Schneider,",
+    "Lotus, Halma, Rational, Legrand, Lifco, Dino, Veralto, Nintendo) solo DOS devolvian HTML",
+    "con enlaces directos a PDF. Por eso aqui solo hay dos entradas y no doce.",
+    "",
+    "Campos: type (sec|page|news) · url · include/exclude (regex sobre titulo+href) ·",
+    "sec_symbol · aliases (palabras que identifican a la empresa en un titular) ·",
+    "also_news (por defecto true) · name."
+  ],
+  "SU": {
+    "type": "page",
+    "name": "Schneider Electric",
+    "url": "https://www.se.com/ww/en/about-us/investor-relations/financial-results/",
+    "include": "(result|report|presentation|annual|half|quarter|universal)",
+    "exclude": "(archive|20(1[0-9]|2[0-3])|policy|cookie)",
+    "aliases": ["schneider"]
+  },
+  "RAA": {
+    "type": "page",
+    "name": "Rational AG",
+    "url": "https://www.rational-online.com/en_us/company/investor-relations/publications/",
+    "include": "(report|bericht|quarter|annual|half|result)",
+    "exclude": "(20(1[0-9]|2[0-3]))",
+    "aliases": ["rational"]
+  }
+}
