@@ -1,15 +1,27 @@
 {
  "meta": {
-  "generated_at": "2026-09-07T13:37:57+00:00",
+  "generated_at": "2026-09-08T12:15:24+00:00",
   "n_tickers": 70,
   "days_back": 10,
-  "n_documents": 0,
+  "n_documents": 1,
   "n_calendar_drift": 24,
   "n_financial_drift": 27,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [],
+ "documents": [
+  {
+   "id": "news:35648c2c-666e-31e8-8e09-e688465ac93e",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Taiwan Semiconductor Manufacturing Company (TSM) Raises Guidance as Demand for Advanced Chips Soars",
+   "date": "2026-09-07",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-company-tsm-142602670.html",
+   "priority": "media",
+   "ticker": "TSM",
+   "name": "TSM"
+  }
+ ],
  "financial_drift": [
   {
    "ticker": "VEEV",
