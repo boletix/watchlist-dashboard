@@ -1,36 +1,58 @@
 {
  "meta": {
-  "generated_at": "2026-09-09T12:28:40+00:00",
+  "generated_at": "2026-09-10T12:20:28+00:00",
   "n_tickers": 70,
   "days_back": 10,
-  "n_documents": 2,
-  "n_calendar_drift": 24,
+  "n_documents": 4,
+  "n_calendar_drift": 25,
   "n_financial_drift": 28,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "news:b1813e6b-c8d4-42e2-857d-98562006d5ea",
+   "id": "news:a759d5db-ff6c-3b8b-929e-b5409c5fabfd",
    "source": "Noticias",
    "form": "noticia",
-   "title": "SAP has a 'once-in-a-lifetime opportunity' with AI: CEO explains how",
-   "date": "2026-09-08",
-   "url": "https://finance.yahoo.com/video/sap-once-lifetime-opportunity-ai-204326730.html",
+   "title": "Zscaler (ZS) Q4 2026 Earnings Call Transcript",
+   "date": "2026-09-09",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/09/09/zscaler-zs-q4-2026-earnings-call-transcript/",
    "priority": "media",
-   "ticker": "SAP",
-   "name": "SAP"
+   "ticker": "ZS",
+   "name": "ZS"
   },
   {
-   "id": "news:3755c878-dddb-3116-94b4-d13a4f7459e2",
+   "id": "news:706e492c-f2bc-30e5-90a5-eced5725693d",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Meta Muse AI Launch: Shopify, Y Combinator CEOs Praise New Tool As Alexandr Wang Touts Major App Integrations",
-   "date": "2026-09-09",
-   "url": "https://stocktwits.com/news-articles/markets/equity/meta-muse-ai-launch-shopify-y-combinator-ce-os-praise-new-tool-as-alexandr-wang-touts-major-app-integrations/cZtew2tRJyA",
+   "title": "Cloudflare (NET) Soars 10.5% on Upbeat Outlook, Says Opportunities ‘Larger’ Than Business",
+   "date": "2026-09-10",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-net-soars-10-5-020021013.html",
    "priority": "media",
-   "ticker": "META",
-   "name": "META"
+   "ticker": "NET",
+   "name": "NET"
+  },
+  {
+   "id": "news:51e13c25-e62a-3f7c-92cf-298f6047a769",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Netflix (NFLX) Shares Pressured by Weak Q2 Outlook",
+   "date": "2026-09-10",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-nflx-shares-pressured-weak-115559393.html",
+   "priority": "media",
+   "ticker": "NFLX",
+   "name": "NFLX"
+  },
+  {
+   "id": "news:f946792d-f9c4-3c7e-945e-258d1f07bbb4",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "SentinelOne CFO Sells Over 20,000 Company Shares After the Stock Delivered a 5% One-Year Gain",
+   "date": "2026-09-10",
+   "url": "https://www.fool.com/coverage/filings/2026/09/10/sentinelone-cfo-sells-over-20-000-company-shares-after-the-stock-delivered-a-5-one-year-gain/",
+   "priority": "media",
+   "ticker": "S",
+   "name": "S"
   }
  ],
  "financial_drift": [
@@ -457,6 +479,13 @@
    "delta_days": -91
   },
   {
+   "ticker": "ITX",
+   "excel": "2026-09-09",
+   "market": "2026-12-02",
+   "estimated": true,
+   "delta_days": 84
+  },
+  {
    "ticker": "LOTB",
    "excel": "2027-02-25",
    "market": "2026-08-07",
@@ -819,6 +848,13 @@
    "ticker": "SU",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-10-29 y el mercado dice 2026-07-30 (-91 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "ITX",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-09-09 y el mercado dice 2026-12-02 (84 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
