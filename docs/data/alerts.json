@@ -1,64 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-09-11T06:47:16+00:00",
-    "n_alerts": 4,
+    "generated_at": "2026-09-11T06:53:24+00:00",
+    "n_alerts": 0,
     "by_severity": {
-      "high": 4,
+      "high": 0,
       "medium": 0,
       "low": 0
     }
   },
-  "alerts": [
-    {
-      "type": "asymmetry_improved",
-      "severity": "high",
-      "ticker": "CELH",
-      "name": "CELH",
-      "category": "Consumo",
-      "message": "CELH now has favorable IRR asymmetry (best 33.3%, worst -2.8%)",
-      "metrics": {
-        "irr_best": 0.33256108786816707,
-        "irr_worst": -0.028379560890426037,
-        "irr_asymmetry_ratio": 7.218812975171862
-      }
-    },
-    {
-      "type": "asymmetry_improved",
-      "severity": "high",
-      "ticker": "KSPI",
-      "name": "KSPI",
-      "category": "Fintech",
-      "message": "KSPI now has favorable IRR asymmetry (best 35.9%, worst -4.8%)",
-      "metrics": {
-        "irr_best": 0.3585055482690964,
-        "irr_worst": -0.047926380804481306,
-        "irr_asymmetry_ratio": 8.128638581471554
-      }
-    },
-    {
-      "type": "asymmetry_improved",
-      "severity": "high",
-      "ticker": "WOSG",
-      "name": "WOSG",
-      "category": "Consumo",
-      "message": "WOSG now has favorable IRR asymmetry (best 25.2%, worst -3.8%)",
-      "metrics": {
-        "irr_best": 0.25150959848524956,
-        "irr_worst": -0.03848397287968497,
-        "irr_asymmetry_ratio": 5.79987142729869
-      }
-    },
-    {
-      "type": "best_irr_crossed_25",
-      "severity": "high",
-      "ticker": "WOSG",
-      "name": "WOSG",
-      "category": "Consumo",
-      "message": "WOSG Best IRR crossed 25% (23.4% → 25.2%)",
-      "metrics": {
-        "from": 0.23413585611720045,
-        "to": 0.25150959848524956
-      }
-    }
-  ]
+  "alerts": []
 }
