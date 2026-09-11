@@ -1,104 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-09-11T06:54:03+00:00",
+  "generated_at": "2026-09-11T08:31:42+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 8,
+  "n_documents": 0,
   "n_calendar_drift": 26,
-  "n_financial_drift": 31,
+  "n_financial_drift": 18,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "news:8e11b4f3-d1c2-3078-a6c5-18719d271f0d",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Nvidia CEO Jensen Huang Just Called CrowdStrike Its Top Security Partner. How to Play CRWD Stock Here.",
-   "date": "2026-09-10",
-   "url": "https://www.barchart.com/story/news/4532533/nvidia-ceo-jensen-huang-just-called-crowdstrike-its-top-security-partner-how-to-play-crwd-stock-here",
-   "priority": "media",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "news:7cfab747-4e87-4cdf-87f6-5e89b87b3fa4",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "People Inc. CEO on AI-hungry Google: 'They don't share anything with us'",
-   "date": "2026-09-10",
-   "url": "https://finance.yahoo.com/markets/article/people-inc-ceo-on-ai-hungry-google-they-dont-share-anything-with-us-210526796.html",
-   "priority": "media",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "news:989af5ef-cd44-33ae-8a53-ee58bfb4b8fd",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "SentinelOne CEO Tomer Weingarten Sells 38,759 Shares for Tax Withholding",
-   "date": "2026-09-10",
-   "url": "https://www.fool.com/coverage/filings/2026/09/10/sentinelone-ceo-tomer-weingarten-sells-38-759-shares-for-tax-withholding/",
-   "priority": "media",
-   "ticker": "S",
-   "name": "S"
-  },
-  {
-   "id": "news:b6ec8a27-feca-375b-8e3d-838fa839f538",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "CELH Stock Edges Up After-Hours On CEO Share Purchase, But Not Enough To Win Retail Investors’ Confidence",
-   "date": "2026-09-10",
-   "url": "https://stocktwits.com/news-articles/markets/equity/celh-stock-edges-up-after-hours-on-ceo-share-purchase-but-not-enough-to-win-retail-investors-confidence/cZtaAFpRJ6q",
-   "priority": "media",
-   "ticker": "CELH",
-   "name": "CELH"
-  },
-  {
-   "id": "news:c3c4f8fd-ee45-3fc1-83c1-7c75626de767",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber Stock Pops After CEO Buys Shares Worth $10 Million",
-   "date": "2026-09-10",
-   "url": "https://www.barrons.com/articles/uber-stock-ceo-dara-khosrowshahi-d6d79288?siteid=yhoof2&yptr=yahoo",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:9902ff73-db8d-3e77-ab38-b246a8e2546c",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "UBER Stock Jumps After CEO Dara Khosrowshahi Buys $10 Million In Shares",
-   "date": "2026-09-10",
-   "url": "https://stocktwits.com/news-articles/markets/equity/uber-stock-jumps-after-ceo-dara-khosrowshahi-buys-10-million-in-shares/cZtakQ1RJ61",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:a67e64fa-1904-3eb0-894b-975a104db534",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber shares rise after CEO buys $10M of stock",
-   "date": "2026-09-10",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-shares-rise-ceo-buys-173434348.html",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:cc311f39-a396-3586-8616-b74322bc7e1b",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "The Descartes Systems Group Inc (DSGX) (Q2 2027) Earnings Call Highlights: Record Revenue, ...",
-   "date": "2026-09-11",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/descartes-systems-group-inc-dsgx-050115907.html",
-   "priority": "media",
-   "ticker": "DSGX",
-   "name": "DSGX"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "VEEV",
@@ -108,25 +19,11 @@
    "revenue_ltm_excel": 3319.0,
    "desvio_revenue": 0.0419,
    "fcf_ltm_mercado": 1665.5,
-   "fcf_ltm_excel": 1170.9,
-   "desvio_fcf": 0.4224,
+   "fcf_ltm_excel": 1665.5,
+   "desvio_fcf": -0.0,
    "trimestre_nuevo": true,
    "sospecha_unidades": false,
    "severidad": "alta"
-  },
-  {
-   "ticker": "MSFT",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-29",
-   "revenue_ltm_mercado": 331839.0,
-   "revenue_ltm_excel": 331839.0,
-   "desvio_revenue": 0.0,
-   "fcf_ltm_mercado": 66987.0,
-   "fcf_ltm_excel": 54582.0,
-   "desvio_fcf": 0.2273,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
   },
   {
    "ticker": "BN",
@@ -135,9 +32,9 @@
    "revenue_ltm_mercado": 77059.0,
    "revenue_ltm_excel": 80690.0,
    "desvio_revenue": -0.045,
-   "fcf_ltm_mercado": -9413.0,
-   "fcf_ltm_excel": -9413.0,
-   "desvio_fcf": 0.0,
+   "fcf_ltm_mercado": null,
+   "fcf_ltm_excel": null,
+   "desvio_fcf": null,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -150,8 +47,8 @@
    "revenue_ltm_excel": 293590.0,
    "desvio_revenue": -0.0,
    "fcf_ltm_mercado": 8806.0,
-   "fcf_ltm_excel": 7895.0,
-   "desvio_fcf": 0.1154,
+   "fcf_ltm_excel": 8806.0,
+   "desvio_fcf": 0.0,
    "trimestre_nuevo": true,
    "sospecha_unidades": false,
    "severidad": "alta"
@@ -164,11 +61,11 @@
    "revenue_ltm_excel": 3170.0,
    "desvio_revenue": 0.0576,
    "fcf_ltm_mercado": 779.1,
-   "fcf_ltm_excel": 107.3,
-   "desvio_fcf": 6.2614,
+   "fcf_ltm_excel": 890.3,
+   "desvio_fcf": -0.1249,
    "trimestre_nuevo": true,
-   "sospecha_unidades": true,
-   "severidad": "unidades"
+   "sospecha_unidades": false,
+   "severidad": "alta"
   },
   {
    "ticker": "AMZN",
@@ -177,9 +74,9 @@
    "revenue_ltm_mercado": 742776.0,
    "revenue_ltm_excel": 775656.0,
    "desvio_revenue": -0.0424,
-   "fcf_ltm_mercado": -2472.0,
-   "fcf_ltm_excel": -22282.0,
-   "desvio_fcf": 0.8891,
+   "fcf_ltm_mercado": null,
+   "fcf_ltm_excel": null,
+   "desvio_fcf": null,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -227,34 +124,6 @@
    "severidad": "alta"
   },
   {
-   "ticker": "ABNB",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-08-06",
-   "revenue_ltm_mercado": 13159.0,
-   "revenue_ltm_excel": 13159.0,
-   "desvio_revenue": 0.0,
-   "fcf_ltm_mercado": 4860.0,
-   "fcf_ltm_excel": 3153.0,
-   "desvio_fcf": 0.5414,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "META",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-29",
-   "revenue_ltm_mercado": 228247.0,
-   "revenue_ltm_excel": 228250.0,
-   "desvio_revenue": -0.0,
-   "fcf_ltm_mercado": 40976.0,
-   "fcf_ltm_excel": 15840.0,
-   "desvio_fcf": 1.5869,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
    "ticker": "KKR",
    "ultimo_trimestre_publicado": "2026-06-30",
    "ultimos_resultados_en_excel": "2026-07-30",
@@ -269,20 +138,6 @@
    "severidad": "media"
   },
   {
-   "ticker": "NET",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-08-06",
-   "revenue_ltm_mercado": 2512.3,
-   "revenue_ltm_excel": 2512.0,
-   "desvio_revenue": 0.0001,
-   "fcf_ltm_mercado": 314.9,
-   "fcf_ltm_excel": -192.8,
-   "desvio_fcf": 2.6332,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": true,
-   "severidad": "unidades"
-  },
-  {
    "ticker": "CRWD",
    "ultimo_trimestre_publicado": "2026-07-31",
    "ultimos_resultados_en_excel": "2026-06-03",
@@ -290,39 +145,11 @@
    "revenue_ltm_excel": 5090.0,
    "desvio_revenue": 0.0601,
    "fcf_ltm_mercado": 1522.6,
-   "fcf_ltm_excel": 278.6,
-   "desvio_fcf": 4.4652,
+   "fcf_ltm_excel": 1522.6,
+   "desvio_fcf": 0.0,
    "trimestre_nuevo": true,
-   "sospecha_unidades": true,
-   "severidad": "unidades"
-  },
-  {
-   "ticker": "GOOG",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-22",
-   "revenue_ltm_mercado": 445867.0,
-   "revenue_ltm_excel": 445870.0,
-   "desvio_revenue": -0.0,
-   "fcf_ltm_mercado": 53273.0,
-   "fcf_ltm_excel": 25126.0,
-   "desvio_fcf": 1.1202,
-   "trimestre_nuevo": false,
    "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "GRMN",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-29",
-   "revenue_ltm_mercado": 7671.4,
-   "revenue_ltm_excel": 7670.0,
-   "desvio_revenue": 0.0002,
-   "fcf_ltm_mercado": 1599.8,
-   "fcf_ltm_excel": 1427.3,
-   "desvio_fcf": 0.1209,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
+   "severidad": "alta"
   },
   {
    "ticker": "NVDA",
@@ -374,36 +201,8 @@
    "revenue_ltm_excel": 19650.0,
    "desvio_revenue": 0.0732,
    "fcf_ltm_mercado": 1504.0,
-   "fcf_ltm_excel": 1418.0,
-   "desvio_fcf": 0.0606,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "CHKP",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-30",
-   "revenue_ltm_mercado": 2764.4,
-   "revenue_ltm_excel": 2760.0,
-   "desvio_revenue": 0.0016,
-   "fcf_ltm_mercado": 1099.7,
-   "fcf_ltm_excel": 865.5,
-   "desvio_fcf": 0.2706,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "NKE",
-   "ultimo_trimestre_publicado": "2026-05-31",
-   "ultimos_resultados_en_excel": "2026-06-30",
-   "revenue_ltm_mercado": 46398.0,
-   "revenue_ltm_excel": 46400.0,
-   "desvio_revenue": -0.0,
-   "fcf_ltm_mercado": 2184.0,
-   "fcf_ltm_excel": 1469.0,
-   "desvio_fcf": 0.4867,
+   "fcf_ltm_excel": 1504.0,
+   "desvio_fcf": 0.0,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -416,8 +215,8 @@
    "revenue_ltm_excel": 31446.0,
    "desvio_revenue": 0.0459,
    "fcf_ltm_mercado": 1265.0,
-   "fcf_ltm_excel": 1160.0,
-   "desvio_fcf": 0.0905,
+   "fcf_ltm_excel": 1265.0,
+   "desvio_fcf": 0.0,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -430,8 +229,8 @@
    "revenue_ltm_excel": 1050.0,
    "desvio_revenue": 0.0464,
    "fcf_ltm_mercado": 30.9,
-   "fcf_ltm_excel": -291.2,
-   "desvio_fcf": 1.106,
+   "fcf_ltm_excel": 30.900000000000034,
+   "desvio_fcf": -0.0014,
    "trimestre_nuevo": true,
    "sospecha_unidades": false,
    "severidad": "alta"
@@ -457,79 +256,9 @@
    "revenue_ltm_mercado": 784.6,
    "revenue_ltm_excel": 707.0,
    "desvio_revenue": 0.1097,
-   "fcf_ltm_mercado": -94.1,
-   "fcf_ltm_excel": -104.6,
-   "desvio_fcf": 0.0999,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "OTLY",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-22",
-   "revenue_ltm_mercado": 925.0,
-   "revenue_ltm_excel": 925.0,
-   "desvio_revenue": -0.0,
-   "fcf_ltm_mercado": -25.6,
-   "fcf_ltm_excel": -38.2,
-   "desvio_fcf": 0.3309,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "UBER",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-08-05",
-   "revenue_ltm_mercado": 55227.0,
-   "revenue_ltm_excel": 55227.0,
-   "desvio_revenue": 0.0,
-   "fcf_ltm_mercado": 10116.0,
-   "fcf_ltm_excel": 8177.0,
-   "desvio_fcf": 0.2371,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "USPH",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-08-05",
-   "revenue_ltm_mercado": 812.2,
-   "revenue_ltm_excel": 804.3,
-   "desvio_revenue": 0.0098,
-   "fcf_ltm_mercado": 64.1,
-   "fcf_ltm_excel": 54.2,
-   "desvio_fcf": 0.1821,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "SAP",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-22",
-   "revenue_ltm_mercado": 38193.0,
-   "revenue_ltm_excel": 38190.0,
-   "desvio_revenue": 0.0001,
-   "fcf_ltm_mercado": 8730.0,
-   "fcf_ltm_excel": 7231.0,
-   "desvio_fcf": 0.2073,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "RCL",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": null,
-   "revenue_ltm_mercado": 18681.0,
-   "revenue_ltm_excel": 18682.0,
-   "desvio_revenue": -0.0001,
-   "fcf_ltm_mercado": -416.0,
-   "fcf_ltm_excel": -567.0,
-   "desvio_fcf": 0.2663,
+   "fcf_ltm_mercado": null,
+   "fcf_ltm_excel": null,
+   "desvio_fcf": null,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -723,42 +452,35 @@
   {
    "ticker": "VEEV",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-06-03); ingresos LTM: Excel 3319.0 vs mercado 3458.1 (+4.2%); FCF LTM: Excel 1170.9 vs mercado 1665.5 (+42.2%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "MSFT",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 331839.0 vs mercado 331839.0 (+0.0%); FCF LTM: Excel 54582.0 vs mercado 66987.0 (+22.7%)",
+   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-06-03); ingresos LTM: Excel 3319.0 vs mercado 3458.1 (+4.2%); FCF LTM: Excel 1665.5 vs mercado 1665.5 (-0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "BN",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 80690.0 vs mercado 77059.0 (-4.5%); FCF LTM: Excel -9413.0 vs mercado -9413.0 (+0.0%)",
+   "motivo": "ingresos LTM: Excel 80690.0 vs mercado 77059.0 (-4.5%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "COST",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-05-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 293590.0 vs mercado 293587.0 (-0.0%); FCF LTM: Excel 7895.0 vs mercado 8806.0 (+11.5%)",
+   "motivo": "hay un trimestre publicado (2026-05-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 293590.0 vs mercado 293587.0 (-0.0%); FCF LTM: Excel 8806.0 vs mercado 8806.0 (+0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "ZS",
-   "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
-   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 3170.0 vs 3352.5, FCF 107.3 vs 779.1. Revisar en que moneda reporta y el factor de Framework Notes.",
-   "columnas": "AR-BC y Framework Notes (factor de conversion)",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 3170.0 vs mercado 3352.5 (+5.8%); FCF LTM: Excel 890.3 vs mercado 779.1 (-12.5%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "AMZN",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 775656.0 vs mercado 742776.0 (-4.2%); FCF LTM: Excel -22282.0 vs mercado -2472.0 (+88.9%)",
+   "motivo": "ingresos LTM: Excel 775656.0 vs mercado 742776.0 (-4.2%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -784,20 +506,6 @@
    "urls": []
   },
   {
-   "ticker": "ABNB",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 13159.0 vs mercado 13159.0 (+0.0%); FCF LTM: Excel 3153.0 vs mercado 4860.0 (+54.1%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "META",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 228250.0 vs mercado 228247.0 (-0.0%); FCF LTM: Excel 15840.0 vs mercado 40976.0 (+158.7%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
    "ticker": "KKR",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 25833.0 vs mercado 21060.0 (-18.5%); FCF LTM: Excel 5000.0 vs mercado 2339.9 (-53.2%)",
@@ -805,30 +513,9 @@
    "urls": []
   },
   {
-   "ticker": "NET",
-   "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
-   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 2512.0 vs 2512.3, FCF -192.8 vs 314.9. Revisar en que moneda reporta y el factor de Framework Notes.",
-   "columnas": "AR-BC y Framework Notes (factor de conversion)",
-   "urls": []
-  },
-  {
    "ticker": "CRWD",
-   "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
-   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 5090.0 vs 5396.1, FCF 278.6 vs 1522.6. Revisar en que moneda reporta y el factor de Framework Notes.",
-   "columnas": "AR-BC y Framework Notes (factor de conversion)",
-   "urls": []
-  },
-  {
-   "ticker": "GOOG",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 445870.0 vs mercado 445867.0 (-0.0%); FCF LTM: Excel 25126.0 vs mercado 53273.0 (+112.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "GRMN",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 7670.0 vs mercado 7671.4 (+0.0%); FCF LTM: Excel 1427.3 vs mercado 1599.8 (+12.1%)",
+   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-06-03); ingresos LTM: Excel 5090.0 vs mercado 5396.1 (+6.0%); FCF LTM: Excel 1522.6 vs mercado 1522.6 (+0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -856,35 +543,21 @@
   {
    "ticker": "PRY",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 19650.0 vs mercado 21088.0 (+7.3%); FCF LTM: Excel 1418.0 vs mercado 1504.0 (+6.1%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "CHKP",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 2760.0 vs mercado 2764.4 (+0.2%); FCF LTM: Excel 865.5 vs mercado 1099.7 (+27.1%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "NKE",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 46400.0 vs mercado 46398.0 (-0.0%); FCF LTM: Excel 1469.0 vs mercado 2184.0 (+48.7%)",
+   "motivo": "ingresos LTM: Excel 19650.0 vs mercado 21088.0 (+7.3%); FCF LTM: Excel 1504.0 vs mercado 1504.0 (+0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "FERG",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 31446.0 vs mercado 32889.0 (+4.6%); FCF LTM: Excel 1160.0 vs mercado 1265.0 (+9.0%)",
+   "motivo": "ingresos LTM: Excel 31446.0 vs mercado 32889.0 (+4.6%); FCF LTM: Excel 1265.0 vs mercado 1265.0 (+0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "S",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 1050.0 vs mercado 1098.7 (+4.6%); FCF LTM: Excel -291.2 vs mercado 30.9 (+110.6%)",
+   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 1050.0 vs mercado 1098.7 (+4.6%); FCF LTM: Excel 30.900000000000034 vs mercado 30.9 (-0.1%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -898,42 +571,7 @@
   {
    "ticker": "IPCO",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 707.0 vs mercado 784.6 (+11.0%); FCF LTM: Excel -104.6 vs mercado -94.1 (+10.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "OTLY",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 925.0 vs mercado 925.0 (-0.0%); FCF LTM: Excel -38.2 vs mercado -25.6 (+33.1%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "UBER",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 55227.0 vs mercado 55227.0 (+0.0%); FCF LTM: Excel 8177.0 vs mercado 10116.0 (+23.7%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "USPH",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 804.3 vs mercado 812.2 (+1.0%); FCF LTM: Excel 54.2 vs mercado 64.1 (+18.2%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "SAP",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 38190.0 vs mercado 38193.0 (+0.0%); FCF LTM: Excel 7231.0 vs mercado 8730.0 (+20.7%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "RCL",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 18682.0 vs mercado 18681.0 (-0.0%); FCF LTM: Excel -567.0 vs mercado -416.0 (+26.6%)",
+   "motivo": "ingresos LTM: Excel 707.0 vs mercado 784.6 (+11.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
