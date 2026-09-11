@@ -1,10 +1,17 @@
 {
   "meta": {
-    "n_updates": 258,
+    "n_updates": 259,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "RCL",
+      "date": "46272",
+      "fields_changed": "ALTA. Fila 74 nueva. Todas las columnas.",
+      "source": "Deep dive del 7-sep-2026 + 10-K FY2025 y 10-Q Q1/Q2-2026 (SEC EDGAR, CIK 0000884887)",
+      "summary": "Royal Caribbean Group entra en la watchlist. Compuesto 3,48 (R1 4,06 / R2 4,10 / R3 2,57), entre Basic-Fit (3,09) y Verallia (3,96): calidad economica decente y calidad estructural mala, que es lo que es un ciclico intensivo en capital. AVISO DE MARCO: el EV/FCF NO aplica. El capex lleva cuatro periodos seguidos por encima del doble del D&A (2023 2,68x, 2024 2,04x, 2025 3,04x, LTM 3,97x), asi que la normalizacion esta prohibida por la regla del 25-ago (la de Lotus Bakeries), y el FCF reportado LTM es de -416 M$ (OCF 6.786 - capex 7.202; D&A 1.813). En AS, BD y BF hay EBITDA con multiplos EV/EBITDA, anotado en el comentario de cada celda. Valoracion: EV 92.887 M$ a 265,19 $, 13,42x EV/EBITDA LTM contra una media pre-pandemia de 11,03x (z = +0,67 sobre la serie completa). Escenarios a 2031: EBITDA 7.620 / 10.414 / 12.787 con salida a 8,0x / 10,0x / 11,5x, ninguno por encima del multiplo de hoy. TIR -7,8% / +6,8% / +15,5%, asimetria 2,98:1 en el modelo y 2,07:1 en este Excel, que aplica la deuda neta de hoy a un flujo de 2031 y por tanto no acredita los 11.000 M$ de desapalancamiento. Monte Carlo narrativo recalibrado: TIR mediana +2,6%, 46,9% de probabilidad de perder dinero, 19,2% de sacar mas del 10% anual. Veredicto: conviccion 3/5, riesgo terminal MEDIO-ALTO, sizing 0-1% ahora y 2-3% por debajo de 225 $. Vigilancia: el spread unitario del Q2-2026 fue -0,13% interanual, el primer trimestre no positivo del ciclo."
+    },
     {
       "ticker": "SAP",
       "date": "46260",

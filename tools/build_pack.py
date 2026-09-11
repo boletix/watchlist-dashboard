@@ -45,6 +45,7 @@ FOLDER = {
     "PRY": "Prysmian", "RBT": "Robertet", "ROKO B": "Roko AB", "IP": "Interpump Group",
     "USPH": "US Physical Therapy", "SOM": "Somero", "KKR": "KKR", "META": "Meta",
     "GOOG": "Alphabet", "NFLX": "Netflix", "SPOT": "Spotify", "UBER": "Uber",
+    "RCL": "Royal Caribbean",
 }
 NICE = {
     "CSU": "Constellation Software", "VEEV": "Veeva Systems", "COST": "Costco Wholesale",
@@ -54,6 +55,7 @@ NICE = {
     "NTO": "Nintendo", "SU": "Schneider Electric", "MNST": "Monster Beverage",
     "DNP": "Dino Polska", "VLTO": "Veralto", "ABNB": "Airbnb", "ZS": "Zscaler",
     "SAP": "SAP SE", "FICO": "Fair Isaac Corporation", "LR": "Legrand",
+    "RCL": "Royal Caribbean Group",
 }
 
 # Empresas cuyo crecimiento viene sobre todo de comprar, no de crecer organicamente.
@@ -289,6 +291,13 @@ FRAME_WARNINGS = {
     "NTO": "Nintendo fabrica e inventaria consolas antes de venderlas, asi que el FCF se "
            "deprime en el PICO de ventas. La metrica honesta es EV/EBIT sobre beneficio "
            "medio de ciclo, no el FCF de un ejercicio.",
+    "RCL": "Royal Caribbean NO se puede valorar con EV/FCF, ni reportado ni normalizado. El "
+           "capex lleva CUATRO periodos seguidos por encima del doble del D&A (2023: 2,68x, "
+           "2024: 2,04x, 2025: 3,04x, LTM: 3,97x), asi que la regla del 25-ago-2026 (la que "
+           "saco a Lotus Bakeries de las normalizadas) prohibe normalizar: el capex alto no es "
+           "una fase, es el negocio. El FCF reportado LTM es de -416 M$. La metrica honesta es "
+           "EV/EBITDA, igual que en TFF Group. En las columnas AS, BD y BF de la watchlist hay "
+           "EBITDA con multiplos EV/EBITDA, no FCF. Ver el deep dive del 7-sep-2026.",
     "ZS": "El SBC es el 24,7% de los ingresos: el FCF reportado NO es beneficio economico. "
           "Usa la fila 'FCF menos SBC' de Cash_Flow. Ver la nota sobre GAAP vs no-GAAP.",
 }
@@ -299,10 +308,14 @@ VERDICTS = {
                  alert="ampliar < 2.800 CAD", catalyst="Q3 2026 (nov) — margen y ritmo de M&A"),
     "VEEV": dict(conviction="4/5", terminal="MEDIO", sizing="1,5-2,0%",
                  alert="entrada atractiva < 230 USD", catalyst="Q2 FY27 (ago-sep 2026)"),
-    "COST": dict(conviction="5/5", terminal="MUY BAJO", sizing="3-5%",
-                 alert="—", catalyst="Q4 FY26 (sep 2026)"),
-    "DSGX": dict(conviction="3/5", terminal="BAJO-MEDIO", sizing="1,5-2,5%",
-                 alert="—", catalyst="Resultados 10-sep-2026 (organico)"),
+    "COST": dict(conviction="5/5", terminal="MUY BAJO", sizing="1,5-2,5% (4-5% bajo 700 $)",
+                 alert="ampliar < 700 $ · 3% a 800 $",
+                 catalyst="Cierre FY2026 (finales de sep 2026): margen bruto de mercancia y "
+                          "crecimiento de las cuotas"),
+    "DSGX": dict(conviction="3,5/5", terminal="BAJO", sizing="2,5-3,5% (escalonada)",
+                 alert="—",
+                 catalyst="Q2 FY27 el 10-sep-2026: desglose organico, calibracion baseline y "
+                          "precio pagado por Tai y Extensiv"),
     "BN":   dict(conviction="3,5/5", terminal="MEDIO", sizing="1,5-2,5%",
                  alert="—", catalyst="Investor Day"),
     "LIFCO B": dict(conviction="4/5", terminal="MUY BAJO", sizing="0-1%",
@@ -324,6 +337,9 @@ VERDICTS = {
     "LR":   dict(conviction="3,5/5", terminal="BAJO", sizing="1%", alert="—", catalyst="—"),
     "ZS":   dict(conviction="pendiente", terminal="MEDIO", sizing="0% hasta resolver SBC",
                  alert="—", catalyst="Q4 FY26 (sep 2026)"),
+    "RCL":  dict(conviction="3/5", terminal="MEDIO-ALTO", sizing="0-1% (2-3% < 225 USD)",
+                 alert="abrir posicion < 225 USD; segundo tramo < 205",
+                 catalyst="Q3 2026 (finales de octubre) — spread unitario interanual"),
     "MSFT": dict(conviction="pendiente", terminal="BAJO", sizing="pendiente", alert="—",
                  catalyst="Q1 FY27 (oct 2026)"),
     "AMZN": dict(conviction="pendiente", terminal="BAJO-MEDIO", sizing="pendiente", alert="—",

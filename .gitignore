@@ -32,3 +32,7 @@ pytest-cache-files-*/
 # Cache local de SBC/capex TTM para el analisis de EV/FCF@5Y.
 # Se regenera en ~2 min desde yfinance; no se versiona para que nadie lea numeros rancios.
 data/sbc_capex_ttm.json
+
+# Intermedios del recalculo de FCF (SBC). Regenerables; el resultado va en el Excel.
+data/fcf_recalculo.json
+data/fcf_payload.csv
