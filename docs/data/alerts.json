@@ -1,12 +1,55 @@
 {
   "meta": {
-    "generated_at": "2026-09-11T06:53:24+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-09-11T08:01:17+00:00",
+    "n_alerts": 3,
     "by_severity": {
       "high": 0,
-      "medium": 0,
+      "medium": 3,
       "low": 0
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "ev_fcf_drop",
+      "severity": "medium",
+      "ticker": "COST",
+      "name": "COST",
+      "category": "Defensive",
+      "message": "COST (Top Tier) EV/FCF dropped 31%: 49.6x → 34.0x",
+      "metrics": {
+        "from": 49.64883271792273,
+        "to": 34.014017208261016,
+        "drop_pct": 0.3149080180492884,
+        "rating_composite": 8.13
+      }
+    },
+    {
+      "type": "ev_fcf_drop",
+      "severity": "medium",
+      "ticker": "LOTB",
+      "name": "LOTB",
+      "category": "Consumo",
+      "message": "LOTB (Top Tier) EV/FCF dropped 44%: 111.3x → 61.8x",
+      "metrics": {
+        "from": 111.30663215859032,
+        "to": 61.77654156479218,
+        "drop_pct": 0.4449877750611247,
+        "rating_composite": 7.84
+      }
+    },
+    {
+      "type": "ev_fcf_drop",
+      "severity": "medium",
+      "ticker": "MSFT",
+      "name": "MSFT",
+      "category": "Mag 7",
+      "message": "MSFT (Top Tier) EV/FCF dropped 57%: 66.3x → 28.5x",
+      "metrics": {
+        "from": 66.27693263334065,
+        "to": 28.466089115634,
+        "drop_pct": 0.5704977888292598,
+        "rating_composite": 7.86
+      }
+    }
+  ]
 }

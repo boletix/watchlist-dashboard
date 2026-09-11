@@ -312,10 +312,12 @@ VERDICTS = {
                  alert="ampliar < 700 $ · 3% a 800 $",
                  catalyst="Cierre FY2026 (finales de sep 2026): margen bruto de mercancia y "
                           "crecimiento de las cuotas"),
-    "DSGX": dict(conviction="3,5/5", terminal="BAJO", sizing="2,5-3,5% (escalonada)",
-                 alert="—",
-                 catalyst="Q2 FY27 el 10-sep-2026: desglose organico, calibracion baseline y "
-                          "precio pagado por Tai y Extensiv"),
+    "DSGX": dict(conviction="4/5", terminal="BAJO", sizing="3-3,5% (completar la posicion)",
+                 alert="organico de servicios < 6% dos trimestres seguidos, o una compra grande con papel",
+                 catalyst="Q3 FY27 (~2-dic-2026): margen tras Tai/Extensiv, atricion de Extensiv, "
+                          "organico contra comparables duros. Q2 FY27 (10-sep) cumplio los tres "
+                          "puntos de la lista A.9: organico 'just north of 9%', baseline 38,4%, "
+                          "compras en caja"),
     "BN":   dict(conviction="3,5/5", terminal="MEDIO", sizing="1,5-2,5%",
                  alert="—", catalyst="Investor Day"),
     "LIFCO B": dict(conviction="4/5", terminal="MUY BAJO", sizing="0-1%",

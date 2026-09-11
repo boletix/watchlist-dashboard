@@ -321,7 +321,22 @@ def check_financials_drift(ticker, yf_symbol, wl_rec, tol_rev=0.03, tol_fcf=0.10
         fcf = (ocf + cap) if (ocf is not None and cap is not None) else None
 
     xl_rev = wl_rec.get("revenue_ltm")
-    xl_fcf = wl_rec.get("fcf_ltm")
+    # 11-sep-2026: `fcf_ltm` ya es el FCF normalizado y AS lleva el SBC restado. El
+    # mercado da FCF reportado PRE-SBC, asi que se compara contra AS + SBC. Si la fila
+    # no es un dato reportado (DE de Brookfield, AMZN/RCL/IPCO normalizadas en AS), la
+    # comparacion de FCF no significa nada y se omite; la de ingresos sigue.
+    xl_fcf = wl_rec.get("fcf_ltm_reported")
+    if xl_fcf is None:
+        xl_fcf = wl_rec.get("fcf_ltm")
+    sbc = wl_rec.get("sbc_ltm")
+    if xl_fcf is not None and sbc is not None:
+        try:
+            xl_fcf = float(xl_fcf) + float(sbc)
+        except (TypeError, ValueError):
+            pass
+    note = str(wl_rec.get("fcf_note") or "").upper()
+    if note.startswith(("NORMALIZADO", "DE NON-GAAP")):
+        fcf, xl_fcf = None, None
     try:
         xl_last = date.fromisoformat(wl_rec["earnings_last_date"])
     except Exception:

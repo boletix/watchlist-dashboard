@@ -112,6 +112,12 @@ COLUMN_MAP: dict[str, str] = {
     # "Última/Próxima Presentación" no existe y el mapeo llevaba meses sin resolver.
     "Últimos resultados": "earnings_last_date",
     "Próximos resultados": "earnings_next_date",
+    # 8-sep-2026: cuatro columnas nuevas (BQ-BT) que hacen explicita la definicion del FCF.
+    # AS = FCF reportado - SBC. BS = AS + capex de crecimiento (capex - D&A). BT = la cuenta.
+    "SBC LTM": "sbc_ltm",
+    "Capex de crecimiento": "growth_capex_ltm",
+    "FCF normalizado": "fcf_ltm_normalized",
+    "Fuente del SBC": "fcf_note",
 }
 
 
@@ -186,7 +192,48 @@ def load_watchlist(xlsx_path: str | Path) -> pd.DataFrame:
     df = df.dropna(subset=["ticker"]).reset_index(drop=True)
     df = df[df["ticker"].str.len() > 0].reset_index(drop=True)
 
+    df = _apply_fcf_basis(df)
+
     log.info("Loaded %d empresas, %d columnas", len(df), len(df.columns))
+    return df
+
+
+def _apply_fcf_basis(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    11-sep-2026, decision de Roger: la metrica de cabecera se calcula sobre el FCF
+    NORMALIZADO (columna BS), no sobre el reportado menos SBC (columna AS).
+
+    Razon: «tenemos que normalizar el gasto en capex y otras inversiones, si no el
+    EV/FCF nunca saldra correcto». Invertir en el futuro es lo correcto segun el marco
+    y no se penaliza; el SBC, en cambio, es un gasto y ya viene restado en las dos.
+
+    - `fcf_ltm`           -> BS si esta rellena, AS si no (las 9 filas sin recalcular).
+    - `fcf_ltm_reported`  -> AS siempre (FCF - SBC), para el vigilante y para la tesis.
+    - `fcf_basis`         -> "normalizado" o "reportado-sbc", para que se vea cual se uso.
+    - `ev_fcf`            -> se RECALCULA como ev / fcf_ltm. La columna AW del Excel
+                             divide por AS y dejaria de cuadrar con lo que muestra el panel.
+
+    El FCF@5y (BD/BF) no se toca: la TIR y la asimetria siguen igual. Lo que cambia es
+    «a que multiplo compro hoy», que es exactamente lo que la regla queria arreglar.
+    """
+    if "fcf_ltm" not in df.columns:
+        return df
+    df["fcf_ltm_reported"] = pd.to_numeric(df["fcf_ltm"], errors="coerce")
+    if "fcf_ltm_normalized" in df.columns:
+        norm = pd.to_numeric(df["fcf_ltm_normalized"], errors="coerce")
+    else:
+        norm = pd.Series(float("nan"), index=df.index)
+    use_norm = norm.notna()
+    df["fcf_ltm"] = norm.where(use_norm, df["fcf_ltm_reported"])
+    df["fcf_basis"] = use_norm.map({True: "normalizado", False: "reportado-sbc"})
+    if "ev" in df.columns:
+        ev = pd.to_numeric(df["ev"], errors="coerce")
+        fcf = df["fcf_ltm"]
+        df["ev_fcf"] = (ev / fcf).where(fcf.notna() & (fcf != 0))
+    n_norm = int(use_norm.sum())
+    n_diff = int((use_norm & (norm.round(1) != df["fcf_ltm_reported"].round(1))).sum())
+    log.info("FCF base: %d filas normalizadas (%d con capex de crecimiento > 0), %d sobre AS",
+             n_norm, n_diff, len(df) - n_norm)
     return df
 
 
