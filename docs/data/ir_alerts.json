@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-09-11T08:31:42+00:00",
+  "generated_at": "2026-09-11T12:20:14+00:00",
   "n_tickers": 71,
   "days_back": 10,
   "n_documents": 0,
-  "n_calendar_drift": 26,
+  "n_calendar_drift": 27,
   "n_financial_drift": 18,
   "n_errors": 0,
   "seeded": false
@@ -278,6 +278,13 @@
    "market": "2026-08-13",
    "estimated": false,
    "delta_days": -76
+  },
+  {
+   "ticker": "DSGX",
+   "excel": "2026-09-10",
+   "market": "2026-12-02",
+   "estimated": true,
+   "delta_days": 83
   },
   {
    "ticker": "ZS",
@@ -586,6 +593,13 @@
    "ticker": "ADYEN",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-08-13 (-76 dias de diferencia)",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "DSGX",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-09-10 y el mercado dice 2026-12-02 (83 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
