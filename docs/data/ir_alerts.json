@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-09-15T12:51:00+00:00",
+  "generated_at": "2026-09-16T12:45:31+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 1,
+  "n_documents": 3,
   "n_calendar_drift": 27,
   "n_financial_drift": 19,
   "n_errors": 0,
@@ -11,15 +11,37 @@
  },
  "documents": [
   {
-   "id": "news:542498c3-67a2-3b99-ac36-1d2bfc744140",
+   "id": "news:d3f8304b-33aa-341c-8899-ea1853660db0",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Uber’s CEO hints at cheaper rides after the company announced 3,300 corporate jobs",
-   "date": "2026-09-14",
-   "url": "https://finance.yahoo.com/technology/articles/uber-ceo-hints-cheaper-rides-184149344.html",
+   "title": "CELH Ticks Up After-Hours As Director DeSantis Follows CEO With $1M Buy",
+   "date": "2026-09-15",
+   "url": "https://stocktwits.com/news-articles/markets/equity/celh-ticks-up-after-hours-as-director-de-santis-follows-ceo-with-1-m-buy/cZtnF7nRBcw",
+   "priority": "media",
+   "ticker": "CELH",
+   "name": "CELH"
+  },
+  {
+   "id": "news:7d74c8bc-6ab2-3e8b-9efc-83cc429fe47a",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Uber slashes jobs in California after CEO announces staffing cuts",
+   "date": "2026-09-15",
+   "url": "https://www.usatoday.com/story/news/state/california/2026/09/15/uber-layoffs-california-2026-edd/91783463007/",
    "priority": "media",
    "ticker": "UBER",
    "name": "UBER"
+  },
+  {
+   "id": "news:76c68d8d-0a43-383e-aec8-22f2548678e3",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Meta CEO Sends Powerful Message on AI Slowdown",
+   "date": "2026-09-16",
+   "url": "https://finance.yahoo.com/technology/ai/articles/meta-ceo-sends-powerful-message-115028123.html",
+   "priority": "media",
+   "ticker": "META",
+   "name": "META"
   }
  ],
  "financial_drift": [
