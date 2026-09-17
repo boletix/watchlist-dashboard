@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-09-16T12:45:31+00:00",
+  "generated_at": "2026-09-17T12:43:11+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 3,
+  "n_documents": 2,
   "n_calendar_drift": 27,
   "n_financial_drift": 19,
   "n_errors": 0,
@@ -11,37 +11,26 @@
  },
  "documents": [
   {
-   "id": "news:d3f8304b-33aa-341c-8899-ea1853660db0",
+   "id": "news:9b244af3-fe6e-35a7-a729-24558bd5774c",
    "source": "Noticias",
    "form": "noticia",
-   "title": "CELH Ticks Up After-Hours As Director DeSantis Follows CEO With $1M Buy",
-   "date": "2026-09-15",
-   "url": "https://stocktwits.com/news-articles/markets/equity/celh-ticks-up-after-hours-as-director-de-santis-follows-ceo-with-1-m-buy/cZtnF7nRBcw",
-   "priority": "media",
-   "ticker": "CELH",
-   "name": "CELH"
-  },
-  {
-   "id": "news:7d74c8bc-6ab2-3e8b-9efc-83cc429fe47a",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber slashes jobs in California after CEO announces staffing cuts",
-   "date": "2026-09-15",
-   "url": "https://www.usatoday.com/story/news/state/california/2026/09/15/uber-layoffs-california-2026-edd/91783463007/",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:76c68d8d-0a43-383e-aec8-22f2548678e3",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Meta CEO Sends Powerful Message on AI Slowdown",
+   "title": "SentinelOne CEO Sells Shares Worth $2.3 Million as the Stock Soars",
    "date": "2026-09-16",
-   "url": "https://finance.yahoo.com/technology/ai/articles/meta-ceo-sends-powerful-message-115028123.html",
+   "url": "https://www.fool.com/coverage/filings/2026/09/16/sentinelone-ceo-sells-shares-worth-usd2-3-million-as-the-stock-soars/",
    "priority": "media",
-   "ticker": "META",
-   "name": "META"
+   "ticker": "S",
+   "name": "S"
+  },
+  {
+   "id": "news:d7338dd0-5178-3e39-897c-5cf696eb1c5b",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Zacks Industry Outlook Trex and Worthington",
+   "date": "2026-09-17",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-industry-outlook-trex-worthington-072400203.html",
+   "priority": "media",
+   "ticker": "TREX",
+   "name": "TREX"
   }
  ],
  "financial_drift": [
