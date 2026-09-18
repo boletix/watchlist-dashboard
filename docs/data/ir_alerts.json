@@ -1,38 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-09-17T12:43:11+00:00",
+  "generated_at": "2026-09-18T12:22:21+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 2,
+  "n_documents": 0,
   "n_calendar_drift": 27,
   "n_financial_drift": 19,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "news:9b244af3-fe6e-35a7-a729-24558bd5774c",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "SentinelOne CEO Sells Shares Worth $2.3 Million as the Stock Soars",
-   "date": "2026-09-16",
-   "url": "https://www.fool.com/coverage/filings/2026/09/16/sentinelone-ceo-sells-shares-worth-usd2-3-million-as-the-stock-soars/",
-   "priority": "media",
-   "ticker": "S",
-   "name": "S"
-  },
-  {
-   "id": "news:d7338dd0-5178-3e39-897c-5cf696eb1c5b",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Zacks Industry Outlook Trex and Worthington",
-   "date": "2026-09-17",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-industry-outlook-trex-worthington-072400203.html",
-   "priority": "media",
-   "ticker": "TREX",
-   "name": "TREX"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "VEEV",
