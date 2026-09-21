@@ -1,15 +1,115 @@
 {
  "meta": {
-  "generated_at": "2026-09-18T12:22:21+00:00",
+  "generated_at": "2026-09-21T14:27:05+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 0,
+  "n_documents": 9,
   "n_calendar_drift": 27,
   "n_financial_drift": 19,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [],
+ "documents": [
+  {
+   "id": "news:d5a1e95d-9c93-31e7-be53-4d2957b543ed",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Zscaler CEO Jay Chaudhry Sells 2,852 Shares for $550,000",
+   "date": "2026-09-19",
+   "url": "https://www.fool.com/coverage/filings/2026/09/19/zscaler-ceo-jay-chaudhry-sells-2-852-shares-for-usd550-000/",
+   "priority": "media",
+   "ticker": "ZS",
+   "name": "ZS"
+  },
+  {
+   "id": "news:7c75b304-2334-37b2-91a7-db3517b182b0",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Cencora (COR) Raised Guidance and Bought Back $1B. What’s the Catch?",
+   "date": "2026-09-19",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cencora-cor-raised-guidance-bought-123837104.html",
+   "priority": "media",
+   "ticker": "COR",
+   "name": "COR"
+  },
+  {
+   "id": "news:02f50d6a-75a7-3077-b401-75f9a9f392db",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Netflix (NFLX) Gets a Bullish $110 Target: What’s Driving the Outlook?",
+   "date": "2026-09-19",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-nflx-gets-bullish-110-155252131.html",
+   "priority": "media",
+   "ticker": "NFLX",
+   "name": "NFLX"
+  },
+  {
+   "id": "news:916835b7-a92c-3c70-9d3e-ef6741960c4b",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Uber CEO Dara Khosrowshahi fled Iran at 9 — and watched the government seize his family's business that made them rich",
+   "date": "2026-09-19",
+   "url": "https://finance.yahoo.com/small-business/articles/uber-ceo-dara-khosrowshahi-fled-123000963.html",
+   "priority": "media",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "news:bc0b1f56-281e-3367-9e63-396eb178fd66",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Does Royal Caribbean (RCL)’s Steady Dividend Signal Strong Capital Discipline or Limited Reinvestment Ambition?",
+   "date": "2026-09-19",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/does-royal-caribbean-rcl-steady-011146246.html",
+   "priority": "media",
+   "ticker": "RCL",
+   "name": "RCL"
+  },
+  {
+   "id": "news:436d17d5-93e3-3126-b38b-012f331d0bd0",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Cencora (COR) Lifts EPS Outlook And Buyback, Is The Stock Still Below Fair Value?",
+   "date": "2026-09-20",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cencora-cor-lifts-eps-outlook-140824688.html",
+   "priority": "media",
+   "ticker": "COR",
+   "name": "COR"
+  },
+  {
+   "id": "news:bf1879af-ebfa-3078-9c94-8138f3d97936",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "U.S. Physical Therapy (USPH) Stock Could Be 44% Undervalued After CFO Appointment",
+   "date": "2026-09-20",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/u-physical-therapy-usph-stock-231428158.html",
+   "priority": "media",
+   "ticker": "USPH",
+   "name": "USPH"
+  },
+  {
+   "id": "news:1773559b-04c1-3404-826a-78f6ae5c0b48",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Amazon.com vs. Uber Technologies: Analyzing Recent Quarterly Revenue Trends Between Two Consumer Companies",
+   "date": "2026-09-21",
+   "url": "https://www.fool.com/coverage/charts/2026/09/21/amazon-com-vs-uber-technologies-analyzing-recent-quarterly-revenue-trends-between-two-consumer-companies/",
+   "priority": "media",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "news:efe421cb-a53d-31c5-8c0d-f2ee2ee64a4f",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Will a New CFO and Tighter Cash Flow Lens Change U.S. Physical Therapy's (USPH) Narrative",
+   "date": "2026-09-21",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cfo-tighter-cash-flow-lens-071116767.html",
+   "priority": "media",
+   "ticker": "USPH",
+   "name": "USPH"
+  }
+ ],
  "financial_drift": [
   {
    "ticker": "VEEV",
