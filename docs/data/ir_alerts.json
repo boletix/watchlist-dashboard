@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-09-23T12:52:21+00:00",
+  "generated_at": "2026-09-24T12:52:05+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 2,
+  "n_documents": 3,
   "n_calendar_drift": 27,
   "n_financial_drift": 19,
   "n_errors": 0,
@@ -11,26 +11,37 @@
  },
  "documents": [
   {
-   "id": "news:6e1198f4-e53f-30e6-8d1a-3c8d66b4e3ed",
+   "id": "news:4bbbc42e-2637-3421-8ff1-95fd073a0b34",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Adyen snaps up Klarna CFO",
-   "date": "2026-09-23",
-   "url": "https://www.paymentsdive.com/news/adyen-snaps-up-klarna-cfo/831093/",
+   "title": "Dividend Decisions: Costco's Unique Payout vs. Walmart's Stability",
+   "date": "2026-09-24",
+   "url": "https://www.fool.com/investing/2026/09/24/dividend-decisions-costco-unique-payout-vs-walmart/",
    "priority": "media",
-   "ticker": "ADYEN",
-   "name": "ADYEN"
+   "ticker": "COST",
+   "name": "COST"
   },
   {
-   "id": "news:731f2a0f-eb04-3ff3-93ad-b680467d5570",
+   "id": "news:cd2199c4-5d68-3fde-be97-c941f4a19163",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Nike (NKE): Wall Street Tests Whether the Turnaround Can Outrun Weak Demand Ahead of Q1 Results",
-   "date": "2026-09-23",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/nike-nke-wall-street-tests-040747520.html",
+   "title": "Delivery Hero CEO Niklas Östberg to stay amid Uber takeover",
+   "date": "2026-09-24",
+   "url": "https://qz.com/delivery-hero-ceo-niklas-ostberg-staying-uber-takeover-092426",
    "priority": "media",
-   "ticker": "NKE",
-   "name": "NKE"
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "news:e25fa0b2-fe6b-3185-9387-8e149ff56507",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Delivery Hero Cancels CEO Exit Plans Due to Uber’s $14.8 Billion Takeover Bid",
+   "date": "2026-09-24",
+   "url": "https://www.wsj.com/business/delivery-hero-cancels-ceo-exit-plans-due-to-ubers-14-8-billion-takeover-bid-de155bf8?siteid=yhoof2&yptr=yahoo",
+   "priority": "media",
+   "ticker": "UBER",
+   "name": "UBER"
   }
  ],
  "financial_drift": [
