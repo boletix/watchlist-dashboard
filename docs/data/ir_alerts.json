@@ -1,44 +1,33 @@
 {
  "meta": {
-  "generated_at": "2026-09-24T12:52:05+00:00",
+  "generated_at": "2026-09-25T12:54:37+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 3,
-  "n_calendar_drift": 27,
+  "n_documents": 2,
+  "n_calendar_drift": 28,
   "n_financial_drift": 19,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "news:4bbbc42e-2637-3421-8ff1-95fd073a0b34",
+   "id": "news:886e0dbf-07b8-3c36-8a7b-0b27908694b7",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Dividend Decisions: Costco's Unique Payout vs. Walmart's Stability",
-   "date": "2026-09-24",
-   "url": "https://www.fool.com/investing/2026/09/24/dividend-decisions-costco-unique-payout-vs-walmart/",
+   "title": "Costco Tops Quarterly Earnings, Revenue Views; Comparable Sales Growth Lags",
+   "date": "2026-09-25",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/costco-tops-quarterly-earnings-revenue-111237015.html",
    "priority": "media",
    "ticker": "COST",
    "name": "COST"
   },
   {
-   "id": "news:cd2199c4-5d68-3fde-be97-c941f4a19163",
+   "id": "news:842a2c14-ad31-3009-a791-111edf8d80ef",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Delivery Hero CEO Niklas Östberg to stay amid Uber takeover",
-   "date": "2026-09-24",
-   "url": "https://qz.com/delivery-hero-ceo-niklas-ostberg-staying-uber-takeover-092426",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:e25fa0b2-fe6b-3185-9387-8e149ff56507",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Delivery Hero Cancels CEO Exit Plans Due to Uber’s $14.8 Billion Takeover Bid",
-   "date": "2026-09-24",
-   "url": "https://www.wsj.com/business/delivery-hero-cancels-ceo-exit-plans-due-to-ubers-14-8-billion-takeover-bid-de155bf8?siteid=yhoof2&yptr=yahoo",
+   "title": "Uber Has Disappointed For More Than a Year: Here’s Why a Highly Respected Wall Street Firm Says It’s Going to Double",
+   "date": "2026-09-25",
+   "url": "https://247wallst.com/investing/2026/09/25/uber-has-disappointed-for-more-than-a-year-heres-why-a-highly-respected-wall-street-firm-says-its-going-to-double/",
    "priority": "media",
    "ticker": "UBER",
    "name": "UBER"
@@ -328,6 +317,13 @@
    "delta_days": -76
   },
   {
+   "ticker": "COST",
+   "excel": "2026-09-24",
+   "market": "2026-12-10",
+   "estimated": true,
+   "delta_days": 77
+  },
+  {
    "ticker": "DSGX",
    "excel": "2026-09-10",
    "market": "2026-12-02",
@@ -421,9 +417,9 @@
   {
    "ticker": "SPOT",
    "excel": "2026-10-28",
-   "market": "2026-11-03",
+   "market": "2026-10-22",
    "estimated": false,
-   "delta_days": 6
+   "delta_days": -6
   },
   {
    "ticker": "PRY",
@@ -652,6 +648,13 @@
    "urls": []
   },
   {
+   "ticker": "COST",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-09-24 y el mercado dice 2026-12-10 (77 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
    "ticker": "DSGX",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-09-10 y el mercado dice 2026-12-02 (83 dias de diferencia) — la del Excel era una estimacion",
@@ -745,7 +748,7 @@
   {
    "ticker": "SPOT",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-11-03 (6 dias de diferencia)",
+   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-10-22 (-6 dias de diferencia)",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
