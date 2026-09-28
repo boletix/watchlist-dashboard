@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-09-25T12:54:37+00:00",
+  "generated_at": "2026-09-28T15:44:38+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 2,
+  "n_documents": 5,
   "n_calendar_drift": 28,
   "n_financial_drift": 19,
   "n_errors": 0,
@@ -11,26 +11,59 @@
  },
  "documents": [
   {
-   "id": "news:886e0dbf-07b8-3c36-8a7b-0b27908694b7",
+   "id": "news:65bed839-534a-3fc9-9df1-e1efe7b9f5d2",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Costco Tops Quarterly Earnings, Revenue Views; Comparable Sales Growth Lags",
+   "title": "Alibaba Group vs. Uber Technologies: Examining Quarterly Revenue Trends",
    "date": "2026-09-25",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/costco-tops-quarterly-earnings-revenue-111237015.html",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "news:842a2c14-ad31-3009-a791-111edf8d80ef",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber Has Disappointed For More Than a Year: Here’s Why a Highly Respected Wall Street Firm Says It’s Going to Double",
-   "date": "2026-09-25",
-   "url": "https://247wallst.com/investing/2026/09/25/uber-has-disappointed-for-more-than-a-year-heres-why-a-highly-respected-wall-street-firm-says-its-going-to-double/",
+   "url": "https://www.fool.com/coverage/charts/2026/09/25/alibaba-group-vs-uber-technologies-examining-quarterly-revenue-trends/",
    "priority": "media",
    "ticker": "UBER",
    "name": "UBER"
+  },
+  {
+   "id": "news:78380b59-3a97-3b70-918c-b422a32ac5f5",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Airbnb (ABNB) CEO Cuts Meetings In Half With AI Management Overhaul",
+   "date": "2026-09-27",
+   "url": "https://finance.yahoo.com/technology/ai/articles/airbnb-abnb-ceo-cuts-meetings-070951157.html",
+   "priority": "media",
+   "ticker": "ABNB",
+   "name": "ABNB"
+  },
+  {
+   "id": "news:e4a7166b-ac03-38dd-ad80-a4f2f16d8a07",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Top Midday Stories: MongoDB CEO Leaves to Lead Meta Enterprise Platform; Nvidia Ups Buyback Program by $150 Billion",
+   "date": "2026-09-28",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-mongodb-ceo-153732543.html",
+   "priority": "media",
+   "ticker": "META",
+   "name": "META"
+  },
+  {
+   "id": "news:8beed154-d753-3641-8090-610a973199b0",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "MongoDB CEO Chirantan Desai Steps Down to Join Meta as Chief Enterprise Platform Officer",
+   "date": "2026-09-28",
+   "url": "https://finance.yahoo.com/technology/ai/articles/mongodb-ceo-chirantan-desai-steps-151945480.html",
+   "priority": "media",
+   "ticker": "META",
+   "name": "META"
+  },
+  {
+   "id": "news:e387bed2-6311-37a6-9cff-e8a39d6fd0cc",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "MongoDB Stock Falls 16% as CEO Leaves for Meta",
+   "date": "2026-09-28",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/mongodb-stock-falls-16-ceo-150540820.html",
+   "priority": "media",
+   "ticker": "META",
+   "name": "META"
   }
  ],
  "financial_drift": [
