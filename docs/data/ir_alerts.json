@@ -1,82 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-09-30T14:01:30+00:00",
+  "generated_at": "2026-10-01T14:39:58+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 6,
+  "n_documents": 0,
   "n_calendar_drift": 29,
   "n_financial_drift": 19,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "news:e4bf9e9c-734e-392f-82e4-29dae6aa45ab",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco Stock Trades 16% Below Its High After Record Results. Here’s What’s Next",
-   "date": "2026-09-29",
-   "url": "https://www.tikr.com/blog/costco-stock-trades-16-below-its-high-after-record-results-heres-whats-next?ref=yahoofinance",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "news:ecdef931-006d-3121-9c18-3deac9d245d0",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "The Top 5 Analyst Questions From Costco’s Q3 Earnings Call",
-   "date": "2026-09-29",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/top-5-analyst-questions-costco-085501520.html",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "news:6e0a95f6-dd67-3dfe-bd80-4bf9e3bf959e",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "COST Q3 Deep Dive: Warehouse Expansion, Membership Trends, and Digital Engagement Shape Outlook",
-   "date": "2026-09-29",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/cost-q3-deep-dive-warehouse-083101270.html",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "news:7de4cc4e-01d5-328b-b198-5192d3270777",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Is Trex Company (TREX) Priced For Perfection After Raised Guidance?",
-   "date": "2026-09-29",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/trex-company-trex-priced-perfection-080838175.html",
-   "priority": "media",
-   "ticker": "TREX",
-   "name": "TREX"
-  },
-  {
-   "id": "news:c4cab6a9-da15-3e27-b9e3-380001c5904b",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber CEO Dara Khosrowshahi sends follow-up emails on Sunday if staff don't reply on Saturday",
-   "date": "2026-09-29",
-   "url": "https://finance.yahoo.com/small-business/articles/uber-ceo-dara-khosrowshahi-sends-091500339.html",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:eb8462b3-8868-3166-aab1-38effc770f20",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Prysmian (BIT:PRY) Stock Looks Overvalued Against Its Cash Flow Outlook",
-   "date": "2026-09-30",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/prysmian-bit-pry-stock-looks-030936120.html",
-   "priority": "media",
-   "ticker": "PRY",
-   "name": "PRY"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "VEEV",
