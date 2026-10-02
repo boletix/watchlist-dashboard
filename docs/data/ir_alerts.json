@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_at": "2026-10-01T14:39:58+00:00",
+  "generated_at": "2026-10-02T14:04:30+00:00",
   "n_tickers": 71,
   "days_back": 10,
   "n_documents": 0,
-  "n_calendar_drift": 29,
+  "n_calendar_drift": 30,
   "n_financial_drift": 19,
   "n_errors": 0,
   "seeded": false
@@ -415,9 +415,9 @@
   {
    "ticker": "CHKP",
    "excel": "2026-10-28",
-   "market": "2026-11-04",
+   "market": "2026-11-02",
    "estimated": true,
-   "delta_days": 7
+   "delta_days": 5
   },
   {
    "ticker": "TGYM",
@@ -432,6 +432,13 @@
    "market": "2026-10-28",
    "estimated": true,
    "delta_days": 6
+  },
+  {
+   "ticker": "NKE",
+   "excel": "2026-09-30",
+   "market": "2026-12-17",
+   "estimated": true,
+   "delta_days": 78
   },
   {
    "ticker": "FERG",
@@ -753,7 +760,7 @@
   {
    "ticker": "CHKP",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-11-04 (7 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-11-02 (5 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -768,6 +775,13 @@
    "ticker": "VID",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-10-22 y el mercado dice 2026-10-28 (6 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "NKE",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-09-30 y el mercado dice 2026-12-17 (78 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
