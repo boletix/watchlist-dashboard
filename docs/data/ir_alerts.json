@@ -1,30 +1,16 @@
 {
  "meta": {
-  "generated_at": "2026-10-02T14:04:30+00:00",
+  "generated_at": "2026-10-02T20:08:55+00:00",
   "n_tickers": 71,
   "days_back": 10,
   "n_documents": 0,
-  "n_calendar_drift": 30,
-  "n_financial_drift": 19,
+  "n_calendar_drift": 25,
+  "n_financial_drift": 14,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [],
  "financial_drift": [
-  {
-   "ticker": "VEEV",
-   "ultimo_trimestre_publicado": "2026-07-31",
-   "ultimos_resultados_en_excel": "2026-06-03",
-   "revenue_ltm_mercado": 3458.1,
-   "revenue_ltm_excel": 3319.0,
-   "desvio_revenue": 0.0419,
-   "fcf_ltm_mercado": 1665.5,
-   "fcf_ltm_excel": 1665.5,
-   "desvio_fcf": -0.0,
-   "trimestre_nuevo": true,
-   "sospecha_unidades": false,
-   "severidad": "alta"
-  },
   {
    "ticker": "BN",
    "ultimo_trimestre_publicado": "2026-06-30",
@@ -42,44 +28,16 @@
   {
    "ticker": "COST",
    "ultimo_trimestre_publicado": "2026-05-31",
-   "ultimos_resultados_en_excel": "2026-05-28",
+   "ultimos_resultados_en_excel": "2026-09-24",
    "revenue_ltm_mercado": 293587.0,
-   "revenue_ltm_excel": 293590.0,
-   "desvio_revenue": -0.0,
+   "revenue_ltm_excel": 303154.0,
+   "desvio_revenue": -0.0316,
    "fcf_ltm_mercado": 8806.0,
-   "fcf_ltm_excel": 8806.0,
-   "desvio_fcf": 0.0,
-   "trimestre_nuevo": true,
+   "fcf_ltm_excel": 9390.0,
+   "desvio_fcf": -0.0622,
+   "trimestre_nuevo": false,
    "sospecha_unidades": false,
-   "severidad": "alta"
-  },
-  {
-   "ticker": "DSGX",
-   "ultimo_trimestre_publicado": "2026-07-31",
-   "ultimos_resultados_en_excel": "2026-06-03",
-   "revenue_ltm_mercado": 775.2,
-   "revenue_ltm_excel": 775.1,
-   "desvio_revenue": 0.0001,
-   "fcf_ltm_mercado": 298.5,
-   "fcf_ltm_excel": 298.5,
-   "desvio_fcf": 0.0001,
-   "trimestre_nuevo": true,
-   "sospecha_unidades": false,
-   "severidad": "alta"
-  },
-  {
-   "ticker": "ZS",
-   "ultimo_trimestre_publicado": "2026-07-31",
-   "ultimos_resultados_en_excel": "2026-05-28",
-   "revenue_ltm_mercado": 3352.5,
-   "revenue_ltm_excel": 3170.0,
-   "desvio_revenue": 0.0576,
-   "fcf_ltm_mercado": 779.1,
-   "fcf_ltm_excel": 890.3,
-   "desvio_fcf": -0.1249,
-   "trimestre_nuevo": true,
-   "sospecha_unidades": false,
-   "severidad": "alta"
+   "severidad": "media"
   },
   {
    "ticker": "AMZN",
@@ -98,27 +56,13 @@
   {
    "ticker": "ITX",
    "ultimo_trimestre_publicado": "2026-07-31",
-   "ultimos_resultados_en_excel": "2026-06-09",
+   "ultimos_resultados_en_excel": "2026-09-09",
    "revenue_ltm_mercado": 39652.0,
-   "revenue_ltm_excel": 40340.0,
-   "desvio_revenue": -0.0171,
+   "revenue_ltm_excel": 41262.0,
+   "desvio_revenue": -0.039,
    "fcf_ltm_mercado": null,
-   "fcf_ltm_excel": 6520.0,
+   "fcf_ltm_excel": 5819.0,
    "desvio_fcf": null,
-   "trimestre_nuevo": true,
-   "sospecha_unidades": false,
-   "severidad": "alta"
-  },
-  {
-   "ticker": "FICO",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-29",
-   "revenue_ltm_mercado": 2393.6,
-   "revenue_ltm_excel": 1720.0,
-   "desvio_revenue": 0.3916,
-   "fcf_ltm_mercado": 960.9,
-   "fcf_ltm_excel": 730.0,
-   "desvio_fcf": 0.3163,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -126,16 +70,16 @@
   {
    "ticker": "EVD",
    "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-05-28",
+   "ultimos_resultados_en_excel": "2026-08-20",
    "revenue_ltm_mercado": 3297.9,
-   "revenue_ltm_excel": 3300.0,
-   "desvio_revenue": -0.0006,
+   "revenue_ltm_excel": 3297.9,
+   "desvio_revenue": 0.0,
    "fcf_ltm_mercado": 231.3,
-   "fcf_ltm_excel": 231.3,
-   "desvio_fcf": -0.0,
-   "trimestre_nuevo": true,
-   "sospecha_unidades": false,
-   "severidad": "alta"
+   "fcf_ltm_excel": 60.0,
+   "desvio_fcf": 2.8548,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": true,
+   "severidad": "unidades"
   },
   {
    "ticker": "KKR",
@@ -152,46 +96,32 @@
    "severidad": "media"
   },
   {
-   "ticker": "CRWD",
-   "ultimo_trimestre_publicado": "2026-07-31",
-   "ultimos_resultados_en_excel": "2026-06-03",
-   "revenue_ltm_mercado": 5396.1,
-   "revenue_ltm_excel": 5090.0,
-   "desvio_revenue": 0.0601,
-   "fcf_ltm_mercado": 1522.6,
-   "fcf_ltm_excel": 1522.6,
-   "desvio_fcf": 0.0,
-   "trimestre_nuevo": true,
+   "ticker": "KSPI",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-08-10",
+   "revenue_ltm_mercado": 4402120.0,
+   "revenue_ltm_excel": 4449504.0,
+   "desvio_revenue": -0.0106,
+   "fcf_ltm_mercado": 952971.0,
+   "fcf_ltm_excel": 1065825.0,
+   "desvio_fcf": -0.1059,
+   "trimestre_nuevo": false,
    "sospecha_unidades": false,
-   "severidad": "alta"
-  },
-  {
-   "ticker": "NVDA",
-   "ultimo_trimestre_publicado": "2026-07-31",
-   "ultimos_resultados_en_excel": "2026-05-20",
-   "revenue_ltm_mercado": 302969.0,
-   "revenue_ltm_excel": 253490.0,
-   "desvio_revenue": 0.1952,
-   "fcf_ltm_mercado": 127006.0,
-   "fcf_ltm_excel": 122365.0,
-   "desvio_fcf": 0.0379,
-   "trimestre_nuevo": true,
-   "sospecha_unidades": false,
-   "severidad": "alta"
+   "severidad": "media"
   },
   {
    "ticker": "COR",
-   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimo_trimestre_publicado": "2026-03-31",
    "ultimos_resultados_en_excel": "2026-07-29",
-   "revenue_ltm_mercado": 332771.3,
+   "revenue_ltm_mercado": 842.5,
    "revenue_ltm_excel": 900.0,
-   "desvio_revenue": 368.7459,
-   "fcf_ltm_mercado": 4060.1,
+   "desvio_revenue": -0.0639,
+   "fcf_ltm_mercado": 175.3,
    "fcf_ltm_excel": 175.3,
-   "desvio_fcf": 22.1609,
+   "desvio_fcf": -0.0001,
    "trimestre_nuevo": false,
-   "sospecha_unidades": true,
-   "severidad": "unidades"
+   "sospecha_unidades": false,
+   "severidad": "media"
   },
   {
    "ticker": "TSM",
@@ -236,20 +166,6 @@
    "severidad": "media"
   },
   {
-   "ticker": "S",
-   "ultimo_trimestre_publicado": "2026-07-31",
-   "ultimos_resultados_en_excel": "2026-05-28",
-   "revenue_ltm_mercado": 1098.7,
-   "revenue_ltm_excel": 1050.0,
-   "desvio_revenue": 0.0464,
-   "fcf_ltm_mercado": 30.9,
-   "fcf_ltm_excel": 30.900000000000034,
-   "desvio_fcf": -0.0014,
-   "trimestre_nuevo": true,
-   "sospecha_unidades": false,
-   "severidad": "alta"
-  },
-  {
    "ticker": "VRLA",
    "ultimo_trimestre_publicado": "2026-06-30",
    "ultimos_resultados_en_excel": "2026-07-28",
@@ -276,15 +192,29 @@
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
+  },
+  {
+   "ticker": "RCL",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-07-28",
+   "revenue_ltm_mercado": 18681.0,
+   "revenue_ltm_excel": 18682.0,
+   "desvio_revenue": -0.0001,
+   "fcf_ltm_mercado": -416.0,
+   "fcf_ltm_excel": 4972.0,
+   "desvio_fcf": -1.0837,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
   }
  ],
  "calendar_drift": [
   {
    "ticker": "VEEV",
-   "excel": "2026-08-26",
+   "excel": "2026-11-19",
    "market": "2026-11-25",
    "estimated": true,
-   "delta_days": 91
+   "delta_days": 6
   },
   {
    "ticker": "ADYEN",
@@ -294,39 +224,11 @@
    "delta_days": -76
   },
   {
-   "ticker": "COST",
-   "excel": "2026-09-24",
-   "market": "2026-12-10",
-   "estimated": true,
-   "delta_days": 77
-  },
-  {
-   "ticker": "DSGX",
-   "excel": "2026-09-10",
-   "market": "2026-12-02",
-   "estimated": true,
-   "delta_days": 83
-  },
-  {
-   "ticker": "ZS",
-   "excel": "2026-09-02",
-   "market": "2026-11-24",
-   "estimated": true,
-   "delta_days": 83
-  },
-  {
    "ticker": "SU",
    "excel": "2026-10-29",
    "market": "2026-07-30",
    "estimated": true,
    "delta_days": -91
-  },
-  {
-   "ticker": "ITX",
-   "excel": "2026-09-09",
-   "market": "2026-12-02",
-   "estimated": true,
-   "delta_days": 84
   },
   {
    "ticker": "LOTB",
@@ -336,18 +238,18 @@
    "delta_days": -202
   },
   {
-   "ticker": "FICO",
-   "excel": "2026-11-18",
-   "market": "2026-11-04",
-   "estimated": true,
-   "delta_days": -14
-  },
-  {
    "ticker": "EVD",
-   "excel": "2026-08-27",
+   "excel": "2026-11-12",
    "market": "2026-11-19",
    "estimated": true,
-   "delta_days": 84
+   "delta_days": 7
+  },
+  {
+   "ticker": "DNP",
+   "excel": "2026-11-12",
+   "market": "2026-11-05",
+   "estimated": true,
+   "delta_days": -7
   },
   {
    "ticker": "VLTO",
@@ -371,13 +273,6 @@
    "delta_days": -7
   },
   {
-   "ticker": "CRWD",
-   "excel": "2026-09-02",
-   "market": "2026-12-01",
-   "estimated": true,
-   "delta_days": 90
-  },
-  {
    "ticker": "KRX",
    "excel": "2026-11-20",
    "market": "2026-08-07",
@@ -392,13 +287,6 @@
    "delta_days": -19
   },
   {
-   "ticker": "NVDA",
-   "excel": "2026-08-26",
-   "market": "2026-11-17",
-   "estimated": true,
-   "delta_days": 83
-  },
-  {
    "ticker": "SPOT",
    "excel": "2026-10-28",
    "market": "2026-10-22",
@@ -411,6 +299,13 @@
    "market": "2026-10-29",
    "estimated": true,
    "delta_days": -7
+  },
+  {
+   "ticker": "JFN",
+   "excel": "2027-03-25",
+   "market": "2026-08-28",
+   "estimated": false,
+   "delta_days": -209
   },
   {
    "ticker": "CHKP",
@@ -434,18 +329,18 @@
    "delta_days": 6
   },
   {
-   "ticker": "NKE",
-   "excel": "2026-09-30",
-   "market": "2026-12-17",
-   "estimated": true,
-   "delta_days": 78
-  },
-  {
    "ticker": "FERG",
    "excel": "2026-11-03",
    "market": "2026-11-09",
    "estimated": true,
    "delta_days": 6
+  },
+  {
+   "ticker": "S",
+   "excel": "2026-12-01",
+   "market": "2026-08-27",
+   "estimated": true,
+   "delta_days": -96
   },
   {
    "ticker": "SGO",
@@ -483,21 +378,14 @@
    "delta_days": -7
   },
   {
-   "ticker": "RCL",
-   "excel": null,
-   "market": "2026-10-27",
-   "estimated": false,
-   "delta_days": null
+   "ticker": "RBT",
+   "excel": "2026-10-23",
+   "market": "2026-09-17",
+   "estimated": true,
+   "delta_days": -36
   }
  ],
  "todo_excel": [
-  {
-   "ticker": "VEEV",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-06-03); ingresos LTM: Excel 3319.0 vs mercado 3458.1 (+4.2%); FCF LTM: Excel 1665.5 vs mercado 1665.5 (-0.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
   {
    "ticker": "BN",
    "accion": "CUENTAS DESFASADAS en el Excel",
@@ -508,21 +396,7 @@
   {
    "ticker": "COST",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-05-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 293590.0 vs mercado 293587.0 (-0.0%); FCF LTM: Excel 8806.0 vs mercado 8806.0 (+0.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "DSGX",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-06-03); ingresos LTM: Excel 775.1 vs mercado 775.2 (+0.0%); FCF LTM: Excel 298.5 vs mercado 298.5 (+0.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "ZS",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 3170.0 vs mercado 3352.5 (+5.8%); FCF LTM: Excel 890.3 vs mercado 779.1 (-12.5%)",
+   "motivo": "ingresos LTM: Excel 303154.0 vs mercado 293587.0 (-3.2%); FCF LTM: Excel 9390.0 vs mercado 8806.0 (-6.2%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -536,22 +410,15 @@
   {
    "ticker": "ITX",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-06-09); ingresos LTM: Excel 40340.0 vs mercado 39652.0 (-1.7%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "FICO",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 1720.0 vs mercado 2393.6 (+39.2%); FCF LTM: Excel 730.0 vs mercado 960.9 (+31.6%)",
+   "motivo": "ingresos LTM: Excel 41262.0 vs mercado 39652.0 (-3.9%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "EVD",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-06-30) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 3300.0 vs mercado 3297.9 (-0.1%); FCF LTM: Excel 231.3 vs mercado 231.3 (-0.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
+   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 3297.9 vs 3297.9, FCF 60.0 vs 231.3. Revisar en que moneda reporta y el factor de Framework Notes.",
+   "columnas": "AR-BC y Framework Notes (factor de conversion)",
    "urls": []
   },
   {
@@ -562,24 +429,17 @@
    "urls": []
   },
   {
-   "ticker": "CRWD",
+   "ticker": "KSPI",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-06-03); ingresos LTM: Excel 5090.0 vs mercado 5396.1 (+6.0%); FCF LTM: Excel 1522.6 vs mercado 1522.6 (+0.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "NVDA",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-05-20); ingresos LTM: Excel 253490.0 vs mercado 302969.0 (+19.5%); FCF LTM: Excel 122365.0 vs mercado 127006.0 (+3.8%)",
+   "motivo": "ingresos LTM: Excel 4449504.0 vs mercado 4402120.0 (-1.1%); FCF LTM: Excel 1065825.0 vs mercado 952971.0 (-10.6%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "COR",
-   "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
-   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 900.0 vs 332771.3, FCF 175.3 vs 4060.1. Revisar en que moneda reporta y el factor de Framework Notes.",
-   "columnas": "AR-BC y Framework Notes (factor de conversion)",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 900.0 vs mercado 842.5 (-6.4%); FCF LTM: Excel 175.3 vs mercado 175.3 (-0.0%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
@@ -604,13 +464,6 @@
    "urls": []
   },
   {
-   "ticker": "S",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-07-31) posterior a la fecha de ultimos resultados del Excel (2026-05-28); ingresos LTM: Excel 1050.0 vs mercado 1098.7 (+4.6%); FCF LTM: Excel 30.900000000000034 vs mercado 30.9 (-0.1%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
    "ticker": "VRLA",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 3311.0 vs mercado 142.9 (-95.7%); FCF LTM: Excel 249.0 vs mercado -58.0 (-123.3%)",
@@ -625,9 +478,16 @@
    "urls": []
   },
   {
+   "ticker": "RCL",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 18682.0 vs mercado 18681.0 (-0.0%); FCF LTM: Excel 4972.0 vs mercado -416.0 (-108.4%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
    "ticker": "VEEV",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-08-26 y el mercado dice 2026-11-25 (91 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2026-11-19 y el mercado dice 2026-11-25 (6 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -639,37 +499,9 @@
    "urls": []
   },
   {
-   "ticker": "COST",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-09-24 y el mercado dice 2026-12-10 (77 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "DSGX",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-09-10 y el mercado dice 2026-12-02 (83 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "ZS",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-09-02 y el mercado dice 2026-11-24 (83 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "SU",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-10-29 y el mercado dice 2026-07-30 (-91 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "ITX",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-09-09 y el mercado dice 2026-12-02 (84 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -681,16 +513,16 @@
    "urls": []
   },
   {
-   "ticker": "FICO",
+   "ticker": "EVD",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-18 y el mercado dice 2026-11-04 (-14 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2026-11-12 y el mercado dice 2026-11-19 (7 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
   {
-   "ticker": "EVD",
+   "ticker": "DNP",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-08-27 y el mercado dice 2026-11-19 (84 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2026-11-12 y el mercado dice 2026-11-05 (-7 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -716,13 +548,6 @@
    "urls": []
   },
   {
-   "ticker": "CRWD",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-09-02 y el mercado dice 2026-12-01 (90 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "KRX",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-20 y el mercado dice 2026-08-07 (-105 dias de diferencia)",
@@ -737,13 +562,6 @@
    "urls": []
   },
   {
-   "ticker": "NVDA",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-08-26 y el mercado dice 2026-11-17 (83 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "SPOT",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-10-22 (-6 dias de diferencia)",
@@ -754,6 +572,13 @@
    "ticker": "PRY",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-05 y el mercado dice 2026-10-29 (-7 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "JFN",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-03-25 y el mercado dice 2026-08-28 (-209 dias de diferencia)",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -779,16 +604,16 @@
    "urls": []
   },
   {
-   "ticker": "NKE",
+   "ticker": "FERG",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-09-30 y el mercado dice 2026-12-17 (78 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2026-11-03 y el mercado dice 2026-11-09 (6 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
   {
-   "ticker": "FERG",
+   "ticker": "S",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-03 y el mercado dice 2026-11-09 (6 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2026-12-01 y el mercado dice 2026-08-27 (-96 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -828,9 +653,9 @@
    "urls": []
   },
   {
-   "ticker": "RCL",
+   "ticker": "RBT",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice nada y el mercado dice 2026-10-27 (? dias de diferencia)",
+   "motivo": "El Excel dice 2026-10-23 y el mercado dice 2026-09-17 (-36 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   }
