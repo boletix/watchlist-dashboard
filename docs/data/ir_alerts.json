@@ -1,82 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-10-02T20:55:05+00:00",
+  "generated_at": "2026-10-02T21:08:40+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 6,
+  "n_documents": 0,
   "n_calendar_drift": 24,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "sec:0001193125-26-402928:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-09-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526402928/ck0002128626-20260924.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
-  },
-  {
-   "id": "sec:0001193125-26-401621:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-09-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526401621/d118532d8k.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
-  },
-  {
-   "id": "sec:0001193125-26-408748:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-09-30",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526408748/d39681d8k.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
-  },
-  {
-   "id": "sec:0001193125-26-409909:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-01",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526409909/d115079d8k.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
-  },
-  {
-   "id": "sec:0001193125-26-409841:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-01",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526409841/d118856d8k.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
-  },
-  {
-   "id": "sec:0001193125-26-409545:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-01",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526409545/d121693d8k.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "BN",
