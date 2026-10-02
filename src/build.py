@@ -33,6 +33,46 @@ from src.etl import load_watchlist, validate
 log = logging.getLogger(__name__)
 
 
+def _to_iso_date(v):
+    """dd/mm/yyyy (texto del Excel), ISO, o datetime -> 'YYYY-MM-DD'; None si no se puede."""
+    if v is None:
+        return None
+    try:
+        if hasattr(v, "date"):
+            return v.date().isoformat() if hasattr(v.date, "__call__") else v.isoformat()
+    except Exception:
+        pass
+    sv = str(v).strip()
+    if not sv or sv.lower() in ("nan", "nat", "none"):
+        return None
+    for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%Y-%m-%d %H:%M:%S"):
+        try:
+            return datetime.strptime(sv, fmt).date().isoformat()
+        except ValueError:
+            continue
+    return None
+
+
+def _earnings_from_excel(df, fallback):
+    """Mapa ticker -> fechas, desde las columnas del Excel; `fallback` rellena huecos."""
+    out = {}
+    for _, row in df.iterrows():
+        t = str(row.get("ticker", "")).strip()
+        if not t:
+            continue
+        old = fallback.get(t, {})
+        last = _to_iso_date(row.get("earnings_last_date")) or old.get("earnings_last_date")
+        nxt = _to_iso_date(row.get("earnings_next_date")) or old.get("earnings_next_date")
+        upd = _to_iso_date(row.get("earnings_updated_at")) or old.get("earnings_updated_at")
+        out[t] = {
+            "earnings_last_date": last,
+            "earnings_next_date": nxt,
+            "earnings_updated_at": upd,
+            "earnings_next_estimated": bool(old.get("earnings_next_estimated", False)),
+        }
+    return out
+
+
 def _to_jsonable(value):
     if value is None:
         return None
@@ -157,12 +197,26 @@ def build(
     }
 
     # 7. Earnings dates
+    # 12-sep-2026: hasta hoy el panel leia data/earnings.json, un fichero escrito a mano el
+    # 26-ago que NUNCA se regeneraba: Descartes seguia con "proximos resultados 10-sep" dos
+    # dias despues de publicar aunque el Excel ya decia 02/12. La fuente de la verdad son las
+    # columnas BO/BP del Excel (texto dd/mm/yyyy); earnings.json pasa a ser un espejo que se
+    # reescribe en cada build, y solo se usa como respaldo si la celda esta vacia.
     earnings_path = Path("data/earnings.json")
-    earnings_map = {}
+    earnings_old = {}
     if earnings_path.exists():
         with open(earnings_path, encoding="utf-8") as f:
-            earnings_raw = json.load(f)
-        earnings_map = earnings_raw.get("companies", {})
+            earnings_old = json.load(f).get("companies", {})
+    earnings_map = _earnings_from_excel(df, earnings_old)
+    with open(earnings_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "description": "Earnings dates por ticker. Fuente: columnas BO/BP de "
+                           "watchlist_ratings.xlsx. Se regenera en cada build.",
+            "fields": "earnings_last_date (ISO), earnings_next_date (ISO), "
+                      "earnings_updated_at (ISO), earnings_next_estimated (bool)",
+            "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "companies": earnings_map,
+        }, f, ensure_ascii=False, indent=1)
 
     companies_records = df_to_records(df)
     for rec in companies_records:

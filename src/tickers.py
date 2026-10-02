@@ -68,6 +68,12 @@ TICKER_YF_OVERRIDE: dict[str, str] = {
     "TFPM": "TFPM.TO",   # Triple Flag, Toronto
     "CSU": "CSU.TO",     # Constellation Software, Toronto
     "KRX": "KRX.IR",     # Kingspan, Irlanda
+    # 2-oct-2026: faltaban desde su alta. Sin override, "COR" es Cencora (NYSE, ~300 $) y
+    # "DNP" un fondo de renta de Nueva York (~10 $): el panel publicaba el precio de otra
+    # empresa, un dividendo del 77% para Corticeira y TIR falsas. tests/test_tickers.py
+    # impide que una fila no-USD vuelva a resolverse en un ticker de EE.UU.
+    "COR": "COR.LS",     # Corticeira Amorim, Lisboa (EUR)
+    "DNP": "DNP.WA",     # Dino Polska, Varsovia (PLN)
 }
 
 

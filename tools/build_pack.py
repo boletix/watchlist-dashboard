@@ -45,7 +45,7 @@ FOLDER = {
     "PRY": "Prysmian", "RBT": "Robertet", "ROKO B": "Roko AB", "IP": "Interpump Group",
     "USPH": "US Physical Therapy", "SOM": "Somero", "KKR": "KKR", "META": "Meta",
     "GOOG": "Alphabet", "NFLX": "Netflix", "SPOT": "Spotify", "UBER": "Uber",
-    "RCL": "Royal Caribbean",
+    "RCL": "Royal Caribbean", "KSPI": "Kaspi.kz", "JDG": "Judges", "NKE": "Nike",
 }
 NICE = {
     "CSU": "Constellation Software", "VEEV": "Veeva Systems", "COST": "Costco Wholesale",
@@ -55,7 +55,7 @@ NICE = {
     "NTO": "Nintendo", "SU": "Schneider Electric", "MNST": "Monster Beverage",
     "DNP": "Dino Polska", "VLTO": "Veralto", "ABNB": "Airbnb", "ZS": "Zscaler",
     "SAP": "SAP SE", "FICO": "Fair Isaac Corporation", "LR": "Legrand",
-    "RCL": "Royal Caribbean Group",
+    "RCL": "Royal Caribbean Group", "KSPI": "Kaspi.kz", "UBER": "Uber Technologies", "JDG": "Judges Scientific", "NKE": "NIKE, Inc.",
 }
 
 # Empresas cuyo crecimiento viene sobre todo de comprar, no de crecer organicamente.
@@ -288,6 +288,13 @@ FRAME_WARNINGS = {
           "libro sirve como recopilacion de datos, no como valoracion.",
     "KKR": "Igual que Brookfield: la deuda consolidada es sobre todo de Global Atlantic. "
            "El EV/FCF esta estructuralmente inflado.",
+    "KSPI": "Kaspi es un hibrido banco-marketplace: los depositos (7,5 billones de KZT) "
+            "financian los prestamos, asi que ni el flujo de explotacion ni la 'deuda neta' "
+            "significan nada. El FCF honesto es el DISTRIBUIBLE (CFO antes de circulante - "
+            "impuestos - capex - capital absorbido por la cartera) que es ~ el beneficio neto, y "
+            "el multiplo honesto es P/E o P/FCF sobre el equity (EV ~ 0,9x capitalizacion en el "
+            "panel). El modelo de 13 hojas y el Monte Carlo propios (con depreciacion del tenge) "
+            "estan en la carpeta raiz y en modelo/. Este libro generico es solo recopilacion.",
     "NTO": "Nintendo fabrica e inventaria consolas antes de venderlas, asi que el FCF se "
            "deprime en el PICO de ventas. La metrica honesta es EV/EBIT sobre beneficio "
            "medio de ciclo, no el FCF de un ejercicio.",
@@ -306,18 +313,27 @@ FRAME_WARNINGS = {
 VERDICTS = {
     "CSU":  dict(conviction="4/5", terminal="BAJO", sizing="2,5-3,5%",
                  alert="ampliar < 2.800 CAD", catalyst="Q3 2026 (nov) — margen y ritmo de M&A"),
-    "VEEV": dict(conviction="4/5", terminal="MEDIO", sizing="1,5-2,0%",
-                 alert="entrada atractiva < 230 USD", catalyst="Q2 FY27 (ago-sep 2026)"),
-    "COST": dict(conviction="5/5", terminal="MUY BAJO", sizing="1,5-2,5% (4-5% bajo 700 $)",
-                 alert="ampliar < 700 $ · 3% a 800 $",
-                 catalyst="Cierre FY2026 (finales de sep 2026): margen bruto de mercancia y "
-                          "crecimiento de las cuotas"),
+    "VEEV": dict(conviction="4/5", terminal="MEDIO", sizing="1,5-2,0% (no ampliar: precio fuera de banda)",
+                 alert="entrada atractiva < 230 USD",
+                 catalyst="Q3 FY27 (~2-dic-2026). Q2 (26-ago): +18%, guia subida a 3.682-3.687, Vault CRM 12 del top-20"),
+    "COST": dict(conviction="5/5", terminal="MUY BAJO", sizing="0-1,5% (ampliar bajo 800 $: asimetria 3,5x)",
+                 alert="ampliar < 800 $ · 3-4% bajo 700 $",
+                 catalyst="Q1 FY27 (~10-dic-2026): socios de pago (+3,8% en el Q4 FY26, se frenan) y renovacion mundial (89,8%)"),
     "DSGX": dict(conviction="4/5", terminal="BAJO", sizing="3-3,5% (completar la posicion)",
                  alert="organico de servicios < 6% dos trimestres seguidos, o una compra grande con papel",
                  catalyst="Q3 FY27 (~2-dic-2026): margen tras Tai/Extensiv, atricion de Extensiv, "
                           "organico contra comparables duros. Q2 FY27 (10-sep) cumplio los tres "
                           "puntos de la lista A.9: organico 'just north of 9%', baseline 38,4%, "
                           "compras en caja"),
+    "UBER": dict(conviction="3,5/5", terminal="MEDIO", sizing="2-2,5% (escalonada; ampliar a 3% bajo 66 $)",
+                 alert="Waymo/Tesla standalone con cuota creciente en SF/LA/Phoenix; margen op. Mobility < 7%; deuda neta/EBITDA > 2,5x tras DH",
+                 catalyst="3T26 el ~3-nov: recompras, take rate neto, 15 ciudades AV; 4T26 lanzamientos Nuro/Lucid, Zoox, Wayve; 1S27 aprobacion de Delivery Hero"),
+    "JDG":  dict(conviction="3/5", terminal="MEDIO-BAJO", sizing="1% (posicion actual); 2% bajo 3.440p SOLO con pedidos del 2S positivos en enero",
+                 alert="guia < 200p: salir; compra >40 M GBP a >7x EBIT: salir; deuda neta/EBITDA 2,1x (limite de la tesis 2,0x)",
+                 catalyst="Trading update FY26 (~21-ene-2027): pedidos del 2S, deuda, sucesor del CFO (Ormsby se va). Interinos del 23-sep: BPA 39p, guia al suelo (200,5p), China -47%"),
+    "KSPI": dict(conviction="3/5", terminal="MEDIO-ALTO", sizing="1-1,5% (ampliar a 2-2,5% bajo 80 $)",
+                 alert="sanciones/OFAC; suspension del dividendo; coste de riesgo > 1% dos trimestres o NPL > 8%; tope a comisiones del marketplace",
+                 catalyst="3T26 el ~9-nov: beneficio neto creciendo por primera vez en seis trimestres con el recorte de depositos dentro; tipos del BNK en diciembre; fintech en Turquia en 1S27"),
     "BN":   dict(conviction="3,5/5", terminal="MEDIO", sizing="1,5-2,5%",
                  alert="—", catalyst="Investor Day"),
     "LIFCO B": dict(conviction="4/5", terminal="MUY BAJO", sizing="0-1%",
@@ -325,7 +341,10 @@ VERDICTS = {
     "LOTB": dict(conviction="4,5/5", terminal="MUY BAJO", sizing="0%",
                  alert="—", catalyst="Resultados semestrales"),
     "HLMA": dict(conviction="4/5", terminal="MUY BAJO", sizing="0-1%", alert="—", catalyst="—"),
-    "ITX":  dict(conviction="4,5/5", terminal="BAJO", sizing="3-5%", alert="—", catalyst="Q2 FY26"),
+    "ITX":  dict(conviction="4,5/5", terminal="BAJO", sizing="0% a 53 EUR; propuesta 3% bajo 45 EUR (pendiente de Roger)",
+                 alert="45 EUR (caso base al 10% anual)", catalyst="9M FY26 (2-dic-2026): margen bruto del 3T, gastos vs ventas, crecimiento de Zara"),
+    "NKE":  dict(conviction="3/5", terminal="MEDIO", sizing="0-1% hasta el Investor Day (16-17 nov); 2% si da margen EBIT de doble digito y el margen bruto del Q2 sube (pendiente de Roger)",
+                 alert="hechos, no precio: objetivo de margen en el Investor Day", catalyst="Investor Day 16-17 nov 2026; Q2 FY27 ~18-dic"),
     "NTO":  dict(conviction="4/5", terminal="MUY BAJO", sizing="0%",
                  alert="—", catalyst="Ciclo Switch 2"),
     "SU":   dict(conviction="4/5", terminal="BAJO", sizing="2-3%", alert="—", catalyst="Q3 2026"),
@@ -337,8 +356,8 @@ VERDICTS = {
     "FICO": dict(conviction="4/5", terminal="BAJO-MEDIO", sizing="1,5-2%",
                  alert="—", catalyst="Decision FHFA sobre scores alternativos"),
     "LR":   dict(conviction="3,5/5", terminal="BAJO", sizing="1%", alert="—", catalyst="—"),
-    "ZS":   dict(conviction="pendiente", terminal="MEDIO", sizing="0% hasta resolver SBC",
-                 alert="—", catalyst="Q4 FY26 (sep 2026)"),
+    "ZS":   dict(conviction="pendiente", terminal="MEDIO", sizing="0% (SBC 822 > FCF 779 en FY26)",
+                 alert="—", catalyst="Q1 FY27 (~25-nov-2026)"),
     "RCL":  dict(conviction="3/5", terminal="MEDIO-ALTO", sizing="0-1% (2-3% < 225 USD)",
                  alert="abrir posicion < 225 USD; segundo tramo < 205",
                  catalyst="Q3 2026 (finales de octubre) — spread unitario interanual"),
@@ -346,8 +365,11 @@ VERDICTS = {
                  catalyst="Q1 FY27 (oct 2026)"),
     "AMZN": dict(conviction="pendiente", terminal="BAJO-MEDIO", sizing="pendiente", alert="—",
                  catalyst="Q3 2026"),
-    "ADYEN": dict(conviction="pendiente", terminal="MEDIO", sizing="pendiente", alert="—",
-                  catalyst="Resultados semestrales"),
+    "ADYEN": dict(conviction="3/5", terminal="BAJO", sizing="2-3% (escalonada; 2,5-3,5% con C=3,5)",
+                  alert="take rate H2-26 < 16,00 bps, o tercera compra en 12 meses, o capex 2027 > 6%",
+                  catalyst="Q3 el 28-oct-2026: take rate, crecimiento de Digital y EMEA, CFO definitivo. "
+                           "H1-26 (13-ago): +21% cc, EBITDA 49%, take rate 16,21 bps (-4%), Talon.One y "
+                           "Orb cerradas el 1-sep en caja"),
     "RAA":  dict(conviction="pendiente", terminal="MUY BAJO", sizing="pendiente", alert="—",
                  catalyst="—"),
     "DNP":  dict(conviction="pendiente", terminal="BAJO", sizing="pendiente", alert="—",

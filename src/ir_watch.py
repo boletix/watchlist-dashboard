@@ -126,11 +126,15 @@ def _session():
 # --------------------------------------------------------------------- capa 1: SEC
 
 _CIK_CACHE = {}
+_CIK_FAILED = False
 
 
 def _sec_cik_map(session):
-    global _CIK_CACHE
-    if _CIK_CACHE:
+    """Mapa ticker -> CIK. Se intenta UNA vez por ejecucion: si la SEC devuelve 403 (pasa en
+    el CI cuando falta el secret SEC_CONTACT_EMAIL), no se repite el intento por cada una de
+    las ~35 empresas, que era lo que llenaba el log de avisos identicos."""
+    global _CIK_CACHE, _CIK_FAILED
+    if _CIK_CACHE or _CIK_FAILED:
         return _CIK_CACHE
     try:
         r = session.get(SEC_TICKERS_URL, timeout=TIMEOUT)
@@ -138,7 +142,11 @@ def _sec_cik_map(session):
         data = r.json()
         _CIK_CACHE = {v["ticker"].upper(): int(v["cik_str"]) for v in data.values()}
     except Exception as exc:
-        log.warning("No se pudo cargar el mapa de CIK de la SEC: %s", exc)
+        _CIK_FAILED = True
+        hint = "" if os.environ.get("SEC_CONTACT_EMAIL") else (
+            " (falta SEC_CONTACT_EMAIL: la SEC rechaza el User-Agent sin contacto real)")
+        log.warning("No se pudo cargar el mapa de CIK de la SEC: %s%s. Capa SEC desactivada "
+                    "en esta ejecucion.", exc, hint)
         _CIK_CACHE = {}
     return _CIK_CACHE
 

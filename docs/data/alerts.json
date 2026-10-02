@@ -1,12 +1,115 @@
 {
   "meta": {
-    "generated_at": "2026-10-02T14:03:43+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-10-02T20:03:05+00:00",
+    "n_alerts": 8,
     "by_severity": {
-      "high": 0,
-      "medium": 0,
+      "high": 7,
+      "medium": 1,
       "low": 0
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "CTVA",
+      "name": "CTVA",
+      "category": "Materials",
+      "message": "CTVA now has favorable IRR asymmetry (best 54.2%, worst 26.6%)",
+      "metrics": {
+        "irr_best": 0.5418952903933141,
+        "irr_worst": 0.26619697501430384,
+        "irr_asymmetry_ratio": 1.0356928938211858
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "CTVA",
+      "name": "CTVA",
+      "category": "Materials",
+      "message": "CTVA Best IRR crossed 25% (4.0% → 54.2%)",
+      "metrics": {
+        "from": 0.03994991467467601,
+        "to": 0.5418952903933141
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "IP",
+      "name": "IP",
+      "category": "Industrial",
+      "message": "IP now has favorable IRR asymmetry (best 21.5%, worst -4.5%)",
+      "metrics": {
+        "irr_best": 0.21516334967115602,
+        "irr_worst": -0.04463757407134883,
+        "irr_asymmetry_ratio": 5.196018474850097
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "KIST",
+      "name": "KIST",
+      "category": "Materials",
+      "message": "KIST now has favorable IRR asymmetry (best 20.1%, worst -3.1%)",
+      "metrics": {
+        "irr_best": 0.2008187697160828,
+        "irr_worst": -0.03078299060722811,
+        "irr_asymmetry_ratio": 4.6320352064662185
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "KKR",
+      "name": "KKR",
+      "category": "Real Assets",
+      "message": "KKR now has favorable IRR asymmetry (best 27.6%, worst -3.0%)",
+      "metrics": {
+        "irr_best": 0.27609626874390614,
+        "irr_worst": -0.02978149121062601,
+        "irr_asymmetry_ratio": 6.117555199090643
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "KKR",
+      "name": "KKR",
+      "category": "Real Assets",
+      "message": "KKR Best IRR crossed 25% (23.7% → 27.6%)",
+      "metrics": {
+        "from": 0.23671311383602855,
+        "to": 0.27609626874390614
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "OTLY",
+      "name": "OTLY",
+      "category": "Consumo",
+      "message": "OTLY Best IRR crossed 25% (19.9% → 25.9%)",
+      "metrics": {
+        "from": 0.19886677087735927,
+        "to": 0.2588799229082548
+      }
+    },
+    {
+      "type": "ev_fcf_drop",
+      "severity": "medium",
+      "ticker": "ADYEN",
+      "name": "ADYEN",
+      "category": "Fintech",
+      "message": "ADYEN (Top Tier) EV/FCF dropped 32%: 32.8x → 22.3x",
+      "metrics": {
+        "from": 32.81717717592593,
+        "to": 22.330457987249545,
+        "drop_pct": 0.3195497020496097,
+        "rating_composite": 7.8
+      }
+    }
+  ]
 }

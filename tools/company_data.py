@@ -195,7 +195,46 @@ def fetch(ticker, wl_rec=None, offline=False):
             "Historico yfinance %d-%d (%d ejercicios), simbolo %s, moneda de reporte %s."
             % (cd.years[0], cd.years[-1], len(cd.years), sym, cd.currency)
         )
+    _apply_primary(cd)
     return cd
+
+
+def _apply_primary(cd):
+    """27-sep-2026, regla de Roger: las cifras financieras salen de documentos de la compania,
+    nunca de yfinance. Si existe `Inversion Roger/<Empresa>/fuentes/historico_primario.json` con
+    este ticker, sus cifras SUSTITUYEN a las de yfinance (anio a anio y el TTM) y el modelo lo dice.
+    Formato: {"ticker", "fuente", "years": {"2026": {"revenue": .., "ocf": .., ...}}, "ttm": {...}}.
+    Los anios son el anio natural del cierre del ejercicio (FY25 de Inditex, cerrado en ene-2026 -> 2026).
+    """
+    import glob
+    base = Path(__file__).resolve().parents[3] / "Inversión Roger"
+    for f in glob.glob(str(base / "*" / "fuentes" / "historico_primario.json")):
+        try:
+            d = json.loads(Path(f).read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if str(d.get("ticker", "")).upper() != cd.ticker.upper():
+            continue
+        yrs = set(cd.years)
+        for y, vals in d.get("years", {}).items():
+            yi = int(y)
+            yrs.add(yi)
+            for k, v in vals.items():
+                if v is not None:
+                    cd.hist.setdefault(k, {})[yi] = v
+        for k, v in d.get("ttm", {}).items():
+            if v is not None:
+                cd.ttm[k] = v
+        prim_years = sorted(int(y) for y in d.get("years", {}))
+        cd.years = sorted(y for y in yrs if y in prim_years) or sorted(yrs)
+        for y in prim_years:  # los derivados se recalculan con las cifras primarias
+            csh, dbt = cd.h("cash", y), cd.h("debt", y)
+            if csh is not None and dbt is not None:
+                cd.hist.setdefault("net_debt", {})[y] = round(dbt - csh, 1)
+        cd.notes = [n for n in cd.notes if not n.startswith("Historico yfinance")]
+        cd.notes.append("Historico de FUENTE PRIMARIA (%s): %s. yfinance no se usa para cifras."
+                        % (Path(f).name, d.get("fuente", "")))
+        break
 
 
 if __name__ == "__main__":
