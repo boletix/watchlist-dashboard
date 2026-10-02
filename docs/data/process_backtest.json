@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-02T20:55:05+00:00",
+    "generated_at": "2026-10-02T21:03:15+00:00",
     "n_snapshots": 31,
     "first_snapshot": "2026-04-19",
     "last_snapshot": "2026-10-02",
@@ -30,7 +30,7 @@
       "rating_last": 3.96,
       "rating_delta": 1.8900000000000001,
       "geom_first": null,
-      "geom_last": 4.601650321524286,
+      "geom_last": 4.601650321524285,
       "geom_delta": null,
       "price_pct_change": 5.314164455628105
     },
@@ -446,7 +446,7 @@
       "rating_last": 5.29,
       "rating_delta": 0.17999999999999972,
       "geom_first": null,
-      "geom_last": 5.6896295254312825,
+      "geom_last": 5.689629525431281,
       "geom_delta": null,
       "price_pct_change": -0.044564882347493784
     },
@@ -563,7 +563,7 @@
       "rating_last": 7.48,
       "rating_delta": 0.13000000000000078,
       "geom_first": null,
-      "geom_last": 8.047568403718214,
+      "geom_last": 8.047568403718216,
       "geom_delta": null,
       "price_pct_change": 2.1694915452101347
     },
@@ -3740,10 +3740,10 @@
         "rating_composite": 7.76,
         "composite_geometric": 8.002603319415776,
         "survival_score": 0.9111111111111111,
-        "score_v2": 46.05275877961716,
-        "irr_best_repriced": 0.04834999631727066,
-        "ev_fcf": 29.87722680460693,
-        "edge_to_fair": -0.14159885362555036,
+        "score_v2": 46.04892126653585,
+        "irr_best_repriced": 0.04832393052553785,
+        "ev_fcf": 29.868881124938394,
+        "edge_to_fair": -0.14170556318327354,
         "price": 44.400001525878906
       }
     ],
@@ -7511,9 +7511,9 @@
       {
         "date": "2026-10-02",
         "rating_composite": 7.48,
-        "composite_geometric": 8.047568403718214,
-        "survival_score": 0.8555555555555555,
-        "score_v2": 42.166602237516486,
+        "composite_geometric": 8.047568403718216,
+        "survival_score": 0.8555555555555556,
+        "score_v2": 42.1666022375165,
         "irr_best_repriced": -0.040517987309346304,
         "ev_fcf": 15.536215657727888,
         "edge_to_fair": -0.47317051963727785,
@@ -8540,8 +8540,8 @@
       {
         "date": "2026-10-02",
         "rating_composite": 6.75,
-        "composite_geometric": 7.178161799850738,
-        "survival_score": 0.8555555555555555,
+        "composite_geometric": 7.178161799850739,
+        "survival_score": 0.8555555555555556,
         "score_v2": 61.03623863802301,
         "irr_best_repriced": 0.3080319252663226,
         "ev_fcf": 24.216178728813556,
@@ -9227,7 +9227,7 @@
         "date": "2026-10-02",
         "rating_composite": 6.43,
         "composite_geometric": 6.938373212957774,
-        "survival_score": 0.7833333333333332,
+        "survival_score": 0.7833333333333333,
         "score_v2": 37.427651359125456,
         "irr_best_repriced": -0.14591534223982483,
         "ev_fcf": 22.767336703382018,
@@ -9573,7 +9573,7 @@
         "survival_score": 0.8222222222222223,
         "score_v2": 60.03221152801852,
         "irr_best_repriced": 0.2776831594804825,
-        "ev_fcf": 23.220917851200003,
+        "ev_fcf": 23.2263036648,
         "edge_to_fair": 0.7162523481614658,
         "price": 90.29000091552734
       }
@@ -10943,10 +10943,10 @@
         "rating_composite": 6.38,
         "composite_geometric": 6.933937741369901,
         "survival_score": 0.8333333333333334,
-        "score_v2": 39.000310800710224,
-        "irr_best_repriced": -0.000256606673046722,
-        "ev_fcf": 42.47160878246793,
-        "edge_to_fair": -0.38809930139059334,
+        "score_v2": 38.99992764864319,
+        "irr_best_repriced": -0.00033865266078259015,
+        "ev_fcf": 42.4543279411389,
+        "edge_to_fair": -0.3883503445984674,
         "price": 81.9000015258789
       }
     ],
@@ -11285,10 +11285,10 @@
         "date": "2026-10-02",
         "rating_composite": 6.16,
         "composite_geometric": 6.435737570130742,
-        "survival_score": 0.8500000000000001,
-        "score_v2": 39.44761128323018,
+        "survival_score": 0.85,
+        "score_v2": 39.447611283230174,
         "irr_best_repriced": 0.054831659625177664,
-        "ev_fcf": 32.08377538590292,
+        "ev_fcf": 32.09931740127705,
         "edge_to_fair": -0.09898956092036648,
         "price": 281.1600036621094
       }
@@ -11971,11 +11971,11 @@
         "date": "2026-10-02",
         "rating_composite": 5.81,
         "composite_geometric": 6.2454885961930895,
-        "survival_score": 0.638888888888889,
-        "score_v2": 68.13115330482657,
-        "irr_best_repriced": 0.39655764999253007,
-        "ev_fcf": 7.621880334193939,
-        "edge_to_fair": 1.1843243557655927,
+        "survival_score": 0.6388888888888888,
+        "score_v2": 68.14183958717514,
+        "irr_best_repriced": 0.39657635715644224,
+        "ev_fcf": 7.621124182861255,
+        "edge_to_fair": 1.1844706569530086,
         "price": 94.05000305175781
       }
     ],
@@ -12656,9 +12656,9 @@
       {
         "date": "2026-10-02",
         "rating_composite": 5.8,
-        "composite_geometric": 6.317092023378018,
-        "survival_score": 0.6944444444444445,
-        "score_v2": 34.80775984602868,
+        "composite_geometric": 6.317092023378017,
+        "survival_score": 0.6944444444444443,
+        "score_v2": 34.807759846028674,
         "irr_best_repriced": 0.08355138682683094,
         "ev_fcf": 45.490431978741334,
         "edge_to_fair": -0.020836470180467637,
@@ -13689,7 +13689,7 @@
         "survival_score": 0.7555555555555555,
         "score_v2": 41.51670719996628,
         "irr_best_repriced": 0.08022840572578005,
-        "ev_fcf": 26.666551486618875,
+        "ev_fcf": 26.682787349322023,
         "edge_to_fair": 0.08377256359729035,
         "price": 472.8900146484375
       }
@@ -14372,7 +14372,7 @@
         "date": "2026-10-02",
         "rating_composite": 5.52,
         "composite_geometric": 5.972412132013625,
-        "survival_score": 0.8555555555555555,
+        "survival_score": 0.8555555555555556,
         "score_v2": 43.23147578320617,
         "irr_best_repriced": 0.05613574205936511,
         "ev_fcf": 16.95181451612903,
@@ -15400,9 +15400,9 @@
       {
         "date": "2026-10-02",
         "rating_composite": 5.29,
-        "composite_geometric": 5.6896295254312825,
-        "survival_score": 0.6944444444444445,
-        "score_v2": 46.713206548279935,
+        "composite_geometric": 5.689629525431281,
+        "survival_score": 0.6944444444444443,
+        "score_v2": 46.71320654827993,
         "irr_best_repriced": 0.09781041226150333,
         "ev_fcf": 15.0188483073368,
         "edge_to_fair": -0.1491491741937373,
@@ -16431,10 +16431,10 @@
         "rating_composite": 5.56,
         "composite_geometric": 5.739813596960818,
         "survival_score": 0.7444444444444445,
-        "score_v2": 33.89791620295162,
-        "irr_best_repriced": 0.017624547290970405,
-        "ev_fcf": 14.358451822163353,
-        "edge_to_fair": -0.28622081552964407,
+        "score_v2": 33.89747886693879,
+        "irr_best_repriced": 0.017557423731283217,
+        "ev_fcf": 14.354486378101544,
+        "edge_to_fair": -0.2864561925145379,
         "price": 43.599998474121094
       }
     ],
@@ -17805,7 +17805,7 @@
         "survival_score": 0.8111111111111112,
         "score_v2": 46.13450160814206,
         "irr_best_repriced": 0.08956548923815566,
-        "ev_fcf": 41.557765354811714,
+        "ev_fcf": 41.55128995062762,
         "edge_to_fair": -0.05830303383821944,
         "price": 223.3300018310547
       }
@@ -19174,8 +19174,8 @@
         "date": "2026-10-02",
         "rating_composite": 3.49,
         "composite_geometric": 4.153995281480883,
-        "survival_score": 0.6999999999999998,
-        "score_v2": 28.685808152237012,
+        "survival_score": 0.7000000000000001,
+        "score_v2": 28.68580815223702,
         "irr_best_repriced": -0.038625901140644014,
         "ev_fcf": 9.783837288135594,
         "edge_to_fair": null,
@@ -19860,7 +19860,7 @@
         "date": "2026-10-02",
         "rating_composite": 3.09,
         "composite_geometric": 4.041058587560053,
-        "survival_score": 0.6444444444444444,
+        "survival_score": 0.6444444444444445,
         "score_v2": 71.64116696095168,
         "irr_best_repriced": 0.48070099675630895,
         "ev_fcf": 6.949605012258239,
@@ -20202,8 +20202,8 @@
       {
         "date": "2026-10-02",
         "rating_composite": 3.96,
-        "composite_geometric": 4.601650321524286,
-        "survival_score": 0.8000000000000002,
+        "composite_geometric": 4.601650321524285,
+        "survival_score": 0.7999999999999999,
         "score_v2": 48.32524424696818,
         "irr_best_repriced": 0.21959146588354295,
         "ev_fcf": 20.77878551635992,
@@ -20889,7 +20889,7 @@
         "date": "2026-10-02",
         "rating_composite": 2.33,
         "composite_geometric": 2.66375376372668,
-        "survival_score": 0.638888888888889,
+        "survival_score": 0.6388888888888888,
         "score_v2": 46.54029091906587,
         "irr_best_repriced": 0.2479535842983358,
         "ev_fcf": 9.619104187058184,
@@ -21234,9 +21234,9 @@
         "composite_geometric": 2.642535657788983,
         "survival_score": 0.45,
         "score_v2": 0.0,
-        "irr_best_repriced": 0.15196749325747616,
-        "ev_fcf": 64.14221720431163,
-        "edge_to_fair": -0.029631576147028937,
+        "irr_best_repriced": 0.15189150829917564,
+        "ev_fcf": 64.12678036811045,
+        "edge_to_fair": -0.029951566416865805,
         "price": 34.88999938964844
       }
     ],
@@ -21864,10 +21864,10 @@
         "rating_composite": 8.45,
         "composite_geometric": 8.824512996529311,
         "survival_score": 0.9500000000000001,
-        "score_v2": 65.74052255190952,
-        "irr_best_repriced": 0.21294511561805285,
-        "ev_fcf": 16.376469984836643,
-        "edge_to_fair": 0.4831715220128212,
+        "score_v2": 65.72572592397566,
+        "irr_best_repriced": 0.21286510851319052,
+        "ev_fcf": 16.371910157976213,
+        "edge_to_fair": 0.4826824289592171,
         "price": 2981.2099609375
       }
     ],
@@ -22176,9 +22176,9 @@
       {
         "date": "2026-10-02",
         "rating_composite": 5.38,
-        "composite_geometric": 6.280681562875918,
-        "survival_score": 0.8000000000000002,
-        "score_v2": 52.903838124180304,
+        "composite_geometric": 6.280681562875917,
+        "survival_score": 0.7999999999999999,
+        "score_v2": 52.90383812418029,
         "irr_best_repriced": 0.21516335908861062,
         "ev_fcf": 16.918660674522553,
         "edge_to_fair": 0.4521352381864925,
@@ -22483,7 +22483,7 @@
         "survival_score": 0.7166666666666668,
         "score_v2": 32.049528415410386,
         "irr_best_repriced": 0.10150956838392733,
-        "ev_fcf": 29.7420510701107,
+        "ev_fcf": 29.709011881918816,
         "edge_to_fair": -0.09099622842057509,
         "price": 83.72000122070312
       }
@@ -22750,13 +22750,13 @@
     "VYLR": [
       {
         "date": "2026-10-02",
-        "rating_composite": 5.81,
-        "composite_geometric": 6.182439421651987,
-        "survival_score": 0.8944444444444445,
-        "score_v2": 45.22689120467141,
-        "irr_best_repriced": 0.08645449086799584,
+        "rating_composite": 6.31,
+        "composite_geometric": 6.907923754356368,
+        "survival_score": 0.9111111111111111,
+        "score_v2": 48.31174119498666,
+        "irr_best_repriced": 0.08820810587282191,
         "ev_fcf": 40.03886364820847,
-        "edge_to_fair": -0.09864262086315112,
+        "edge_to_fair": -0.055363055570248676,
         "price": 67.26000213623047
       }
     ]

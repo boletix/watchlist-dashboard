@@ -1,10 +1,17 @@
 {
   "meta": {
-    "n_updates": 259,
+    "n_updates": 260,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "VYLR",
+      "date": "46297",
+      "fields_changed": "ALTA por sustitucion de CTVA. A (tipo de dato), AP-AV, AZ, BQ-BT, ratings R1/R2/R3, BD/BF",
+      "source": "Form 10 de Vylor (EDGAR, 21-sep-2026) y 8-K de Corteva del 1-oct-2026",
+      "summary": "Vylor sustituye a Corteva (escision del 1-oct-2026; la semilla, con el foso de la tesis, es Vylor). Roger: 'rehaz todo con Vylor, sin tocar los multiplos'. RATINGS (solo lo que cambia con la escision; New Corteva se lleva la proteccion de cultivos, los genericos, el acuerdo con la FTC y los pasivos heredados de DuPont): R1 MOAT 6->7 (recompra anual obligada de semilla hibrida, Pioneer n1 en maiz y soja de EE.UU., Enlist E3 en ~65% de la soja de EE.UU.), Optionality 1->2 (2a cartera de patentes de edicion genetica, trigo hibrido en 2027, licencias hacia +1.000 M$ netos en 2035). R2 Financials 11->12 (EBITDA de segmento 26,6% y +340 pb en 2025; FCF ~19% de ventas frente a 3% de proteccion de cultivos), MOAT 15->16, Potential 11->12, Risks -11->-9 (sin genericos, FTC ni pasivos de DuPont; quedan aprobaciones regulatorias, clima, Brasil y la deuda nueva). R3 Financing -> 3->2 (5.659 M$ de deuda nueva por la escision, 3.499 pagados a New Corteva), MOAT Structural 12->13, Terminal Risk -4->-3. Resto sin cambio. Compuesto 5,81 -> 6,31. FCF@5y 2.046/3.295 -> 2.200/3.320 sobre un FCF limpio de ~1.900 (+3% / +12% anual). Multiplos 14x / 22x SIN CAMBIO. Test del bajista: valor 39,3 $ frente a 67,26 $, -41% (cumple el minimo del 15%). Multiplos dentro del anclaje 0,75x / 1,25x del EV/FCF limpio de hoy (~26x)."
+    },
     {
       "ticker": "RCL",
       "date": "46272",

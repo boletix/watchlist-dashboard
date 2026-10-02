@@ -345,6 +345,8 @@ VERDICTS = {
                  alert="45 EUR (caso base al 10% anual)", catalyst="9M FY26 (2-dic-2026): margen bruto del 3T, gastos vs ventas, crecimiento de Zara"),
     "NKE":  dict(conviction="3/5", terminal="MEDIO", sizing="0-1% hasta el Investor Day (16-17 nov); 2% si da margen EBIT de doble digito y el margen bruto del Q2 sube (pendiente de Roger)",
                  alert="hechos, no precio: objetivo de margen en el Investor Day", catalyst="Investor Day 16-17 nov 2026; Q2 FY27 ~18-dic"),
+    "VYLR": dict(conviction="3,5/5", terminal="BAJO", sizing="0-1%",
+                 alert="51 $ (alcista al 15% anual)", catalyst="Primer 10-Q como empresa separada (~5-nov-2026): FCF sin Bayer y regalias"),
     "NTO":  dict(conviction="4/5", terminal="MUY BAJO", sizing="0%",
                  alert="—", catalyst="Ciclo Switch 2"),
     "SU":   dict(conviction="4/5", terminal="BAJO", sizing="2-3%", alert="—", catalyst="Q3 2026"),
