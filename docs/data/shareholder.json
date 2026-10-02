@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-10-02T20:21:30+00:00",
+    "generated_at": "2026-10-02T20:48:44+00:00",
     "n_tickers": 71,
-    "n_with_data": 71
+    "n_with_data": 70
   },
   "companies": {
     "VEEV": {
@@ -398,10 +398,10 @@
       "currency": "EUR"
     },
     "VRLA": {
-      "buyback_yield_ttm": -0.06784735737011036,
-      "dividend_yield": null,
+      "buyback_yield_ttm": -0.0009627174751651734,
+      "dividend_yield": 0.061200000000000004,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.06784735737011036,
+      "net_shareholder_return": 0.06023728252483483,
       "currency": "EUR"
     },
     "KIST": {
@@ -488,11 +488,11 @@
       "net_shareholder_return": 0.012568870427503374,
       "currency": "EUR"
     },
-    "CTVA": {
-      "buyback_yield_ttm": 0.019591741480028298,
-      "dividend_yield": 0.057300000000000004,
+    "VYLR": {
+      "buyback_yield_ttm": null,
+      "dividend_yield": null,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.07689174148002831,
+      "net_shareholder_return": null,
       "currency": "USD"
     },
     "RCL": {

@@ -168,6 +168,22 @@ def apply_quotes(df: pd.DataFrame, quotes: dict, currencies: dict | None = None)
             if cur:
                 out.at[idx, "price_currency"] = cur
         new_price = quote["price"]
+        # 2-oct-2026: guarda contra tickers mal mapeados. Corticeira salio con el precio de
+        # Cencora (304 $ frente a 7 EUR) y Verallia con el de Valneva (2,5 frente a 16 EUR)
+        # durante semanas. Si yfinance difiere del precio vinculado del Excel en mas de 3x,
+        # casi seguro es otra empresa: se mantiene el del Excel y se avisa.
+        old_price = row.get("price")
+        try:
+            ratio = float(new_price) / float(old_price)
+        except (TypeError, ValueError, ZeroDivisionError):
+            ratio = None
+        if ratio is not None and ratio > 0 and not (1 / 3 <= ratio <= 3):
+            log.warning("Precio de yfinance %.4g frente a %.4g del Excel para %s (x%.1f): "
+                        "posible ticker equivocado en src/tickers.py; se mantiene el del Excel",
+                        new_price, old_price, row["ticker"], ratio)
+            out.at[idx, "price_source"] = "excel (guarda)"
+            out.at[idx, "price_currency"] = None
+            continue
         out.at[idx, "price"] = new_price
         out.at[idx, "price_source"] = quote["source"]
         if "shares_out_m" in out.columns and pd.notna(row["shares_out_m"]):

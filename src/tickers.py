@@ -19,7 +19,7 @@ TICKER_YF_OVERRIDE: dict[str, str] = {
     "SU": "SU.PA",
     "SGO": "SGO.PA",
     "TFF": "TFF.PA",
-    "VRLA": "VLA.PA",
+    "VRLA": "VRLA.PA",   # 2-oct-2026: era VLA.PA, que es VALNEVA (~2,5 EUR), no Verallia (~16 EUR)
     "RAA": "RAA.DE",
     "EVD": "EVD.DE",
     "ABBNE": "ABBN.SW",

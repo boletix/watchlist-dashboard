@@ -45,7 +45,7 @@ FOLDER = {
     "PRY": "Prysmian", "RBT": "Robertet", "ROKO B": "Roko AB", "IP": "Interpump Group",
     "USPH": "US Physical Therapy", "SOM": "Somero", "KKR": "KKR", "META": "Meta",
     "GOOG": "Alphabet", "NFLX": "Netflix", "SPOT": "Spotify", "UBER": "Uber",
-    "RCL": "Royal Caribbean", "KSPI": "Kaspi.kz", "JDG": "Judges", "NKE": "Nike",
+    "RCL": "Royal Caribbean", "KSPI": "Kaspi.kz", "JDG": "Judges", "NKE": "Nike", "VYLR": "Corteva",
 }
 NICE = {
     "CSU": "Constellation Software", "VEEV": "Veeva Systems", "COST": "Costco Wholesale",
@@ -55,7 +55,7 @@ NICE = {
     "NTO": "Nintendo", "SU": "Schneider Electric", "MNST": "Monster Beverage",
     "DNP": "Dino Polska", "VLTO": "Veralto", "ABNB": "Airbnb", "ZS": "Zscaler",
     "SAP": "SAP SE", "FICO": "Fair Isaac Corporation", "LR": "Legrand",
-    "RCL": "Royal Caribbean Group", "KSPI": "Kaspi.kz", "UBER": "Uber Technologies", "JDG": "Judges Scientific", "NKE": "NIKE, Inc.",
+    "RCL": "Royal Caribbean Group", "KSPI": "Kaspi.kz", "UBER": "Uber Technologies", "JDG": "Judges Scientific", "NKE": "NIKE, Inc.", "VYLR": "Vylor (semillas de Corteva)",
 }
 
 # Empresas cuyo crecimiento viene sobre todo de comprar, no de crecer organicamente.

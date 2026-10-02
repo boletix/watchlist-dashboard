@@ -39,7 +39,9 @@ def _hierarchical_clusters(corr_matrix, threshold=0.75):
     tickers = corr_matrix.columns.tolist()
     if len(tickers) < 3:
         return {t: 0 for t in tickers}
-    dist = 1.0 - corr_matrix.abs().values
+    # Un par sin datos comunes da NaN y scipy exige distancias finitas: se trata como
+    # correlacion 0 (distancia 1, sin relacion conocida).
+    dist = 1.0 - corr_matrix.abs().fillna(0.0).values
     np.fill_diagonal(dist, 0.0)
     dist = (dist + dist.T) / 2.0
     condensed = squareform(dist, checks=False)
@@ -86,9 +88,16 @@ def build_correlations(df_meta, output_path="docs/data/correlations.json"):
     valid_yf = [c for c in returns_1y.columns if c in yf_to_excel]
     returns_1y = returns_1y[valid_yf]
     returns_1y.columns = [yf_to_excel[c] for c in returns_1y.columns]
-    corr_1y = returns_1y.corr()
-
-    clusters = _hierarchical_clusters(corr_1y, threshold=0.75)
+    # 2-oct-2026: Vylor (escindida de Corteva el 1-oct) entro con dos dias de cotizacion y su
+    # correlacion era NaN con todo; scipy fallaba y el build se quedaba SIN clusters para las
+    # 71. Ahora se exige un minimo de observaciones comunes y las de historico corto quedan
+    # fuera de los clusters (siguen en la matriz con 0).
+    MIN_OBS = 60
+    corr_1y = returns_1y.corr(min_periods=MIN_OBS)
+    corto = [t for t in corr_1y.columns if corr_1y[t].drop(t).isna().all()]
+    if corto:
+        log.info("Correlaciones: historico corto (<%d dias), fuera de los clusters: %s", MIN_OBS, corto)
+    clusters = _hierarchical_clusters(corr_1y.drop(index=corto, columns=corto), threshold=0.75)
     redundant = _redundant_with(corr_1y, threshold=0.75)
     tickers = corr_1y.columns.tolist()
     matrix = corr_1y.round(3).fillna(0).values.tolist()

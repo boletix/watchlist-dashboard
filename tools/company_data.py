@@ -36,7 +36,7 @@ FIN_OVERRIDE = {
     "HLMA": "HLMA.L", "JDG": "JDG.L", "SOM": "SOM.L", "WOSG": "WOSG.L", "KIST": "KIST.L",
     "LOTB": "LOTB.BR", "PRY": "PRY.MI", "CPR": "CPR.MI", "TGYM": "TGYM.MI", "IP": "IP.MI",
     "VID": "VID.MC", "CBAV": "CBAV.MC", "RBT": "RBT.PA", "LR": "LR.PA", "SGO": "SGO.PA",
-    "TFF": "TFF.PA", "VRLA": "VLA.PA", "MIPS": "MIPS.ST", "ABBNE": "ABBN.SW",
+    "TFF": "TFF.PA", "VRLA": "VRLA.PA", "MIPS": "MIPS.ST", "ABBNE": "ABBN.SW",
     "STMN": "STMN.SW", "SIKA": "SIKA.SW", "JFN": "JFN.SW", "BFIT": "BFIT.AS",
     "DNP": "DNP.WA", "KSPI": "KSPI", "TFPM": "TFPM.TO", "IPCO": "IPCO.TO",
     "COR": "COR.LS", "KRX": "KRX.IR", "TOI": "TOI.V", "LMN": "LMN.V",

@@ -1,7 +1,7 @@
 {
  "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Se regenera en cada build.",
  "fields": "earnings_last_date (ISO), earnings_next_date (ISO), earnings_updated_at (ISO), earnings_next_estimated (bool)",
- "generated_at": "2026-10-02T20:19:11+00:00",
+ "generated_at": "2026-10-02T20:44:17+00:00",
  "companies": {
   "VEEV": {
    "earnings_last_date": "2026-08-26",
@@ -341,7 +341,7 @@
   },
   "VRLA": {
    "earnings_last_date": "2026-07-28",
-   "earnings_next_date": "2026-10-28",
+   "earnings_next_date": "2026-10-27",
    "earnings_updated_at": "2026-07-29",
    "earnings_next_estimated": true
   },
@@ -417,11 +417,11 @@
    "earnings_updated_at": "2026-08-26",
    "earnings_next_estimated": true
   },
-  "CTVA": {
+  "VYLR": {
    "earnings_last_date": "2026-08-05",
-   "earnings_next_date": "2026-11-04",
+   "earnings_next_date": "2026-11-05",
    "earnings_updated_at": "2026-08-26",
-   "earnings_next_estimated": true
+   "earnings_next_estimated": false
   },
   "RCL": {
    "earnings_last_date": "2026-07-28",

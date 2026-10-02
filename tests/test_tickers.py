@@ -49,6 +49,20 @@ def test_non_usd_rows_resolve_to_a_non_us_listing():
     ("IP", "IP.MI"),     # International Paper si falta
     ("LR", "LR.PA"),     # Leroy Seafood si falta
     ("SAP", "SAP.DE"),   # el ADR en USD si falta
+    ("VRLA", "VRLA.PA"), # VLA.PA es Valneva: estuvo mal hasta el 2-oct-2026
 ])
 def test_ambiguous_tickers_have_the_right_listing(excel, yf):
     assert TICKER_YF_OVERRIDE[excel] == yf
+
+
+def test_price_guard_keeps_excel_price_when_yfinance_is_another_company():
+    import pandas as pd
+    from src.enrich import apply_quotes
+    df = pd.DataFrame([{"ticker": "VRLA", "price": 16.4, "shares_out_m": 127.6},
+                       {"ticker": "ITX", "price": 53.0, "shares_out_m": 3116.7}])
+    quotes = {"VRLA": {"price": 2.53, "source": "yfinance"},   # Valneva
+              "ITX": {"price": 53.9, "source": "yfinance"}}
+    out = apply_quotes(df, quotes, {"VRLA": "EUR", "ITX": "EUR"}).set_index("ticker")
+    assert out.loc["VRLA", "price"] == 16.4
+    assert out.loc["VRLA", "price_source"] == "excel (guarda)"
+    assert out.loc["ITX", "price"] == 53.9

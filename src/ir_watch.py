@@ -370,6 +370,13 @@ def check_financials_drift(ticker, yf_symbol, wl_rec, tol_rev=0.03, tol_fcf=0.10
 
     material = ((d_rev is not None and abs(d_rev) > tol_rev)
                 or (d_fcf is not None and abs(d_fcf) > tol_fcf))
+    # 2-oct-2026: desde el 27-sep las filas revisadas llevan en la nota "FUENTE: <documento
+    # de la compania>". Para esas, que yfinance difiera NO es prueba de que el Excel este
+    # desfasado (Inditex: yfinance pierde trimestres; Verallia: trimestres parciales; TSMC:
+    # NT$ frente a USD). Solo se avisa si hay un trimestre posterior a la ultima publicacion.
+    verified = note.startswith("FUENTE")
+    if verified and not quarter_new:
+        return None
     if not (quarter_new or material):
         return None
 
