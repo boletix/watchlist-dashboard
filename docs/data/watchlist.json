@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-02T21:04:25+00:00",
+    "generated_at": "2026-10-03T17:54:20+00:00",
     "n_companies": 71,
     "source_file": "watchlist_ratings.xlsx",
     "validation_issues": [],
@@ -113,7 +113,7 @@
       "n_updates": 260
     },
     "backtest": {
-      "generated_at": "2026-10-02T21:04:40+00:00",
+      "generated_at": "2026-10-03T17:54:37+00:00",
       "start_date": "2020-01-01",
       "end_date": "2026-10-02",
       "n_companies_total": 71,
@@ -129,10 +129,14 @@
       ]
     },
     "history": {
-      "generated_at": "2026-10-02T21:06:39+00:00",
-      "n_with_history": 70,
-      "n_missing": 1,
+      "generated_at": "2026-10-03T17:56:32+00:00",
+      "n_with_history": 69,
+      "n_missing": 2,
       "missing": [
+        {
+          "ticker": "HLMA",
+          "reason": "could not compute multiples"
+        },
         {
           "ticker": "VYLR",
           "reason": "could not compute multiples"
@@ -140,12 +144,12 @@
       ]
     },
     "shareholder": {
-      "generated_at": "2026-10-02T21:07:42+00:00",
+      "generated_at": "2026-10-03T17:57:31+00:00",
       "n_tickers": 71,
       "n_with_data": 70
     },
     "correlations": {
-      "generated_at": "2026-10-02T21:07:44+00:00",
+      "generated_at": "2026-10-03T17:57:33+00:00",
       "n_tickers": 71,
       "n_clusters": 69,
       "redundant_threshold": 0.75
@@ -158,7 +162,7 @@
     "median_composite": 6.16,
     "avg_composite_geometric": 6.492323371213395,
     "avg_survival_score": 0.7980438184663536,
-    "weighted_avg_roic": 0.31230508909293075,
+    "weighted_avg_roic": 0.3246529856247514,
     "median_ev_fcf": 26.217098845541557,
     "pct_best_irr_gt_15pct": 33.80281690140845,
     "n_top_tier": 16,
@@ -492,6 +496,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 44254.53012993164,
       "irr_spread": 0.21669194778198497,
       "irr_asymmetry_ratio": 2.2217267910019087,
       "quadrant": "wonderful_expensive",
@@ -613,6 +618,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 3842942.5213952637,
       "irr_spread": 0.14099715147627945,
       "irr_asymmetry_ratio": 0.7249696820447651,
       "quadrant": "wonderful_expensive",
@@ -652,10 +658,10 @@
       "roic_slope_5y": 0.00018604801663348714,
       "fcf_margin_slope_5y": -2.7637042080542695,
       "earnings_next_estimated": true,
-      "buyback_yield_ttm": 0.0007699527634038636,
+      "buyback_yield_ttm": 0.0009629408426984936,
       "dividend_yield": 0.76,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7607699527634039
+      "net_shareholder_return": 0.7609629408426986
     },
     {
       "ticker": "ADYEN",
@@ -734,6 +740,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 30652.75564396404,
       "irr_spread": 0.2892278880252307,
       "irr_asymmetry_ratio": 4.473945752664799,
       "quadrant": "wonderful_expensive",
@@ -855,6 +862,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 90528.24163023377,
       "irr_spread": 0.20717526899741512,
       "irr_asymmetry_ratio": 4.143505379948302,
       "quadrant": "hunting_ground",
@@ -895,9 +903,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.48990633227456293,
-      "dividend_yield": 0.77,
+      "dividend_yield": 0.76,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.2800936677254371
+      "net_shareholder_return": 0.2700936677254371
     },
     {
       "ticker": "COST",
@@ -976,6 +984,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 408092.85372192384,
       "irr_spread": 0.12283337108424985,
       "irr_asymmetry_ratio": 1.1053790063986668,
       "quadrant": "wonderful_expensive",
@@ -1097,6 +1106,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 6850.728040644074,
       "irr_spread": 0.2348252678708661,
       "irr_asymmetry_ratio": 4.158426456038406,
       "quadrant": "wonderful_expensive",
@@ -1218,6 +1228,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 7353.444564771652,
       "irr_spread": 0.18989751961774481,
       "irr_asymmetry_ratio": 3.142507741559601,
       "quadrant": "wonderful_expensive",
@@ -1258,9 +1269,9 @@
       "fcf_margin_slope_5y": 0.22785092501315748,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0285,
+      "dividend_yield": 0.0279,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0285
+      "net_shareholder_return": 0.0279
     },
     {
       "ticker": "ZS",
@@ -1339,6 +1350,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 32056.555015206908,
       "irr_spread": 0.14207461821440137,
       "irr_asymmetry_ratio": 0.42850010700012314,
       "quadrant": "avoid",
@@ -1460,6 +1472,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 64341.26339580918,
       "irr_spread": 0.15098811780428523,
       "irr_asymmetry_ratio": 1.4715253461608448,
       "quadrant": "wonderful_expensive",
@@ -1500,9 +1513,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.009808457644113448,
-      "dividend_yield": 0.0271,
+      "dividend_yield": 0.0269,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.03690845764411345
+      "net_shareholder_return": 0.03670845764411345
     },
     {
       "ticker": "AMZN",
@@ -1581,6 +1594,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 2712972.737284088,
       "irr_spread": 0.16610110068183204,
       "irr_asymmetry_ratio": 1.5575966180436895,
       "quadrant": "wonderful_expensive",
@@ -1702,6 +1716,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 197362.8286805506,
       "irr_spread": 0.1539586499029475,
       "irr_asymmetry_ratio": 1.1627328342016143,
       "quadrant": "wonderful_expensive",
@@ -1742,9 +1757,9 @@
       "fcf_margin_slope_5y": 0.3914116431298222,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.00223041738728756,
-      "dividend_yield": 0.0144,
+      "dividend_yield": 0.0139,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01216958261271244
+      "net_shareholder_return": 0.01166958261271244
     },
     {
       "ticker": "ITX",
@@ -1823,6 +1838,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 186795.62400725187,
       "irr_spread": 0.12016123464230077,
       "irr_asymmetry_ratio": 2.1057267910910076,
       "quadrant": "wonderful_expensive",
@@ -1863,9 +1879,9 @@
       "fcf_margin_slope_5y": -0.12055847254563848,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0005203037165384361,
-      "dividend_yield": 0.0123,
+      "dividend_yield": 0.012199999999999999,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.011779696283461564
+      "net_shareholder_return": 0.011679696283461563
     },
     {
       "ticker": "LOTB",
@@ -1944,6 +1960,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 11078.554890306472,
       "irr_spread": 0.12725060732775872,
       "irr_asymmetry_ratio": 0.43903038406198436,
       "quadrant": "wonderful_expensive",
@@ -2065,6 +2082,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "GBp",
+      "market_cap_usd_m": 18096.060408800986,
       "irr_spread": 0.16950402993211033,
       "irr_asymmetry_ratio": 1.7628873531065992,
       "quadrant": "wonderful_expensive",
@@ -2096,18 +2114,18 @@
       "ev_fcf_5y_base": 23.994550961689793,
       "score_v2": 46.18135027265291,
       "score_v2_rank": 33,
-      "ev_fcf_zscore_self_5y": 0.9582068113697995,
-      "ev_fcf_mean_5y": 3126.1825000000003,
-      "ev_fcf_std_5y": 745.2436066272223,
-      "ev_sales_zscore_self_5y": 1.7223648753254555,
-      "moat_erosion_flag": true,
-      "roic_slope_5y": 7.438480657654226e-06,
-      "fcf_margin_slope_5y": 1.6121338432599368,
+      "ev_fcf_zscore_self_5y": null,
+      "ev_fcf_mean_5y": null,
+      "ev_fcf_std_5y": null,
+      "ev_sales_zscore_self_5y": null,
+      "moat_erosion_flag": false,
+      "roic_slope_5y": null,
+      "fcf_margin_slope_5y": null,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 6.194836208734506e-05,
-      "dividend_yield": 0.71,
+      "dividend_yield": 0.69,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7100619483620874
+      "net_shareholder_return": 0.6900619483620873
     },
     {
       "ticker": "FICO",
@@ -2186,6 +2204,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 14281.439449999998,
       "irr_spread": 0.3305253853900897,
       "irr_asymmetry_ratio": 2.90318782417952,
       "quadrant": "avoid",
@@ -2307,6 +2326,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "SEK",
+      "market_cap_usd_m": 13547.708596141756,
       "irr_spread": 0.2081417677524917,
       "irr_asymmetry_ratio": 1.727747823428627,
       "quadrant": "wonderful_expensive",
@@ -2347,9 +2367,9 @@
       "fcf_margin_slope_5y": 0.355845282954137,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.85,
+      "dividend_yield": 0.84,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.85
+      "net_shareholder_return": 0.84
     },
     {
       "ticker": "EVD",
@@ -2428,6 +2448,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 5992.569982964778,
       "irr_spread": 0.21566745507629514,
       "irr_asymmetry_ratio": 2.1485320331057407,
       "quadrant": "value_trap",
@@ -2468,9 +2489,9 @@
       "fcf_margin_slope_5y": -4.295079515165537,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0269,
+      "dividend_yield": 0.026000000000000002,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0269
+      "net_shareholder_return": 0.026000000000000002
     },
     {
       "ticker": "MNST",
@@ -2549,6 +2570,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 83991.3243538208,
       "irr_spread": 0.13477375359739774,
       "irr_asymmetry_ratio": 1.1854653366735766,
       "quadrant": "wonderful_expensive",
@@ -2670,6 +2692,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 95766.40093274535,
       "irr_spread": 0.19040011628534015,
       "irr_asymmetry_ratio": 2.384930027712741,
       "quadrant": "avoid",
@@ -2791,6 +2814,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "PLN",
+      "market_cap_usd_m": 8478.562850922926,
       "irr_spread": 0.1529322081215828,
       "irr_asymmetry_ratio": 0.7905508034934048,
       "quadrant": "value_trap",
@@ -2912,6 +2936,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 23082.349718399808,
       "irr_spread": 0.17709845434733507,
       "irr_asymmetry_ratio": 1.701253570075183,
       "quadrant": "avoid",
@@ -3033,6 +3058,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 42674.339316236896,
       "irr_spread": 0.23419375028162315,
       "irr_asymmetry_ratio": 1.4892759605873283,
       "quadrant": "avoid",
@@ -3073,9 +3099,9 @@
       "fcf_margin_slope_5y": -0.7178876718111502,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0018982809032665696,
-      "dividend_yield": 0.017,
+      "dividend_yield": 0.0165,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01889828090326657
+      "net_shareholder_return": 0.01839828090326657
     },
     {
       "ticker": "JDG",
@@ -3154,6 +3180,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "GBp",
+      "market_cap_usd_m": 318.36838334617926,
       "irr_spread": 0.36461355023630315,
       "irr_asymmetry_ratio": 6.444027551873058,
       "quadrant": "avoid",
@@ -3194,9 +3221,9 @@
       "fcf_margin_slope_5y": 1.039060941878357,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0012898789067463316,
-      "dividend_yield": 0.0327,
+      "dividend_yield": 0.032799999999999996,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.03141012109325367
+      "net_shareholder_return": 0.031510121093253664
     },
     {
       "ticker": "STMN",
@@ -3275,6 +3302,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "CHF",
+      "market_cap_usd_m": 17283.551758667276,
       "irr_spread": 0.1439422568247466,
       "irr_asymmetry_ratio": 0.9410461703593314,
       "quadrant": "avoid",
@@ -3315,9 +3343,9 @@
       "fcf_margin_slope_5y": 0.26262119801293093,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 2.634040570508854e-07,
-      "dividend_yield": 0.0109,
+      "dividend_yield": 0.0111,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01090026340405705
+      "net_shareholder_return": 0.01110026340405705
     },
     {
       "ticker": "META",
@@ -3396,6 +3424,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 1854788.2120164793,
       "irr_spread": 0.21711412940330432,
       "irr_asymmetry_ratio": 0.598061999811032,
       "quadrant": "avoid",
@@ -3517,6 +3546,7 @@
       "fcf_basis": "reportado-sbc",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 81047.51914580993,
       "irr_spread": 0.3062581351568163,
       "irr_asymmetry_ratio": 6.1251627031363265,
       "quadrant": "avoid",
@@ -3557,9 +3587,9 @@
       "fcf_margin_slope_5y": -14.968355837599857,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.003624806772649062,
-      "dividend_yield": 0.85,
+      "dividend_yield": 0.86,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.8463751932273509
+      "net_shareholder_return": 0.8563751932273509
     },
     {
       "ticker": "NET",
@@ -3638,6 +3668,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 124296.74348700562,
       "irr_spread": 0.6254598049570367,
       "irr_asymmetry_ratio": 0.6317775807646835,
       "quadrant": "avoid",
@@ -3759,6 +3790,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 276503.4161494446,
       "irr_spread": 0.09341702140826103,
       "irr_asymmetry_ratio": 0.20821799138487934,
       "quadrant": "avoid",
@@ -3880,6 +3912,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 4162480.574645996,
       "irr_spread": 0.11755604940525499,
       "irr_asymmetry_ratio": 0.4085495750080399,
       "quadrant": "avoid",
@@ -4001,6 +4034,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "CHF",
+      "market_cap_usd_m": 180229.22740222936,
       "irr_spread": 0.17780670194751647,
       "irr_asymmetry_ratio": 0.9953173989069168,
       "quadrant": "avoid",
@@ -4032,18 +4066,18 @@
       "ev_fcf_5y_base": 30.134149209354618,
       "score_v2": 39.000074132520126,
       "score_v2_rank": 56,
-      "ev_fcf_zscore_self_5y": -0.09856250327827928,
-      "ev_fcf_mean_5y": 40.48,
-      "ev_fcf_std_5y": 29.220037075039222,
-      "ev_sales_zscore_self_5y": 1.4815627313982243,
+      "ev_fcf_zscore_self_5y": -0.12529098948364528,
+      "ev_fcf_mean_5y": 40.675,
+      "ev_fcf_std_5y": 29.17208982915005,
+      "ev_sales_zscore_self_5y": 1.3636532216236776,
       "moat_erosion_flag": true,
-      "roic_slope_5y": 0.0020691869014165996,
-      "fcf_margin_slope_5y": 2.3498481975311396,
+      "roic_slope_5y": 0.001959762624008048,
+      "fcf_margin_slope_5y": 2.347047225203852,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.010907923578449916,
-      "dividend_yield": 0.0118,
+      "dividend_yield": 0.0115,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.022707923578449918
+      "net_shareholder_return": 0.022407923578449916
     },
     {
       "ticker": "GRMN",
@@ -4122,6 +4156,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 54222.40960624695,
       "irr_spread": 0.1455283480953129,
       "irr_asymmetry_ratio": 1.6045608164878447,
       "quadrant": "avoid",
@@ -4153,13 +4188,13 @@
       "ev_fcf_5y_base": 24.228866617431233,
       "score_v2": 39.44761128323018,
       "score_v2_rank": 54,
-      "ev_fcf_zscore_self_5y": 0.011366179393190139,
-      "ev_fcf_mean_5y": 27.796666666666667,
-      "ev_fcf_std_5y": 4.692283263212294,
+      "ev_fcf_zscore_self_5y": 0.009590249555899724,
+      "ev_fcf_mean_5y": 27.795,
+      "ev_fcf_std_5y": 4.69226579951875,
       "ev_sales_zscore_self_5y": 0.6485946480004718,
       "moat_erosion_flag": true,
-      "roic_slope_5y": -0.002228384394947169,
-      "fcf_margin_slope_5y": 1.5808275839663761,
+      "roic_slope_5y": -0.002226560773423334,
+      "fcf_margin_slope_5y": 1.5818871080717247,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0007897416713427686,
       "dividend_yield": 0.0149,
@@ -4243,6 +4278,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 20819.488295898438,
       "irr_spread": 0.20306117467424856,
       "irr_asymmetry_ratio": 0.9709396063262431,
       "quadrant": "avoid",
@@ -4283,9 +4319,9 @@
       "fcf_margin_slope_5y": -0.5712248712663038,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 0.010253213976411582,
-      "dividend_yield": 0.56,
+      "dividend_yield": 0.55,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.5702532139764116
+      "net_shareholder_return": 0.5602532139764116
     },
     {
       "ticker": "KSPI",
@@ -4364,6 +4400,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 17806.816252799985,
       "irr_spread": 0.41781619748553045,
       "irr_asymmetry_ratio": 8.356323949710609,
       "quadrant": "value_trap",
@@ -4404,9 +4441,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.0011167654441912016,
-      "dividend_yield": 0.062400000000000004,
+      "dividend_yield": 0.061,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0612832345558088
+      "net_shareholder_return": 0.059883234555808795
     },
     {
       "ticker": "CBAV",
@@ -4485,6 +4522,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 1020.7152947326063,
       "irr_spread": 0.172137566162894,
       "irr_asymmetry_ratio": 3.44275132325788,
       "quadrant": "value_trap",
@@ -4516,18 +4554,18 @@
       "ev_fcf_5y_base": 11.695742270632657,
       "score_v2": 53.84703204623309,
       "score_v2_rank": 12,
-      "ev_fcf_zscore_self_5y": 1.1328879064342585,
-      "ev_fcf_mean_5y": 14.686666666666667,
-      "ev_fcf_std_5y": 4.557673626850533,
-      "ev_sales_zscore_self_5y": 1.1568932138142007,
+      "ev_fcf_zscore_self_5y": 1.1331356994206192,
+      "ev_fcf_mean_5y": 14.693333333333333,
+      "ev_fcf_std_5y": 4.559618648771212,
+      "ev_sales_zscore_self_5y": 1.1522750639291288,
       "moat_erosion_flag": true,
-      "roic_slope_5y": -0.024959662886272382,
-      "fcf_margin_slope_5y": -1.1692073658724031,
+      "roic_slope_5y": -0.02495514864750548,
+      "fcf_margin_slope_5y": -1.1624767376209835,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0015787270454156797,
-      "dividend_yield": 0.028300000000000002,
+      "dividend_yield": 0.0282,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.026721272954584322
+      "net_shareholder_return": 0.02662127295458432
     },
     {
       "ticker": "NVDA",
@@ -4606,6 +4644,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 5638194.926452637,
       "irr_spread": 0.16840076405571414,
       "irr_asymmetry_ratio": 1.9847023507425945,
       "quadrant": "avoid",
@@ -4727,6 +4766,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 1036.0913913516379,
       "irr_spread": 0.1917363353770436,
       "irr_asymmetry_ratio": 2.2304837586543345,
       "quadrant": "value_trap",
@@ -4767,9 +4807,9 @@
       "fcf_margin_slope_5y": 10.60792175045757,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0501,
+      "dividend_yield": 0.0506,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0501
+      "net_shareholder_return": 0.0506
     },
     {
       "ticker": "TSM",
@@ -4848,6 +4888,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 2452061.171388855,
       "irr_spread": 0.14762802227931193,
       "irr_asymmetry_ratio": 1.2348515050960367,
       "quadrant": "avoid",
@@ -4888,9 +4929,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 8.048553850928476e-06,
-      "dividend_yield": 0.89,
+      "dividend_yield": 0.86,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.890008048553851
+      "net_shareholder_return": 0.8600080485538509
     },
     {
       "ticker": "SPOT",
@@ -4969,6 +5010,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 97195.07084875488,
       "irr_spread": 0.12422074634862312,
       "irr_asymmetry_ratio": 2.4844149269724625,
       "quadrant": "avoid",
@@ -5000,13 +5042,13 @@
       "ev_fcf_5y_base": 19.517587360872106,
       "score_v2": 41.52745359873201,
       "score_v2_rank": 50,
-      "ev_fcf_zscore_self_5y": -0.4805867521119331,
-      "ev_fcf_mean_5y": 174.05833333333337,
-      "ev_fcf_std_5y": 302.8346759326319,
+      "ev_fcf_zscore_self_5y": -0.48056661668963446,
+      "ev_fcf_mean_5y": 174.025,
+      "ev_fcf_std_5y": 302.77800193926464,
       "ev_sales_zscore_self_5y": 0.37302762233865894,
       "moat_erosion_flag": true,
-      "roic_slope_5y": 0.008735639593342313,
-      "fcf_margin_slope_5y": 5.335740258720506,
+      "roic_slope_5y": 0.008737152953869462,
+      "fcf_margin_slope_5y": 5.336700543230514,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.009753115181098736,
       "dividend_yield": null,
@@ -5090,6 +5132,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 45131.41442907453,
       "irr_spread": 0.2112501681227431,
       "irr_asymmetry_ratio": 4.225003362454862,
       "quadrant": "avoid",
@@ -5130,9 +5173,9 @@
       "fcf_margin_slope_5y": 1.1577281504872932,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0003582043695307712,
-      "dividend_yield": 0.72,
+      "dividend_yield": 0.69,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7203582043695308
+      "net_shareholder_return": 0.6903582043695308
     },
     {
       "ticker": "JFN",
@@ -5211,6 +5254,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "CHF",
+      "market_cap_usd_m": 1612.851190958619,
       "irr_spread": 0.13336835890212329,
       "irr_asymmetry_ratio": 1.726839829519887,
       "quadrant": "value_trap",
@@ -5251,9 +5295,9 @@
       "fcf_margin_slope_5y": -1.3923358345022152,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.027769586990563862,
-      "dividend_yield": 0.037599999999999995,
+      "dividend_yield": 0.0371,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.009830413009436132
+      "net_shareholder_return": 0.009330413009436139
     },
     {
       "ticker": "CPR",
@@ -5332,6 +5376,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 8366.467579832344,
       "irr_spread": 0.17112074549207035,
       "irr_asymmetry_ratio": 1.6190812320104717,
       "quadrant": "value_trap",
@@ -5453,6 +5498,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "CHF",
+      "market_cap_usd_m": 35602.66370878347,
       "irr_spread": 0.14253673288264257,
       "irr_asymmetry_ratio": 2.639134445070438,
       "quadrant": "avoid",
@@ -5493,9 +5539,9 @@
       "fcf_margin_slope_5y": 1.0873854972739567,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 3.287117668061136e-05,
-      "dividend_yield": 0.0207,
+      "dividend_yield": 0.020099999999999996,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02073287117668061
+      "net_shareholder_return": 0.020132871176680608
     },
     {
       "ticker": "CHKP",
@@ -5574,6 +5620,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 13308.813833172608,
       "irr_spread": 0.24389663003014517,
       "irr_asymmetry_ratio": 1.6695390634356921,
       "quadrant": "value_trap",
@@ -5695,6 +5742,7 @@
       "fcf_basis": "reportado-sbc",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 2930.5015867168386,
       "irr_spread": 0.17085505507952825,
       "irr_asymmetry_ratio": 2.367528275417328,
       "quadrant": "avoid",
@@ -5735,9 +5783,9 @@
       "fcf_margin_slope_5y": 0.5951004360440132,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0006509283172220123,
-      "dividend_yield": 0.028900000000000002,
+      "dividend_yield": 0.0294,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.02824907168277799
+      "net_shareholder_return": 0.028749071682777988
     },
     {
       "ticker": "VID",
@@ -5816,6 +5864,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 3360.9038243591262,
       "irr_spread": 0.20344919180314602,
       "irr_asymmetry_ratio": 2.3780191816459264,
       "quadrant": "value_trap",
@@ -5856,9 +5905,9 @@
       "fcf_margin_slope_5y": 2.6165834157489343,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.04930209780741115,
-      "dividend_yield": 0.02,
+      "dividend_yield": 0.020099999999999996,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.029302097807411148
+      "net_shareholder_return": -0.02920209780741115
     },
     {
       "ticker": "TFPM",
@@ -5937,6 +5986,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "CAD",
+      "market_cap_usd_m": 6304.295948558218,
       "irr_spread": 0.1589295108187455,
       "irr_asymmetry_ratio": 1.1246287211522237,
       "quadrant": "value_trap",
@@ -6058,6 +6108,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 279233.73917413334,
       "irr_spread": 0.14697072116072707,
       "irr_asymmetry_ratio": 2.9196745356686296,
       "quadrant": "avoid",
@@ -6179,6 +6230,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 50246.10954545212,
       "irr_spread": 0.24752772073127816,
       "irr_asymmetry_ratio": 4.950554414625563,
       "quadrant": "avoid",
@@ -6219,9 +6271,9 @@
       "fcf_margin_slope_5y": -2.6241051811150284,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.005080422086720867,
-      "dividend_yield": 0.0463,
+      "dividend_yield": 0.0484,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.04121957791327913
+      "net_shareholder_return": 0.04331957791327913
     },
     {
       "ticker": "MIPS",
@@ -6300,6 +6352,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "SEK",
+      "market_cap_usd_m": 1042.7791543096891,
       "irr_spread": 0.21330420448676513,
       "irr_asymmetry_ratio": 0.5883066570345458,
       "quadrant": "avoid",
@@ -6331,18 +6384,18 @@
       "ev_fcf_5y_base": 86.04334922418052,
       "score_v2": 32.73053099738805,
       "score_v2_rank": 65,
-      "ev_fcf_zscore_self_5y": -0.4546675661601548,
-      "ev_fcf_mean_5y": 712.9066666666664,
-      "ev_fcf_std_5y": 1446.6760235872516,
-      "ev_sales_zscore_self_5y": -1.3485192503015844,
+      "ev_fcf_zscore_self_5y": -0.4546640312139147,
+      "ev_fcf_mean_5y": 712.7166666666668,
+      "ev_fcf_std_5y": 1446.2913745584679,
+      "ev_sales_zscore_self_5y": -1.348291731177008,
       "moat_erosion_flag": false,
-      "roic_slope_5y": 0.0009676246391685596,
-      "fcf_margin_slope_5y": -1.4315325641345888,
+      "roic_slope_5y": 0.00096804071612653,
+      "fcf_margin_slope_5y": -1.428074489020256,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.65,
+      "dividend_yield": 0.63,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.65
+      "net_shareholder_return": 0.63
     },
     {
       "ticker": "FERG",
@@ -6421,6 +6474,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 43203.79184522247,
       "irr_spread": 0.19355905292359654,
       "irr_asymmetry_ratio": 1.8612599606113929,
       "quadrant": "avoid",
@@ -6461,9 +6515,9 @@
       "fcf_margin_slope_5y": 0.39635234889631665,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.03583304576885921,
-      "dividend_yield": 0.0161,
+      "dividend_yield": 0.0159,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.05193304576885921
+      "net_shareholder_return": 0.05173304576885922
     },
     {
       "ticker": "S",
@@ -6542,6 +6596,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 8722.110260121728,
       "irr_spread": 0.0,
       "irr_asymmetry_ratio": 0.0,
       "quadrant": "avoid",
@@ -6663,6 +6718,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 4437.2482518905645,
       "irr_spread": 0.22088852802106707,
       "irr_asymmetry_ratio": 1.4758749633832131,
       "quadrant": "value_trap",
@@ -6694,13 +6750,13 @@
       "ev_fcf_5y_base": 18.038043195777906,
       "score_v2": 38.95314900377671,
       "score_v2_rank": 57,
-      "ev_fcf_zscore_self_5y": -0.5947972257153965,
-      "ev_fcf_mean_5y": 50.49399999999999,
-      "ev_fcf_std_5y": 40.86098412911759,
-      "ev_sales_zscore_self_5y": -0.554009445334434,
+      "ev_fcf_zscore_self_5y": -0.5945666075400864,
+      "ev_fcf_mean_5y": 49.55,
+      "ev_fcf_std_5y": 40.096432759037306,
+      "ev_sales_zscore_self_5y": -0.5550231187944088,
       "moat_erosion_flag": true,
-      "roic_slope_5y": 0.00836491013621929,
-      "fcf_margin_slope_5y": 2.0664522132737413,
+      "roic_slope_5y": 0.008514572153391234,
+      "fcf_margin_slope_5y": 2.0632211628117445,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.013224284362630134,
       "dividend_yield": null,
@@ -6784,6 +6840,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 37378.542905912735,
       "irr_spread": 0.17941674230914917,
       "irr_asymmetry_ratio": 3.5883348461829834,
       "quadrant": "value_trap",
@@ -6824,9 +6881,9 @@
       "fcf_margin_slope_5y": -0.08608626541585288,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 0.00839634075661331,
-      "dividend_yield": 0.0347,
+      "dividend_yield": 0.034300000000000004,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.04309634075661331
+      "net_shareholder_return": 0.04269634075661331
     },
     {
       "ticker": "TFF",
@@ -6905,6 +6962,7 @@
       "fcf_basis": "reportado-sbc",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 328.9951383943931,
       "irr_spread": 0.9513740923299473,
       "irr_asymmetry_ratio": 0.9609839316464114,
       "quadrant": "value_trap",
@@ -6945,9 +7003,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.029900000000000003,
+      "dividend_yield": 0.0297,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.029900000000000003
+      "net_shareholder_return": 0.0297
     },
     {
       "ticker": "CELH",
@@ -7026,6 +7084,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 6768.68625,
       "irr_spread": 0.3685471667447774,
       "irr_asymmetry_ratio": 7.370943334895547,
       "quadrant": "value_trap",
@@ -7147,6 +7206,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 2083.9805420653647,
       "irr_spread": 0.30573090349953214,
       "irr_asymmetry_ratio": 1.7473323933593718,
       "quadrant": "value_trap",
@@ -7268,6 +7328,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 2349.8010178583077,
       "irr_spread": 0.41034167456758874,
       "irr_asymmetry_ratio": 1.8741372853226899,
       "quadrant": "avoid",
@@ -7308,9 +7369,9 @@
       "fcf_margin_slope_5y": -0.8652218135047408,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0009627174751651734,
-      "dividend_yield": 0.061200000000000004,
+      "dividend_yield": 0.0611,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.06023728252483483
+      "net_shareholder_return": 0.06013728252483483
     },
     {
       "ticker": "KIST",
@@ -7389,6 +7450,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "GBp",
+      "market_cap_usd_m": 348.86389633056604,
       "irr_spread": 0.23160176032331092,
       "irr_asymmetry_ratio": 4.6320352064662185,
       "quadrant": "value_trap",
@@ -7510,6 +7572,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "GBp",
+      "market_cap_usd_m": 2077.3683701562454,
       "irr_spread": 0.2891695894672841,
       "irr_asymmetry_ratio": 5.783391789345682,
       "quadrant": "value_trap",
@@ -7631,6 +7694,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "CAD",
+      "market_cap_usd_m": 2746.7101058031512,
       "irr_spread": 0.2942658419668265,
       "irr_asymmetry_ratio": 2.067746691995736,
       "quadrant": "avoid",
@@ -7752,6 +7816,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 336.6743490867805,
       "irr_spread": 1.2524394894235822,
       "irr_asymmetry_ratio": 1.2650903933571538,
       "quadrant": "avoid",
@@ -7786,7 +7851,7 @@
       "ev_fcf_zscore_self_5y": null,
       "ev_fcf_mean_5y": null,
       "ev_fcf_std_5y": null,
-      "ev_sales_zscore_self_5y": -0.7188722040607649,
+      "ev_sales_zscore_self_5y": -0.7149887982515615,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
       "fcf_margin_slope_5y": null,
@@ -7873,6 +7938,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "CAD",
+      "market_cap_usd_m": 44343.65128631552,
       "irr_spread": 0.24770190960421834,
       "irr_asymmetry_ratio": 4.954038192084367,
       "quadrant": "hunting_ground",
@@ -7994,6 +8060,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 139118.7628466797,
       "irr_spread": 0.3770082393276757,
       "irr_asymmetry_ratio": 4.76981811324474,
       "quadrant": "value_trap",
@@ -8115,6 +8182,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "GBp",
+      "market_cap_usd_m": 182.91281786437247,
       "irr_spread": 0.23788707889886695,
       "irr_asymmetry_ratio": 4.757741577977339,
       "quadrant": "value_trap",
@@ -8155,9 +8223,9 @@
       "fcf_margin_slope_5y": 0.21371985836057972,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.015346917470918712,
-      "dividend_yield": 0.032400000000000005,
+      "dividend_yield": 0.031200000000000002,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.04774691747091872
+      "net_shareholder_return": 0.046546917470918714
     },
     {
       "ticker": "IP",
@@ -8236,6 +8304,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 4343.895225035827,
       "irr_spread": 0.25980092374250485,
       "irr_asymmetry_ratio": 5.196018474850097,
       "quadrant": "value_trap",
@@ -8357,6 +8426,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 1824.2339886217117,
       "irr_spread": 0.20892077117709706,
       "irr_asymmetry_ratio": 4.178415423541941,
       "quadrant": "avoid",
@@ -8478,6 +8548,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "SEK",
+      "market_cap_usd_m": 2291.3648827643397,
       "irr_spread": 0.18851076311232073,
       "irr_asymmetry_ratio": 3.7702152622464147,
       "quadrant": "avoid",
@@ -8599,6 +8670,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 1249.3284622161866,
       "irr_spread": 0.22765733670995347,
       "irr_asymmetry_ratio": 1.804687831801748,
       "quadrant": "avoid",
@@ -8639,9 +8711,9 @@
       "fcf_margin_slope_5y": -0.7150598199600783,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0018668533851300844,
-      "dividend_yield": 0.0223,
+      "dividend_yield": 0.022000000000000002,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.020433146614869915
+      "net_shareholder_return": 0.020133146614869916
     },
     {
       "ticker": "SAP",
@@ -8720,6 +8792,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "EUR",
+      "market_cap_usd_m": 254358.26494504418,
       "irr_spread": 0.16996005585629537,
       "irr_asymmetry_ratio": 1.6009864637137226,
       "quadrant": "avoid",
@@ -8760,9 +8833,9 @@
       "fcf_margin_slope_5y": 2.0755787039016687,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0008311295724966266,
-      "dividend_yield": 0.0134,
+      "dividend_yield": 0.013600000000000001,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.012568870427503374
+      "net_shareholder_return": 0.012768870427503375
     },
     {
       "ticker": "VYLR",
@@ -8841,6 +8914,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 44875.60438528442,
       "irr_spread": 0.19019150648827388,
       "irr_asymmetry_ratio": 1.8889863739763415,
       "quadrant": "avoid",
@@ -8962,6 +9036,7 @@
       "fcf_basis": "normalizado",
       "price_source": "yfinance",
       "price_currency": "USD",
+      "market_cap_usd_m": 74282.14364216308,
       "irr_spread": 0.243081030029629,
       "irr_asymmetry_ratio": 1.0705754169144377,
       "quadrant": "value_trap",
@@ -9002,9 +9077,9 @@
       "fcf_margin_slope_5y": 0.7767694137339205,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.00566462664411378,
-      "dividend_yield": 0.0222,
+      "dividend_yield": 0.0216,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.016535373355886222
+      "net_shareholder_return": 0.01593537335588622
     }
   ]
 }

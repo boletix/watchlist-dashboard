@@ -1,15 +1,60 @@
 {
  "meta": {
-  "generated_at": "2026-10-02T21:08:40+00:00",
+  "generated_at": "2026-10-03T17:58:23+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 0,
+  "n_documents": 4,
   "n_calendar_drift": 24,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [],
+ "documents": [
+  {
+   "id": "sec:0000950103-26-015176:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000095010326015176/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0000950103-26-015151:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000095010326015151/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001193125-26-412669:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-10-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526412669/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "GOOG",
+   "name": "GOOG"
+  },
+  {
+   "id": "sec:0001104659-26-113405:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — OWNERSHIP DOCUMENT",
+   "date": "2026-10-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000110465926113405/xslF345X06/tm2626967-1_4seq1.xml",
+   "priority": "baja",
+   "ticker": "NFLX",
+   "name": "NFLX"
+  }
+ ],
  "financial_drift": [
   {
    "ticker": "BN",
