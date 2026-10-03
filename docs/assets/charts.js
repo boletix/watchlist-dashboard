@@ -173,7 +173,7 @@ function quadrantChartOption(companies) {
       symbol: isOutlier ? 'triangle' : 'circle',
       symbolSize: Math.max(
         8,
-        Math.min(28, Math.sqrt(Math.max(c.market_cap_m || 1000, 100) / 500))
+        Math.min(28, Math.sqrt(Math.max((c.market_cap_usd_m ?? c.market_cap_m) || 1000, 100) / 500))
       ),
       _isOutlier: isOutlier,
     };
@@ -220,7 +220,7 @@ function quadrantChartOption(companies) {
             Rating&nbsp;&nbsp; <b>${fmt.rating(c.rating_composite)}</b><br/>
             EV/FCF&nbsp;&nbsp; <b>${fmt.multiple(c.ev_fcf)}</b>${isOut ? ' <span style="color:'+THEME.negative+'">(off-chart)</span>' : ''}<br/>
             ROIC&nbsp;&nbsp;&nbsp;&nbsp; <b>${fmt.pct(c.roic)}</b><br/>
-            MCap&nbsp;&nbsp;&nbsp;&nbsp; <b>${fmt.mcap(c.market_cap_m)}</b><br/>
+            MCap&nbsp;&nbsp;&nbsp;&nbsp; <b>${fmt.mcap(c.market_cap_usd_m ?? c.market_cap_m)}</b><br/>
             Best IRR&nbsp; <b style="color:${c.irr_best > 0.15 ? THEME.positive : THEME.text1}">${fmt.pct(c.irr_best)}</b><br/>
             <span style="color:${THEME.text2};font-size:10px;">${QUADRANT_LABEL[c.quadrant]}</span>
           </div>
@@ -486,7 +486,7 @@ function roicVsValuationOption(companies) {
             ROIC&nbsp;&nbsp;&nbsp; <b>${fmt.pct(c.roic)}</b><br/>
             EV/FCF&nbsp; <b>${fmt.multiple(c.ev_fcf)}</b>${isOut ? ' <span style="color:'+THEME.negative+'">(off-chart)</span>' : ''}<br/>
             Rating&nbsp; <b>${fmt.rating(c.rating_composite)}</b><br/>
-            MCap&nbsp;&nbsp;&nbsp; <b>${fmt.mcap(c.market_cap_m)}</b>
+            MCap&nbsp;&nbsp;&nbsp; <b>${fmt.mcap(c.market_cap_usd_m ?? c.market_cap_m)}</b>
           </div>
         `;
       },

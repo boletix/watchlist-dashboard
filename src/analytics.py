@@ -578,6 +578,36 @@ def build_fx_map(df, fetcher=None):
     return fx.build_factor_map(pairs, fetcher=fetcher)
 
 
+def build_usd_map(df, fetcher=None):
+    """
+    Factor moneda de cotizacion -> USD para cada divisa presente, clave
+    (cotizacion, "USD"). Sirve para llevar market_cap_m a una unidad comun.
+
+    3-oct-2026: el ROIC ponderado del panel pesaba con market_cap_m en la
+    moneda de cada precio. HLMA (peniques) pesaba 1,37 billones, LIFCO 136.000
+    "millones" en SEK... y el KPI salia en 31% cuando la cifra real es menor.
+    """
+    pairs = []
+    for _, row in df.iterrows():
+        quo = quote_currency(row)
+        if quo is not None:
+            pairs.append((quo, "USD"))
+    if not pairs:
+        return {}
+    return fx.build_factor_map(pairs, fetcher=fetcher)
+
+
+def _market_cap_usd(row, usd_map):
+    mcap = _safe_float(row.get("market_cap_m"))
+    quo = quote_currency(row)
+    if mcap is None or quo is None:
+        return np.nan
+    factor = usd_map.get((quo, "USD"))
+    if factor is None:
+        return np.nan                   # sin tipo de cambio: fuera de la ponderacion
+    return float(mcap * factor)
+
+
 def currency_mismatches(df, fx_map=None):
     """
     Filas donde la moneda de reporte y la de cotizacion difieren. Se publica en
@@ -610,10 +640,12 @@ def currency_mismatches(df, fx_map=None):
     return rows
 
 
-def enrich(df, fx_map=None):
+def enrich(df, fx_map=None, usd_map=None):
     out = df.copy()
     if fx_map is None:
         fx_map = build_fx_map(out)
+    if usd_map is not None and "market_cap_m" in out.columns:
+        out["market_cap_usd_m"] = out.apply(lambda r: _market_cap_usd(r, usd_map), axis=1)
     out["irr_spread"] = out["irr_best"] - out["irr_worst"]
     out["irr_asymmetry_ratio"] = out.apply(
         lambda r: _irr_asymmetry_ratio(r["irr_worst"], r["irr_best"]), axis=1)
@@ -681,11 +713,13 @@ def category_stats(df):
 
 
 def headline_kpis(df):
-    if "market_cap_m" in df.columns and "roic" in df.columns:
-        mask = df["market_cap_m"].notna() & df["roic"].notna()
+    # Ponderar en USD cuando esta disponible: market_cap_m va en la moneda del precio
+    mcap_col = "market_cap_usd_m" if "market_cap_usd_m" in df.columns else "market_cap_m"
+    if mcap_col in df.columns and "roic" in df.columns:
+        mask = df[mcap_col].notna() & df["roic"].notna()
         if mask.any():
-            roic_weighted = ((df.loc[mask, "roic"] * df.loc[mask, "market_cap_m"]).sum()
-                             / df.loc[mask, "market_cap_m"].sum())
+            roic_weighted = ((df.loc[mask, "roic"] * df.loc[mask, mcap_col]).sum()
+                             / df.loc[mask, mcap_col].sum())
         else:
             roic_weighted = float("nan")
     else:

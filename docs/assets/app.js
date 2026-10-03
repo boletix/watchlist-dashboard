@@ -128,10 +128,12 @@ function renderKPIs() {
   }
   const avg = (k) => list.reduce((s, c) => s + (c[k] || 0), 0) / n;
   const weightedRoic = (() => {
-    const items = list.filter((c) => c.market_cap_m > 0 && c.roic != null);
+    // Pesos en USD: market_cap_m va en la moneda del precio (GBp, SEK...) y no se puede sumar
+    const mc = (c) => c.market_cap_usd_m ?? c.market_cap_m;
+    const items = list.filter((c) => mc(c) > 0 && c.roic != null);
     if (!items.length) return null;
-    const sumW = items.reduce((s, c) => s + c.market_cap_m, 0);
-    return items.reduce((s, c) => s + c.roic * c.market_cap_m, 0) / sumW;
+    const sumW = items.reduce((s, c) => s + mc(c), 0);
+    return items.reduce((s, c) => s + c.roic * mc(c), 0) / sumW;
   })();
   const medianEvFcf = (() => {
     const vals = list.filter((c) => c.ev_fcf > 0).map((c) => c.ev_fcf).sort((a, b) => a - b);
@@ -635,7 +637,7 @@ function openDrawer(ticker) {
         <h3>Valuation &amp; Returns (live + repriced)</h3>
         <div class="stat-grid">
           <div class="stat"><div class="stat__label">Price</div><div class="stat__value">${F.num(c.price)}</div></div>
-          <div class="stat"><div class="stat__label">Market Cap</div><div class="stat__value">${F.mcap(c.market_cap_m)}</div></div>
+          <div class="stat"><div class="stat__label">Market Cap (USD)</div><div class="stat__value">${F.mcap(c.market_cap_usd_m ?? c.market_cap_m)}</div></div>
           <div class="stat"><div class="stat__label">ROIC</div><div class="stat__value positive">${F.pct(c.roic)}</div></div>
           <div class="stat"><div class="stat__label">EV/FCF</div><div class="stat__value">${F.multiple(c.ev_fcf)}</div></div>
           <div class="stat"><div class="stat__label">EV/EBITDA</div><div class="stat__value">${F.multiple(c.ev_ebitda)}</div></div>

@@ -23,7 +23,7 @@ import numpy as np
 import pandas as pd
 
 from src.analytics import (
-    build_fx_map, category_stats, compute_deltas, currency_mismatches,
+    build_fx_map, build_usd_map, category_stats, compute_deltas, currency_mismatches,
     enrich as enrich_analytics,
     headline_kpis, inject_history_derived,
 )
@@ -170,7 +170,8 @@ def build(
     # 3. Analytics v2.0 (legacy + nuevas metricas)
     #    El mapa de divisas se resuelve antes para poder reportarlo en meta.
     fx_map = build_fx_map(df)
-    df = enrich_analytics(df, fx_map=fx_map)
+    usd_map = build_usd_map(df)
+    df = enrich_analytics(df, fx_map=fx_map, usd_map=usd_map)
     fx_issues = currency_mismatches(df, fx_map)
     unresolved_fx = [r["ticker"] for r in fx_issues if not r["resolved"]]
     if unresolved_fx:

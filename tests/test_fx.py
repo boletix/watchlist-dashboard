@@ -17,7 +17,8 @@ import pytest
 from src import fx
 from src.analytics import (
     _ev_fcf_5y_base, _ev_today, _fx_factor, _reprice_valuation,
-    build_fx_map, currency_mismatches, enrich, quote_currency,
+    _market_cap_usd, build_fx_map, build_usd_map, currency_mismatches, enrich,
+    quote_currency,
 )
 
 
@@ -267,3 +268,22 @@ def test_currency_mismatch_flags_excel_disagreement():
     hlma = next(r for r in rows if r["ticker"] == "HLMA")
     assert hlma["excel_currency"] == "GBP"
     assert hlma["quote"] == "GBp"
+
+
+def test_market_cap_usd_converts_pence_for_weighted_roic():
+    # HLMA en peniques no puede pesar 100x mas que una empresa en dolares
+    df = pd.DataFrame([
+        {"ticker": "HLMA", "currency": "GBp", "market_cap_m": 1_000_000.0, "roic": 0.10},
+        {"ticker": "MSFT", "currency": "USD", "market_cap_m": 13_000.0, "roic": 0.30},
+    ])
+    usd_map = build_usd_map(df, fetcher=lambda a, b: 1.30)   # 1 GBP = 1,30 USD
+    assert usd_map[("GBp", "USD")] == pytest.approx(0.013)
+    df["market_cap_usd_m"] = [_market_cap_usd(r, usd_map) for _, r in df.iterrows()]
+    assert df.loc[0, "market_cap_usd_m"] == pytest.approx(13_000.0)
+    w = (df["roic"] * df["market_cap_usd_m"]).sum() / df["market_cap_usd_m"].sum()
+    assert w == pytest.approx(0.20)
+
+
+def test_market_cap_usd_nan_without_rate():
+    row = {"ticker": "X", "currency": "KZT", "market_cap_m": 100.0}
+    assert np.isnan(_market_cap_usd(row, {("KZT", "USD"): None}))
