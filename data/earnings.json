@@ -1,7 +1,7 @@
 {
  "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Se regenera en cada build.",
  "fields": "earnings_last_date (ISO), earnings_next_date (ISO), earnings_updated_at (ISO), earnings_next_estimated (bool)",
- "generated_at": "2026-10-05T16:13:10+00:00",
+ "generated_at": "2026-10-06T14:17:37+00:00",
  "companies": {
   "VEEV": {
    "earnings_last_date": "2026-08-26",
