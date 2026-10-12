@@ -1,15 +1,115 @@
 {
  "meta": {
-  "generated_at": "2026-10-09T14:31:26+00:00",
+  "generated_at": "2026-10-12T16:56:08+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 0,
-  "n_calendar_drift": 25,
+  "n_documents": 9,
+  "n_calendar_drift": 22,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [],
+ "documents": [
+  {
+   "id": "sec:0001171843-26-006563:6-K",
+   "source": "SEC EDGAR",
+   "form": "6-K",
+   "title": "Hecho relevante (extranjero) — FORM 6-K",
+   "date": "2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1001085/000117184326006563/f6k_100926.htm",
+   "priority": "media",
+   "ticker": "BN",
+   "name": "BN"
+  },
+  {
+   "id": "sec:0001778564-26-000179:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000179/xslF345X06/form4-10082026_081001.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001193125-26-418184:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-10-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526418184/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "KSPI",
+   "name": "KSPI"
+  },
+  {
+   "id": "sec:0001887199-26-000006:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000188719926000006/xslF345X06/form4-10092026_041003.xml",
+   "priority": "baja",
+   "ticker": "MNST",
+   "name": "MNST"
+  },
+  {
+   "id": "sec:0001903741-26-000006:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000190374126000006/xslF345X06/form4-10092026_041005.xml",
+   "priority": "baja",
+   "ticker": "MNST",
+   "name": "MNST"
+  },
+  {
+   "id": "sec:0001179801-26-000007:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000117980126000007/xslF345X06/form4-10092026_041001.xml",
+   "priority": "baja",
+   "ticker": "MNST",
+   "name": "MNST"
+  },
+  {
+   "id": "sec:0001197647-26-000011:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000011/xslF345X06/wk-form4_1791579847.xml",
+   "priority": "baja",
+   "ticker": "NVDA",
+   "name": "NVDA"
+  },
+  {
+   "id": "sec:0001178913-26-004749:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326004749/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "CHKP",
+   "name": "CHKP"
+  },
+  {
+   "id": "sec:0001849122-26-000023:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1583708/000184912226000023/xslF345X06/wk-form4_1791581315.xml",
+   "priority": "baja",
+   "ticker": "S",
+   "name": "S"
+  }
+ ],
  "financial_drift": [
   {
    "ticker": "BN",
@@ -126,13 +226,6 @@
    "delta_days": -76
   },
   {
-   "ticker": "BN",
-   "excel": "2026-11-12",
-   "market": "2026-10-28",
-   "estimated": true,
-   "delta_days": -15
-  },
-  {
    "ticker": "SU",
    "excel": "2026-10-29",
    "market": "2026-07-30",
@@ -154,13 +247,6 @@
    "delta_days": -7
   },
   {
-   "ticker": "VLTO",
-   "excel": "2026-10-27",
-   "market": "2026-10-21",
-   "estimated": true,
-   "delta_days": -6
-  },
-  {
    "ticker": "KKR",
    "excel": "2026-11-04",
    "market": "2026-11-09",
@@ -180,13 +266,6 @@
    "market": "2026-08-07",
    "estimated": false,
    "delta_days": -105
-  },
-  {
-   "ticker": "KSPI",
-   "excel": "2026-11-09",
-   "market": "2026-10-21",
-   "estimated": false,
-   "delta_days": -19
   },
   {
    "ticker": "SPOT",
@@ -352,13 +431,6 @@
    "urls": []
   },
   {
-   "ticker": "BN",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-12 y el mercado dice 2026-10-28 (-15 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "SU",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-10-29 y el mercado dice 2026-07-30 (-91 dias de diferencia) — la del Excel era una estimacion",
@@ -380,13 +452,6 @@
    "urls": []
   },
   {
-   "ticker": "VLTO",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-27 y el mercado dice 2026-10-21 (-6 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "KKR",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-04 y el mercado dice 2026-11-09 (5 dias de diferencia) — la del Excel era una estimacion",
@@ -404,13 +469,6 @@
    "ticker": "KRX",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-20 y el mercado dice 2026-08-07 (-105 dias de diferencia)",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "KSPI",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-09 y el mercado dice 2026-10-21 (-19 dias de diferencia)",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
