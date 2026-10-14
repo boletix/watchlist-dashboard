@@ -1,25 +1,102 @@
 {
  "meta": {
-  "generated_at": "2026-10-13T15:15:10+00:00",
+  "generated_at": "2026-10-14T13:01:37+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 1,
-  "n_calendar_drift": 23,
+  "n_documents": 8,
+  "n_calendar_drift": 22,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "sec:0001193125-26-419727:8-K",
+   "id": "sec:0001713683-26-000202:4",
    "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
    "date": "2026-10-13",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526419727/d170287d8k.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
+   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000202/xslF345X06/wk-form4_1791924438.xml",
+   "priority": "baja",
+   "ticker": "ZS",
+   "name": "ZS"
+  },
+  {
+   "id": "sec:0001778564-26-000183:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000183/xslF345X06/form4-10132026_081004.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001778564-26-000182:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000182/xslF345X06/form4-10132026_081001.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001193125-26-420859:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-10-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526420859/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "KSPI",
+   "name": "KSPI"
+  },
+  {
+   "id": "sec:0001572806-26-000005:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000157280626000005/xslF345X06/wk-form4_1791922560.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001540018-26-000007:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000154001826000007/xslF345X06/wk-form4_1791922504.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001665282-26-000006:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000166528226000006/xslF345X06/wk-form4_1791922455.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001207304-26-000005:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000120730426000005/xslF345X06/wk-form4_1791922401.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
   }
  ],
  "financial_drift": [
@@ -171,13 +248,6 @@
    "market": "2026-11-09",
    "estimated": true,
    "delta_days": 5
-  },
-  {
-   "ticker": "NET",
-   "excel": "2026-11-05",
-   "market": "2026-10-29",
-   "estimated": true,
-   "delta_days": -7
   },
   {
    "ticker": "KRX",
@@ -381,13 +451,6 @@
    "ticker": "KKR",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-04 y el mercado dice 2026-11-09 (5 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "NET",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-05 y el mercado dice 2026-10-29 (-7 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
