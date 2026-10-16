@@ -1,223 +1,58 @@
 {
  "meta": {
-  "generated_at": "2026-10-15T12:47:36+00:00",
+  "generated_at": "2026-10-16T12:39:46+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 19,
-  "n_calendar_drift": 21,
+  "n_documents": 4,
+  "n_calendar_drift": 22,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "sec:0000909832-26-000096:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000096/cost-20261014.htm",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "sec:0001046179-26-000726:6-K",
+   "id": "sec:0001104659-26-116314:6-K",
    "source": "SEC EDGAR",
    "form": "6-K",
-   "title": "Hecho relevante (extranjero) — 6-K",
-   "date": "2026-10-15",
-   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/tsm-20261015x6k.htm",
+   "title": "Hecho relevante (extranjero) — FORM 6-K",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110465926116314/tm2627665d1_6k.htm",
    "priority": "media",
-   "ticker": "TSM",
-   "name": "TSM"
+   "ticker": "BN",
+   "name": "BN"
   },
   {
-   "id": "sec:0000789019-26-000226:4",
+   "id": "sec:0000789019-26-000228:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — STATEMENT OF CHANGES IN BENEFICIAL OWNERSHIP OF SECURITIES",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000226/xslF345X06/form4.xml",
+   "date": "2026-10-15",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000228/xslF345X06/form4.xml",
    "priority": "baja",
    "ticker": "MSFT",
    "name": "MSFT"
   },
   {
-   "id": "sec:0000909832-26-000098:4",
+   "id": "sec:0001778564-26-000185:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000098/xslF345X06/form4.xml",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-15",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000185/xslF345X06/form4-10152026_081001.xml",
    "priority": "baja",
-   "ticker": "COST",
-   "name": "COST"
+   "ticker": "CRWD",
+   "name": "CRWD"
   },
   {
-   "id": "sec:0001193125-26-421722:4",
+   "id": "sec:0001193125-26-423187:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526421722/xslF345X06/ownership.xml",
+   "date": "2026-10-15",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526423187/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "ABNB",
-   "name": "ABNB"
-  },
-  {
-   "id": "sec:0000950103-26-015598:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015598/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0001140361-26-039594:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126039594/xslF345X06/form4.xml",
-   "priority": "baja",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "sec:0001984098-26-000002:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198409826000002/xslF345X06/wk-form4_1792009137.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0001984020-26-000003:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198402026000003/xslF345X06/wk-form4_1792009074.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0002030386-26-000003:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000203038626000003/xslF345X06/wk-form4_1792008998.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0001984100-26-000004:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198410026000004/xslF345X06/wk-form4_1792008914.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0001572806-26-000006:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000157280626000006/xslF345X06/wk-form4_1792008830.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0001984614-26-000003:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198461426000003/xslF345X06/wk-form4_1792008765.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0001984156-26-000002:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198415626000002/xslF345X06/wk-form4_1792008634.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0002074304-26-000003:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000207430426000003/xslF345X06/wk-form4_1792008485.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0001984142-26-000003:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198414226000003/xslF345X06/wk-form4_1792008400.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0001190699-26-000005:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000119069926000005/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001468233-26-000011:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000146823326000011/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001090355-26-000008:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000109035526000008/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
+   "ticker": "GOOG",
+   "name": "GOOG"
   }
  ],
  "financial_drift": [
@@ -376,6 +211,13 @@
    "market": "2026-08-07",
    "estimated": false,
    "delta_days": -105
+  },
+  {
+   "ticker": "TSM",
+   "excel": "2026-10-15",
+   "market": "2027-01-14",
+   "estimated": true,
+   "delta_days": 91
   },
   {
    "ticker": "SPOT",
@@ -572,6 +414,13 @@
    "ticker": "KRX",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-20 y el mercado dice 2026-08-07 (-105 dias de diferencia)",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "TSM",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-10-15 y el mercado dice 2027-01-14 (91 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
