@@ -1,12 +1,39 @@
 {
   "meta": {
-    "generated_at": "2026-10-19T14:51:41+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-10-19T18:59:19+00:00",
+    "n_alerts": 2,
     "by_severity": {
-      "high": 0,
+      "high": 2,
       "medium": 0,
       "low": 0
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "JDG",
+      "name": "JDG",
+      "category": "Healthcare",
+      "message": "JDG now has favorable IRR asymmetry (best 32.1%, worst -4.7%)",
+      "metrics": {
+        "irr_best": 0.32148111273404245,
+        "irr_worst": -0.04688139492117105,
+        "irr_asymmetry_ratio": 7.36725015310427
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "PRY",
+      "name": "PRY",
+      "category": "Electrify",
+      "message": "PRY now has favorable IRR asymmetry (best 22.9%, worst 1.0%)",
+      "metrics": {
+        "irr_best": 0.22948919322871375,
+        "irr_worst": 0.009959076875215134,
+        "irr_asymmetry_ratio": 4.390602327069972
+      }
+    }
+  ]
 }
