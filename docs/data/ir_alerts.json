@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-10-16T12:39:46+00:00",
+  "generated_at": "2026-10-19T14:52:41+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 4,
+  "n_documents": 14,
   "n_calendar_drift": 22,
   "n_financial_drift": 7,
   "n_errors": 0,
@@ -11,48 +11,158 @@
  },
  "documents": [
   {
-   "id": "sec:0001104659-26-116314:6-K",
+   "id": "sec:0000909832-26-000100:8-K",
    "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — FORM 6-K",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
    "date": "2026-10-16",
-   "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110465926116314/tm2627665d1_6k.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000100/cost-20261013.htm",
    "priority": "media",
-   "ticker": "BN",
-   "name": "BN"
+   "ticker": "COST",
+   "name": "COST"
   },
   {
-   "id": "sec:0000789019-26-000228:4",
+   "id": "sec:0001104659-26-116654:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — FORM 8-K",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1583708/000110465926116654/tm2627397d1_8k.htm",
+   "priority": "media",
+   "ticker": "S",
+   "name": "S"
+  },
+  {
+   "id": "sec:0001628280-26-066134:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — STATEMENT OF CHANGES IN BENEFICIAL OWNERSHIP OF SECURITIES",
-   "date": "2026-10-15",
-   "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000228/xslF345X06/form4.xml",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393052/000162828026066134/xslF345X06/wk-form4_1792182721.xml",
    "priority": "baja",
-   "ticker": "MSFT",
-   "name": "MSFT"
+   "ticker": "VEEV",
+   "name": "VEEV"
   },
   {
-   "id": "sec:0001778564-26-000185:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-10-15",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000185/xslF345X06/form4-10152026_081001.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001193125-26-423187:4",
+   "id": "sec:0001193125-26-424426:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — 4",
-   "date": "2026-10-15",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526423187/xslF345X06/ownership.xml",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526424426/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
+   "ticker": "KSPI",
+   "name": "KSPI"
+  },
+  {
+   "id": "sec:0000320187-26-000195:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000195/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "NKE",
+   "name": "NKE"
+  },
+  {
+   "id": "sec:0001984098-26-000003:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198409826000003/xslF345X06/wk-form4_1792158816.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001984020-26-000004:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198402026000004/xslF345X06/wk-form4_1792158754.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0002030386-26-000004:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000203038626000004/xslF345X06/wk-form4_1792158677.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001984100-26-000005:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198410026000005/xslF345X06/wk-form4_1792158613.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001572806-26-000007:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000157280626000007/xslF345X06/wk-form4_1792158545.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001984614-26-000004:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198461426000004/xslF345X06/wk-form4_1792158492.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001984156-26-000003:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198415626000003/xslF345X06/wk-form4_1792158434.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0002074304-26-000004:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000207430426000004/xslF345X06/wk-form4_1792158367.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001984142-26-000004:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198414226000004/xslF345X06/wk-form4_1792158296.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
   }
  ],
  "financial_drift": [
