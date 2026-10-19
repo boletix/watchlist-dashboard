@@ -3,7 +3,9 @@
 # NUNCA editar el .xlsx con openpyxl: la columna A lleva tipos de datos vinculados
 # (=A9.Precio) que openpyxl destruye. Este script lee data/celdas_payload.csv
 # (fila,col,valor,tipo con tipo = num | text), escribe, recalcula, comprueba que los
-# tipos vinculados siguen vivos y guarda.
+# tipos vinculados siguen vivos y guarda. Columna opcional "hoja" (19-oct-2026): si viene
+# rellena, la celda se escribe en esa hoja (p. ej. "Framework Notes"); si no, en
+# "Watchlist Ratings".
 #
 #   powershell -NoProfile -ExecutionPolicy Bypass -File tools\escribir_celdas.ps1 [filas a mostrar]
 #
@@ -68,7 +70,12 @@ foreach ($f in $filas) { Write-Output (Linea $f) }
 
 $n = 0
 foreach ($r in $csv) {
-  $cell = $ws.Cells([int]$r.fila, [int]$r.col)
+  $sh = $ws
+  if (($r.PSObject.Properties.Name -contains "hoja") -and ([string]$r.hoja -ne "")) {
+    $sh = $wb.Worksheets.Item([string]$r.hoja)
+    Write-Output ("  hoja '" + $r.hoja + "' f" + $r.fila + " c" + $r.col + " antes: " + [string]$sh.Cells([int]$r.fila, [int]$r.col).Text)
+  }
+  $cell = $sh.Cells([int]$r.fila, [int]$r.col)
   if ($r.tipo -eq "text") { $cell.NumberFormat = "@"; $cell.Value2 = [string]$r.valor }
   else { $cell.Value2 = [double]$r.valor }
   $n = $n + 1
