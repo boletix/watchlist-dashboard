@@ -1,15 +1,82 @@
 {
  "meta": {
-  "generated_at": "2026-10-19T19:00:31+00:00",
+  "generated_at": "2026-10-20T12:52:42+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 0,
+  "n_documents": 6,
   "n_calendar_drift": 22,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [],
+ "documents": [
+  {
+   "id": "sec:0001628280-26-066333:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393052/000162828026066333/xslF345X06/wk-form4_1792443011.xml",
+   "priority": "baja",
+   "ticker": "VEEV",
+   "name": "VEEV"
+  },
+  {
+   "id": "sec:0001193125-26-425482:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-10-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526425482/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "ABNB",
+   "name": "ABNB"
+  },
+  {
+   "id": "sec:0001366574-26-000026:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000136657426000026/xslF345X06/wk-form4_1792451211.xml",
+   "priority": "baja",
+   "ticker": "NET",
+   "name": "NET"
+  },
+  {
+   "id": "sec:0001473289-26-000031:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147328926000031/xslF345X06/wk-form4_1792451081.xml",
+   "priority": "baja",
+   "ticker": "NET",
+   "name": "NET"
+  },
+  {
+   "id": "sec:0001778564-26-000187:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000187/xslF345X06/form4-10192026_081003.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001872303-26-000013:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000187230326000013/xslF345X06/form4-10192026_081001.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  }
+ ],
  "financial_drift": [
   {
    "ticker": "BN",
