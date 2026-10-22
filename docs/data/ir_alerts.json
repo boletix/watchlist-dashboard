@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-10-21T13:05:49+00:00",
+  "generated_at": "2026-10-22T13:08:54+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 11,
+  "n_documents": 9,
   "n_calendar_drift": 23,
   "n_financial_drift": 7,
   "n_errors": 0,
@@ -11,125 +11,103 @@
  },
  "documents": [
   {
-   "id": "sec:0001065280-26-000290:8-K",
+   "id": "sec:0001065280-26-000291:10-Q",
    "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/nflx-20261020.htm",
-   "priority": "media",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-10-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm",
+   "priority": "alta",
    "ticker": "NFLX",
    "name": "NFLX"
   },
   {
-   "id": "sec:0001713683-26-000208:4",
+   "id": "sec:0001628280-26-066773:10-Q",
+   "source": "SEC EDGAR",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-10-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+   "priority": "alta",
+   "ticker": "META",
+   "name": "META"
+  },
+  {
+   "id": "sec:0001193125-26-427849:DEF 14A",
+   "source": "SEC EDGAR",
+   "form": "DEF 14A",
+   "title": "Convocatoria de junta (retribucion e incentivos) — DEF 14A",
+   "date": "2026-10-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526427849/d61756ddef14a.htm",
+   "priority": "media",
+   "ticker": "MSFT",
+   "name": "MSFT"
+  },
+  {
+   "id": "sec:0001628280-26-066700:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-10-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm",
+   "priority": "media",
+   "ticker": "META",
+   "name": "META"
+  },
+  {
+   "id": "sec:0001046179-26-000728:6-K",
+   "source": "SEC EDGAR",
+   "form": "6-K",
+   "title": "Hecho relevante (extranjero) — 6-K",
+   "date": "2026-10-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000728/tsm-monthend6kx20261022.htm",
+   "priority": "media",
+   "ticker": "TSM",
+   "name": "TSM"
+  },
+  {
+   "id": "sec:0001140361-26-040435:6-K",
+   "source": "SEC EDGAR",
+   "form": "6-K",
+   "title": "Hecho relevante (extranjero) — 6-K",
+   "date": "2026-10-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126040435/ef20084028_6k.htm",
+   "priority": "media",
+   "ticker": "SPOT",
+   "name": "SPOT"
+  },
+  {
+   "id": "sec:0000950103-26-015980:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000208/xslF345X06/wk-form4_1792545765.xml",
+   "date": "2026-10-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "ZS",
-   "name": "ZS"
+   "ticker": "META",
+   "name": "META"
   },
   {
-   "id": "sec:0001713683-26-000206:4",
+   "id": "sec:0001778564-26-000189:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000206/xslF345X06/wk-form4_1792545710.xml",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000189/xslF345X06/form4-10212026_081001.xml",
    "priority": "baja",
-   "ticker": "ZS",
-   "name": "ZS"
+   "ticker": "CRWD",
+   "name": "CRWD"
   },
   {
-   "id": "sec:0001713683-26-000204:4",
+   "id": "sec:0001193125-26-428104:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000204/xslF345X06/wk-form4_1792545663.xml",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-10-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526428104/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "ZS",
-   "name": "ZS"
-  },
-  {
-   "id": "sec:0001984156-26-000004:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198415626000004/xslF345X06/wk-form4_1792527438.xml",
-   "priority": "baja",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "sec:0002111867-26-000014:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000211186726000014/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0002071761-26-000013:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000207176126000013/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001626201-26-000023:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000162620126000023/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001775297-26-000014:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000177529726000014/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001525321-26-000011:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000152532126000011/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001090355-26-000009:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000109035526000009/xslF345X06/primarydocument.xml",
-   "priority": "baja",
-   "ticker": "UBER",
-   "name": "UBER"
+   "ticker": "KSPI",
+   "name": "KSPI"
   }
  ],
  "financial_drift": [
@@ -396,6 +374,26 @@
   }
  ],
  "todo_excel": [
+  {
+   "ticker": "META",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-07-29",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+   ]
+  },
+  {
+   "ticker": "NFLX",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-07-16",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm"
+   ]
+  },
   {
    "ticker": "BN",
    "accion": "CUENTAS DESFASADAS en el Excel",
