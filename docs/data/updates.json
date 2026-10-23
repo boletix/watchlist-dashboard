@@ -1,10 +1,17 @@
 {
   "meta": {
-    "n_updates": 260,
+    "n_updates": 261,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "MSFT; META; GOOG",
+      "date": "46299",
+      "fields_changed": "BD; BF; BE; BG (formula contra BS); BT",
+      "source": "Decision de Roger, 4-oct-2026 (P4 de la Carta de vientos macro)",
+      "summary": "Normalizacion del FCF@5y de las Mag-7 (P4 de la Carta de vientos, decision de Roger 4-oct-2026). Desde el 8-sep BD/BF estaban en base FCF-SBC (escalados con AS), es decir, DESPUES del capex de IA, mientras el EV/FCF de hoy ya usaba el normalizado (BS) desde el 11-sep: la TIR mezclaba bases. Ahora BD/BF = valores del 8-sep x BS/AS, que conserva las CAGR de Roger y devuelve las filas a la base del 22-ago. MSFT x2,328: BD 63.334,9 -> 147.461,2; BF 96.094,3 -> 223.734,1. META x5,204: BD 12.030,4 -> 62.609,7; BF 33.269,4 -> 173.143,7. GOOG x5,265: BD 32.067,8 -> 168.840,3; BF 50.537,4 -> 266.084,7. BE/BG de las tres pasan a (BD/BS)^(1/5)-1. MULTIPLOS SIN CAMBIO (MSFT 20/30, META 18/26, GOOG 20/30) POR DECISION DE ROGER, excepcion consciente a la regla Lotus: se le ofrecio recortarlos con multiplo x (1 - g/ROIC) y prefirio mantenerlos porque se calibraron sobre FCF normalizado. TIR peor/mejor: MSFT -19,4/-5,3 -> -4,9/+11,9; META -36,3/-14,6 -> -9,8/+19,3; GOOG -28,8/-17,0 -> -3,4/+14,3. AMZN ya estaba normalizada desde el 11-sep (sin cambio, -10,7/+5,9). NVDA no se normaliza: capex 7.354 = 1,99x D&A, por debajo del umbral de 2x de la regla."
+    },
     {
       "ticker": "VYLR",
       "date": "46297",
