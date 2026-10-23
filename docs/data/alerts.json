@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T12:46:42+00:00",
+    "generated_at": "2026-10-23T17:17:01+00:00",
     "n_alerts": 2,
     "by_severity": {
       "high": 2,
@@ -28,11 +28,11 @@
       "ticker": "PRY",
       "name": "PRY",
       "category": "Electrify",
-      "message": "PRY now has favorable IRR asymmetry (best 22.9%, worst 1.0%)",
+      "message": "PRY now has favorable IRR asymmetry (best 24.9%, worst 2.6%)",
       "metrics": {
-        "irr_best": 0.22948919322871375,
-        "irr_worst": 0.009959076875215134,
-        "irr_asymmetry_ratio": 4.390602327069972
+        "irr_best": 0.24877849262355056,
+        "irr_worst": 0.025804196228578213,
+        "irr_asymmetry_ratio": 4.459485927899447
       }
     }
   ]

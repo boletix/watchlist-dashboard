@@ -1,60 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-10-23T12:47:38+00:00",
+  "generated_at": "2026-10-23T17:17:53+00:00",
   "n_tickers": 71,
   "days_back": 10,
-  "n_documents": 4,
-  "n_calendar_drift": 23,
+  "n_documents": 0,
+  "n_calendar_drift": 24,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "sec:0001104659-26-118154:6-K",
-   "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — FORM 6-K",
-   "date": "2026-10-22",
-   "url": "https://www.sec.gov/Archives/edgar/data/1001085/000110465926118154/tm2628103d1_6k.htm",
-   "priority": "media",
-   "ticker": "BN",
-   "name": "BN"
-  },
-  {
-   "id": "sec:0001628280-26-066889:6-K",
-   "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — 6-K",
-   "date": "2026-10-22",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000162828026066889/spot-20260930x6xk.htm",
-   "priority": "media",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "sec:0001193125-26-428770:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-22",
-   "url": "https://www.sec.gov/Archives/edgar/data/1001085/000119312526428770/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "BN",
-   "name": "BN"
-  },
-  {
-   "id": "sec:0001834046-26-000010:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-22",
-   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000183404626000010/xslF345X06/wk-form4_1792702917.xml",
-   "priority": "baja",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "BN",
@@ -185,6 +140,13 @@
    "delta_days": -202
   },
   {
+   "ticker": "LIFCO B",
+   "excel": "2027-01-29",
+   "market": "2026-10-23",
+   "estimated": false,
+   "delta_days": -98
+  },
+  {
    "ticker": "DNP",
    "excel": "2026-11-12",
    "market": "2026-11-05",
@@ -193,10 +155,10 @@
   },
   {
    "ticker": "META",
-   "excel": "2026-10-28",
+   "excel": "2027-01-28",
    "market": "2026-10-21",
    "estimated": true,
-   "delta_days": -7
+   "delta_days": -99
   },
   {
    "ticker": "KKR",
@@ -206,6 +168,13 @@
    "delta_days": 5
   },
   {
+   "ticker": "ABBNE",
+   "excel": "2027-01-29",
+   "market": "2026-10-20",
+   "estimated": true,
+   "delta_days": -101
+  },
+  {
    "ticker": "KRX",
    "excel": "2026-11-20",
    "market": "2026-08-07",
@@ -213,18 +182,11 @@
    "delta_days": -105
   },
   {
-   "ticker": "TSM",
-   "excel": "2026-10-15",
-   "market": "2027-01-14",
-   "estimated": true,
-   "delta_days": 91
-  },
-  {
    "ticker": "SPOT",
-   "excel": "2026-10-28",
+   "excel": "2027-02-03",
    "market": "2026-10-22",
-   "estimated": false,
-   "delta_days": -6
+   "estimated": true,
+   "delta_days": -104
   },
   {
    "ticker": "PRY",
@@ -241,13 +203,6 @@
    "delta_days": -209
   },
   {
-   "ticker": "CHKP",
-   "excel": "2026-10-28",
-   "market": "2026-11-02",
-   "estimated": true,
-   "delta_days": 5
-  },
-  {
    "ticker": "TGYM",
    "excel": "2026-11-05",
    "market": "2026-07-30",
@@ -255,18 +210,11 @@
    "delta_days": -98
   },
   {
-   "ticker": "VID",
-   "excel": "2026-10-22",
-   "market": "2026-10-28",
-   "estimated": true,
-   "delta_days": 6
-  },
-  {
-   "ticker": "NFLX",
-   "excel": "2026-10-20",
-   "market": "2027-01-19",
-   "estimated": true,
-   "delta_days": 91
+   "ticker": "MIPS",
+   "excel": "2027-02-10",
+   "market": "2026-10-21",
+   "estimated": false,
+   "delta_days": -112
   },
   {
    "ticker": "FERG",
@@ -305,10 +253,24 @@
   },
   {
    "ticker": "RBT",
-   "excel": "2026-10-23",
+   "excel": "2027-02-11",
    "market": "2026-09-17",
    "estimated": true,
-   "delta_days": -36
+   "delta_days": -147
+  },
+  {
+   "ticker": "ROKO B",
+   "excel": "2027-02-04",
+   "market": "2026-10-23",
+   "estimated": false,
+   "delta_days": -104
+  },
+  {
+   "ticker": "SAP",
+   "excel": "2027-01-28",
+   "market": "2026-10-21",
+   "estimated": true,
+   "delta_days": -99
   },
   {
    "ticker": "VYLR",
@@ -397,6 +359,13 @@
    "urls": []
   },
   {
+   "ticker": "LIFCO B",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-01-29 y el mercado dice 2026-10-23 (-98 dias de diferencia)",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
    "ticker": "DNP",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-12 y el mercado dice 2026-11-05 (-7 dias de diferencia) — la del Excel era una estimacion",
@@ -406,7 +375,7 @@
   {
    "ticker": "META",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-10-21 (-7 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2027-01-28 y el mercado dice 2026-10-21 (-99 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -418,6 +387,13 @@
    "urls": []
   },
   {
+   "ticker": "ABBNE",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-01-29 y el mercado dice 2026-10-20 (-101 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
    "ticker": "KRX",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-20 y el mercado dice 2026-08-07 (-105 dias de diferencia)",
@@ -425,16 +401,9 @@
    "urls": []
   },
   {
-   "ticker": "TSM",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-15 y el mercado dice 2027-01-14 (91 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "SPOT",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-10-22 (-6 dias de diferencia)",
+   "motivo": "El Excel dice 2027-02-03 y el mercado dice 2026-10-22 (-104 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -453,13 +422,6 @@
    "urls": []
   },
   {
-   "ticker": "CHKP",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2026-11-02 (5 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "TGYM",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-05 y el mercado dice 2026-07-30 (-98 dias de diferencia) — la del Excel era una estimacion",
@@ -467,16 +429,9 @@
    "urls": []
   },
   {
-   "ticker": "VID",
+   "ticker": "MIPS",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-22 y el mercado dice 2026-10-28 (6 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "NFLX",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-20 y el mercado dice 2027-01-19 (91 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2027-02-10 y el mercado dice 2026-10-21 (-112 dias de diferencia)",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -518,7 +473,21 @@
   {
    "ticker": "RBT",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-10-23 y el mercado dice 2026-09-17 (-36 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2027-02-11 y el mercado dice 2026-09-17 (-147 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "ROKO B",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-04 y el mercado dice 2026-10-23 (-104 dias de diferencia)",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "SAP",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-01-28 y el mercado dice 2026-10-21 (-99 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
