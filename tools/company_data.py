@@ -39,7 +39,7 @@ FIN_OVERRIDE = {
     "TFF": "TFF.PA", "VRLA": "VRLA.PA", "MIPS": "MIPS.ST", "ABBNE": "ABBN.SW",
     "STMN": "STMN.SW", "SIKA": "SIKA.SW", "JFN": "JFN.SW", "BFIT": "BFIT.AS",
     "DNP": "DNP.WA", "KSPI": "KSPI", "TFPM": "TFPM.TO", "IPCO": "IPCO.TO",
-    "COR": "COR.LS", "KRX": "KRX.IR", "TOI": "TOI.V", "LMN": "LMN.V",
+    "COR": "COR.LS", "KRX": "KRX.IR", "TOI": "TOI.V", "LMN": "LMN.V", "EL": "EL.PA", "LUN": "LUN.TO",
 }
 
 # Filas de yfinance -> nombre canonico. Se prueban en orden y gana la primera que exista.

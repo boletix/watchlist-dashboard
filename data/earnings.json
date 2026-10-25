@@ -1,7 +1,7 @@
 {
  "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Se regenera en cada build.",
  "fields": "earnings_last_date (ISO), earnings_next_date (ISO), earnings_updated_at (ISO), earnings_next_estimated (bool)",
- "generated_at": "2026-10-23T17:13:49+00:00",
+ "generated_at": "2026-10-25T14:36:18+00:00",
  "companies": {
   "VEEV": {
    "earnings_last_date": "2026-08-26",
@@ -72,7 +72,7 @@
   "ITX": {
    "earnings_last_date": "2026-09-09",
    "earnings_next_date": "2026-12-02",
-   "earnings_updated_at": "2026-09-27",
+   "earnings_updated_at": "2026-10-24",
    "earnings_next_estimated": true
   },
   "LOTB": {
@@ -150,7 +150,7 @@
   "META": {
    "earnings_last_date": "2026-10-21",
    "earnings_next_date": "2027-01-28",
-   "earnings_updated_at": "2026-10-23",
+   "earnings_updated_at": "2026-10-24",
    "earnings_next_estimated": true
   },
   "KKR": {
@@ -233,9 +233,9 @@
   },
   "PRY": {
    "earnings_last_date": "2026-07-30",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-08-20",
-   "earnings_next_estimated": true
+   "earnings_next_date": "2026-10-28",
+   "earnings_updated_at": "2026-10-24",
+   "earnings_next_estimated": false
   },
   "JFN": {
    "earnings_last_date": "2026-08-28",
@@ -334,10 +334,10 @@
    "earnings_next_estimated": true
   },
   "BFIT": {
-   "earnings_last_date": "2026-07-28",
-   "earnings_next_date": "2026-10-27",
-   "earnings_updated_at": "2026-07-29",
-   "earnings_next_estimated": true
+   "earnings_last_date": "2026-10-21",
+   "earnings_next_date": "2027-03-09",
+   "earnings_updated_at": "2026-10-24",
+   "earnings_next_estimated": false
   },
   "VRLA": {
    "earnings_last_date": "2026-07-28",
@@ -427,6 +427,18 @@
    "earnings_last_date": "2026-07-28",
    "earnings_next_date": "2026-10-27",
    "earnings_updated_at": "2026-09-27",
+   "earnings_next_estimated": false
+  },
+  "EL": {
+   "earnings_last_date": "2026-10-20",
+   "earnings_next_date": "2027-02-11",
+   "earnings_updated_at": "2026-10-25",
+   "earnings_next_estimated": false
+  },
+  "LUN": {
+   "earnings_last_date": "2026-08-05",
+   "earnings_next_date": "2026-11-05",
+   "earnings_updated_at": "2026-10-25",
    "earnings_next_estimated": false
   }
  }
