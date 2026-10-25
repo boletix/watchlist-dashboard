@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-25T14:36:18+00:00",
+    "generated_at": "2026-10-25T14:52:20+00:00",
     "n_companies": 73,
     "source_file": "watchlist_ratings.xlsx",
     "validation_issues": [],
@@ -119,7 +119,46 @@
     "currency_unresolved": [],
     "updates": {
       "n_updates": 261
-    }
+    },
+    "backtest": {
+      "generated_at": "2026-10-25T14:52:36+00:00",
+      "start_date": "2020-01-01",
+      "end_date": "2026-10-23",
+      "n_companies_total": 73,
+      "n_baskets": 12,
+      "n_benchmarks": 3,
+      "currencies_converted": [
+        "CAD",
+        "CHF",
+        "EUR",
+        "GBp",
+        "PLN",
+        "SEK"
+      ]
+    },
+    "history": {
+      "generated_at": "2026-10-25T14:54:26+00:00",
+      "n_with_history": 72,
+      "n_missing": 1,
+      "missing": [
+        {
+          "ticker": "VYLR",
+          "reason": "could not compute multiples"
+        }
+      ]
+    },
+    "shareholder": {
+      "generated_at": "2026-10-25T14:55:23+00:00",
+      "n_tickers": 73,
+      "n_with_data": 73
+    },
+    "correlations": {
+      "generated_at": "2026-10-25T14:55:25+00:00",
+      "n_tickers": 73,
+      "n_clusters": 71,
+      "redundant_threshold": 0.75
+    },
+    "n_alerts": 3
   },
   "kpis": {
     "n_companies": 73,
@@ -376,8 +415,8 @@
   "deltas": {
     "available": true,
     "entered": [
-      "EL",
-      "LUN"
+      "LUN",
+      "EL"
     ],
     "exited": [],
     "rating_changes": [
@@ -881,10 +920,10 @@
       "roic_slope_5y": null,
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": false,
-      "buyback_yield_ttm": -0.48990633227456293,
-      "dividend_yield": 0.73,
+      "buyback_yield_ttm": -0.48996283222148007,
+      "dividend_yield": 0.74,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.24009366772543705
+      "net_shareholder_return": 0.2500371677785199
     },
     {
       "ticker": "COST",
@@ -995,18 +1034,18 @@
       "ev_fcf_5y_base": 35.42080935080393,
       "score_v2": 45.558276120708754,
       "score_v2_rank": 37,
-      "ev_fcf_zscore_self_5y": -0.29340980043346726,
-      "ev_fcf_mean_5y": 50.998333333333335,
-      "ev_fcf_std_5y": 9.60545056494257,
-      "ev_sales_zscore_self_5y": 0.5040302036234267,
+      "ev_fcf_zscore_self_5y": -0.6596433971413816,
+      "ev_fcf_mean_5y": 47.104,
+      "ev_fcf_std_5y": 8.6774157443331,
+      "ev_sales_zscore_self_5y": -0.29665257471651973,
       "moat_erosion_flag": true,
-      "roic_slope_5y": 8.325634689806196e-05,
-      "fcf_margin_slope_5y": 0.3357257141978516,
+      "roic_slope_5y": -0.0013456216864962127,
+      "fcf_margin_slope_5y": 0.12195033172027081,
       "earnings_next_estimated": true,
-      "buyback_yield_ttm": -0.00025049308774479495,
-      "dividend_yield": 0.58,
+      "buyback_yield_ttm": -6.542775084210028e-05,
+      "dividend_yield": 0.59,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.5797495069122551
+      "net_shareholder_return": 0.5899345722491579
     },
     {
       "ticker": "DSGX",
@@ -1248,9 +1287,9 @@
       "fcf_margin_slope_5y": 0.22785092501315748,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0255,
+      "dividend_yield": 0.0259,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0255
+      "net_shareholder_return": 0.0259
     },
     {
       "ticker": "ZS",
@@ -1492,9 +1531,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.009808457644113448,
-      "dividend_yield": 0.0241,
+      "dividend_yield": 0.024900000000000002,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.033908457644113446
+      "net_shareholder_return": 0.03470845764411345
     },
     {
       "ticker": "AMZN",
@@ -1736,9 +1775,9 @@
       "fcf_margin_slope_5y": 0.39062191142958236,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.00223041738728756,
-      "dividend_yield": 0.0169,
+      "dividend_yield": 0.0182,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.014669582612712439
+      "net_shareholder_return": 0.01596958261271244
     },
     {
       "ticker": "ITX",
@@ -1858,9 +1897,9 @@
       "fcf_margin_slope_5y": -0.12055847254563848,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0005203037165384361,
-      "dividend_yield": 0.0116,
+      "dividend_yield": 0.0115,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.011079696283461563
+      "net_shareholder_return": 0.010979696283461564
     },
     {
       "ticker": "LOTB",
@@ -2102,9 +2141,9 @@
       "fcf_margin_slope_5y": 1.6121338432599368,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 6.194836208734506e-05,
-      "dividend_yield": 0.75,
+      "dividend_yield": 0.76,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7500619483620874
+      "net_shareholder_return": 0.7600619483620874
     },
     {
       "ticker": "FICO",
@@ -2346,9 +2385,9 @@
       "fcf_margin_slope_5y": 0.355845282954137,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.85,
+      "dividend_yield": 0.96,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.85
+      "net_shareholder_return": 0.96
     },
     {
       "ticker": "EVD",
@@ -2468,9 +2507,9 @@
       "fcf_margin_slope_5y": -4.295079515165537,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.022400000000000003,
+      "dividend_yield": 0.0229,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.022400000000000003
+      "net_shareholder_return": 0.0229
     },
     {
       "ticker": "MNST",
@@ -2802,9 +2841,9 @@
       "ev_fcf_zscore_by_category": -1.0,
       "ev_fcf_zscore_sector": -1.0,
       "composite_rank": 17,
-      "survival_score": 0.8555555555555556,
+      "survival_score": 0.8555555555555555,
       "quality_score": 0.7805,
-      "composite_geometric": 8.047568403718216,
+      "composite_geometric": 8.047568403718214,
       "kill_flag": false,
       "rating_dispersion": 0.37950259843935474,
       "fve_min_repriced": 11.488678090575275,
@@ -2823,7 +2862,7 @@
       "asymmetry_v2": 0.6744566909241444,
       "pure_upside": false,
       "ev_fcf_5y_base": 38.61119148901408,
-      "score_v2": 42.06985714062122,
+      "score_v2": 42.06985714062121,
       "score_v2_rank": 50,
       "ev_fcf_zscore_self_5y": -0.7889558841967237,
       "ev_fcf_mean_5y": 53.648,
@@ -3078,9 +3117,9 @@
       "fcf_margin_slope_5y": -0.7178876718111502,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0018982809032665696,
-      "dividend_yield": 0.0181,
+      "dividend_yield": 0.0192,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.019998280903266573
+      "net_shareholder_return": 0.02109828090326657
     },
     {
       "ticker": "JDG",
@@ -3168,9 +3207,9 @@
       "ev_fcf_zscore_by_category": -0.8456695557307615,
       "ev_fcf_zscore_sector": -0.8456695557307615,
       "composite_rank": 27,
-      "survival_score": 0.8555555555555556,
+      "survival_score": 0.8555555555555555,
       "quality_score": 0.6575,
-      "composite_geometric": 7.178161799850739,
+      "composite_geometric": 7.178161799850738,
       "kill_flag": false,
       "rating_dispersion": 0.2974334659493897,
       "fve_min_repriced": 2697.918684100296,
@@ -3189,7 +3228,7 @@
       "asymmetry_v2": 7.857328227425777,
       "pure_upside": false,
       "ev_fcf_5y_base": 8.304391443531934,
-      "score_v2": 62.577675467838624,
+      "score_v2": 62.57767546783861,
       "score_v2_rank": 5,
       "ev_fcf_zscore_self_5y": -1.2944145798186524,
       "ev_fcf_mean_5y": 2781.53,
@@ -3322,9 +3361,9 @@
       "fcf_margin_slope_5y": 0.26262119801293093,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 2.634040570508854e-07,
-      "dividend_yield": 0.0103,
+      "dividend_yield": 0.0101,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01030026340405705
+      "net_shareholder_return": 0.01010026340405705
     },
     {
       "ticker": "META",
@@ -3412,7 +3451,7 @@
       "ev_fcf_zscore_by_category": -1.1640656194646999,
       "ev_fcf_zscore_sector": -1.1640656194646999,
       "composite_rank": 40,
-      "survival_score": 0.7833333333333333,
+      "survival_score": 0.7833333333333332,
       "quality_score": 0.6220000000000001,
       "composite_geometric": 6.717006867307575,
       "kill_flag": false,
@@ -3444,9 +3483,9 @@
       "fcf_margin_slope_5y": -0.6086205170141862,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0019133389649935491,
-      "dividend_yield": 0.32,
+      "dividend_yield": 0.33,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.3219133389649936
+      "net_shareholder_return": 0.3319133389649936
     },
     {
       "ticker": "KKR",
@@ -3566,9 +3605,9 @@
       "fcf_margin_slope_5y": -14.968355837599857,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.003624806772649062,
-      "dividend_yield": 0.84,
+      "dividend_yield": 0.85,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.8363751932273509
+      "net_shareholder_return": 0.8463751932273509
     },
     {
       "ticker": "NET",
@@ -3932,9 +3971,9 @@
       "fcf_margin_slope_5y": -2.444010218303822,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.010072885103595119,
-      "dividend_yield": 0.27,
+      "dividend_yield": 0.28,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.2800728851035951
+      "net_shareholder_return": 0.29007288510359514
     },
     {
       "ticker": "ABBNE",
@@ -4054,9 +4093,9 @@
       "fcf_margin_slope_5y": 2.3479278155611545,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.010907923578449916,
-      "dividend_yield": 0.013600000000000001,
+      "dividend_yield": 0.0139,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.024507923578449917
+      "net_shareholder_return": 0.024807923578449916
     },
     {
       "ticker": "GRMN",
@@ -4144,7 +4183,7 @@
       "ev_fcf_zscore_by_category": 1.3846842244528368,
       "ev_fcf_zscore_sector": 1.3846842244528368,
       "composite_rank": 36,
-      "survival_score": 0.85,
+      "survival_score": 0.8500000000000001,
       "quality_score": 0.5599999999999999,
       "composite_geometric": 6.435737570130742,
       "kill_flag": false,
@@ -4165,7 +4204,7 @@
       "asymmetry_v2": 1.4627532748632752,
       "pure_upside": false,
       "ev_fcf_5y_base": 25.36409033369748,
-      "score_v2": 38.558304987712916,
+      "score_v2": 38.55830498771292,
       "score_v2_rank": 59,
       "ev_fcf_zscore_self_5y": 0.011366179393190139,
       "ev_fcf_mean_5y": 27.796666666666667,
@@ -4176,9 +4215,9 @@
       "fcf_margin_slope_5y": 1.5808275839663761,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0007897416713427686,
-      "dividend_yield": 0.014199999999999999,
+      "dividend_yield": 0.0143,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.013410258328657231
+      "net_shareholder_return": 0.013510258328657232
     },
     {
       "ticker": "KRX",
@@ -4298,9 +4337,9 @@
       "fcf_margin_slope_5y": -0.5712248712663038,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 0.010253213976411582,
-      "dividend_yield": 0.62,
+      "dividend_yield": 0.63,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.6302532139764115
+      "net_shareholder_return": 0.6402532139764116
     },
     {
       "ticker": "KSPI",
@@ -4388,7 +4427,7 @@
       "ev_fcf_zscore_by_category": -1.0000000000000002,
       "ev_fcf_zscore_sector": -1.0000000000000002,
       "composite_rank": 42,
-      "survival_score": 0.6388888888888888,
+      "survival_score": 0.638888888888889,
       "quality_score": 0.6174999999999999,
       "composite_geometric": 6.2454885961930895,
       "kill_flag": false,
@@ -4405,7 +4444,7 @@
       "edge_to_fair": 1.2244323130180934,
       "quality_zone": "value_trap",
       "kelly_fraction": 0.13254500757551071,
-      "suggested_weight_pct": 0.08468153261768739,
+      "suggested_weight_pct": 0.0846815326176874,
       "asymmetry_v2": 23.7043737633151,
       "pure_upside": false,
       "ev_fcf_5y_base": 4.736296695071219,
@@ -4420,9 +4459,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.0011167654441912016,
-      "dividend_yield": 0.0634,
+      "dividend_yield": 0.0626,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.062283234555808795
+      "net_shareholder_return": 0.0614832345558088
     },
     {
       "ticker": "CBAV",
@@ -4542,9 +4581,9 @@
       "fcf_margin_slope_5y": -1.1617128077669125,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0015787270454156797,
-      "dividend_yield": 0.028999999999999998,
+      "dividend_yield": 0.0292,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.027421272954584318
+      "net_shareholder_return": 0.02762127295458432
     },
     {
       "ticker": "NVDA",
@@ -4632,9 +4671,9 @@
       "ev_fcf_zscore_by_category": 1.0,
       "ev_fcf_zscore_sector": 1.0,
       "composite_rank": 43,
-      "survival_score": 0.6944444444444443,
+      "survival_score": 0.6944444444444445,
       "quality_score": 0.6025,
-      "composite_geometric": 6.317092023378017,
+      "composite_geometric": 6.317092023378018,
       "kill_flag": false,
       "rating_dispersion": 0.28241026106633504,
       "fve_min_repriced": 150.17095435684647,
@@ -4649,11 +4688,11 @@
       "edge_to_fair": 0.08587076944784577,
       "quality_zone": "avoid",
       "kelly_fraction": 0.06788234261184169,
-      "suggested_weight_pct": 0.04714051570266783,
+      "suggested_weight_pct": 0.04714051570266784,
       "asymmetry_v2": 2.61596934198386,
       "pure_upside": false,
       "ev_fcf_5y_base": 22.55831699734228,
-      "score_v2": 37.77549862386709,
+      "score_v2": 37.775498623867094,
       "score_v2_rank": 62,
       "ev_fcf_zscore_self_5y": -0.6888267405918855,
       "ev_fcf_mean_5y": 64.32000000000001,
@@ -4777,18 +4816,18 @@
       "ev_fcf_5y_base": 4.682194355980977,
       "score_v2": 72.7390474583968,
       "score_v2_rank": 2,
-      "ev_fcf_zscore_self_5y": -0.7351653141880428,
-      "ev_fcf_mean_5y": 8.283333333333333,
-      "ev_fcf_std_5y": 4.4253085265951295,
-      "ev_sales_zscore_self_5y": -1.1427600890466947,
+      "ev_fcf_zscore_self_5y": -0.4644178461873849,
+      "ev_fcf_mean_5y": 7.6675,
+      "ev_fcf_std_5y": 3.978098635026537,
+      "ev_sales_zscore_self_5y": -0.7309163148726452,
       "moat_erosion_flag": true,
-      "roic_slope_5y": 0.10908438476495036,
-      "fcf_margin_slope_5y": 10.60792175045757,
+      "roic_slope_5y": 0.08216758443625626,
+      "fcf_margin_slope_5y": 7.991034097428893,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0,
-      "dividend_yield": 0.0512,
+      "dividend_yield": 0.0507,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0512
+      "net_shareholder_return": 0.0507
     },
     {
       "ticker": "TSM",
@@ -4908,9 +4947,9 @@
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 8.048553850928476e-06,
-      "dividend_yield": 0.91,
+      "dividend_yield": 0.9,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.910008048553851
+      "net_shareholder_return": 0.900008048553851
     },
     {
       "ticker": "SPOT",
@@ -5152,9 +5191,9 @@
       "fcf_margin_slope_5y": 1.1577281504872932,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 0.0003582043695307712,
-      "dividend_yield": 0.83,
+      "dividend_yield": 0.91,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.8303582043695308
+      "net_shareholder_return": 0.9103582043695309
     },
     {
       "ticker": "JFN",
@@ -5242,7 +5281,7 @@
       "ev_fcf_zscore_by_category": -0.9584413208680281,
       "ev_fcf_zscore_sector": -0.9584413208680281,
       "composite_rank": 49,
-      "survival_score": 0.8555555555555556,
+      "survival_score": 0.8555555555555555,
       "quality_score": 0.499,
       "composite_geometric": 5.972412132013625,
       "kill_flag": false,
@@ -5274,9 +5313,9 @@
       "fcf_margin_slope_5y": -1.3923358345022152,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.027769586990563862,
-      "dividend_yield": 0.0358,
+      "dividend_yield": 0.0355,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.008030413009436136
+      "net_shareholder_return": 0.007730413009436134
     },
     {
       "ticker": "CPR",
@@ -5396,9 +5435,9 @@
       "fcf_margin_slope_5y": 3.7986626685530296,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.003092840814239913,
-      "dividend_yield": 0.015300000000000001,
+      "dividend_yield": 0.0149,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.018392840814239912
+      "net_shareholder_return": 0.017992840814239915
     },
     {
       "ticker": "SIKA",
@@ -5518,9 +5557,9 @@
       "fcf_margin_slope_5y": 1.0873854972739567,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 3.287117668061136e-05,
-      "dividend_yield": 0.020099999999999996,
+      "dividend_yield": 0.020499999999999997,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.020132871176680608
+      "net_shareholder_return": 0.02053287117668061
     },
     {
       "ticker": "CHKP",
@@ -5608,9 +5647,9 @@
       "ev_fcf_zscore_by_category": -0.9876092702102366,
       "ev_fcf_zscore_sector": -0.9876092702102366,
       "composite_rank": 56,
-      "survival_score": 0.6944444444444443,
+      "survival_score": 0.6944444444444445,
       "quality_score": 0.515,
-      "composite_geometric": 5.689629525431281,
+      "composite_geometric": 5.6896295254312825,
       "kill_flag": false,
       "rating_dispersion": 0.18006171781425995,
       "fve_min_repriced": 59.180847125286235,
@@ -5629,7 +5668,7 @@
       "asymmetry_v2": 1.3066236741089428,
       "pure_upside": false,
       "ev_fcf_5y_base": 13.800537054820369,
-      "score_v2": 43.87350093162639,
+      "score_v2": 43.8735009316264,
       "score_v2_rank": 46,
       "ev_fcf_zscore_self_5y": -0.4552557334129955,
       "ev_fcf_mean_5y": 14.491666666666667,
@@ -5762,9 +5801,9 @@
       "fcf_margin_slope_5y": 0.5951004360440132,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0006509283172220123,
-      "dividend_yield": 0.03,
+      "dividend_yield": 0.0311,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.029349071682777988
+      "net_shareholder_return": 0.030449071682777988
     },
     {
       "ticker": "VID",
@@ -5884,9 +5923,9 @@
       "fcf_margin_slope_5y": 2.6165834157489343,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.04930209780741115,
-      "dividend_yield": 0.0187,
+      "dividend_yield": 0.018600000000000002,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": -0.030602097807411147
+      "net_shareholder_return": -0.030702097807411146
     },
     {
       "ticker": "TFPM",
@@ -6006,9 +6045,9 @@
       "fcf_margin_slope_5y": -2.5233916316128826,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.02643961170814384,
-      "dividend_yield": 0.81,
+      "dividend_yield": 0.83,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.7835603882918563
+      "net_shareholder_return": 0.8035603882918562
     },
     {
       "ticker": "NFLX",
@@ -6241,18 +6280,18 @@
       "ev_fcf_5y_base": 13.34056209637131,
       "score_v2": 49.01736676945836,
       "score_v2_rank": 20,
-      "ev_fcf_zscore_self_5y": -0.3419857345975646,
-      "ev_fcf_mean_5y": 31.774,
-      "ev_fcf_std_5y": 18.14110757368469,
-      "ev_sales_zscore_self_5y": -1.3638380944327981,
-      "moat_erosion_flag": true,
-      "roic_slope_5y": -0.006341764893094743,
-      "fcf_margin_slope_5y": -2.6198415611379744,
+      "ev_fcf_zscore_self_5y": 0.018793620990730873,
+      "ev_fcf_mean_5y": 22.86,
+      "ev_fcf_std_5y": 3.192572630340616,
+      "ev_sales_zscore_self_5y": -1.2359212392325696,
+      "moat_erosion_flag": false,
+      "roic_slope_5y": -0.0015348999040985202,
+      "fcf_margin_slope_5y": -2.0969043446440443,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.005080422086720867,
-      "dividend_yield": 0.042800000000000005,
+      "dividend_yield": 0.044000000000000004,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.03771957791327914
+      "net_shareholder_return": 0.03891957791327914
     },
     {
       "ticker": "MIPS",
@@ -6851,18 +6890,18 @@
       "ev_fcf_5y_base": 10.597418684279297,
       "score_v2": 53.100690604904656,
       "score_v2_rank": 11,
-      "ev_fcf_zscore_self_5y": 1.111808826642681,
-      "ev_fcf_mean_5y": 11.285,
-      "ev_fcf_std_5y": 2.9546446486845084,
+      "ev_fcf_zscore_self_5y": 1.1119858022612068,
+      "ev_fcf_mean_5y": 11.28,
+      "ev_fcf_std_5y": 2.9496779485225164,
       "ev_sales_zscore_self_5y": 1.0610545132336733,
       "moat_erosion_flag": true,
-      "roic_slope_5y": -0.021122491581691716,
-      "fcf_margin_slope_5y": -0.08608626541585288,
+      "roic_slope_5y": -0.021103150031398066,
+      "fcf_margin_slope_5y": -0.08401821110789984,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": 0.00839634075661331,
-      "dividend_yield": 0.0347,
+      "dividend_yield": 0.0344,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.04309634075661331
+      "net_shareholder_return": 0.04279634075661331
     },
     {
       "ticker": "TFF",
@@ -6950,7 +6989,7 @@
       "ev_fcf_zscore_by_category": -0.698538277820834,
       "ev_fcf_zscore_sector": -0.698538277820834,
       "composite_rank": 66,
-      "survival_score": 0.7000000000000001,
+      "survival_score": 0.6999999999999998,
       "quality_score": 0.32,
       "composite_geometric": 4.153995281480883,
       "kill_flag": false,
@@ -6971,12 +7010,12 @@
       "asymmetry_v2": 0.9536605293218725,
       "pure_upside": false,
       "ev_fcf_5y_base": 26.21476434838333,
-      "score_v2": 28.67970531147044,
+      "score_v2": 28.679705311470432,
       "score_v2_rank": 69,
       "ev_fcf_zscore_self_5y": null,
       "ev_fcf_mean_5y": null,
       "ev_fcf_std_5y": null,
-      "ev_sales_zscore_self_5y": -1.714687463279912,
+      "ev_sales_zscore_self_5y": -0.5828858729734419,
       "moat_erosion_flag": false,
       "roic_slope_5y": null,
       "fcf_margin_slope_5y": null,
@@ -7316,9 +7355,9 @@
       "ev_fcf_zscore_by_category": 1.1741546298107575,
       "ev_fcf_zscore_sector": 1.1741546298107575,
       "composite_rank": 64,
-      "survival_score": 0.7999999999999999,
+      "survival_score": 0.8000000000000002,
       "quality_score": 0.34900000000000003,
-      "composite_geometric": 4.601650321524285,
+      "composite_geometric": 4.601650321524286,
       "kill_flag": false,
       "rating_dispersion": 0.5372150407425319,
       "fve_min_repriced": 5.3453596086757855,
@@ -7333,7 +7372,7 @@
       "edge_to_fair": -0.17414631632855782,
       "quality_zone": "avoid",
       "kelly_fraction": 0.005902108879107546,
-      "suggested_weight_pct": 0.004721687103286036,
+      "suggested_weight_pct": 0.004721687103286037,
       "asymmetry_v2": 1.8548769212164031,
       "pure_upside": false,
       "ev_fcf_5y_base": 10.670480030999233,
@@ -7348,9 +7387,9 @@
       "fcf_margin_slope_5y": -0.8652218135047408,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0009627174751651734,
-      "dividend_yield": 0.0545,
+      "dividend_yield": 0.0538,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.05353728252483483
+      "net_shareholder_return": 0.05283728252483483
     },
     {
       "ticker": "KIST",
@@ -7560,7 +7599,7 @@
       "ev_fcf_zscore_by_category": -1.361815714366445,
       "ev_fcf_zscore_sector": -1.361815714366445,
       "composite_rank": 71,
-      "survival_score": 0.6388888888888888,
+      "survival_score": 0.638888888888889,
       "quality_score": 0.172,
       "composite_geometric": 2.66375376372668,
       "kill_flag": false,
@@ -7581,7 +7620,7 @@
       "asymmetry_v2": 4.67129577562277,
       "pure_upside": false,
       "ev_fcf_5y_base": 7.601335785109419,
-      "score_v2": 43.92301732611514,
+      "score_v2": 43.92301732611515,
       "score_v2_rank": 45,
       "ev_fcf_zscore_self_5y": -0.7276066518585473,
       "ev_fcf_mean_5y": 883.6599999999999,
@@ -8202,9 +8241,9 @@
       "fcf_margin_slope_5y": 0.21387613535720845,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.015346917470918712,
-      "dividend_yield": 0.0285,
+      "dividend_yield": 0.028399999999999998,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.04384691747091871
+      "net_shareholder_return": 0.04374691747091871
     },
     {
       "ticker": "IP",
@@ -8292,9 +8331,9 @@
       "ev_fcf_zscore_by_category": -1.729488625828812,
       "ev_fcf_zscore_sector": -1.729488625828812,
       "composite_rank": 52,
-      "survival_score": 0.7999999999999999,
+      "survival_score": 0.8000000000000002,
       "quality_score": 0.5565,
-      "composite_geometric": 6.280681562875917,
+      "composite_geometric": 6.280681562875918,
       "kill_flag": false,
       "rating_dispersion": 0.20725722075613096,
       "fve_min_repriced": 28.20554503932336,
@@ -8309,7 +8348,7 @@
       "edge_to_fair": 0.44642125347522765,
       "quality_zone": "avoid",
       "kelly_fraction": 0.11366101570945476,
-      "suggested_weight_pct": 0.0909288125675638,
+      "suggested_weight_pct": 0.09092881256756383,
       "asymmetry_v2": 5.719160792627335,
       "pure_upside": false,
       "ev_fcf_5y_base": 12.694363022092332,
@@ -8324,9 +8363,9 @@
       "fcf_margin_slope_5y": 2.3174083029577996,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": 0.0033325922555425343,
-      "dividend_yield": 0.95,
+      "dividend_yield": 0.98,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.9533325922555425
+      "net_shareholder_return": 0.9833325922555425
     },
     {
       "ticker": "RBT",
@@ -8446,9 +8485,9 @@
       "fcf_margin_slope_5y": 1.0843676724558418,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0009306225430299523,
-      "dividend_yield": 0.015600000000000001,
+      "dividend_yield": 0.0154,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.01466937745697005
+      "net_shareholder_return": 0.014469377456970049
     },
     {
       "ticker": "ROKO B",
@@ -8690,9 +8729,9 @@
       "fcf_margin_slope_5y": -0.7150598199600783,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0018668533851300844,
-      "dividend_yield": 0.0207,
+      "dividend_yield": 0.0208,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.018833146614869914
+      "net_shareholder_return": 0.018933146614869913
     },
     {
       "ticker": "SAP",
@@ -8812,9 +8851,9 @@
       "fcf_margin_slope_5y": 2.0755787039016687,
       "earnings_next_estimated": true,
       "buyback_yield_ttm": -0.0008311295724966266,
-      "dividend_yield": 0.012,
+      "dividend_yield": 0.011699999999999999,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.011168870427503374
+      "net_shareholder_return": 0.010868870427503372
     },
     {
       "ticker": "VYLR",
@@ -8933,10 +8972,10 @@
       "roic_slope_5y": null,
       "fcf_margin_slope_5y": null,
       "earnings_next_estimated": false,
-      "buyback_yield_ttm": null,
-      "dividend_yield": 0.0,
+      "buyback_yield_ttm": 0.0,
+      "dividend_yield": 0.7,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.0
+      "net_shareholder_return": 0.7
     },
     {
       "ticker": "RCL",
@@ -9056,9 +9095,9 @@
       "fcf_margin_slope_5y": 0.7767694137339205,
       "earnings_next_estimated": false,
       "buyback_yield_ttm": -0.00566462664411378,
-      "dividend_yield": 0.021,
+      "dividend_yield": 0.0217,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": 0.015335373355886221
+      "net_shareholder_return": 0.016035373355886222
     },
     {
       "ticker": "EL",
@@ -9169,18 +9208,18 @@
       "ev_fcf_5y_base": 24.102340546032686,
       "score_v2": 44.03039490113177,
       "score_v2_rank": 43,
-      "ev_fcf_zscore_self_5y": null,
-      "ev_fcf_mean_5y": null,
-      "ev_fcf_std_5y": null,
-      "ev_sales_zscore_self_5y": null,
-      "moat_erosion_flag": false,
-      "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
+      "ev_fcf_zscore_self_5y": 1.1777035548503605,
+      "ev_fcf_mean_5y": 30.440000000000005,
+      "ev_fcf_std_5y": 4.661614527178324,
+      "ev_sales_zscore_self_5y": 1.3263736613411952,
+      "moat_erosion_flag": true,
+      "roic_slope_5y": -0.004309476915967345,
+      "fcf_margin_slope_5y": -0.010176624037159784,
       "earnings_next_estimated": false,
-      "buyback_yield_ttm": null,
-      "dividend_yield": null,
+      "buyback_yield_ttm": -0.014192193636078784,
+      "dividend_yield": 0.022099999999999998,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": null
+      "net_shareholder_return": 0.007907806363921214
     },
     {
       "ticker": "LUN",
@@ -9291,18 +9330,18 @@
       "ev_fcf_5y_base": 12.847255358051898,
       "score_v2": 47.22929326986855,
       "score_v2_rank": 30,
-      "ev_fcf_zscore_self_5y": null,
-      "ev_fcf_mean_5y": null,
-      "ev_fcf_std_5y": null,
-      "ev_sales_zscore_self_5y": null,
-      "moat_erosion_flag": false,
-      "roic_slope_5y": null,
-      "fcf_margin_slope_5y": null,
+      "ev_fcf_zscore_self_5y": -0.5903861190715967,
+      "ev_fcf_mean_5y": 67.87666666666668,
+      "ev_fcf_std_5y": 70.27039648544913,
+      "ev_sales_zscore_self_5y": 0.7282598367436638,
+      "moat_erosion_flag": true,
+      "roic_slope_5y": 0.006882780498049956,
+      "fcf_margin_slope_5y": 6.356867742825589,
       "earnings_next_estimated": false,
-      "buyback_yield_ttm": null,
-      "dividend_yield": null,
+      "buyback_yield_ttm": -0.10366142878425924,
+      "dividend_yield": 0.37,
       "sbc_dilution_pct": null,
-      "net_shareholder_return": null
+      "net_shareholder_return": 0.2663385712157408
     }
   ]
 }

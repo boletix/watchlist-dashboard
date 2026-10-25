@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T17:17:53+00:00",
+    "generated_at": "2026-10-25T14:56:15+00:00",
     "n_snapshots": 35,
     "first_snapshot": "2026-04-19",
-    "last_snapshot": "2026-10-23",
+    "last_snapshot": "2026-10-25",
     "has_enough_data": true,
     "notice": null
   },
@@ -11,7 +11,7 @@
     {
       "ticker": "OTLY",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": -0.73,
       "rating_last": 2.37,
@@ -19,12 +19,12 @@
       "geom_first": null,
       "geom_last": 3.8122412258294043,
       "geom_delta": null,
-      "price_pct_change": -0.11612430438913068
+      "price_pct_change": -0.10576924976024116
     },
     {
       "ticker": "VRLA",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 2.07,
       "rating_last": 3.96,
@@ -35,9 +35,22 @@
       "price_pct_change": 6.178695409646538
     },
     {
+      "ticker": "BFIT",
+      "first_date": "2026-04-19",
+      "last_date": "2026-10-25",
+      "n_obs": 35,
+      "rating_first": 2.94,
+      "rating_last": 4.63,
+      "rating_delta": 1.69,
+      "geom_first": null,
+      "geom_last": 5.894658216883812,
+      "geom_delta": null,
+      "price_pct_change": -0.11963183723083859
+    },
+    {
       "ticker": "NFLX",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 4.93,
       "rating_last": 6.06,
@@ -45,12 +58,12 @@
       "geom_first": null,
       "geom_last": 6.555679097573902,
       "geom_delta": null,
-      "price_pct_change": -0.31805567490232556
+      "price_pct_change": -0.32329667941394713
     },
     {
       "ticker": "EVD",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.58,
       "rating_last": 6.7,
@@ -61,9 +74,22 @@
       "price_pct_change": 0.045643153526971014
     },
     {
+      "ticker": "META",
+      "first_date": "2026-04-19",
+      "last_date": "2026-10-25",
+      "n_obs": 35,
+      "rating_first": 6.61,
+      "rating_last": 5.9,
+      "rating_delta": -0.71,
+      "geom_first": null,
+      "geom_last": 6.717006867307575,
+      "geom_delta": null,
+      "price_pct_change": -0.06670538594155251
+    },
+    {
       "ticker": "FERG",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 4.67,
       "rating_last": 5.3,
@@ -71,12 +97,12 @@
       "geom_first": null,
       "geom_last": 5.827890942070107,
       "geom_delta": null,
-      "price_pct_change": -0.12616603887467936
+      "price_pct_change": -0.12910280964640897
     },
     {
       "ticker": "PRY",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.24,
       "rating_last": 5.85,
@@ -89,7 +115,7 @@
     {
       "ticker": "TFPM",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 4.98,
       "rating_last": 5.56,
@@ -97,12 +123,12 @@
       "geom_first": null,
       "geom_last": 5.739813596960818,
       "geom_delta": null,
-      "price_pct_change": 0.11688668670676639
+      "price_pct_change": 0.1097359130030815
     },
     {
       "ticker": "WOSG",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 1.79,
       "rating_last": 2.33,
@@ -115,7 +141,7 @@
     {
       "ticker": "VID",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.04,
       "rating_last": 5.54,
@@ -128,7 +154,7 @@
     {
       "ticker": "VLTO",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 6.95,
       "rating_last": 7.34,
@@ -136,12 +162,12 @@
       "geom_first": null,
       "geom_last": 7.555259862835259,
       "geom_delta": null,
-      "price_pct_change": 0.14354800040352433
+      "price_pct_change": 0.14673552408814783
     },
     {
       "ticker": "NET",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 6.58,
       "rating_last": 6.2,
@@ -149,12 +175,12 @@
       "geom_first": null,
       "geom_last": 6.815751533211795,
       "geom_delta": null,
-      "price_pct_change": 0.618339121965618
+      "price_pct_change": 0.6206279023033643
     },
     {
       "ticker": "ABNB",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.65,
       "rating_last": 7.3,
@@ -162,12 +188,12 @@
       "geom_first": null,
       "geom_last": 7.719373848328509,
       "geom_delta": null,
-      "price_pct_change": 0.22341928165438696
+      "price_pct_change": 0.2151889141531167
     },
     {
       "ticker": "SIKA",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.13,
       "rating_last": 5.47,
@@ -180,7 +206,7 @@
     {
       "ticker": "IPCO",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 1.51,
       "rating_last": 1.83,
@@ -188,12 +214,12 @@
       "geom_first": null,
       "geom_last": 2.642535657788983,
       "geom_delta": null,
-      "price_pct_change": -0.8183737682092667
+      "price_pct_change": -0.8190026962677113
     },
     {
       "ticker": "KIST",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 1.95,
       "rating_last": 2.24,
@@ -206,7 +232,7 @@
     {
       "ticker": "JFN",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.24,
       "rating_last": 5.52,
@@ -219,7 +245,7 @@
     {
       "ticker": "SPOT",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.27,
       "rating_last": 5.54,
@@ -227,12 +253,12 @@
       "geom_first": null,
       "geom_last": 5.919835777172119,
       "geom_delta": null,
-      "price_pct_change": 0.08982317422858399
+      "price_pct_change": 0.0887236291743072
     },
     {
       "ticker": "KKR",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 6.61,
       "rating_last": 6.87,
@@ -240,12 +266,12 @@
       "geom_first": null,
       "geom_last": 7.191032681929262,
       "geom_delta": null,
-      "price_pct_change": -0.11785713575587231
+      "price_pct_change": -0.11833979070272838
     },
     {
       "ticker": "TGYM",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.06,
       "rating_last": 5.3,
@@ -258,7 +284,7 @@
     {
       "ticker": "TREX",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 3.92,
       "rating_last": 4.16,
@@ -266,12 +292,12 @@
       "geom_first": null,
       "geom_last": 4.748963023864261,
       "geom_delta": null,
-      "price_pct_change": 0.16553654291748443
+      "price_pct_change": 0.17792846689039932
     },
     {
       "ticker": "ZS",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.45,
       "rating_last": 7.22,
@@ -279,12 +305,12 @@
       "geom_first": null,
       "geom_last": 7.611322989269047,
       "geom_delta": null,
-      "price_pct_change": 0.8610781669693197
+      "price_pct_change": 0.8944907021989064
     },
     {
       "ticker": "COR",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.5,
       "rating_last": 5.72,
@@ -297,7 +323,7 @@
     {
       "ticker": "COST",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.92,
       "rating_last": 8.13,
@@ -305,12 +331,12 @@
       "geom_first": null,
       "geom_last": 8.404446519130147,
       "geom_delta": null,
-      "price_pct_change": 0.004900502362381376
+      "price_pct_change": 0.0034303699662279197
     },
     {
       "ticker": "MSFT",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 8.07,
       "rating_last": 7.86,
@@ -318,12 +344,12 @@
       "geom_first": null,
       "geom_last": 8.405278960561066,
       "geom_delta": null,
-      "price_pct_change": 0.24094695366668195
+      "price_pct_change": 0.24059225422753872
     },
     {
       "ticker": "CPR",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.23,
       "rating_last": 5.44,
@@ -336,7 +362,7 @@
     {
       "ticker": "MIPS",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 4.68,
       "rating_last": 4.89,
@@ -349,7 +375,7 @@
     {
       "ticker": "NKE",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 4.88,
       "rating_last": 5.08,
@@ -357,12 +383,12 @@
       "geom_first": null,
       "geom_last": 5.549262137114937,
       "geom_delta": null,
-      "price_pct_change": -0.18422767254233374
+      "price_pct_change": -0.18965891318169792
     },
     {
       "ticker": "SGO",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 3.77,
       "rating_last": 3.97,
@@ -375,7 +401,7 @@
     {
       "ticker": "KSPI",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 6.0,
       "rating_last": 5.81,
@@ -383,12 +409,12 @@
       "geom_first": null,
       "geom_last": 6.2454885961930895,
       "geom_delta": null,
-      "price_pct_change": 0.08244022727705658
+      "price_pct_change": 0.08043803918369163
     },
     {
       "ticker": "RAA",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.97,
       "rating_last": 7.78,
@@ -399,22 +425,9 @@
       "price_pct_change": -0.12091038406827881
     },
     {
-      "ticker": "META",
-      "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
-      "n_obs": 35,
-      "rating_first": 6.61,
-      "rating_last": 6.43,
-      "rating_delta": -0.1800000000000006,
-      "geom_first": null,
-      "geom_last": 6.938373212957774,
-      "geom_delta": null,
-      "price_pct_change": -0.06468662960856209
-    },
-    {
       "ticker": "TFF",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 3.31,
       "rating_last": 3.49,
@@ -427,7 +440,7 @@
     {
       "ticker": "CBAV",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.84,
       "rating_last": 6.02,
@@ -440,7 +453,7 @@
     {
       "ticker": "CHKP",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 5.11,
       "rating_last": 5.29,
@@ -448,12 +461,12 @@
       "geom_first": null,
       "geom_last": 5.6896295254312825,
       "geom_delta": null,
-      "price_pct_change": 0.15795649203742368
+      "price_pct_change": 0.16565276930874995
     },
     {
       "ticker": "AMZN",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.98,
       "rating_last": 7.81,
@@ -461,12 +474,12 @@
       "geom_first": null,
       "geom_last": 8.618534829999584,
       "geom_delta": null,
-      "price_pct_change": -0.00608634223875959
+      "price_pct_change": -0.010217104021144063
     },
     {
       "ticker": "MNST",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.41,
       "rating_last": 7.58,
@@ -474,12 +487,12 @@
       "geom_first": null,
       "geom_last": 7.668227271048216,
       "geom_delta": null,
-      "price_pct_change": -0.39715850802776975
+      "price_pct_change": -0.39794059056604303
     },
     {
       "ticker": "NTO",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.92,
       "rating_last": 7.76,
@@ -487,12 +500,12 @@
       "geom_first": null,
       "geom_last": 8.002603319415776,
       "geom_delta": null,
-      "price_pct_change": 0.04129983217686939
+      "price_pct_change": 0.04271277514842131
     },
     {
       "ticker": "LOTB",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 8.0,
       "rating_last": 7.84,
@@ -505,7 +518,7 @@
     {
       "ticker": "CELH",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 3.04,
       "rating_last": 3.19,
@@ -513,25 +526,12 @@
       "geom_first": null,
       "geom_last": 3.675010018089285,
       "geom_delta": null,
-      "price_pct_change": -0.18780144224775597
-    },
-    {
-      "ticker": "BFIT",
-      "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
-      "n_obs": 35,
-      "rating_first": 2.94,
-      "rating_last": 3.09,
-      "rating_delta": 0.1499999999999999,
-      "geom_first": null,
-      "geom_last": 4.041058587560053,
-      "geom_delta": null,
-      "price_pct_change": -0.11963183723083859
+      "price_pct_change": -0.19234044501122005
     },
     {
       "ticker": "ADYEN",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.66,
       "rating_last": 7.8,
@@ -544,7 +544,7 @@
     {
       "ticker": "ABBNE",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 6.24,
       "rating_last": 6.38,
@@ -557,7 +557,7 @@
     {
       "ticker": "DNP",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.35,
       "rating_last": 7.48,
@@ -570,7 +570,7 @@
     {
       "ticker": "SU",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.85,
       "rating_last": 7.73,
@@ -583,7 +583,7 @@
     {
       "ticker": "S",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 3.93,
       "rating_last": 4.04,
@@ -591,12 +591,12 @@
       "geom_first": null,
       "geom_last": 4.92730349956623,
       "geom_delta": null,
-      "price_pct_change": 0.6818829638945174
+      "price_pct_change": 0.7118401723524792
     },
     {
       "ticker": "CSU",
       "first_date": "2026-05-24",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 30,
       "rating_first": 8.55,
       "rating_last": 8.45,
@@ -604,12 +604,12 @@
       "geom_first": 8.74478579137964,
       "geom_last": 8.824512996529311,
       "geom_delta": 0.07972720514967158,
-      "price_pct_change": 0.3040769606370193
+      "price_pct_change": 0.3057692307692308
     },
     {
       "ticker": "HLMA",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 7.88,
       "rating_last": 7.78,
@@ -622,7 +622,7 @@
     {
       "ticker": "LR",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 6.93,
       "rating_last": 7.02,
@@ -635,7 +635,7 @@
     {
       "ticker": "GRMN",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 6.07,
       "rating_last": 6.16,
@@ -643,12 +643,12 @@
       "geom_first": null,
       "geom_last": 6.435737570130742,
       "geom_delta": null,
-      "price_pct_change": 0.10500331000788665
+      "price_pct_change": 0.09842186629667915
     },
     {
       "ticker": "VEEV",
       "first_date": "2026-04-19",
-      "last_date": "2026-10-23",
+      "last_date": "2026-10-25",
       "n_obs": 35,
       "rating_first": 8.41,
       "rating_last": 8.33,
@@ -656,7 +656,7 @@
       "geom_first": null,
       "geom_last": 8.416959736660901,
       "geom_delta": null,
-      "price_pct_change": 0.925483868066302
+      "price_pct_change": 0.9234296779682252
     }
   ],
   "rating_timelines": {
@@ -1036,15 +1036,15 @@
         "price": 313.0299987792969
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 8.33,
         "composite_geometric": 8.416959736660901,
         "survival_score": 0.8944444444444445,
-        "score_v2": 44.77337169192428,
-        "irr_best_repriced": 0.08205726390653734,
-        "ev_fcf": 39.43793241740954,
-        "edge_to_fair": -0.1338360717833632,
-        "price": 323.385009765625
+        "score_v2": 44.775669835940555,
+        "irr_best_repriced": 0.08228828897663165,
+        "ev_fcf": 39.381330844258,
+        "edge_to_fair": -0.13291102347770667,
+        "price": 323.0400085449219
       }
     ],
     "MSFT": [
@@ -1423,15 +1423,15 @@
         "price": 539.4400024414062
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.86,
         "composite_geometric": 8.405278960561066,
         "survival_score": 0.8777777777777778,
-        "score_v2": 49.407424140872266,
-        "irr_best_repriced": 0.11611978643981447,
-        "ev_fcf": 30.364335547441804,
-        "edge_to_fair": 0.15206368459949782,
-        "price": 524.6599731445312
+        "score_v2": 49.416536144863635,
+        "irr_best_repriced": 0.11618360141096828,
+        "ev_fcf": 30.363751166726995,
+        "edge_to_fair": 0.15239307271343483,
+        "price": 524.510009765625
       }
     ],
     "ADYEN": [
@@ -1810,7 +1810,7 @@
         "price": 957.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.8,
         "composite_geometric": 7.823320572923005,
         "survival_score": 0.8388888888888889,
@@ -2197,15 +2197,15 @@
         "price": 36.810001373291016
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.97,
         "composite_geometric": 8.401872220626151,
         "survival_score": 0.8777777777777778,
-        "score_v2": 73.57522463900341,
-        "irr_best_repriced": 0.24099225775907174,
-        "ev_fcf": 16.503558402138157,
-        "edge_to_fair": 0.8682928699325823,
-        "price": 37.709999084472656
+        "score_v2": 73.4780845350822,
+        "irr_best_repriced": 0.23928802782832692,
+        "ev_fcf": 16.598331853618422,
+        "edge_to_fair": 0.8554996088930813,
+        "price": 37.970001220703125
       }
     ],
     "COST": [
@@ -2584,15 +2584,15 @@
         "price": 978.010009765625
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 8.13,
         "composite_geometric": 8.404446519130147,
         "survival_score": 0.9500000000000001,
-        "score_v2": 45.556430951030144,
-        "irr_best_repriced": -0.005770388400828219,
-        "ev_fcf": 35.19345242982241,
-        "edge_to_fair": -0.2970942589798171,
-        "price": 1004.7899780273438
+        "score_v2": 45.558276120708754,
+        "irr_best_repriced": -0.005479228521981017,
+        "ev_fcf": 35.14703245830265,
+        "edge_to_fair": -0.29606442718256865,
+        "price": 1003.3200073242188
       }
     ],
     "DSGX": [
@@ -2971,15 +2971,15 @@
         "price": 88.63999938964844
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.92,
         "composite_geometric": 7.939793160387968,
         "survival_score": 0.9277777777777777,
-        "score_v2": 50.77422701332417,
-        "irr_best_repriced": 0.1423528229783566,
-        "ev_fcf": 28.86782427505527,
-        "edge_to_fair": 0.11609206285870433,
-        "price": 93.5199966430664
+        "score_v2": 50.656250210080614,
+        "irr_best_repriced": 0.14128091534650378,
+        "ev_fcf": 28.97657243183493,
+        "edge_to_fair": 0.11086554905201007,
+        "price": 93.95999908447266
       }
     ],
     "RAA": [
@@ -3358,7 +3358,7 @@
         "price": 618.5
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.78,
         "composite_geometric": 7.966996556972154,
         "survival_score": 0.9111111111111111,
@@ -3745,15 +3745,15 @@
         "price": 220.42999267578125
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.22,
         "composite_geometric": 7.611322989269047,
         "survival_score": 0.8388888888888889,
-        "score_v2": 40.31100275232508,
-        "irr_best_repriced": -0.2279194515009001,
-        "ev_fcf": 245.2697973477715,
-        "edge_to_fair": -0.8305403691993561,
-        "price": 250.64999389648438
+        "score_v2": 40.30798526101984,
+        "irr_best_repriced": -0.23066225821231867,
+        "ev_fcf": 250.00380856873824,
+        "edge_to_fair": -0.8335290752814432,
+        "price": 255.14999389648438
       }
     ],
     "NTO": [
@@ -4132,15 +4132,15 @@
         "price": 47.89500045776367
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.76,
         "composite_geometric": 8.002603319415776,
         "survival_score": 0.9111111111111111,
-        "score_v2": 44.009747916616945,
-        "irr_best_repriced": 0.034861959545927634,
-        "ev_fcf": 32.3346476615438,
-        "edge_to_fair": -0.19541688530956103,
-        "price": 47.904998779296875
+        "score_v2": 43.94606513634719,
+        "irr_best_repriced": 0.03445412402032155,
+        "ev_fcf": 32.424335288159604,
+        "edge_to_fair": -0.19700105332628826,
+        "price": 47.970001220703125
       }
     ],
     "AMZN": [
@@ -4519,15 +4519,15 @@
         "price": 254.75999450683594
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.81,
         "composite_geometric": 8.618534829999584,
         "survival_score": 0.8777777777777778,
-        "score_v2": 44.813383396006344,
-        "irr_best_repriced": 0.061567723568181965,
-        "ev_fcf": 46.98095583627878,
-        "edge_to_fair": -0.11977769609418554,
-        "price": 249.03500366210938
+        "score_v2": 44.823968648656646,
+        "irr_best_repriced": 0.06245231783437255,
+        "ev_fcf": 46.76719879207989,
+        "edge_to_fair": -0.11610417469090784,
+        "price": 248.0
       }
     ],
     "SU": [
@@ -4906,7 +4906,7 @@
         "price": 256.8999938964844
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.73,
         "composite_geometric": 8.295152866277144,
         "survival_score": 0.9111111111111111,
@@ -5293,14 +5293,14 @@
         "price": 55.47999954223633
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.77,
         "composite_geometric": 7.868443522389466,
         "survival_score": 0.9166666666666666,
-        "score_v2": 48.11871144211645,
-        "irr_best_repriced": 0.04964567587300839,
+        "score_v2": 47.62680669193532,
+        "irr_best_repriced": 0.04568254838295349,
         "ev_fcf": 29.16944172450053,
-        "edge_to_fair": -0.055968092510081946,
+        "edge_to_fair": -0.07328682476162451,
         "price": 56.7400016784668
       }
     ],
@@ -5680,7 +5680,7 @@
         "price": 12760.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.84,
         "composite_geometric": 8.179465331268934,
         "survival_score": 0.9111111111111111,
@@ -6067,7 +6067,7 @@
         "price": 3402.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.78,
         "composite_geometric": 8.149398042701549,
         "survival_score": 0.9333333333333332,
@@ -6454,15 +6454,15 @@
         "price": 769.9299926757812
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.14,
         "composite_geometric": 7.240998384725488,
         "survival_score": 0.8611111111111112,
-        "score_v2": 45.642499530662825,
-        "irr_best_repriced": 0.16723885858783039,
-        "ev_fcf": 29.156578648868543,
-        "edge_to_fair": -0.019087479131041918,
-        "price": 813.8800048828125
+        "score_v2": 45.610405419306204,
+        "irr_best_repriced": 0.1668291211190751,
+        "ev_fcf": 29.167012291380622,
+        "edge_to_fair": -0.02080792623045813,
+        "price": 815.3099975585938
       }
     ],
     "LIFCO B": [
@@ -6841,7 +6841,7 @@
         "price": 330.6000061035156
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.9,
         "composite_geometric": 8.182983002697306,
         "survival_score": 0.9111111111111111,
@@ -7228,7 +7228,7 @@
         "price": 62.25
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.7,
         "composite_geometric": 7.043210251031091,
         "survival_score": 0.7888888888888889,
@@ -7615,15 +7615,15 @@
         "price": 45.34000015258789
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.58,
         "composite_geometric": 7.668227271048216,
         "survival_score": 0.8722222222222222,
-        "score_v2": 41.84911807031237,
-        "irr_best_repriced": 0.006032643480407218,
-        "ev_fcf": 43.96755109945532,
-        "edge_to_fair": -0.2766119710043211,
-        "price": 46.25
+        "score_v2": 41.85090968255591,
+        "irr_best_repriced": 0.006293877519442326,
+        "ev_fcf": 43.88863175307646,
+        "edge_to_fair": -0.27567228110493835,
+        "price": 46.189998626708984
       }
     ],
     "ABNB": [
@@ -8002,15 +8002,15 @@
         "price": 174.27999877929688
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.3,
         "composite_geometric": 7.719373848328509,
         "survival_score": 0.8166666666666668,
-        "score_v2": 46.35237212440582,
-        "irr_best_repriced": 0.09642861793369617,
-        "ev_fcf": 29.359268822232792,
-        "edge_to_fair": -0.009838390046517542,
-        "price": 173.1750030517578
+        "score_v2": 46.52698024448626,
+        "irr_best_repriced": 0.0979098134430354,
+        "ev_fcf": 29.128333732001266,
+        "edge_to_fair": -0.0031321126598069515,
+        "price": 172.00999450683594
       }
     ],
     "DNP": [
@@ -8389,7 +8389,7 @@
         "price": 37.790000915527344
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.48,
         "composite_geometric": 8.047568403718214,
         "survival_score": 0.8555555555555555,
@@ -8776,15 +8776,15 @@
         "price": 100.95999908447266
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.34,
         "composite_geometric": 7.555259862835259,
         "survival_score": 0.9111111111111111,
-        "score_v2": 49.030465839504785,
-        "irr_best_repriced": 0.052980518119204234,
-        "ev_fcf": 27.593918324768755,
-        "edge_to_fair": -0.17538159997481528,
-        "price": 104.04000091552734
+        "score_v2": 48.97534314133522,
+        "irr_best_repriced": 0.052394482655217844,
+        "ev_fcf": 27.651546751284684,
+        "edge_to_fair": -0.177673750715455,
+        "price": 104.33000183105469
       }
     ],
     "LR": [
@@ -9163,7 +9163,7 @@
         "price": 134.4499969482422
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.02,
         "composite_geometric": 7.307010772121282,
         "survival_score": 0.8888888888888888,
@@ -9550,7 +9550,7 @@
         "price": 3560.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.75,
         "composite_geometric": 7.178161799850738,
         "survival_score": 0.8555555555555555,
@@ -9937,7 +9937,7 @@
         "price": 94.19999694824219
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.71,
         "composite_geometric": 7.122010647065322,
         "survival_score": 0.8888888888888888,
@@ -10324,15 +10324,15 @@
         "price": 736.719970703125
       },
       {
-        "date": "2026-10-23",
-        "rating_composite": 6.43,
-        "composite_geometric": 6.938373212957774,
+        "date": "2026-10-25",
+        "rating_composite": 5.9,
+        "composite_geometric": 6.717006867307575,
         "survival_score": 0.7833333333333332,
-        "score_v2": 49.56197642489006,
-        "irr_best_repriced": 0.2236322063975047,
-        "ev_fcf": 20.230971970846053,
-        "edge_to_fair": 0.37197183731449246,
-        "price": 644.010009765625
+        "score_v2": 48.97686131050811,
+        "irr_best_repriced": 0.22332333412126615,
+        "ev_fcf": 20.239234603319215,
+        "edge_to_fair": 0.37024112860580094,
+        "price": 642.6199951171875
       }
     ],
     "KKR": [
@@ -10711,15 +10711,15 @@
         "price": 87.62999725341797
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.87,
         "composite_geometric": 7.191032681929262,
         "survival_score": 0.8222222222222223,
-        "score_v2": 59.22789111292304,
-        "irr_best_repriced": 0.27459252508135124,
-        "ev_fcf": 23.429348837520003,
-        "edge_to_fair": 0.6955950007843721,
-        "price": 91.38999938964844
+        "score_v2": 59.261937958982024,
+        "irr_best_repriced": 0.27473204679595753,
+        "ev_fcf": 23.414807140799997,
+        "edge_to_fair": 0.6965232351612476,
+        "price": 91.33999633789062
       }
     ],
     "NET": [
@@ -11098,15 +11098,15 @@
         "price": 316.32000732421875
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.2,
         "composite_geometric": 6.815751533211795,
         "survival_score": 0.8722222222222222,
-        "score_v2": 39.37897725314664,
-        "irr_best_repriced": -0.3555570769008335,
-        "ev_fcf": -1158.3677430382293,
+        "score_v2": 39.37882394533204,
+        "irr_best_repriced": -0.3557392065845718,
+        "ev_fcf": -1160.4812945774647,
         "edge_to_fair": null,
-        "price": 325.2699890136719
+        "price": 325.7300109863281
       }
     ],
     "CRWD": [
@@ -11485,15 +11485,15 @@
         "price": 244.57000732421875
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.57,
         "composite_geometric": 6.959804351132219,
         "survival_score": 0.8166666666666668,
-        "score_v2": 37.99506850449671,
-        "irr_best_repriced": -0.3464210822664495,
-        "ev_fcf": 902.1323950639204,
-        "edge_to_fair": -0.9193598077121926,
-        "price": 252.32000732421875
+        "score_v2": 37.993410273344075,
+        "irr_best_repriced": -0.3491074293076153,
+        "ev_fcf": 921.4038989701704,
+        "edge_to_fair": -0.9210034812668472,
+        "price": 257.57000732421875
       }
     ],
     "GOOG": [
@@ -11872,15 +11872,15 @@
         "price": 344.9100036621094
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.54,
         "composite_geometric": 7.249837491402981,
         "survival_score": 0.7666666666666666,
-        "score_v2": 51.31357309726553,
-        "irr_best_repriced": 0.15726320288761286,
-        "ev_fcf": 28.62464869114301,
-        "edge_to_fair": 0.36378262619899626,
-        "price": 319.2449951171875
+        "score_v2": 51.84085325644505,
+        "irr_best_repriced": 0.15869311046277845,
+        "ev_fcf": 28.41201895820577,
+        "edge_to_fair": 0.3722288814828789,
+        "price": 317.2799987792969
       }
     ],
     "ABBNE": [
@@ -12259,14 +12259,14 @@
         "price": 76.08000183105469
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.38,
         "composite_geometric": 6.933937741369901,
         "survival_score": 0.8333333333333334,
-        "score_v2": 39.21354497952721,
-        "irr_best_repriced": 0.0374467295139187,
-        "ev_fcf": 29.293828795880554,
-        "edge_to_fair": -0.2636788681830001,
+        "score_v2": 39.2115331696253,
+        "irr_best_repriced": 0.03715240635066164,
+        "ev_fcf": 29.303293561669218,
+        "edge_to_fair": -0.26472274556359354,
         "price": 67.77999877929688
       }
     ],
@@ -12646,15 +12646,15 @@
         "price": 285.2200012207031
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.16,
         "composite_geometric": 6.435737570130742,
         "survival_score": 0.8500000000000001,
-        "score_v2": 38.54370588942267,
-        "irr_best_repriced": 0.0443891881289209,
-        "ev_fcf": 33.79459261670076,
-        "edge_to_fair": -0.14271371116335518,
-        "price": 295.5
+        "score_v2": 38.55830498771292,
+        "irr_best_repriced": 0.045637738248952564,
+        "ev_fcf": 33.603306273634615,
+        "edge_to_fair": -0.13757708594904572,
+        "price": 293.739990234375
       }
     ],
     "KRX": [
@@ -13033,7 +13033,7 @@
         "price": 98.5999984741211
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.05,
         "composite_geometric": 6.851054620628176,
         "survival_score": 0.8166666666666668,
@@ -13420,15 +13420,15 @@
         "price": 94.83999633789062
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.81,
         "composite_geometric": 6.2454885961930895,
         "survival_score": 0.638888888888889,
-        "score_v2": 71.15926605959811,
-        "irr_best_repriced": 0.40109283168401744,
-        "ev_fcf": 7.5052386245030895,
-        "edge_to_fair": 1.2200223328437203,
-        "price": 91.91000366210938
+        "score_v2": 71.60329182039631,
+        "irr_best_repriced": 0.4016490322050077,
+        "ev_fcf": 7.468766322231788,
+        "edge_to_fair": 1.2244323130180934,
+        "price": 91.73999786376953
       }
     ],
     "CBAV": [
@@ -13807,7 +13807,7 @@
         "price": 55.20000076293945
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.02,
         "composite_geometric": 6.593534186538024,
         "survival_score": 0.8333333333333334,
@@ -14194,15 +14194,15 @@
         "price": 217.22999572753906
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.8,
         "composite_geometric": 6.317092023378018,
         "survival_score": 0.6944444444444445,
-        "score_v2": 37.68853012428402,
-        "irr_best_repriced": 0.10554400646155959,
-        "ev_fcf": 41.13442219197615,
-        "edge_to_fair": 0.08264940103840468,
-        "price": 211.58770751953125
+        "score_v2": 37.775498623867094,
+        "irr_best_repriced": 0.10620112286911043,
+        "ev_fcf": 41.00165273186856,
+        "edge_to_fair": 0.08587076944784577,
+        "price": 210.9600067138672
       }
     ],
     "COR": [
@@ -14581,7 +14581,7 @@
         "price": 6.75
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.72,
         "composite_geometric": 6.240251469155713,
         "survival_score": 0.8333333333333334,
@@ -14968,15 +14968,15 @@
         "price": 422.25
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.33,
         "composite_geometric": 6.087013265239291,
         "survival_score": 0.611111111111111,
-        "score_v2": 36.78491848516073,
-        "irr_best_repriced": 0.05436370144831759,
-        "ev_fcf": 33.944991464085696,
-        "edge_to_fair": -0.11560033720732499,
-        "price": 416.7900085449219
+        "score_v2": 36.68827242486403,
+        "irr_best_repriced": 0.053495624002473985,
+        "ev_fcf": 34.05687082801511,
+        "edge_to_fair": -0.11923506150088425,
+        "price": 418.510009765625
       }
     ],
     "SPOT": [
@@ -15355,15 +15355,15 @@
         "price": 533.3699951171875
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.54,
         "composite_geometric": 5.919835777172119,
         "survival_score": 0.7555555555555555,
-        "score_v2": 36.125978181839,
-        "irr_best_repriced": 0.039679271594444065,
-        "ev_fcf": 34.488044113790664,
-        "edge_to_fair": -0.09524744174680233,
-        "price": 584.8099975585938
+        "score_v2": 36.1769775755252,
+        "irr_best_repriced": 0.04003778678802239,
+        "ev_fcf": 34.397579929959335,
+        "edge_to_fair": -0.09368642514525072,
+        "price": 584.219970703125
       }
     ],
     "PRY": [
@@ -15742,14 +15742,14 @@
         "price": 109.6500015258789
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.85,
         "composite_geometric": 6.5530026570028586,
         "survival_score": 0.8166666666666668,
-        "score_v2": 69.23255459895974,
-        "irr_best_repriced": 0.24877848800792357,
-        "ev_fcf": 21.844065911081618,
-        "edge_to_fair": 0.857268513519712,
+        "score_v2": 45.837138829592014,
+        "irr_best_repriced": 0.16944034757306237,
+        "ev_fcf": 53.55791995480226,
+        "edge_to_fair": -0.06303698424431192,
         "price": 99.08000183105469
       }
     ],
@@ -16129,7 +16129,7 @@
         "price": 233.5
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.52,
         "composite_geometric": 5.972412132013625,
         "survival_score": 0.8555555555555555,
@@ -16516,7 +16516,7 @@
         "price": 6.5920000076293945
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.44,
         "composite_geometric": 5.9729448532076805,
         "survival_score": 0.8388888888888889,
@@ -16903,7 +16903,7 @@
         "price": 182.3000030517578
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.47,
         "composite_geometric": 6.12160809930523,
         "survival_score": 0.8166666666666668,
@@ -17290,15 +17290,15 @@
         "price": 138.10000610351562
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.29,
         "composite_geometric": 5.6896295254312825,
         "survival_score": 0.6944444444444445,
-        "score_v2": 43.974489621711186,
-        "irr_best_repriced": 0.056401811317408956,
-        "ev_fcf": 18.273562985557483,
-        "edge_to_fair": -0.297959150927524,
-        "price": 157.97999572753906
+        "score_v2": 43.8735009316264,
+        "irr_best_repriced": 0.05500312392775286,
+        "ev_fcf": 18.402147218948585,
+        "edge_to_fair": -0.30259440867538934,
+        "price": 159.02999877929688
       }
     ],
     "TGYM": [
@@ -17677,14 +17677,14 @@
         "price": 13.010000228881836
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.3,
         "composite_geometric": 5.733221634143776,
         "survival_score": 0.7722222222222221,
-        "score_v2": 44.4126549137301,
-        "irr_best_repriced": 0.11098760436016697,
-        "ev_fcf": 25.391950789473686,
-        "edge_to_fair": 0.1092636414700594,
+        "score_v2": 45.39194555682184,
+        "irr_best_repriced": 0.11584999604090651,
+        "ev_fcf": 17.861703810623556,
+        "edge_to_fair": 0.1498986904199846,
         "price": 12.229999542236328
       }
     ],
@@ -18064,7 +18064,7 @@
         "price": 90.5
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.54,
         "composite_geometric": 6.344734557153084,
         "survival_score": 0.7888888888888889,
@@ -18451,15 +18451,15 @@
         "price": 43.27000045776367
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.56,
         "composite_geometric": 5.739813596960818,
         "survival_score": 0.7444444444444445,
-        "score_v2": 33.977069982143334,
-        "irr_best_repriced": 0.028947321720256936,
-        "ev_fcf": 13.624493133562915,
-        "edge_to_fair": -0.2456173156110928,
-        "price": 40.61000061035156
+        "score_v2": 33.98616324741457,
+        "irr_best_repriced": 0.030150794205481724,
+        "ev_fcf": 13.52489776258278,
+        "edge_to_fair": -0.24119529609662704,
+        "price": 40.349998474121094
       }
     ],
     "NFLX": [
@@ -18838,15 +18838,15 @@
         "price": 72.61000061035156
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.06,
         "composite_geometric": 6.555679097573902,
         "survival_score": 0.7388888888888889,
-        "score_v2": 44.15592523668207,
-        "irr_best_repriced": 0.10108233254507382,
-        "ev_fcf": 25.85794152507176,
-        "edge_to_fair": 0.1269601818533288,
-        "price": 66.36000061035156
+        "score_v2": 44.38114552204003,
+        "irr_best_repriced": 0.10278262934324833,
+        "ev_fcf": 25.60970263684944,
+        "edge_to_fair": 0.1356883840326768,
+        "price": 65.8499984741211
       }
     ],
     "NKE": [
@@ -19225,15 +19225,15 @@
         "price": 37.13999938964844
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.08,
         "composite_geometric": 5.549262137114937,
         "survival_score": 0.8111111111111112,
-        "score_v2": 48.86062664413519,
-        "irr_best_repriced": 0.17811495576538072,
-        "ev_fcf": 37.6738680871341,
-        "edge_to_fair": 0.2757615520363794,
-        "price": 37.54999923706055
+        "score_v2": 49.01736676945836,
+        "irr_best_repriced": 0.17968998141818315,
+        "ev_fcf": 37.39075949625595,
+        "edge_to_fair": 0.28431223285495166,
+        "price": 37.29999923706055
       }
     ],
     "MIPS": [
@@ -19612,7 +19612,7 @@
         "price": 416.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 4.89,
         "composite_geometric": 5.340554627729407,
         "survival_score": 0.7555555555555555,
@@ -19999,15 +19999,15 @@
         "price": 228.75999450683594
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.3,
         "composite_geometric": 5.827890942070107,
         "survival_score": 0.8111111111111112,
-        "score_v2": 45.82416595013565,
-        "irr_best_repriced": 0.08542235303219914,
-        "ev_fcf": 42.239301645188284,
-        "edge_to_fair": -0.07607167412538562,
-        "price": 227.625
+        "score_v2": 45.87909503478371,
+        "irr_best_repriced": 0.08615340273974303,
+        "ev_fcf": 42.122744369874475,
+        "edge_to_fair": -0.07295607594381393,
+        "price": 226.86000061035156
       }
     ],
     "S": [
@@ -20386,15 +20386,15 @@
         "price": 23.3700008392334
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 4.04,
         "composite_geometric": 4.92730349956623,
         "survival_score": 0.65,
         "score_v2": 28.568258748915575,
         "irr_best_repriced": -0.99,
-        "ev_fcf": -25.86422049639299,
+        "ev_fcf": -26.4441030573686,
         "edge_to_fair": null,
-        "price": 23.579999923706055
+        "price": 24.0
       }
     ],
     "TREX": [
@@ -20773,15 +20773,15 @@
         "price": 46.209999084472656
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 4.16,
         "composite_geometric": 4.748963023864261,
         "survival_score": 0.7555555555555555,
-        "score_v2": 36.3216429479244,
-        "irr_best_repriced": 0.04271153927228921,
-        "ev_fcf": 19.32608743350108,
-        "edge_to_fair": -0.3080169193860919,
-        "price": 49.849998474121094
+        "score_v2": 36.10329293194913,
+        "irr_best_repriced": 0.040508362905013584,
+        "ev_fcf": 19.512828094895763,
+        "edge_to_fair": -0.3152966498336869,
+        "price": 50.380001068115234
       }
     ],
     "SGO": [
@@ -21160,7 +21160,7 @@
         "price": 66.4000015258789
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 3.97,
         "composite_geometric": 4.755425768773898,
         "survival_score": 0.7388888888888889,
@@ -21547,7 +21547,7 @@
         "price": 14.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 3.49,
         "composite_geometric": 4.153995281480883,
         "survival_score": 0.6999999999999998,
@@ -21934,15 +21934,15 @@
         "price": 28.15999984741211
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 3.19,
         "composite_geometric": 3.675010018089285,
         "survival_score": 0.6611111111111111,
-        "score_v2": 55.33900614749403,
-        "irr_best_repriced": 0.3422855030306253,
-        "ev_fcf": 16.674725509269855,
-        "edge_to_fair": 0.9781001948857606,
-        "price": 28.6299991607666
+        "score_v2": 56.18287564344582,
+        "irr_best_repriced": 0.343790837166833,
+        "ev_fcf": 16.57337251087205,
+        "edge_to_fair": 0.989217010375079,
+        "price": 28.469999313354492
       }
     ],
     "BFIT": [
@@ -22321,14 +22321,14 @@
         "price": 30.239999771118164
       },
       {
-        "date": "2026-10-23",
-        "rating_composite": 3.09,
-        "composite_geometric": 4.041058587560053,
-        "survival_score": 0.6444444444444444,
-        "score_v2": 71.61553650883873,
-        "irr_best_repriced": 0.4784239272356965,
-        "ev_fcf": 6.988558975755924,
-        "edge_to_fair": 2.961808888866561,
+        "date": "2026-10-25",
+        "rating_composite": 4.63,
+        "composite_geometric": 5.894658216883812,
+        "survival_score": 0.7388888888888889,
+        "score_v2": 48.88115156284681,
+        "irr_best_repriced": 0.324930740998187,
+        "ev_fcf": 27.75829383886256,
+        "edge_to_fair": -0.1001167434221023,
         "price": 28.700000762939453
       }
     ],
@@ -22708,7 +22708,7 @@
         "price": 18.829999923706055
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 3.96,
         "composite_geometric": 4.601650321524286,
         "survival_score": 0.8000000000000002,
@@ -23095,14 +23095,14 @@
         "price": 310.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 2.24,
         "composite_geometric": 3.0204528362081278,
         "survival_score": 0.4444444444444444,
         "score_v2": 0.0,
-        "irr_best_repriced": 0.10155013059429985,
+        "irr_best_repriced": 0.10139403516958367,
         "ev_fcf": 2.976817845742557,
-        "edge_to_fair": -0.18280709579453203,
+        "edge_to_fair": -0.18338593430208705,
         "price": 305.0
       }
     ],
@@ -23482,7 +23482,7 @@
         "price": 711.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 2.33,
         "composite_geometric": 2.66375376372668,
         "survival_score": 0.638888888888889,
@@ -23869,15 +23869,15 @@
         "price": 37.65999984741211
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 1.83,
         "composite_geometric": 2.642535657788983,
         "survival_score": 0.45,
         "score_v2": 0.0,
-        "irr_best_repriced": 0.11551509420740014,
-        "ev_fcf": 73.83609644377121,
-        "edge_to_fair": -0.1737474913176561,
-        "price": 40.43000030517578
+        "irr_best_repriced": 0.11616014393636798,
+        "ev_fcf": 73.3683915100986,
+        "edge_to_fair": -0.17135581278522738,
+        "price": 40.290000915527344
       }
     ],
     "OTLY": [
@@ -24256,15 +24256,15 @@
         "price": 11.170000076293945
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 2.37,
         "composite_geometric": 3.8122412258294043,
         "survival_score": 0.5277777777777778,
-        "score_v2": 23.753134144034345,
-        "irr_best_repriced": 0.23136692239947387,
-        "ev_fcf": -23.187212225130885,
+        "score_v2": 23.750722435395456,
+        "irr_best_repriced": 0.22850181253647395,
+        "ev_fcf": -23.304168151832457,
         "edge_to_fair": null,
-        "price": 11.949999809265137
+        "price": 12.09000015258789
       }
     ],
     "CSU": [
@@ -24588,15 +24588,15 @@
         "price": 3283.760009765625
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 8.45,
         "composite_geometric": 8.824512996529311,
         "survival_score": 0.9500000000000001,
-        "score_v2": 61.318381239126396,
-        "irr_best_repriced": 0.17805412939991982,
-        "ev_fcf": 18.900143229478456,
-        "edge_to_fair": 0.28177518035518934,
-        "price": 3390.60009765625
+        "score_v2": 61.275898653736036,
+        "irr_best_repriced": 0.17761240042168414,
+        "ev_fcf": 18.914075953049437,
+        "edge_to_fair": 0.2793738781671231,
+        "price": 3395.0
       }
     ],
     "UBER": [
@@ -24744,15 +24744,15 @@
         "price": 71.2699966430664
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.63,
         "composite_geometric": 6.50952449840326,
         "survival_score": 0.7222222222222222,
-        "score_v2": 51.659697222067344,
-        "irr_best_repriced": 0.3001513218669769,
-        "ev_fcf": 18.030754751131223,
-        "edge_to_fair": 0.5754736166762457,
-        "price": 67.54000091552734
+        "score_v2": 51.93172471251418,
+        "irr_best_repriced": 0.30340970838798187,
+        "ev_fcf": 17.80344282744283,
+        "edge_to_fair": 0.5953147583390868,
+        "price": 66.69999694824219
       }
     ],
     "SOM": [
@@ -24889,14 +24889,14 @@
         "price": 272.5
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 3.84,
         "composite_geometric": 4.51127317574847,
         "survival_score": 0.7388888888888889,
-        "score_v2": 65.87330562135853,
-        "irr_best_repriced": 0.2508315116811364,
-        "ev_fcf": 9.51112704414946,
-        "edge_to_fair": 0.8231369836386637,
+        "score_v2": 65.86964543006687,
+        "irr_best_repriced": 0.25076463845446595,
+        "ev_fcf": 9.506240639138587,
+        "edge_to_fair": 0.8226496837265824,
         "price": 295.0
       }
     ],
@@ -25034,7 +25034,7 @@
         "price": 36.959999084472656
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 5.38,
         "composite_geometric": 6.280681562875918,
         "survival_score": 0.8000000000000002,
@@ -25179,7 +25179,7 @@
         "price": 774.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.97,
         "composite_geometric": 7.97768692671413,
         "survival_score": 0.9111111111111111,
@@ -25324,7 +25324,7 @@
         "price": 1926.0
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.2,
         "composite_geometric": 6.8958429065765445,
         "survival_score": 0.7666666666666666,
@@ -25469,15 +25469,15 @@
         "price": 85.9800033569336
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 3.21,
         "composite_geometric": 4.329413969276174,
         "survival_score": 0.7166666666666668,
-        "score_v2": 30.954498812498798,
-        "irr_best_repriced": 0.08991215814875253,
-        "ev_fcf": 30.994786955719555,
-        "edge_to_fair": -0.13785204757645153,
-        "price": 88.2699966430664
+        "score_v2": 30.892606802405354,
+        "irr_best_repriced": 0.08927121613593081,
+        "ev_fcf": 31.03333267527675,
+        "edge_to_fair": -0.1403840741489999,
+        "price": 88.52999877929688
       }
     ],
     "SAP": [
@@ -25614,7 +25614,7 @@
         "price": 201.89999389648438
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 7.17,
         "composite_geometric": 7.52895735275036,
         "survival_score": 0.8611111111111112,
@@ -25816,15 +25816,15 @@
         "price": 280.010009765625
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 3.48,
         "composite_geometric": 4.818860976358266,
         "survival_score": 0.6722222222222222,
-        "score_v2": 40.846359341909604,
-        "irr_best_repriced": 0.01786230689628665,
-        "ev_fcf": 19.88176553972205,
-        "edge_to_fair": -0.44848913264186907,
-        "price": 275.44000244140625
+        "score_v2": 40.80291715611018,
+        "irr_best_repriced": 0.017095392941504306,
+        "ev_fcf": 19.893415600082967,
+        "edge_to_fair": -0.45056369858471446,
+        "price": 276.4800109863281
       }
     ],
     "VYLR": [
@@ -25873,15 +25873,41 @@
         "price": 73.33999633789062
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-25",
         "rating_composite": 6.31,
         "composite_geometric": 6.907923754356368,
         "survival_score": 0.9111111111111111,
-        "score_v2": 46.7596797701051,
-        "irr_best_repriced": 0.07139711841276997,
-        "ev_fcf": 43.195548306188925,
-        "edge_to_fair": -0.1261085028517409,
-        "price": 72.70500183105469
+        "score_v2": 46.237043331639555,
+        "irr_best_repriced": 0.06592639057273142,
+        "ev_fcf": 44.23872120521173,
+        "edge_to_fair": -0.14819297466526626,
+        "price": 74.58999633789062
+      }
+    ],
+    "EL": [
+      {
+        "date": "2026-10-25",
+        "rating_composite": 6.82,
+        "composite_geometric": 7.49758249656084,
+        "survival_score": 0.9277777777777777,
+        "score_v2": 44.03039490113177,
+        "irr_best_repriced": 0.05384279832706418,
+        "ev_fcf": 35.56218279635258,
+        "edge_to_fair": -0.18183687372160906,
+        "price": 181.1999969482422
+      }
+    ],
+    "LUN": [
+      {
+        "date": "2026-10-25",
+        "rating_composite": 4.88,
+        "composite_geometric": 5.969063460619136,
+        "survival_score": 0.7388888888888889,
+        "score_v2": 47.22929326986855,
+        "irr_best_repriced": 0.08399410822426567,
+        "ev_fcf": 14.964951596647108,
+        "edge_to_fair": -0.013556934986796443,
+        "price": 29.5
       }
     ]
   }

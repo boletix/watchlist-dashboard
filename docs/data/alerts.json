@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T17:17:01+00:00",
-    "n_alerts": 2,
+    "generated_at": "2026-10-25T14:55:25+00:00",
+    "n_alerts": 3,
     "by_severity": {
-      "high": 2,
-      "medium": 0,
+      "high": 1,
+      "medium": 2,
       "low": 0
     }
   },
@@ -23,16 +23,29 @@
       }
     },
     {
-      "type": "asymmetry_improved",
-      "severity": "high",
-      "ticker": "PRY",
-      "name": "PRY",
-      "category": "Electrify",
-      "message": "PRY now has favorable IRR asymmetry (best 24.9%, worst 2.6%)",
+      "type": "composite_upgrade",
+      "severity": "medium",
+      "ticker": "BFIT",
+      "name": "BFIT",
+      "category": "Sports",
+      "message": "BFIT composite upgraded 3.09 → 4.63 (+1.54)",
       "metrics": {
-        "irr_best": 0.24877849262355056,
-        "irr_worst": 0.025804196228578213,
-        "irr_asymmetry_ratio": 4.459485927899447
+        "from": 3.09,
+        "to": 4.63,
+        "delta": 1.54
+      }
+    },
+    {
+      "type": "composite_downgrade",
+      "severity": "medium",
+      "ticker": "META",
+      "name": "META",
+      "category": "Mag 7",
+      "message": "META composite downgraded 6.43 → 5.90 (-0.53)",
+      "metrics": {
+        "from": 6.43,
+        "to": 5.9,
+        "delta": -0.5299999999999994
       }
     }
   ]

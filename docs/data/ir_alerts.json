@@ -1,15 +1,38 @@
 {
  "meta": {
-  "generated_at": "2026-10-23T17:17:53+00:00",
-  "n_tickers": 71,
+  "generated_at": "2026-10-25T14:56:14+00:00",
+  "n_tickers": 73,
   "days_back": 10,
-  "n_documents": 0,
+  "n_documents": 2,
   "n_calendar_drift": 24,
   "n_financial_drift": 7,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [],
+ "documents": [
+  {
+   "id": "sec:0001834046-26-000012:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000183404626000012/xslF345X06/wk-form4_1792789471.xml",
+   "priority": "baja",
+   "ticker": "VLTO",
+   "name": "VLTO"
+  },
+  {
+   "id": "sec:0001778564-26-000191:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-10-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000191/xslF345X06/form4-10232026_081001.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  }
+ ],
  "financial_drift": [
   {
    "ticker": "BN",
@@ -55,28 +78,14 @@
   },
   {
    "ticker": "COR",
-   "ultimo_trimestre_publicado": "2026-03-31",
-   "ultimos_resultados_en_excel": "2026-07-29",
-   "revenue_ltm_mercado": 842.5,
-   "revenue_ltm_excel": 900.0,
-   "desvio_revenue": -0.0639,
-   "fcf_ltm_mercado": 175.3,
-   "fcf_ltm_excel": 175.3,
-   "desvio_fcf": -0.0001,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
-  {
-   "ticker": "PRY",
    "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-30",
-   "revenue_ltm_mercado": 21088.0,
-   "revenue_ltm_excel": 19650.0,
-   "desvio_revenue": 0.0732,
-   "fcf_ltm_mercado": 1504.0,
-   "fcf_ltm_excel": 1504.0,
-   "desvio_fcf": 0.0,
+   "ultimos_resultados_en_excel": "2026-07-29",
+   "revenue_ltm_mercado": 833.7,
+   "revenue_ltm_excel": 900.0,
+   "desvio_revenue": -0.0737,
+   "fcf_ltm_mercado": 154.1,
+   "fcf_ltm_excel": 175.3,
+   "desvio_fcf": -0.1211,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -105,6 +114,20 @@
    "fcf_ltm_mercado": null,
    "fcf_ltm_excel": null,
    "desvio_fcf": null,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
+  },
+  {
+   "ticker": "LUN",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-08-05",
+   "revenue_ltm_mercado": 4394.8,
+   "revenue_ltm_excel": 4743.0,
+   "desvio_revenue": -0.0734,
+   "fcf_ltm_mercado": 1128.4,
+   "fcf_ltm_excel": 1205.0,
+   "desvio_fcf": -0.0636,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -189,13 +212,6 @@
    "delta_days": -104
   },
   {
-   "ticker": "PRY",
-   "excel": "2026-11-05",
-   "market": "2026-10-29",
-   "estimated": true,
-   "delta_days": -7
-  },
-  {
    "ticker": "JFN",
    "excel": "2027-03-25",
    "market": "2026-08-28",
@@ -243,6 +259,13 @@
    "market": "2026-11-09",
    "estimated": true,
    "delta_days": 4
+  },
+  {
+   "ticker": "WOSG",
+   "excel": "2026-12-02",
+   "market": "2026-12-10",
+   "estimated": true,
+   "delta_days": 8
   },
   {
    "ticker": "OTLY",
@@ -305,14 +328,7 @@
   {
    "ticker": "COR",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 900.0 vs mercado 842.5 (-6.4%); FCF LTM: Excel 175.3 vs mercado 175.3 (-0.0%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "PRY",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 19650.0 vs mercado 21088.0 (+7.3%); FCF LTM: Excel 1504.0 vs mercado 1504.0 (+0.0%)",
+   "motivo": "ingresos LTM: Excel 900.0 vs mercado 833.7 (-7.4%); FCF LTM: Excel 175.3 vs mercado 154.1 (-12.1%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -327,6 +343,13 @@
    "ticker": "IPCO",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 707.0 vs mercado 784.6 (+11.0%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "LUN",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 4743.0 vs mercado 4394.8 (-7.3%); FCF LTM: Excel 1205.0 vs mercado 1128.4 (-6.4%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -408,13 +431,6 @@
    "urls": []
   },
   {
-   "ticker": "PRY",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-05 y el mercado dice 2026-10-29 (-7 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "JFN",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-03-25 y el mercado dice 2026-08-28 (-209 dias de diferencia)",
@@ -460,6 +476,13 @@
    "ticker": "CELH",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-05 y el mercado dice 2026-11-09 (4 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "WOSG",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-12-02 y el mercado dice 2026-12-10 (8 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
