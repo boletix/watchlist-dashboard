@@ -72,6 +72,8 @@ TICKER_YF_OVERRIDE: dict[str, str] = {
     # "DNP" un fondo de renta de Nueva York (~10 $): el panel publicaba el precio de otra
     # empresa, un dividendo del 77% para Corticeira y TIR falsas. tests/test_tickers.py
     # impide que una fila no-USD vuelva a resolverse en un ticker de EE.UU.
+    "EL": "EL.PA",       # EssilorLuxottica, París (EUR). 25-oct-2026: sin override, "EL" es Estée Lauder en Nueva York
+    "LUN": "LUN.TO",     # Lundin Mining, Toronto (CAD). Reporta en USD
     "COR": "COR.LS",     # Corticeira Amorim, Lisboa (EUR)
     "DNP": "DNP.WA",     # Dino Polska, Varsovia (PLN)
 }
