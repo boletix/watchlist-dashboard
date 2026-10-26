@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-10-25T14:56:14+00:00",
+  "generated_at": "2026-10-26T14:30:34+00:00",
   "n_tickers": 73,
   "days_back": 10,
-  "n_documents": 2,
+  "n_documents": 1,
   "n_calendar_drift": 24,
   "n_financial_drift": 7,
   "n_errors": 0,
@@ -11,26 +11,15 @@
  },
  "documents": [
   {
-   "id": "sec:0001834046-26-000012:4",
+   "id": "sec:0001140361-26-040706:8-K",
    "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-23",
-   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000183404626000012/xslF345X06/wk-form4_1792789471.xml",
-   "priority": "baja",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "sec:0001778564-26-000191:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-10-23",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000191/xslF345X06/form4-10232026_081001.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-10-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1404912/000114036126040706/ef20084337_8k.htm",
+   "priority": "media",
+   "ticker": "KKR",
+   "name": "KKR"
   }
  ],
  "financial_drift": [

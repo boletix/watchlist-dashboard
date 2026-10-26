@@ -1,52 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-10-25T14:55:25+00:00",
-    "n_alerts": 3,
+    "generated_at": "2026-10-26T14:29:32+00:00",
+    "n_alerts": 0,
     "by_severity": {
-      "high": 1,
-      "medium": 2,
+      "high": 0,
+      "medium": 0,
       "low": 0
     }
   },
-  "alerts": [
-    {
-      "type": "asymmetry_improved",
-      "severity": "high",
-      "ticker": "JDG",
-      "name": "JDG",
-      "category": "Healthcare",
-      "message": "JDG now has favorable IRR asymmetry (best 32.1%, worst -4.7%)",
-      "metrics": {
-        "irr_best": 0.32148111273404245,
-        "irr_worst": -0.04688139492117105,
-        "irr_asymmetry_ratio": 7.36725015310427
-      }
-    },
-    {
-      "type": "composite_upgrade",
-      "severity": "medium",
-      "ticker": "BFIT",
-      "name": "BFIT",
-      "category": "Sports",
-      "message": "BFIT composite upgraded 3.09 → 4.63 (+1.54)",
-      "metrics": {
-        "from": 3.09,
-        "to": 4.63,
-        "delta": 1.54
-      }
-    },
-    {
-      "type": "composite_downgrade",
-      "severity": "medium",
-      "ticker": "META",
-      "name": "META",
-      "category": "Mag 7",
-      "message": "META composite downgraded 6.43 → 5.90 (-0.53)",
-      "metrics": {
-        "from": 6.43,
-        "to": 5.9,
-        "delta": -0.5299999999999994
-      }
-    }
-  ]
+  "alerts": []
 }
