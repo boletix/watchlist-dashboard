@@ -1,201 +1,102 @@
 {
  "meta": {
-  "generated_at": "2026-10-28T14:14:09+00:00",
+  "generated_at": "2026-10-29T14:34:59+00:00",
   "n_tickers": 73,
   "days_back": 10,
-  "n_documents": 17,
-  "n_calendar_drift": 25,
-  "n_financial_drift": 7,
+  "n_documents": 8,
+  "n_calendar_drift": 26,
+  "n_financial_drift": 10,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "sec:0000884887-26-000044:10-Q",
-   "source": "SEC EDGAR",
-   "form": "10-Q",
-   "title": "Informe trimestral — 10-Q",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000044/rcl-20260930.htm",
-   "priority": "alta",
-   "ticker": "RCL",
-   "name": "RCL"
-  },
-  {
-   "id": "sec:0001193125-26-435070:10-Q",
+   "id": "sec:0001193125-26-436133:10-Q",
    "source": "SEC EDGAR",
    "form": "10-Q",
    "title": "Informe trimestral — 10-Q",
    "date": "2026-10-28",
-   "url": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526435070/grmn-20260926.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
    "priority": "alta",
-   "ticker": "GRMN",
-   "name": "GRMN"
+   "ticker": "MSFT",
+   "name": "MSFT"
   },
   {
-   "id": "sec:0001193125-26-435066:8-K",
+   "id": "sec:0001652044-26-000084:10-Q",
+   "source": "SEC EDGAR",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-10-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+   "priority": "alta",
+   "ticker": "GOOG",
+   "name": "GOOG"
+  },
+  {
+   "id": "sec:0001193125-26-436149:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
    "title": "Hecho relevante — 8-K",
    "date": "2026-10-28",
-   "url": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526435066/grmn-20261028.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm",
    "priority": "media",
-   "ticker": "GRMN",
-   "name": "GRMN"
+   "ticker": "MSFT",
+   "name": "MSFT"
   },
   {
-   "id": "sec:0001843586-26-000028:6-K",
+   "id": "sec:0001193125-26-436122:8-K",
    "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — 6-K",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
    "date": "2026-10-28",
-   "url": "https://www.sec.gov/Archives/edgar/data/1843586/000184358626000028/otly_6k_3q26.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm",
    "priority": "media",
-   "ticker": "OTLY",
-   "name": "OTLY"
+   "ticker": "MSFT",
+   "name": "MSFT"
   },
   {
-   "id": "sec:0001843586-26-000027:6-K",
+   "id": "sec:0001652044-26-000080:8-K",
    "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — 6-K",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
    "date": "2026-10-28",
-   "url": "https://www.sec.gov/Archives/edgar/data/1843586/000184358626000027/otly_6k_pr_3q26.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm",
    "priority": "media",
-   "ticker": "OTLY",
-   "name": "OTLY"
+   "ticker": "GOOG",
+   "name": "GOOG"
   },
   {
-   "id": "sec:0000909832-26-000131:4",
+   "id": "sec:0001193125-26-436212:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000131/xslF345X06/form4.xml",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-10-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526436212/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "COST",
-   "name": "COST"
+   "ticker": "ABNB",
+   "name": "ABNB"
   },
   {
-   "id": "sec:0000909832-26-000129:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000129/xslF345X06/form4.xml",
-   "priority": "baja",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "sec:0000909832-26-000127:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000127/xslF345X06/form4.xml",
-   "priority": "baja",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "sec:0001713683-26-000210:4",
+   "id": "sec:0000950103-26-016314:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000210/xslF345X06/wk-form4_1793132622.xml",
+   "date": "2026-10-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016314/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "ZS",
-   "name": "ZS"
+   "ticker": "META",
+   "name": "META"
   },
   {
-   "id": "sec:0001778564-26-000193:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000193/xslF345X06/form4-10272026_081002.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001193125-26-434846:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526434846/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "sec:0001193125-26-434841:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526434841/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "sec:0001193125-26-434840:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526434840/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "sec:0001193125-26-434839:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526434839/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "sec:0001193125-26-434837:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526434837/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "sec:0001193125-26-434831:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526434831/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "sec:0001193119-26-000003:4",
+   "id": "sec:0000950103-26-016313:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-27",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119311926000003/xslF345X06/wk-form4_1793132405.xml",
+   "date": "2026-10-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016313/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
+   "ticker": "META",
+   "name": "META"
   }
  ],
  "financial_drift": [
@@ -242,6 +143,20 @@
    "severidad": "media"
   },
   {
+   "ticker": "GRMN",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-07-29",
+   "revenue_ltm_mercado": 7671.4,
+   "revenue_ltm_excel": 7670.0,
+   "desvio_revenue": 0.0002,
+   "fcf_ltm_mercado": 1599.8,
+   "fcf_ltm_excel": 1599.8,
+   "desvio_fcf": 0.0,
+   "trimestre_nuevo": true,
+   "sospecha_unidades": false,
+   "severidad": "alta"
+  },
+  {
    "ticker": "COR",
    "ultimo_trimestre_publicado": "2026-06-30",
    "ultimos_resultados_en_excel": "2026-07-29",
@@ -284,6 +199,34 @@
    "severidad": "media"
   },
   {
+   "ticker": "OTLY",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-07-22",
+   "revenue_ltm_mercado": 945.3,
+   "revenue_ltm_excel": 925.0,
+   "desvio_revenue": 0.0219,
+   "fcf_ltm_mercado": -38.6,
+   "fcf_ltm_excel": -25.6,
+   "desvio_fcf": -0.5063,
+   "trimestre_nuevo": true,
+   "sospecha_unidades": false,
+   "severidad": "alta"
+  },
+  {
+   "ticker": "RCL",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-07-28",
+   "revenue_ltm_mercado": 19133.0,
+   "revenue_ltm_excel": 18682.0,
+   "desvio_revenue": 0.0241,
+   "fcf_ltm_mercado": 1510.0,
+   "fcf_ltm_excel": 4972.0,
+   "desvio_fcf": -0.6963,
+   "trimestre_nuevo": true,
+   "sospecha_unidades": false,
+   "severidad": "alta"
+  },
+  {
    "ticker": "LUN",
    "ultimo_trimestre_publicado": "2026-06-30",
    "ultimos_resultados_en_excel": "2026-08-05",
@@ -305,6 +248,13 @@
    "market": "2026-11-25",
    "estimated": true,
    "delta_days": 6
+  },
+  {
+   "ticker": "MSFT",
+   "excel": "2026-10-28",
+   "market": "2027-01-27",
+   "estimated": true,
+   "delta_days": 91
   },
   {
    "ticker": "ADYEN",
@@ -477,23 +427,23 @@
  ],
  "todo_excel": [
   {
-   "ticker": "GRMN",
+   "ticker": "GOOG",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-07-22",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+   ]
+  },
+  {
+   "ticker": "MSFT",
    "accion": "Actualizar cuentas en el Excel",
    "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
    "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
    "ultimos_resultados_excel": "2026-07-29",
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1121788/000119312526435070/grmn-20260926.htm"
-   ]
-  },
-  {
-   "ticker": "RCL",
-   "accion": "Actualizar cuentas en el Excel",
-   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
-   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
-   "ultimos_resultados_excel": "2026-07-28",
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/884887/000088488726000044/rcl-20260930.htm"
+    "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
    ]
   },
   {
@@ -514,6 +464,13 @@
    "ticker": "KKR",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 25833.0 vs mercado 21060.0 (-18.5%); FCF LTM: Excel 5000.0 vs mercado 2339.9 (-53.2%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "GRMN",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-29); ingresos LTM: Excel 7670.0 vs mercado 7671.4 (+0.0%); FCF LTM: Excel 1599.8 vs mercado 1599.8 (+0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -539,6 +496,20 @@
    "urls": []
   },
   {
+   "ticker": "OTLY",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-22); ingresos LTM: Excel 925.0 vs mercado 945.3 (+2.2%); FCF LTM: Excel -25.6 vs mercado -38.6 (-50.6%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "RCL",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-28); ingresos LTM: Excel 18682.0 vs mercado 19133.0 (+2.4%); FCF LTM: Excel 4972.0 vs mercado 1510.0 (-69.6%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
    "ticker": "LUN",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 4743.0 vs mercado 4394.8 (-7.3%); FCF LTM: Excel 1205.0 vs mercado 1128.4 (-6.4%)",
@@ -549,6 +520,13 @@
    "ticker": "VEEV",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-19 y el mercado dice 2026-11-25 (6 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "MSFT",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-10-28 y el mercado dice 2027-01-27 (91 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
