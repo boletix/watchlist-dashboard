@@ -1,10 +1,108 @@
 {
   "meta": {
-    "n_updates": 261,
+    "n_updates": 275,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "PRY",
+      "date": "46325",
+      "fields_changed": "AS 1.164 -> 614,0; BS; AQ 8.728 -> 8.166; BT",
+      "source": "Nota 9M26 (29-oct), nota 1S26, nota de cierre de Atkore (19-oct), llamada del 29-oct (segunda mano)",
+      "summary": "CORRECCION DE DATOS: el FCF LTM sin el anticipo de Molex (no recurrente) y la deuda pro forma con la deuda neta de septiembre. Sin cambio de estimaciones."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "46325",
+      "fields_changed": "BD 147.461,2 -> 118.676,8; BF 223.734,1 -> 180.061,2; BT",
+      "source": "Decision de Roger 30-oct (mismo criterio para todos los hiperescaladores)",
+      "summary": "ESTIMACION: criterio de capex estructural (Framework Notes 52) como en META, GOOG y AMZN: FCF@5y x0,805. Multiplos sin cambio."
+    },
+    {
+      "ticker": "FRAMEWORK",
+      "date": "46325",
+      "fields_changed": "Framework Notes 89-92 (reglas nuevas)",
+      "source": "Decision de Roger del 30-oct-2026; notas de politicas contables de los 10-K; Excel por empresa en 'Modelo capex 2026-10'",
+      "summary": "METODO: retorno del capex (tau x margen - D&A por $), reparto del capex en mantenimiento / tendencia / puntual, D&A por anadas con vidas de las notas, y modelo anual hasta 2031 con Monte Carlo para el FCF@5y de las filas de capex alto. Sin cambios en la fila todavia: BD/BF los valida Roger."
+    },
+    {
+      "ticker": "VID",
+      "date": "46325",
+      "fields_changed": "BT (sin cambio de valoracion); modelo de la tesis",
+      "source": "Informe 9M26 (28-oct), cuentas consolidadas 2025, Q&A del 28-oct (chat vidrio_vidrala_verallia_3T26.md)",
+      "summary": "REVISION DE TESIS: narrativa intacta (lider en costes, coberturas pre-Iran, RU y Sudamerica). Correccion de datos del modelo de la tesis (D&A, capex, deuda, otros pagos): FCF Ano 5 269,3 -> 221,8, dentro de BD/BF. Sin cambio de estimacion."
+    },
+    {
+      "ticker": "VRLA",
+      "date": "46325",
+      "fields_changed": "BT (sin cambio de valoracion); modelo de la tesis",
+      "source": "Nota 3T26 (27-oct), informe 1S26, Q&A del 28-oct (chat)",
+      "summary": "REVISION DE TESIS: el precio frente al coste sigue negativo y las subidas de 2027 son mas dificiles. Correccion de datos del modelo (Ano 0, D&A, deuda, otros pagos): FCF Ano 5 296,7 -> 260,5, por debajo del BD de la fila (300). Pregunta abierta a Roger; sin cambio."
+    },
+    {
+      "ticker": "FRAMEWORK",
+      "date": "46325",
+      "fields_changed": "Framework Notes 89, 90 y 92 (reescritas)",
+      "source": "Roger 30-oct: rangos mas estrechos y ventas por demanda de cada segmento, no solo por capex",
+      "summary": "METODO v2: el modelo anual pasa a ir de la demanda al capex (ventas por segmento con su foso y su demanda; capex = mantenimiento + demanda + puntual); el retorno del capex pasa a ser un resultado. Sin cambios en las filas: BD/BF los valida Roger."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "46325",
+      "fields_changed": "BD 118.676,8 -> 136.987,6; BF 180.061,2 -> 221.829,3; BT",
+      "source": "Modelo de capex v2 (Microsoft/Modelo capex 2026-10); decision de Roger 30-oct ('Aplicalo')",
+      "summary": "ESTIMACION: FCF@5y del modelo anual de la demanda al capex (pesimista / optimista). Multiplos sin cambio. Base: FCF estructural 176.596,1, TIR 2,5%."
+    },
+    {
+      "ticker": "GOOG",
+      "date": "46325",
+      "fields_changed": "BD 94.028,9 -> 105.231,8; BF 148.185,3 -> 236.049,5; BT",
+      "source": "Modelo de capex v2 (Alphabet/Modelo capex 2026-10); decision de Roger 30-oct ('Aplicalo')",
+      "summary": "ESTIMACION: FCF@5y del modelo anual de la demanda al capex (pesimista / optimista). Multiplos sin cambio. Base: FCF estructural 164.708,6, TIR 4,2%."
+    },
+    {
+      "ticker": "AMZN",
+      "date": "46325",
+      "fields_changed": "BD 58.030,6 -> 74.388,6; BF 100.234,7 -> 190.695,6; BT",
+      "source": "Modelo de capex v2 (Amazon/Modelo capex 2026-10); decision de Roger 30-oct ('Aplicalo')",
+      "summary": "ESTIMACION: FCF@5y del modelo anual de la demanda al capex (pesimista / optimista). Multiplos sin cambio. Base: FCF estructural 126.480,1, TIR 4,7%."
+    },
+    {
+      "ticker": "META",
+      "date": "46325",
+      "fields_changed": "BD 40.209,1 -> 48.472,8; BF 111.196,0 -> 123.988,4; BT",
+      "source": "Modelo de capex v2 (Meta/Modelo capex 2026-10); decision de Roger 30-oct ('Aplicalo')",
+      "summary": "ESTIMACION: FCF@5y del modelo anual de la demanda al capex (pesimista / optimista). Multiplos sin cambio. Base: FCF estructural 71.092,3, TIR -0,7%."
+    },
+    {
+      "ticker": "ADYEN",
+      "date": "46324",
+      "fields_changed": "BF 2.581,2 -> 2.306,5; AP 2.710 -> 4.600; AV 2.713,3; BO/BP; BT",
+      "source": "Q3 2026 Business Update (28-oct); carta del H1-2026 (caja); chat de claude.ai del 28-29 oct; lectura de Roger 29-oct",
+      "summary": "NARRATIVA: crece como prometio (+22% cc, volumen +30%) pero cobra menos por euro en Digital (-10%) y crecer le cuesta mas (margen 50%, objetivo 2028 retirado). Roger: menos alcista, bajista parecido. NUMEROS: el alcista baja al base del chat. HECHO aparte: la caja propia es 4.600 (no 2.710). A 815,9: TIR -5,5%/23,7% antes -> -3,7%/21,8% ahora; asimetria 7,7x -> 9,7x."
+    },
+    {
+      "ticker": "OTLY",
+      "date": "46324",
+      "fields_changed": "BD -15 -> -55; BF 99 -> 87; AP; AQ; AS; AT; AU; AV; BQ; BS; BO/BP; BT",
+      "source": "6-K del 3T26 (28-oct); 20-F 2025; chat de claude.ai del 28-29 oct (modelo de reestructuracion); lectura de Roger 29-oct",
+      "summary": "NARRATIVA: el producto y Europa mejoran (Barista +17,6% en volumen, margen bruto 34,1%) pero el balance empeora: caja 23,3, patrimonio -49,8, guia de EBITDA 16-20 (antes 25-35), FCF del 3T -18,4. Roger: KILL FLAG y el bajista empeora mucho. NUMEROS: BD al escenario de liquidacion (-55); BF 87 por metodo (arrendamientos). Valor por ADS -21,4/33,8 -> -36,3/28,0 $."
+    },
+    {
+      "ticker": "VID",
+      "date": "46324",
+      "fields_changed": "AP; AQ; AS 191,8 -> 183,5; AT; AU; AV; BR 55,6 -> 0; BS; BO/BP; BT (FCF@5y y multiplos sin cambio)",
+      "source": "Declaracion intermedia 9M26 (28-oct); cuentas consolidadas 2025; chat de claude.ai del 27-29 oct; lectura de Roger 29-oct",
+      "summary": "NARRATIVA: estable; mejor ejecucion que Verallia. HECHOS corregidos: deuda neta 105 -> 200,8 (sep), FCF con la regla del libro 183,5, sin normalizar (capex 1,42x D&A), EBITDA LTM 450,6, NOPAT 233,7. ESTIMACIONES: sin cambio (Roger)."
+    },
+    {
+      "ticker": "VRLA",
+      "date": "46324",
+      "fields_changed": "AQ 2.131,9 -> 2.089,0; AT 270 -> 212,4; AU; AV; BO/BP; BT (FCF@5y y multiplos sin cambio)",
+      "source": "Nota del 3T26 (27-oct); notas FY25 y 1S26; informe semestral 2026; chat de claude.ai del 27-29 oct; lectura de Roger 29-oct",
+      "summary": "NARRATIVA: se mantiene; pierde precio frente al coste, se desapalanca. HECHOS: deuda neta de septiembre, NOPAT con fuente (212,4), ventas y EBITDA LTM al 3T. ESTIMACIONES: sin cambio (Roger)."
+    },
     {
       "ticker": "MSFT; META; GOOG",
       "date": "46299",
