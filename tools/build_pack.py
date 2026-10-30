@@ -365,13 +365,15 @@ VERDICTS = {
     "NTO":  dict(conviction="4/5", terminal="MUY BAJO", sizing="0%",
                  alert="—", catalyst="Ciclo Switch 2"),
     "SU":   dict(conviction="4/5", terminal="BAJO", sizing="2-3%", alert="—",
-                 catalyst="3T26 el 29-oct: deuda pro forma de la compra de PTC (5-oct: EV 23.700 M$, 21x EBITA 2027E, "
-                          "16-17 mil M EUR de deuda y 5-6 mil M EUR de acciones). Roger (24-oct): revisar la compra y el deep dive antes del 29-oct y decidir entrada con los resultados"),
+                 catalyst="3T26 publicado el 16-oct (no el 29): ingresos ~11.500 (+17% organico) y objetivo 2026 subido. "
+                          "Pendiente: deuda pro forma de la compra de PTC (5-oct: EV 23.700 M$, 21x EBITA 2027E, "
+                          "16-17 mil M EUR de deuda y 5-6 mil M EUR de acciones). Roger (24-oct): revisar la compra y el deep dive y decidir entrada con los resultados"),
     "PRY":  dict(conviction="4/5", terminal="BAJO", sizing="0,7% hoy; tope 2% con nota 5,85 (deep dive: 2-3% bajo 104 EUR)",
                  alert="Tramos de Roger (24-oct; reparto 25/35/40 = 2/4/5 acciones, decidido el 25-oct): 90 / 82 / 67 EUR (TIR peor/mejor -15,1/+19,2, -13,5/+21,5, -9,9/+26,5 con deuda de hoy). "
                        "Regla: comprar si la caida es narrativa de capex IA, los fundamentales aguantan y Atkore salio a buen precio",
-                 catalyst="9M el 29-oct (consejo 28-oct): FCF 9M ~+100/150 si cobro Molex en 3T, ~-400/-450 si no; guia FY con Atkore. "
-                          "Fila pro forma 24-oct: FCF 708 (978 LTM de la compania, menos arrendamientos y SBC, mas Atkore, menos intereses), deuda 8.728 con hibridos"),
+                 catalyst="FY26 (~26-feb-2027): primer balance con Atkore. 9M (29-oct): FCF LTM de la compania 1.434 (9M ~+37: "
+                          "entre los dos casos de la lista; la nota no dice si cobro Molex), EBITDA aj. 3T +32%, guia subida a "
+                          "3.075-3.125 de EBITDA y 1.750-1.850 de FCF. Fila: FCF 1.164 con la misma regla; deuda pro forma de junio"),
     "MNST": dict(conviction="4/5", terminal="MUY BAJO", sizing="0%", alert="—", catalyst="—"),
     "VLTO": dict(conviction="4/5", terminal="MUY BAJO", sizing="1-2%", alert="—", catalyst="—"),
     "ABNB": dict(conviction="4/5", terminal="BAJO-MEDIO", sizing="3-5%", alert="—",
@@ -386,19 +388,38 @@ VERDICTS = {
                  alert="—", catalyst="Q1 FY27 (~25-nov-2026)"),
     "RCL":  dict(conviction="3/5", terminal="MEDIO-ALTO", sizing="0-1% (2-3% < 225 USD)",
                  alert="abrir posicion < 225 USD; segundo tramo < 205",
-                 catalyst="Q3 2026 (finales de octubre) — spread unitario interanual"),
+                 catalyst="4T26 ~28-ene-2027: guia 2027 con Sandals. Q3 (27-oct): rendimientos netos +0,6% cc, "
+                          "guia de BPA aj. subida a 17,85-17,95, 2027 reservando por encima de lo historico"),
     "MSFT": dict(conviction="pendiente", terminal="BAJO", sizing="pendiente", alert="—",
-                 catalyst="Q1 FY27 (oct 2026)"),
+                 catalyst="Q2 FY27 ~27-ene-2027. Q1 (28-oct): Azure +48%, Microsoft Cloud +30%, RPO comercial 677 mil M (+73%); "
+                          "capex por debajo de lo esperado por retrasos de GPU de terceros (segunda mano)"),
     "AMZN": dict(conviction="pendiente", terminal="BAJO-MEDIO", sizing="pendiente",
                  alert="Roger (24-oct): ampliar cuando la asimetria sea interesante (regla de liquidez: tramo 1 hacia 185 $)",
                  catalyst="Q3 2026"),
     "ADYEN": dict(conviction="3/5", terminal="BAJO", sizing="2-3% (escalonada; 2,5-3,5% con C=3,5)",
-                  alert="take rate H2-26 < 16,00 bps, o tercera compra en 12 meses, o capex 2027 > 6%. "
-                        "Decision de Roger (23-oct): comprar en caidas. Tramos de Roger (24-oct): 900 EUR (TIR -7,3/+21,3) "
-                        "y 820 EUR (-5,6/+23,6); con 2 acciones, la segunda a 820 deja ~4,8% (en el tope) y pasa del 5% por encima de ~855 EUR",
-                  catalyst="Q3 el 28-oct-2026: take rate, crecimiento de Digital y EMEA, CFO definitivo. "
-                           "H1-26 (13-ago): +21% cc, EBITDA 49%, take rate 16,21 bps (-4%), Talon.One y "
-                           "Orb cerradas el 1-sep en caja"),
+                  alert="DECISION de Roger (chat del 28-29 oct): no ampliar antes del 11-feb-2027; revisar la conviccion "
+                        "(si baja de 3, salir, no quedarse en 1%). Los tramos de 900 y 820 EUR quedan en pausa hasta entonces. "
+                        "Febrero: brecha volumen-ingresos de Digital > 10 pp = estructural; volumen < 20% = alarma; "
+                        "margen FY27 >= 50% con crecimiento >= 22% = oportunidad; ingresos por FTE 2027 > 550 k EUR; ARR de Orb y Talon.One",
+                  catalyst="H2-26 (~11-feb-2027): objetivos de 2027 (margen, capex, SBC) y take rate del 2S. "
+                           "Q3 (28-oct): +22% cc, volumen +30%, take rate 16,36 bps (Digital -10% interanual), "
+                           "margen EBITDA 2026 rebajado al 50% y objetivo de medio plazo retirado; CFO Niclas Neglen "
+                           "desde el 1-feb-2027. H1-26 (13-ago): +21% cc, EBITDA 49%, take rate 16,21 bps"),
+    "OTLY": dict(conviction="KILL FLAG", terminal="ALTO", sizing="0% (Roger, 29-oct: no invertible hoy, en el radar)",
+                 alert="entrada maxima para 2:1: 5,8 $ nominal / 3,5 $ exigiendo un 15% anual (via canje); "
+                       "y antes, resolver el muro de 2028 (canje, prorroga o refinanciacion firmada)",
+                 catalyst="Revision de China (fin de 2026); FY26 (~10-feb-2027) y empresa en funcionamiento; subida de precio en NA (1T27); "
+                          "test de apalancamiento de la RCF (3T27); 14-mar-2028 test de convertibles del bono. "
+                          "3T (28-oct): caja 23,3, patrimonio -49,8, guia de EBITDA aj. 16-20"),
+    "VID":  dict(conviction="pendiente", terminal="BAJO", sizing="1,4% (11 acciones)",
+                 alert="Roger (24-oct): rotar parte de Verallia a Vidrala si Verallia sube mucho (umbral sin fijar)",
+                 catalyst="FY26 (~24-feb-2027): subidas de precio de 2027 al ritmo del IPC, RU como division de mas crecimiento, "
+                          "margen de Iberia (3T 29,3% frente a 32,1%). 9M (28-oct): guia reiterada (EBITDA ~450, FCF ~200), recompra de otro 1%. "
+                          "Tesis intacta segun el chat del 27-29 oct"),
+    "VRLA": dict(conviction="pendiente", terminal="MEDIO", sizing="1% (38 acciones)",
+                 alert="diferencial precio-coste negativo tres trimestres; EBIT/intereses 2,4x (1,4x reportado)",
+                 catalyst="CMD el 18-nov-2026 (guia a 2029); O-I da su guia 2027 el 3-feb-2027; FY26 el 17-feb-2027 con los precios de 2027. "
+                          "3T (27-oct): -3,1% organico, margen 20,8%, guia confirmada (EBITDA ~700, FCF ~220)"),
     "RAA":  dict(conviction="pendiente", terminal="MUY BAJO", sizing="pendiente", alert="—",
                  catalyst="—"),
     "DNP":  dict(conviction="pendiente", terminal="BAJO", sizing="pendiente", alert="—",
