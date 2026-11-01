@@ -1,7 +1,7 @@
 {
  "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Se regenera en cada build.",
  "fields": "earnings_last_date (ISO), earnings_next_date (ISO), earnings_updated_at (ISO), earnings_next_estimated (bool)",
- "generated_at": "2026-10-30T10:45:06+00:00",
+ "generated_at": "2026-11-01T20:00:10+00:00",
  "companies": {
   "VEEV": {
    "earnings_last_date": "2026-08-26",
@@ -58,9 +58,9 @@
    "earnings_next_estimated": true
   },
   "AMZN": {
-   "earnings_last_date": "2026-07-30",
-   "earnings_next_date": "2026-10-29",
-   "earnings_updated_at": "2026-10-29",
+   "earnings_last_date": "2026-10-29",
+   "earnings_next_date": "2027-02-04",
+   "earnings_updated_at": "2026-10-31",
    "earnings_next_estimated": true
   },
   "SU": {
@@ -204,7 +204,7 @@
   "CBAV": {
    "earnings_last_date": "2026-07-29",
    "earnings_next_date": "2027-02-25",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_updated_at": "2026-10-31",
    "earnings_next_estimated": true
   },
   "NVDA": {
@@ -262,9 +262,9 @@
    "earnings_next_estimated": false
   },
   "TGYM": {
-   "earnings_last_date": "2026-07-30",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-07-30",
+   "earnings_last_date": "2026-10-28",
+   "earnings_next_date": "2027-03-18",
+   "earnings_updated_at": "2026-10-31",
    "earnings_next_estimated": true
   },
   "VID": {
@@ -336,7 +336,7 @@
   "BFIT": {
    "earnings_last_date": "2026-10-21",
    "earnings_next_date": "2027-03-09",
-   "earnings_updated_at": "2026-10-24",
+   "earnings_updated_at": "2026-10-31",
    "earnings_next_estimated": false
   },
   "VRLA": {
@@ -432,13 +432,19 @@
   "EL": {
    "earnings_last_date": "2026-10-20",
    "earnings_next_date": "2027-02-11",
-   "earnings_updated_at": "2026-10-25",
+   "earnings_updated_at": "2026-10-31",
    "earnings_next_estimated": false
   },
   "LUN": {
    "earnings_last_date": "2026-08-05",
    "earnings_next_date": "2026-11-05",
    "earnings_updated_at": "2026-10-25",
+   "earnings_next_estimated": false
+  },
+  "HOME": {
+   "earnings_last_date": "2026-07-27",
+   "earnings_next_date": "2027-01-20",
+   "earnings_updated_at": "2026-10-31",
    "earnings_next_estimated": false
   }
  }

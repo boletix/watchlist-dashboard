@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T10:48:34+00:00",
+    "generated_at": "2026-11-01T20:03:58+00:00",
     "n_alerts": 4,
     "by_severity": {
       "high": 3,
@@ -18,8 +18,8 @@
       "message": "ADYEN entered Hunting Ground (rating 7.80, EV/FCF 19.7x)",
       "metrics": {
         "rating_composite": 7.8,
-        "ev_fcf": 19.740487723132972,
-        "irr_best": 0.21364003444173574
+        "ev_fcf": 19.67986910018215,
+        "irr_best": 0.21425584263859632
       }
     },
     {
@@ -30,9 +30,9 @@
       "category": "Fintech",
       "message": "ADYEN now has favorable IRR asymmetry (best 21.4%, worst -4.0%)",
       "metrics": {
-        "irr_best": 0.21364003444173574,
-        "irr_worst": -0.04035616830185729,
-        "irr_asymmetry_ratio": 5.07992405487186
+        "irr_best": 0.21425584263859632,
+        "irr_worst": -0.039869239294197945,
+        "irr_asymmetry_ratio": 5.082501638655885
       }
     },
     {
@@ -41,10 +41,10 @@
       "ticker": "OTLY",
       "name": "OTLY",
       "category": "Consumo",
-      "message": "OTLY Best IRR crossed 25% (22.9% → 29.0%)",
+      "message": "OTLY Best IRR crossed 25% (22.9% → 29.8%)",
       "metrics": {
         "from": 0.2285018156374583,
-        "to": 0.28992429066672676
+        "to": 0.29814103357883104
       }
     },
     {
@@ -53,11 +53,11 @@
       "ticker": "ADYEN",
       "name": "ADYEN",
       "category": "Fintech",
-      "message": "ADYEN (Top Tier) EV/FCF dropped 20%: 24.8x → 19.7x",
+      "message": "ADYEN (Top Tier) EV/FCF dropped 21%: 24.8x → 19.7x",
       "metrics": {
         "from": 24.821802870673952,
-        "to": 19.740487723132972,
-        "drop_pct": 0.20471176787663428,
+        "to": 19.67986910018215,
+        "drop_pct": 0.20715392017583095,
         "rating_composite": 7.8
       }
     }

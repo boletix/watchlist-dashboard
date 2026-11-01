@@ -1,10 +1,59 @@
 {
   "meta": {
-    "n_updates": 275,
+    "n_updates": 282,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
   "updates": [
+    {
+      "ticker": "HOME",
+      "date": "46327",
+      "fields_changed": "AS, BS, BD, BF, BH, BI, BT (correccion A + estimacion B)",
+      "source": "Respuestas del 1-nov-2026 (HOME_Preguntas_Roger_2026-11-01.md, seccion 14): nota de APM de los EEFF intermedios 1S26 y politica de remuneraciones 2026 (MIP 2026-28); OK de Roger ('Si aplica los cambios A y B')",
+      "summary": "A (CORRECCION DE DATO): AS/BS 116,8 -> 113,2 (el beneficio ajustado suma de vuelta los incentivos; se restan). B (ESTIMACION, aprobada): BD 94,9 -> 92,4; BF 216,7 -> 205,5 (beneficio 2031 menos incentivos); BH/BI 27,0x/19,8x -> 27,6x/20,5x para reproducir las TIR con incentivos -3,4%/+13,1%. BT reescrito."
+    },
+    {
+      "ticker": "TGYM",
+      "date": "46326",
+      "fields_changed": "BD 116 -> 120; BF 183 -> 235; AV 1.053 -> 1.062,5; BO; BP; BT",
+      "source": "Escenarios del 25-oct aprobados por Roger el 31-oct; nota de ingresos de 9M26 (28-oct)",
+      "summary": "ESTIMACION (aprobada) + DATOS: escenarios 120/235; ingresos 9M +6,1% con el 3T frenando a ~+3,8% y las Americas recuperando (+8,3% en el 3T)."
+    },
+    {
+      "ticker": "EL",
+      "date": "46326",
+      "fields_changed": "BT (aprobacion)",
+      "source": "Decision de Roger del 31-oct",
+      "summary": "Los ratings, el FCF@5y y los multiplos propuestos el 25-oct quedan aprobados. Sin cambio de cifras."
+    },
+    {
+      "ticker": "BFIT",
+      "date": "46326",
+      "fields_changed": "BT (regla de precio)",
+      "source": "Decision de Roger del 31-oct",
+      "summary": "Venta si se acerca a 40 EUR; compra entre 20 y 25 EUR. Radar actualizado. Sin cambio de valoracion."
+    },
+    {
+      "ticker": "CBAV",
+      "date": "46326",
+      "fields_changed": "AP, AQ, AS, BR, BS, AT, AU, AV, BT",
+      "source": "CNMV: informe semestral 1S-26 y 2S-25; presentacion 1S-26",
+      "summary": "DATOS: fila al 1S-26. CORRECCION: FCF con arrendamientos NIIF 16 (33,4 frente a 46,3). BD/BF sin tocar (calibrados sobre 46,3: pregunta a Roger)."
+    },
+    {
+      "ticker": "AMZN",
+      "date": "46326",
+      "fields_changed": "AP, AQ, AS, BS, BR, AT, AU, AV, BQ, BO, BP, BT",
+      "source": "10-Q 3T26 (30-oct, EDGAR) y nota de resultados (29-oct)",
+      "summary": "DATOS: fila del 2T al 3T. Hallazgo: mas del 40% de los 578.000 M$ de pedidos pendientes de AWS son OpenAI y Anthropic. Deuda a largo +107.000 M$ en 9 meses. BD/BF sin cambio (modelo del 30-oct)."
+    },
+    {
+      "ticker": "HOME",
+      "date": "46326",
+      "fields_changed": "Alta fila 77: A (BMEX:HOME), C-D, ratings J-AK, AO-AV, AZ, BD, BF, BH, BI, BN-BT",
+      "source": "Deep dive 31-oct-2026 (Inversion Roger/Neinor Homes/Deep Dive 2026-10): presentacion 1S26 y EEFF intermedios (CNMV), guia del 5-oct-2026; OK de Roger a la opcion A",
+      "summary": "ALTA + ESTIMACION (aprobada, opcion A): BD/BF = beneficio neto ajustado 2031 de S4/S1 94,9/216,7 con multiplos implicitos 27,0x/19,8x (incluyen dividendos; por encima del limite de 15x por decision de Roger). TIR del modelo -3,1%/+13,7% a 16,93; ratings 2,50/3,50/3,14 propuestos."
+    },
     {
       "ticker": "PRY",
       "date": "46325",

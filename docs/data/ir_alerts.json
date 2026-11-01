@@ -1,119 +1,50 @@
 {
  "meta": {
-  "generated_at": "2026-10-30T10:49:39+00:00",
-  "n_tickers": 73,
+  "generated_at": "2026-11-01T20:04:56+00:00",
+  "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 8,
-  "n_calendar_drift": 29,
+  "n_documents": 3,
+  "n_calendar_drift": 25,
   "n_financial_drift": 13,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "sec:0001018724-26-000040:10-Q",
-   "source": "SEC EDGAR",
-   "form": "10-Q",
-   "title": "Informe trimestral — 10-Q",
-   "date": "2026-10-30",
-   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
-   "priority": "alta",
-   "ticker": "AMZN",
-   "name": "AMZN"
-  },
-  {
-   "id": "sec:0001967680-26-000048:10-Q",
-   "source": "SEC EDGAR",
-   "form": "10-Q",
-   "title": "Informe trimestral — 10-Q",
-   "date": "2026-10-30",
-   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000048/vlto-20261002.htm",
-   "priority": "alta",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "sec:0001018724-26-000038:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm",
-   "priority": "media",
-   "ticker": "AMZN",
-   "name": "AMZN"
-  },
-  {
-   "id": "sec:0001967680-26-000047:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000047/vlto-20261029.htm",
-   "priority": "media",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "sec:0001193125-26-438017:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-10-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm",
-   "priority": "media",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0001778564-26-000195:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-10-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000195/xslF345X06/form4-10292026_081001.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001193125-26-439152:4",
+   "id": "sec:0001193125-26-442116:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — 4",
-   "date": "2026-10-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526439152/xslF345X06/ownership.xml",
+   "date": "2026-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526442116/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "KSPI",
-   "name": "KSPI"
+   "ticker": "GOOG",
+   "name": "GOOG"
   },
   {
-   "id": "sec:0001583109-26-000004:4",
+   "id": "sec:0001640081-26-000007:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000158310926000004/xslF345X06/wk-form4_1793310384.xml",
+   "date": "2026-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000164008126000007/xslF345X06/wk-form4_1793392453.xml",
    "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
+   "ticker": "RCL",
+   "name": "RCL"
+  },
+  {
+   "id": "sec:0001697820-26-000009:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000169782026000009/xslF345X06/wk-form4_1793392253.xml",
+   "priority": "baja",
+   "ticker": "RCL",
+   "name": "RCL"
   }
  ],
  "financial_drift": [
-  {
-   "ticker": "MSFT",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-10-28",
-   "revenue_ltm_mercado": 331839.0,
-   "revenue_ltm_excel": 346445.0,
-   "desvio_revenue": -0.0422,
-   "fcf_ltm_mercado": 66987.0,
-   "fcf_ltm_excel": 56495.0,
-   "desvio_fcf": 0.1857,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
-  },
   {
    "ticker": "BN",
    "ultimo_trimestre_publicado": "2026-06-30",
@@ -130,14 +61,14 @@
   },
   {
    "ticker": "AMZN",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-30",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-10-29",
    "revenue_ltm_mercado": 742776.0,
-   "revenue_ltm_excel": 775680.0,
-   "desvio_revenue": -0.0424,
+   "revenue_ltm_excel": 797455.0,
+   "desvio_revenue": -0.0686,
    "fcf_ltm_mercado": -2472.0,
-   "fcf_ltm_excel": 74089.5,
-   "desvio_fcf": -1.0334,
+   "fcf_ltm_excel": 59863.5,
+   "desvio_fcf": -1.0413,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -174,15 +105,29 @@
    "ticker": "GOOG",
    "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-10-28",
-   "revenue_ltm_mercado": 445867.0,
+   "revenue_ltm_mercado": 471098.0,
    "revenue_ltm_excel": 471098.0,
-   "desvio_revenue": -0.0536,
-   "fcf_ltm_mercado": 53273.0,
+   "desvio_revenue": 0.0,
+   "fcf_ltm_mercado": 19747.0,
    "fcf_ltm_excel": 16203.0,
-   "desvio_fcf": 2.2878,
+   "desvio_fcf": 0.2187,
    "trimestre_nuevo": false,
-   "sospecha_unidades": true,
-   "severidad": "unidades"
+   "sospecha_unidades": false,
+   "severidad": "media"
+  },
+  {
+   "ticker": "CBAV",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-07-29",
+   "revenue_ltm_mercado": 317.0,
+   "revenue_ltm_excel": 317.0,
+   "desvio_revenue": -0.0001,
+   "fcf_ltm_mercado": 46.3,
+   "fcf_ltm_excel": 33.4,
+   "desvio_fcf": 0.3869,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
   },
   {
    "ticker": "COR",
@@ -299,11 +244,11 @@
    "delta_days": -182
   },
   {
-   "ticker": "SU",
-   "excel": "2027-02-19",
-   "market": "2026-07-30",
+   "ticker": "AMZN",
+   "excel": "2027-02-04",
+   "market": "2026-10-29",
    "estimated": true,
-   "delta_days": -204
+   "delta_days": -98
   },
   {
    "ticker": "LOTB",
@@ -325,13 +270,6 @@
    "market": "2026-11-05",
    "estimated": true,
    "delta_days": -7
-  },
-  {
-   "ticker": "META",
-   "excel": "2027-01-28",
-   "market": "2026-10-21",
-   "estimated": true,
-   "delta_days": -99
   },
   {
    "ticker": "KKR",
@@ -397,13 +335,6 @@
    "delta_days": -126
   },
   {
-   "ticker": "TGYM",
-   "excel": "2026-11-05",
-   "market": "2026-07-30",
-   "estimated": true,
-   "delta_days": -98
-  },
-  {
    "ticker": "VID",
    "excel": "2027-02-24",
    "market": "2026-10-28",
@@ -423,20 +354,6 @@
    "market": "2026-11-09",
    "estimated": true,
    "delta_days": 6
-  },
-  {
-   "ticker": "S",
-   "excel": "2026-12-01",
-   "market": "2026-08-27",
-   "estimated": true,
-   "delta_days": -96
-  },
-  {
-   "ticker": "SGO",
-   "excel": "2027-02-25",
-   "market": "2026-07-30",
-   "estimated": false,
-   "delta_days": -210
   },
   {
    "ticker": "VRLA",
@@ -490,33 +407,6 @@
  ],
  "todo_excel": [
   {
-   "ticker": "AMZN",
-   "accion": "Actualizar cuentas en el Excel",
-   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
-   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
-   "ultimos_resultados_excel": "2026-07-30",
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
-   ]
-  },
-  {
-   "ticker": "VLTO",
-   "accion": "Actualizar cuentas en el Excel",
-   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
-   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
-   "ultimos_resultados_excel": "2026-07-28",
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000048/vlto-20261002.htm"
-   ]
-  },
-  {
-   "ticker": "MSFT",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 346445.0 vs mercado 331839.0 (-4.2%); FCF LTM: Excel 56495.0 vs mercado 66987.0 (+18.6%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
    "ticker": "BN",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 80690.0 vs mercado 77059.0 (-4.5%)",
@@ -526,7 +416,7 @@
   {
    "ticker": "AMZN",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 775680.0 vs mercado 742776.0 (-4.2%); FCF LTM: Excel 74089.5 vs mercado -2472.0 (-103.3%)",
+   "motivo": "ingresos LTM: Excel 797455.0 vs mercado 742776.0 (-6.9%); FCF LTM: Excel 59863.5 vs mercado -2472.0 (-104.1%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -546,9 +436,16 @@
   },
   {
    "ticker": "GOOG",
-   "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
-   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 471098.0 vs 445867.0, FCF 16203.0 vs 53273.0. Revisar en que moneda reporta y el factor de Framework Notes.",
-   "columnas": "AR-BC y Framework Notes (factor de conversion)",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 471098.0 vs mercado 471098.0 (+0.0%); FCF LTM: Excel 16203.0 vs mercado 19747.0 (+21.9%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "CBAV",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 317.0 vs mercado 317.0 (-0.0%); FCF LTM: Excel 33.4 vs mercado 46.3 (+38.7%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
@@ -615,9 +512,9 @@
    "urls": []
   },
   {
-   "ticker": "SU",
+   "ticker": "AMZN",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2027-02-19 y el mercado dice 2026-07-30 (-204 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2027-02-04 y el mercado dice 2026-10-29 (-98 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -639,13 +536,6 @@
    "ticker": "DNP",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-12 y el mercado dice 2026-11-05 (-7 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "META",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2027-01-28 y el mercado dice 2026-10-21 (-99 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -713,13 +603,6 @@
    "urls": []
   },
   {
-   "ticker": "TGYM",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-05 y el mercado dice 2026-07-30 (-98 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "VID",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-24 y el mercado dice 2026-10-28 (-119 dias de diferencia) — la del Excel era una estimacion",
@@ -737,20 +620,6 @@
    "ticker": "FERG",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-03 y el mercado dice 2026-11-09 (6 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "S",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-12-01 y el mercado dice 2026-08-27 (-96 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "SGO",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2027-02-25 y el mercado dice 2026-07-30 (-210 dias de diferencia)",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
