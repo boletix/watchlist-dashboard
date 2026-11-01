@@ -76,6 +76,7 @@ TICKER_YF_OVERRIDE: dict[str, str] = {
     "LUN": "LUN.TO",     # Lundin Mining, Toronto (CAD). Reporta en USD
     "COR": "COR.LS",     # Corticeira Amorim, Lisboa (EUR)
     "DNP": "DNP.WA",     # Dino Polska, Varsovia (PLN)
+    "HOME": "HOME.MC",   # Neinor Homes, Madrid (EUR). Alta 31-oct-2026 (fila 77)
 }
 
 

@@ -359,8 +359,8 @@ VERDICTS = {
     "VYLR": dict(conviction="3,5/5", terminal="BAJO", sizing="0-1%",
                  alert="51 $ (alcista al 15% anual)", catalyst="Primer 10-Q como empresa separada (~5-nov-2026): FCF sin Bayer y regalias; "
                                                                "demanda de 15 estados contra la escision y orden judicial (sin dividendos ni recompras, 9-oct)"),
-    "EL":   dict(conviction="3/5", terminal="BAJO", sizing="0% a 181 EUR (propuesta; sin lista de compra hasta que Roger decida)",
-                 alert="tramo 1 de la regla ~120-130 EUR con los multiplos propuestos (16x/26x)",
+    "EL":   dict(conviction="3/5", terminal="BAJO", sizing="0% a 184 EUR (juicios aprobados por Roger el 31-oct; sin lista de compra)",
+                 alert="tramo 1 de la regla ~120-130 EUR con los multiplos aprobados (16x/26x)",
                  catalyst="FY2026 (~11-feb-2027): margen de las gafas con IA, objetivo de margen, gobierno de Delfin (renovacion de Milleri en 2027)"),
     "NTO":  dict(conviction="4/5", terminal="MUY BAJO", sizing="0%",
                  alert="—", catalyst="Ciclo Switch 2"),
@@ -395,7 +395,8 @@ VERDICTS = {
                           "capex por debajo de lo esperado por retrasos de GPU de terceros (segunda mano)"),
     "AMZN": dict(conviction="pendiente", terminal="BAJO-MEDIO", sizing="pendiente",
                  alert="Roger (24-oct): ampliar cuando la asimetria sea interesante (regla de liquidez: tramo 1 hacia 185 $)",
-                 catalyst="Q3 2026"),
+                 catalyst="4T26 (~4-feb-2027): guia de capex de 2027 ('meaningfully' mayor), margen de AWS y concentracion del "
+                          "backlog (OpenAI 138.000 y Anthropic >100.000 de 578.000 M$); vidas utiles en el 10-K"),
     "ADYEN": dict(conviction="3/5", terminal="BAJO", sizing="2-3% (escalonada; 2,5-3,5% con C=3,5)",
                   alert="DECISION de Roger (chat del 28-29 oct): no ampliar antes del 11-feb-2027; revisar la conviccion "
                         "(si baja de 3, salir, no quedarse en 1%). Los tramos de 900 y 820 EUR quedan en pausa hasta entonces. "
