@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-01T20:04:56+00:00",
+  "generated_at": "2026-11-02T17:20:23+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 3,
+  "n_documents": 1,
   "n_calendar_drift": 25,
   "n_financial_drift": 13,
   "n_errors": 0,
@@ -11,37 +11,15 @@
  },
  "documents": [
   {
-   "id": "sec:0001193125-26-442116:4",
+   "id": "sec:0001178913-26-004953:6-K",
    "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-10-30",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526442116/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "sec:0001640081-26-000007:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-30",
-   "url": "https://www.sec.gov/Archives/edgar/data/884887/000164008126000007/xslF345X06/wk-form4_1793392453.xml",
-   "priority": "baja",
-   "ticker": "RCL",
-   "name": "RCL"
-  },
-  {
-   "id": "sec:0001697820-26-000009:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-10-30",
-   "url": "https://www.sec.gov/Archives/edgar/data/884887/000169782026000009/xslF345X06/wk-form4_1793392253.xml",
-   "priority": "baja",
-   "ticker": "RCL",
-   "name": "RCL"
+   "form": "6-K",
+   "title": "Hecho relevante (extranjero) — 6-K",
+   "date": "2026-11-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326004953/zk2636310.htm",
+   "priority": "media",
+   "ticker": "CHKP",
+   "name": "CHKP"
   }
  ],
  "financial_drift": [
