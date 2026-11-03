@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-02T17:20:23+00:00",
+  "generated_at": "2026-11-03T15:26:18+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 1,
+  "n_documents": 3,
   "n_calendar_drift": 25,
   "n_financial_drift": 13,
   "n_errors": 0,
@@ -11,15 +11,37 @@
  },
  "documents": [
   {
-   "id": "sec:0001178913-26-004953:6-K",
+   "id": "sec:0001778564-26-000199:4",
    "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — 6-K",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
    "date": "2026-11-02",
-   "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326004953/zk2636310.htm",
-   "priority": "media",
-   "ticker": "CHKP",
-   "name": "CHKP"
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000199/xslF345X06/form4-11022026_081105.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001778564-26-000198:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-11-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000198/xslF345X06/form4-11022026_081102.xml",
+   "priority": "baja",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001046179-26-000732:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000732/xslF345X06/wk-form4_1793707033.xml",
+   "priority": "baja",
+   "ticker": "TSM",
+   "name": "TSM"
   }
  ],
  "financial_drift": [
@@ -41,12 +63,12 @@
    "ticker": "AMZN",
    "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-10-29",
-   "revenue_ltm_mercado": 742776.0,
+   "revenue_ltm_mercado": 777018.0,
    "revenue_ltm_excel": 797455.0,
-   "desvio_revenue": -0.0686,
-   "fcf_ltm_mercado": -2472.0,
+   "desvio_revenue": -0.0256,
+   "fcf_ltm_mercado": -37641.0,
    "fcf_ltm_excel": 59863.5,
-   "desvio_fcf": -1.0413,
+   "desvio_fcf": -1.6288,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -123,14 +145,14 @@
   },
   {
    "ticker": "PRY",
-   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-10-29",
-   "revenue_ltm_mercado": 21088.0,
+   "revenue_ltm_mercado": 22622.0,
    "revenue_ltm_excel": 25242.0,
-   "desvio_revenue": -0.1646,
-   "fcf_ltm_mercado": 1504.0,
+   "desvio_revenue": -0.1038,
+   "fcf_ltm_mercado": 1683.0,
    "fcf_ltm_excel": 688.0,
-   "desvio_fcf": 1.186,
+   "desvio_fcf": 1.4462,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -394,7 +416,7 @@
   {
    "ticker": "AMZN",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 797455.0 vs mercado 742776.0 (-6.9%); FCF LTM: Excel 59863.5 vs mercado -2472.0 (-104.1%)",
+   "motivo": "ingresos LTM: Excel 797455.0 vs mercado 777018.0 (-2.6%); FCF LTM: Excel 59863.5 vs mercado -37641.0 (-162.9%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -436,7 +458,7 @@
   {
    "ticker": "PRY",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 25242.0 vs mercado 21088.0 (-16.5%); FCF LTM: Excel 688.0 vs mercado 1504.0 (+118.6%)",
+   "motivo": "ingresos LTM: Excel 25242.0 vs mercado 22622.0 (-10.4%); FCF LTM: Excel 688.0 vs mercado 1683.0 (+144.6%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
