@@ -1,641 +1,344 @@
 {
  "meta": {
-  "generated_at": "2026-11-04T15:39:11+00:00",
+  "generated_at": "2026-11-05T15:44:00+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 57,
-  "n_calendar_drift": 25,
+  "n_documents": 30,
+  "n_calendar_drift": 27,
   "n_financial_drift": 14,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "news:f5b01b90-1c31-33f2-98b9-b609d08a35a9",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "What to Expect From Ferguson Enterprises’ Next Quarterly Earnings Report",
-   "date": "2026-10-27",
-   "url": "https://www.barchart.com/story/news/8476881/what-to-expect-from-ferguson-enterprises-next-quarterly-earnings-report",
-   "priority": "media",
-   "ticker": "FERG",
-   "name": "FERG"
+   "id": "sec:0001193125-26-447251:10-Q",
+   "source": "SEC EDGAR",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1069878/000119312526447251/trex-20260930.htm",
+   "priority": "alta",
+   "ticker": "TREX",
+   "name": "TREX"
   },
   {
-   "id": "news:8b5fce87-3cf1-3125-be16-8f2f7af8ec73",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Adyen beats Q3 revenue estimates but shares sink 10% on margin outlook cut",
-   "date": "2026-10-28",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/adyen-beats-q3-revenue-estimates-075404475.html",
-   "priority": "media",
-   "ticker": "ADYEN",
-   "name": "ADYEN"
+   "id": "sec:0001543151-26-000041:10-Q",
+   "source": "SEC EDGAR",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm",
+   "priority": "alta",
+   "ticker": "UBER",
+   "name": "UBER"
   },
   {
-   "id": "news:9bc8424e-ab10-37af-ae80-f48adcb6033b",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "The Descartes Systems Group (DSGX) Rallies on Record Results",
-   "date": "2026-10-28",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/descartes-systems-group-dsgx-rallies-160553139.html",
-   "priority": "media",
-   "ticker": "DSGX",
-   "name": "DSGX"
+   "id": "sec:0001341766-26-000062:10-Q",
+   "source": "SEC EDGAR",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000062/celh-20260930.htm",
+   "priority": "alta",
+   "ticker": "CELH",
+   "name": "CELH"
   },
   {
-   "id": "news:2958daa7-e636-39e2-87b4-49270ffd8fc3",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Oatly (OTLY) Q3 2026 Earnings Call Transcript",
-   "date": "2026-10-28",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/10/28/oatly-otly-q3-2026-earnings-call-transcript/",
-   "priority": "media",
-   "ticker": "OTLY",
-   "name": "OTLY"
-  },
-  {
-   "id": "news:10402f08-cd88-3bbe-a8cd-aee50db36746",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "What Oatly Group (OTLY) Said on Its Q3 Earnings Call",
-   "date": "2026-10-28",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-oatly-group-otly-said-on-its-q3-earnings-call-2026-10-28/?utm_source=yahoofinance&utm_medium=yahoofinance",
-   "priority": "media",
-   "ticker": "OTLY",
-   "name": "OTLY"
-  },
-  {
-   "id": "news:f3afd9b8-d7db-3fac-938d-ce4f13a45839",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Garmin (GRMN) Stock Sinks After Q3 Results Defy Margin Doubts",
-   "date": "2026-10-29",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/garmin-grmn-stock-sinks-q3-001648369.html",
-   "priority": "media",
-   "ticker": "GRMN",
-   "name": "GRMN"
-  },
-  {
-   "id": "news:29bd9853-9402-3bfa-8a82-b8a1077974e2",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Prysmian raises 2026 outlook again after record Q3 EBITDA beats estimates",
-   "date": "2026-10-29",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/prysmian-raises-2026-outlook-again-065210962.html",
-   "priority": "media",
-   "ticker": "PRY",
-   "name": "PRY"
-  },
-  {
-   "id": "news:e6004786-a9d4-3096-b797-34c9d786d7aa",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "SAP stock drops after ServiceNow, Fortinet results weigh",
-   "date": "2026-10-29",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/sap-stock-drops-servicenow-fortinet-124916890.html",
-   "priority": "media",
-   "ticker": "SAP",
-   "name": "SAP"
-  },
-  {
-   "id": "news:c8cb1ce3-ac77-3da1-b37d-4b9c2b9ccb52",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Is Veeva Systems (VEEV) Fully Priced After Raised Guidance?",
-   "date": "2026-10-30",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/veeva-systems-veev-fully-priced-021445490.html",
-   "priority": "media",
-   "ticker": "VEEV",
-   "name": "VEEV"
-  },
-  {
-   "id": "news:6f8b0b1c-12c6-381b-904a-5baa484b4144",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Adyen (ENXTAM:ADYEN) Stock Gets Fair Value Trim After Lower Margin Guidance",
-   "date": "2026-10-30",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/adyen-enxtam-adyen-stock-gets-191556052.html",
-   "priority": "media",
-   "ticker": "ADYEN",
-   "name": "ADYEN"
-  },
-  {
-   "id": "news:9894a837-e2a9-3b5f-b3c4-8f1e6cb74b9c",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Veralto (VLTO) Q3 2026 Earnings Call Transcript",
-   "date": "2026-10-30",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/10/30/veralto-vlto-q3-2026-earnings-call-transcript/",
-   "priority": "media",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "news:347f194b-8508-3eae-93be-c2eedbd677b6",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Oatly (OTLY) Stock Sinks As Q3 Earnings Meet A Guidance Cut",
-   "date": "2026-10-30",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/oatly-otly-stock-sinks-q3-021701814.html",
-   "priority": "media",
-   "ticker": "OTLY",
-   "name": "OTLY"
-  },
-  {
-   "id": "news:5d07473c-ce25-39f5-8aeb-2f800012c053",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "VLTO Q3 deep dive: water analytics growth and cost optimization drive strong results",
-   "date": "2026-10-31",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/vlto-q3-deep-dive-water-205100747.html",
-   "priority": "media",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "news:225ce7bf-a3d7-3591-baa7-498179422646",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "What Veralto (VLTO) Said on Its Q3 Earnings Call",
-   "date": "2026-10-31",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-veralto-vlto-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance",
-   "priority": "media",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "news:bf6f0f4f-3c4e-345c-b375-80f83bbccb91",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Garmin (GRMN) Lifts Full Year Guidance, Is It Fully Priced?",
-   "date": "2026-10-31",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/garmin-grmn-lifts-full-guidance-190904065.html",
-   "priority": "media",
-   "ticker": "GRMN",
-   "name": "GRMN"
-  },
-  {
-   "id": "news:d2797406-9a69-3a3c-a76e-f6b1ad09f120",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Does Veralto (VLTO) Still Look Undervalued After Raised Guidance?",
-   "date": "2026-11-01",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/does-veralto-vlto-still-look-041934560.html",
-   "priority": "media",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "news:469512f7-2300-3634-b429-9cc64a143f7f",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Veralto (VLTO) Stock Jumps After Q3 Earnings Lift Growth Outlook",
-   "date": "2026-11-01",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/veralto-vlto-stock-jumps-q3-010831479.html",
-   "priority": "media",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "news:ac2c5f6b-5f3a-3668-b0be-8b6953eee6eb",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "How Raised Revenue Guidance At Garmin (GRMN) Has Changed Its Investment Story",
-   "date": "2026-11-01",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/raised-revenue-guidance-garmin-grmn-081557875.html",
-   "priority": "media",
-   "ticker": "GRMN",
-   "name": "GRMN"
-  },
-  {
-   "id": "news:1672116b-9418-3f06-b32d-c9f6fd87d6b0",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Check Point (CHKP) Q3 2026 Earnings Call Transcript",
-   "date": "2026-11-02",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/02/check-point-chkp-q3-2026-earnings-call-transcript/",
-   "priority": "media",
-   "ticker": "CHKP",
-   "name": "CHKP"
-  },
-  {
-   "id": "news:81bd00fd-d481-324d-a075-34e2975de312",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Zacks Industry Outlook Highlights Southern Copper, Freeport-McMoRan, First Quantum Minerals, Lundin Mining and Centrus Energy",
-   "date": "2026-11-02",
-   "url": "https://finance.yahoo.com/markets/commodities/articles/zacks-industry-outlook-highlights-southern-091900618.html",
-   "priority": "media",
-   "ticker": "LUN",
-   "name": "LUN"
-  },
-  {
-   "id": "news:76682514-2a9f-3f0e-a4fd-bc8dc444e21e",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Zacks Industry Outlook Highlights Fortinet, Zscaler and Qualys",
-   "date": "2026-11-03",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-industry-outlook-highlights-fortinet-115100838.html",
-   "priority": "media",
-   "ticker": "ZS",
-   "name": "ZS"
-  },
-  {
-   "id": "news:11c42655-9205-33fa-93ce-8b8243916600",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "ING Bank Slaski SA (FRA:6GF) Q3 2026 Earnings Call Highlights: Record Client Growth and 17% ...",
-   "date": "2026-11-03",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/ing-bank-slaski-sa-fra-070213704.html",
-   "priority": "media",
-   "ticker": "COR",
-   "name": "COR"
-  },
-  {
-   "id": "news:5da5deab-3672-3106-b332-205ffea737d2",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Check Point Software Technologies (CHKP) Fell On Q3 Results, Does It Look Fairly Valued?",
-   "date": "2026-11-03",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/check-point-software-technologies-chkp-042754266.html",
-   "priority": "media",
-   "ticker": "CHKP",
-   "name": "CHKP"
-  },
-  {
-   "id": "news:c88d4bc5-6c50-3a01-ba51-397d4d313c87",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Netflix (NFLX) Appoints Darshan Kantak To Lead Global Ads Push",
-   "date": "2026-11-03",
-   "url": "https://finance.yahoo.com/media-advertising/articles/netflix-nflx-appoints-darshan-kantak-221728095.html",
-   "priority": "media",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "news:82840527-4eef-35d1-8c43-b35a4408f821",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Vylor (VYLR) Stock Could Be 34% Below Fair Value Following $3b Buyback Plan",
-   "date": "2026-11-03",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/vylor-vylr-stock-could-34-180957833.html",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
-  },
-  {
-   "id": "sec:0001140361-26-041894:8-K",
+   "id": "sec:0001193125-26-447173:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
    "title": "Hecho relevante — 8-K",
    "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1404912/000114036126041894/ef20084883_8k.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm",
    "priority": "media",
-   "ticker": "KKR",
-   "name": "KKR"
+   "ticker": "MSFT",
+   "name": "MSFT"
   },
   {
-   "id": "news:714f9d6e-4534-3d8b-b6ab-50647f37c880",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Cloudflare (NET) Shares Outperform Following Accelerating Revenue Growth and Raised Outlook",
-   "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-net-shares-outperform-following-143344688.html",
-   "priority": "media",
-   "ticker": "NET",
-   "name": "NET"
-  },
-  {
-   "id": "news:2b092888-174b-3dda-b75e-482774b27b9d",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "GOOGL Q3 Earnings Call Highlights AI Growth and Spending Pressures",
-   "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/technology/ai/articles/googl-q3-earnings-call-highlights-140000677.html",
-   "priority": "media",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "news:3be8b7cd-9575-36bf-bfdd-3a8a43eb8665",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "TSMC Stocks Move Lower as November Sales Data Face a $53.3 Billion Quarterly Hurdle",
-   "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-move-lower-november-151537685.html",
-   "priority": "media",
-   "ticker": "TSM",
-   "name": "TSM"
-  },
-  {
-   "id": "sec:0001193125-26-446144:8-K",
+   "id": "sec:0000814547-26-000037:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
-   "title": "Hecho relevante — 8-K",
+   "title": "Hecho relevante — 8-K Q4-26 EARNINGS RELEASES",
    "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1069878/000119312526446144/trex-20261104.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000037/fico-20261104.htm",
+   "priority": "media",
+   "ticker": "FICO",
+   "name": "FICO"
+  },
+  {
+   "id": "news:021d1819-a0aa-3c11-b053-8952f4c4eb9f",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "FICO Declines to Share Guidance Amid Price Structure Change",
+   "date": "2026-11-04",
+   "url": "https://www.wsj.com/business/earnings/fico-declines-to-share-guidance-amid-price-structure-change-27edfe82?siteid=yhoof2&yptr=yahoo",
+   "priority": "media",
+   "ticker": "FICO",
+   "name": "FICO"
+  },
+  {
+   "id": "news:7e301dbd-6eac-3085-920b-192a3588ccb5",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Triple Flag (TFPM) Q3 2026 Earnings Call Transcript",
+   "date": "2026-11-04",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/triple-flag-tfpm-q3-2026-earnings-call-transcript/",
+   "priority": "media",
+   "ticker": "TFPM",
+   "name": "TFPM"
+  },
+  {
+   "id": "news:4ce252a5-e42c-3646-acac-83348c473a5e",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Trex Company (TREX) Q3 2026 Earnings Call Transcript",
+   "date": "2026-11-04",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/trex-company-trex-q3-2026-earnings-call-transcript/",
    "priority": "media",
    "ticker": "TREX",
    "name": "TREX"
   },
   {
-   "id": "sec:0001543151-26-000039:8-K",
+   "id": "news:3a1c5126-a30d-3e7f-ba6a-b21f2cb57770",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Trex Company, Inc. Q3 2026 Earnings Call Summary",
+   "date": "2026-11-04",
+   "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-trex-company-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+   "priority": "media",
+   "ticker": "TREX",
+   "name": "TREX"
+  },
+  {
+   "id": "sec:0001193125-26-448357:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
    "title": "Hecho relevante — 8-K",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000039/uber-20261104.htm",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
    "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
+   "ticker": "MSFT",
+   "name": "MSFT"
   },
   {
-   "id": "news:f19f3bb7-a311-3359-b963-aaf4de5c3e84",
+   "id": "news:f1a25436-4ec1-39ba-992c-40620455ec73",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Uber Third-Quarter Results Top Street Views; Issues Soft Bookings Guidance",
-   "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-third-quarter-results-top-144530468.html",
+   "title": "Fair Isaac Corp (FICO) Q4 2026 Earnings Call Highlights: Record Revenue and EPS Growth Amid ...",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/fair-isaac-corp-fico-q4-051605139.html",
    "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
+   "ticker": "FICO",
+   "name": "FICO"
   },
   {
-   "id": "news:69736e53-d7af-3793-8624-625cf546d3d2",
+   "id": "news:cf05786e-6316-4eb4-9d23-1b651d7dc920",
    "source": "Noticias",
    "form": "noticia",
-   "title": "UBER CEO Targets 700 Fully Driverless Vehicles By Year-End, Over 2,000 By 2027 – Sees Q4 EPS Between $0.95 And $0.99",
-   "date": "2026-11-04",
-   "url": "https://stocktwits.com/news-articles/markets/equity/uber-ceo-targets-700-fully-driverless-vehicles-by-year-end-over-2000-by-2027/cNGLXAwR93K",
+   "title": "Meta exec says midterm results makes new data centers challenging: WSJ",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/video/meta-exec-says-midterm-results-makes-new-data-centers-challenging-wsj-143742688.html",
    "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
+   "ticker": "META",
+   "name": "META"
   },
   {
-   "id": "news:d1d51346-a75f-376c-ba28-41c721a9bdc7",
+   "id": "news:7cbe5c30-1e02-3b5a-ad37-43c0502f87bd",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Uber revenue beats forecasts despite steep quarterly profit drop",
-   "date": "2026-11-04",
-   "url": "https://www.proactiveinvestors.com/companies/news/1101227/uber-revenue-beats-forecasts-despite-steep-quarterly-profit-drop-1101227.html",
+   "title": "Nike’s Dividend Yield Is Still Attractive, But I Can’t Say the Same About NKE Stock",
+   "date": "2026-11-05",
+   "url": "https://www.barchart.com/story/news/8661477/nikes-dividend-yield-is-still-attractive-but-i-cant-say-the-same-about-nke-stock",
+   "priority": "media",
+   "ticker": "NKE",
+   "name": "NKE"
+  },
+  {
+   "id": "news:5ba19bd9-f38f-30da-99f4-fd9ad5facd03",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Is Trex Company (TREX) Fully Valued As Record Revenue Lifts Guidance?",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/trex-company-trex-fully-valued-121733411.html",
+   "priority": "media",
+   "ticker": "TREX",
+   "name": "TREX"
+  },
+  {
+   "id": "sec:0001341766-26-000059:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000059/celh-20261105.htm",
+   "priority": "media",
+   "ticker": "CELH",
+   "name": "CELH"
+  },
+  {
+   "id": "news:a9bbbee5-9040-381d-add1-a5bdb48bbfd7",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Uber Technologies Inc (UBER) Q3 2026 Earnings Call Highlights: Record 215 Million Consumers, ...",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-technologies-inc-uber-q3-150443959.html",
    "priority": "media",
    "ticker": "UBER",
    "name": "UBER"
   },
   {
-   "id": "sec:0001713683-26-000212:4",
+   "id": "news:dc05e32c-c955-3213-935a-0a23ed1cc09d",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "UBER Q3 Earnings Call Highlights AV Expansion and Mobility Challenges",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-q3-earnings-call-highlights-140000597.html",
+   "priority": "media",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "news:b504699b-a017-3d49-9e2a-504893ca2822",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Uber CEO Flags Driver Shortages, Rising Fuel Costs As International Growth Hits Roadblock",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-ceo-flags-driver-shortages-133010962.html",
+   "priority": "media",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0001936006-26-000028:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000212/xslF345X06/wk-form4_1793743298.xml",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000028/xslF345X06/wk-form4_1793831214.xml",
    "priority": "baja",
-   "ticker": "ZS",
-   "name": "ZS"
+   "ticker": "AMZN",
+   "name": "AMZN"
   },
   {
-   "id": "sec:0001991958-26-000008:4",
+   "id": "sec:0001193125-26-447402:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526447402/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "ABNB",
+   "name": "ABNB"
+  },
+  {
+   "id": "sec:0001781229-26-000006:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000199195826000008/xslF345X06/wk-form4_1793743626.xml",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000178122926000006/xslF345X06/wk-form4_1793829763.xml",
    "priority": "baja",
    "ticker": "VLTO",
    "name": "VLTO"
   },
   {
-   "id": "sec:0001140361-26-041795:4",
+   "id": "sec:0000950103-26-016962:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1404912/000114036126041795/xslF345X06/form4.xml",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016962/xslF345X06/ownership.xml",
    "priority": "baja",
-   "ticker": "KKR",
-   "name": "KKR"
+   "ticker": "META",
+   "name": "META"
   },
   {
-   "id": "sec:0001193125-26-445964:4",
+   "id": "sec:0001160077-26-000013:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526445964/xslF345X06/ownership.xml",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000116007726000013/xslF345X06/form4-11042026_091132.xml",
    "priority": "baja",
-   "ticker": "GRMN",
-   "name": "GRMN"
+   "ticker": "META",
+   "name": "META"
   },
   {
-   "id": "sec:0001193125-26-445922:4",
+   "id": "sec:0001778564-26-000203:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526445922/xslF345X06/ownership.xml",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000203/xslF345X06/form4-11042026_081109.xml",
    "priority": "baja",
-   "ticker": "KSPI",
-   "name": "KSPI"
+   "ticker": "CRWD",
+   "name": "CRWD"
   },
   {
-   "id": "sec:0001140361-26-041804:4",
+   "id": "sec:0001201326-26-000029:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126041804/xslF345X06/form4.xml",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000120132626000029/xslF345X06/form4-11042026_081104.xml",
    "priority": "baja",
-   "ticker": "SPOT",
-   "name": "SPOT"
+   "ticker": "CRWD",
+   "name": "CRWD"
   },
   {
-   "id": "sec:0001140361-26-041801:4",
+   "id": "sec:0001778610-26-000026:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126041801/xslF345X06/form4.xml",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177861026000026/xslF345X06/form4-11042026_081102.xml",
    "priority": "baja",
-   "ticker": "SPOT",
-   "name": "SPOT"
+   "ticker": "CRWD",
+   "name": "CRWD"
   },
   {
-   "id": "sec:0001140361-26-041803:4",
+   "id": "sec:0001778564-26-000202:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126041803/xslF345X06/form4.xml",
+   "title": "Operacion de un insider — Operacion de un insider",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000202/xslF345X06/form4-11042026_081107.xml",
    "priority": "baja",
-   "ticker": "SPOT",
-   "name": "SPOT"
+   "ticker": "CRWD",
+   "name": "CRWD"
   },
   {
-   "id": "sec:0001140361-26-041799:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126041799/xslF345X06/form4.xml",
-   "priority": "baja",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "sec:0001140361-26-041802:4",
+   "id": "sec:0001065280-26-000312:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126041802/xslF345X06/form4.xml",
-   "priority": "baja",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "sec:0001140361-26-041800:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126041800/xslF345X06/form4.xml",
-   "priority": "baja",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "sec:0001065280-26-000310:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000310/xslF345X06/wk-form4_1793753189.xml",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000312/xslF345X06/wk-form4_1793835249.xml",
    "priority": "baja",
    "ticker": "NFLX",
    "name": "NFLX"
   },
   {
-   "id": "sec:0001065280-26-000308:4",
+   "id": "sec:0001316987-26-000004:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000308/xslF345X06/wk-form4_1793753143.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000306:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000306/xslF345X06/wk-form4_1793753109.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000304:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000304/xslF345X06/wk-form4_1793752945.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000302:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000302/xslF345X06/wk-form4_1793752881.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000300:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000300/xslF345X06/wk-form4_1793752852.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000298:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000298/xslF345X06/wk-form4_1793752340.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000296:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000296/xslF345X06/wk-form4_1793751548.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000294:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000294/xslF345X06/wk-form4_1793751480.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001104659-26-121972:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — OWNERSHIP DOCUMENT",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000110465926121972/xslF345X06/tm2628887-1_4seq1.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001628280-26-069520:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/1341766/000162828026069520/xslF345X06/wk-form4_1793740522.xml",
-   "priority": "baja",
-   "ticker": "CELH",
-   "name": "CELH"
-  },
-  {
-   "id": "sec:0001697820-26-000011:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-03",
-   "url": "https://www.sec.gov/Archives/edgar/data/884887/000169782026000011/xslF345X06/wk-form4_1793741456.xml",
+   "date": "2026-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000131698726000004/xslF345X06/wk-form4_1793828398.xml",
    "priority": "baja",
    "ticker": "RCL",
    "name": "RCL"
+  },
+  {
+   "id": "page:https://www.rational-online.com/media/investor-relations/veroeffentlichungen-gj-2026/rational-ag---report-on-the-first-nine-months-2026.pdf",
+   "source": "RI: www.rational-online.com",
+   "form": "documento",
+   "title": "9M report 2026",
+   "date": "2026-11-05",
+   "url": "https://www.rational-online.com/media/investor-relations/veroeffentlichungen-gj-2026/rational-ag---report-on-the-first-nine-months-2026.pdf",
+   "priority": "baja",
+   "ticker": "RAA",
+   "name": "RAA"
   }
  ],
  "financial_drift": [
@@ -781,17 +484,17 @@
   },
   {
    "ticker": "IPCO",
-   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-08-04",
-   "revenue_ltm_mercado": 784.6,
+   "revenue_ltm_mercado": 846.3,
    "revenue_ltm_excel": 707.0,
-   "desvio_revenue": 0.1097,
+   "desvio_revenue": 0.1971,
    "fcf_ltm_mercado": null,
    "fcf_ltm_excel": null,
    "desvio_fcf": null,
-   "trimestre_nuevo": false,
+   "trimestre_nuevo": true,
    "sospecha_unidades": false,
-   "severidad": "media"
+   "severidad": "alta"
   },
   {
    "ticker": "OTLY",
@@ -864,6 +567,13 @@
    "market": "2026-08-07",
    "estimated": false,
    "delta_days": -202
+  },
+  {
+   "ticker": "FICO",
+   "excel": "2026-11-05",
+   "market": "2027-01-27",
+   "estimated": true,
+   "delta_days": 83
   },
   {
    "ticker": "LIFCO B",
@@ -985,6 +695,13 @@
    "delta_days": -105
   },
   {
+   "ticker": "UBER",
+   "excel": "2026-11-03",
+   "market": "2027-02-03",
+   "estimated": true,
+   "delta_days": 92
+  },
+  {
    "ticker": "RBT",
    "excel": "2027-02-11",
    "market": "2026-09-17",
@@ -1014,6 +731,36 @@
   }
  ],
  "todo_excel": [
+  {
+   "ticker": "CELH",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-08-06",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000062/celh-20260930.htm"
+   ]
+  },
+  {
+   "ticker": "TREX",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-08-04",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1069878/000119312526447251/trex-20260930.htm"
+   ]
+  },
+  {
+   "ticker": "UBER",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-08-05",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm"
+   ]
+  },
   {
    "ticker": "BN",
    "accion": "CUENTAS DESFASADAS en el Excel",
@@ -1087,7 +834,7 @@
   {
    "ticker": "IPCO",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 707.0 vs mercado 784.6 (+11.0%)",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-08-04); ingresos LTM: Excel 707.0 vs mercado 846.3 (+19.7%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -1137,6 +884,13 @@
    "ticker": "LOTB",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-25 y el mercado dice 2026-08-07 (-202 dias de diferencia)",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "FICO",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-11-05 y el mercado dice 2027-01-27 (83 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -1256,6 +1010,13 @@
    "ticker": "OTLY",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-10 y el mercado dice 2026-10-28 (-105 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "UBER",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-11-03 y el mercado dice 2027-02-03 (92 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
