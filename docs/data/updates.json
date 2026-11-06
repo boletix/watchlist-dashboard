@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 282,
+    "n_updates": 330,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -837,6 +837,342 @@
       "fields_changed": "T (R2 Financials); AH (R3 Financing Source)",
       "source": "Deep dive completo del 25-ago-2026",
       "summary": "Spotify. R2 Financials 13 -> 15 y R3 Financing Source 2 -> 4. Ha demostrado lo que tenia que demostrar: que el apalancamiento operativo existia. De perdidas estructurales a un resultado operativo de 2.653 M EUR (14,6% de margen), un FCF de 3.267 (18% de margen) y un ROIC del 24%, con 6.519 M EUR de CAJA NETA. Ya no depende de nadie para financiarse. LA LECCION QUE HAY QUE LLEVARSE AL RESTO DEL LIBRO: la tesis del Drive fijaba el caso alcista en 380 $ y la accion esta en 550,72 $; fallo en una unica variable, el margen, y ella misma la habia senalado como su punto debil (los margenes operativos me generan dudas, el apalancamiento operativo es poco visible). En negocios con base de costes fija grande y margen bruto creciente, el apalancamiento operativo NO es lineal: es explosivo al cruzar el umbral de rentabilidad. Mismo error que en Airbnb (11% proyectado, 20,8% real). Y es lo que puede estar pasando AHORA con SentinelOne, que acaba de cruzar a operativo no-GAAP positivo. NO se sube MOAT ni Concentration: Spotify no es dueno de lo que vende y tres discograficas pueden decidir su margen; el -2 de concentracion esta bien puesto."
+    },
+    {
+      "ticker": "NET",
+      "date": "2026-11-06",
+      "fields_changed": "AP, AQ, AS, AV, BQ, BR, BS, BN, BO, BT (solo hechos)",
+      "source": "10-Q y 8-K del 3T26 (5-nov-2026, EDGAR)",
+      "summary": "DATOS: LTM a sep-26. Ingresos 2.512 -> 2.732,8; FCF-SBC -192,8 -> -243,4 (OCF 681,7 - capex 322,2 - software 37,5 - SBC 565,4); caja+inv. 4.163 -> 5.128,7; deuda 3.529 -> 4.441,9 (convertibles 2030 y 2031; se quitan 265,6 de arrendamientos operativos, regla US GAAP del 5-nov). Normalizado -126,8. BD/BF y multiplos SIN CAMBIO. Propuesta FN76 en 00_FN76_SaaS_2026-11.md."
+    },
+    {
+      "ticker": "ZS",
+      "date": "2026-11-06",
+      "fields_changed": "BT (solo nota)",
+      "source": "10-K FY26 y nota 4T26 (3-sep-2026); Investor Day 6-oct-2026",
+      "summary": "FN76: sin cambios de datos (FCF-SBC -42,8; normalizado 159,3, ya en la fila). BD/BF 125/314,5 sin cambio; propuesta 120/1.767 con multiplos 18x/28x en 00_FN76_SaaS_2026-11.md, pendiente de Roger."
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-11-06",
+      "fields_changed": "BT (solo nota)",
+      "source": "10-Q 2T FY27 (27-ago-2026) y llamadas 1T/2T FY27",
+      "summary": "FN76: sin cambios de datos (FCF-SBC 281,6). D&A sin etiquetar: normalizacion pendiente. BD/BF 491/884,8 sin cambio; propuesta 626/3.370 con multiplos 18x/30x en 00_FN76_SaaS_2026-11.md, pendiente de Roger."
+    },
+    {
+      "ticker": "S",
+      "date": "2026-11-06",
+      "fields_changed": "BT (solo nota)",
+      "source": "10-Q 2T FY27 (28-ago-2026) y llamadas 1T/2T FY27",
+      "summary": "FN76: sin cambios de datos (FCF-SBC -291,1; D&A 67,6 > capex: nada que normalizar). BD/BF -286,5/-146,4 sin cambio; propuesta -233/290 con multiplos 14x/24x en 00_FN76_SaaS_2026-11.md, pendiente de Roger."
+    },
+    {
+      "ticker": "SGO",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BQ, BS, BT",
+      "source": "URD 2025 e informe semestral 1S26 (saint-gobain.com)",
+      "summary": "CORRECCION NIIF 16: FCF 3.312 -> 2.555 (resta 746 de arrendamientos; SBC 136 -> 77). Deuda 17.270 -> 14.379 (sin arrendamientos). BD/BF sin tocar; propuesta 2.694/3.945 pendiente de Roger."
+    },
+    {
+      "ticker": "SU",
+      "date": "2026-11-06",
+      "fields_changed": "AS, BQ, BS, BT",
+      "source": "URD 2025 e informe semestral 1S26 (se.com / AMF)",
+      "summary": "CORRECCION NIIF 16 + SBC: FCF 4.588 -> 5.175 (LTM jun-26; SBC 244; arrendamientos ~373 aproximados). Deuda sin cambio. BD/BF sin tocar; propuesta 5.232/7.553 pendiente de Roger."
+    },
+    {
+      "ticker": "STMN",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BQ, BR, BS, BT",
+      "source": "Informe financiero 2025 y Halbjahresbericht 1S26 (straumann.com)",
+      "summary": "CORRECCION NIIF 16: FCF 261,6 -> 296,0 (LTM jun-26, resta 29,2 de arrendamientos). BR/BS: sin normalizacion. Deuda 475 -> 346,2 (sin arrendamientos). BD/BF sin tocar; propuesta 318,8/500,4."
+    },
+    {
+      "ticker": "KRX",
+      "date": "2026-11-06",
+      "fields_changed": "AS, BQ, BR, BS, BT",
+      "source": "Resultados FY25 y semestrales 1S26/1S25 (kingspan.com)",
+      "summary": "CORRECCION: FCF 433,5 -> 570,2 (FCF de la compania ya tras arrendamientos, menos SBC). Deuda sin cambio. BD/BF sin tocar; propuesta 694,5/1.147,9 (deshacer el x0,730 del 8-sep)."
+    },
+    {
+      "ticker": "CPR",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BQ, BR, BS, BT",
+      "source": "Informe anual 2025 y semestrales 1S26/1S25 (camparigroup.com)",
+      "summary": "CORRECCION NIIF 16: FCF 365,1 -> 250,3 (LTM jun-26; arrendamientos 24,9; el 1S26 pesa). Deuda 2.806 -> 2.734. BD/BF sin tocar; propuesta 384,8/559,3 y pregunta sobre FN58."
+    },
+    {
+      "ticker": "SIKA",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BQ, BS, BT",
+      "source": "Informe financiero 2025 y semestral 2026 (sika.com)",
+      "summary": "CORRECCION NIIF 16: FCF 1.332,5 -> 1.148,0 (LTM jun-26; arrendamientos 156,9). Deuda 6.080 -> 5.624,6. BD/BF sin tocar; propuesta 1.349,6/1.962,5."
+    },
+    {
+      "ticker": "LR",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BQ, BS, BT",
+      "source": "Estados consolidados 2025 y semestral 1S26 (legrand.com / AMF)",
+      "summary": "CORRECCION NIIF 16 + SBC: FCF 1.256,4 -> 1.187,0 (LTM jun-26). Deuda 7.724 -> 7.267,4. BD/BF sin tocar; propuesta 1.515,5/2.277,3."
+    },
+    {
+      "ticker": "HLMA",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BS, BT",
+      "source": "Resultados FY 2025/26 (RNS 11-jun-2026)",
+      "summary": "CORRECCION NIIF 16: FCF 392,4 -> 364,3 (FY mar-26; arrendamientos 29,3). Deuda 913,4 -> 805,6. BD/BF sin tocar; propuesta 463,5/669,1."
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-11-06",
+      "fields_changed": "AS, BS, BT",
+      "source": "Resultados FY25 y estados 2T26 (csisoftware.com)",
+      "summary": "CORRECCION NIIF 16: FCF 2.771 -> 2.608 USD (LTM jun-26; arrendamientos 161). Deuda sin cambio. BD/BF sin tocar; propuesta 2.996,6/5.026,6."
+    },
+    {
+      "ticker": "IP",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BS, BT",
+      "source": "Informe anual 2025 y semestral 1S26 (interpumpgroup.it / emarketstorage)",
+      "summary": "CORRECCION NIIF 16: FCF 246,1 -> 232,4 (FCF de la compania tras arrendamientos, menos SBC). Deuda 675 -> 597,9. BD/BF sin tocar; propuesta 192,7/469,2."
+    },
+    {
+      "ticker": "LOTB",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BQ, BR, BS, BT",
+      "source": "Informe anual 2025 y semestral 2026 (lotusbakeries.com)",
+      "summary": "CORRECCION: FCF 90,8 -> 121,4 (LTM jun-26 tras arrendamientos). Deuda 409 -> 387,8. BD/BF sin tocar; propuesta 170,5/223,9 (deshacer el x0,689 del 8-sep)."
+    },
+    {
+      "ticker": "RAA",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BR, BS, BT",
+      "source": "Geschaeftsbericht 2025 y Halbjahresbericht 2026 (rational-online.com)",
+      "summary": "CORRECCION NIIF 16: FCF 235,5 -> 250,2 (LTM jun-26; arrendamientos 13,4; incluye ~14 de aranceles). Deuda 20 -> 0. BD/BF sin tocar; propuesta 285,4/411,9."
+    },
+    {
+      "ticker": "DNP",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AQ, BR, BS, BT",
+      "source": "Estados consolidados 2025 y 1S26 (grupadino.pl)",
+      "summary": "CORRECCION NIIF 16: FCF 669,1 -> 597,7 PLN (arrendamientos 75,9). BR/BS: FN58, reportado. Deuda 852 -> 736,0. BD/BF sin tocar; propuesta 671,1/1.194,1."
+    },
+    {
+      "ticker": "MNST",
+      "date": "2026-11-06",
+      "fields_changed": "AP, AV, BN, BO, BP, BT (solo hechos del 8-K)",
+      "source": "8-K 3T26 (5-nov, ex. 99.1 y 99.2) y llamada del 5-nov",
+      "summary": "DATOS: ventas LTM 9.220 -> 9.584,8; caja + inversiones a corto 3.419 -> 3.704,3. Flujos pendientes del 10-Q. Narrativa: fuera se ensancha (Europa, Latam), EE. UU. pierde cuota (grupo +5,0% con la categoria +12,4%). BD/BF sin cambio."
+    },
+    {
+      "ticker": "SGO",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 3.480,6 / 5.096,4 -> 2.694,0 / 3.945,0, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "SU",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 5.855,3 / 8.453,1 -> 5.232,0 / 7.553,0, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "STMN",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 350,2 / 549,8 -> 318,8 / 500,4, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "KRX",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 527,6 / 872,1 -> 694,5 / 1.147,9, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "CPR",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 423,1 / 614,9 -> 384,8 / 559,3, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "SIKA",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 1.544,5 / 2.245,9 -> 1.349,6 / 1.962,5, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "LR",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 1.682,1 / 2.527,8 -> 1.515,5 / 2.277,3, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "HLMA",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 500,8 / 722,9 -> 463,5 / 669,1, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 3.181,5 / 5.336,7 -> 2.996,6 / 5.026,6, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "IP",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 211,0 / 513,6 -> 192,7 / 469,2, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "LOTB",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 127,5 / 167,5 -> 170,5 / 223,9, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "RAA",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 300,7 / 433,9 -> 285,4 / 411,9, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "DNP",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BT",
+      "source": "Auditoria NIIF 16 (seccion D.1), aprobada por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 756,3 / 1.345,8 -> 671,1 / 1.194,1, mismo factor que el FCF LTM tras restar arrendamientos NIIF 16."
+    },
+    {
+      "ticker": "NET",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BH, BI, BT",
+      "source": "FN76 (00_FN76_SaaS_2026-11.md), aprobado por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF -109,0 / 408,0 -> 64,0 / 1.824,0; multiplos 20x/30x -> 18x/30x."
+    },
+    {
+      "ticker": "ZS",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BH, BI, BT",
+      "source": "FN76 (00_FN76_SaaS_2026-11.md), aprobado por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 125,0 / 314,5 -> 120,0 / 1.767,0; multiplos 20x/30x -> 18x/28x."
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BH, BI, BT",
+      "source": "FN76 (00_FN76_SaaS_2026-11.md), aprobado por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF 491,0 / 884,8 -> 626,0 / 3.370,0; multiplos 20x/30x -> 18x/30x."
+    },
+    {
+      "ticker": "S",
+      "date": "2026-11-06",
+      "fields_changed": "BD, BF, BH, BI, BT",
+      "source": "FN76 (00_FN76_SaaS_2026-11.md), aprobado por Roger el 6-nov",
+      "summary": "ESTIMACION (aprobada): BD/BF -286,5 / -146,4 -> -233,0 / 290,0; multiplos 18x/26x -> 14x/24x."
+    },
+    {
+      "ticker": "TREX",
+      "date": "2026-11-05",
+      "fields_changed": "BF, BI, BT",
+      "source": "Decision de Roger (5-nov) y Trex/Estimaciones 2026-11",
+      "summary": "ESTIMACION (aprobada): BF 364,2 -> 414 y BI 18x -> 26x. Arrendamientos: se quedan en el OCF y fuera de la deuda (US GAAP)."
+    },
+    {
+      "ticker": "TFPM",
+      "date": "2026-11-05",
+      "fields_changed": "AS, BR, BS, BD, BF, BT",
+      "source": "6-K 3T26, 6-K FY25 (18-feb-2026), 40-F 2025; tfpm_modelo_2031.py",
+      "summary": "DATOS + ESTIMACION: FCF = OCF - SBC - agotamiento (regla del libro con fuente primaria): 325,5. BD/BF 330/608 -> 380/616 con la guia de GEO (2030 150-160k) y el oro con la inflacion. BH/BI 18/22 sin cambio; FN68 pediria 15x en el bajista."
+    },
+    {
+      "ticker": "COR",
+      "date": "2026-11-05",
+      "fields_changed": "AS, BS, BD, BF, BH, BI, BT",
+      "source": "Deep dive 4-nov + informe anual 2025 + presentacion 9M26",
+      "summary": "ESPEJO del deep dive (metodo B aprobado): BD/BF 175,3/269,5 -> 59,1/89,5 con multiplos implicitos 13,2x/16,9x. AS 175,3 -> 111,5. Tramos 6,23 / 5,51 EUR."
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-11-05",
+      "fields_changed": "AP, AQ, AS, AV, BQ, BS, BN, BO, BP, BT",
+      "source": "10-Q 3T26 (EDGAR)",
+      "summary": "DATOS: FCF-SBC 973 -> 1.019; ingresos 5.801; caja 1.785; deuda 2.920. Sin cambio de valoracion."
+    },
+    {
+      "ticker": "CELH",
+      "date": "2026-11-05",
+      "fields_changed": "AS, BQ, BS, BT",
+      "source": "10-Q 3T26 (EDGAR)",
+      "summary": "CORRECCION: FCF-SBC 428 (yfinance) -> 232,9. BD/BF pendientes de Roger."
+    },
+    {
+      "ticker": "WOSG",
+      "date": "2026-11-05",
+      "fields_changed": "AS, BR, BS, BD, BF, BT",
+      "source": "Resultados FY26 (RNS 14-jul-2026)",
+      "summary": "CORRECCION de la auditoria del 8-sep: FCF 183,9 (yfinance, sin alquileres) -> 94,0; BD/BF 183,9/353,5 -> 90/173."
+    },
+    {
+      "ticker": "UBER",
+      "date": "2026-11-05",
+      "fields_changed": "AP, AQ, AT, AU, BT",
+      "source": "10-Q 3T26 (EDGAR, 4-nov)",
+      "summary": "DATOS: caja 10.068, deuda 15.787, EBITDA 7.831, NOPAT 5.276. Nueva compra: ezCater ~2.300 M$. Sin cambio de valoracion."
+    },
+    {
+      "ticker": "CELH",
+      "date": "2026-11-05",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, BD, BF, BN, BO, BP, BR, BS, BT",
+      "source": "8-K y 10-Q 3T26 (5-nov), 10-K 2025, llamada (transcripcion RI), presentacion 3T26; Celsius/Estimaciones 2026-11",
+      "summary": "CORRECCION + DATOS + ESTIMACION. Preferentes de Pepsi (1.135 nominal, 5% en caja) a deuda: AQ 668 -> 1.809,7 y dividendo fuera del FCF. AS 232,9 -> 176,2 (reportado); BS 387,6 (estructural, sin rescision de distribuidores ni pleito). BD 408,9 -> 321,4 (S1 2031) y BF 1.404,6 -> 1.399,8 (S5 2031): mismos escenarios y pesos de agosto, ahora restando SBC y dividendo preferente. TIR -3,2%/+32,8% -> -12,1%/+31,7%. Tramos 20,6 / 15,9 $. Narrativa: foso estable con el peaje de Pepsi a la vista (cuota plana 20,7%, margen bruto 46,8%)."
+    },
+    {
+      "ticker": "TFPM",
+      "date": "2026-11-05",
+      "fields_changed": "BT",
+      "source": "Decision de Roger (5-nov noche)",
+      "summary": "Roger: 'Triple flag mantener'. Multiplo bajista 18x sin cambio (FN68 apuntaba a <=14,8x). TIR +1,3%/+16,5% sin cambio."
+    },
+    {
+      "ticker": "TREX",
+      "date": "2026-11-04",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, BQ, BR, BS, BN, BO, BP, BT (solo hechos)",
+      "source": "Nota de resultados 3T26 (8-K del 4-nov-2026, Ex. 99.1), 10-K 2025 y 10-Q 3T25 (EDGAR); 10-Q 3T26 aun sin presentar",
+      "summary": "DATOS: LTM a sep-26. Ingresos 1.208 -> 1.282,1; EBITDA 313 -> 322,6; FCF-SBC 189,1 -> 182,7; caja 3,3 y linea de credito 170 (deuda 303 -> 170: se quitan 50,4 de arrendamientos operativos, convencion US GAAP como AMZN/VEEV). Normalizacion caida (capex 1,57x D&A < 2x): FCF normalizado 278,2 -> 182,7. BD/BF y multiplos SIN CAMBIO. Resultado: guia 2026 subida (ventas 1.296-1.306; EBITDA aj 355-360), ventas +26% (~+15,6% sin la carga de distribucion), margen bruto 36,0% vs 40,5%. Con la regla de Roger del 3-nov (asimetria mala + negocio en linea -> vender) la decision esta en su mano: ver 00_Resultados_4-nov-2026.md."
+    },
+    {
+      "ticker": "COR",
+      "date": "2026-11-04",
+      "fields_changed": "AP, AQ, AU, AV, BN, BO, BP, BT (solo hechos)",
+      "source": "Nota de prensa 9M26 (2-nov-2026, amorim.com); estados consolidados 1S26 y 9M25; calendario financiero de la compania",
+      "summary": "DATOS: LTM a sep-26. Ingresos 900 -> 832,1; EBITDA 170 -> 136,9; deuda neta bancaria 100 -> 56,0 (AP=0, AQ=56). La fila llevaba cifras redondas que no cuadraban con los documentos (EBITDA 170 vs 141 en FY25). SIN TOCAR (pendiente de fuente primaria y de Roger): AS 175,3 / BD 175,3 / BF 269,5. El 175,3 es el cash flow de FY25 de la compania (175,9, con mucho capital circulante); el puente de deuda neta del 9M26 da ~118 LTM y el modelo de marzo-2026 da FCF 2030 de 84/121/150. Proximos resultados: 18-feb-2027 (calendario de la compania, confirmada)."
+    },
+    {
+      "ticker": "TFPM",
+      "date": "2026-11-04",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, AZ, BD, BF, BN, BO, BP, BQ, BR, BS, BT",
+      "source": "6-K del 3-nov-2026 (MD&A y estados 3T26); 40-F 2025 (EDGAR)",
+      "summary": "CORRECCION + DATOS. (1) Se deshace el deslizamiento del 8-sep: el recalculo con capex de yfinance (244) pisó la excepcion de TFPM y escalo BD/BF x0,529; vuelven AS 399,9 (OCF LTM 406,0 - SBC 6,1, sin restar compras de streams) y BD/BF 330/608 (aprobados el 26-ago; FN 75: no escalar por defecto). (2) Datos del 3T: ingresos 489 -> 501,8; EBITDA aj. 377 -> 440,5; caja 20,3; deuda 185; capital empleado 2.473,7. BH/BI 18x/22x sin cambio. Lectura del trimestre en 00_Resultados_4-nov-2026.md y en el anexo del deep dive."
+    },
+    {
+      "ticker": "UBER",
+      "date": "2026-11-04",
+      "fields_changed": "AS, AV, BQ, BS, BN, BO, BP, BT (solo flujos)",
+      "source": "Nota de resultados 3T26 (8-K del 4-nov-2026)",
+      "summary": "DATOS parciales: FCF-SBC LTM 8.177 -> 8.356; ingresos 55.227 -> 56.526; SBC 1.939 -> 2.065. Caja, deuda, EBITDA y NOPAT siguen al 30-jun hasta el 10-Q. Sin cambio de BD/BF, multiplos ni ratings. Checklist del deep dive contra el 3T en 00_Resultados_4-nov-2026.md."
     },
     {
       "ticker": "MSFT",

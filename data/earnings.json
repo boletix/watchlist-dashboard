@@ -1,7 +1,7 @@
 {
  "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Se regenera en cada build.",
  "fields": "earnings_last_date (ISO), earnings_next_date (ISO), earnings_updated_at (ISO), earnings_next_estimated (bool)",
- "generated_at": "2026-11-05T15:38:27+00:00",
+ "generated_at": "2026-11-06T06:49:14+00:00",
  "companies": {
   "VEEV": {
    "earnings_last_date": "2026-08-26",
@@ -106,9 +106,9 @@
    "earnings_next_estimated": true
   },
   "MNST": {
-   "earnings_last_date": "2026-08-06",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-11-05",
+   "earnings_next_date": "2027-02-25",
+   "earnings_updated_at": "2026-11-06",
    "earnings_next_estimated": true
   },
   "ABNB": {
@@ -124,9 +124,9 @@
    "earnings_next_estimated": true
   },
   "VLTO": {
-   "earnings_last_date": "2026-07-28",
-   "earnings_next_date": "2026-10-29",
-   "earnings_updated_at": "2026-08-26",
+   "earnings_last_date": "2026-10-29",
+   "earnings_next_date": "2027-02-03",
+   "earnings_updated_at": "2026-11-05",
    "earnings_next_estimated": true
   },
   "LR": {
@@ -160,9 +160,9 @@
    "earnings_next_estimated": true
   },
   "NET": {
-   "earnings_last_date": "2026-08-06",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-11-05",
+   "earnings_next_date": "2027-02-10",
+   "earnings_updated_at": "2026-11-06",
    "earnings_next_estimated": true
   },
   "CRWD": {
@@ -214,9 +214,9 @@
    "earnings_next_estimated": true
   },
   "COR": {
-   "earnings_last_date": "2026-07-29",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-07-29",
+   "earnings_last_date": "2026-11-02",
+   "earnings_next_date": "2027-02-18",
+   "earnings_updated_at": "2026-11-04",
    "earnings_next_estimated": true
   },
   "TSM": {
@@ -274,9 +274,9 @@
    "earnings_next_estimated": true
   },
   "TFPM": {
-   "earnings_last_date": "2026-08-05",
-   "earnings_next_date": "2026-11-03",
-   "earnings_updated_at": "2026-10-23",
+   "earnings_last_date": "2026-11-03",
+   "earnings_next_date": "2027-02-17",
+   "earnings_updated_at": "2026-11-04",
    "earnings_next_estimated": false
   },
   "NFLX": {
@@ -310,9 +310,9 @@
    "earnings_next_estimated": true
   },
   "TREX": {
-   "earnings_last_date": "2026-08-04",
-   "earnings_next_date": "2026-11-03",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-11-04",
+   "earnings_next_date": "2027-02-24",
+   "earnings_updated_at": "2026-11-04",
    "earnings_next_estimated": true
   },
   "SGO": {
@@ -328,9 +328,9 @@
    "earnings_next_estimated": true
   },
   "CELH": {
-   "earnings_last_date": "2026-08-06",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-11-05",
+   "earnings_next_date": "2027-02-25",
+   "earnings_updated_at": "2026-11-05",
    "earnings_next_estimated": true
   },
   "BFIT": {
@@ -376,9 +376,9 @@
    "earnings_next_estimated": true
   },
   "UBER": {
-   "earnings_last_date": "2026-08-05",
-   "earnings_next_date": "2026-11-03",
-   "earnings_updated_at": "2026-09-12",
+   "earnings_last_date": "2026-11-04",
+   "earnings_next_date": "2027-02-04",
+   "earnings_updated_at": "2026-11-04",
    "earnings_next_estimated": true
   },
   "SOM": {

@@ -1,344 +1,300 @@
 {
  "meta": {
-  "generated_at": "2026-11-05T15:44:00+00:00",
+  "generated_at": "2026-11-06T06:53:15+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 30,
-  "n_calendar_drift": 27,
-  "n_financial_drift": 14,
+  "n_documents": 26,
+  "n_calendar_drift": 34,
+  "n_financial_drift": 20,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "sec:0001193125-26-447251:10-Q",
-   "source": "SEC EDGAR",
-   "form": "10-Q",
-   "title": "Informe trimestral — 10-Q",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1069878/000119312526447251/trex-20260930.htm",
-   "priority": "alta",
-   "ticker": "TREX",
-   "name": "TREX"
-  },
-  {
-   "id": "sec:0001543151-26-000041:10-Q",
-   "source": "SEC EDGAR",
-   "form": "10-Q",
-   "title": "Informe trimestral — 10-Q",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm",
-   "priority": "alta",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001341766-26-000062:10-Q",
+   "id": "sec:0001559720-26-000032:10-Q",
    "source": "SEC EDGAR",
    "form": "10-Q",
    "title": "Informe trimestral — 10-Q",
    "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000062/celh-20260930.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm",
    "priority": "alta",
-   "ticker": "CELH",
-   "name": "CELH"
+   "ticker": "ABNB",
+   "name": "ABNB"
   },
   {
-   "id": "sec:0001193125-26-447173:8-K",
+   "id": "sec:0001477333-26-000061:10-Q",
    "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm",
-   "priority": "media",
-   "ticker": "MSFT",
-   "name": "MSFT"
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
+   "priority": "alta",
+   "ticker": "NET",
+   "name": "NET"
   },
   {
-   "id": "sec:0000814547-26-000037:8-K",
+   "id": "sec:0001140361-26-042104:10-Q",
    "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K Q4-26 EARNINGS RELEASES",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000037/fico-20261104.htm",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/885978/000114036126042104/ef20080638_10q.htm",
+   "priority": "alta",
+   "ticker": "USPH",
+   "name": "USPH"
+  },
+  {
+   "id": "news:7a11122a-fe91-3810-9285-50a4f703a7cf",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Fair Isaac (FICO) Stock Shrugs Off Q4 Results Despite Debt Questions",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/fair-isaac-fico-stock-shrugs-231818327.html",
    "priority": "media",
    "ticker": "FICO",
    "name": "FICO"
   },
   {
-   "id": "news:021d1819-a0aa-3c11-b053-8952f4c4eb9f",
+   "id": "news:02a99796-aa87-3a63-8ac9-ff0e09c4a096",
    "source": "Noticias",
    "form": "noticia",
-   "title": "FICO Declines to Share Guidance Amid Price Structure Change",
-   "date": "2026-11-04",
-   "url": "https://www.wsj.com/business/earnings/fico-declines-to-share-guidance-amid-price-structure-change-27edfe82?siteid=yhoof2&yptr=yahoo",
+   "title": "Fair Isaac (FICO) Q4 2026 Earnings Call Transcript",
+   "date": "2026-11-05",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/fair-isaac-fico-q4-2026-earnings-call-transcript/",
    "priority": "media",
    "ticker": "FICO",
    "name": "FICO"
   },
   {
-   "id": "news:7e301dbd-6eac-3085-920b-192a3588ccb5",
+   "id": "news:b182f2bf-95bf-34d2-a042-a22456d4d484",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Triple Flag (TFPM) Q3 2026 Earnings Call Transcript",
-   "date": "2026-11-04",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/triple-flag-tfpm-q3-2026-earnings-call-transcript/",
+   "title": "FICO Just Stopped Giving Guidance as It Rewrites Mortgage Pricing",
+   "date": "2026-11-05",
+   "url": "https://247wallst.com/investing/2026/11/05/fico-just-stopped-giving-guidance-as-it-rewrites-mortgage-pricing/",
    "priority": "media",
-   "ticker": "TFPM",
-   "name": "TFPM"
+   "ticker": "FICO",
+   "name": "FICO"
   },
   {
-   "id": "news:4ce252a5-e42c-3646-acac-83348c473a5e",
+   "id": "news:a0e690f3-798c-3e88-a0e1-3272b1d1f941",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Trex Company (TREX) Q3 2026 Earnings Call Transcript",
-   "date": "2026-11-04",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/trex-company-trex-q3-2026-earnings-call-transcript/",
+   "title": "FICO Q4'26 Earnings Call Highlights Pricing Uncertainty for FY27",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/fico-q426-earnings-call-highlights-153300505.html",
    "priority": "media",
-   "ticker": "TREX",
-   "name": "TREX"
+   "ticker": "FICO",
+   "name": "FICO"
   },
   {
-   "id": "news:3a1c5126-a30d-3e7f-ba6a-b21f2cb57770",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Trex Company, Inc. Q3 2026 Earnings Call Summary",
-   "date": "2026-11-04",
-   "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-trex-company-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
+   "id": "sec:0001104659-26-123387:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — FORM 8-K",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926123387/tm2629095d1_8k.htm",
    "priority": "media",
-   "ticker": "TREX",
-   "name": "TREX"
+   "ticker": "MNST",
+   "name": "MNST"
   },
   {
-   "id": "sec:0001193125-26-448357:8-K",
+   "id": "sec:0001193125-26-449727:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
    "title": "Hecho relevante — 8-K",
    "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526449727/d437988d8k.htm",
    "priority": "media",
-   "ticker": "MSFT",
-   "name": "MSFT"
+   "ticker": "ABNB",
+   "name": "ABNB"
   },
   {
-   "id": "news:f1a25436-4ec1-39ba-992c-40620455ec73",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Fair Isaac Corp (FICO) Q4 2026 Earnings Call Highlights: Record Revenue and EPS Growth Amid ...",
+   "id": "sec:0001193125-26-450074:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/fair-isaac-corp-fico-q4-051605139.html",
-   "priority": "media",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "news:cf05786e-6316-4eb4-9d23-1b651d7dc920",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Meta exec says midterm results makes new data centers challenging: WSJ",
-   "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/video/meta-exec-says-midterm-results-makes-new-data-centers-challenging-wsj-143742688.html",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
    "priority": "media",
    "ticker": "META",
    "name": "META"
   },
   {
-   "id": "news:7cbe5c30-1e02-3b5a-ad37-43c0502f87bd",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Nike’s Dividend Yield Is Still Attractive, But I Can’t Say the Same About NKE Stock",
+   "id": "sec:0001477333-26-000060:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
    "date": "2026-11-05",
-   "url": "https://www.barchart.com/story/news/8661477/nikes-dividend-yield-is-still-attractive-but-i-cant-say-the-same-about-nke-stock",
+   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/cloud-20261105.htm",
    "priority": "media",
-   "ticker": "NKE",
-   "name": "NKE"
+   "ticker": "NET",
+   "name": "NET"
   },
   {
-   "id": "news:5ba19bd9-f38f-30da-99f4-fd9ad5facd03",
+   "id": "sec:0001193125-26-449835:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
+   "priority": "media",
+   "ticker": "GOOG",
+   "name": "GOOG"
+  },
+  {
+   "id": "news:2e601466-99b5-3e96-b356-1d6e19eb6e46",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Is Trex Company (TREX) Fully Valued As Record Revenue Lifts Guidance?",
+   "title": "CoreWeave Stock Is Plunging After the Election. Its CEO Insists the Business Is Safe.",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/trex-company-trex-fully-valued-121733411.html",
+   "url": "https://www.barrons.com/articles/coreweave-stock-price-ai-data-center-selloff-ae7f96de?siteid=yhoof2&yptr=yahoo",
+   "priority": "media",
+   "ticker": "COR",
+   "name": "COR"
+  },
+  {
+   "id": "news:ba5c62f9-354e-3deb-8568-88950217a5da",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Trex Co Inc (TREX) (Q3 2026) Earnings Call Highlights: Record Revenue, Raised Outlook and a ...",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/trex-co-inc-trex-q3-170458682.html",
    "priority": "media",
    "ticker": "TREX",
    "name": "TREX"
   },
   {
-   "id": "sec:0001341766-26-000059:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
+   "id": "news:b214d105-a8dd-3089-adbe-61e31dddc029",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Celsius (CELH) Q3 2026 Earnings Call Transcript",
    "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000059/celh-20261105.htm",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/celsius-celh-q3-2026-earnings-call-transcript/",
    "priority": "media",
    "ticker": "CELH",
    "name": "CELH"
   },
   {
-   "id": "news:a9bbbee5-9040-381d-add1-a5bdb48bbfd7",
+   "id": "news:74ecbcb6-84a7-303a-893b-db6dc04dfd72",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Uber Technologies Inc (UBER) Q3 2026 Earnings Call Highlights: Record 215 Million Consumers, ...",
+   "title": "Uber CEO reveals a problem that could impact every rider",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-technologies-inc-uber-q3-150443959.html",
+   "url": "https://www.thestreet.com/investing/stocks/uber-ceo-driver-supply-shortage",
    "priority": "media",
    "ticker": "UBER",
    "name": "UBER"
   },
   {
-   "id": "news:dc05e32c-c955-3213-935a-0a23ed1cc09d",
+   "id": "news:80e36806-5add-3f50-afc7-7fbf8b72d6b4",
    "source": "Noticias",
    "form": "noticia",
-   "title": "UBER Q3 Earnings Call Highlights AV Expansion and Mobility Challenges",
+   "title": "US Physical Therapy Inc (USPH) (Q3 2026) Earnings Call Highlights: Record Visits and Revenue ...",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-q3-earnings-call-highlights-140000597.html",
+   "url": "https://finance.yahoo.com/healthcare/articles/us-physical-therapy-inc-usph-232537788.html",
    "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
+   "ticker": "USPH",
+   "name": "USPH"
   },
   {
-   "id": "news:b504699b-a017-3d49-9e2a-504893ca2822",
+   "id": "news:f2db5706-4115-3382-b069-d4fe37d66817",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Uber CEO Flags Driver Shortages, Rising Fuel Costs As International Growth Hits Roadblock",
+   "title": "US Physical Therapy (USPH) Q3 2026 Earnings Call Transcript",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-ceo-flags-driver-shortages-133010962.html",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/us-physical-therapy-usph-q3-2026-earnings-call-transcript/",
    "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
+   "ticker": "USPH",
+   "name": "USPH"
   },
   {
-   "id": "sec:0001936006-26-000028:4",
+   "id": "news:235dcc3f-6eb1-3c5a-a7d8-4d37a1bd6c97",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Monster Beverage Corp (MNST) Q3 2026 Earnings Call Highlights: International Surge Drives Sales ...",
+   "date": "2026-11-06",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/monster-beverage-corp-mnst-q3-052159951.html",
+   "priority": "media",
+   "ticker": "MNST",
+   "name": "MNST"
+  },
+  {
+   "id": "news:086388c9-e068-30f6-8f22-f0f4a38ba5e7",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Cloudflare Inc (NET) (Q3 2026) Earnings Call Highlights: Record 39% Revenue Growth, ...",
+   "date": "2026-11-06",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-inc-net-q3-2026-052238415.html",
+   "priority": "media",
+   "ticker": "NET",
+   "name": "NET"
+  },
+  {
+   "id": "news:8286f196-bb07-3894-beb4-264901537dd5",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Celsius Holdings Inc (CELH) Q3 2026 Earnings Call Highlights: Alani Nu's Record Quarter Powers ...",
+   "date": "2026-11-06",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/celsius-holdings-inc-celh-q3-011629781.html",
+   "priority": "media",
+   "ticker": "CELH",
+   "name": "CELH"
+  },
+  {
+   "id": "sec:0001991684-26-000004:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000028/xslF345X06/wk-form4_1793831214.xml",
-   "priority": "baja",
-   "ticker": "AMZN",
-   "name": "AMZN"
-  },
-  {
-   "id": "sec:0001193125-26-447402:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526447402/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "ABNB",
-   "name": "ABNB"
-  },
-  {
-   "id": "sec:0001781229-26-000006:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000178122926000006/xslF345X06/wk-form4_1793829763.xml",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000199168426000004/xslF345X06/wk-form4_1793918340.xml",
    "priority": "baja",
    "ticker": "VLTO",
    "name": "VLTO"
   },
   {
-   "id": "sec:0000950103-26-016962:4",
+   "id": "sec:0001065280-26-000322:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016962/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0001160077-26-000013:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000116007726000013/xslF345X06/form4-11042026_091132.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0001778564-26-000203:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000203/xslF345X06/form4-11042026_081109.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001201326-26-000029:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000120132626000029/xslF345X06/form4-11042026_081104.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001778610-26-000026:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177861026000026/xslF345X06/form4-11042026_081102.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001778564-26-000202:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000202/xslF345X06/form4-11042026_081107.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001065280-26-000312:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000312/xslF345X06/wk-form4_1793835249.xml",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000322/xslF345X06/wk-form4_1793928269.xml",
    "priority": "baja",
    "ticker": "NFLX",
    "name": "NFLX"
   },
   {
-   "id": "sec:0001316987-26-000004:4",
+   "id": "sec:0001065280-26-000320:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-04",
-   "url": "https://www.sec.gov/Archives/edgar/data/884887/000131698726000004/xslF345X06/wk-form4_1793828398.xml",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000320/xslF345X06/wk-form4_1793928244.xml",
    "priority": "baja",
-   "ticker": "RCL",
-   "name": "RCL"
+   "ticker": "NFLX",
+   "name": "NFLX"
   },
   {
-   "id": "page:https://www.rational-online.com/media/investor-relations/veroeffentlichungen-gj-2026/rational-ag---report-on-the-first-nine-months-2026.pdf",
-   "source": "RI: www.rational-online.com",
-   "form": "documento",
-   "title": "9M report 2026",
+   "id": "sec:0001065280-26-000318:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
    "date": "2026-11-05",
-   "url": "https://www.rational-online.com/media/investor-relations/veroeffentlichungen-gj-2026/rational-ag---report-on-the-first-nine-months-2026.pdf",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000318/xslF345X06/wk-form4_1793928218.xml",
    "priority": "baja",
-   "ticker": "RAA",
-   "name": "RAA"
+   "ticker": "NFLX",
+   "name": "NFLX"
+  },
+  {
+   "id": "sec:0001065280-26-000316:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000316/xslF345X06/wk-form4_1793928189.xml",
+   "priority": "baja",
+   "ticker": "NFLX",
+   "name": "NFLX"
   }
  ],
  "financial_drift": [
@@ -371,18 +327,46 @@
    "severidad": "media"
   },
   {
-   "ticker": "VLTO",
+   "ticker": "FICO",
    "ultimo_trimestre_publicado": "2026-09-30",
-   "ultimos_resultados_en_excel": "2026-07-28",
-   "revenue_ltm_mercado": 5801.0,
-   "revenue_ltm_excel": 5700.0,
-   "desvio_revenue": 0.0177,
-   "fcf_ltm_mercado": 1093.0,
-   "fcf_ltm_excel": 1047.0,
-   "desvio_fcf": 0.0439,
+   "ultimos_resultados_en_excel": "2026-07-29",
+   "revenue_ltm_mercado": 2393.6,
+   "revenue_ltm_excel": 2393.6,
+   "desvio_revenue": -0.0,
+   "fcf_ltm_mercado": 960.9,
+   "fcf_ltm_excel": 960.9000000000001,
+   "desvio_fcf": -0.0,
    "trimestre_nuevo": true,
    "sospecha_unidades": false,
    "severidad": "alta"
+  },
+  {
+   "ticker": "MNST",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-11-05",
+   "revenue_ltm_mercado": 9219.0,
+   "revenue_ltm_excel": 9584.8,
+   "desvio_revenue": -0.0382,
+   "fcf_ltm_mercado": 2081.5,
+   "fcf_ltm_excel": 2081.5,
+   "desvio_fcf": -0.0,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
+  },
+  {
+   "ticker": "DNP",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-08-13",
+   "revenue_ltm_mercado": 35628.1,
+   "revenue_ltm_excel": 35628.0,
+   "desvio_revenue": 0.0,
+   "fcf_ltm_mercado": 669.1,
+   "fcf_ltm_excel": 597.7,
+   "desvio_fcf": 0.1195,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
   },
   {
    "ticker": "META",
@@ -408,6 +392,20 @@
    "fcf_ltm_mercado": 2339.9,
    "fcf_ltm_excel": 5000.0,
    "desvio_fcf": -0.532,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
+  },
+  {
+   "ticker": "NET",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-11-05",
+   "revenue_ltm_mercado": 2512.3,
+   "revenue_ltm_excel": 2732.8,
+   "desvio_revenue": -0.0807,
+   "fcf_ltm_mercado": 314.9,
+   "fcf_ltm_excel": 322.0,
+   "desvio_fcf": -0.0221,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -443,13 +441,13 @@
   {
    "ticker": "COR",
    "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-07-29",
+   "ultimos_resultados_en_excel": "2026-11-02",
    "revenue_ltm_mercado": 833.7,
-   "revenue_ltm_excel": 900.0,
-   "desvio_revenue": -0.0737,
+   "revenue_ltm_excel": 832.1,
+   "desvio_revenue": 0.0019,
    "fcf_ltm_mercado": 154.1,
-   "fcf_ltm_excel": 175.3,
-   "desvio_fcf": -0.1211,
+   "fcf_ltm_excel": 111.5,
+   "desvio_fcf": 0.3818,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -469,6 +467,34 @@
    "severidad": "media"
   },
   {
+   "ticker": "CHKP",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-07-30",
+   "revenue_ltm_mercado": 2756.7,
+   "revenue_ltm_excel": 2760.0,
+   "desvio_revenue": -0.0012,
+   "fcf_ltm_mercado": 1131.8,
+   "fcf_ltm_excel": 1099.7,
+   "desvio_fcf": 0.0292,
+   "trimestre_nuevo": true,
+   "sospecha_unidades": false,
+   "severidad": "alta"
+  },
+  {
+   "ticker": "TFPM",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-11-03",
+   "revenue_ltm_mercado": 501.8,
+   "revenue_ltm_excel": 501.8,
+   "desvio_revenue": 0.0,
+   "fcf_ltm_mercado": 374.6,
+   "fcf_ltm_excel": 331.6,
+   "desvio_fcf": 0.1297,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
+  },
+  {
    "ticker": "FERG",
    "ultimo_trimestre_publicado": "2026-06-30",
    "ultimos_resultados_en_excel": "2026-08-04",
@@ -478,6 +504,20 @@
    "fcf_ltm_mercado": 1265.0,
    "fcf_ltm_excel": 1265.0,
    "desvio_fcf": 0.0,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
+  },
+  {
+   "ticker": "CELH",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-11-05",
+   "revenue_ltm_mercado": 3047.3,
+   "revenue_ltm_excel": 3169.4,
+   "desvio_revenue": -0.0385,
+   "fcf_ltm_mercado": 462.8,
+   "fcf_ltm_excel": 212.29999999999998,
+   "desvio_fcf": 1.1798,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -555,6 +595,13 @@
    "delta_days": -182
   },
   {
+   "ticker": "ZS",
+   "excel": "2026-11-24",
+   "market": "2026-12-02",
+   "estimated": true,
+   "delta_days": 8
+  },
+  {
    "ticker": "AMZN",
    "excel": "2027-02-04",
    "market": "2026-10-29",
@@ -583,6 +630,13 @@
    "delta_days": -98
   },
   {
+   "ticker": "MNST",
+   "excel": "2027-02-25",
+   "market": "2026-11-05",
+   "estimated": true,
+   "delta_days": -112
+  },
+  {
    "ticker": "DNP",
    "excel": "2026-11-12",
    "market": "2026-11-05",
@@ -590,11 +644,25 @@
    "delta_days": -7
   },
   {
+   "ticker": "VLTO",
+   "excel": "2027-02-03",
+   "market": "2026-10-29",
+   "estimated": true,
+   "delta_days": -97
+  },
+  {
    "ticker": "KKR",
    "excel": "2026-11-04",
    "market": "2026-11-09",
    "estimated": true,
    "delta_days": 5
+  },
+  {
+   "ticker": "NET",
+   "excel": "2027-02-10",
+   "market": "2026-11-05",
+   "estimated": true,
+   "delta_days": -97
   },
   {
    "ticker": "GOOG",
@@ -623,6 +691,13 @@
    "market": "2026-08-07",
    "estimated": false,
    "delta_days": -105
+  },
+  {
+   "ticker": "COR",
+   "excel": "2027-02-18",
+   "market": "2026-11-02",
+   "estimated": true,
+   "delta_days": -108
   },
   {
    "ticker": "SPOT",
@@ -660,6 +735,13 @@
    "delta_days": -119
   },
   {
+   "ticker": "TFPM",
+   "excel": "2027-02-17",
+   "market": "2026-11-03",
+   "estimated": false,
+   "delta_days": -106
+  },
+  {
    "ticker": "MIPS",
    "excel": "2027-02-10",
    "market": "2026-10-21",
@@ -672,6 +754,20 @@
    "market": "2026-11-09",
    "estimated": true,
    "delta_days": 6
+  },
+  {
+   "ticker": "TREX",
+   "excel": "2027-02-24",
+   "market": "2026-11-04",
+   "estimated": true,
+   "delta_days": -112
+  },
+  {
+   "ticker": "CELH",
+   "excel": "2027-02-25",
+   "market": "2026-11-05",
+   "estimated": true,
+   "delta_days": -112
   },
   {
    "ticker": "VRLA",
@@ -693,13 +789,6 @@
    "market": "2026-10-28",
    "estimated": true,
    "delta_days": -105
-  },
-  {
-   "ticker": "UBER",
-   "excel": "2026-11-03",
-   "market": "2027-02-03",
-   "estimated": true,
-   "delta_days": 92
   },
   {
    "ticker": "RBT",
@@ -732,33 +821,33 @@
  ],
  "todo_excel": [
   {
-   "ticker": "CELH",
+   "ticker": "ABNB",
    "accion": "Actualizar cuentas en el Excel",
    "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
    "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
    "ultimos_resultados_excel": "2026-08-06",
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1341766/000134176626000062/celh-20260930.htm"
+    "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm"
    ]
   },
   {
-   "ticker": "TREX",
+   "ticker": "NET",
    "accion": "Actualizar cuentas en el Excel",
    "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
    "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
-   "ultimos_resultados_excel": "2026-08-04",
+   "ultimos_resultados_excel": "2026-11-05",
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1069878/000119312526447251/trex-20260930.htm"
+    "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm"
    ]
   },
   {
-   "ticker": "UBER",
+   "ticker": "USPH",
    "accion": "Actualizar cuentas en el Excel",
    "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
    "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
    "ultimos_resultados_excel": "2026-08-05",
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm"
+    "https://www.sec.gov/Archives/edgar/data/885978/000114036126042104/ef20080638_10q.htm"
    ]
   },
   {
@@ -776,9 +865,23 @@
    "urls": []
   },
   {
-   "ticker": "VLTO",
+   "ticker": "FICO",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-28); ingresos LTM: Excel 5700.0 vs mercado 5801.0 (+1.8%); FCF LTM: Excel 1047.0 vs mercado 1093.0 (+4.4%)",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-29); ingresos LTM: Excel 2393.6 vs mercado 2393.6 (-0.0%); FCF LTM: Excel 960.9000000000001 vs mercado 960.9 (-0.0%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "MNST",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 9584.8 vs mercado 9219.0 (-3.8%); FCF LTM: Excel 2081.5 vs mercado 2081.5 (-0.0%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "DNP",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 35628.0 vs mercado 35628.1 (+0.0%); FCF LTM: Excel 597.7 vs mercado 669.1 (+11.9%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -793,6 +896,13 @@
    "ticker": "KKR",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 25833.0 vs mercado 21060.0 (-18.5%); FCF LTM: Excel 5000.0 vs mercado 2339.9 (-53.2%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "NET",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 2732.8 vs mercado 2512.3 (-8.1%); FCF LTM: Excel 322.0 vs mercado 314.9 (-2.2%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -813,7 +923,7 @@
   {
    "ticker": "COR",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 900.0 vs mercado 833.7 (-7.4%); FCF LTM: Excel 175.3 vs mercado 154.1 (-12.1%)",
+   "motivo": "ingresos LTM: Excel 832.1 vs mercado 833.7 (+0.2%); FCF LTM: Excel 111.5 vs mercado 154.1 (+38.2%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -825,9 +935,30 @@
    "urls": []
   },
   {
+   "ticker": "CHKP",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-30); ingresos LTM: Excel 2760.0 vs mercado 2756.7 (-0.1%); FCF LTM: Excel 1099.7 vs mercado 1131.8 (+2.9%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "TFPM",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 501.8 vs mercado 501.8 (+0.0%); FCF LTM: Excel 331.6 vs mercado 374.6 (+13.0%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
    "ticker": "FERG",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 31446.0 vs mercado 32889.0 (+4.6%); FCF LTM: Excel 1265.0 vs mercado 1265.0 (+0.0%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "CELH",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 3169.4 vs mercado 3047.3 (-3.9%); FCF LTM: Excel 212.29999999999998 vs mercado 462.8 (+118.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -874,6 +1005,13 @@
    "urls": []
   },
   {
+   "ticker": "ZS",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-11-24 y el mercado dice 2026-12-02 (8 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
    "ticker": "AMZN",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-04 y el mercado dice 2026-10-29 (-98 dias de diferencia) — la del Excel era una estimacion",
@@ -902,6 +1040,13 @@
    "urls": []
   },
   {
+   "ticker": "MNST",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-25 y el mercado dice 2026-11-05 (-112 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
    "ticker": "DNP",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-12 y el mercado dice 2026-11-05 (-7 dias de diferencia) — la del Excel era una estimacion",
@@ -909,9 +1054,23 @@
    "urls": []
   },
   {
+   "ticker": "VLTO",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-03 y el mercado dice 2026-10-29 (-97 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
    "ticker": "KKR",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-04 y el mercado dice 2026-11-09 (5 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "NET",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-10 y el mercado dice 2026-11-05 (-97 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -940,6 +1099,13 @@
    "ticker": "KRX",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-20 y el mercado dice 2026-08-07 (-105 dias de diferencia)",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "COR",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-18 y el mercado dice 2026-11-02 (-108 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -979,6 +1145,13 @@
    "urls": []
   },
   {
+   "ticker": "TFPM",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-17 y el mercado dice 2026-11-03 (-106 dias de diferencia)",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
    "ticker": "MIPS",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-10 y el mercado dice 2026-10-21 (-112 dias de diferencia)",
@@ -989,6 +1162,20 @@
    "ticker": "FERG",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-03 y el mercado dice 2026-11-09 (6 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "TREX",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-24 y el mercado dice 2026-11-04 (-112 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "CELH",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-02-25 y el mercado dice 2026-11-05 (-112 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
@@ -1010,13 +1197,6 @@
    "ticker": "OTLY",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-10 y el mercado dice 2026-10-28 (-105 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
-   "ticker": "UBER",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-03 y el mercado dice 2027-02-03 (92 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },

@@ -1,12 +1,37 @@
 {
   "meta": {
-    "generated_at": "2026-11-05T15:43:01+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-11-06T06:52:27+00:00",
+    "n_alerts": 2,
     "by_severity": {
       "high": 0,
       "medium": 0,
-      "low": 0
+      "low": 2
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "exited_hunting",
+      "severity": "low",
+      "ticker": "ADYEN",
+      "name": "ADYEN",
+      "category": "Fintech",
+      "message": "ADYEN exited Hunting Ground",
+      "metrics": {
+        "rating_composite": 7.8,
+        "ev_fcf": 21.57347941712204
+      }
+    },
+    {
+      "type": "exited_hunting",
+      "severity": "low",
+      "ticker": "CSU",
+      "name": "CSU",
+      "category": "Vertical Saas",
+      "message": "CSU exited Hunting Ground",
+      "metrics": {
+        "rating_composite": 8.45,
+        "ev_fcf": 20.71042644977809
+      }
+    }
+  ]
 }
