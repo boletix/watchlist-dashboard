@@ -331,10 +331,15 @@ VERDICTS = {
     "UBER": dict(conviction="3,5/5", terminal="MEDIO", sizing="2-2,5% (escalonada; entrada/ampliar a 54 $, confirmado por Roger 24-oct)",
                  alert="Waymo/Tesla standalone con cuota creciente en SF/LA/Phoenix; margen op. Mobility < 7%; deuda neta/EBITDA > 2,5x tras DH. "
                        "Tesla sin monitor en >10 areas y >5.000 coches a mediados de 2027 -> desintermediacion a caso base",
-                 catalyst="3T26 a principios de nov (fecha sin confirmar): recompras, take rate neto, 15 ciudades AV; aceptacion de DH el 5-nov; "
+                 catalyst="3T26 publicado el 4-nov (anexo UBER_Anexo_3T-2026): reservas +20% cc, Mobility 8,0%, recompras 750 (senal de ruptura 4 activada por poco), FCF +9% frente a EBITDA +32%; pendientes 10-Q y llamada. Aceptacion de DH el 5-nov; "
                           "4T26 Nuro/Lucid, Zoox, Wayve. Revision AV 23-oct (anexo): pesos 14/33/20/13/20 (desintermediacion "
                           "12% -> 20%, decision de Roger). A 67,6 $: TIR mediana +9,8%, P(sube) 72%, asimetria 6,5x. "
                           "Alerta movida a 54 $ el 24-oct (decision de Roger)"),
+    "COR":  dict(conviction="4/5", terminal="BAJO", sizing="mantener 300 acc (~2,8%); ampliar solo con precio <= 6,23 EUR y >= 4 senales de suelo en verde (tramo 2 <= 5,51 EUR; aprobado por Roger 5-nov)",
+                 alert="margen bruto < 51%; margen EBITDA de Cork < 15%; volumen de Cork -5% cuatro semestres mas; circulante > 55% de ventas; compra grande ('international partnerships'). "
+                       "Deep dive 4/5-nov-2026: FCF estructural ~78 M EUR (FCF LTM de la compania 111,5 con liberacion de circulante); fila 39 en espejo (BD/BF 59,1/89,5, multiplos implicitos 13,2x/16,9x)",
+                 catalyst="Resultados FY26 el 18-feb-2027: volumen de Cork sin consolidaciones, circulante, dividendo. Un 4T26 con ventas >= 0% NO es senal (base -13,3%). "
+                          "Pendiente: llamada y Q&A, estado de flujos auditado de FY25, informe 9M26"),
     "JDG":  dict(conviction="3/5", terminal="MEDIO-BAJO", sizing="1% (posicion actual); ni comprar ni vender: tesis dudosa con el pipeline deprimido (decision de Roger 24-oct)",
                  alert="guia < 200p: salir; compra >40 M GBP a >7x EBIT: salir; deuda neta/EBITDA 2,1x (limite de la tesis 2,0x)",
                  catalyst="Trading update FY26 (~21-ene-2027): pedidos del 2S, deuda, sucesor del CFO (Ormsby se va). Interinos del 23-sep: BPA 39p, guia al suelo (200,5p), China -47%"),
