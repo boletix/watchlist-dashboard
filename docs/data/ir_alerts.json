@@ -1,300 +1,69 @@
 {
  "meta": {
-  "generated_at": "2026-11-06T06:53:15+00:00",
+  "generated_at": "2026-11-06T15:17:18+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 26,
-  "n_calendar_drift": 34,
+  "n_documents": 5,
+  "n_calendar_drift": 35,
   "n_financial_drift": 20,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "sec:0001559720-26-000032:10-Q",
+   "id": "sec:0001104659-26-123503:10-Q",
    "source": "SEC EDGAR",
    "form": "10-Q",
    "title": "Informe trimestral — 10-Q",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm",
+   "date": "2026-11-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926123503/mnst-20260930x10q.htm",
    "priority": "alta",
-   "ticker": "ABNB",
-   "name": "ABNB"
+   "ticker": "MNST",
+   "name": "MNST"
   },
   {
-   "id": "sec:0001477333-26-000061:10-Q",
-   "source": "SEC EDGAR",
-   "form": "10-Q",
-   "title": "Informe trimestral — 10-Q",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm",
-   "priority": "alta",
-   "ticker": "NET",
-   "name": "NET"
-  },
-  {
-   "id": "sec:0001140361-26-042104:10-Q",
-   "source": "SEC EDGAR",
-   "form": "10-Q",
-   "title": "Informe trimestral — 10-Q",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/885978/000114036126042104/ef20080638_10q.htm",
-   "priority": "alta",
-   "ticker": "USPH",
-   "name": "USPH"
-  },
-  {
-   "id": "news:7a11122a-fe91-3810-9285-50a4f703a7cf",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Fair Isaac (FICO) Stock Shrugs Off Q4 Results Despite Debt Questions",
-   "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/fair-isaac-fico-stock-shrugs-231818327.html",
-   "priority": "media",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "news:02a99796-aa87-3a63-8ac9-ff0e09c4a096",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Fair Isaac (FICO) Q4 2026 Earnings Call Transcript",
-   "date": "2026-11-05",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/fair-isaac-fico-q4-2026-earnings-call-transcript/",
-   "priority": "media",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "news:b182f2bf-95bf-34d2-a042-a22456d4d484",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "FICO Just Stopped Giving Guidance as It Rewrites Mortgage Pricing",
-   "date": "2026-11-05",
-   "url": "https://247wallst.com/investing/2026/11/05/fico-just-stopped-giving-guidance-as-it-rewrites-mortgage-pricing/",
-   "priority": "media",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "news:a0e690f3-798c-3e88-a0e1-3272b1d1f941",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "FICO Q4'26 Earnings Call Highlights Pricing Uncertainty for FY27",
-   "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/fico-q426-earnings-call-highlights-153300505.html",
-   "priority": "media",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "sec:0001104659-26-123387:8-K",
+   "id": "sec:0001393052-26-000039:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
-   "title": "Hecho relevante — FORM 8-K",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926123387/tm2629095d1_8k.htm",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393052/000139305226000039/veev-20261105.htm",
+   "priority": "media",
+   "ticker": "VEEV",
+   "name": "VEEV"
+  },
+  {
+   "id": "news:935b027e-0b45-344b-a86e-6883862c8398",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Monster Beverage (MNST) Q3 2026 Earnings Call Transcript",
+   "date": "2026-11-06",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/06/monster-beverage-mnst-q3-2026-earnings-call-transcript/",
    "priority": "media",
    "ticker": "MNST",
    "name": "MNST"
   },
   {
-   "id": "sec:0001193125-26-449727:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526449727/d437988d8k.htm",
+   "id": "news:b35cb238-aa17-37a4-822b-1db173ef653b",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Airbnb (ABNB) Q3 2026 Earnings Call Transcript",
+   "date": "2026-11-06",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/06/airbnb-abnb-q3-2026-earnings-call-transcript/",
    "priority": "media",
    "ticker": "ABNB",
    "name": "ABNB"
   },
   {
-   "id": "sec:0001193125-26-450074:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526450074/d166273d8k.htm",
-   "priority": "media",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0001477333-26-000060:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/cloud-20261105.htm",
-   "priority": "media",
-   "ticker": "NET",
-   "name": "NET"
-  },
-  {
-   "id": "sec:0001193125-26-449835:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm",
-   "priority": "media",
-   "ticker": "GOOG",
-   "name": "GOOG"
-  },
-  {
-   "id": "news:2e601466-99b5-3e96-b356-1d6e19eb6e46",
+   "id": "news:21548d9e-fccc-34c0-b956-05ae847f900d",
    "source": "Noticias",
    "form": "noticia",
-   "title": "CoreWeave Stock Is Plunging After the Election. Its CEO Insists the Business Is Safe.",
-   "date": "2026-11-05",
-   "url": "https://www.barrons.com/articles/coreweave-stock-price-ai-data-center-selloff-ae7f96de?siteid=yhoof2&yptr=yahoo",
-   "priority": "media",
-   "ticker": "COR",
-   "name": "COR"
-  },
-  {
-   "id": "news:ba5c62f9-354e-3deb-8568-88950217a5da",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Trex Co Inc (TREX) (Q3 2026) Earnings Call Highlights: Record Revenue, Raised Outlook and a ...",
-   "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/trex-co-inc-trex-q3-170458682.html",
-   "priority": "media",
-   "ticker": "TREX",
-   "name": "TREX"
-  },
-  {
-   "id": "news:b214d105-a8dd-3089-adbe-61e31dddc029",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Celsius (CELH) Q3 2026 Earnings Call Transcript",
-   "date": "2026-11-05",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/celsius-celh-q3-2026-earnings-call-transcript/",
+   "title": "CELH Q3 Earnings Call Highlights Alani Nu Growth and Margin Pressure",
+   "date": "2026-11-06",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/celh-q3-earnings-call-highlights-140000317.html",
    "priority": "media",
    "ticker": "CELH",
    "name": "CELH"
-  },
-  {
-   "id": "news:74ecbcb6-84a7-303a-893b-db6dc04dfd72",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber CEO reveals a problem that could impact every rider",
-   "date": "2026-11-05",
-   "url": "https://www.thestreet.com/investing/stocks/uber-ceo-driver-supply-shortage",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:80e36806-5add-3f50-afc7-7fbf8b72d6b4",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "US Physical Therapy Inc (USPH) (Q3 2026) Earnings Call Highlights: Record Visits and Revenue ...",
-   "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/healthcare/articles/us-physical-therapy-inc-usph-232537788.html",
-   "priority": "media",
-   "ticker": "USPH",
-   "name": "USPH"
-  },
-  {
-   "id": "news:f2db5706-4115-3382-b069-d4fe37d66817",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "US Physical Therapy (USPH) Q3 2026 Earnings Call Transcript",
-   "date": "2026-11-05",
-   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/05/us-physical-therapy-usph-q3-2026-earnings-call-transcript/",
-   "priority": "media",
-   "ticker": "USPH",
-   "name": "USPH"
-  },
-  {
-   "id": "news:235dcc3f-6eb1-3c5a-a7d8-4d37a1bd6c97",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Monster Beverage Corp (MNST) Q3 2026 Earnings Call Highlights: International Surge Drives Sales ...",
-   "date": "2026-11-06",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/monster-beverage-corp-mnst-q3-052159951.html",
-   "priority": "media",
-   "ticker": "MNST",
-   "name": "MNST"
-  },
-  {
-   "id": "news:086388c9-e068-30f6-8f22-f0f4a38ba5e7",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Cloudflare Inc (NET) (Q3 2026) Earnings Call Highlights: Record 39% Revenue Growth, ...",
-   "date": "2026-11-06",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-inc-net-q3-2026-052238415.html",
-   "priority": "media",
-   "ticker": "NET",
-   "name": "NET"
-  },
-  {
-   "id": "news:8286f196-bb07-3894-beb4-264901537dd5",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Celsius Holdings Inc (CELH) Q3 2026 Earnings Call Highlights: Alani Nu's Record Quarter Powers ...",
-   "date": "2026-11-06",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/celsius-holdings-inc-celh-q3-011629781.html",
-   "priority": "media",
-   "ticker": "CELH",
-   "name": "CELH"
-  },
-  {
-   "id": "sec:0001991684-26-000004:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000199168426000004/xslF345X06/wk-form4_1793918340.xml",
-   "priority": "baja",
-   "ticker": "VLTO",
-   "name": "VLTO"
-  },
-  {
-   "id": "sec:0001065280-26-000322:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000322/xslF345X06/wk-form4_1793928269.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000320:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000320/xslF345X06/wk-form4_1793928244.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000318:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000318/xslF345X06/wk-form4_1793928218.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "sec:0001065280-26-000316:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-05",
-   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000316/xslF345X06/wk-form4_1793928189.xml",
-   "priority": "baja",
-   "ticker": "NFLX",
-   "name": "NFLX"
   }
  ],
  "financial_drift": [
@@ -602,6 +371,13 @@
    "delta_days": 8
   },
   {
+   "ticker": "NTO",
+   "excel": "2026-11-05",
+   "market": "2027-02-02",
+   "estimated": true,
+   "delta_days": 89
+  },
+  {
    "ticker": "AMZN",
    "excel": "2027-02-04",
    "market": "2026-10-29",
@@ -821,33 +597,13 @@
  ],
  "todo_excel": [
   {
-   "ticker": "ABNB",
-   "accion": "Actualizar cuentas en el Excel",
-   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
-   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
-   "ultimos_resultados_excel": "2026-08-06",
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm"
-   ]
-  },
-  {
-   "ticker": "NET",
+   "ticker": "MNST",
    "accion": "Actualizar cuentas en el Excel",
    "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
    "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
    "ultimos_resultados_excel": "2026-11-05",
    "urls": [
-    "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000061/cloud-20260930.htm"
-   ]
-  },
-  {
-   "ticker": "USPH",
-   "accion": "Actualizar cuentas en el Excel",
-   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
-   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
-   "ultimos_resultados_excel": "2026-08-05",
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/885978/000114036126042104/ef20080638_10q.htm"
+    "https://www.sec.gov/Archives/edgar/data/865752/000110465926123503/mnst-20260930x10q.htm"
    ]
   },
   {
@@ -1008,6 +764,13 @@
    "ticker": "ZS",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2026-11-24 y el mercado dice 2026-12-02 (8 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "NTO",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-11-05 y el mercado dice 2027-02-02 (89 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
