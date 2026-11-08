@@ -1,14 +1,39 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T15:16:20+00:00",
-    "n_alerts": 2,
+    "generated_at": "2026-11-08T08:31:27+00:00",
+    "n_alerts": 4,
     "by_severity": {
-      "high": 0,
+      "high": 2,
       "medium": 0,
       "low": 2
     }
   },
   "alerts": [
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "CSU",
+      "name": "CSU",
+      "category": "Vertical Saas",
+      "message": "CSU now has favorable IRR asymmetry (best 20.3%, worst -1.3%)",
+      "metrics": {
+        "irr_best": 0.20270778875521622,
+        "irr_worst": -0.012839816226274281,
+        "irr_asymmetry_ratio": 4.31095209962981
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "SOM",
+      "name": "SOM",
+      "category": "construction",
+      "message": "SOM Best IRR crossed 25% (24.6% → 25.5%)",
+      "metrics": {
+        "from": 0.246368174788838,
+        "to": 0.2552067556417972
+      }
+    },
     {
       "type": "exited_hunting",
       "severity": "low",
@@ -18,7 +43,7 @@
       "message": "ADYEN exited Hunting Ground",
       "metrics": {
         "rating_composite": 7.8,
-        "ev_fcf": 21.57347941712204
+        "ev_fcf": 21.82461371220401
       }
     },
     {
@@ -30,7 +55,7 @@
       "message": "CSU exited Hunting Ground",
       "metrics": {
         "rating_composite": 8.45,
-        "ev_fcf": 20.71042644977809
+        "ev_fcf": 20.582638508018274
       }
     }
   ]

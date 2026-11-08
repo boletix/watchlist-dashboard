@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 330,
+    "n_updates": 389,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -839,6 +839,139 @@
       "summary": "Spotify. R2 Financials 13 -> 15 y R3 Financing Source 2 -> 4. Ha demostrado lo que tenia que demostrar: que el apalancamiento operativo existia. De perdidas estructurales a un resultado operativo de 2.653 M EUR (14,6% de margen), un FCF de 3.267 (18% de margen) y un ROIC del 24%, con 6.519 M EUR de CAJA NETA. Ya no depende de nadie para financiarse. LA LECCION QUE HAY QUE LLEVARSE AL RESTO DEL LIBRO: la tesis del Drive fijaba el caso alcista en 380 $ y la accion esta en 550,72 $; fallo en una unica variable, el margen, y ella misma la habia senalado como su punto debil (los margenes operativos me generan dudas, el apalancamiento operativo es poco visible). En negocios con base de costes fija grande y margen bruto creciente, el apalancamiento operativo NO es lineal: es explosivo al cruzar el umbral de rentabilidad. Mismo error que en Airbnb (11% proyectado, 20,8% real). Y es lo que puede estar pasando AHORA con SentinelOne, que acaba de cruzar a operativo no-GAAP positivo. NO se sube MOAT ni Concentration: Spotify no es dueno de lo que vende y tres discograficas pueden decidir su margen; el -2 de concentracion esta bien puesto."
     },
     {
+      "ticker": "CSU",
+      "date": "2026-11-08",
+      "fields_changed": "BF, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Decision del 8-nov: BF 4.991 -> 5.600: FCF 2031 si sigue comprando a los precios de 2022-25 (~13% de las ventas a ~1,2x ventas, organico 2,5%). El multiplo del base se sigue interpolando entre BD y BF (sin cambio de metodo)."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-08",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "ABNB",
+      "date": "2026-11-07",
+      "fields_changed": "AS, AT, AU, BN, BO, BP, BS, BT",
+      "source": "REVISION DE RESULTADOS 3T-26",
+      "summary": "Airbnb. REVISION 3T-26 (carta del 5-nov, 8-K): noches +16% (2T +10%), GBV +21%, ingresos 4.869 (+19%), EBITDA aj. 52%, FCF 12m 4.904, SBC 12m 1.770, recompras 700 + programa de 12.000 M$. NUESTRAS CIFRAS: FCF-SBC 3.134 = 4.904-1.770; EBITDA tras SBC 3.305 = 5.075-1.770; NOPAT 2.583 = (5.075-1.770-76) x (1-20% normalizado; 2026 'mid-teens' por creditos). Foso: SE ENSANCHA (aceleracion en todas las regiones, IA abarata soporte -17%, agente propio en 1S27). BD/BF y multiplos SIN CAMBIO: propuesta de pesos/base pendiente de Roger. Anexo: Airbnb/ABNB_Anexo_3T-2026.md"
+    },
+    {
+      "ticker": "NFLX",
+      "date": "2026-11-07",
+      "fields_changed": "BN, BT",
+      "source": "REVISION DE RESULTADOS",
+      "summary": "Revision urgente pedida por Roger (7-nov). REVISION 3T-26 (carta del 20-oct, 8-K): ingresos 12.900 (+12%), margen operativo 34,6% (28,2%); 2026: 51.100 (+13%) y 31,5%; FCF 2026 ~12.000 (recorte por compra inmobiliaria); recompras 4.800 (récord). Deuda 15.300 = corto 2.475 + largo 12.658 (la SEC solo da el largo). Foso ESTABLE (precio y retención intactos; dudas: horas vistas y publicidad). Sin cambio de valoración. Anexo: Netflix/NFLX_Anexo_3T-2026.md"
+    },
+    {
+      "ticker": "RCL",
+      "date": "2026-11-07",
+      "fields_changed": "BN, BT",
+      "source": "REVISION DE RESULTADOS",
+      "summary": "Revision urgente pedida por Roger (7-nov). REVISION 3T-26 (nota del 27-oct, 8-K): Net Yield +0,6% cc, coste sin combustible −1,8% => margen unitario +2,4 pp (la señal nº 1 de la tesis se apaga); BPA 2026 17,85-17,95; reservas de 2027 adelantadas y más caras; 50% de Sandals (cierre a principios de 2027). Foso ESTABLE. Sin cambio de valoración; pendiente: flujos del 10-Q (señal 2). Anexo: Royal Caribbean/RCL_Anexo_3T-2026.md"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-11-07",
+      "fields_changed": "BN, BT",
+      "source": "REVISION DE RESULTADOS",
+      "summary": "Revision urgente pedida por Roger (7-nov). REVISION 2T FY27 (nota del 26-ago, 8-K): ingresos 96.200 (+106%), centro de datos 89.000 (+117%), margen bruto 75%; guía 3T 108.000 ±2%; retribución 26.000. ALERTA: días de cobro 45 -> 60 por plazos ampliados a clientes grandes. Foso SE ENSANCHA y el riesgo de ciclo sube. Sin tesis escrita (carencia). Sin cambio de valoración. Anexo: Nvidia/NVDA_Anexo_2T-FY27.md"
+    },
+    {
+      "ticker": "JFN",
+      "date": "2026-11-07",
+      "fields_changed": "BN, BT",
+      "source": "REVISION DE RESULTADOS",
+      "summary": "Revision urgente pedida por Roger (7-nov). REVISION 1S-26 (presentación del 28-ago, jungfrau.ch): ingresos 137,0 (−8,6%), EBITDA 56,8 (−13,8%; margen 41,5%), beneficio 28,9 (−22%), FCF 18,7 (+12%); Jungfraujoch −17,6% de visitantes por la guerra de Irán (Asia) e ingreso medio +6,9%. Foso ESTABLE (golpe cíclico). LTM ya al 1S. Sin cambio de valoración. Sin tesis escrita (carencia). Anexo: Jungfraubahn/JFN_Anexo_1S-2026.md"
+    },
+    {
+      "ticker": "KIST",
+      "date": "2026-11-07",
+      "fields_changed": "BD, BF, BH, BI, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Kistos v5. DECISION DE ROGER (7-nov): 'ponemos lo del v5'. ESPEJO DEL MODELO POR ACTIVOS v5 (kistos_model_v5.py): BD = FCF 2031 a Brent 70 $ (base prudente) 91.8; BF = a 80 $ (esperado) 115.3; BH/BI = multiplos IMPLICITOS 4.66 / 5.48 (reproducen el valor 2031 del modelo: 294,7 p y 478,7 p, con la caja neta de hoy y el tipo de cambio del dia). Antes BD/BF 40/65 y 6x/10x (v4, S1/S3). Abbey y Baker con precio y capex ESTIMADOS: se actualiza con el RNS de cierre o el trading update de ~8-ene-2027."
+    },
+    {
+      "ticker": "COST",
+      "date": "2026-11-07",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "NORMALIZACION EBITDA/NOPAT (regla de Roger 7-nov)",
+      "summary": "Cifras propias normalizadas. NORMALIZADO (logica contable, LTM a 2026-08-30): EBIT contable 11.685,0 (sin no recurrentes etiquetados) = 11.685,0; EBITDA = EBIT + D&A (DepreciationDepletionAndAmortization), sin sumar el SBC; NOPAT = EBIT x (1 - 24,7%; tipo LTM 24,7%, acotado 15-28%). nopat_ltm 8.799,0 -> 8.799,8; ebitda_ltm 14.250,0 -> 14.359,0"
+    },
+    {
+      "ticker": "MNST",
+      "date": "2026-11-07",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "NORMALIZACION EBITDA/NOPAT (regla de Roger 7-nov)",
+      "summary": "Cifras propias normalizadas. NORMALIZADO (logica contable, LTM a 2026-09-30): EBIT contable 2.731,8 (sin no recurrentes etiquetados) = 2.731,8; EBITDA = EBIT + D&A (DepreciationDepletionAndAmortization), sin sumar el SBC; NOPAT = EBIT x (1 - 23,5%; tipo LTM 23,5%, acotado 15-28%). nopat_ltm 2.154,0 -> 2.088,8; ebitda_ltm 2.930,0 -> 2.854,1"
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-11-07",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "NORMALIZACION EBITDA/NOPAT (regla de Roger 7-nov)",
+      "summary": "Cifras propias normalizadas. NORMALIZADO (logica contable, LTM a 2026-10-02): EBIT contable 1.267,0 (sin no recurrentes etiquetados) = 1.267,0; EBITDA = EBIT + D&A (DepreciationDepletionAndAmortization), sin sumar el SBC; NOPAT = EBIT x (1 - 15,0%; tipo LTM 14,8%, acotado 15-28%). nopat_ltm 1.062,0 -> 1.077,0; ebitda_ltm 1.390,0 -> 1.368,0"
+    },
+    {
+      "ticker": "FICO",
+      "date": "2026-11-07",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "NORMALIZACION EBITDA/NOPAT (regla de Roger 7-nov)",
+      "summary": "Cifras propias normalizadas. NORMALIZADO (logica contable, LTM a 2026-09-30): EBIT contable 1.265,7 + no recurrentes {'reestructuracion': 27.3} = 1.293,0; EBITDA = EBIT + D&A (DepreciationDepletionAndAmortization), sin sumar el SBC; NOPAT = EBIT x (1 - 24,1%; tipo LTM 24,1%, acotado 15-28%). nopat_ltm 946,0 -> 981,4; ebitda_ltm 1.252,0 -> 1.309,7"
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-11-07",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "NORMALIZACION EBITDA/NOPAT (regla de Roger 7-nov)",
+      "summary": "Cifras propias normalizadas. NORMALIZADO (logica contable, LTM a 2026-09-30): EBIT contable 76,3 (sin no recurrentes etiquetados) = 76,3; EBITDA = EBIT + D&A (DepreciationDepletionAndAmortization), sin sumar el SBC; NOPAT = EBIT x (1 - 24,7%; tipo LTM 24,7%, acotado 15-28%). nopat_ltm 57,0 -> 57,5; ebitda_ltm 96,0 -> 99,1"
+    },
+    {
+      "ticker": "META",
+      "date": "2026-11-07",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "NORMALIZACION EBITDA/NOPAT (regla de Roger 7-nov)",
+      "summary": "Cifras propias normalizadas. NORMALIZADO (logica contable, LTM a 2026-09-30): EBIT contable 79.380,0 (sin no recurrentes etiquetados) = 79.380,0; EBITDA = EBIT + D&A (DepreciationDepletionAndAmortization), sin sumar el SBC; NOPAT = EBIT x (1 - 15,0%; tipo LTM 4,6%, acotado 15-28%). nopat_ltm 65.885,0 -> 67.473,0; ebitda_ltm 104.300,0 -> 104.300,0"
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-11-07",
+      "fields_changed": "AT, BN, BT",
+      "source": "NORMALIZACION EBITDA/NOPAT (regla de Roger 7-nov)",
+      "summary": "Cifras propias normalizadas. NORMALIZADO (logica contable, LTM a 2026-07-31): EBIT contable -133,0 + no recurrentes {'reestructuracion': -0.2} = -133,0; EBITDA = EBIT + D&A (DepreciationDepletionAndAmortization), sin sumar el SBC; NOPAT = EBIT x (1 - 15,0%; tipo LTM -1,8%, acotado 15-28%). nopat_ltm -133,0 -> -133,0"
+    },
+    {
+      "ticker": "BFIT",
+      "date": "2026-11-07",
+      "fields_changed": "BN, BT",
+      "source": "REVISION DE RESULTADOS 3T-26",
+      "summary": "Basic-Fit. REVISION 3T-26 (nota del 21-oct; cifras ya en la fila desde el 23-oct): clubs 1.809, socios 5,42 M, socios por club 3.035 (+6%), cuota 25,64, ingresos 9M 1.217 (+17,7%), guía de EBITDA menos alquiler 430-460 (subida dos veces), ~50 aperturas netas, apalancamiento 2,3x. Foso: SE ENSANCHA (la densidad funciona). Tesis escrita (00_Tesis_BFIT.md) y hoja SISTEMA añadida al modelo de Roger (Basic Fit.xlsx): BFIT pasa a completa. Pesos propuestos 10/22,5/45/22,5 pendientes de Roger. Sin cambio de valoración; regla de precio 40 / 20-25 vigente."
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-11-07",
+      "fields_changed": "AP, AQ, AS, AV, BN, BO, BP, BS, BT",
+      "source": "REVISION DE RESULTADOS 3T-26",
+      "summary": "Constellation Software. REVISION 3T-26 (nota de la compañía del 6-nov, GlobeNewswire leída en la copia de Yahoo): ingresos 3.512 (+19%), ORGANICO 2% (9M 1% sin divisas: parte baja de la banda 2-5%), flujo de explotación 717, FCFA2S 443 (−16% por la revalorización de IRGA/TSS; la nota da 77 en el texto y 117 en las tablas), compras 609 + 673 después. LTM sep-26 (NIIF 16, sin SBC): flujo de explotación 2.880 = 2.732 + 2.092 − 1.944; capex 81; arrendamientos 149 + ~17 de intereses (estimados) => FCF 2.633; ingresos 13.205 = 12.641 + 3.512 − 2.948; caja 2.693; deuda 3.999 (1.472 con recurso + 2.527 sin recurso). Foso ESTABLE con aviso en el orgánico. EBITDA/NOPAT pendientes del informe trimestral. Sin cambio de valoración. Anexo: Constellation Software/CSU_Anexo_3T-2026.md"
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-11-07",
+      "fields_changed": "BD, BF, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Decisiones de valoracion del 7-nov. DECISION DE ROGER 7-nov: aplicar la auditoria FCF 2031 (v2 fuentes primarias, 6-nov). BD 2996,6 -> 3180,3 y BF 5026,6 -> 4991,2; base de la auditoria 4327,7 como escenario central del modelo a medida. Ademas, en el modelo (no en la fila) un escenario 'bajista honesto' (pool agotado, FCF ~2700 plano a 11x) con peso 10%; pesos 10/20/45/25."
+    },
+    {
+      "ticker": "BN",
+      "date": "2026-11-07",
+      "fields_changed": "BH, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Decisiones de valoracion del 7-nov. DECISION DE ROGER 7-nov: multiplo bajista 17,5x -> 15x (entre el 11x de aseguradora de la sintesis del 19-oct y el 17,5x anterior). BI 25x sin cambio."
+    },
+    {
       "ticker": "NET",
       "date": "2026-11-06",
       "fields_changed": "AP, AQ, AS, AV, BQ, BR, BS, BN, BO, BT (solo hechos)",
@@ -1084,6 +1217,251 @@
       "summary": "ESTIMACION (aprobada): BD/BF -286,5 / -146,4 -> -233,0 / 290,0; multiplos 18x/26x -> 14x/24x."
     },
     {
+      "ticker": "VEEV",
+      "date": "2026-11-06",
+      "fields_changed": "BN, BT",
+      "source": "Investor Day del 5-nov-2026 (presentacion oficial)",
+      "summary": "NARRATIVA: objetivo de 6.000 M$ en 2030 reafirmado; 14 de las 20 mayores farmaceuticas comprometidas con Vault CRM (antes 10); IA con precio (10%). Suelo de margen del 35%. Sin cambio de BD/BF."
+    },
+    {
+      "ticker": "ZS",
+      "date": "2026-11-06",
+      "fields_changed": "BT",
+      "source": "Decision de Roger (6-nov)",
+      "summary": "Roger: 'Mantener 28x'. BI 28x sin cambio frente a la propuesta de 30x de la revision del sector (FN76, seccion 7). TIR alcista +8,9%."
+    },
+    {
+      "ticker": "NET",
+      "date": "2026-11-06",
+      "fields_changed": "BI, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 18,0 / 30,0 -> 18,0 / 28,0"
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-11-06",
+      "fields_changed": "BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 18,0 / 30,0 SIN CAMBIO (CrowdStrike: para Roger la de mejor calidad en ciberseguridad ahora mismo)"
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BI, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 19,0 / 26,0 -> 14,0 / 20,0"
+    },
+    {
+      "ticker": "CELH",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BI, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 16,0 / 22,5 -> 14,0 / 22,0"
+    },
+    {
+      "ticker": "SGO",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 12,0 / 16,0 -> 10,0 / 16,0"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 20,0 / 30,0 -> 18,0 / 30,0"
+    },
+    {
+      "ticker": "CSU",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BI, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 12,0 / 22,0 -> 16,0 / 24,0"
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BI, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 12,5 / 20,0 -> 14,0 / 22,0"
+    },
+    {
+      "ticker": "DNP",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BI, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 15,0 / 20,0 -> 14,0 / 22,0"
+    },
+    {
+      "ticker": "CHKP",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 6,0 / 15,0 -> 8,0 / 15,0"
+    },
+    {
+      "ticker": "JDG",
+      "date": "2026-11-06",
+      "fields_changed": "BH, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Revision de multiplos del sistema (sistema/salidas/propuesta_multiplos_2026-11-06.md). multiplos BH/BI 10,0 / 20,0 -> 12,0 / 20,0"
+    },
+    {
+      "ticker": "COST",
+      "date": "2026-11-06",
+      "fields_changed": "AU, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-08-30: ebitda_ltm 14.250,0 -> 14.359,0"
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2026-11-06",
+      "fields_changed": "AQ, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: deuda 180.332,0 -> 194.447,0"
+    },
+    {
+      "ticker": "MNST",
+      "date": "2026-11-06",
+      "fields_changed": "AT, AU, BN, BQ, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: ebitda_ltm 2.930,0 -> 2.854,1; nopat_ltm 2.154,0 -> 2.088,7; sbc_ltm 135,8 -> 133,3"
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-11-06",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-10-02: ebitda_ltm 1.390,0 -> 1.368,0; nopat_ltm 1.062,0 -> 1.079,5"
+    },
+    {
+      "ticker": "ABNB",
+      "date": "2026-11-06",
+      "fields_changed": "AP, AQ, AV, BN, BQ, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: ingresos_ltm 13.159,0 -> 13.933,0; sbc_ltm 1.707,0 -> 1.770,0; caja 12.069,0 -> 12.590,0; deuda 2.496,0 -> 2.371,0"
+    },
+    {
+      "ticker": "FICO",
+      "date": "2026-11-06",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, BN, BQ, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: ingresos_ltm 2.393,6 -> 2.534,9; ebitda_ltm 1.252,0 -> 1.282,4; nopat_ltm 946,0 -> 960,7; fcf_ltm 786,6 -> 848,9; sbc_ltm 174,3 -> 185,5; caja 248,4 -> 217,6; deuda 5.582,4 -> 5.262,1"
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-11-06",
+      "fields_changed": "AS, AU, AV, BN, BQ, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: ingresos_ltm 804,3 -> 837,6; ebitda_ltm 96,0 -> 99,1; fcf_ltm 54,2 -> 58,5; sbc_ltm 9,9 -> 10,6"
+    },
+    {
+      "ticker": "KKR",
+      "date": "2026-11-06",
+      "fields_changed": "AP, AV, BN, BQ, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-06-30: ingresos_ltm 25.833,0 -> 21.309,2; sbc_ltm — -> 770,9; caja 21.080,0 -> 21.202,2"
+    },
+    {
+      "ticker": "META",
+      "date": "2026-11-06",
+      "fields_changed": "AT, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: nopat_ltm 65.885,0 -> 75.742,3"
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-11-06",
+      "fields_changed": "AQ, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: deuda 126.118,0 -> 129.823,0"
+    },
+    {
+      "ticker": "UBER",
+      "date": "2026-11-06",
+      "fields_changed": "AQ, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: deuda 15.787,0 -> 15.664,0"
+    },
+    {
+      "ticker": "NKE",
+      "date": "2026-11-06",
+      "fields_changed": "AS, BN, BQ, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-08-31: fcf_ltm 1.469,0 -> 1.417,0; sbc_ltm 715,0 -> 688,0"
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-11-06",
+      "fields_changed": "AT, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-07-31: nopat_ltm -133,0 -> -135,4"
+    },
+    {
+      "ticker": "TREX",
+      "date": "2026-11-06",
+      "fields_changed": "AS, BN, BT",
+      "source": "LTM SEC (sistema/ltm.py, criterio de Roger 6-nov: lo de la SEC vale si es LTM)",
+      "summary": "Puente carpeta -> watchlist. LTM SEC XBRL a 2026-09-30: fcf_ltm 182,7 -> 190,2"
+    },
+    {
+      "ticker": "COST",
+      "date": "2026-11-06",
+      "fields_changed": "AU, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Recomendaciones de las 19 cifras de la SEC y regla de EBITDA/NOPAT/FCF propios. EBITDA/NOPAT se restauran a la cifra normalizada propia (regla de Roger: EBITDA, NOPAT y FCF siempre calculados y ajustados por nosotros; lo de la SEC queda como referencia en _sistema/ltm.json): ebitda_ltm 14.359,0 (SEC sin ajustar) -> 14.250,0 (el nuestro)"
+    },
+    {
+      "ticker": "MNST",
+      "date": "2026-11-06",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Recomendaciones de las 19 cifras de la SEC y regla de EBITDA/NOPAT/FCF propios. EBITDA/NOPAT se restauran a la cifra normalizada propia (regla de Roger: EBITDA, NOPAT y FCF siempre calculados y ajustados por nosotros; lo de la SEC queda como referencia en _sistema/ltm.json): ebitda_ltm 2.854,1 (SEC sin ajustar) -> 2.930,0 (el nuestro); nopat_ltm 2.088,7 (SEC sin ajustar) -> 2.154,0 (el nuestro)"
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-11-06",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Recomendaciones de las 19 cifras de la SEC y regla de EBITDA/NOPAT/FCF propios. EBITDA/NOPAT se restauran a la cifra normalizada propia (regla de Roger: EBITDA, NOPAT y FCF siempre calculados y ajustados por nosotros; lo de la SEC queda como referencia en _sistema/ltm.json): ebitda_ltm 1.368,0 (SEC sin ajustar) -> 1.390,0 (el nuestro); nopat_ltm 1.079,5 (SEC sin ajustar) -> 1.062,0 (el nuestro)"
+    },
+    {
+      "ticker": "FICO",
+      "date": "2026-11-06",
+      "fields_changed": "AT, AU, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Recomendaciones de las 19 cifras de la SEC y regla de EBITDA/NOPAT/FCF propios. EBITDA/NOPAT se restauran a la cifra normalizada propia (regla de Roger: EBITDA, NOPAT y FCF siempre calculados y ajustados por nosotros; lo de la SEC queda como referencia en _sistema/ltm.json): ebitda_ltm 1.282,4 (SEC sin ajustar) -> 1.252,0 (el nuestro); nopat_ltm 960,7 (SEC sin ajustar) -> 946,0 (el nuestro)"
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-11-06",
+      "fields_changed": "AP, AU, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Recomendaciones de las 19 cifras de la SEC y regla de EBITDA/NOPAT/FCF propios. EBITDA/NOPAT se restauran a la cifra normalizada propia (regla de Roger: EBITDA, NOPAT y FCF siempre calculados y ajustados por nosotros; lo de la SEC queda como referencia en _sistema/ltm.json): ebitda_ltm 99,1 (SEC sin ajustar) -> 96,0 (el nuestro); caja 24,9 -> 38,2 (LTM SEC a 30-sep, recomendación aprobada)"
+    },
+    {
+      "ticker": "META",
+      "date": "2026-11-06",
+      "fields_changed": "AT, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Recomendaciones de las 19 cifras de la SEC y regla de EBITDA/NOPAT/FCF propios. EBITDA/NOPAT se restauran a la cifra normalizada propia (regla de Roger: EBITDA, NOPAT y FCF siempre calculados y ajustados por nosotros; lo de la SEC queda como referencia en _sistema/ltm.json): nopat_ltm 75.742,3 (SEC sin ajustar) -> 65.885,0 (el nuestro)"
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-11-06",
+      "fields_changed": "AT, BN, BT",
+      "source": "DECISION DE ROGER",
+      "summary": "Recomendaciones de las 19 cifras de la SEC y regla de EBITDA/NOPAT/FCF propios. EBITDA/NOPAT se restauran a la cifra normalizada propia (regla de Roger: EBITDA, NOPAT y FCF siempre calculados y ajustados por nosotros; lo de la SEC queda como referencia en _sistema/ltm.json): nopat_ltm -135,4 (SEC sin ajustar) -> -133,0 (el nuestro)"
+    },
+    {
+      "ticker": "KIST",
+      "date": "2026-11-06",
+      "fields_changed": "AP, AQ, BN, BT",
+      "source": "MODELO POR ACTIVOS v5",
+      "summary": "Kistos: tap del bono y v5. HECHOS v5 (6-nov): tap del bono liquidado (+50 M$ a 101,10%): caja 199,5 -> 250,1 y deuda 300 -> 350; caja neta sin cambio (-99,9). Modelo por activos v5 (kistos_model_v5.py: v4 + 3T real + tap + Ringhorne 12,9 M$ + Abbey y Baker 30% con precio y capex ESTIMADOS) con Brent plano: FCF 2031 desapalancado 60$ 68,0 / 70$ 91,8 / 75$ 103,6 / 80$ 115,3 / 90$ 138,5; valor 2031 103/295/390/479/653 p; liquidez minima 2027-29 9,6 (incumple a 60$) / 78,7 / 109 / 140 / 177; a 70-80$ hay que refinanciar el bono en 2030. BD/BF 40/65 SIN CAMBIO: propuesta de BD/BF desde v5 pendiente de Roger (sube por Abbey y Baker, estimado)"
+    },
+    {
       "ticker": "TREX",
       "date": "2026-11-05",
       "fields_changed": "BF, BI, BT",
@@ -1173,6 +1551,41 @@
       "fields_changed": "AS, AV, BQ, BS, BN, BO, BP, BT (solo flujos)",
       "source": "Nota de resultados 3T26 (8-K del 4-nov-2026)",
       "summary": "DATOS parciales: FCF-SBC LTM 8.177 -> 8.356; ingresos 55.227 -> 56.526; SBC 1.939 -> 2.065. Caja, deuda, EBITDA y NOPAT siguen al 30-jun hasta el 10-Q. Sin cambio de BD/BF, multiplos ni ratings. Checklist del deep dive contra el 3T en 00_Resultados_4-nov-2026.md."
+    },
+    {
+      "ticker": "RCL",
+      "date": "2026-10-29",
+      "fields_changed": "hechos del 3T en la fila (pasada 23-29 oct)",
+      "source": "Pasada de resultados del 29-oct (Inversion Roger/00_Resultados_29-oct-2026.md); apunte a posteriori del 7-nov",
+      "summary": "LECTURA RAPIDA (registro a posteriori): sube la guía de BPA a 17,85-17,95, pero el rendimiento neto solo crece +0,6% cc en el 3T. Hechos del 3T escritos el 29-oct sin fila en este log. Falta la revision completa contra la tesis."
+    },
+    {
+      "ticker": "GRMN",
+      "date": "2026-10-29",
+      "fields_changed": "hechos del 3T en la fila (pasada 23-29 oct)",
+      "source": "Pasada de resultados del 29-oct (Inversion Roger/00_Resultados_29-oct-2026.md); apunte a posteriori del 7-nov",
+      "summary": "LECTURA RAPIDA (registro a posteriori): trimestre récord y guía subida; la acción cae por expectativas. Hechos del 3T escritos el 29-oct sin fila en este log. Falta la revision completa contra la tesis."
+    },
+    {
+      "ticker": "SU",
+      "date": "2026-10-29",
+      "fields_changed": "hechos del 3T en la fila (pasada 23-29 oct)",
+      "source": "Pasada de resultados del 29-oct (Inversion Roger/00_Resultados_29-oct-2026.md); apunte a posteriori del 7-nov",
+      "summary": "LECTURA RAPIDA (registro a posteriori): Schneider publicó el 3T el 16-oct (la pasada del 23-oct no lo recogió). Hechos del 3T escritos el 29-oct sin fila en este log. Falta la revision completa contra la tesis."
+    },
+    {
+      "ticker": "CPR",
+      "date": "2026-10-29",
+      "fields_changed": "hechos del 3T en la fila (pasada 23-29 oct)",
+      "source": "Pasada de resultados del 29-oct (Inversion Roger/00_Resultados_29-oct-2026.md); apunte a posteriori del 7-nov",
+      "summary": "LECTURA RAPIDA (registro a posteriori): +3,4% orgánico en el 3T (segunda mano); −7% en bolsa por EE.UU.. Hechos del 3T escritos el 29-oct sin fila en este log. Falta la revision completa contra la tesis."
+    },
+    {
+      "ticker": "SGO",
+      "date": "2026-10-29",
+      "fields_changed": "hechos del 3T en la fila (pasada 23-29 oct)",
+      "source": "Pasada de resultados del 29-oct (Inversion Roger/00_Resultados_29-oct-2026.md); apunte a posteriori del 7-nov",
+      "summary": "LECTURA RAPIDA (registro a posteriori): ventas 3T +2,5% comparable, precios +3,2%. Hechos del 3T escritos el 29-oct sin fila en este log. Falta la revision completa contra la tesis."
     },
     {
       "ticker": "MSFT",
