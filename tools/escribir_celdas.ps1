@@ -2,7 +2,7 @@
 #
 # NUNCA editar el .xlsx con openpyxl: la columna A lleva tipos de datos vinculados
 # (=A9.Precio) que openpyxl destruye. Este script lee data/celdas_payload.csv
-# (fila,col,valor,tipo con tipo = num | text), escribe, recalcula, comprueba que los
+# (fila,col,valor,tipo con tipo = num | text | pct | num2), escribe, recalcula, comprueba que los
 # tipos vinculados siguen vivos y guarda. Columna opcional "hoja" (19-oct-2026): si viene
 # rellena, la celda se escribe en esa hoja (p. ej. "Framework Notes"); si no, en
 # "Watchlist Ratings".
@@ -77,6 +77,8 @@ foreach ($r in $csv) {
   }
   $cell = $sh.Cells([int]$r.fila, [int]$r.col)
   if ($r.tipo -eq "text") { $cell.NumberFormat = "@"; $cell.Value2 = [string]$r.valor }
+  elseif ($r.tipo -eq "pct") { $cell.NumberFormat = "0.0%"; $cell.Value2 = [double]$r.valor }
+  elseif ($r.tipo -eq "num2") { $cell.NumberFormat = "#,##0.00"; $cell.Value2 = [double]$r.valor }
   else { $cell.Value2 = [double]$r.valor }
   $n = $n + 1
 }

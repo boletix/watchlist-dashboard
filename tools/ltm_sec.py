@@ -45,12 +45,22 @@ FLOWS = {
            "DepreciationNonproduction", "AmortizationOfIntangibleAssets"],
     "recompras": ["PaymentsForRepurchaseOfCommonStock"],
     "dividendos": ["PaymentsOfDividends", "PaymentsOfDividendsCommonStock"],
+    # 6-nov-2026 (sistema/ltm.py): principal de arrendamientos financieros, para la regla niif16
+    "arrendamientos": ["FinanceLeasePrincipalPayments", "RepaymentsOfLongTermCapitalLeaseObligations",
+                       "FinanceLeasePrincipalPaymentsAndInterest"],
     "adquisiciones": ["PaymentsToAcquireBusinessesNetOfCashAcquired"],
+    # 7-nov-2026: partidas no recurrentes para normalizar EBIT, EBITDA y NOPAT (sistema/motor/normalizar.py)
+    "reestructuracion": ["RestructuringCharges", "RestructuringCosts", "RestructuringCostsAndAssetImpairmentCharges"],
+    "deterioro": ["GoodwillImpairmentLoss", "ImpairmentOfIntangibleAssetsExcludingGoodwill", "AssetImpairmentCharges",
+                  "ImpairmentOfLongLivedAssetsHeldForUse"],
 }
 STOCKS = {
     "caja": ["CashAndCashEquivalentsAtCarryingValue", "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents"],
     "inversiones_cp": ["ShortTermInvestments", "MarketableSecuritiesCurrent",
                        "AvailableForSaleSecuritiesDebtSecuritiesCurrent"],
+    # 7-nov-2026 (criterio de Roger): la renta fija liquida a largo plazo cuenta como caja; las participaciones no
+    "inversiones_lp_deuda": ["AvailableForSaleSecuritiesDebtSecuritiesNoncurrent", "MarketableSecuritiesNoncurrent",
+                             "HeldToMaturitySecuritiesNoncurrent"],
     "deuda_lp": ["LongTermDebtNoncurrent", "LongTermDebt", "ConvertibleNotesPayable",
                  "ConvertibleDebtNoncurrent", "LongTermDebtAndCapitalLeaseObligations"],
     "deuda_cp": ["LongTermDebtCurrent", "DebtCurrent", "ConvertibleNotesPayableCurrent"],

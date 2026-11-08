@@ -118,6 +118,14 @@ COLUMN_MAP: dict[str, str] = {
     "Capex de crecimiento": "growth_capex_ltm",
     "FCF normalizado": "fcf_ltm_normalized",
     "Fuente del SBC": "fcf_note",
+    # 8-nov-2026: TIR exigida de Roger (BU) y precios de compra a esa TIR (BV-BZ),
+    # escritos por sistema/motor/tir_exigida.py. No dependen del precio de hoy.
+    "TIR exigida": "tir_required",
+    "Precio compra MC": "buy_price_mc",
+    "Precio compra DCF": "buy_price_dcf",
+    "DCF bajista": "dcf_bear",
+    "DCF alcista": "dcf_bull",
+    "Nota de valoración": "valuation_note",
 }
 
 

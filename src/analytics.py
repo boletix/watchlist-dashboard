@@ -15,7 +15,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from src import fx
+from src import fx, valuation
 
 log = logging.getLogger(__name__)
 
@@ -222,6 +222,45 @@ def _fx_factor(row, fx_map=None):
     if fx_map is not None and (report, quote) in fx_map:
         return fx_map[(report, quote)]
     return fx.conversion_factor(report, quote)
+
+
+def _buy_prices(row, fx_map=None):
+    """Precios de compra a la TIR exigida (BU-BY del Excel) frente al precio de hoy.
+
+    - buy_gap_mc / buy_gap_dcf: cuánto tiene que moverse el precio para llegar al precio de compra
+      (negativo = tiene que bajar; positivo = ya está por debajo).
+    - irr_mc_today: TIR ponderada del Monte Carlo a precio de hoy, exacta desde BV:
+      (1 + TIR) = (1 + TIR exigida) · (BV / precio)^(1/5).
+    - irr_dcf_today: TIR implícita del DCF de 3 escenarios (src/valuation.py) a precio de hoy.
+    - buy_zone: "ambos" (el precio cumple tu TIR por los dos métodos), "uno", "cerca" (a menos de
+      un 10% del mayor de los dos precios de compra) o "lejos".
+    """
+    out = {"buy_gap_mc": np.nan, "buy_gap_dcf": np.nan, "irr_mc_today": np.nan, "irr_dcf_today": np.nan,
+           "irr_dcf_floor": False, "margin_mc": np.nan, "margin_dcf": np.nan, "buy_zone": None}
+    _v = _safe_float
+    price, h = _v(row.get("price")), _v(row.get("tir_required"))
+    bmc, bdcf = _v(row.get("buy_price_mc")), _v(row.get("buy_price_dcf"))
+    if price is None or price <= 0 or h is None:
+        return out
+    if bmc is not None and bmc > 0:
+        out["buy_gap_mc"] = bmc / price - 1
+        out["irr_mc_today"] = valuation.tir_desde_precio_compra(bmc, price, h)
+        out["margin_mc"] = out["irr_mc_today"] - h
+    if bdcf is not None:
+        out["buy_gap_dcf"] = bdcf / price - 1
+    factor = _fx_factor(row, fx_map)
+    if factor is not None:
+        r, lim = valuation.tir_implicita(row, price, factor, con_limite=True)
+        if r is not None:
+            out["irr_dcf_today"] = r
+            out["irr_dcf_floor"] = lim == "suelo"
+            out["margin_dcf"] = r - h
+    ok = [b for b in (bmc, bdcf) if b is not None and b > 0]
+    if ok:
+        n_ok = sum(1 for b in ok if price <= b)
+        out["buy_zone"] = ("ambos" if n_ok == len(ok) == 2 else "uno" if n_ok >= 1
+                           else "cerca" if price <= 1.10 * max(ok) else "lejos")
+    return out
 
 
 def _reprice_valuation(row, fx_map=None):
@@ -678,6 +717,11 @@ def enrich(df, fx_map=None, usd_map=None):
     for col in ["ev_nopat", "quality_multiple_a", "quality_multiple_b",
                 "quality_adjusted_multiple"]:
         out[col] = [rec[col] for rec in qa_records]
+    if "tir_required" in out.columns:
+        buy_records = [_buy_prices(r, fx_map) for _, r in out.iterrows()]
+        for col in ["buy_gap_mc", "buy_gap_dcf", "irr_mc_today", "irr_dcf_today", "irr_dcf_floor",
+                    "margin_mc", "margin_dcf", "buy_zone"]:
+            out[col] = [rec[col] for rec in buy_records]
     out["edge_to_fair"] = out.apply(_edge_to_fair, axis=1)
     out["quality_zone"] = out.apply(_quality_zone, axis=1)
     out["kelly_fraction"] = out.apply(_kelly_fractional, axis=1)
