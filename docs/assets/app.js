@@ -651,6 +651,21 @@ function openDrawer(ticker) {
         </div>
       </div>
 
+      ${c.tir_required != null && !isNaN(c.tir_required) ? `
+      <div class="drawer__section">
+        <h3>TIR exigida y precios de compra</h3>
+        <div class="stat-grid">
+          <div class="stat"><div class="stat__label">TIR exigida</div><div class="stat__value">${F.pct(c.tir_required)}</div></div>
+          <div class="stat"><div class="stat__label">Precio hoy</div><div class="stat__value">${buyPx(c.price)}</div></div>
+          <div class="stat"><div class="stat__label">Compra MC (múltiplos)</div><div class="stat__value">${buyPx(c.buy_price_mc)}</div></div>
+          <div class="stat"><div class="stat__label">Compra DCF</div><div class="stat__value">${buyPx(c.buy_price_dcf)}</div></div>
+          <div class="stat"><div class="stat__label">TIR MC a precio de hoy</div><div class="stat__value ${c.margin_mc >= 0 ? 'positive' : 'negative'}">${F.pct(c.irr_mc_today)}</div></div>
+          <div class="stat"><div class="stat__label">TIR DCF a precio de hoy</div><div class="stat__value ${c.margin_dcf >= 0 ? 'positive' : 'negative'}">${c.irr_dcf_floor ? '&lt;' : ''}${F.pct(c.irr_dcf_today)}</div></div>
+          <div class="stat"><div class="stat__label">DCF bajista / alcista</div><div class="stat__value">${buyPx(c.dcf_bear)} / ${buyPx(c.dcf_bull)}</div></div>
+        </div>
+        ${c.valuation_note ? `<div class="panel__hint" style="margin-top:8px;">${c.valuation_note}</div>` : ''}
+      </div>` : ''}
+
             <div class="drawer__section">
         <h3>R1 — Structural Quality Breakdown</h3>
         ${r1Dims.map(ratingBar).join('')}
@@ -1097,12 +1112,103 @@ function renderEarningsCalendar() {
 }
 
 /* =====================================================================
+   PRECIOS DE COMPRA A LA TIR EXIGIDA (8-nov-2026)
+   BU-BZ del Excel: TIR exigida de Roger y precio al que cada método la cumple.
+   ===================================================================== */
+const BUY = { zone: 'todas', showAll: false };
+const BUY_ZONES = [
+  ['todas', 'todas'], ['ambos', 'cumple por los dos'], ['uno', 'cumple por uno'],
+  ['cerca', 'a menos del 10%'], ['lejos', 'lejos'],
+];
+function buyPx(v) {
+  if (v == null || isNaN(v)) return '—';
+  return v >= 1000 ? v.toLocaleString('es-ES', { maximumFractionDigits: 0 })
+                   : v.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+function buyGap(c) {
+  const g = [c.buy_gap_mc, c.buy_gap_dcf].filter((x) => x != null && !isNaN(x));
+  return g.length ? Math.max(...g) : null;
+}
+function buyBar(c) {
+  const vals = [c.price, c.dcf_bull, c.buy_price_mc, c.buy_price_dcf].filter((x) => x != null && !isNaN(x) && x > 0);
+  if (!vals.length || !(c.price > 0)) return '';
+  const top = Math.max(...vals) * 1.08;
+  const x = (v) => Math.max(0, Math.min(100, (v / top) * 100)).toFixed(2) + '%';
+  let h = '';
+  if (c.dcf_bear != null && c.dcf_bull != null && c.dcf_bull > 0) {
+    h += `<span class="buybar__rng" style="left:${x(c.dcf_bear)};width:calc(${x(c.dcf_bull)} - ${x(c.dcf_bear)})" title="DCF bajista ${buyPx(c.dcf_bear)} · alcista ${buyPx(c.dcf_bull)}"></span>`;
+  }
+  if (c.buy_price_dcf > 0) h += `<span class="buybar__dcf" style="left:${x(c.buy_price_dcf)}" title="compra DCF ${buyPx(c.buy_price_dcf)}"></span>`;
+  if (c.buy_price_mc > 0) h += `<span class="buybar__mc" style="left:${x(c.buy_price_mc)}" title="compra MC ${buyPx(c.buy_price_mc)}"></span>`;
+  h += `<span class="buybar__px" style="left:${x(c.price)}" title="precio ${buyPx(c.price)}"></span>`;
+  return `<div class="buybar">${h}</div>`;
+}
+function renderBuyPanel() {
+  const target = document.getElementById('buy-panel');
+  if (!target) return;
+  const all = STATE.filtered.filter((c) => c.tir_required != null && !isNaN(c.tir_required));
+  if (!all.length) { target.style.display = 'none'; return; }
+  const counts = {};
+  all.forEach((c) => { counts[c.buy_zone || 'lejos'] = (counts[c.buy_zone || 'lejos'] || 0) + 1; });
+  let rows = BUY.zone === 'todas' ? all : all.filter((c) => (c.buy_zone || 'lejos') === BUY.zone);
+  rows = [...rows].sort((a, b) => (buyGap(b) ?? -9) - (buyGap(a) ?? -9));
+  const shown = BUY.showAll ? rows : rows.slice(0, 15);
+  const F = CHARTS.fmt;
+  const pctS = (v) => (v == null || isNaN(v) ? '—' : (v > 0 ? '+' : '') + (v * 100).toFixed(0) + '%');
+  const cls = (v) => (v == null || isNaN(v) ? '' : v >= 0 ? 'positive' : 'negative');
+  let html = `
+    <div class="panel__header">
+      <div class="panel__title">precios de compra <em>·</em> tir exigida</div>
+      <div class="panel__hint">precio al que cada método cumple la TIR que exiges a esa empresa · ordenado por distancia</div>
+    </div>
+    <div class="chip-row buy-zones">
+      ${BUY_ZONES.map(([k, l]) => `<button class="chip ${BUY.zone === k ? 'active' : ''}" data-zone="${k}">${l} ${k === 'todas' ? all.length : (counts[k] || 0)}</button>`).join('')}
+    </div>
+    <div class="table-wrap">
+      <table class="table buy-table">
+        <thead><tr>
+          <th>ticker</th><th class="num">exiges</th><th class="num">precio</th>
+          <th class="num">compra MC</th><th class="num">compra DCF</th><th class="num">distancia</th>
+          <th class="num">TIR MC hoy</th><th class="num">TIR DCF hoy</th><th class="buy-th-bar">DCF bajista–alcista · <span class="lg-mc">▮ MC</span> <span class="lg-dcf">▮ DCF</span> <span class="lg-px">● precio</span></th>
+        </tr></thead><tbody>`;
+  shown.forEach((c) => {
+    const g = buyGap(c);
+    const dcfT = c.irr_dcf_today == null || isNaN(c.irr_dcf_today) ? '—' : (c.irr_dcf_floor ? '&lt;' : '') + F.pct(c.irr_dcf_today, 1);
+    html += `
+      <tr data-ticker="${c.ticker}">
+        <td><span class="buy-tk">${c.ticker}</span> <span class="buy-zone buy-zone--${c.buy_zone || 'lejos'}"></span>${c.name && c.name !== c.ticker ? `<div class="buy-nm">${c.name}</div>` : ''}</td>
+        <td class="num">${F.pct(c.tir_required, 1)}</td>
+        <td class="num">${buyPx(c.price)}</td>
+        <td class="num">${buyPx(c.buy_price_mc)}</td>
+        <td class="num">${buyPx(c.buy_price_dcf)}</td>
+        <td class="num ${cls(g)}">${pctS(g)}</td>
+        <td class="num ${cls(c.margin_mc)}">${F.pct(c.irr_mc_today, 1)}</td>
+        <td class="num ${cls(c.margin_dcf)}">${dcfT}</td>
+        <td class="buy-td-bar">${buyBar(c)}</td>
+      </tr>`;
+  });
+  html += `</tbody></table></div>
+    <div class="buy-foot">
+      <span>distancia: lo que tiene que moverse el precio para llegar al mayor de los dos precios de compra (negativa = tiene que bajar).</span>
+      <span>TIR hoy en verde si cumple la exigida. MC = múltiplos de salida; DCF = flujos descontados en 3 escenarios.</span>
+      ${rows.length > 15 ? `<button class="chip" id="buy-more">${BUY.showAll ? 'ver solo 15' : 'ver las ' + rows.length}</button>` : ''}
+    </div>`;
+  target.innerHTML = html;
+  target.style.display = 'block';
+  target.querySelectorAll('[data-zone]').forEach((b) => b.addEventListener('click', () => { BUY.zone = b.dataset.zone; renderBuyPanel(); }));
+  const more = target.querySelector('#buy-more');
+  if (more) more.addEventListener('click', () => { BUY.showAll = !BUY.showAll; renderBuyPanel(); });
+  target.querySelectorAll('tr[data-ticker]').forEach((tr) => tr.addEventListener('click', () => openDrawer(tr.dataset.ticker)));
+}
+
+/* =====================================================================
    REFRESH ORCHESTRATOR
    ===================================================================== */
 function refresh() {
   applyFilters();
   renderHeader();
   renderKPIs();
+  renderBuyPanel();
   renderTable();
   renderCharts();
   renderScoreV2Table();

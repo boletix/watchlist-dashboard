@@ -1168,3 +1168,32 @@ input[type="range"]::-webkit-slider-thumb {
   .updates-feed { grid-template-columns: 1fr; }
   .deltas-strip { padding: 8px 10px; }
 }
+
+
+/* =====================================================================
+   PRECIOS DE COMPRA A LA TIR EXIGIDA (8-nov-2026)
+   ===================================================================== */
+.buy-panel { margin: var(--space-5) 0; min-width: 0; max-width: 100%; }
+.buy-panel .table-wrap { overflow-x: auto; max-width: 100%; }
+.buy-table td.positive { color: var(--positive); }
+.buy-table td.negative { color: var(--negative); }
+.buy-zones { margin-bottom: var(--space-3); }
+.buy-table td, .buy-table th { white-space: nowrap; }
+.buy-table tbody tr { cursor: pointer; }
+.buy-tk { font-family: var(--font-mono); color: var(--text-0); }
+.buy-nm { font-size: 10px; color: var(--text-2); max-width: 14em; overflow: hidden; text-overflow: ellipsis; }
+.buy-zone { display: inline-block; width: 7px; height: 7px; border-radius: 50%; vertical-align: 1px; background: var(--text-3); }
+.buy-zone--ambos { background: var(--positive); }
+.buy-zone--uno { background: var(--accent); }
+.buy-zone--cerca { background: var(--neutral); }
+.buy-th-bar, .buy-td-bar { min-width: 220px; width: 30%; }
+.buy-th-bar .lg-mc { color: var(--accent); }
+.buy-th-bar .lg-dcf { color: var(--neutral); }
+.buy-th-bar .lg-px { color: var(--text-0); }
+.buybar { position: relative; height: 14px; }
+.buybar__rng { position: absolute; top: 5px; height: 4px; background: var(--bg-3); border-radius: 2px; }
+.buybar__dcf, .buybar__mc { position: absolute; top: 1px; bottom: 1px; width: 3px; margin-left: -1px; }
+.buybar__dcf { background: var(--neutral); }
+.buybar__mc { background: var(--accent); }
+.buybar__px { position: absolute; top: 3px; width: 8px; height: 8px; margin-left: -4px; border-radius: 50%; background: var(--text-0); box-shadow: 0 0 0 2px var(--bg-1); }
+.buy-foot { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); align-items: center; margin-top: var(--space-3); font-size: 11px; color: var(--text-2); }
