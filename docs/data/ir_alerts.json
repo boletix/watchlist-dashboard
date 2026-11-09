@@ -1,157 +1,113 @@
 {
  "meta": {
-  "generated_at": "2026-11-09T17:45:43+00:00",
+  "generated_at": "2026-11-09T21:39:14+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 13,
-  "n_calendar_drift": 35,
-  "n_financial_drift": 24,
+  "n_documents": 9,
+  "n_calendar_drift": 36,
+  "n_financial_drift": 26,
   "n_errors": 0,
   "seeded": false
  },
  "documents": [
   {
-   "id": "news:3dd3d149-9c03-3fa6-8306-7110f824ec1c",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Airbnb Soars Over 11% After Strong FCF Results - What's the Best ABNB Play Now?",
-   "date": "2026-11-08",
-   "url": "https://www.barchart.com/story/news/8724561/airbnb-soars-over-11-after-strong-fcf-results-what-s-the-best-abnb-play-now",
-   "priority": "media",
-   "ticker": "ABNB",
-   "name": "ABNB"
-  },
-  {
-   "id": "news:530cea32-f97f-3484-befc-ec9c33c7e33d",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "What Trex (TREX) Said on Its Q3 Earnings Call",
-   "date": "2026-11-08",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-trex-trex-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
-   "priority": "media",
-   "ticker": "TREX",
-   "name": "TREX"
-  },
-  {
-   "id": "news:878fc030-a2dd-3694-9490-4e80dd5bf3b5",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Kroger and Albertsons’ CEOs Just Signaled the Walmart Price Gap Is Here to Stay. It Costs a Couple About $1,000 a Year.",
-   "date": "2026-11-09",
-   "url": "https://247wallst.com/investing/2026/11/09/kroger-and-albertsons-ceos-just-signaled-the-walmart-price-gap-is-here-to-stay-it-costs-a-couple-about-1000-a-year/",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "sec:0001404912-26-000030:8-K",
+   "id": "sec:0001404912-26-000034:10-Q",
    "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
    "date": "2026-11-09",
-   "url": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000030/kkr-20261109.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000034/kkr-20260930.htm",
+   "priority": "alta",
+   "ticker": "KKR",
+   "name": "KKR"
+  },
+  {
+   "id": "sec:0002011641-26-000044:10-Q",
+   "source": "SEC EDGAR",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000044/ferg-20260930.htm",
+   "priority": "alta",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "news:84163fa2-d4b5-3ea1-bbe3-6835933db544",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "What KKR & Co. Inc. (KKR) Said on Its Q3 Earnings Call",
+   "date": "2026-11-09",
+   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-kkr-co-inc-kkr-said-on-its-q3-earnings-call-2026-11-09/?utm_source=yahoofinance&utm_medium=yahoofinance",
    "priority": "media",
    "ticker": "KKR",
    "name": "KKR"
   },
   {
-   "id": "news:15169be0-9456-3e40-a0e6-8120808aee6d",
+   "id": "news:5c9096e2-0016-329f-b340-1fd4863b8bd1",
    "source": "Noticias",
    "form": "noticia",
-   "title": "NET Stock Rises 10% Post Q3 Results: Should You Buy, Sell or Hold?",
+   "title": "Ferguson (FERG) Q3 2026 Earnings Call Transcript",
    "date": "2026-11-09",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/net-stock-rises-10-post-121100821.html",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/09/ferguson-ferg-q3-2026-earnings-call-transcript/",
    "priority": "media",
-   "ticker": "NET",
-   "name": "NET"
+   "ticker": "FERG",
+   "name": "FERG"
   },
   {
-   "id": "sec:0001985487-26-000030:6-K",
-   "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — 6-K",
-   "date": "2026-11-09",
-   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000198548726000030/kaspi.kz_form_6-k_nov_09.htm",
-   "priority": "media",
-   "ticker": "KSPI",
-   "name": "KSPI"
-  },
-  {
-   "id": "news:68ee36c5-b6bb-30c8-85c6-24b8514705f8",
+   "id": "news:702195e0-0117-338e-ace5-8e56fe842fa3",
    "source": "Noticias",
    "form": "noticia",
-   "title": "What Joint Stock Company Kaspi.kz (KSPI) Said on Its Q3 Earnings Call",
+   "title": "Ferguson Enterprises Inc (FERG) (Q3 2026) Earnings Call Highlights: Sales Up 9. ...",
    "date": "2026-11-09",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-joint-stock-company-kaspikz-kspi-said-on-its-q3-earnings-call-2026-11-09/?utm_source=yahoofinance&utm_medium=yahoofinance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/ferguson-enterprises-inc-ferg-q3-210625075.html",
    "priority": "media",
-   "ticker": "KSPI",
-   "name": "KSPI"
+   "ticker": "FERG",
+   "name": "FERG"
   },
   {
-   "id": "sec:0002011641-26-000042:8-K",
+   "id": "sec:0000885978-26-000078:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
-   "title": "Hecho relevante — 8-K",
+   "title": "Hecho relevante — Hecho relevante",
    "date": "2026-11-09",
-   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000042/ferg-20261109.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/885978/000088597826000078/usph-20261105.htm",
    "priority": "media",
-   "ticker": "FERG",
-   "name": "FERG"
+   "ticker": "USPH",
+   "name": "USPH"
   },
   {
-   "id": "news:0410aa26-b4c2-36e8-9fb2-fa9e50a5678d",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Ferguson Soars 12% on Raised Guidance as Non-Residential Sales Jump 15% Despite “Challenging Residential Market”",
+   "id": "sec:0001069878-26-000087:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
    "date": "2026-11-09",
-   "url": "https://www.tikr.com/blog/ferguson-soars-12-on-raised-guidance-as-non-residential-sales-jump-15-despite-challenging-residential-market?ref=yahoofinance&tlnk=yf-261109-hg8vg64m",
-   "priority": "media",
-   "ticker": "FERG",
-   "name": "FERG"
+   "url": "https://www.sec.gov/Archives/edgar/data/1069878/000106987826000087/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "TREX",
+   "name": "TREX"
   },
   {
-   "id": "news:8dfc77fc-1b90-3f26-b6a2-89595c78bc5e",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Ferguson soars on earnings beat, raised guidance",
+   "id": "sec:0001069878-26-000085:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
    "date": "2026-11-09",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/ferguson-soars-earnings-beat-raised-154624790.html",
-   "priority": "media",
-   "ticker": "FERG",
-   "name": "FERG"
+   "url": "https://www.sec.gov/Archives/edgar/data/1069878/000106987826000085/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "TREX",
+   "name": "TREX"
   },
   {
-   "id": "news:28f6a2db-8cde-314f-a3c1-bea093b2bb54",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Ferguson Enterprises Lifts Sales Growth Outlook Following Third-Quarter Beat",
-   "date": "2026-11-09",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/ferguson-enterprises-lifts-sales-growth-151632604.html",
-   "priority": "media",
-   "ticker": "FERG",
-   "name": "FERG"
-  },
-  {
-   "id": "news:80bd6bb1-6d6c-3ee9-a880-40203cacfcc6",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber launches parking service following SpotHero acquisition, with an eye on robotaxis",
-   "date": "2026-11-09",
-   "url": "https://finance.yahoo.com/technology/articles/uber-launches-parking-following-spothero-170000062.html",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "sec:0001046179-26-000734:4",
+   "id": "sec:0001628280-26-072205:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
    "date": "2026-11-09",
-   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000734/xslF345X06/wk-form4_1794222904.xml",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341766/000162828026072205/xslF345X06/wk-form4_1794258916.xml",
    "priority": "baja",
-   "ticker": "TSM",
-   "name": "TSM"
+   "ticker": "CELH",
+   "name": "CELH"
   }
  ],
  "financial_drift": [
@@ -168,6 +124,34 @@
    "trimestre_nuevo": false,
    "sospecha_unidades": true,
    "severidad": "unidades"
+  },
+  {
+   "ticker": "RAA",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-08-06",
+   "revenue_ltm_mercado": 1315.0,
+   "revenue_ltm_excel": 1296.0,
+   "desvio_revenue": 0.0147,
+   "fcf_ltm_mercado": 246.0,
+   "fcf_ltm_excel": 250.2,
+   "desvio_fcf": -0.017,
+   "trimestre_nuevo": true,
+   "sospecha_unidades": false,
+   "severidad": "alta"
+  },
+  {
+   "ticker": "NTO",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-08-06",
+   "revenue_ltm_mercado": 2179527.0,
+   "revenue_ltm_excel": 2258501.0,
+   "desvio_revenue": -0.035,
+   "fcf_ltm_mercado": null,
+   "fcf_ltm_excel": 262620.0,
+   "desvio_fcf": null,
+   "trimestre_nuevo": true,
+   "sospecha_unidades": false,
+   "severidad": "alta"
   },
   {
    "ticker": "AMZN",
@@ -187,29 +171,15 @@
    "ticker": "FICO",
    "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-07-29",
-   "revenue_ltm_mercado": 2393.6,
+   "revenue_ltm_mercado": 2534.9,
    "revenue_ltm_excel": 2534.9,
-   "desvio_revenue": -0.0558,
-   "fcf_ltm_mercado": 960.9,
+   "desvio_revenue": -0.0,
+   "fcf_ltm_mercado": 1034.4,
    "fcf_ltm_excel": 1034.4,
-   "desvio_fcf": -0.0711,
+   "desvio_fcf": -0.0,
    "trimestre_nuevo": true,
    "sospecha_unidades": false,
    "severidad": "alta"
-  },
-  {
-   "ticker": "MNST",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-11-05",
-   "revenue_ltm_mercado": 9219.0,
-   "revenue_ltm_excel": 9584.8,
-   "desvio_revenue": -0.0382,
-   "fcf_ltm_mercado": 2081.5,
-   "fcf_ltm_excel": 2079.0,
-   "desvio_fcf": 0.0012,
-   "trimestre_nuevo": false,
-   "sospecha_unidades": false,
-   "severidad": "media"
   },
   {
    "ticker": "ABNB",
@@ -310,6 +280,20 @@
    "severidad": "media"
   },
   {
+   "ticker": "KSPI",
+   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimos_resultados_en_excel": "2026-11-09",
+   "revenue_ltm_mercado": 4402120.0,
+   "revenue_ltm_excel": 4456524.0,
+   "desvio_revenue": -0.0122,
+   "fcf_ltm_mercado": 952971.0,
+   "fcf_ltm_excel": 1068763.0,
+   "desvio_fcf": -0.1083,
+   "trimestre_nuevo": false,
+   "sospecha_unidades": false,
+   "severidad": "media"
+  },
+  {
    "ticker": "CBAV",
    "ultimo_trimestre_publicado": "2026-06-30",
    "ultimos_resultados_en_excel": "2026-07-29",
@@ -381,7 +365,7 @@
   },
   {
    "ticker": "FERG",
-   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-08-04",
    "revenue_ltm_mercado": 32889.0,
    "revenue_ltm_excel": 31446.0,
@@ -389,20 +373,20 @@
    "fcf_ltm_mercado": 1265.0,
    "fcf_ltm_excel": 1265.0,
    "desvio_fcf": 0.0,
-   "trimestre_nuevo": false,
+   "trimestre_nuevo": true,
    "sospecha_unidades": false,
-   "severidad": "media"
+   "severidad": "alta"
   },
   {
    "ticker": "CELH",
    "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-11-05",
-   "revenue_ltm_mercado": 3047.3,
+   "revenue_ltm_mercado": 3169.4,
    "revenue_ltm_excel": 3169.4,
-   "desvio_revenue": -0.0385,
-   "fcf_ltm_mercado": 462.8,
+   "desvio_revenue": -0.0,
+   "fcf_ltm_mercado": 269.0,
    "fcf_ltm_excel": 212.29999999999998,
-   "desvio_fcf": 1.1798,
+   "desvio_fcf": 0.2671,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -451,17 +435,17 @@
   },
   {
    "ticker": "USPH",
-   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-08-05",
-   "revenue_ltm_mercado": 812.2,
+   "revenue_ltm_mercado": 837.6,
    "revenue_ltm_excel": 837.6,
-   "desvio_revenue": -0.0303,
-   "fcf_ltm_mercado": 64.1,
+   "desvio_revenue": 0.0,
+   "fcf_ltm_mercado": 69.1,
    "fcf_ltm_excel": 69.1,
-   "desvio_fcf": -0.0728,
-   "trimestre_nuevo": false,
+   "desvio_fcf": -0.0,
+   "trimestre_nuevo": true,
    "sospecha_unidades": false,
-   "severidad": "media"
+   "severidad": "alta"
   },
   {
    "ticker": "RCL",
@@ -606,6 +590,13 @@
    "delta_days": -112
   },
   {
+   "ticker": "KSPI",
+   "excel": "2027-03-02",
+   "market": "2026-11-09",
+   "estimated": false,
+   "delta_days": -113
+  },
+  {
    "ticker": "COR",
    "excel": "2027-02-18",
    "market": "2026-11-02",
@@ -741,10 +732,44 @@
  ],
  "todo_excel": [
   {
+   "ticker": "FERG",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-08-04",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000044/ferg-20260930.htm"
+   ]
+  },
+  {
+   "ticker": "KKR",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-07-30",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000034/kkr-20260930.htm"
+   ]
+  },
+  {
    "ticker": "BN",
    "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
    "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 80690.0 vs 77059.0, FCF 6200.0 vs -9413.0. Revisar en que moneda reporta y el factor de Framework Notes.",
    "columnas": "AR-BC y Framework Notes (factor de conversion)",
+   "urls": []
+  },
+  {
+   "ticker": "RAA",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-08-06); ingresos LTM: Excel 1296.0 vs mercado 1315.0 (+1.5%); FCF LTM: Excel 250.2 vs mercado 246.0 (-1.7%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
+   "ticker": "NTO",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-08-06); ingresos LTM: Excel 2258501.0 vs mercado 2179527.0 (-3.5%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
@@ -757,14 +782,7 @@
   {
    "ticker": "FICO",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-29); ingresos LTM: Excel 2534.9 vs mercado 2393.6 (-5.6%); FCF LTM: Excel 1034.4 vs mercado 960.9 (-7.1%)",
-   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
-   "urls": []
-  },
-  {
-   "ticker": "MNST",
-   "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 9584.8 vs mercado 9219.0 (-3.8%); FCF LTM: Excel 2079.0 vs mercado 2081.5 (+0.1%)",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-07-29); ingresos LTM: Excel 2534.9 vs mercado 2534.9 (-0.0%); FCF LTM: Excel 1034.4 vs mercado 1034.4 (-0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -818,6 +836,13 @@
    "urls": []
   },
   {
+   "ticker": "KSPI",
+   "accion": "CUENTAS DESFASADAS en el Excel",
+   "motivo": "ingresos LTM: Excel 4456524.0 vs mercado 4402120.0 (-1.2%); FCF LTM: Excel 1068763.0 vs mercado 952971.0 (-10.8%)",
+   "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
+   "urls": []
+  },
+  {
    "ticker": "CBAV",
    "accion": "CUENTAS DESFASADAS en el Excel",
    "motivo": "ingresos LTM: Excel 317.0 vs mercado 317.0 (-0.0%); FCF LTM: Excel 33.4 vs mercado 46.3 (+38.7%)",
@@ -855,14 +880,14 @@
   {
    "ticker": "FERG",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 31446.0 vs mercado 32889.0 (+4.6%); FCF LTM: Excel 1265.0 vs mercado 1265.0 (+0.0%)",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-08-04); ingresos LTM: Excel 31446.0 vs mercado 32889.0 (+4.6%); FCF LTM: Excel 1265.0 vs mercado 1265.0 (+0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
   {
    "ticker": "CELH",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 3169.4 vs mercado 3047.3 (-3.9%); FCF LTM: Excel 212.29999999999998 vs mercado 462.8 (+118.0%)",
+   "motivo": "ingresos LTM: Excel 3169.4 vs mercado 3169.4 (-0.0%); FCF LTM: Excel 212.29999999999998 vs mercado 269.0 (+26.7%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -890,7 +915,7 @@
   {
    "ticker": "USPH",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 837.6 vs mercado 812.2 (-3.0%); FCF LTM: Excel 69.1 vs mercado 64.1 (-7.3%)",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-08-05); ingresos LTM: Excel 837.6 vs mercado 837.6 (+0.0%); FCF LTM: Excel 69.1 vs mercado 69.1 (-0.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -1017,6 +1042,13 @@
    "ticker": "GRMN",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-17 y el mercado dice 2026-10-28 (-112 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "KSPI",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2027-03-02 y el mercado dice 2026-11-09 (-113 dias de diferencia)",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },

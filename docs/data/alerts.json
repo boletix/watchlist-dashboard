@@ -1,12 +1,26 @@
 {
   "meta": {
-    "generated_at": "2026-11-09T17:44:46+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-11-09T21:38:26+00:00",
+    "n_alerts": 1,
     "by_severity": {
-      "high": 0,
+      "high": 1,
       "medium": 0,
       "low": 0
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "hunting_ground_entry",
+      "severity": "high",
+      "ticker": "CSU",
+      "name": "CSU",
+      "category": "Vertical Saas",
+      "message": "CSU entered Hunting Ground (rating 8.45, EV/FCF 19.7x)",
+      "metrics": {
+        "rating_composite": 8.45,
+        "ev_fcf": 19.673103899679134,
+        "irr_best": 0.2139057665032713
+      }
+    }
+  ]
 }

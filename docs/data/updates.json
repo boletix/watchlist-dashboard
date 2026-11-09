@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 389,
+    "n_updates": 392,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -837,6 +837,27 @@
       "fields_changed": "T (R2 Financials); AH (R3 Financing Source)",
       "source": "Deep dive completo del 25-ago-2026",
       "summary": "Spotify. R2 Financials 13 -> 15 y R3 Financing Source 2 -> 4. Ha demostrado lo que tenia que demostrar: que el apalancamiento operativo existia. De perdidas estructurales a un resultado operativo de 2.653 M EUR (14,6% de margen), un FCF de 3.267 (18% de margen) y un ROIC del 24%, con 6.519 M EUR de CAJA NETA. Ya no depende de nadie para financiarse. LA LECCION QUE HAY QUE LLEVARSE AL RESTO DEL LIBRO: la tesis del Drive fijaba el caso alcista en 380 $ y la accion esta en 550,72 $; fallo en una unica variable, el margen, y ella misma la habia senalado como su punto debil (los margenes operativos me generan dudas, el apalancamiento operativo es poco visible). En negocios con base de costes fija grande y margen bruto creciente, el apalancamiento operativo NO es lineal: es explosivo al cruzar el umbral de rentabilidad. Mismo error que en Airbnb (11% proyectado, 20,8% real). Y es lo que puede estar pasando AHORA con SentinelOne, que acaba de cruzar a operativo no-GAAP positivo. NO se sube MOAT ni Concentration: Spotify no es dueno de lo que vende y tres discograficas pueden decidir su margen; el -2 de concentracion esta bien puesto."
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-11-09",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, BN, BO, BP, BQ, BS, BT",
+      "source": "RESULTADOS 3T26 + DECISION DE ROGER",
+      "summary": "Correcciones de datos con el 3T26 y caja neta 0 (Roger, 9-nov). 3T26 (6-K 9-nov-2026): LTM a 30-sep = FY25 + 9M26 - 9M25. Beneficio LTM 1.068.763 - SBC 17.464 = FCF 1.051.299; EBITDA aj. 1.611.708; ingresos 4.456.524; fondos propios 2.755.517. BS alineado con AS. Proximos resultados 02/03/2027 ESTIMADA. DECISION DE ROGER 9-nov: caja y deuda a 0 (la caja de un banco es de los depositantes; antes convencion 900.000/100.000); BD/BF/BH/BI sin cambios. Anexo: Kaspi.kz/Deep Dive 2026-08/KSPI_Anexo_3T26.md"
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-11-09",
+      "fields_changed": "BJ, BK, BN, BT; Framework Notes C10/E10",
+      "source": "DECISION DE ROGER",
+      "summary": "Depreciacion del tenge 5%/ano en el FVE: el FCF del ano 5 al tipo esperado de 2031 (448 -> ~572). Antes, al tipo de hoy. Tambien en el DCF (src/valuation.py), el Monte Carlo y el panel de GitHub."
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-11-09",
+      "fields_changed": "BV, BW, BX, BY, BZ",
+      "source": "TIR EXIGIDA (refresco)",
+      "summary": "Precios de compra de Kaspi con el modelo SISTEMA, caja neta 0 y el tenge depreciado (decisiones de Roger 9-nov): BV MC 74.00 (antes 107,42), BW DCF 130.33 (antes 170,68)."
     },
     {
       "ticker": "CSU",
