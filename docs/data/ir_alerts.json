@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-08T08:32:21+00:00",
+  "generated_at": "2026-11-09T17:45:43+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 15,
+  "n_documents": 13,
   "n_calendar_drift": 35,
   "n_financial_drift": 24,
   "n_errors": 0,
@@ -11,169 +11,147 @@
  },
  "documents": [
   {
-   "id": "sec:0000814547-26-000042:10-K",
-   "source": "SEC EDGAR",
-   "form": "10-K",
-   "title": "Informe anual — 10-K FY2026",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454726000042/fico-20260930.htm",
-   "priority": "alta",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "news:7ebff887-26df-3c33-a2d0-b1b82b55f840",
+   "id": "news:3dd3d149-9c03-3fa6-8306-7110f824ec1c",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Will CRWD's Acquisitions of Fiddler and Dreadnode Boost its AI Growth?",
-   "date": "2026-11-06",
-   "url": "https://finance.yahoo.com/technology/ai/articles/crwds-acquisitions-fiddler-dreadnode-boost-143300088.html",
+   "title": "Airbnb Soars Over 11% After Strong FCF Results - What's the Best ABNB Play Now?",
+   "date": "2026-11-08",
+   "url": "https://www.barchart.com/story/news/8724561/airbnb-soars-over-11-after-strong-fcf-results-what-s-the-best-abnb-play-now",
    "priority": "media",
-   "ticker": "CRWD",
-   "name": "CRWD"
+   "ticker": "ABNB",
+   "name": "ABNB"
   },
   {
-   "id": "sec:0000885978-26-000075:8-K",
+   "id": "news:530cea32-f97f-3484-befc-ec9c33c7e33d",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "What Trex (TREX) Said on Its Q3 Earnings Call",
+   "date": "2026-11-08",
+   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-trex-trex-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
+   "priority": "media",
+   "ticker": "TREX",
+   "name": "TREX"
+  },
+  {
+   "id": "news:878fc030-a2dd-3694-9490-4e80dd5bf3b5",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Kroger and Albertsons’ CEOs Just Signaled the Walmart Price Gap Is Here to Stay. It Costs a Couple About $1,000 a Year.",
+   "date": "2026-11-09",
+   "url": "https://247wallst.com/investing/2026/11/09/kroger-and-albertsons-ceos-just-signaled-the-walmart-price-gap-is-here-to-stay-it-costs-a-couple-about-1000-a-year/",
+   "priority": "media",
+   "ticker": "COST",
+   "name": "COST"
+  },
+  {
+   "id": "sec:0001404912-26-000030:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
-   "title": "Hecho relevante — Hecho relevante",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/885978/000088597826000075/usph-20261104.htm",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000030/kkr-20261109.htm",
    "priority": "media",
-   "ticker": "USPH",
-   "name": "USPH"
+   "ticker": "KKR",
+   "name": "KKR"
   },
   {
-   "id": "news:c20f99f8-4fbf-3747-8e9d-b584f4d6b08c",
+   "id": "news:15169be0-9456-3e40-a0e6-8120808aee6d",
    "source": "Noticias",
    "form": "noticia",
-   "title": "What Fair Isaac (FICO) Said on Its Q4 Earnings Call",
-   "date": "2026-11-07",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-fair-isaac-fico-said-on-its-q4-earnings-call-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance",
-   "priority": "media",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "news:cd610763-dd72-3d33-8f19-e5d71209621f",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Triple Flag Precious Metals Corp (TFPM) (Q3 2026) Earnings Call Highlights: Strong Cash Flow ...",
-   "date": "2026-11-07",
-   "url": "https://finance.yahoo.com/markets/commodities/articles/triple-flag-precious-metals-corp-110423503.html",
-   "priority": "media",
-   "ticker": "TFPM",
-   "name": "TFPM"
-  },
-  {
-   "id": "news:6c982bc1-3deb-31e5-a924-1b7a43f9d543",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "What Cloudflare (NET) Said on Its Q3 Earnings Call",
-   "date": "2026-11-08",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-cloudflare-net-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
+   "title": "NET Stock Rises 10% Post Q3 Results: Should You Buy, Sell or Hold?",
+   "date": "2026-11-09",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/net-stock-rises-10-post-121100821.html",
    "priority": "media",
    "ticker": "NET",
    "name": "NET"
   },
   {
-   "id": "news:6522c1c0-13b0-3197-9480-5a2d4d535a92",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "What Triple Flag Precious Metals (TFPM) Said on Its Q3 Earnings Call",
-   "date": "2026-11-08",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-triple-flag-precious-metals-tfpm-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
+   "id": "sec:0001985487-26-000030:6-K",
+   "source": "SEC EDGAR",
+   "form": "6-K",
+   "title": "Hecho relevante (extranjero) — 6-K",
+   "date": "2026-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000198548726000030/kaspi.kz_form_6-k_nov_09.htm",
    "priority": "media",
-   "ticker": "TFPM",
-   "name": "TFPM"
-  },
-  {
-   "id": "news:c629cf26-88bc-3e4f-90ac-7dff71371904",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Lundin Mining Q3 Earnings Call Highlights",
-   "date": "2026-11-08",
-   "url": "https://www.marketbeat.com/instant-alerts/transcript-lundin-mining-q3-earnings-call-highlights-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
-   "priority": "media",
-   "ticker": "LUN",
-   "name": "LUN"
-  },
-  {
-   "id": "sec:0001214659-26-013844:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — PRIMARY DOCUMENT",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/814547/000121465926013844/xslF345X06/marketforms-74037.xml",
-   "priority": "baja",
-   "ticker": "FICO",
-   "name": "FICO"
-  },
-  {
-   "id": "sec:0000950103-26-017123:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017123/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0000950103-26-017094:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000095010326017094/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001193125-26-452288:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526452288/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "GRMN",
-   "name": "GRMN"
-  },
-  {
-   "id": "sec:0001193125-26-452225:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526452225/xslF345X06/ownership.xml",
-   "priority": "baja",
    "ticker": "KSPI",
    "name": "KSPI"
   },
   {
-   "id": "sec:0001197647-26-000013:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000013/xslF345X06/wk-form4_1793999520.xml",
-   "priority": "baja",
-   "ticker": "NVDA",
-   "name": "NVDA"
+   "id": "news:68ee36c5-b6bb-30c8-85c6-24b8514705f8",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "What Joint Stock Company Kaspi.kz (KSPI) Said on Its Q3 Earnings Call",
+   "date": "2026-11-09",
+   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-joint-stock-company-kaspikz-kspi-said-on-its-q3-earnings-call-2026-11-09/?utm_source=yahoofinance&utm_medium=yahoofinance",
+   "priority": "media",
+   "ticker": "KSPI",
+   "name": "KSPI"
   },
   {
-   "id": "sec:0001317345-26-000018:4",
+   "id": "sec:0002011641-26-000042:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000042/ferg-20261109.htm",
+   "priority": "media",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "news:0410aa26-b4c2-36e8-9fb2-fa9e50a5678d",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Ferguson Soars 12% on Raised Guidance as Non-Residential Sales Jump 15% Despite “Challenging Residential Market”",
+   "date": "2026-11-09",
+   "url": "https://www.tikr.com/blog/ferguson-soars-12-on-raised-guidance-as-non-residential-sales-jump-15-despite-challenging-residential-market?ref=yahoofinance&tlnk=yf-261109-hg8vg64m",
+   "priority": "media",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "news:8dfc77fc-1b90-3f26-b6a2-89595c78bc5e",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Ferguson soars on earnings beat, raised guidance",
+   "date": "2026-11-09",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/ferguson-soars-earnings-beat-raised-154624790.html",
+   "priority": "media",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "news:28f6a2db-8cde-314f-a3c1-bea093b2bb54",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Ferguson Enterprises Lifts Sales Growth Outlook Following Third-Quarter Beat",
+   "date": "2026-11-09",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/ferguson-enterprises-lifts-sales-growth-151632604.html",
+   "priority": "media",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "news:80bd6bb1-6d6c-3ee9-a880-40203cacfcc6",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Uber launches parking service following SpotHero acquisition, with an eye on robotaxis",
+   "date": "2026-11-09",
+   "url": "https://finance.yahoo.com/technology/articles/uber-launches-parking-following-spothero-170000062.html",
+   "priority": "media",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0001046179-26-000734:4",
    "source": "SEC EDGAR",
    "form": "4",
    "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-06",
-   "url": "https://www.sec.gov/Archives/edgar/data/884887/000131734526000018/xslF345X06/wk-form4_1794000962.xml",
+   "date": "2026-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000734/xslF345X06/wk-form4_1794222904.xml",
    "priority": "baja",
-   "ticker": "RCL",
-   "name": "RCL"
+   "ticker": "TSM",
+   "name": "TSM"
   }
  ],
  "financial_drift": [
@@ -762,16 +740,6 @@
   }
  ],
  "todo_excel": [
-  {
-   "ticker": "FICO",
-   "accion": "Actualizar cuentas en el Excel",
-   "motivo": "1 documento(s) de prioridad alta: Informe anual — 10-K FY2026",
-   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
-   "ultimos_resultados_excel": "2026-07-29",
-   "urls": [
-    "https://www.sec.gov/Archives/edgar/data/814547/000081454726000042/fico-20260930.htm"
-   ]
-  },
   {
    "ticker": "BN",
    "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
