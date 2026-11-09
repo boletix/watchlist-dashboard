@@ -79,6 +79,7 @@ foreach ($r in $csv) {
   if ($r.tipo -eq "text") { $cell.NumberFormat = "@"; $cell.Value2 = [string]$r.valor }
   elseif ($r.tipo -eq "pct") { $cell.NumberFormat = "0.0%"; $cell.Value2 = [double]$r.valor }
   elseif ($r.tipo -eq "num2") { $cell.NumberFormat = "#,##0.00"; $cell.Value2 = [double]$r.valor }
+  elseif ($r.tipo -eq "formula") { $cell.Formula = [string]$r.valor }
   else { $cell.Value2 = [double]$r.valor }
   $n = $n + 1
 }

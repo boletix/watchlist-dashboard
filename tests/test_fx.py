@@ -165,8 +165,13 @@ def test_kspi_with_conversion_is_sane():
     kzt_usd = 0.0019
     fx_map = {("KZT", "USD"): kzt_usd}
     out = _reprice_valuation(_kspi_row(), fx_map)
-    # 37.394 tenge/accion * 0,0019 ~ 71 $, contra un precio de 98,48 $
-    assert 60 < out["fve_min_repriced"] < 85
+    # 37.394 tenge/accion * 0,0019 ~ 71 $ al tipo de hoy; desde el 9-nov-2026 el FCF del año 5 va al tipo
+    # esperado de 2031 (tenge -5%/año, valuation.DEPRECIACION): ~57 $, contra un precio de 98,48 $
+    row = _kspi_row()
+    esperado = (row["fcf_5y_min"] * row["exit_mult_min"] * kzt_usd / 1.05 ** 5
+                + (row["cash"] - row["total_debt"]) * kzt_usd) / row["shares_out_m"]
+    assert abs(out["fve_min_repriced"] - esperado) < 1e-6
+    assert 50 < out["fve_min_repriced"] < 70
     assert -0.20 < out["irr_worst_repriced"] < 0.05
     assert 0.0 < out["irr_best_repriced"] < 0.60
     assert out["fve_max_repriced"] > out["fve_min_repriced"]

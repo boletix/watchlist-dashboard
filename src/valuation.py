@@ -43,6 +43,25 @@ NOTAS_DCF = {
 }
 EXPLICITOS = 5
 FADE = 5
+# Depreciación anual esperada de la moneda de REPORTE frente a la de COTIZACIÓN (decisión de Roger, 9-nov-2026:
+# «obviamente tenemos que ver la depreciación del tenge»). Kaspi reporta en tenge (inflación 9-11%) y cotiza en
+# dólares: convertir el FCF de 2031 al tipo de hoy lo infla. Se aplica en los 5 años explícitos (los mismos del
+# Monte Carlo y de la fila: FVE = FCF del año 5 × múltiplo al tipo de 2031). Después el tipo se congela: el
+# crecimiento que se desvanece hacia g (1-3,5%) ya es el de una moneda fuerte, y depreciar más sería contar dos
+# veces. 5% = el escenario base del modelo propio de Kaspi (tenge a ~572 en 2031 desde 448). Mismo valor en el
+# Excel: 'Framework Notes'!E10 (fórmulas BJ/BK de la fila de KSPI).
+DEPRECIACION = {"KSPI": 0.05}
+
+
+def depreciacion(ticker) -> float:
+    return float(DEPRECIACION.get(str(ticker or "").strip(), 0.0))
+
+
+def factor_futuro(ticker, factor, anios: int = EXPLICITOS):
+    """Factor moneda de reporte -> cotización dentro de `anios` años (con la depreciación esperada)."""
+    if factor is None:
+        return None
+    return factor / (1 + depreciacion(ticker)) ** anios
 CAGR_MIN, CAGR_MAX = -0.10, 0.20
 
 
@@ -105,9 +124,12 @@ def valor_por_accion(row: dict, r: float, factor: float = 1.0) -> dict | None:
         return None
     t = str(row.get("ticker", "")).strip()
     gs = crecimiento_terminal(t)
+    d = depreciacion(t)
     out = {}
     for nombre, fcf5, g in zip(NOMBRES, e["fcf5"], gs):
         fl = flujos(e["fcf0"], fcf5, g, agotable=t in AGOTABLES)
+        if d:  # cada flujo al tipo de cambio esperado de su año (se congela tras el año 5)
+            fl = [x / (1 + d) ** min(k, EXPLICITOS) for k, x in enumerate(fl, start=1)]
         ve = valor_empresa(fl, g, r)
         if ve is None:
             return None

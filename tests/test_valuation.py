@@ -45,3 +45,17 @@ def test_precio_compra_mc_y_tir_desde_precio_compra_son_inversas():
 def test_activo_que_se_agota_usa_crecimiento_negativo():
     assert V.crecimiento_terminal("KIST")[1] < 0
     assert V.crecimiento_terminal("CSU") == V.G_DEFECTO
+
+
+def test_depreciacion_de_la_moneda_de_reporte_rebaja_el_dcf_y_el_factor_futuro():
+    """Kaspi (9-nov-2026): el FCF en tenge se convierte al tipo esperado de cada año; tras el año 5 se congela."""
+    import pytest
+    assert V.depreciacion("KSPI") == pytest.approx(0.05)
+    assert V.depreciacion("TEST") == 0.0
+    assert V.factor_futuro("KSPI", 1.0) == pytest.approx(1 / 1.05 ** 5)
+    assert V.factor_futuro("TEST", 0.5) == 0.5
+    sin = V.valor_por_accion(dict(FILA, total_debt=50.0, cash=50.0), 0.12)
+    con = V.valor_por_accion(dict(FILA, ticker="KSPI", total_debt=50.0, cash=50.0), 0.12)
+    assert con["ponderado"] < sin["ponderado"]
+    # todo el valor (flujos y terminal) queda, como mucho, al tipo del año 5
+    assert con["ponderado"] >= sin["ponderado"] / 1.05 ** 5 - 1e-9
