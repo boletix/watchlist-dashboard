@@ -284,10 +284,13 @@ def _reprice_valuation(row, fx_map=None):
         return out
     cash *= factor
     debt *= factor
+    # El FCF es del año 5: va al tipo de cambio esperado entonces (depreciación de la moneda de reporte,
+    # valuation.DEPRECIACION; hoy solo Kaspi, decisión de Roger del 9-nov-2026). Caja y deuda son de hoy.
+    factor5 = valuation.factor_futuro(row.get("ticker"), factor)
     if fcf_min is not None:
-        fcf_min *= factor
+        fcf_min *= factor5
     if fcf_max is not None:
-        fcf_max *= factor
+        fcf_max *= factor5
     if fcf_min is not None and em_min is not None:
         fve_min = (fcf_min * em_min + cash - debt) / shares
         out["fve_min_repriced"] = float(fve_min)
@@ -560,7 +563,8 @@ def _ev_fcf_5y_base(row, fx_map=None):
         return np.nan
     # El FCF va en moneda de reporte y el EV en moneda de cotizacion: sin
     # convertir, el multiplo mezcla dos unidades distintas.
-    fcf_5y_base = ((fcf_min * factor) * (fcf_max * factor)) ** 0.5
+    factor5 = valuation.factor_futuro(row.get("ticker"), factor)  # FCF del año 5 al tipo esperado entonces
+    fcf_5y_base = ((fcf_min * factor5) * (fcf_max * factor5)) ** 0.5
     if fcf_5y_base <= 0:
         return np.nan
     return float(ev / fcf_5y_base)

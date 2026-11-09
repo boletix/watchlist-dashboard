@@ -345,8 +345,10 @@ VERDICTS = {
                  catalyst="Trading update FY26 (~21-ene-2027): pedidos del 2S, deuda, sucesor del CFO (Ormsby se va). Interinos del 23-sep: BPA 39p, guia al suelo (200,5p), China -47%"),
     "KSPI": dict(conviction="3/5", terminal="MEDIO-ALTO", sizing="1-1,5% (ampliar a 2-2,5% bajo 80 $)",
                  alert="sanciones/OFAC; suspension del dividendo; coste de riesgo > 1% dos trimestres o NPL > 8%; tope a comisiones del marketplace. "
-                       "Decision de Roger (24-oct): mantener el tamano actual; reducir a partir de 120 $",
-                 catalyst="3T26 el ~9-nov: beneficio neto creciendo por primera vez en seis trimestres con el recorte de depositos dentro; tipos del BNK en diciembre; fintech en Turquia en 1S27"),
+                       "Decision de Roger (24-oct): mantener el tamano actual; reducir a partir de 120 $. "
+                       "9-nov: modelo SISTEMA (5 escenarios de Kaspi, tenge depreciado, caja neta 0): TIR MC 9,6% a 90 $, compra MC 74 $ / DCF 130 $",
+                 catalyst="3T26 (9-nov): beneficio +1,1% a/a (a medias), coste de financiacion sube al 14,9%, CoR 0,6% / NPL 6,9% con provisiones +31%, guia GMV 20%->12% (tenge), EBITDA ~5% mantenida, dividendo 1.000 KZT, Magnum Daily (300 tiendas fin-2027); veredicto sin cambio. "
+                          "Proximo: 4T26 ~2-mar-2027 (estimada): coste de financiacion < 14,9%, beneficio 4T > 290.000 M KZT, primera cifra de inversion turca 2027; junta 9-dic; tipos del BNK en diciembre"),
     "BN":   dict(conviction="3,5/5", terminal="MEDIO", sizing="1,5-2,5%",
                  alert="Decision de Roger (24-oct): orden de compra a 36 $ en pie; tope total 10% de la cartera contando Numantia",
                  catalyst="3T26 el 12-nov-2026 (confirmado): valor del plan a 30-sep, recompras bajo 40 $, "
