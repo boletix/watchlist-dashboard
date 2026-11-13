@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-12T16:08:20+00:00",
+  "generated_at": "2026-11-13T15:35:44+00:00",
   "n_tickers": 74,
   "days_back": 10,
-  "n_documents": 8,
+  "n_documents": 22,
   "n_calendar_drift": 36,
   "n_financial_drift": 23,
   "n_errors": 0,
@@ -11,92 +11,246 @@
  },
  "documents": [
   {
-   "id": "news:6fd120ee-d126-3c41-a7ae-2fbb6cb4983c",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco’s $30-per-share special dividend means just 3 shares could cover your $65 membership. But there’s a catch",
-   "date": "2026-11-11",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/costco-30-per-share-special-233000732.html",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
+   "id": "sec:0002128626-26-000012:10-Q",
+   "source": "SEC EDGAR",
+   "form": "10-Q",
+   "title": "Informe trimestral — 10-Q",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000212862626000012/vylr-20260930.htm",
+   "priority": "alta",
+   "ticker": "VYLR",
+   "name": "VYLR"
   },
   {
-   "id": "sec:0001171843-26-007374:6-K",
-   "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — FORM 6-K",
+   "id": "news:3b56abd3-3fd5-35c0-8099-5013d75022b9",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "What Brookfield (BN) Said on Its Q3 Earnings Call",
    "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/1001085/000117184326007374/f6k_111226.htm",
+   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-brookfield-bn-said-on-its-q3-earnings-call-2026-11-12/?utm_source=yahoofinance&utm_medium=yahoofinance",
    "priority": "media",
    "ticker": "BN",
    "name": "BN"
   },
   {
-   "id": "news:b69b3538-09b2-3378-b378-6d1541fb159e",
+   "id": "news:a5b254b8-ff77-37cc-97d1-cd3c99095fff",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Alphabet and Meta Platforms Pay Dividends. Is Either of Them Worth Owning for Income?",
+   "title": "Brookfield (BN) Q3 2026 Earnings Call Transcript",
    "date": "2026-11-12",
-   "url": "https://www.fool.com/investing/2026/11/12/alphabet-meta-platforms-dividends-owning-income/",
+   "url": "https://www.fool.com/earnings/call-transcripts/2026/11/12/brookfield-bn-q3-2026-earnings-call-transcript/",
+   "priority": "media",
+   "ticker": "BN",
+   "name": "BN"
+  },
+  {
+   "id": "sec:0001193125-26-458525:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526458525/d177728d8k.htm",
    "priority": "media",
    "ticker": "META",
    "name": "META"
   },
   {
-   "id": "sec:0001985487-26-000032:6-K",
-   "source": "SEC EDGAR",
-   "form": "6-K",
-   "title": "Hecho relevante (extranjero) — 6-K",
+   "id": "news:f7496752-b0f4-3582-88d7-ee613c8b7075",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "SES AI Corporation Q3 2026 Earnings Call Summary",
    "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000198548726000032/kaspi.kz_form_6-k_nov_12.htm",
+   "url": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ses-ai-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss",
    "priority": "media",
-   "ticker": "KSPI",
-   "name": "KSPI"
+   "ticker": "COR",
+   "name": "COR"
   },
   {
-   "id": "sec:0001045810-26-000082:8-K",
+   "id": "sec:0001104659-26-126231:8-K",
    "source": "SEC EDGAR",
    "form": "8-K",
-   "title": "Hecho relevante — 8-K",
+   "title": "Hecho relevante — FORM 8-K",
    "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1583708/000110465926126231/tm2629627d1_8k.htm",
    "priority": "media",
-   "ticker": "NVDA",
-   "name": "NVDA"
+   "ticker": "S",
+   "name": "S"
   },
   {
-   "id": "sec:0001046179-26-000800:6-K",
+   "id": "news:e9c5b02f-d7a9-3fce-ac69-6ce4336f6c34",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Does Costco's Special Dividend Offer Enough Reason to Buy the Stock?",
+   "date": "2026-11-13",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/does-costcos-special-dividend-offer-135100636.html",
+   "priority": "media",
+   "ticker": "COST",
+   "name": "COST"
+  },
+  {
+   "id": "news:6b32a6ee-3cc4-3ade-8c87-65ac67eba711",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Did Record Special Dividend Just Shift Costco Wholesale's (COST) Investment Narrative?",
+   "date": "2026-11-13",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/did-record-special-dividend-just-111039897.html",
+   "priority": "media",
+   "ticker": "COST",
+   "name": "COST"
+  },
+  {
+   "id": "sec:0001046179-26-000801:6-K",
    "source": "SEC EDGAR",
    "form": "6-K",
    "title": "Hecho relevante (extranjero) — 6-K",
-   "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000800/a20261112statementregardin.htm",
+   "date": "2026-11-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/tsm-fsx20261113x6k.htm",
    "priority": "media",
    "ticker": "TSM",
    "name": "TSM"
   },
   {
-   "id": "sec:0002128626-26-000009:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000212862626000009/vylr-20261111.htm",
+   "id": "news:eef496f3-2a02-31ff-96b2-c31987979a5c",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Should Netflix (NFLX) Investors Rethink Its Outlook After Bill Ackman’s Fresh Backing?",
+   "date": "2026-11-13",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-nflx-investors-rethink-outlook-080854948.html",
    "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
+   "ticker": "NFLX",
+   "name": "NFLX"
   },
   {
-   "id": "sec:0002128626-26-000007:8-K",
+   "id": "sec:0000789019-26-000234:4",
    "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
+   "form": "4",
+   "title": "Operacion de un insider — STATEMENT OF CHANGES IN BENEFICIAL OWNERSHIP OF SECURITIES",
    "date": "2026-11-12",
-   "url": "https://www.sec.gov/Archives/edgar/data/2128626/000212862626000007/vylr-20261112.htm",
-   "priority": "media",
-   "ticker": "VYLR",
-   "name": "VYLR"
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000234/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "MSFT",
+   "name": "MSFT"
+  },
+  {
+   "id": "sec:0000909832-26-000136:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000136/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "COST",
+   "name": "COST"
+  },
+  {
+   "id": "sec:0001018724-26-000042:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000042/xslF345X06/wk-form4_1794526071.xml",
+   "priority": "baja",
+   "ticker": "AMZN",
+   "name": "AMZN"
+  },
+  {
+   "id": "sec:0001790330-26-000014:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — STATEMENT OF CHANGES IN BENEFICIAL OWNERSHIP OF SECURITIES",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000179033026000014/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "ABNB",
+   "name": "ABNB"
+  },
+  {
+   "id": "sec:0001949551-26-000008:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000194955126000008/xslF345X06/wk-form4_1794519584.xml",
+   "priority": "baja",
+   "ticker": "VLTO",
+   "name": "VLTO"
+  },
+  {
+   "id": "sec:0000950103-26-017401:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017401/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "META",
+   "name": "META"
+  },
+  {
+   "id": "sec:0000950103-26-017398:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017398/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "META",
+   "name": "META"
+  },
+  {
+   "id": "sec:0001193125-26-459015:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526459015/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "GRMN",
+   "name": "GRMN"
+  },
+  {
+   "id": "sec:0001193125-26-458888:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526458888/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "KSPI",
+   "name": "KSPI"
+  },
+  {
+   "id": "sec:0001984156-26-000005:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198415626000005/xslF345X06/wk-form4_1794499858.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001572806-26-000008:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000157280626000008/xslF345X06/wk-form4_1794499804.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
+  },
+  {
+   "id": "sec:0001984098-26-000004:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000198409826000004/xslF345X06/wk-form4_1794499744.xml",
+   "priority": "baja",
+   "ticker": "FERG",
+   "name": "FERG"
   }
  ],
  "financial_drift": [
@@ -247,9 +401,9 @@
    "revenue_ltm_mercado": 4398960.0,
    "revenue_ltm_excel": 4456524.0,
    "desvio_revenue": -0.0129,
-   "fcf_ltm_mercado": 952971.0,
+   "fcf_ltm_mercado": 1492827.0,
    "fcf_ltm_excel": 1068763.0,
-   "desvio_fcf": -0.1083,
+   "desvio_fcf": 0.3968,
    "trimestre_nuevo": false,
    "sospecha_unidades": false,
    "severidad": "media"
@@ -427,16 +581,16 @@
   {
    "ticker": "VEEV",
    "excel": "2026-11-19",
-   "market": "2026-11-25",
+   "market": "2026-12-03",
    "estimated": true,
-   "delta_days": 6
+   "delta_days": 14
   },
   {
-   "ticker": "ADYEN",
-   "excel": "2027-02-11",
-   "market": "2026-08-13",
+   "ticker": "BN",
+   "excel": "2026-11-12",
+   "market": "2027-02-11",
    "estimated": false,
-   "delta_days": -182
+   "delta_days": 91
   },
   {
    "ticker": "ZS",
@@ -679,6 +833,16 @@
  ],
  "todo_excel": [
   {
+   "ticker": "VYLR",
+   "accion": "Actualizar cuentas en el Excel",
+   "motivo": "1 documento(s) de prioridad alta: Informe trimestral — 10-Q",
+   "columnas": "AR-BC (cuentas LTM), BD/BF (FCF@5y), BO (fecha ultimos resultados)",
+   "ultimos_resultados_excel": "2026-08-05",
+   "urls": [
+    "https://www.sec.gov/Archives/edgar/data/2128626/000212862626000012/vylr-20260930.htm"
+   ]
+  },
+  {
    "ticker": "BN",
    "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
    "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 80690.0 vs 77059.0, FCF 6200.0 vs -9413.0. Revisar en que moneda reporta y el factor de Framework Notes.",
@@ -751,7 +915,7 @@
   {
    "ticker": "KSPI",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 4456524.0 vs mercado 4398960.0 (-1.3%); FCF LTM: Excel 1068763.0 vs mercado 952971.0 (-10.8%)",
+   "motivo": "ingresos LTM: Excel 4456524.0 vs mercado 4398960.0 (-1.3%); FCF LTM: Excel 1068763.0 vs mercado 1492827.0 (+39.7%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },
@@ -842,14 +1006,14 @@
   {
    "ticker": "VEEV",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-19 y el mercado dice 2026-11-25 (6 dias de diferencia) — la del Excel era una estimacion",
+   "motivo": "El Excel dice 2026-11-19 y el mercado dice 2026-12-03 (14 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
   {
-   "ticker": "ADYEN",
+   "ticker": "BN",
    "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2027-02-11 y el mercado dice 2026-08-13 (-182 dias de diferencia)",
+   "motivo": "El Excel dice 2026-11-12 y el mercado dice 2027-02-11 (91 dias de diferencia)",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
