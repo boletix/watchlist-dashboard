@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T15:34:52+00:00",
+    "generated_at": "2026-11-14T09:33:19+00:00",
     "n_alerts": 1,
     "by_severity": {
       "high": 1,
@@ -10,16 +10,16 @@
   },
   "alerts": [
     {
-      "type": "hunting_ground_entry",
+      "type": "asymmetry_improved",
       "severity": "high",
-      "ticker": "CSU",
-      "name": "CSU",
-      "category": "Vertical Saas",
-      "message": "CSU entered Hunting Ground (rating 8.45, EV/FCF 19.7x)",
+      "ticker": "ADYEN",
+      "name": NaN,
+      "category": "Fintech",
+      "message": "ADYEN now has favorable IRR asymmetry (best 20.3%, worst -4.9%)",
       "metrics": {
-        "rating_composite": 8.45,
-        "ev_fcf": 19.673103899679134,
-        "irr_best": 0.2139057665032713
+        "irr_best": 0.20297104083428952,
+        "irr_worst": -0.04879230555446712,
+        "irr_asymmetry_ratio": 5.035266927775132
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 392,
+    "n_updates": 412,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -837,6 +837,146 @@
       "fields_changed": "T (R2 Financials); AH (R3 Financing Source)",
       "source": "Deep dive completo del 25-ago-2026",
       "summary": "Spotify. R2 Financials 13 -> 15 y R3 Financing Source 2 -> 4. Ha demostrado lo que tenia que demostrar: que el apalancamiento operativo existia. De perdidas estructurales a un resultado operativo de 2.653 M EUR (14,6% de margen), un FCF de 3.267 (18% de margen) y un ROIC del 24%, con 6.519 M EUR de CAJA NETA. Ya no depende de nadie para financiarse. LA LECCION QUE HAY QUE LLEVARSE AL RESTO DEL LIBRO: la tesis del Drive fijaba el caso alcista en 380 $ y la accion esta en 550,72 $; fallo en una unica variable, el margen, y ella misma la habia senalado como su punto debil (los margenes operativos me generan dudas, el apalancamiento operativo es poco visible). En negocios con base de costes fija grande y margen bruto creciente, el apalancamiento operativo NO es lineal: es explosivo al cruzar el umbral de rentabilidad. Mismo error que en Airbnb (11% proyectado, 20,8% real). Y es lo que puede estar pasando AHORA con SentinelOne, que acaba de cruzar a operativo no-GAAP positivo. NO se sube MOAT ni Concentration: Spotify no es dueno de lo que vende y tres discograficas pueden decidir su margen; el -2 de concentracion esta bien puesto."
+    },
+    {
+      "ticker": "BN",
+      "date": "2026-11-14",
+      "fields_changed": "AP, AQ, AS, BS, AT, AU, AV, BQ, BO, BP, BN, BT",
+      "source": "6-K 12-nov + suplemento 3T26",
+      "summary": "3T26: AS/BS 6.080 -> 6.284; AT/AU 5.700 -> 5.815; ingresos 80.690 -> 78.833; SBC 120 -> 119; caja 10.000 -> 2.148 y deuda 17.815 -> 19.521 (correccion de datos, decision de Roger)."
+    },
+    {
+      "ticker": "FERG",
+      "date": "2026-11-14",
+      "fields_changed": "AV, AP, AQ, AS, BS, AU, AT, BQ, BO, BP, BN, BT",
+      "source": "8-K 9-nov + 10-Q 3T26",
+      "summary": "3T26: ventas LTM 31.446 -> 32.744; caja 437 -> 476; deuda 4.904 (jun) -> 6.170 (sep, tras FloWorks); FCF 1.160 -> 1.235; EBITDA 3.071 -> 3.419; NOPAT 2.015 -> 2.268; SBC 105 -> 85. Guia subida."
+    },
+    {
+      "ticker": "IP",
+      "date": "2026-11-14",
+      "fields_changed": "AV, AU, AT, AS, BS, AP, AQ, BO, BP, BN, BT",
+      "source": "Comunicado 3T26 (13-nov)",
+      "summary": "3T26: ventas LTM 2.080 -> 2.116,2; EBITDA 446 -> 452,7; FCF 232,4 -> 222,7; caja 370 -> 400,1; deuda 597,9 -> 599,0. Hidraulica (Olio) vuelve a crecer; Agua cae por la comparacion con un pedido grande del 1S25."
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-11-14",
+      "fields_changed": "BN, BT",
+      "source": "10-Q 2T26 y 3T26 (EDGAR XBRL)",
+      "summary": "Aclarada la diferencia de 139,7: la deuda anterior incluia 165,8 de arrendamientos operativos (US GAAP: ya en el OCF). Sin cambio de cifras."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-14",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "ANT",
+      "date": "2026-11-14",
+      "fields_changed": "BF, BU, BN, BT",
+      "source": "DECISIONES DE ROGER (14-nov): Anthropic",
+      "summary": "TIR exigida 14%; ratings, BD, múltiplos 18x/30x y pesos 45/16/27/7/5 aprobados; lastre regulatorio de 1 punto desde 2028 en Motor y Frontera (BF 182.969 -> 177.885); donaciones igualadas = SBC. Modelo: Anthropic/Modelo Sistema/construir_modelo_ANT.py"
+    },
+    {
+      "ticker": "ANT",
+      "date": "2026-11-14",
+      "fields_changed": "BV, BW, BX, BY, BZ",
+      "source": "tir_exigida.py (solo ANT)",
+      "summary": "Precios de compra al 14% de Roger: MC 27.53 $, DCF 36.63 $ (bajista 15.02 / alcista 77.48). Antes, al 16%: 25,93 / 32,65."
+    },
+    {
+      "ticker": "VARIAS (58)",
+      "date": "2026-11-14",
+      "fields_changed": "H",
+      "source": "Documentos de cada compañía (10-Q/10-K, 6-K, informes 1S/9M/3T); registro en sistema/config/acciones_diluidas.json",
+      "summary": "Columna H: acciones DILUIDAS de la compañía en lugar de la fórmula _FV del tipo de dato (decisión de Roger). SEC: portada (todas las clases) + dilución del trimestre; con pérdidas, + premios vivos (sin convertibles). ADR/ADS en equivalentes (TSM /5, OTLY /20). Errores grandes corregidos: TSM 25.932 -> 5.186 (el tipo de dato pasó de ADR a ordinarias), NTO -10,4% (contaba autocartera), SU -5,7%, SAP -5,8%, VRLA -6,8%, BN -3,9%, IP -3,3%, LIFCO +7,2% y ROKO +20,5% (solo contaba la clase B), S +15,5% y ZS +7,5% (premios). 16 filas siguen con _FV, pendientes de verificar: RAA, LOTB, HLMA, LR, KRX, CBAV, PRY, JFN, CPR, VID, SGO, TFF, KIST, CSU, SOM, LUN."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-14",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "ANT",
+      "date": "2026-11-13",
+      "fields_changed": "A-BU (fila 78 nueva)",
+      "source": "ALTA PRE-OPV (petición de Roger)",
+      "summary": "Alta de Anthropic antes de la OPV (S-1/A nº 2 de 10-nov-2026): precio provisional 74 $ (punto medio 70-78), 18.013 M acciones diluidas, caja pro forma 212.684, LTM a 30-sep. Ratings, BD/BF 11.157/182.969, BH/BI 18/30 y TIR exigida 16% son PROPUESTAS de Claude pendientes de Roger."
+    },
+    {
+      "ticker": "ANT",
+      "date": "2026-11-13",
+      "fields_changed": "BV, BW, BX, BY, BZ",
+      "source": "TIR EXIGIDA (alta)",
+      "summary": "Precios de compra de Anthropic con el modelo SISTEMA a la TIR exigida propuesta del 16%: BV MC 25,93; BW DCF 32,65 (bajista 14,46 / alcista 67,07)."
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2026-11-13",
+      "fields_changed": "AQ, BN, BT",
+      "source": "SEC XBRL (10-Q 3T26)",
+      "summary": "Puente aprobado por Roger: deuda 194.447 -> 179.952 (sin arrendamientos financieros, que ya restan en el FCF)."
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-11-13",
+      "fields_changed": "AQ, BN, BT",
+      "source": "SEC XBRL (10-Q 3T26)",
+      "summary": "Puente aprobado por Roger: deuda 129.823 -> 126.118 (sin arrendamientos financieros)."
+    },
+    {
+      "ticker": "GRMN",
+      "date": "2026-11-13",
+      "fields_changed": "AP, BN, BT",
+      "source": "SEC XBRL (10-Q 3T26)",
+      "summary": "Puente aprobado por Roger: caja 2.339,5 -> 4.066,6 (incluye 1.727,1 de renta fija a largo)."
+    },
+    {
+      "ticker": "FERG",
+      "date": "2026-11-13",
+      "fields_changed": "AQ, BN, BT",
+      "source": "SEC XBRL (10-Q 2T26)",
+      "summary": "Puente aprobado por Roger: deuda 6.887 -> 4.904 (sin arrendamientos operativos; dato a 30-jun). SBC 48 rechazado (LTM mal calculado)."
+    },
+    {
+      "ticker": "USPH",
+      "date": "2026-11-13",
+      "fields_changed": "AQ, BN, BT",
+      "source": "SEC XBRL (10-Q 3T26)",
+      "summary": "Puente aprobado por Roger: deuda 385,8 -> 246,1 (la diferencia de 139,7 queda por explicar)."
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-11-13",
+      "fields_changed": "AS, BS, BN, BT",
+      "source": "Decision de Roger (13-nov)",
+      "summary": "AS/BS 1.051.299 -> 1.068.763 (beneficio neto, sin restar otra vez el SBC). Modelo SISTEMA: cola de pais a 8x. TIR MC 10,0% -> 10,9%."
+    },
+    {
+      "ticker": "DNP",
+      "date": "2026-11-13",
+      "fields_changed": "AV, AP, AQ, AS, BS, AU, AT, BO, BP, BN, BT",
+      "source": "Informe 3T26 + estados 2025 (grupadino.pl)",
+      "summary": "3T26: ventas LTM 35.628 -> 36.575,2; caja 771 -> 776,2; deuda 736 -> 699,3; FCF 597,7 -> 365,1 (mas capex); EBITDA 2.609 -> 2.629,0; NOPAT 1.656 -> 1.649,5. LFL +0,1% por deflacion. Valoracion sin tocar."
+    },
+    {
+      "ticker": "EVD",
+      "date": "2026-11-13",
+      "fields_changed": "AV, BO, BP, BN, BT",
+      "source": "Nota EQS 12-nov + informe anual 2025",
+      "summary": "3T/9M26: ingresos LTM 3.297,9 -> 3.253,3; fechas. Margen de ticketing a la baja; caja/deuda/FCF pendientes del PDF trimestral."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-13",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
     },
     {
       "ticker": "KSPI",
