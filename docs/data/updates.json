@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 415,
+    "n_updates": 422,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -851,6 +851,55 @@
       "fields_changed": "AP, AV, BQ",
       "source": "SEC XBRL (tools/ltm_sec.py)",
       "summary": "Puente carpeta -> watchlist aprobado por Roger. ingresos_ltm 21.309,2 -> 20.346,9; sbc_ltm 770,9 -> 819,1; caja 21.202,2 -> 22.640,9"
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-15",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "VARIAS (7)",
+      "date": "2026-11-15",
+      "fields_changed": "H",
+      "source": "Informes de cada compañía; registro en sistema/config/acciones_diluidas.json",
+      "summary": "Acciones diluidas en H para RAA 11,37; LOTB 0,813; PRY 299,27 (antes 308,86: contaba 9,6 M de autocartera); KIST 83,25; CSU 21,19; SOM 52,84 (antes 51,44); LUN 854,70. Quedan 9 con _FV: HLMA, LR, KRX, CBAV, JFN, CPR, VID, SGO, TFF."
+    },
+    {
+      "ticker": "EVD",
+      "date": "2026-11-15",
+      "fields_changed": "AU, BT",
+      "source": "Hoja 'Figures Q3-9M 2026' de CTS Eventim (PDF de la compañía)",
+      "summary": "EBITDA ajustado LTM a sep-26: 599,6 (antes 603,1, a jun)."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-15",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "GOOG, TFPM, NVDA, TREX, ZS",
+      "date": "2026-11-15",
+      "fields_changed": "J-AK (subnotas) -> AN",
+      "source": "DECISION DE ROGER (15-nov): revisión de las notas de calidad frente a su TIR exigida",
+      "summary": "Calidad: GOOG 6,54->7.48, TFPM 5,56->7.10, NVDA 5,80->6.79, TREX 4,16->5.14, ZS 7,22->6.20. Subnotas tocadas en Sistema/config y 00_Resultados_15-nov-2026.md."
+    },
+    {
+      "ticker": "CELH, JDG, NTO",
+      "date": "2026-11-15",
+      "fields_changed": "BU",
+      "source": "DECISION DE ROGER (15-nov)",
+      "summary": "TIR exigida: CELH 13% -> 15%, JDG 15% -> 12,5%, NTO 14% -> 11%."
+    },
+    {
+      "ticker": "TFF",
+      "date": "2026-11-15",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, BQ, H, BT, BN",
+      "source": "Informe financiero anual 2025/26 (ESEF, ejercicio a 30-abr-2026)",
+      "summary": "Verificado con el informe anual: FCF 59 -> 56,5 (tras arrendamientos), NOPAT 21 -> 16,5, deuda 382 -> 376 (sin arrendamientos), H 21,666 diluidas. FCF normalizado (~13 sin la liberacion de inventario) pendiente de Roger."
     },
     {
       "ticker": "TODAS",

@@ -1,71 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-11-15T19:38:14+00:00",
+  "generated_at": "2026-11-15T20:08:53+00:00",
   "n_tickers": 75,
   "days_back": 10,
-  "n_documents": 5,
+  "n_documents": 0,
   "n_calendar_drift": 37,
   "n_financial_drift": 23,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "news:fabd39ee-4327-3aa4-b7d5-3c3ae4c60476",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco Pays a $30-a-Share Dividend. For a Retiree With 500 Shares, $15,000 Could Raise Her Medicare Premium $81.20 a Month",
-   "date": "2026-11-13",
-   "url": "https://www.tikr.com/blog/costco-pays-a-30-a-share-dividend-for-a-retiree-with-500-shares-15000-could-raise-her-medicare-premium-81-20-a-month?ref=yahoofinancedividend&tlnk=yf-261114-p5g97p57",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "news:2d44bda8-dc63-3d9d-9360-548cbc27317c",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Netflix (NFLX) Following Ad Outlook Cuts Still Looks Undervalued To Some Investors",
-   "date": "2026-11-14",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-nflx-following-ad-outlook-190805204.html",
-   "priority": "media",
-   "ticker": "NFLX",
-   "name": "NFLX"
-  },
-  {
-   "id": "news:8b81f491-404e-3cc4-acc9-9fb0d76d5dce",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Nvidia lost $1.6 trillion after Jensen Huang's exit, but Apple's and Uber's CEO transitions offer a blueprint",
-   "date": "2026-11-14",
-   "url": "https://finance.yahoo.com/technology/articles/nvidia-lost-1-6-trillion-154500086.html",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:79e568be-bbbc-3600-9f6e-1f31d5fa8124",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco Is Paying Out $13 Billion in Special Dividends This Year. Is the Stock a Buy?",
-   "date": "2026-11-15",
-   "url": "https://www.fool.com/investing/2026/11/15/costco-is-paying-out-usd13-billion-in-special-dividends-this-year-is-the-stock-a-buy/",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "news:670fb258-c33e-3ee5-bdf2-2069eed8a636",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Nvidia Rival’s CEO on TSMC: “I Would Buy That Stock Every Day of the Week”",
-   "date": "2026-11-15",
-   "url": "https://www.tikr.com/blog/nvidia-rivals-ceo-on-tsmc-i-would-buy-that-stock-every-day-of-the-week?ref=yahoofinance&tlnk=yf-261115-r3492722",
-   "priority": "media",
-   "ticker": "TSM",
-   "name": "TSM"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "BN",
