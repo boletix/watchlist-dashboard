@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-16T17:16:29+00:00",
+  "generated_at": "2026-11-17T17:03:42+00:00",
   "n_tickers": 75,
   "days_back": 10,
-  "n_documents": 3,
+  "n_documents": 18,
   "n_calendar_drift": 37,
   "n_financial_drift": 23,
   "n_errors": 0,
@@ -11,37 +11,202 @@
  },
  "documents": [
   {
-   "id": "news:b52b5542-1fc9-3372-8223-9c785a5e8ea5",
+   "id": "sec:0001001085-26-000030:6-K",
+   "source": "SEC EDGAR",
+   "form": "6-K",
+   "title": "Hecho relevante (extranjero) — 6-K",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1001085/000100108526000030/a2026-q36xkcover.htm",
+   "priority": "media",
+   "ticker": "BN",
+   "name": "BN"
+  },
+  {
+   "id": "news:90718e63-19a1-3a34-a69a-2007e643f561",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Costco Hits 52-Week High on Strong Sales and Special Dividend",
-   "date": "2026-11-16",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/costco-hits-52-week-high-151000309.html",
+   "title": "Microsoft Corporation (MSFT) Rose on Strong Fiscal Year-End Results and Robust Outlook",
+   "date": "2026-11-17",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-corporation-msft-rose-strong-160830177.html",
+   "priority": "media",
+   "ticker": "MSFT",
+   "name": "MSFT"
+  },
+  {
+   "id": "news:3f94cd52-5c13-37d3-923b-2ae41a7e87aa",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Should You Buy Costco Stock for Its Special Dividend?",
+   "date": "2026-11-17",
+   "url": "https://www.fool.com/investing/2026/11/17/should-you-buy-costco-stock-for-its-special-dividend/",
    "priority": "media",
    "ticker": "COST",
    "name": "COST"
   },
   {
-   "id": "news:5d062317-1eec-3436-9ece-41af51379ba8",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Trump Media Sinks 12% Ahead of Convertible-Note Deadline and TAE Merger Vote; Rumble Tumbles 11%, Meta Declines 2%",
-   "date": "2026-11-16",
-   "url": "https://247wallst.com/investing/2026/11/16/trump-media-sinks-12-ahead-of-convertible-note-deadline-and-tae-merger-vote-rumble-tumbles-11-meta-declines-2/",
+   "id": "sec:0000320187-26-000207:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-17",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000207/nke-20261117.htm",
    "priority": "media",
-   "ticker": "META",
-   "name": "META"
+   "ticker": "NKE",
+   "name": "NKE"
   },
   {
-   "id": "sec:0001178913-26-005219:4",
+   "id": "sec:0000789019-26-000236:4",
    "source": "SEC EDGAR",
    "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
+   "title": "Operacion de un insider — STATEMENT OF CHANGES IN BENEFICIAL OWNERSHIP OF SECURITIES",
    "date": "2026-11-16",
-   "url": "https://www.sec.gov/Archives/edgar/data/1015922/000117891326005219/xslF345X06/ownership.xml",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000236/xslF345X06/form4.xml",
    "priority": "baja",
-   "ticker": "CHKP",
-   "name": "CHKP"
+   "ticker": "MSFT",
+   "name": "MSFT"
+  },
+  {
+   "id": "sec:0001018724-26-000044:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000044/xslF345X06/wk-form4_1794864240.xml",
+   "priority": "baja",
+   "ticker": "AMZN",
+   "name": "AMZN"
+  },
+  {
+   "id": "sec:0001214659-26-014449:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000121465926014449/xslF345X06/marketforms-74255.xml",
+   "priority": "baja",
+   "ticker": "FICO",
+   "name": "FICO"
+  },
+  {
+   "id": "sec:0001214659-26-014448:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000121465926014448/xslF345X06/marketforms-74256.xml",
+   "priority": "baja",
+   "ticker": "FICO",
+   "name": "FICO"
+  },
+  {
+   "id": "sec:0001214659-26-014447:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000121465926014447/xslF345X06/marketforms-74254.xml",
+   "priority": "baja",
+   "ticker": "FICO",
+   "name": "FICO"
+  },
+  {
+   "id": "sec:0001214659-26-014446:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000121465926014446/xslF345X06/marketforms-74257.xml",
+   "priority": "baja",
+   "ticker": "FICO",
+   "name": "FICO"
+  },
+  {
+   "id": "sec:0001214659-26-014445:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000121465926014445/xslF345X06/marketforms-74258.xml",
+   "priority": "baja",
+   "ticker": "FICO",
+   "name": "FICO"
+  },
+  {
+   "id": "sec:0001786926-26-000006:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000178692626000006/xslF345X06/wk-form4_1794868185.xml",
+   "priority": "baja",
+   "ticker": "NET",
+   "name": "NET"
+  },
+  {
+   "id": "sec:0001193125-26-464050:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526464050/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "GOOG",
+   "name": "GOOG"
+  },
+  {
+   "id": "sec:0001193125-26-463983:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526463983/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "GOOG",
+   "name": "GOOG"
+  },
+  {
+   "id": "sec:0001193125-26-464192:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526464192/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "KSPI",
+   "name": "KSPI"
+  },
+  {
+   "id": "sec:0000320187-26-000205:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000205/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "NKE",
+   "name": "NKE"
+  },
+  {
+   "id": "sec:0001626201-26-000024:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000162620126000024/xslF345X06/primarydocument.xml",
+   "priority": "baja",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0001317345-26-000024:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/884887/000131734526000024/xslF345X06/wk-form4_1794869038.xml",
+   "priority": "baja",
+   "ticker": "RCL",
+   "name": "RCL"
   }
  ],
  "financial_drift": [
@@ -117,14 +282,14 @@
   },
   {
    "ticker": "EVD",
-   "ultimo_trimestre_publicado": "2026-06-30",
+   "ultimo_trimestre_publicado": "2026-09-30",
    "ultimos_resultados_en_excel": "2026-11-12",
-   "revenue_ltm_mercado": 3297.9,
+   "revenue_ltm_mercado": 3252.9,
    "revenue_ltm_excel": 3253.3,
-   "desvio_revenue": 0.0137,
-   "fcf_ltm_mercado": 231.3,
+   "desvio_revenue": -0.0001,
+   "fcf_ltm_mercado": 372.8,
    "fcf_ltm_excel": 60.0,
-   "desvio_fcf": 2.8548,
+   "desvio_fcf": 5.2132,
    "trimestre_nuevo": false,
    "sospecha_unidades": true,
    "severidad": "unidades"
@@ -326,18 +491,18 @@
    "severidad": "media"
   },
   {
-   "ticker": "IP",
-   "ultimo_trimestre_publicado": "2026-06-30",
-   "ultimos_resultados_en_excel": "2026-11-13",
-   "revenue_ltm_mercado": 2080.0,
-   "revenue_ltm_excel": 2116.2,
-   "desvio_revenue": -0.0171,
-   "fcf_ltm_mercado": 252.7,
-   "fcf_ltm_excel": 229.29999999999998,
-   "desvio_fcf": 0.102,
-   "trimestre_nuevo": false,
+   "ticker": "VYLR",
+   "ultimo_trimestre_publicado": "2026-09-30",
+   "ultimos_resultados_en_excel": "2026-08-05",
+   "revenue_ltm_mercado": 4695.0,
+   "revenue_ltm_excel": 10209.0,
+   "desvio_revenue": -0.5401,
+   "fcf_ltm_mercado": null,
+   "fcf_ltm_excel": 1242.0,
+   "desvio_fcf": null,
+   "trimestre_nuevo": true,
    "sospecha_unidades": false,
-   "severidad": "media"
+   "severidad": "alta"
   },
   {
    "ticker": "RCL",
@@ -668,7 +833,7 @@
   {
    "ticker": "EVD",
    "accion": "DESCUADRE DE MONEDA O ESCALA (no es que este desfasado)",
-   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 3253.3 vs 3297.9, FCF 60.0 vs 231.3. Revisar en que moneda reporta y el factor de Framework Notes.",
+   "motivo": "El LTM del mercado y el del Excel difieren en mas de un 200%: ingresos 3253.3 vs 3252.9, FCF 60.0 vs 372.8. Revisar en que moneda reporta y el factor de Framework Notes.",
    "columnas": "AR-BC y Framework Notes (factor de conversion)",
    "urls": []
   },
@@ -771,9 +936,9 @@
    "urls": []
   },
   {
-   "ticker": "IP",
+   "ticker": "VYLR",
    "accion": "CUENTAS DESFASADAS en el Excel",
-   "motivo": "ingresos LTM: Excel 2116.2 vs mercado 2080.0 (-1.7%); FCF LTM: Excel 229.29999999999998 vs mercado 252.7 (+10.2%)",
+   "motivo": "hay un trimestre publicado (2026-09-30) posterior a la fecha de ultimos resultados del Excel (2026-08-05); ingresos LTM: Excel 10209.0 vs mercado 4695.0 (-54.0%)",
    "columnas": "AR-BC (cuentas LTM) y BO (fecha de ultimos resultados)",
    "urls": []
   },

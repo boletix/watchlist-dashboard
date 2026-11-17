@@ -1,15 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T17:14:26+00:00",
-    "n_with_history": 72,
-    "n_missing": 3,
+    "generated_at": "2026-11-17T17:01:10+00:00",
+    "n_with_history": 73,
+    "n_missing": 2,
     "missing": [
       {
         "ticker": "HLMA",
-        "reason": "could not compute multiples"
-      },
-      {
-        "ticker": "VYLR",
         "reason": "could not compute multiples"
       },
       {
@@ -88,42 +84,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 21.82,
           "ev_fcf_base": 21.82,
           "ev_fcf_bull": 21.82
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 21.1,
           "ev_fcf_base": 22.3,
           "ev_fcf_bull": 23.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 20.3,
           "ev_fcf_base": 22.7,
           "ev_fcf_bull": 25.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.5,
           "ev_fcf_base": 23.1,
           "ev_fcf_bull": 26.7
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 18.8,
           "ev_fcf_base": 23.6,
           "ev_fcf_bull": 28.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 24.0,
@@ -138,8 +134,8 @@
         {
           "date": "2022-06-30",
           "period": "annual",
-          "mcap": 1919548.0,
-          "ev": 1919548.0,
+          "mcap": 1919547.8,
+          "ev": 1919547.8,
           "ev_fcf": null,
           "ev_sales": null,
           "ev_ebitda": null
@@ -147,8 +143,8 @@
         {
           "date": "2023-06-30",
           "period": "annual",
-          "mcap": 2402751.3,
-          "ev": 2428012.3,
+          "mcap": 2402751.5,
+          "ev": 2428012.5,
           "ev_fcf": 40.82,
           "ev_sales": 11.46,
           "ev_ebitda": 23.09
@@ -156,8 +152,8 @@
         {
           "date": "2024-06-30",
           "period": "annual",
-          "mcap": 3402484.8,
-          "ev": 3451296.8,
+          "mcap": 3402484.4,
+          "ev": 3451296.4,
           "ev_fcf": 46.59,
           "ev_sales": 14.08,
           "ev_ebitda": 26.21
@@ -165,8 +161,8 @@
         {
           "date": "2025-06-30",
           "period": "annual",
-          "mcap": 3687635.5,
-          "ev": 3717981.5,
+          "mcap": 3687635.7,
+          "ev": 3717981.7,
           "ev_fcf": 51.92,
           "ev_sales": 13.2,
           "ev_ebitda": 23.92
@@ -192,42 +188,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 66.89,
           "ev_fcf_base": 66.89,
           "ev_fcf_bull": 66.89
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 57.5,
           "ev_fcf_base": 58.5,
           "ev_fcf_bull": 59.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 48.1,
           "ev_fcf_base": 50.1,
           "ev_fcf_bull": 52.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 38.8,
           "ev_fcf_base": 41.8,
           "ev_fcf_bull": 44.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 29.4,
           "ev_fcf_base": 33.4,
           "ev_fcf_bull": 37.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 20.0,
           "ev_fcf_base": 25.0,
@@ -287,42 +283,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 39.41,
           "ev_fcf_base": 39.41,
           "ev_fcf_bull": 39.41
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 35.0,
           "ev_fcf_base": 36.0,
           "ev_fcf_bull": 37.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 30.6,
           "ev_fcf_base": 32.7,
           "ev_fcf_bull": 34.8
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 26.3,
           "ev_fcf_base": 29.5,
           "ev_fcf_bull": 32.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 21.9,
           "ev_fcf_base": 26.1,
           "ev_fcf_bull": 30.3
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 17.5,
           "ev_fcf_base": 22.8,
@@ -416,8 +412,8 @@
         {
           "date": "2023-08-31",
           "period": "annual",
-          "mcap": 234383.3,
-          "ev": 229567.3,
+          "mcap": 234383.4,
+          "ev": 229567.4,
           "ev_fcf": 34.04,
           "ev_sales": 0.95,
           "ev_ebitda": 21.41
@@ -434,8 +430,8 @@
         {
           "date": "2025-08-31",
           "period": "annual",
-          "mcap": 420680.2,
-          "ev": 414767.2,
+          "mcap": 420680.3,
+          "ev": 414767.3,
           "ev_fcf": 52.92,
           "ev_sales": 1.51,
           "ev_ebitda": 30.96
@@ -461,42 +457,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 41.32,
           "ev_fcf_base": 41.32,
           "ev_fcf_bull": 41.32
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 37.1,
           "ev_fcf_base": 38.1,
           "ev_fcf_bull": 39.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 32.8,
           "ev_fcf_base": 34.8,
           "ev_fcf_bull": 36.8
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 28.5,
           "ev_fcf_base": 31.5,
           "ev_fcf_bull": 34.5
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 24.3,
           "ev_fcf_base": 28.3,
           "ev_fcf_bull": 32.3
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 20.0,
           "ev_fcf_base": 25.0,
@@ -574,42 +570,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 21.61,
           "ev_fcf_base": 21.61,
           "ev_fcf_bull": 21.61
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 20.8,
           "ev_fcf_base": 21.8,
           "ev_fcf_bull": 22.7
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 20.0,
           "ev_fcf_base": 21.9,
           "ev_fcf_bull": 23.8
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.1,
           "ev_fcf_base": 22.0,
           "ev_fcf_bull": 24.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 18.3,
           "ev_fcf_base": 22.1,
           "ev_fcf_bull": 25.9
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 17.5,
           "ev_fcf_base": 22.2,
@@ -687,42 +683,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 26.97,
           "ev_fcf_base": 26.97,
           "ev_fcf_bull": 26.97
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 24.6,
           "ev_fcf_base": 25.8,
           "ev_fcf_bull": 27.0
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 22.2,
           "ev_fcf_base": 24.6,
           "ev_fcf_bull": 27.0
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.8,
           "ev_fcf_base": 23.4,
           "ev_fcf_bull": 27.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 17.4,
           "ev_fcf_base": 22.2,
           "ev_fcf_bull": 27.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 15.0,
           "ev_fcf_base": 21.0,
@@ -791,42 +787,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 38.16,
           "ev_fcf_base": 38.16,
           "ev_fcf_bull": 38.16
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 34.1,
           "ev_fcf_base": 35.1,
           "ev_fcf_bull": 36.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 30.1,
           "ev_fcf_base": 32.1,
           "ev_fcf_bull": 34.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 26.1,
           "ev_fcf_base": 29.1,
           "ev_fcf_bull": 32.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 22.0,
           "ev_fcf_base": 26.0,
           "ev_fcf_bull": 30.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 23.0,
@@ -1017,42 +1013,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 32.58,
           "ev_fcf_base": 32.58,
           "ev_fcf_bull": 32.58
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 29.6,
           "ev_fcf_base": 30.4,
           "ev_fcf_bull": 31.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 26.5,
           "ev_fcf_base": 28.0,
           "ev_fcf_bull": 29.5
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 23.5,
           "ev_fcf_base": 25.8,
           "ev_fcf_bull": 28.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 20.5,
           "ev_fcf_base": 23.5,
           "ev_fcf_bull": 26.5
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 17.5,
           "ev_fcf_base": 21.2,
@@ -1085,8 +1081,8 @@
         {
           "date": "2024-01-31",
           "period": "annual",
-          "mcap": 110236.5,
-          "ev": 108968.5,
+          "mcap": 110236.6,
+          "ev": 108968.6,
           "ev_fcf": 16.04,
           "ev_sales": 3.03,
           "ev_ebitda": 10.86
@@ -1182,42 +1178,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 77.8,
           "ev_fcf_base": 77.8,
           "ev_fcf_bull": 77.8
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 65.2,
           "ev_fcf_base": 66.2,
           "ev_fcf_bull": 67.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 52.7,
           "ev_fcf_base": 54.7,
           "ev_fcf_bull": 56.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 40.1,
           "ev_fcf_base": 43.1,
           "ev_fcf_bull": 46.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 27.6,
           "ev_fcf_base": 31.6,
           "ev_fcf_bull": 35.6
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 15.0,
           "ev_fcf_base": 20.0,
@@ -1286,42 +1282,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 18.69,
           "ev_fcf_base": 18.69,
           "ev_fcf_bull": 18.69
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 18.6,
           "ev_fcf_base": 19.4,
           "ev_fcf_bull": 20.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 18.4,
           "ev_fcf_base": 20.0,
           "ev_fcf_bull": 21.6
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 18.3,
           "ev_fcf_base": 20.7,
           "ev_fcf_bull": 23.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 18.1,
           "ev_fcf_base": 21.3,
           "ev_fcf_bull": 24.5
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 22.0,
@@ -1390,42 +1386,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 28.22,
           "ev_fcf_base": 28.22,
           "ev_fcf_bull": 28.22
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 25.8,
           "ev_fcf_base": 26.8,
           "ev_fcf_bull": 27.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 23.3,
           "ev_fcf_base": 25.3,
           "ev_fcf_bull": 27.3
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 20.9,
           "ev_fcf_base": 23.9,
           "ev_fcf_bull": 26.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 18.4,
           "ev_fcf_base": 22.4,
           "ev_fcf_bull": 26.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 16.0,
           "ev_fcf_base": 21.0,
@@ -1483,15 +1479,6 @@
           "ev_ebitda": 10.81
         },
         {
-          "date": "2026-03-31",
-          "period": "quarterly_ttm",
-          "mcap": 5039.3,
-          "ev": 4075.2,
-          "ev_fcf": 75.91,
-          "ev_sales": 1.28,
-          "ev_ebitda": 6.86
-        },
-        {
           "date": "2026-06-30",
           "period": "quarterly_ttm",
           "mcap": 5423.5,
@@ -1499,46 +1486,55 @@
           "ev_fcf": 18.94,
           "ev_sales": 1.33,
           "ev_ebitda": 7.21
+        },
+        {
+          "date": "2026-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 5639.5,
+          "ev": 4504.2,
+          "ev_fcf": 12.08,
+          "ev_sales": 1.38,
+          "ev_ebitda": 7.56
         }
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
-          "ev_fcf_bear": 18.94,
-          "ev_fcf_base": 18.94,
-          "ev_fcf_bull": 18.94
+          "ev_fcf_bear": 12.08,
+          "ev_fcf_base": 12.08,
+          "ev_fcf_bull": 12.08
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
-          "ev_fcf_bear": 17.6,
-          "ev_fcf_base": 18.4,
-          "ev_fcf_bull": 19.2
+          "ev_fcf_bear": 12.1,
+          "ev_fcf_base": 12.9,
+          "ev_fcf_bull": 13.7
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
-          "ev_fcf_bear": 16.2,
-          "ev_fcf_base": 17.8,
-          "ev_fcf_bull": 19.4
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 13.6,
+          "ev_fcf_bull": 15.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
-          "ev_fcf_bear": 14.8,
-          "ev_fcf_base": 17.2,
-          "ev_fcf_bull": 19.6
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 14.4,
+          "ev_fcf_bull": 16.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
-          "ev_fcf_bear": 13.4,
-          "ev_fcf_base": 16.6,
-          "ev_fcf_bull": 19.8
+          "ev_fcf_bear": 12.0,
+          "ev_fcf_base": 15.2,
+          "ev_fcf_bull": 18.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 12.0,
           "ev_fcf_base": 16.0,
@@ -1616,42 +1612,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 43.78,
           "ev_fcf_base": 43.78,
           "ev_fcf_bull": 43.78
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 38.6,
           "ev_fcf_base": 39.2,
           "ev_fcf_bull": 39.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 33.5,
           "ev_fcf_base": 34.7,
           "ev_fcf_bull": 35.9
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 28.3,
           "ev_fcf_base": 30.1,
           "ev_fcf_bull": 31.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 23.2,
           "ev_fcf_base": 25.6,
           "ev_fcf_bull": 28.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 21.0,
@@ -1729,42 +1725,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 13.08,
           "ev_fcf_base": 13.08,
           "ev_fcf_bull": 13.08
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 13.7,
           "ev_fcf_base": 14.5,
           "ev_fcf_bull": 15.3
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 14.2,
           "ev_fcf_base": 15.8,
           "ev_fcf_bull": 17.4
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 14.8,
           "ev_fcf_base": 17.2,
           "ev_fcf_bull": 19.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 15.4,
           "ev_fcf_base": 18.6,
           "ev_fcf_bull": 21.8
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 16.0,
           "ev_fcf_base": 20.0,
@@ -1842,42 +1838,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 80.3,
           "ev_fcf_base": 80.3,
           "ev_fcf_bull": 80.3
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 67.0,
           "ev_fcf_base": 67.8,
           "ev_fcf_bull": 68.6
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 53.8,
           "ev_fcf_base": 55.4,
           "ev_fcf_bull": 57.0
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 40.5,
           "ev_fcf_base": 42.9,
           "ev_fcf_bull": 45.3
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 27.3,
           "ev_fcf_base": 30.5,
           "ev_fcf_bull": 33.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 18.0,
@@ -1937,42 +1933,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 22.6,
           "ev_fcf_base": 22.6,
           "ev_fcf_bull": 22.6
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 20.9,
           "ev_fcf_base": 21.7,
           "ev_fcf_bull": 22.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 19.2,
           "ev_fcf_base": 20.8,
           "ev_fcf_bull": 22.4
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 17.4,
           "ev_fcf_base": 19.8,
           "ev_fcf_bull": 22.2
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 15.7,
           "ev_fcf_base": 18.9,
           "ev_fcf_bull": 22.1
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 18.0,
@@ -2050,42 +2046,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 28.52,
           "ev_fcf_base": 28.52,
           "ev_fcf_bull": 28.52
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 25.4,
           "ev_fcf_base": 26.5,
           "ev_fcf_bull": 27.6
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 22.3,
           "ev_fcf_base": 24.5,
           "ev_fcf_bull": 26.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.2,
           "ev_fcf_base": 22.5,
           "ev_fcf_bull": 25.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 16.1,
           "ev_fcf_base": 20.5,
           "ev_fcf_bull": 24.9
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 13.0,
           "ev_fcf_base": 18.5,
@@ -2145,42 +2141,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 1720.25,
           "ev_fcf_base": 1720.25,
           "ev_fcf_bull": 1720.25
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 1378.6,
           "ev_fcf_base": 1379.4,
           "ev_fcf_bull": 1380.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 1036.9,
           "ev_fcf_base": 1038.6,
           "ev_fcf_bull": 1040.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 695.3,
           "ev_fcf_base": 697.7,
           "ev_fcf_bull": 700.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 353.6,
           "ev_fcf_base": 356.8,
           "ev_fcf_bull": 360.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 12.0,
           "ev_fcf_base": 16.0,
@@ -2240,42 +2236,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 56.16,
           "ev_fcf_base": 56.16,
           "ev_fcf_bull": 56.16
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 48.5,
           "ev_fcf_base": 49.2,
           "ev_fcf_bull": 49.9
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 40.9,
           "ev_fcf_base": 42.3,
           "ev_fcf_bull": 43.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 33.3,
           "ev_fcf_base": 35.4,
           "ev_fcf_bull": 37.5
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 25.6,
           "ev_fcf_base": 28.4,
           "ev_fcf_bull": 31.2
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 21.5,
@@ -2290,8 +2286,8 @@
         {
           "date": "2021-12-31",
           "period": "annual",
-          "mcap": 719609.7,
-          "ev": 719609.7,
+          "mcap": 719609.9,
+          "ev": 719609.9,
           "ev_fcf": null,
           "ev_sales": null,
           "ev_ebitda": null
@@ -2308,8 +2304,8 @@
         {
           "date": "2023-12-31",
           "period": "annual",
-          "mcap": 812612.7,
-          "ev": 807984.7,
+          "mcap": 812612.6,
+          "ev": 807984.6,
           "ev_fcf": 18.33,
           "ev_sales": 5.99,
           "ev_ebitda": 13.68
@@ -2317,8 +2313,8 @@
         {
           "date": "2024-12-31",
           "period": "annual",
-          "mcap": 1356027.1,
-          "ev": 1361198.1,
+          "mcap": 1356026.8,
+          "ev": 1361197.8,
           "ev_fcf": 25.17,
           "ev_sales": 8.27,
           "ev_ebitda": 15.67
@@ -2326,8 +2322,8 @@
         {
           "date": "2025-12-31",
           "period": "annual",
-          "mcap": 1442469.8,
-          "ev": 1490493.8,
+          "mcap": 1442469.9,
+          "ev": 1490493.9,
           "ev_fcf": 32.33,
           "ev_sales": 7.42,
           "ev_ebitda": 14.1
@@ -2353,42 +2349,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 59.17,
           "ev_fcf_base": 59.17,
           "ev_fcf_bull": 59.17
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 50.9,
           "ev_fcf_base": 51.7,
           "ev_fcf_bull": 52.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 42.7,
           "ev_fcf_base": 44.3,
           "ev_fcf_bull": 45.9
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 34.5,
           "ev_fcf_base": 36.9,
           "ev_fcf_bull": 39.3
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 26.2,
           "ev_fcf_base": 29.4,
           "ev_fcf_bull": 32.6
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 22.0,
@@ -2403,8 +2399,8 @@
         {
           "date": "2021-12-31",
           "period": "annual",
-          "mcap": 59402.7,
-          "ev": 59402.7,
+          "mcap": 59402.8,
+          "ev": 59402.8,
           "ev_fcf": null,
           "ev_sales": null,
           "ev_ebitda": null
@@ -2466,42 +2462,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 54.11,
           "ev_fcf_base": 54.11,
           "ev_fcf_bull": 54.11
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 46.3,
           "ev_fcf_base": 47.3,
           "ev_fcf_bull": 48.3
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 38.5,
           "ev_fcf_base": 40.5,
           "ev_fcf_bull": 42.5
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 30.6,
           "ev_fcf_base": 33.6,
           "ev_fcf_bull": 36.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 22.8,
           "ev_fcf_base": 26.8,
           "ev_fcf_bull": 30.8
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 15.0,
           "ev_fcf_base": 20.0,
@@ -2579,42 +2575,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 372.92,
           "ev_fcf_base": 372.92,
           "ev_fcf_bull": 372.92
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 301.9,
           "ev_fcf_base": 302.9,
           "ev_fcf_bull": 303.9
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 231.0,
           "ev_fcf_base": 233.0,
           "ev_fcf_bull": 235.0
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 160.0,
           "ev_fcf_base": 163.0,
           "ev_fcf_bull": 166.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 89.0,
           "ev_fcf_base": 93.0,
           "ev_fcf_bull": 97.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 23.0,
@@ -2692,42 +2688,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 148.66,
           "ev_fcf_base": 148.66,
           "ev_fcf_bull": 148.66
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 122.5,
           "ev_fcf_base": 123.7,
           "ev_fcf_bull": 124.9
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 96.4,
           "ev_fcf_base": 98.8,
           "ev_fcf_bull": 101.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 70.3,
           "ev_fcf_base": 73.9,
           "ev_fcf_bull": 77.5
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 44.1,
           "ev_fcf_base": 48.9,
           "ev_fcf_bull": 53.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 24.0,
@@ -2742,8 +2738,8 @@
         {
           "date": "2021-12-31",
           "period": "annual",
-          "mcap": 765850.5,
-          "ev": 765850.5,
+          "mcap": 765850.6,
+          "ev": 765850.6,
           "ev_fcf": null,
           "ev_sales": null,
           "ev_ebitda": null
@@ -2760,8 +2756,8 @@
         {
           "date": "2023-12-31",
           "period": "annual",
-          "mcap": 794732.7,
-          "ev": 797805.7,
+          "mcap": 794732.8,
+          "ev": 797805.8,
           "ev_fcf": 11.48,
           "ev_sales": 2.6,
           "ev_ebitda": 8.14
@@ -2805,42 +2801,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 102.61,
           "ev_fcf_base": 102.61,
           "ev_fcf_bull": 102.61
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 86.1,
           "ev_fcf_base": 87.1,
           "ev_fcf_bull": 88.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 69.6,
           "ev_fcf_base": 71.6,
           "ev_fcf_bull": 73.6
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 53.0,
           "ev_fcf_base": 56.0,
           "ev_fcf_bull": 59.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 36.5,
           "ev_fcf_base": 40.5,
           "ev_fcf_bull": 44.5
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 20.0,
           "ev_fcf_base": 25.0,
@@ -2855,8 +2851,8 @@
         {
           "date": "2021-12-31",
           "period": "annual",
-          "mcap": 52553.1,
-          "ev": 52553.1,
+          "mcap": 52408.8,
+          "ev": 52408.8,
           "ev_fcf": null,
           "ev_sales": null,
           "ev_ebitda": null
@@ -2864,96 +2860,96 @@
         {
           "date": "2022-12-31",
           "period": "annual",
-          "mcap": 50367.4,
-          "ev": 54760.4,
-          "ev_fcf": 104.31,
-          "ev_sales": 1.86,
-          "ev_ebitda": 12.62
+          "mcap": 50229.1,
+          "ev": 54622.1,
+          "ev_fcf": 104.04,
+          "ev_sales": 1.85,
+          "ev_ebitda": 12.59
         },
         {
           "date": "2023-12-31",
           "period": "annual",
-          "mcap": 62300.8,
-          "ev": 67152.8,
-          "ev_fcf": 19.08,
+          "mcap": 62129.8,
+          "ev": 66981.8,
+          "ev_fcf": 19.03,
           "ev_sales": 2.08,
-          "ev_ebitda": 11.51
+          "ev_ebitda": 11.48
         },
         {
           "date": "2024-12-31",
           "period": "annual",
-          "mcap": 86161.4,
-          "ev": 89543.4,
-          "ev_fcf": 23.1,
-          "ev_sales": 2.93,
-          "ev_ebitda": 15.55
+          "mcap": 85924.8,
+          "ev": 89306.8,
+          "ev_fcf": 23.04,
+          "ev_sales": 2.92,
+          "ev_ebitda": 15.51
         },
         {
           "date": "2025-12-31",
           "period": "annual",
-          "mcap": 107304.6,
-          "ev": 111754.6,
-          "ev_fcf": 25.01,
+          "mcap": 107009.9,
+          "ev": 111459.9,
+          "ev_fcf": 24.95,
           "ev_sales": 3.36,
-          "ev_ebitda": 15.7
+          "ev_ebitda": 15.66
         },
         {
           "date": "2026-06-30",
           "period": "quarterly_ttm",
-          "mcap": 151283.9,
-          "ev": 147416.9,
-          "ev_fcf": 30.26,
-          "ev_sales": 4.12,
-          "ev_ebitda": 19.44
+          "mcap": 150868.5,
+          "ev": 147001.5,
+          "ev_fcf": 30.17,
+          "ev_sales": 4.11,
+          "ev_ebitda": 19.38
         },
         {
           "date": "2026-09-30",
           "period": "quarterly_ttm",
-          "mcap": 144152.3,
-          "ev": 148812.3,
-          "ev_fcf": 30.29,
-          "ev_sales": 4.03,
-          "ev_ebitda": 19.08
+          "mcap": 143756.5,
+          "ev": 148416.5,
+          "ev_fcf": 30.21,
+          "ev_sales": 4.02,
+          "ev_ebitda": 19.03
         }
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
-          "ev_fcf_bear": 30.29,
-          "ev_fcf_base": 30.29,
-          "ev_fcf_bull": 30.29
+          "ev_fcf_bear": 30.21,
+          "ev_fcf_base": 30.21,
+          "ev_fcf_bull": 30.21
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 27.0,
           "ev_fcf_base": 28.1,
           "ev_fcf_bull": 29.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
-          "ev_fcf_bear": 23.8,
-          "ev_fcf_base": 26.0,
-          "ev_fcf_bull": 28.2
+          "ev_fcf_bear": 23.7,
+          "ev_fcf_base": 25.9,
+          "ev_fcf_bull": 28.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 20.5,
           "ev_fcf_base": 23.8,
           "ev_fcf_bull": 27.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
-          "ev_fcf_bear": 17.3,
-          "ev_fcf_base": 21.7,
-          "ev_fcf_bull": 26.1
+          "ev_fcf_bear": 17.2,
+          "ev_fcf_base": 21.6,
+          "ev_fcf_bull": 26.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 19.5,
@@ -3031,42 +3027,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 33.95,
           "ev_fcf_base": 33.95,
           "ev_fcf_bull": 33.95
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 30.8,
           "ev_fcf_base": 31.6,
           "ev_fcf_bull": 32.4
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 27.6,
           "ev_fcf_base": 29.2,
           "ev_fcf_bull": 30.8
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 24.4,
           "ev_fcf_base": 26.8,
           "ev_fcf_bull": 29.2
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 21.2,
           "ev_fcf_base": 24.4,
           "ev_fcf_bull": 27.6
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 22.0,
@@ -3126,42 +3122,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 33.86,
           "ev_fcf_base": 33.86,
           "ev_fcf_bull": 33.86
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 29.9,
           "ev_fcf_base": 30.7,
           "ev_fcf_bull": 31.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 25.9,
           "ev_fcf_base": 27.5,
           "ev_fcf_bull": 29.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 21.9,
           "ev_fcf_base": 24.3,
           "ev_fcf_bull": 26.7
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 21.2,
           "ev_fcf_bull": 24.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 18.0,
@@ -3212,42 +3208,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": -0.28,
           "ev_fcf_base": -0.28,
           "ev_fcf_bull": -0.28
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 1.4,
           "ev_fcf_base": 2.1,
           "ev_fcf_bull": 2.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 3.0,
           "ev_fcf_base": 4.4,
           "ev_fcf_bull": 5.8
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 4.7,
           "ev_fcf_base": 6.8,
           "ev_fcf_bull": 8.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 6.3,
           "ev_fcf_base": 9.1,
           "ev_fcf_bull": 11.9
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 8.0,
           "ev_fcf_base": 11.5,
@@ -3316,42 +3312,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 19.86,
           "ev_fcf_base": 19.86,
           "ev_fcf_bull": 19.86
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 18.3,
           "ev_fcf_base": 18.8,
           "ev_fcf_bull": 19.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 16.7,
           "ev_fcf_base": 17.6,
           "ev_fcf_bull": 18.5
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 15.1,
           "ev_fcf_base": 16.4,
           "ev_fcf_bull": 17.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 13.6,
           "ev_fcf_base": 15.4,
           "ev_fcf_bull": 17.2
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 12.0,
           "ev_fcf_base": 14.2,
@@ -3384,8 +3380,8 @@
         {
           "date": "2024-01-31",
           "period": "annual",
-          "mcap": 1736762.0,
-          "ev": 1740538.0,
+          "mcap": 1736761.8,
+          "ev": 1740537.8,
           "ev_fcf": 64.41,
           "ev_sales": 28.57,
           "ev_ebitda": 48.91
@@ -3429,42 +3425,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 41.44,
           "ev_fcf_base": 41.44,
           "ev_fcf_bull": 41.44
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 36.8,
           "ev_fcf_base": 38.0,
           "ev_fcf_bull": 39.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 32.1,
           "ev_fcf_base": 34.5,
           "ev_fcf_bull": 36.9
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 27.4,
           "ev_fcf_base": 31.0,
           "ev_fcf_bull": 34.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 22.7,
           "ev_fcf_base": 27.5,
           "ev_fcf_bull": 32.3
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 24.0,
@@ -3542,42 +3538,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 5.81,
           "ev_fcf_base": 5.81,
           "ev_fcf_bull": 5.81
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 7.3,
           "ev_fcf_base": 7.7,
           "ev_fcf_bull": 8.0
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 8.8,
           "ev_fcf_base": 9.5,
           "ev_fcf_bull": 10.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 10.2,
           "ev_fcf_base": 11.3,
           "ev_fcf_bull": 12.5
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 11.7,
           "ev_fcf_base": 13.2,
           "ev_fcf_bull": 14.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 13.2,
           "ev_fcf_base": 15.0,
@@ -3610,8 +3606,8 @@
         {
           "date": "2023-12-31",
           "period": "annual",
-          "mcap": 504677.1,
-          "ev": -4492.8,
+          "mcap": 504677.2,
+          "ev": -4492.7,
           "ev_fcf": -0.02,
           "ev_sales": -0.0,
           "ev_ebitda": -0.0
@@ -3647,50 +3643,50 @@
           "date": "2026-09-30",
           "period": "quarterly_ttm",
           "mcap": 2351080.1,
-          "ev": -287300.9,
-          "ev_fcf": -0.2,
-          "ev_sales": -0.06,
-          "ev_ebitda": -0.08
+          "ev": -204825.6,
+          "ev_fcf": -0.14,
+          "ev_sales": -0.04,
+          "ev_ebitda": -0.05
         }
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
-          "ev_fcf_bear": -0.2,
-          "ev_fcf_base": -0.2,
-          "ev_fcf_bull": -0.2
+          "ev_fcf_bear": -0.14,
+          "ev_fcf_base": -0.14,
+          "ev_fcf_bull": -0.14
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
-          "ev_fcf_bear": 2.6,
-          "ev_fcf_base": 3.4,
-          "ev_fcf_bull": 4.2
+          "ev_fcf_bear": 2.7,
+          "ev_fcf_base": 3.5,
+          "ev_fcf_bull": 4.3
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 5.5,
           "ev_fcf_base": 7.1,
           "ev_fcf_bull": 8.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 8.3,
           "ev_fcf_base": 10.7,
           "ev_fcf_bull": 13.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 11.2,
           "ev_fcf_base": 14.4,
           "ev_fcf_bull": 17.6
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 18.0,
@@ -3768,42 +3764,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 32.29,
           "ev_fcf_base": 32.29,
           "ev_fcf_bull": 32.29
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 29.4,
           "ev_fcf_base": 30.1,
           "ev_fcf_bull": 30.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 26.6,
           "ev_fcf_base": 28.0,
           "ev_fcf_bull": 29.4
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 23.7,
           "ev_fcf_base": 25.8,
           "ev_fcf_bull": 27.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 20.9,
           "ev_fcf_base": 23.7,
           "ev_fcf_bull": 26.5
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 21.5,
@@ -3872,42 +3868,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 23.72,
           "ev_fcf_base": 23.72,
           "ev_fcf_bull": 23.72
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 21.8,
           "ev_fcf_base": 22.6,
           "ev_fcf_bull": 23.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 19.8,
           "ev_fcf_base": 21.5,
           "ev_fcf_bull": 23.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 17.9,
           "ev_fcf_base": 20.4,
           "ev_fcf_bull": 23.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 15.9,
           "ev_fcf_base": 19.3,
           "ev_fcf_bull": 22.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 18.2,
@@ -3967,42 +3963,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 21.97,
           "ev_fcf_base": 21.97,
           "ev_fcf_bull": 21.97
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 20.6,
           "ev_fcf_base": 21.3,
           "ev_fcf_bull": 22.0
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 19.2,
           "ev_fcf_base": 20.6,
           "ev_fcf_bull": 22.0
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 17.8,
           "ev_fcf_base": 19.9,
           "ev_fcf_bull": 22.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 16.4,
           "ev_fcf_base": 19.2,
           "ev_fcf_bull": 22.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 15.0,
           "ev_fcf_base": 18.5,
@@ -4062,42 +4058,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 22.28,
           "ev_fcf_base": 22.28,
           "ev_fcf_bull": 22.28
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 20.8,
           "ev_fcf_base": 21.3,
           "ev_fcf_bull": 21.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 19.4,
           "ev_fcf_base": 20.4,
           "ev_fcf_bull": 21.4
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 17.9,
           "ev_fcf_base": 19.4,
           "ev_fcf_bull": 20.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 16.5,
           "ev_fcf_base": 18.5,
           "ev_fcf_bull": 20.5
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 15.0,
           "ev_fcf_base": 17.5,
@@ -4157,42 +4153,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 22.86,
           "ev_fcf_base": 22.86,
           "ev_fcf_bull": 22.86
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 21.9,
           "ev_fcf_base": 22.4,
           "ev_fcf_bull": 22.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 20.9,
           "ev_fcf_base": 21.8,
           "ev_fcf_bull": 22.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.9,
           "ev_fcf_base": 21.2,
           "ev_fcf_bull": 22.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 19.0,
           "ev_fcf_base": 20.8,
           "ev_fcf_bull": 22.6
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 20.2,
@@ -4270,42 +4266,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 13.68,
           "ev_fcf_base": 13.68,
           "ev_fcf_bull": 13.68
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 12.5,
           "ev_fcf_base": 13.2,
           "ev_fcf_bull": 13.9
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 11.4,
           "ev_fcf_base": 12.8,
           "ev_fcf_bull": 14.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 10.3,
           "ev_fcf_base": 12.4,
           "ev_fcf_bull": 14.5
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 9.1,
           "ev_fcf_base": 11.9,
           "ev_fcf_bull": 14.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 8.0,
           "ev_fcf_base": 11.5,
@@ -4365,42 +4361,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 27.65,
           "ev_fcf_base": 27.65,
           "ev_fcf_bull": 27.65
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 25.1,
           "ev_fcf_base": 25.9,
           "ev_fcf_bull": 26.6
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 22.6,
           "ev_fcf_base": 24.1,
           "ev_fcf_bull": 25.6
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 20.1,
           "ev_fcf_base": 22.4,
           "ev_fcf_bull": 24.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 17.5,
           "ev_fcf_base": 20.5,
           "ev_fcf_bull": 23.5
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 15.0,
           "ev_fcf_base": 18.8,
@@ -4460,42 +4456,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 16.71,
           "ev_fcf_base": 16.71,
           "ev_fcf_bull": 16.71
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 15.4,
           "ev_fcf_base": 16.2,
           "ev_fcf_bull": 17.0
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 15.6,
           "ev_fcf_bull": 17.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 12.7,
           "ev_fcf_base": 15.1,
           "ev_fcf_bull": 17.5
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 11.3,
           "ev_fcf_base": 14.5,
           "ev_fcf_bull": 17.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 10.0,
           "ev_fcf_base": 14.0,
@@ -4573,42 +4569,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 24.84,
           "ev_fcf_base": 24.84,
           "ev_fcf_bull": 24.84
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 23.5,
           "ev_fcf_base": 23.9,
           "ev_fcf_bull": 24.3
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 22.1,
           "ev_fcf_base": 22.9,
           "ev_fcf_bull": 23.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 20.7,
           "ev_fcf_base": 21.9,
           "ev_fcf_bull": 23.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 19.4,
           "ev_fcf_base": 21.0,
           "ev_fcf_bull": 22.6
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 20.0,
@@ -4686,42 +4682,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 25.99,
           "ev_fcf_base": 25.99,
           "ev_fcf_bull": 25.99
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 24.2,
           "ev_fcf_base": 25.0,
           "ev_fcf_bull": 25.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 22.4,
           "ev_fcf_base": 24.0,
           "ev_fcf_bull": 25.6
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 20.6,
           "ev_fcf_base": 23.0,
           "ev_fcf_bull": 25.4
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 18.8,
           "ev_fcf_base": 22.0,
           "ev_fcf_bull": 25.2
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 17.0,
           "ev_fcf_base": 21.0,
@@ -4790,42 +4786,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 22.92,
           "ev_fcf_base": 22.92,
           "ev_fcf_bull": 22.92
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 21.1,
           "ev_fcf_base": 21.8,
           "ev_fcf_bull": 22.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 19.4,
           "ev_fcf_base": 20.8,
           "ev_fcf_bull": 22.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 17.6,
           "ev_fcf_base": 19.7,
           "ev_fcf_bull": 21.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 15.8,
           "ev_fcf_base": 18.6,
           "ev_fcf_bull": 21.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 17.5,
@@ -4894,42 +4890,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 67.08,
           "ev_fcf_base": 67.08,
           "ev_fcf_bull": 67.08
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 57.2,
           "ev_fcf_base": 57.7,
           "ev_fcf_bull": 58.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 47.2,
           "ev_fcf_base": 48.2,
           "ev_fcf_bull": 49.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 37.3,
           "ev_fcf_base": 38.8,
           "ev_fcf_bull": 40.3
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 27.4,
           "ev_fcf_base": 29.4,
           "ev_fcf_bull": 31.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 17.5,
           "ev_fcf_base": 20.0,
@@ -5059,42 +5055,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 240.49,
           "ev_fcf_base": 240.49,
           "ev_fcf_bull": 240.49
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 195.2,
           "ev_fcf_base": 196.2,
           "ev_fcf_bull": 197.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 149.9,
           "ev_fcf_base": 151.9,
           "ev_fcf_bull": 153.9
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 104.6,
           "ev_fcf_base": 107.6,
           "ev_fcf_bull": 110.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 59.3,
           "ev_fcf_base": 63.3,
           "ev_fcf_bull": 67.3
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 19.0,
@@ -5172,42 +5168,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 24.24,
           "ev_fcf_base": 24.24,
           "ev_fcf_bull": 24.24
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 21.8,
           "ev_fcf_base": 23.2,
           "ev_fcf_bull": 24.6
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 19.3,
           "ev_fcf_base": 22.1,
           "ev_fcf_bull": 24.9
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 16.9,
           "ev_fcf_base": 21.1,
           "ev_fcf_bull": 25.3
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 14.4,
           "ev_fcf_base": 20.0,
           "ev_fcf_bull": 25.6
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 12.0,
           "ev_fcf_base": 19.0,
@@ -5267,42 +5263,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 14.55,
           "ev_fcf_base": 14.55,
           "ev_fcf_bull": 14.55
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 13.6,
           "ev_fcf_base": 14.2,
           "ev_fcf_bull": 14.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 12.7,
           "ev_fcf_base": 13.9,
           "ev_fcf_bull": 15.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 11.8,
           "ev_fcf_base": 13.6,
           "ev_fcf_bull": 15.4
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 10.9,
           "ev_fcf_base": 13.3,
           "ev_fcf_bull": 15.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 10.0,
           "ev_fcf_base": 13.0,
@@ -5362,42 +5358,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 10.69,
           "ev_fcf_base": 10.69,
           "ev_fcf_bull": 10.69
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 9.9,
           "ev_fcf_base": 10.5,
           "ev_fcf_bull": 11.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 9.0,
           "ev_fcf_base": 10.2,
           "ev_fcf_bull": 11.4
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 8.2,
           "ev_fcf_base": 10.0,
           "ev_fcf_bull": 11.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 7.3,
           "ev_fcf_base": 9.7,
           "ev_fcf_bull": 12.1
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 6.5,
           "ev_fcf_base": 9.5,
@@ -5475,42 +5471,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 26.5,
           "ev_fcf_base": 26.5,
           "ev_fcf_bull": 26.5
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 24.0,
           "ev_fcf_base": 24.8,
           "ev_fcf_bull": 25.6
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 21.5,
           "ev_fcf_base": 23.1,
           "ev_fcf_bull": 24.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.0,
           "ev_fcf_base": 21.4,
           "ev_fcf_bull": 23.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 16.5,
           "ev_fcf_base": 19.7,
           "ev_fcf_bull": 22.9
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 18.0,
@@ -5570,42 +5566,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 13.51,
           "ev_fcf_base": 13.51,
           "ev_fcf_bull": 13.51
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 12.8,
           "ev_fcf_base": 13.6,
           "ev_fcf_bull": 14.4
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 12.1,
           "ev_fcf_base": 13.7,
           "ev_fcf_bull": 15.3
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 11.4,
           "ev_fcf_base": 13.8,
           "ev_fcf_bull": 16.2
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 10.7,
           "ev_fcf_base": 13.9,
           "ev_fcf_bull": 17.1
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 10.0,
           "ev_fcf_base": 14.0,
@@ -5665,42 +5661,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 16.87,
           "ev_fcf_base": 16.87,
           "ev_fcf_bull": 16.87
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 15.1,
           "ev_fcf_base": 15.8,
           "ev_fcf_bull": 16.5
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 13.3,
           "ev_fcf_base": 14.7,
           "ev_fcf_bull": 16.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 11.5,
           "ev_fcf_base": 13.6,
           "ev_fcf_bull": 15.7
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 9.8,
           "ev_fcf_base": 12.6,
           "ev_fcf_bull": 15.4
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 8.0,
           "ev_fcf_base": 11.5,
@@ -5751,42 +5747,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 584.1,
           "ev_fcf_base": 584.1,
           "ev_fcf_bull": 584.1
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 468.2,
           "ev_fcf_base": 468.3,
           "ev_fcf_bull": 468.4
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 352.3,
           "ev_fcf_base": 352.5,
           "ev_fcf_bull": 352.7
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 236.4,
           "ev_fcf_base": 236.7,
           "ev_fcf_bull": 236.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 120.5,
           "ev_fcf_base": 120.8,
           "ev_fcf_bull": 121.2
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 4.7,
           "ev_fcf_base": 5.1,
@@ -5846,42 +5842,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 694.33,
           "ev_fcf_base": 694.33,
           "ev_fcf_bull": 694.33
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 557.1,
           "ev_fcf_base": 557.7,
           "ev_fcf_bull": 558.3
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 419.8,
           "ev_fcf_base": 421.0,
           "ev_fcf_bull": 422.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 282.5,
           "ev_fcf_base": 284.3,
           "ev_fcf_bull": 286.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 145.3,
           "ev_fcf_base": 147.7,
           "ev_fcf_bull": 150.1
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 8.0,
           "ev_fcf_base": 11.0,
@@ -5896,8 +5892,8 @@
         {
           "date": "2021-12-31",
           "period": "annual",
-          "mcap": 849.7,
-          "ev": 849.7,
+          "mcap": 848.0,
+          "ev": 848.0,
           "ev_fcf": null,
           "ev_sales": null,
           "ev_ebitda": null
@@ -5905,47 +5901,47 @@
         {
           "date": "2022-12-31",
           "period": "annual",
-          "mcap": 1520.1,
-          "ev": 1341.7,
-          "ev_fcf": 3.02,
+          "mcap": 1517.0,
+          "ev": 1338.6,
+          "ev_fcf": 3.01,
           "ev_sales": 1.08,
           "ev_ebitda": 2.16
         },
         {
           "date": "2023-12-31",
           "period": "annual",
-          "mcap": 1664.9,
-          "ev": 1594.8,
-          "ev_fcf": 48.45,
+          "mcap": 1661.5,
+          "ev": 1591.4,
+          "ev_fcf": 48.35,
           "ev_sales": 1.66,
-          "ev_ebitda": 4.37
+          "ev_ebitda": 4.36
         },
         {
           "date": "2024-12-31",
           "period": "annual",
-          "mcap": 2093.6,
-          "ev": 2295.3,
+          "mcap": 2089.4,
+          "ev": 2291.1,
           "ev_fcf": null,
           "ev_sales": 2.51,
-          "ev_ebitda": 7.4
+          "ev_ebitda": 7.39
         },
         {
           "date": "2025-12-31",
           "period": "annual",
-          "mcap": 2752.9,
-          "ev": 3232.7,
+          "mcap": 2747.3,
+          "ev": 3227.2,
           "ev_fcf": null,
-          "ev_sales": 4.19,
-          "ev_ebitda": 14.82
+          "ev_sales": 4.18,
+          "ev_ebitda": 14.8
         },
         {
           "date": "2026-09-30",
           "period": "quarterly_ttm",
-          "mcap": 4064.7,
-          "ev": 4534.6,
+          "mcap": 4056.5,
+          "ev": 4526.4,
           "ev_fcf": null,
-          "ev_sales": 5.36,
-          "ev_ebitda": 16.38
+          "ev_sales": 5.35,
+          "ev_ebitda": 16.35
         }
       ],
       "forward": [],
@@ -6090,42 +6086,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 23.83,
           "ev_fcf_base": 23.83,
           "ev_fcf_bull": 23.83
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 22.3,
           "ev_fcf_base": 23.1,
           "ev_fcf_bull": 23.9
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 20.7,
           "ev_fcf_base": 22.3,
           "ev_fcf_bull": 23.9
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.1,
           "ev_fcf_base": 21.5,
           "ev_fcf_bull": 23.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 17.6,
           "ev_fcf_base": 20.8,
           "ev_fcf_bull": 24.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 16.0,
           "ev_fcf_base": 20.0,
@@ -6203,42 +6199,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 14.8,
           "ev_fcf_base": 14.8,
           "ev_fcf_bull": 14.8
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 14.6,
           "ev_fcf_base": 15.6,
           "ev_fcf_bull": 16.6
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 14.5,
           "ev_fcf_base": 16.5,
           "ev_fcf_bull": 18.5
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 14.3,
           "ev_fcf_base": 17.3,
           "ev_fcf_bull": 20.3
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 14.2,
           "ev_fcf_base": 18.2,
           "ev_fcf_bull": 22.2
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 19.0,
@@ -6298,42 +6294,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 655.93,
           "ev_fcf_base": 655.93,
           "ev_fcf_bull": 655.93
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 527.1,
           "ev_fcf_base": 528.1,
           "ev_fcf_bull": 529.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 398.4,
           "ev_fcf_base": 400.4,
           "ev_fcf_bull": 402.4
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 269.6,
           "ev_fcf_base": 272.6,
           "ev_fcf_bull": 275.6
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 140.8,
           "ev_fcf_base": 144.8,
           "ev_fcf_bull": 148.8
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 12.0,
           "ev_fcf_base": 17.0,
@@ -6391,15 +6387,6 @@
           "ev_ebitda": 11.55
         },
         {
-          "date": "2026-03-31",
-          "period": "quarterly_ttm",
-          "mcap": 3910.5,
-          "ev": 4205.2,
-          "ev_fcf": 17.8,
-          "ev_sales": 2.03,
-          "ev_ebitda": 9.23
-        },
-        {
           "date": "2026-06-30",
           "period": "quarterly_ttm",
           "mcap": 3438.7,
@@ -6407,46 +6394,55 @@
           "ev_fcf": 14.82,
           "ev_sales": 1.8,
           "ev_ebitda": 8.15
+        },
+        {
+          "date": "2026-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 3802.3,
+          "ev": 4078.3,
+          "ev_fcf": 16.67,
+          "ev_sales": 1.93,
+          "ev_ebitda": 8.63
         }
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
-          "ev_fcf_bear": 14.82,
-          "ev_fcf_base": 14.82,
-          "ev_fcf_bull": 14.82
+          "ev_fcf_bear": 16.67,
+          "ev_fcf_base": 16.67,
+          "ev_fcf_bull": 16.67
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
-          "ev_fcf_bear": 15.1,
-          "ev_fcf_base": 15.6,
-          "ev_fcf_bull": 16.0
-        },
-        {
-          "date": "2028-11-15",
-          "year_offset": 2,
-          "ev_fcf_bear": 15.3,
-          "ev_fcf_base": 16.2,
-          "ev_fcf_bull": 17.1
-        },
-        {
-          "date": "2029-11-15",
-          "year_offset": 3,
-          "ev_fcf_bear": 15.5,
+          "ev_fcf_bear": 16.5,
           "ev_fcf_base": 16.9,
+          "ev_fcf_bull": 17.4
+        },
+        {
+          "date": "2028-11-16",
+          "year_offset": 2,
+          "ev_fcf_bear": 16.4,
+          "ev_fcf_base": 17.3,
           "ev_fcf_bull": 18.2
         },
         {
-          "date": "2030-11-15",
-          "year_offset": 4,
-          "ev_fcf_bear": 15.8,
+          "date": "2029-11-16",
+          "year_offset": 3,
+          "ev_fcf_bear": 16.3,
           "ev_fcf_base": 17.6,
-          "ev_fcf_bull": 19.4
+          "ev_fcf_bull": 19.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2030-11-16",
+          "year_offset": 4,
+          "ev_fcf_bear": 16.1,
+          "ev_fcf_base": 17.9,
+          "ev_fcf_bull": 19.7
+        },
+        {
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 16.0,
           "ev_fcf_base": 18.2,
@@ -6506,42 +6502,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 26.97,
           "ev_fcf_base": 26.97,
           "ev_fcf_bull": 26.97
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 25.2,
           "ev_fcf_base": 26.0,
           "ev_fcf_bull": 26.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 23.4,
           "ev_fcf_base": 25.0,
           "ev_fcf_bull": 26.6
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 21.6,
           "ev_fcf_base": 24.0,
           "ev_fcf_bull": 26.4
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 19.8,
           "ev_fcf_base": 23.0,
           "ev_fcf_bull": 26.2
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 18.0,
           "ev_fcf_base": 22.0,
@@ -6574,42 +6570,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 20.78,
           "ev_fcf_base": 20.78,
           "ev_fcf_bull": 20.78
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 20.4,
           "ev_fcf_base": 21.1,
           "ev_fcf_bull": 21.8
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 20.1,
           "ev_fcf_base": 21.5,
           "ev_fcf_bull": 22.9
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.7,
           "ev_fcf_base": 21.8,
           "ev_fcf_bull": 23.9
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 19.4,
           "ev_fcf_base": 22.2,
           "ev_fcf_bull": 25.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 19.0,
           "ev_fcf_base": 22.5,
@@ -6624,8 +6620,8 @@
         {
           "date": "2021-12-31",
           "period": "annual",
-          "mcap": 1274.5,
-          "ev": 1274.5,
+          "mcap": 1268.6,
+          "ev": 1268.6,
           "ev_fcf": null,
           "ev_sales": null,
           "ev_ebitda": null
@@ -6633,96 +6629,96 @@
         {
           "date": "2022-12-31",
           "period": "annual",
-          "mcap": 1206.2,
-          "ev": 1470.0,
-          "ev_fcf": 29.23,
-          "ev_sales": 2.66,
-          "ev_ebitda": 19.32
+          "mcap": 1200.7,
+          "ev": 1464.4,
+          "ev_fcf": 29.12,
+          "ev_sales": 2.65,
+          "ev_ebitda": 19.24
         },
         {
           "date": "2023-12-31",
           "period": "annual",
-          "mcap": 1330.0,
-          "ev": 1435.7,
-          "ev_fcf": 19.75,
-          "ev_sales": 2.37,
-          "ev_ebitda": 19.3
+          "mcap": 1323.8,
+          "ev": 1429.6,
+          "ev_fcf": 19.67,
+          "ev_sales": 2.36,
+          "ev_ebitda": 19.22
         },
         {
           "date": "2024-12-31",
           "period": "annual",
-          "mcap": 1244.5,
-          "ev": 1498.4,
-          "ev_fcf": 22.79,
-          "ev_sales": 2.23,
-          "ev_ebitda": 17.24
+          "mcap": 1238.8,
+          "ev": 1492.6,
+          "ev_fcf": 22.7,
+          "ev_sales": 2.22,
+          "ev_ebitda": 17.18
         },
         {
           "date": "2025-12-31",
           "period": "annual",
-          "mcap": 1229.6,
-          "ev": 1509.2,
-          "ev_fcf": 24.75,
+          "mcap": 1223.9,
+          "ev": 1503.5,
+          "ev_fcf": 24.65,
           "ev_sales": 1.93,
-          "ev_ebitda": 13.76
+          "ev_ebitda": 13.71
         },
         {
           "date": "2026-06-30",
           "period": "quarterly_ttm",
-          "mcap": 1076.5,
-          "ev": 1437.4,
-          "ev_fcf": 22.43,
-          "ev_sales": 1.77,
-          "ev_ebitda": 14.29
+          "mcap": 1071.6,
+          "ev": 1432.5,
+          "ev_fcf": 22.36,
+          "ev_sales": 1.76,
+          "ev_ebitda": 14.24
         },
         {
           "date": "2026-09-30",
           "period": "quarterly_ttm",
-          "mcap": 1264.0,
-          "ev": 1645.7,
-          "ev_fcf": 23.82,
+          "mcap": 1258.2,
+          "ev": 1639.9,
+          "ev_fcf": 23.73,
           "ev_sales": 1.96,
-          "ev_ebitda": 16.31
+          "ev_ebitda": 16.25
         }
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
-          "ev_fcf_bear": 23.82,
-          "ev_fcf_base": 23.82,
-          "ev_fcf_bull": 23.82
+          "ev_fcf_bear": 23.73,
+          "ev_fcf_base": 23.73,
+          "ev_fcf_bull": 23.73
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
-          "ev_fcf_bear": 21.9,
-          "ev_fcf_base": 22.5,
-          "ev_fcf_bull": 23.1
+          "ev_fcf_bear": 21.8,
+          "ev_fcf_base": 22.4,
+          "ev_fcf_bull": 23.0
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
-          "ev_fcf_bear": 19.9,
-          "ev_fcf_base": 21.1,
-          "ev_fcf_bull": 22.3
+          "ev_fcf_bear": 19.8,
+          "ev_fcf_base": 21.0,
+          "ev_fcf_bull": 22.2
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 17.9,
           "ev_fcf_base": 19.7,
           "ev_fcf_bull": 21.5
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
-          "ev_fcf_bear": 16.0,
-          "ev_fcf_base": 18.4,
-          "ev_fcf_bull": 20.8
+          "ev_fcf_bear": 15.9,
+          "ev_fcf_base": 18.3,
+          "ev_fcf_bull": 20.7
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 14.0,
           "ev_fcf_base": 17.0,
@@ -6800,42 +6796,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 24.2,
           "ev_fcf_base": 24.2,
           "ev_fcf_bull": 24.2
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 22.6,
           "ev_fcf_base": 23.4,
           "ev_fcf_bull": 24.2
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 20.9,
           "ev_fcf_base": 22.5,
           "ev_fcf_bull": 24.1
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 19.3,
           "ev_fcf_base": 21.7,
           "ev_fcf_bull": 24.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 17.6,
           "ev_fcf_base": 20.8,
           "ev_fcf_bull": 24.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 16.0,
           "ev_fcf_base": 20.0,
@@ -6843,6 +6839,22 @@
         }
       ],
       "n_quarters": 7
+    },
+    "VYLR": {
+      "currency": "USD",
+      "history": [
+        {
+          "date": "2026-09-30",
+          "period": "quarterly_ttm",
+          "mcap": 48813.2,
+          "ev": 50833.2,
+          "ev_fcf": null,
+          "ev_sales": 10.83,
+          "ev_ebitda": null
+        }
+      ],
+      "forward": [],
+      "n_quarters": 1
     },
     "RCL": {
       "currency": "USD",
@@ -6913,42 +6925,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 64.78,
           "ev_fcf_base": 64.78,
           "ev_fcf_bull": 64.78
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 53.4,
           "ev_fcf_base": 53.8,
           "ev_fcf_bull": 54.1
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 42.1,
           "ev_fcf_base": 42.8,
           "ev_fcf_bull": 43.5
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 30.7,
           "ev_fcf_base": 31.8,
           "ev_fcf_bull": 32.8
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 19.4,
           "ev_fcf_base": 20.8,
           "ev_fcf_bull": 22.2
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 8.0,
           "ev_fcf_base": 9.8,
@@ -7008,42 +7020,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 35.93,
           "ev_fcf_base": 35.93,
           "ev_fcf_bull": 35.93
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 31.9,
           "ev_fcf_base": 32.9,
           "ev_fcf_bull": 33.9
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 28.0,
           "ev_fcf_base": 30.0,
           "ev_fcf_bull": 32.0
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 24.0,
           "ev_fcf_base": 27.0,
           "ev_fcf_bull": 30.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 20.0,
           "ev_fcf_base": 24.0,
           "ev_fcf_bull": 28.0
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 16.0,
           "ev_fcf_base": 21.0,
@@ -7121,42 +7133,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 23.82,
           "ev_fcf_base": 23.82,
           "ev_fcf_bull": 23.82
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 21.3,
           "ev_fcf_base": 21.6,
           "ev_fcf_bull": 21.9
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 18.8,
           "ev_fcf_base": 19.4,
           "ev_fcf_bull": 20.0
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 16.3,
           "ev_fcf_base": 17.1,
           "ev_fcf_bull": 18.0
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 13.8,
           "ev_fcf_base": 15.0,
           "ev_fcf_bull": 16.1
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 11.3,
           "ev_fcf_base": 12.8,
@@ -7216,42 +7228,42 @@
       ],
       "forward": [
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "year_offset": 0,
           "ev_fcf_bear": 11.89,
           "ev_fcf_base": 11.89,
           "ev_fcf_bull": 11.89
         },
         {
-          "date": "2027-11-16",
+          "date": "2027-11-17",
           "year_offset": 1,
           "ev_fcf_bear": 15.0,
           "ev_fcf_base": 14.3,
           "ev_fcf_bull": 13.6
         },
         {
-          "date": "2028-11-15",
+          "date": "2028-11-16",
           "year_offset": 2,
           "ev_fcf_bear": 18.2,
           "ev_fcf_base": 16.8,
           "ev_fcf_bull": 15.3
         },
         {
-          "date": "2029-11-15",
+          "date": "2029-11-16",
           "year_offset": 3,
           "ev_fcf_bear": 21.3,
           "ev_fcf_base": 19.2,
           "ev_fcf_bull": 17.1
         },
         {
-          "date": "2030-11-15",
+          "date": "2030-11-16",
           "year_offset": 4,
           "ev_fcf_bear": 24.5,
           "ev_fcf_base": 21.6,
           "ev_fcf_bull": 18.8
         },
         {
-          "date": "2031-11-15",
+          "date": "2031-11-16",
           "year_offset": 5,
           "ev_fcf_bear": 27.6,
           "ev_fcf_base": 24.1,
