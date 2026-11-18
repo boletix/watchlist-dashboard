@@ -1,12 +1,38 @@
 {
   "meta": {
-    "generated_at": "2026-11-17T17:02:35+00:00",
-    "n_alerts": 0,
+    "generated_at": "2026-11-18T15:48:49+00:00",
+    "n_alerts": 2,
     "by_severity": {
-      "high": 0,
+      "high": 2,
       "medium": 0,
       "low": 0
     }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "type": "hunting_ground_entry",
+      "severity": "high",
+      "ticker": "CSU",
+      "name": NaN,
+      "category": "Vertical Saas",
+      "message": "CSU entered Hunting Ground (rating 8.45, EV/FCF 19.1x)",
+      "metrics": {
+        "rating_composite": 8.45,
+        "ev_fcf": 19.11875301647991,
+        "irr_best": 0.22104818854012764
+      }
+    },
+    {
+      "type": "best_irr_crossed_25",
+      "severity": "high",
+      "ticker": "KKR",
+      "name": NaN,
+      "category": "Real Assets",
+      "message": "KKR Best IRR crossed 25% (24.6% → 25.7%)",
+      "metrics": {
+        "from": 0.24569864020142806,
+        "to": 0.25689497584068643
+      }
+    }
+  ]
 }

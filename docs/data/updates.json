@@ -1,6 +1,6 @@
 {
   "meta": {
-    "n_updates": 422,
+    "n_updates": 480,
     "source_sheet": "Updates Log",
     "source_file": "watchlist_ratings.xlsx"
   },
@@ -837,6 +837,412 @@
       "fields_changed": "T (R2 Financials); AH (R3 Financing Source)",
       "source": "Deep dive completo del 25-ago-2026",
       "summary": "Spotify. R2 Financials 13 -> 15 y R3 Financing Source 2 -> 4. Ha demostrado lo que tenia que demostrar: que el apalancamiento operativo existia. De perdidas estructurales a un resultado operativo de 2.653 M EUR (14,6% de margen), un FCF de 3.267 (18% de margen) y un ROIC del 24%, con 6.519 M EUR de CAJA NETA. Ya no depende de nadie para financiarse. LA LECCION QUE HAY QUE LLEVARSE AL RESTO DEL LIBRO: la tesis del Drive fijaba el caso alcista en 380 $ y la accion esta en 550,72 $; fallo en una unica variable, el margen, y ella misma la habia senalado como su punto debil (los margenes operativos me generan dudas, el apalancamiento operativo es poco visible). En negocios con base de costes fija grande y margen bruto creciente, el apalancamiento operativo NO es lineal: es explosivo al cruzar el umbral de rentabilidad. Mismo error que en Airbnb (11% proyectado, 20,8% real). Y es lo que puede estar pasando AHORA con SentinelOne, que acaba de cruzar a operativo no-GAAP positivo. NO se sube MOAT ni Concentration: Spotify no es dueno de lo que vende y tres discograficas pueden decidir su margen; el -2 de concentracion esta bien puesto."
+    },
+    {
+      "ticker": "VRLA",
+      "date": "2026-11-18",
+      "fields_changed": "BN, BT",
+      "source": "Nota oficial del CMD (verallia.com, 18-nov-2026)",
+      "summary": "CMD 2027-29 leido (nota oficial): el plan valida el centro de la fila; BD/BF sin cambio; diferencial neutro = supuesto clave."
+    },
+    {
+      "ticker": "NKE",
+      "date": "2026-11-18",
+      "fields_changed": "BN, BT",
+      "source": "Estado de la transcripcion del Investor Day (18-nov)",
+      "summary": "Transcripcion del Investor Day: solo la de pago (GuruFocus/Refinitiv); se espera a la oficial."
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-11-18",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, BN, BO, BP, BQ, BR, BS, BT",
+      "source": "8-K 17-nov-2026 (Ex. 99.1 y 99.2) + 10-K FY26 (XBRL)",
+      "summary": "3T FY27: LTM a octubre (ingresos 302.970 -> 361.808; FCF 119.765 -> 141.048; BS 123.432 -> 146.998), caja 56.586 -> 53.512, deuda 33.366 -> 32.371, fechas. Dias de cobro 64 (alerta). Valoracion sin cambio."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-18",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-11-18",
+      "fields_changed": "BN, BT",
+      "source": "Decision de Roger (18-nov): modelo de ciclo y pesos",
+      "summary": "Modelo de ciclo con hoja SISTEMA; pesos 15/30/30/10/15 aprobados; TIR MC +8,8%; compra MC 138,6 $."
+    },
+    {
+      "ticker": "VRLA",
+      "date": "2026-11-18",
+      "fields_changed": "BD, BF, BN, BT",
+      "source": "Decision de Roger (18-nov) tras el CMD",
+      "summary": "BD 300 -> 270 y BF 490 -> 440 con el plan 2027-29 del CMD; multiplos sin cambio."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-18",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "UBER",
+      "date": "2026-11-18",
+      "fields_changed": "BN, BT",
+      "source": "Prepared Remarks y transcripcion FactSet del 3T26 (web de inversores de Uber) + 10-Q; texto de terceros de Roger contrastado",
+      "summary": "Sin cambio de valoracion. Datos nuevos: take rate subyacente Mobility -1,5 pp a/a; pago IVA UK ~1.500 M$ en 4T26 (normalizar FCF); sin M&A hasta al menos 2027 salvo AV; fin del EBITDA ajustado desde el 4T; DoorDash-Instacart. 7 KPIs propuestos (pendiente de Roger)."
+    },
+    {
+      "ticker": "NKE",
+      "date": "2026-11-18",
+      "fields_changed": "BN, BT",
+      "source": "Transcripcion del Investor Day 17-nov (Quartr via stockanalysis.com)",
+      "summary": "Revision completa: puente de margen (PACE +400 controlable; mercado +400 depende del producto; MP -300); FY28 vuelve a bajar; sin cambio de pesos ni BD/BF; 6 KPIs propuestos."
+    },
+    {
+      "ticker": "VRLA",
+      "date": "2026-11-18",
+      "fields_changed": "BN, BT",
+      "source": "Transcripcion del CMD 18-nov (Quartr via stockanalysis.com) + informe 1S26",
+      "summary": "Q&A: PAP >170 M; subidas de precio 2027; coberturas 2028-29 baratas; caja primero. Sin cambio de BD/BF. Propuestas pendientes: H 118,93 -> 124,71 y cambio del KPI de dividendo en acciones."
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BP, BT",
+      "source": "8-K 12-nov-2026 (item 5.02) + nota de NVIDIA del 28-oct (fecha)",
+      "summary": "Fecha corregida a 17-nov (confirmada) y nota del cambio de CEO (8-K 5.02). Sin cambio de valoracion: pendiente de Roger tras los resultados."
+    },
+    {
+      "ticker": "VEEV",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BP, BT",
+      "source": "Nota de Veeva del 12-nov-2026",
+      "summary": "Fecha de resultados corregida: 19-nov (estimada) -> 3-dic (confirmada)."
+    },
+    {
+      "ticker": "FICO",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BO, BP, BS, BT",
+      "source": "8-K 4-nov-2026 (Ex. 99.1, 4T FY26)",
+      "summary": "FY26 cerrado con la nota del 4T: BS 786,6 -> 848,9; fechas. Sin guia FY27 (transicion de precios hipotecarios)."
+    },
+    {
+      "ticker": "RAA",
+      "date": "2026-11-17",
+      "fields_changed": "AV, BN, BO, BP, BT",
+      "source": "Nota EQS de Rational del 5-nov-2026 (9M26)",
+      "summary": "9M26: ingresos LTM 1.296 -> 1.316,2; fechas. FCF a junio (pendiente del flujo del 9M)."
+    },
+    {
+      "ticker": "NTO",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AV, BN, BO, BP, BT",
+      "source": "Nintendo, resultados 1S FY3/27 y material explicativo (5-nov-2026)",
+      "summary": "1S FY3/27: ingresos LTM 2.258.501 -> 2.179.476, caja 1.967.908 -> 1.928.456; fechas."
+    },
+    {
+      "ticker": "LR",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AQ, AS, AV, BN, BO, BP, BS, BT",
+      "source": "Legrand, resultados 9M26 y estados no auditados a 30-sep-2026 (5-nov-2026)",
+      "summary": "9M26: ingresos 10.107 -> 10.838,6; FCF 1.187 -> 1.328,6 (AS y BS); caja 1.971 -> 2.295; deuda 7.267,4 -> 7.195,3; fechas."
+    },
+    {
+      "ticker": "STMN",
+      "date": "2026-11-17",
+      "fields_changed": "AV, BN, BO, BP, BT",
+      "source": "Straumann, presentacion de resultados del 3T26 (28-oct-2026)",
+      "summary": "3T26 (ventas): ingresos LTM 2.637 -> ~2.703; fechas."
+    },
+    {
+      "ticker": "VYLR",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AQ, AV, BN, BO, BP, BT",
+      "source": "8-K 11/12-nov-2026: nota del 3T y estados pro forma Art. 11 a 30-sep",
+      "summary": "3T26: ingresos 10.209 -> 10.194; caja 1.100 -> 1.312 y deuda 5.659 -> 5.654 (pro forma a 30-sep); fechas."
+    },
+    {
+      "ticker": "TSM",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AQ, AS, BN, BR, BS, BT",
+      "source": "6-K 13-nov-2026: estados consolidados 9M26 (revision del auditor) + 6-K 14-ago (1S26)",
+      "summary": "Flujo del 3T con los estados 9M26: FCF LTM 35.739 -> 46.403; BR 25.685 -> 28.797; BS 61.424 -> 75.200; caja 111.330 -> 130.665; deuda 32.648 -> 32.645."
+    },
+    {
+      "ticker": "CHKP",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AQ, AS, AV, BN, BO, BP, BQ, BS, BT",
+      "source": "Nota de Check Point del 2-nov-2026 (3T26, estados y conciliaciones)",
+      "summary": "3T26: ventas 2.760 -> 2.752,3; FCF 865,5 -> 896; SBC 234,2 -> 226,9; deuda 1.970 -> 1.976,3. CORRECCION: caja 2.280 -> 4.122,9 (faltaban los valores a largo; regla del 7-nov). Fechas."
+    },
+    {
+      "ticker": "LUN",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AQ, AS, AT, AU, AV, BN, BO, BP, BS, BT",
+      "source": "Nota de Lundin Mining del 4-nov-2026 (3T26)",
+      "summary": "3T26: LTM de 1S anualizado a LTM real (ventas 4.743 -> 4.782,2; EBITDA 2.569 -> 2.618,8; AT 1.040 -> 1.161,5; FCF 1.193 -> 1.210,3); caja 265,8 -> 344,3; deuda 186,8 -> 107,3; fechas."
+    },
+    {
+      "ticker": "IPCO",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BO, BP, BT",
+      "source": "Nota de IPC del 3-nov-2026 (3T26)",
+      "summary": "3T26 leido: deuda neta 505,7 -> 473 (desglose pendiente, celdas sin tocar); fechas."
+    },
+    {
+      "ticker": "SOM",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "RNS de Somero: trading update 17-nov y aplazamiento de la junta 11-nov",
+      "summary": "Trading update: guia FY26 subida (ventas ~100, EBITDA ~20,5, caja neta ~34). Sin cambio de celdas numericas."
+    },
+    {
+      "ticker": "SGO",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BP, BT",
+      "source": "Nota de Saint-Gobain del 27-oct-2026 (ventas 3T26; extractos de la web de la compania)",
+      "summary": "Ventas 3T26 leidas (segunda mano de la pagina de la compania); fecha 25-feb -> 18-feb-2027."
+    },
+    {
+      "ticker": "CPR",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "Ventas 9M26 de Campari (28-oct-2026; extractos de prensa, el PDF no se encuentra)",
+      "summary": "Ventas 9M26 leidas de segunda mano; fila sin tocar (pendiente de fuente primaria)."
+    },
+    {
+      "ticker": "NKE",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "8-K 17-nov-2026 (item 7.01, Ex. 99.1 Investor Day)",
+      "summary": "Investor Day: hechos anotados en BT. Valoracion sin cambio (juicio de Roger)."
+    },
+    {
+      "ticker": "ANT",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "S-1/A n 3 y 8-A12B (SEC, 17-nov-2026)",
+      "summary": "S-1/A n 3 leido: sin cambio de cifras; precio real al cotizar."
+    },
+    {
+      "ticker": "KKR",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BO, BP, BT",
+      "source": "Calendario por patron (fechas)",
+      "summary": "Fechas corregidas (BO 4-nov; BP ~4-feb-2027 estimada)."
+    },
+    {
+      "ticker": "RAA",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AS, BN, BS, BT",
+      "source": "Rational, informe del 9M26 (rational-online.com, 5-nov-2026)",
+      "summary": "FLUJO 9M: FCF LTM 250,2 -> 232,2 (AS y BS). CORRECCION: caja 280 -> 511,7 (faltaban 370,5 de depositos a plazo)."
+    },
+    {
+      "ticker": "IPCO",
+      "date": "2026-11-17",
+      "fields_changed": "AP, AQ, BN, BT",
+      "source": "Nota de IPC del 3-nov-2026 (tabla de deuda neta a 30-sep)",
+      "summary": "Caja 11,3 -> 22,3 y deuda 517 -> 495,1 a 30-sep (desglose de la nota del 3T)."
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "Decision de Roger (17-nov)",
+      "summary": "Decision de Roger: ratings sin cambio tras la dimision del CEO; vigilar el ciclo de semiconductores."
+    },
+    {
+      "ticker": "NKE",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "Decision de Roger (17-nov) + Deep Dive/valoracion/scenarios_nke.py",
+      "summary": "Escenario de Roger (menos ventas, margen historico) al 40%; pesos 10/20/40/18/12; TIR total P50 +5,8%. BD/BF sin cambio."
+    },
+    {
+      "ticker": "LUN",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "Instruccion de Roger (17-nov): cobre medio desde 2025",
+      "summary": "NAV con el cobre medio desde 2025 (5,29 $/lb): 23,9 CAD. Propuesta BF ~2.100 pendiente de OK."
+    },
+    {
+      "ticker": "CHKP",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "Criterio de Roger (17-nov)",
+      "summary": "Caja 4.122,9 confirmada con el criterio logico (renta fija liquida a corto y largo, menos el convertible)."
+    },
+    {
+      "ticker": "KSPI",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "6-K del 12-nov-2026 (estados intermedios 9M26)",
+      "summary": "Estados intermedios del 9M cruzados con el anexo del 9-nov: todo cuadra; sin cambios."
+    },
+    {
+      "ticker": "META",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "FWP de Meta del 3 y 4-nov-2026 (EDGAR)",
+      "summary": "Emisiones de 15.000 M$ y 9.000 M EUR: diferencial a 10 anios T+160 (90 en abril); perspectiva negativa de S&P."
+    },
+    {
+      "ticker": "DSGX",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Revision del 2T FY27 en carpeta (11-sep, anexo B del deep dive)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): Lista A.9 cumplida (organico >9%, margen base 38,4%); conviccion 4/5, asimetria 8,4:1, sizing 3-3,5%."
+    },
+    {
+      "ticker": "LIFCO B",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 9M: +7,6%, organico 2,5% y bajando (3T +1,6%), margen EBITA 23,1%. Foso estable, organico debil; LTM y deuda con opciones de minoritarios."
+    },
+    {
+      "ticker": "ITX",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Deep dive completo del 27-sep",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): Margen bruto 58,7% (+40 pb) con ventas +9,2% cc; foso estable o ensanchandose; correccion de alquileres cuadrada con los estados."
+    },
+    {
+      "ticker": "SU",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): Compra de PTC por 23.700 M$ (21x EBITA) con 16-17 mil M EUR de deuda y 5-6 mil M EUR de acciones: mas software y mas deuda (riesgo de la tesis)."
+    },
+    {
+      "ticker": "SAP",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 3T: backlog cloud +26% cc, EBIT +18%; foso se ensancha; LTM de ingresos y FCF - SBC."
+    },
+    {
+      "ticker": "JDG",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada de septiembre (00_Resultados_sep-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 1S26: ingresos -21%, FCF del propietario 11,8, deuda neta ajustada 2,1x EBITDA; el semestre no confirma la recuperacion."
+    },
+    {
+      "ticker": "RBT",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada de septiembre (00_Resultados_sep-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 1S26: organico +2,8%, FCF tras arrendamientos ~64,4, deuda 228,4; no confirma ni descarta la tesis."
+    },
+    {
+      "ticker": "ROKO B",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 9M: +27%, organico 3T +9%, apalancamiento 2,6x; foso estable; deuda con opciones de minoritarios."
+    },
+    {
+      "ticker": "EL",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Alta y deep dive del 25-oct",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 3T: gafas con IA +20%; Professional Solutions +3,4%; conviccion 3/5, sizing 0% hoy."
+    },
+    {
+      "ticker": "ABBNE",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 3T: pedidos +40% (centros de datos +3 digitos), margen 20,8%; foso se ensancha."
+    },
+    {
+      "ticker": "SIKA",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 9M: +4,8% en moneda local, organico 3T +6,1%, margen estable, guia reiterada; foso estable."
+    },
+    {
+      "ticker": "SPOT",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 3T: +16%, margen bruto record 33,0%, ARPU +9%; foso se ensancha (moderado)."
+    },
+    {
+      "ticker": "MIPS",
+      "date": "2026-11-17",
+      "fields_changed": "-",
+      "source": "Pasada del 23-oct (00_Resultados_23-oct-2026.md)",
+      "summary": "Apunte de la revision ya hecha en la carpeta (faltaba en el Excel): 3T: +59% (organico +24%), margen ajustado 45%, pleito BrainGuard cerrado; foso se ensancha."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-17",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "LR",
+      "date": "2026-11-17",
+      "fields_changed": "BF, BN, BT",
+      "source": "Decision de Roger (17-nov, noche)",
+      "summary": "BF 2.277,3 -> 2.400 por los objetivos 2030 de la compania (decision de Roger)."
+    },
+    {
+      "ticker": "VYLR",
+      "date": "2026-11-17",
+      "fields_changed": "BF, BN, BT",
+      "source": "Decision de Roger (17-nov, noche)",
+      "summary": "BF 3.320 -> 2.500 alineado con el tope del marco 2029 (decision de Roger)."
+    },
+    {
+      "ticker": "LUN",
+      "date": "2026-11-17",
+      "fields_changed": "BF, BN, BT",
+      "source": "Decision de Roger (17-nov, noche)",
+      "summary": "BF 1.885 -> 2.111 con el cobre a 6,14 $/lb (media 2026); BI 14,2x sin cambio (decision de Roger)."
+    },
+    {
+      "ticker": "TODAS",
+      "date": "2026-11-17",
+      "fields_changed": "BU, BV, BW, BX, BY, BZ",
+      "source": "DECISION DE ROGER (8-nov): TIR exigida por empresa",
+      "summary": "Columnas nuevas: TIR exigida confirmada por Roger (74) y precios de compra a esa TIR por Monte Carlo de múltiplos (BV) y DCF de 3 escenarios (BW, BX, BY). sistema/motor/tir_exigida.py"
+    },
+    {
+      "ticker": "NTO",
+      "date": "2026-11-17",
+      "fields_changed": "AS, BN, BT",
+      "source": "Informe semestral (半期報告書) del 6-nov-2026, EDINET S100ZB07",
+      "summary": "Flujo del 1S con el informe semestral de EDINET: AS 262.620 -> 69.616 (inventario para Navidad y memoria); BS sin cambio."
+    },
+    {
+      "ticker": "CPR",
+      "date": "2026-11-17",
+      "fields_changed": "AV, BN, BP, BT",
+      "source": "Nota de ventas 9M26 y presentacion (camparigroup.com, 28-oct-2026)",
+      "summary": "Ventas 9M26 con la nota oficial: ingresos LTM 3.035 -> 3.059,4; fecha 3-mar confirmada; capex extraordinario en su final."
+    },
+    {
+      "ticker": "SGO",
+      "date": "2026-11-17",
+      "fields_changed": "AV, BN, BT",
+      "source": "Nota de ventas 3T26 (saint-gobain.com, 27-oct-2026)",
+      "summary": "Ventas 3T26 con la nota oficial: ingresos LTM 46.226 -> 46.426; fecha 18-feb confirmada."
+    },
+    {
+      "ticker": "NKE",
+      "date": "2026-11-17",
+      "fields_changed": "BN, BT",
+      "source": "Prensa sobre el Investor Day (segunda mano) y cierre del 17-nov",
+      "summary": "Investor Day: lo publico por la prensa (FY28 con BPA a la baja, China plana); cierre 35,85 $ (-6,3%)."
     },
     {
       "ticker": "FERG",

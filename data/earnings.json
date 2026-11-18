@@ -1,12 +1,12 @@
 {
  "description": "Earnings dates por ticker. Fuente: columnas BO/BP de watchlist_ratings.xlsx. Se regenera en cada build.",
  "fields": "earnings_last_date (ISO), earnings_next_date (ISO), earnings_updated_at (ISO), earnings_next_estimated (bool)",
- "generated_at": "2026-11-17T16:58:05+00:00",
+ "generated_at": "2026-11-18T15:45:10+00:00",
  "companies": {
   "VEEV": {
    "earnings_last_date": "2026-08-26",
-   "earnings_next_date": "2026-11-19",
-   "earnings_updated_at": "2026-11-06",
+   "earnings_next_date": "2026-12-03",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "MSFT": {
@@ -40,9 +40,9 @@
    "earnings_next_estimated": true
   },
   "RAA": {
-   "earnings_last_date": "2026-08-06",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-11-05",
+   "earnings_next_date": "2027-02-04",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "ZS": {
@@ -52,9 +52,9 @@
    "earnings_next_estimated": true
   },
   "NTO": {
-   "earnings_last_date": "2026-08-06",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-11-05",
+   "earnings_next_date": "2027-02-02",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "AMZN": {
@@ -88,9 +88,9 @@
    "earnings_next_estimated": true
   },
   "FICO": {
-   "earnings_last_date": "2026-07-29",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-11-07",
+   "earnings_last_date": "2026-11-04",
+   "earnings_next_date": "2027-01-28",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "LIFCO B": {
@@ -130,9 +130,9 @@
    "earnings_next_estimated": true
   },
   "LR": {
-   "earnings_last_date": "2026-08-06",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-08-26",
+   "earnings_last_date": "2026-11-05",
+   "earnings_next_date": "2027-02-10",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "JDG": {
@@ -142,21 +142,21 @@
    "earnings_next_estimated": true
   },
   "STMN": {
-   "earnings_last_date": "2026-08-19",
-   "earnings_next_date": "2026-10-29",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-10-28",
+   "earnings_next_date": "2027-02-24",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": false
   },
   "META": {
    "earnings_last_date": "2026-10-21",
    "earnings_next_date": "2027-01-28",
-   "earnings_updated_at": "2026-11-07",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "KKR": {
-   "earnings_last_date": "2026-07-30",
-   "earnings_next_date": "2026-11-04",
-   "earnings_updated_at": "2026-11-15",
+   "earnings_last_date": "2026-11-04",
+   "earnings_next_date": "2027-02-04",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "NET": {
@@ -198,7 +198,7 @@
   "KSPI": {
    "earnings_last_date": "2026-11-09",
    "earnings_next_date": "2027-03-02",
-   "earnings_updated_at": "2026-11-13",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": false
   },
   "CBAV": {
@@ -208,9 +208,9 @@
    "earnings_next_estimated": true
   },
   "NVDA": {
-   "earnings_last_date": "2026-08-26",
-   "earnings_next_date": "2026-11-18",
-   "earnings_updated_at": "2026-11-07",
+   "earnings_last_date": "2026-11-17",
+   "earnings_next_date": "2027-02-24",
+   "earnings_updated_at": "2026-11-18",
    "earnings_next_estimated": true
   },
   "COR": {
@@ -222,7 +222,7 @@
   "TSM": {
    "earnings_last_date": "2026-10-15",
    "earnings_next_date": "2027-01-14",
-   "earnings_updated_at": "2026-10-23",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "SPOT": {
@@ -246,7 +246,7 @@
   "CPR": {
    "earnings_last_date": "2026-10-28",
    "earnings_next_date": "2027-03-03",
-   "earnings_updated_at": "2026-10-29",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "SIKA": {
@@ -256,9 +256,9 @@
    "earnings_next_estimated": false
   },
   "CHKP": {
-   "earnings_last_date": "2026-07-30",
-   "earnings_next_date": "2026-11-02",
-   "earnings_updated_at": "2026-11-06",
+   "earnings_last_date": "2026-11-02",
+   "earnings_next_date": "2027-02-03",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": false
   },
   "TGYM": {
@@ -288,7 +288,7 @@
   "NKE": {
    "earnings_last_date": "2026-10-01",
    "earnings_next_date": "2026-12-18",
-   "earnings_updated_at": "2026-11-06",
+   "earnings_updated_at": "2026-11-18",
    "earnings_next_estimated": true
   },
   "MIPS": {
@@ -317,8 +317,8 @@
   },
   "SGO": {
    "earnings_last_date": "2026-10-27",
-   "earnings_next_date": "2027-02-25",
-   "earnings_updated_at": "2026-11-06",
+   "earnings_next_date": "2027-02-18",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": false
   },
   "TFF": {
@@ -342,7 +342,7 @@
   "VRLA": {
    "earnings_last_date": "2026-10-27",
    "earnings_next_date": "2027-02-17",
-   "earnings_updated_at": "2026-10-29",
+   "earnings_updated_at": "2026-11-18",
    "earnings_next_estimated": true
   },
   "KIST": {
@@ -358,9 +358,9 @@
    "earnings_next_estimated": true
   },
   "IPCO": {
-   "earnings_last_date": "2026-08-04",
-   "earnings_next_date": "2026-11-03",
-   "earnings_updated_at": "2026-08-25",
+   "earnings_last_date": "2026-11-03",
+   "earnings_next_date": "2027-02-04",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "OTLY": {
@@ -378,13 +378,13 @@
   "UBER": {
    "earnings_last_date": "2026-11-04",
    "earnings_next_date": "2027-02-04",
-   "earnings_updated_at": "2026-11-06",
+   "earnings_updated_at": "2026-11-18",
    "earnings_next_estimated": true
   },
   "SOM": {
    "earnings_last_date": "2026-09-08",
    "earnings_next_date": "2027-01-20",
-   "earnings_updated_at": "2026-09-27",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": true
   },
   "IP": {
@@ -418,9 +418,9 @@
    "earnings_next_estimated": true
   },
   "VYLR": {
-   "earnings_last_date": "2026-08-05",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-10-23",
+   "earnings_last_date": "2026-11-11",
+   "earnings_next_date": "2027-02-04",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": false
   },
   "RCL": {
@@ -436,9 +436,9 @@
    "earnings_next_estimated": false
   },
   "LUN": {
-   "earnings_last_date": "2026-08-05",
-   "earnings_next_date": "2026-11-05",
-   "earnings_updated_at": "2026-10-25",
+   "earnings_last_date": "2026-11-04",
+   "earnings_next_date": "2027-02-18",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": false
   },
   "HOME": {
@@ -450,7 +450,7 @@
   "ANT": {
    "earnings_last_date": "2026-11-10",
    "earnings_next_date": "2027-02-25",
-   "earnings_updated_at": "2026-11-14",
+   "earnings_updated_at": "2026-11-17",
    "earnings_next_estimated": false
   }
  }
