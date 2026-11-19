@@ -1,15 +1,159 @@
 {
  "meta": {
-  "generated_at": "2026-11-18T16:39:39+00:00",
+  "generated_at": "2026-11-19T16:44:38+00:00",
   "n_tickers": 75,
   "days_back": 10,
-  "n_documents": 0,
+  "n_documents": 13,
   "n_calendar_drift": 40,
   "n_financial_drift": 20,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [],
+ "documents": [
+  {
+   "id": "news:3d292888-735f-3436-bb28-5c66942361ca",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Revenue Decline Outlook Might Change The Case For Investing In Nike Stock (NKE)",
+   "date": "2026-11-18",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/revenue-decline-outlook-might-change-201107642.html",
+   "priority": "media",
+   "ticker": "NKE",
+   "name": "NKE"
+  },
+  {
+   "id": "news:aba8cd1e-1440-3c45-ba20-c5d4a429073d",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "What Halma (HLMA) Said on Its H1 Earnings Call",
+   "date": "2026-11-19",
+   "url": "https://www.marketbeat.com/instant-alerts/transcript-what-halma-hlma-said-on-its-h1-earnings-call-2026-11-19/?utm_source=yahoofinance&utm_medium=yahoofinance",
+   "priority": "media",
+   "ticker": "HLMA",
+   "name": "HLMA"
+  },
+  {
+   "id": "news:2ac561d2-9b94-3fe5-aa89-80d58ed9229b",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "Alphabet (GOOG) Slips as 2026 Capex Outlook Rises",
+   "date": "2026-11-19",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-goog-slips-2026-capex-160741067.html",
+   "priority": "media",
+   "ticker": "GOOG",
+   "name": "GOOG"
+  },
+  {
+   "id": "news:2900beed-c58b-3384-99d8-c8686a30307f",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "UBER or LYFT: Which Stock Looks Stronger After Q3 Earnings Results?",
+   "date": "2026-11-19",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/uber-lyft-stock-looks-stronger-151400519.html",
+   "priority": "media",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0001193125-26-467173:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — 4",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526467173/xslF345X06/ownership.xml",
+   "priority": "baja",
+   "ticker": "ABNB",
+   "name": "ABNB"
+  },
+  {
+   "id": "sec:0001778813-26-000007:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000177881326000007/xslF345X06/wk-form4_1795036161.xml",
+   "priority": "baja",
+   "ticker": "VLTO",
+   "name": "VLTO"
+  },
+  {
+   "id": "sec:0001781229-26-000008:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1967680/000178122926000008/xslF345X06/wk-form4_1795035998.xml",
+   "priority": "baja",
+   "ticker": "VLTO",
+   "name": "VLTO"
+  },
+  {
+   "id": "sec:0001140361-26-044736:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — FORM 4",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1639920/000114036126044736/xslF345X06/form4.xml",
+   "priority": "baja",
+   "ticker": "SPOT",
+   "name": "SPOT"
+  },
+  {
+   "id": "sec:0002111867-26-000015:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000211186726000015/xslF345X06/primarydocument.xml",
+   "priority": "baja",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0002071761-26-000014:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000207176126000014/xslF345X06/primarydocument.xml",
+   "priority": "baja",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0001626201-26-000025:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000162620126000025/xslF345X06/primarydocument.xml",
+   "priority": "baja",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0001775297-26-000015:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000177529726000015/xslF345X06/primarydocument.xml",
+   "priority": "baja",
+   "ticker": "UBER",
+   "name": "UBER"
+  },
+  {
+   "id": "sec:0001525321-26-000012:4",
+   "source": "SEC EDGAR",
+   "form": "4",
+   "title": "Operacion de un insider — PRIMARY DOCUMENT",
+   "date": "2026-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000152532126000012/xslF345X06/primarydocument.xml",
+   "priority": "baja",
+   "ticker": "UBER",
+   "name": "UBER"
+  }
+ ],
  "financial_drift": [
   {
    "ticker": "BN",
@@ -139,7 +283,7 @@
   },
   {
    "ticker": "NVDA",
-   "ultimo_trimestre_publicado": "2026-07-31",
+   "ultimo_trimestre_publicado": "2026-10-31",
    "ultimos_resultados_en_excel": "2026-11-17",
    "revenue_ltm_mercado": 302969.0,
    "revenue_ltm_excel": 361808.0,
