@@ -1,38 +1,15 @@
 {
  "meta": {
-  "generated_at": "2026-11-20T20:27:59+00:00",
+  "generated_at": "2026-11-20T20:38:34+00:00",
   "n_tickers": 75,
   "days_back": 10,
-  "n_documents": 2,
+  "n_documents": 0,
   "n_calendar_drift": 40,
   "n_financial_drift": 20,
   "n_errors": 0,
   "seeded": false
  },
- "documents": [
-  {
-   "id": "news:0a2f4c8e-55dd-38cd-879b-5485a1ed2123",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco’s Upcoming $30 Special Dividend Is Twice the Size of Its Last Special Payout. Is This the Most Unstoppable Consumer Staples Stock to Buy Now?",
-   "date": "2026-11-20",
-   "url": "https://www.fool.com/investing/2026/11/20/costco-s-upcoming-usd30-special-dividend-is-twice-the-size-of-its-last-special-payout-is-this-the-most-unstoppable-consumer-staples-stock-to-buy-now/",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  },
-  {
-   "id": "news:c184cb84-faa3-398e-93f5-ea7c87f5870a",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco Just Announced a Special Dividend for Shareholders as of Nov. 24. Should You Buy Shares Before Then?",
-   "date": "2026-11-20",
-   "url": "https://www.fool.com/investing/2026/11/20/costco-just-announced-a-special-dividend-for-shareholders-as-of-nov-24-should-you-buy-shares-before/",
-   "priority": "media",
-   "ticker": "COST",
-   "name": "COST"
-  }
- ],
+ "documents": [],
  "financial_drift": [
   {
    "ticker": "BN",
