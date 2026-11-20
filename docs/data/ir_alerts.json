@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-20T16:20:12+00:00",
+  "generated_at": "2026-11-20T20:27:59+00:00",
   "n_tickers": 75,
   "days_back": 10,
-  "n_documents": 13,
+  "n_documents": 2,
   "n_calendar_drift": 40,
   "n_financial_drift": 20,
   "n_errors": 0,
@@ -11,147 +11,26 @@
  },
  "documents": [
   {
-   "id": "news:ecb38d8c-8497-3b34-b71d-0d81e960081c",
+   "id": "news:0a2f4c8e-55dd-38cd-879b-5485a1ed2123",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Are Strong Half Year Results Altering The Investment Case For Halma Stock (LSE:HLMA)?",
-   "date": "2026-11-19",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/strong-half-results-altering-investment-211100924.html",
-   "priority": "media",
-   "ticker": "HLMA",
-   "name": "HLMA"
-  },
-  {
-   "id": "news:90056260-d8dc-3f63-84c0-7001237604b9",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Halma PLC (HLMAF) (H1 2027) Earnings Call Highlights: Record Margins, 17% Revenue Growth and a ...",
-   "date": "2026-11-19",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/halma-plc-hlmaf-h1-2027-190047625.html",
-   "priority": "media",
-   "ticker": "HLMA",
-   "name": "HLMA"
-  },
-  {
-   "id": "news:e3de5856-688a-3fdd-b870-e8db9870b581",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Spotify Technology CFO Outlines Growth Plan as AI Costs and Audiobooks Test Margins",
-   "date": "2026-11-19",
-   "url": "https://www.marketbeat.com/instant-alerts/event-spotify-technology-cfo-outlines-growth-plan-as-ai-costs-and-audiobooks-test-margins-2026-11-19/?utm_source=yahoofinance&utm_medium=yahoofinance",
-   "priority": "media",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "sec:0000320187-26-000211:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-19",
-   "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000211/nke-20261113.htm",
-   "priority": "media",
-   "ticker": "NKE",
-   "name": "NKE"
-  },
-  {
-   "id": "news:81cc45d2-9b91-3256-8b18-446a8d6b4ebe",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco Just Made a New All-Time High After Announcing a $30-Per-Share Special Dividend. Is the Stock a Buy Before Dec. 10?",
+   "title": "Costco’s Upcoming $30 Special Dividend Is Twice the Size of Its Last Special Payout. Is This the Most Unstoppable Consumer Staples Stock to Buy Now?",
    "date": "2026-11-20",
-   "url": "https://www.fool.com/investing/2026/11/20/costco-just-made-a-new-all-time-high-after-announcing-a-30-per-share-special-dividend-is-the-stock-a-buy-before-dec-10/",
+   "url": "https://www.fool.com/investing/2026/11/20/costco-s-upcoming-usd30-special-dividend-is-twice-the-size-of-its-last-special-payout-is-this-the-most-unstoppable-consumer-staples-stock-to-buy-now/",
    "priority": "media",
    "ticker": "COST",
    "name": "COST"
   },
   {
-   "id": "news:8657aadd-b8c4-3b64-ab29-3f282db32cf7",
+   "id": "news:c184cb84-faa3-398e-93f5-ea7c87f5870a",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Spotify Soars 12.5% in a Month as the Nasdaq Slides. Its CFO Still Targets a 20%+ Operating Margin by 2030",
+   "title": "Costco Just Announced a Special Dividend for Shareholders as of Nov. 24. Should You Buy Shares Before Then?",
    "date": "2026-11-20",
-   "url": "https://www.tikr.com/blog/spotify-soars-12-5-in-a-month-as-the-nasdaq-slides-its-cfo-still-targets-a-20-operating-margin-by-2030?ref=yahoofinance&tlnk=yf-261120-5g546wjx",
+   "url": "https://www.fool.com/investing/2026/11/20/costco-just-announced-a-special-dividend-for-shareholders-as-of-nov-24-should-you-buy-shares-before/",
    "priority": "media",
-   "ticker": "SPOT",
-   "name": "SPOT"
-  },
-  {
-   "id": "sec:0000950103-26-017904:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-19",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017904/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0000950103-26-017902:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-19",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017902/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0000950103-26-017900:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-19",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017900/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
-  },
-  {
-   "id": "sec:0001430437-26-000020:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-19",
-   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000143043726000020/xslF345X06/wk-form4_1795125583.xml",
-   "priority": "baja",
-   "ticker": "NET",
-   "name": "NET"
-  },
-  {
-   "id": "sec:0000950103-26-017861:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-19",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000095010326017861/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
-  },
-  {
-   "id": "sec:0001193125-26-469021:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — 4",
-   "date": "2026-11-19",
-   "url": "https://www.sec.gov/Archives/edgar/data/1985487/000119312526469021/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "KSPI",
-   "name": "KSPI"
-  },
-  {
-   "id": "sec:0002114032-26-000002:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1046179/000211403226000002/xslF345X06/wk-form4_1795172790.xml",
-   "priority": "baja",
-   "ticker": "TSM",
-   "name": "TSM"
+   "ticker": "COST",
+   "name": "COST"
   }
  ],
  "financial_drift": [

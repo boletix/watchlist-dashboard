@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generated_at": "2026-11-20T16:19:21+00:00",
-    "n_alerts": 2,
+    "generated_at": "2026-11-20T20:27:14+00:00",
+    "n_alerts": 5,
     "by_severity": {
-      "high": 2,
+      "high": 5,
       "medium": 0,
       "low": 0
     }
@@ -12,26 +12,65 @@
     {
       "type": "hunting_ground_entry",
       "severity": "high",
+      "ticker": "ADYEN",
+      "name": "ADYEN",
+      "category": "Fintech",
+      "message": "ADYEN entered Hunting Ground (rating 7.80, EV/FCF 18.7x)",
+      "metrics": {
+        "rating_composite": 7.8,
+        "ev_fcf": 18.69776411657559,
+        "irr_best": 0.22450235216768566
+      }
+    },
+    {
+      "type": "hunting_ground_entry",
+      "severity": "high",
       "ticker": "CSU",
-      "name": NaN,
+      "name": "CSU",
       "category": "Vertical Saas",
-      "message": "CSU entered Hunting Ground (rating 8.45, EV/FCF 19.1x)",
+      "message": "CSU entered Hunting Ground (rating 8.45, EV/FCF 17.9x)",
       "metrics": {
         "rating_composite": 8.45,
-        "ev_fcf": 19.11875301647991,
-        "irr_best": 0.22104818854012764
+        "ev_fcf": 17.876496634358965,
+        "irr_best": 0.2380242398934631
       }
     },
     {
       "type": "best_irr_crossed_25",
       "severity": "high",
       "ticker": "KKR",
-      "name": NaN,
+      "name": "KKR",
       "category": "Real Assets",
-      "message": "KKR Best IRR crossed 25% (24.6% → 25.7%)",
+      "message": "KKR Best IRR crossed 25% (24.6% → 27.0%)",
       "metrics": {
         "from": 0.24569864020142806,
-        "to": 0.25689497584068643
+        "to": 0.2702035421287834
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "NKE",
+      "name": "NKE",
+      "category": "Consumo",
+      "message": "NKE now has favorable IRR asymmetry (best 20.6%, worst -4.2%)",
+      "metrics": {
+        "irr_best": 0.20648099625016525,
+        "irr_worst": -0.041807094732486894,
+        "irr_asymmetry_ratio": 4.965761819653043
+      }
+    },
+    {
+      "type": "asymmetry_improved",
+      "severity": "high",
+      "ticker": "NVDA",
+      "name": "NVDA",
+      "category": "IA",
+      "message": "NVDA now has favorable IRR asymmetry (best 22.1%, worst 1.0%)",
+      "metrics": {
+        "irr_best": 0.22089739934626018,
+        "irr_worst": 0.00971466225592943,
+        "irr_asymmetry_ratio": 4.223654741806615
       }
     }
   ]
