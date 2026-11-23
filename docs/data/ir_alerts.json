@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-23T08:31:07+00:00",
+  "generated_at": "2026-11-23T19:26:25+00:00",
   "n_tickers": 75,
   "days_back": 10,
-  "n_documents": 14,
+  "n_documents": 7,
   "n_calendar_drift": 40,
   "n_financial_drift": 20,
   "n_errors": 0,
@@ -11,158 +11,81 @@
  },
  "documents": [
   {
-   "id": "news:bca4f021-e512-3404-9121-d5750c72dab3",
+   "id": "news:98e6322e-8ce8-3e4f-b28d-eb63c3e64523",
    "source": "Noticias",
    "form": "noticia",
-   "title": "Is Brookfield (TSX:BN) Undervalued As It Affirms Its Dividend Despite The Pullback?",
-   "date": "2026-11-20",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/brookfield-tsx-bn-undervalued-affirms-231302579.html",
-   "priority": "media",
-   "ticker": "BN",
-   "name": "BN"
-  },
-  {
-   "id": "news:6ad57889-68e7-393a-836e-1d70098a15da",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "CrowdStrike, Zscaler Merger Would Create Cybersecurity Giant",
-   "date": "2026-11-20",
-   "url": "https://www.investors.com/news/technology/crowdstrike-zscaler-merger-create-cybersecurity-giant/?src=A00220&yptr=yahoo",
-   "priority": "media",
-   "ticker": "ZS",
-   "name": "ZS"
-  },
-  {
-   "id": "news:6ad57889-68e7-393a-836e-1d70098a15da",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "CrowdStrike, Zscaler Merger Would Create Cybersecurity Giant",
-   "date": "2026-11-20",
-   "url": "https://www.investors.com/news/technology/crowdstrike-zscaler-merger-create-cybersecurity-giant/?src=A00220&yptr=yahoo",
-   "priority": "media",
-   "ticker": "S",
-   "name": "S"
-  },
-  {
-   "id": "news:8398b5bd-c714-3682-8459-996f20ed410e",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Zscaler (ZS) Draws Takeover Interest In Reported Acquisition Talks",
-   "date": "2026-11-21",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/zscaler-zs-draws-takeover-interest-071557894.html",
-   "priority": "media",
-   "ticker": "ZS",
-   "name": "ZS"
-  },
-  {
-   "id": "news:cf867383-032d-32f4-a227-0d1b781e1228",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Celsius Holdings (CELH) Stock May Trade At A Premium Following Positive Outlook Shift",
-   "date": "2026-11-21",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/celsius-holdings-celh-stock-may-021315088.html",
-   "priority": "media",
-   "ticker": "CELH",
-   "name": "CELH"
-  },
-  {
-   "id": "news:e660a601-cd37-36d5-aee2-52dbd62e721a",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Uber’s Drones Officially Have a Rival: DoorDash CEO Says Its Dots Robots Handle “Close to 10%” of Phoenix Volume",
-   "date": "2026-11-21",
-   "url": "https://www.tikr.com/blog/ubers-drones-officially-have-a-rival-doordash-ceo-says-its-dots-robots-handle-close-to-10-of-phoenix-volume?ref=yahoofinance&tlnk=yf-261121-9xprx5r7",
-   "priority": "media",
-   "ticker": "UBER",
-   "name": "UBER"
-  },
-  {
-   "id": "news:10089a6a-613d-3bcb-beaa-3a6f16be075d",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "SAP CFO Sees Headcount Declining as AI Boosts Productivity, Plans New Revenue Metric",
-   "date": "2026-11-21",
-   "url": "https://www.marketbeat.com/instant-alerts/event-sap-cfo-sees-headcount-declining-as-ai-boosts-productivity-plans-new-revenue-metric-2026-11-21/?utm_source=yahoofinance&utm_medium=yahoofinance",
-   "priority": "media",
-   "ticker": "SAP",
-   "name": "SAP"
-  },
-  {
-   "id": "news:dbef830a-c098-3d4a-ab9a-4611a7013428",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Costco (COST) Lifts Dividend After Strong 2026 Results And $7.5 Billion 2027 Plan",
-   "date": "2026-11-22",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-lifts-dividend-strong-180659480.html",
+   "title": "Here’s How Many Shares of Costco You’d Need for $5,000 in Yearly Dividends.",
+   "date": "2026-11-23",
+   "url": "https://www.fool.com/investing/2026/11/23/heres-how-many-shares-of-costco-youd-need-for-5000-in-yearly-dividends/",
    "priority": "media",
    "ticker": "COST",
    "name": "COST"
   },
   {
-   "id": "news:b5e17c7c-3a81-33b0-8c6f-b6b56b9f531e",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "CrowdStrike-Zscaler Merger Could Make Cybersecurity Rival ‘More Formidable’ Against Palo Alto Networks, Says Jefferies",
-   "date": "2026-11-22",
-   "url": "https://stocktwits.com/news-articles/markets/equity/crowdstrike-zscaler-merger-versus-palo-alto-networks/cNbn1VWR91Y",
+   "id": "sec:0001193125-26-471211:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526471211/d115803d8k.htm",
    "priority": "media",
    "ticker": "ZS",
    "name": "ZS"
   },
   {
-   "id": "news:4992f109-b89c-36fd-82ae-bbe883fe317e",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "SentinelOne (S) Beat Its Own Guidance. What Does It Expect Next?",
-   "date": "2026-11-22",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/sentinelone-beat-own-guidance-does-000305854.html",
-   "priority": "media",
-   "ticker": "S",
-   "name": "S"
-  },
-  {
-   "id": "news:1094fc02-c0a2-3baa-9516-db561c45feaa",
-   "source": "Noticias",
-   "form": "noticia",
-   "title": "Anthropic Stock Trend, Jensen Huang’s Potential Return As Nvidia CEO And Dell’s Q4 Results To Keep Tech Investors Busy This Week",
+   "id": "sec:0001193125-26-470942:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
    "date": "2026-11-23",
-   "url": "https://stocktwits.com/news-articles/markets/equity/anthropic-stock-trend-jensen-huang-s-potential-return-as-nvidia-ceo-and-dell-s-q4-results-to-keep-tech-investors-busy-this-week/cNbYAtgR9Sf",
+   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000119312526470942/d255961d8k.htm",
    "priority": "media",
-   "ticker": "ANT",
-   "name": "ANT"
+   "ticker": "ZS",
+   "name": "ZS"
   },
   {
-   "id": "sec:0001018724-26-000056:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000056/xslF345X06/wk-form4_1795209411.xml",
-   "priority": "baja",
-   "ticker": "AMZN",
-   "name": "AMZN"
+   "id": "news:5aab81c9-0a6b-39a8-aad8-7e47eaca4a41",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "CrowdStrike earnings beat overshadowed by $43.9B Zscaler acquisition",
+   "date": "2026-11-23",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-earnings-beat-overshadowed-43-184105841.html",
+   "priority": "media",
+   "ticker": "ZS",
+   "name": "ZS"
   },
   {
-   "id": "sec:0001786951-26-000031:4",
+   "id": "sec:0001104659-26-130785:8-K",
    "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000178695126000031/xslF345X06/wk-form4_1795215479.xml",
-   "priority": "baja",
-   "ticker": "NET",
-   "name": "NET"
+   "form": "8-K",
+   "title": "Hecho relevante — FORM 8-K",
+   "date": "2026-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926130785/tm2630454d1_8k.htm",
+   "priority": "media",
+   "ticker": "CRWD",
+   "name": "CRWD"
   },
   {
-   "id": "sec:0001786951-26-000029:4",
+   "id": "sec:0001535527-26-000035:8-K",
    "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-20",
-   "url": "https://www.sec.gov/Archives/edgar/data/1477333/000178695126000029/xslF345X06/wk-form4_1795215348.xml",
-   "priority": "baja",
-   "ticker": "NET",
-   "name": "NET"
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000035/crwd-20261123.htm",
+   "priority": "media",
+   "ticker": "CRWD",
+   "name": "CRWD"
+  },
+  {
+   "id": "sec:0001045810-26-000090:8-K",
+   "source": "SEC EDGAR",
+   "form": "8-K",
+   "title": "Hecho relevante — 8-K",
+   "date": "2026-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+   "priority": "media",
+   "ticker": "NVDA",
+   "name": "NVDA"
   }
  ],
  "financial_drift": [
@@ -456,13 +379,6 @@
    "delta_days": -91
   },
   {
-   "ticker": "ZS",
-   "excel": "2026-11-24",
-   "market": "2026-12-02",
-   "estimated": true,
-   "delta_days": 8
-  },
-  {
    "ticker": "AMZN",
    "excel": "2027-02-04",
    "market": "2026-10-29",
@@ -531,6 +447,13 @@
    "market": "2026-11-05",
    "estimated": true,
    "delta_days": -97
+  },
+  {
+   "ticker": "CRWD",
+   "excel": "2026-12-01",
+   "market": "2026-11-23",
+   "estimated": true,
+   "delta_days": -8
   },
   {
    "ticker": "GOOG",
@@ -878,13 +801,6 @@
    "urls": []
   },
   {
-   "ticker": "ZS",
-   "accion": "Corregir la fecha de proximos resultados",
-   "motivo": "El Excel dice 2026-11-24 y el mercado dice 2026-12-02 (8 dias de diferencia) — la del Excel era una estimacion",
-   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
-   "urls": []
-  },
-  {
    "ticker": "AMZN",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-04 y el mercado dice 2026-10-29 (-98 dias de diferencia) — la del Excel era una estimacion",
@@ -951,6 +867,13 @@
    "ticker": "NET",
    "accion": "Corregir la fecha de proximos resultados",
    "motivo": "El Excel dice 2027-02-10 y el mercado dice 2026-11-05 (-97 dias de diferencia) — la del Excel era una estimacion",
+   "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
+   "urls": []
+  },
+  {
+   "ticker": "CRWD",
+   "accion": "Corregir la fecha de proximos resultados",
+   "motivo": "El Excel dice 2026-12-01 y el mercado dice 2026-11-23 (-8 dias de diferencia) — la del Excel era una estimacion",
    "columnas": "BP (proximos resultados). Formato TEXTO dd/mm/yyyy: si se escribe como fecha, COM la parsea en en-US y voltea los dias <= 12.",
    "urls": []
   },
