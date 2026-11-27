@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_at": "2026-11-26T17:52:42+00:00",
+  "generated_at": "2026-11-27T17:38:43+00:00",
   "n_tickers": 75,
   "days_back": 10,
-  "n_documents": 4,
+  "n_documents": 3,
   "n_calendar_drift": 25,
   "n_financial_drift": 22,
   "n_errors": 0,
@@ -11,48 +11,37 @@
  },
  "documents": [
   {
-   "id": "sec:0001628280-26-075973:8-K",
-   "source": "SEC EDGAR",
-   "form": "8-K",
-   "title": "Hecho relevante — 8-K",
-   "date": "2026-11-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026075973/ant-20261119.htm",
+   "id": "news:518205e8-67bd-382b-9e65-d99762406c85",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "CrowdStrike CEO Predicts “More Agents Than Humans on the Internet.” That’s His Case for a $43.9 Billion Zscaler Deal",
+   "date": "2026-11-27",
+   "url": "https://www.tikr.com/blog/crowdstrike-ceo-predicts-more-agents-than-humans-on-the-internet-thats-his-case-for-a-43-9-billion-zscaler-deal?ref=yahoofinance&tlnk=yf-261127-6g3qqpgg",
    "priority": "media",
-   "ticker": "ANT",
-   "name": "ANT"
-  },
-  {
-   "id": "sec:0001713683-26-000241:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/1713683/000171368326000241/xslF345X06/wk-form4_1795659119.xml",
-   "priority": "baja",
    "ticker": "ZS",
    "name": "ZS"
   },
   {
-   "id": "sec:0000950103-26-018246:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — FORM 4",
-   "date": "2026-11-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326018246/xslF345X06/ownership.xml",
-   "priority": "baja",
-   "ticker": "META",
-   "name": "META"
+   "id": "news:518205e8-67bd-382b-9e65-d99762406c85",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "CrowdStrike CEO Predicts “More Agents Than Humans on the Internet.” That’s His Case for a $43.9 Billion Zscaler Deal",
+   "date": "2026-11-27",
+   "url": "https://www.tikr.com/blog/crowdstrike-ceo-predicts-more-agents-than-humans-on-the-internet-thats-his-case-for-a-43-9-billion-zscaler-deal?ref=yahoofinance&tlnk=yf-261127-6g3qqpgg",
+   "priority": "media",
+   "ticker": "NET",
+   "name": "NET"
   },
   {
-   "id": "sec:0001778564-26-000215:4",
-   "source": "SEC EDGAR",
-   "form": "4",
-   "title": "Operacion de un insider — Operacion de un insider",
-   "date": "2026-11-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/1535527/000177856426000215/xslF345X06/form4-11252026_071101.xml",
-   "priority": "baja",
-   "ticker": "CRWD",
-   "name": "CRWD"
+   "id": "news:a66ec251-a231-315f-a2a4-5a46c8dfd78a",
+   "source": "Noticias",
+   "form": "noticia",
+   "title": "How much GOOGL stock does Alphabet CEO Sundar Pichai own?",
+   "date": "2026-11-27",
+   "url": "https://www.thestreet.com/personalities/how-much-alphabet-googl-stock-does-sundar-pichai-own",
+   "priority": "media",
+   "ticker": "GOOG",
+   "name": "GOOG"
   }
  ],
  "financial_drift": [
